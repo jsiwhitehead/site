@@ -1,0 +1,10 @@
+{
+  "name": "site",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "vite": "^4.3.9"
+  }
+}
