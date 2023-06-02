@@ -1,0 +1,39 @@
+(selected) => {
+  authorItem: (label, pad, span, nested) => [
+    pad: [pad, 0]
+    fill:
+      if (selected = label | hover) then
+        'lightgreen'
+      else if includes(nested, selected) then
+        'lightblue'
+      else
+        '#ddd'
+    span: span
+    when click push label -> selected
+    ~
+    label
+  ]
+  ~
+  [
+    bold: yes
+    align: 'center'
+    size: 15
+    flow: [gap: 5 ~ 'grid', 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    ~
+    authorItem('Bahá’í Era', 7.5, 9, [])
+    authorItem('Heroic Age', 7.5, 3, ['Bahá’í Era'])
+    authorItem('Formative Age', 7.5, 6, ['Bahá’í Era'])
+    authorItem('Word of God', 7.5, 2, ['Bahá’í Era', 'Heroic Age'])
+    authorItem('‘Abdu’l‑Bahá', 25, [1, 2], ['Bahá’í Era', 'Heroic Age'])
+    authorItem('Shoghi Effendi', 7.5, 2, ['Bahá’í Era', 'Formative Age'])
+    authorItem('The Universal House of Justice', 7.5, 4, ['Bahá’í Era', 'Formative Age'])
+    authorItem('The Báb', 7.5, 1, ['Bahá’í Era', 'Heroic Age', 'Word of God'])
+    authorItem('Bahá’u’lláh', 7.5, 1, ['Bahá’í Era', 'Heroic Age', 'Word of God'])
+    authorItem('First Epoch', 7.5, 1, ['Bahá’í Era', 'Formative Age', 'Shoghi Effendi'])
+    authorItem('Second Epoch', 7.5, 1, ['Bahá’í Era', 'Formative Age', 'Shoghi Effendi'])
+    authorItem('Third Epoch', 7.5, 1, ['Bahá’í Era', 'Formative Age', 'The Universal House of Justice'])
+    authorItem('Fourth Epoch', 7.5, 1, ['Bahá’í Era', 'Formative Age', 'The Universal House of Justice'])
+    authorItem('Fifth Epoch', 7.5, 1, ['Bahá’í Era', 'Formative Age', 'The Universal House of Justice'])
+    authorItem('Sixth Epoch', 7.5, 1, ['Bahá’í Era', 'Formative Age', 'The Universal House of Justice'])
+  ]
+}

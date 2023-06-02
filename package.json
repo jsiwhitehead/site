@@ -1,10 +1,19 @@
 {
   "name": "site",
+  "type": "module",
   "scripts": {
+    "data": "node data/index.js",
     "dev": "vite",
     "build": "vite build"
   },
   "dependencies": {
+    "@preact/signals-core": "1.2.3",
+    "history": "^5.3.0",
+    "ohm-js": "^17.1.0",
+    "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8",
     "vite": "^4.3.9"
   }
 }
