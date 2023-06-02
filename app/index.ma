@@ -8,6 +8,7 @@
     wordSpacing: '0.1em'
     fontVariantLigatures: 'none'
     'min-height': '100%'
+    overflow: 'hidden'
   ]
   ~
   if url[1] then {
@@ -15,7 +16,7 @@
     doc: documentById(id)
     ~
     [
-      pad: 50
+      pad: [50, 35]
       ~
       [
         maxWidth: 630
@@ -38,22 +39,35 @@
           flow: 25
           ~
           [
-            pad: [0, 50]
+            pad: [0, 10]
             ~
-            authorSelect(author)
+            [
+              style: [
+                overflow: 'scroll'
+              ]
+              ~
+              authorSelect(author)
+            ]
           ]
           tabs(view)
           if view = 'Documents' then
             [
-              pad: [0, 50, 50]
+              pad: [0, 10, 50]
               ~
-              table(author)
+              [
+                style: [
+                  'overflow-x': 'scroll'
+                  'overflow-y': 'hidden'
+                ]
+                ~
+                table(author)
+              ]
             ]
           else
             [
               flow: 80
               maxWidth: 630
-              pad: [50, 0]
+              pad: [50, 35]
               ~
               for p in allParagraphs(author, yes) renderPara(p, yes, yes, no)
             ]
@@ -84,7 +98,7 @@
                   else
                     '#ddd'
                 pad: [12, 0]
-                width: 150
+                width: 120
                 align: 'center'
                 round: [left: if i = 1 then 40, right: if i = 3 then 40]
                 when click push x[1] -> pview
@@ -96,9 +110,9 @@
           if pview = 'General' then
             [
               flow: ['row', 5]
-              pad: [0, 50]
+              pad: [0, 10]
               align: 'center'
-              size: 15
+              size: 14
               bold: yes
               ~
               for x, i in [
@@ -128,9 +142,9 @@
           else if pview = 'People' then
             [
               flow: ['row', 5]
-              pad: [0, 50]
+              pad: [0, 10]
               align: 'center'
-              size: 15
+              size: 14
               bold: yes
               ~
               for x, i in [
@@ -161,9 +175,9 @@
           else
             [
               flow: ['row', 5]
-              pad: [0, 50]
+              pad: [0, 10]
               align: 'center'
-              size: 15
+              size: 14
               bold: yes
               ~
               for x, i in [
@@ -195,7 +209,7 @@
           [
             flow: 80
             maxWidth: 630
-            pad: [50, 0]
+            pad: [50, 35]
             ~
             for prayer in prayers()[ppage] [
               flow: 25

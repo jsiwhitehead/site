@@ -1,6 +1,6 @@
 (selected) => {
   authorItem: (label, pad, span, nested) => [
-    pad: [pad, 0]
+    pad: [pad, 5]
     fill:
       if (selected = label | hover) then
         'lightgreen'
@@ -19,6 +19,10 @@
     align: 'center'
     size: 15
     flow: [gap: 5 ~ 'grid', 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    style: [
+      'max-width': '1100px'
+      'margin': '0 auto'
+    ]
     ~
     authorItem('Bahá’í Era', 7.5, 9, [])
     authorItem('Heroic Age', 7.5, 3, ['Bahá’í Era'])
