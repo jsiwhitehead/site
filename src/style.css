@@ -9,6 +9,10 @@
   padding: 0;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 html,
 body,
 #app {

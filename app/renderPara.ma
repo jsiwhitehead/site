@@ -28,7 +28,7 @@
           if p.section & !p.title then 'center'
           else if p.section then 'left'
           else if p.type = 'quote' | p.type = 'lines' then 'left'
-          else if p.type then 'justify-center'
+          else if p.type then 'center'
           else 'left'
         size: if level then 25 - level * 2
         uppercase: level = 1 | p.type = 'call'
@@ -36,7 +36,7 @@
         italic: level > 2 | p.type = 'info'
         indent: if !p.type & (p.index != 1) & !citation then  20
         pad:
-          if p.type = 'call' | p.type = 'info' then [0, 60]
+          if p.type = 'call' | p.type = 'info' then [0, 40]
           else if allType then 0
           else if p.type = 'quote' then [0, 20]
           else if p.type = 'lines' then [0, 40]
@@ -58,6 +58,9 @@
       align: 'right'
       color: colors.link[p.author] | colors.link['The World Centre']
       pad: [left: 0.25, right: 20]
+      style: [
+        'overflow-wrap': 'anywhere'
+      ]
       ~
       p.ref
     ]
@@ -66,6 +69,9 @@
       italic: yes
       color: colors.link[p.author] | colors.link['The World Centre']
       pad: [left: 0.25]
+      style: [
+        'overflow-wrap': 'anywhere'
+      ]
       ~
       p.ref
     ]

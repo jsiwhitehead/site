@@ -3,7 +3,7 @@
   ~
   for p in parts
     if p.first & !citation then [
-      size: 17 * 3
+      size: (17 * 3) - 1
       line: 1
       color:
         colors.link[author] | colors.link['The World Centre']
