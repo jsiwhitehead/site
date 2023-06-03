@@ -35,16 +35,14 @@ const getRef = (doc, paras) =>
       paras &&
         (paras.length === 1
           ? doc.paragraphs[paras[0]].index &&
-            `para ${doc.paragraphs[paras[0]].index}`
-          : `paras ${Math.min(
+            `para ${doc.paragraphs[paras[0]].index}`
+          : `paras ${Math.min(
               ...paras.map((p) => doc.paragraphs[p].index).filter((x) => x)
             )}‑${Math.max(
               ...paras.map((p) => doc.paragraphs[p].index).filter((x) => x)
             )}`),
-    ]
-      .filter((x) => x)
-      .map((s) => (s.length > 50 ? s : s.replace(/ /g, " ")))
-  ).join(", ");
+    ].filter((x) => x)
+  );
 
 const allParagraphs = [];
 

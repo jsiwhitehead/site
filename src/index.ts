@@ -92,19 +92,29 @@ const filterText = (text, max) => {
     if (t.count >= max) {
       return [...res, t];
     }
-    if (res[res.length - 1]?.text !== " . . . ") {
-      return [...res, t.text === " " ? t : { text: " . . . " }];
-    }
+    if (typeof res[res.length - 1] !== "string") res.push("");
+    res[res.length - 1] = res[res.length - 1] + t.text;
     return res;
   }, []);
-  if (res.length === 1 && res[0].text === " . . . ") return null;
-  if (res[0].text === " . . . ") {
-    res[0].text = ". . . ";
+  const mapped = res.map((x, i) =>
+    typeof x === "string"
+      ? {
+          text:
+            !/\w/.test(x) ||
+            (i > 0 && i < res.length - 1 && x.trim().split(" ").length === 1)
+              ? x
+              : " . . . ",
+        }
+      : x
+  );
+  if (mapped.length === 1 && mapped[0].text === " . . . ") return null;
+  if (mapped[0].text === " . . . ") {
+    mapped[0].text = ". . . ";
   }
-  if (res[res.length - 1].text === " . . . ") {
-    res[res.length - 1].text = " . . .";
+  if (mapped[mapped.length - 1].text === " . . . ") {
+    mapped[mapped.length - 1].text = " . . .";
   }
-  return res;
+  return mapped;
 };
 
 const compiled = maraca(

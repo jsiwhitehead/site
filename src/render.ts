@@ -135,11 +135,12 @@ const getSetters = ({ hover, click, input }) => {
 
 const getStyle = (values, context, flow) => {
   const result = { ...(values.style?.values || {}) } as any;
-  if (context.inline !== "wrap" && !flow.type) {
+  if (context.inline === "inline") {
+    if (result.display !== "inline-block") result.display = "inline";
+  } else if (context.inline !== "wrap" && !flow.type) {
     result.display = "flex";
     result.flexDirection = "column";
   }
-  if (context.inline === "inline") result.display = "inline";
   if (flow.type === "flow") {
     result.display = "flex";
     result.flexDirection = "column";

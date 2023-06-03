@@ -57,23 +57,39 @@
       italic: yes
       align: 'right'
       color: colors.link[p.author] | colors.link['The World Centre']
-      pad: [left: 0.25, right: 20]
+      pad: [right: 20]
       style: [
-        'overflow-wrap': 'anywhere'
+        'max-width': '470px'
+        'margin-left': 'auto'
       ]
       ~
-      p.ref
+      for t, i in p.ref {
+        if i > 1 then ' '
+        [
+          style: [display: 'inline-block']
+          ~
+          if i = length(p.ref) then t else '{t},'
+        ]
+      }
     ]
     if citation then [
+      size: 16
       align: 'right'
       italic: yes
       color: colors.link[p.author] | colors.link['The World Centre']
-      pad: [left: 0.25]
       style: [
-        'overflow-wrap': 'anywhere'
+        'max-width': '450px'
+        'margin-left': 'auto'
       ]
       ~
-      p.ref
+      for t, i in p.ref {
+        if i > 1 then ' '
+        [
+          style: [display: 'inline-block']
+          ~
+          if i = length(p.ref) then t else '{t},'
+        ]
+      }
     ]
   ]
 }
