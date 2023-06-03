@@ -80,7 +80,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.0588235294117647,
+    "score": 0.19530374230852784,
     "allType": false,
     "paragraphs": [
       {
@@ -97,7 +97,7 @@
           "#2",
           "para 1"
         ],
-        "score": 1.0588235294117647,
+        "score": 0.19530374230852784,
         "index": 1,
         "text": [
           {
@@ -155,7 +155,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.0434782608695652,
+    "score": 0.19247325328956366,
     "allType": false,
     "paragraphs": [
       {
@@ -172,7 +172,7 @@
           "#3",
           "para 1"
         ],
-        "score": 1.0434782608695652,
+        "score": 0.19247325328956366,
         "index": 1,
         "text": [
           {
@@ -226,7 +226,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 26,
+    "score": 4.250299654665887,
     "allType": false,
     "paragraphs": [
       {
@@ -243,7 +243,7 @@
           "#4",
           "para 1"
         ],
-        "score": 26,
+        "score": 4.250299654665887,
         "index": 1,
         "text": [
           {
@@ -309,7 +309,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 9.290322580645162,
+    "score": 1.5187174944711854,
     "allType": false,
     "paragraphs": [
       {
@@ -326,7 +326,7 @@
           "#5",
           "para 1"
         ],
-        "score": 9.290322580645162,
+        "score": 1.5187174944711854,
         "index": 1,
         "text": [
           {
@@ -438,7 +438,7 @@
     "length": 225,
     "fullPath": [],
     "time": "●",
-    "score": 1.0238095238095237,
+    "score": 0.16736527944197171,
     "allType": false,
     "paragraphs": [
       {
@@ -454,7 +454,7 @@
           "#7",
           "para 1"
         ],
-        "score": 1.0238095238095237,
+        "score": 0.16736527944197171,
         "index": 1,
         "text": [
           {
@@ -505,7 +505,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 35.780112628427354,
+    "score": 6.05473755883775,
     "allType": false,
     "paragraphs": [
       {
@@ -548,7 +548,7 @@
           "Short Obligatory Prayer",
           "para 1"
         ],
-        "score": 36.972972972972975,
+        "score": 6.256594283146389,
         "index": 1,
         "text": [
           {
@@ -609,7 +609,7 @@
           "Short Obligatory Prayer",
           "para 2"
         ],
-        "score": 25,
+        "score": 4.230518795256147,
         "index": 2,
         "text": [
           {
@@ -664,7 +664,7 @@
       "Additional Prayers Revealed by ‘Abdu’l‑Bahá"
     ],
     "time": "●",
-    "score": 1.4323445054804422,
+    "score": 0.26420100651786643,
     "allType": false,
     "paragraphs": [
       {
@@ -681,7 +681,7 @@
           "#9",
           "para 1"
         ],
-        "score": 1.0256410256410255,
+        "score": 0.18918311220769077,
         "index": 1,
         "text": [
           {
@@ -726,7 +726,7 @@
           "#9",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -976,7 +976,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 5.748093834161612,
+    "score": 0.9396585091663158,
     "allType": false,
     "paragraphs": [
       {
@@ -993,7 +993,7 @@
           "#13",
           "para 1"
         ],
-        "score": 4.129032258064516,
+        "score": 0.6749855530983045,
         "index": 1,
         "text": [
           {
@@ -1038,7 +1038,7 @@
           "#13",
           "para 2"
         ],
-        "score": 4,
+        "score": 0.6538922545639826,
         "index": 2,
         "text": [
           {
@@ -1142,7 +1142,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 7.209414790793277,
+    "score": 1.3298020391354692,
     "allType": false,
     "paragraphs": [
       {
@@ -1159,7 +1159,7 @@
           "#15",
           "para 1"
         ],
-        "score": 9.195652173913043,
+        "score": 1.6961705446142796,
         "index": 1,
         "text": [
           {
@@ -1209,7 +1209,7 @@
           "#15",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -1313,7 +1313,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 4.078431372549019,
+    "score": 0.666713671320139,
     "allType": false,
     "paragraphs": [
       {
@@ -1330,7 +1330,7 @@
           "#17",
           "para 1"
         ],
-        "score": 4.078431372549019,
+        "score": 0.666713671320139,
         "index": 1,
         "text": [
           {
@@ -1384,7 +1384,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.0166666666666666,
+    "score": 0.17204109767374998,
     "allType": false,
     "paragraphs": [
       {
@@ -1401,7 +1401,7 @@
           "#18",
           "para 1"
         ],
-        "score": 1.0166666666666666,
+        "score": 0.17204109767374998,
         "index": 1,
         "text": [
           {
@@ -1573,7 +1573,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.0166666666666666,
+    "score": 0.18752775997587348,
     "allType": false,
     "paragraphs": [
       {
@@ -1590,7 +1590,7 @@
           "#21",
           "para 1"
         ],
-        "score": 1.0166666666666666,
+        "score": 0.18752775997587348,
         "index": 1,
         "text": [
           {
@@ -1640,7 +1640,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.428355697996826,
+    "score": 0.2634652568794623,
     "allType": false,
     "paragraphs": [
       {
@@ -1657,7 +1657,7 @@
           "#22",
           "para 1"
         ],
-        "score": 1.02,
+        "score": 0.18814260509054848,
         "index": 1,
         "text": [
           {
@@ -1698,7 +1698,7 @@
           "#22",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -1917,7 +1917,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 2.870967741935484,
+    "score": 0.5295601471555602,
     "allType": false,
     "paragraphs": [
       {
@@ -1934,7 +1934,7 @@
           "#26",
           "para 1"
         ],
-        "score": 2.870967741935484,
+        "score": 0.5295601471555602,
         "index": 1,
         "text": [
           {
@@ -2106,7 +2106,7 @@
       "Additional"
     ],
     "time": "●",
-    "score": 4.065573770491803,
+    "score": 0.7499094513413054,
     "allType": false,
     "paragraphs": [
       {
@@ -2122,7 +2122,7 @@
           "#28",
           "para 1"
         ],
-        "score": 4.065573770491803,
+        "score": 0.7499094513413054,
         "index": 1,
         "text": [
           {
@@ -2235,7 +2235,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 4.057971014492754,
+    "score": 0.7485070961260809,
     "allType": false,
     "paragraphs": [
       {
@@ -2252,7 +2252,7 @@
           "#30",
           "para 1"
         ],
-        "score": 4.057971014492754,
+        "score": 0.7485070961260809,
         "index": 1,
         "text": [
           {
@@ -2432,7 +2432,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 4.054054054054054,
+    "score": 0.6627286363824149,
     "allType": false,
     "paragraphs": [
       {
@@ -2449,7 +2449,7 @@
           "#33",
           "para 1"
         ],
-        "score": 4.054054054054054,
+        "score": 0.6627286363824149,
         "index": 1,
         "text": [
           {
@@ -2503,7 +2503,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 4.053333333333334,
+    "score": 0.6859081140041967,
     "allType": false,
     "paragraphs": [
       {
@@ -2520,7 +2520,7 @@
           "#34",
           "para 1"
         ],
-        "score": 4.053333333333334,
+        "score": 0.6859081140041967,
         "index": 1,
         "text": [
           {
@@ -2575,7 +2575,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 10.070569157866474,
+    "score": 1.8575520746132643,
     "allType": false,
     "paragraphs": [
       {
@@ -2592,7 +2592,7 @@
           "#35",
           "para 1"
         ],
-        "score": 10.241935483870968,
+        "score": 1.8891611991223638,
         "index": 1,
         "text": [
           {
@@ -2662,7 +2662,7 @@
           "#35",
           "para 2"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "index": 2,
         "text": [
           {
@@ -2905,7 +2905,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.0136986301369864,
+    "score": 0.16571242067717368,
     "allType": false,
     "paragraphs": [
       {
@@ -2922,7 +2922,7 @@
           "#38",
           "para 1"
         ],
-        "score": 1.0136986301369864,
+        "score": 0.16571242067717368,
         "index": 1,
         "text": [
           {
@@ -2969,7 +2969,7 @@
       "Additional Prayers Revealed by ‘Abdu’l‑Bahá"
     ],
     "time": "●",
-    "score": 1.1547005383792517,
+    "score": 0.21298859548052085,
     "allType": false,
     "paragraphs": [
       {
@@ -3021,7 +3021,7 @@
           "#39",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -3054,7 +3054,7 @@
           "#39",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -3096,7 +3096,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 9.284619474710318,
+    "score": 1.5711502877825303,
     "allType": false,
     "paragraphs": [
       {
@@ -3113,7 +3113,7 @@
           "#40",
           "para 1"
         ],
-        "score": 9.130434782608695,
+        "score": 1.5450590382674623,
         "index": 1,
         "text": [
           {
@@ -3162,7 +3162,7 @@
           "#40",
           "para 2"
         ],
-        "score": 4,
+        "score": 0.6768830072409835,
         "index": 2,
         "text": [
           {
@@ -3205,7 +3205,7 @@
       "Additional Prayers Revealed by Bahá’u’lláh"
     ],
     "time": "●",
-    "score": 0.5443037974683544,
+    "score": 0.09210749782076676,
     "allType": false,
     "paragraphs": [
       {
@@ -3222,7 +3222,7 @@
           "#41",
           "para 1"
         ],
-        "score": 0.5443037974683544,
+        "score": 0.09210749782076676,
         "index": 1,
         "text": [
           {
@@ -3488,7 +3488,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.4244614867381173,
+    "score": 0.26274695584908353,
     "allType": false,
     "paragraphs": [
       {
@@ -3505,7 +3505,7 @@
           "#44",
           "para 1"
         ],
-        "score": 1.0144927536231885,
+        "score": 0.18712677403152023,
         "index": 1,
         "text": [
           {
@@ -3547,7 +3547,7 @@
           "#44",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -3590,7 +3590,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.4247673949281183,
+    "score": 0.24110020972446164,
     "allType": false,
     "paragraphs": [
       {
@@ -3607,7 +3607,7 @@
           "#45",
           "para 1"
         ],
-        "score": 1.0149253731343284,
+        "score": 0.1717464346730854,
         "index": 1,
         "text": [
           {
@@ -3648,7 +3648,7 @@
           "#45",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 2,
         "text": [
           {
@@ -4317,7 +4317,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 5.695599826543698,
+    "score": 1.0505735185482425,
     "allType": false,
     "paragraphs": [
       {
@@ -4334,7 +4334,7 @@
           "#52",
           "para 1"
         ],
-        "score": 4.054794520547945,
+        "score": 0.7479211805909529,
         "index": 1,
         "text": [
           {
@@ -4380,7 +4380,7 @@
           "#52",
           "para 2"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "index": 2,
         "text": [
           {
@@ -4427,7 +4427,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 4.044444444444444,
+    "score": 0.6611577240591379,
     "allType": false,
     "paragraphs": [
       {
@@ -4444,7 +4444,7 @@
           "#53",
           "para 1"
         ],
-        "score": 4.044444444444444,
+        "score": 0.6611577240591379,
         "index": 1,
         "text": [
           {
@@ -4498,7 +4498,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 2.364705882352941,
+    "score": 0.43617835782237885,
     "allType": false,
     "paragraphs": [
       {
@@ -4515,7 +4515,7 @@
           "#54",
           "para 1"
         ],
-        "score": 2.364705882352941,
+        "score": 0.43617835782237885,
         "index": 1,
         "text": [
           {
@@ -4578,7 +4578,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 20.3613719362922,
+    "score": 3.3285358503594775,
     "allType": false,
     "paragraphs": [
       {
@@ -4595,7 +4595,7 @@
           "#55",
           "para 1"
         ],
-        "score": 9.529411764705882,
+        "score": 1.5578021358730172,
         "index": 1,
         "text": [
           {
@@ -4644,7 +4644,7 @@
           "#55",
           "para 2"
         ],
-        "score": 9,
+        "score": 1.4712575727689607,
         "index": 2,
         "text": [
           {
@@ -4685,7 +4685,7 @@
           "#55",
           "para 3"
         ],
-        "score": 9,
+        "score": 1.4712575727689607,
         "index": 3,
         "text": [
           {
@@ -4726,7 +4726,7 @@
           "#55",
           "para 4"
         ],
-        "score": 9,
+        "score": 1.4712575727689607,
         "index": 4,
         "text": [
           {
@@ -4767,7 +4767,7 @@
           "#55",
           "para 5"
         ],
-        "score": 9,
+        "score": 1.4712575727689607,
         "index": 5,
         "text": [
           {
@@ -4875,7 +4875,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.4310494381156318,
+    "score": 0.26396212676513786,
     "allType": false,
     "paragraphs": [
       {
@@ -4892,7 +4892,7 @@
           "#57",
           "para 1"
         ],
-        "score": 1.0238095238095237,
+        "score": 0.1888452852216056,
         "index": 1,
         "text": [
           {
@@ -4933,7 +4933,7 @@
           "#57",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -5207,7 +5207,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 9.1,
+    "score": 1.6785271630627363,
     "allType": false,
     "paragraphs": [
       {
@@ -5224,7 +5224,7 @@
           "#61",
           "para 1"
         ],
-        "score": 9.1,
+        "score": 1.6785271630627363,
         "index": 1,
         "text": [
           {
@@ -5540,7 +5540,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.1547005383792517,
+    "score": 0.21298859548052085,
     "allType": false,
     "paragraphs": [
       {
@@ -5592,7 +5592,7 @@
           "#65",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -5629,7 +5629,7 @@
           "#65",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -5733,7 +5733,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 0.15306122448979592,
+    "score": 0.02823268383711712,
     "allType": false,
     "paragraphs": [
       {
@@ -5750,7 +5750,7 @@
           "#67",
           "para 1"
         ],
-        "score": 0.15306122448979592,
+        "score": 0.02823268383711712,
         "index": 1,
         "text": [
           {
@@ -5873,7 +5873,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 5.695076237664626,
+    "score": 1.0504769407289238,
     "allType": false,
     "paragraphs": [
       {
@@ -5890,7 +5890,7 @@
           "#69",
           "para 1"
         ],
-        "score": 4.054054054054054,
+        "score": 0.747784598929048,
         "index": 1,
         "text": [
           {
@@ -5935,7 +5935,7 @@
           "#69",
           "para 2"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "index": 2,
         "text": [
           {
@@ -7044,7 +7044,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.422532465681172,
+    "score": 0.262391141097193,
     "allType": false,
     "paragraphs": [
       {
@@ -7061,7 +7061,7 @@
           "#82",
           "para 1"
         ],
-        "score": 1.011764705882353,
+        "score": 0.18662357598370435,
         "index": 1,
         "text": [
           {
@@ -7103,7 +7103,7 @@
           "#82",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -7547,7 +7547,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.0089285714285714,
+    "score": 0.17073165137998023,
     "allType": false,
     "paragraphs": [
       {
@@ -7564,7 +7564,7 @@
           "#88",
           "para 1"
         ],
-        "score": 1.0089285714285714,
+        "score": 0.17073165137998023,
         "index": 1,
         "text": [
           {
@@ -8158,7 +8158,7 @@
       "Additional Prayers Revealed by ‘Abdu’l‑Bahá"
     ],
     "time": "●",
-    "score": 1.532064692570853,
+    "score": 0.28259474747797114,
     "allType": false,
     "paragraphs": [
       {
@@ -8175,7 +8175,7 @@
           "#96",
           "para 1"
         ],
-        "score": 1.1666666666666667,
+        "score": 0.21519579013624826,
         "index": 1,
         "text": [
           {
@@ -8217,7 +8217,7 @@
           "#96",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -8489,7 +8489,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.7433714010823995,
+    "score": 0.32157101670588434,
     "allType": false,
     "paragraphs": [
       {
@@ -8506,7 +8506,7 @@
           "Revealed to the Bahá’ís of Canada",
           "para 1"
         ],
-        "score": 1.0196078431372548,
+        "score": 0.18807027037117494,
         "index": 1,
         "text": [
           {
@@ -8548,7 +8548,7 @@
           "Revealed to the Bahá’ís of Canada",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -8582,7 +8582,7 @@
           "Revealed to the Bahá’ís of Canada",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -8825,7 +8825,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.008695652173913,
+    "score": 0.18605747817991153,
     "allType": false,
     "paragraphs": [
       {
@@ -8842,7 +8842,7 @@
           "#102",
           "para 1"
         ],
-        "score": 1.008695652173913,
+        "score": 0.18605747817991153,
         "index": 1,
         "text": [
           {
@@ -9067,7 +9067,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.539600717839002,
+    "score": 0.28398479397402776,
     "allType": false,
     "paragraphs": [
       {
@@ -9084,7 +9084,7 @@
           "#105",
           "para 1"
         ],
-        "score": 2.6666666666666665,
+        "score": 0.49187609173999597,
         "index": 1,
         "text": [
           {
@@ -9204,7 +9204,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 3.505340920079871,
+    "score": 0.6465725219944383,
     "allType": false,
     "paragraphs": [
       {
@@ -9221,7 +9221,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 1"
         ],
-        "score": 4.071428571428571,
+        "score": 0.7509893900673154,
         "index": 1,
         "text": [
           {
@@ -9267,7 +9267,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -9301,7 +9301,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -9845,7 +9845,7 @@
     "length": 708,
     "fullPath": [],
     "time": "●",
-    "score": 1.4238999566359245,
+    "score": 0.2327692882295554,
     "allType": false,
     "paragraphs": [
       {
@@ -9861,7 +9861,7 @@
           "#113",
           "para 1"
         ],
-        "score": 1.0136986301369864,
+        "score": 0.16571242067717368,
         "index": 1,
         "text": [
           {
@@ -9901,7 +9901,7 @@
           "#113",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 2,
         "text": [
           {
@@ -10055,7 +10055,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 13.547872340425531,
+    "score": 2.4989529368253387,
     "allType": false,
     "paragraphs": [
       {
@@ -10098,7 +10098,7 @@
           "#115",
           "para 1"
         ],
-        "score": 9.095744680851064,
+        "score": 1.6777422544057046,
         "index": 1,
         "text": [
           {
@@ -10148,7 +10148,7 @@
           "#115",
           "para 2"
         ],
-        "score": 9,
+        "score": 1.6600818096224865,
         "index": 2,
         "text": [
           {
@@ -10190,7 +10190,7 @@
           "#115",
           "para 3"
         ],
-        "score": 9,
+        "score": 1.6600818096224865,
         "index": 3,
         "text": [
           {
@@ -10241,7 +10241,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 0.5773502691896258,
+    "score": 0.09438121729838167,
     "allType": false,
     "paragraphs": [
       {
@@ -10320,7 +10320,7 @@
           "#116",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 3,
         "text": [
           {
@@ -10522,7 +10522,7 @@
     "length": 732,
     "fullPath": [],
     "time": "●",
-    "score": 2.5251798561151078,
+    "score": 0.4127988873236652,
     "allType": false,
     "paragraphs": [
       {
@@ -10538,7 +10538,7 @@
           "#119",
           "para 1"
         ],
-        "score": 2.5251798561151078,
+        "score": 0.4127988873236652,
         "index": 1,
         "text": [
           {
@@ -10600,7 +10600,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.4270700493037594,
+    "score": 0.23328751298999223,
     "allType": false,
     "paragraphs": [
       {
@@ -10617,7 +10617,7 @@
           "#120",
           "para 1"
         ],
-        "score": 1.018181818181818,
+        "score": 0.166445301161741,
         "index": 1,
         "text": [
           {
@@ -10658,7 +10658,7 @@
           "#120",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 2,
         "text": [
           {
@@ -10875,7 +10875,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.4238999566359245,
+    "score": 0.2327692882295554,
     "allType": false,
     "paragraphs": [
       {
@@ -10892,7 +10892,7 @@
           "#123",
           "para 1"
         ],
-        "score": 1.0136986301369864,
+        "score": 0.16571242067717368,
         "index": 1,
         "text": [
           {
@@ -10933,7 +10933,7 @@
           "#123",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 2,
         "text": [
           {
@@ -10977,7 +10977,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 7.323710894995962,
+    "score": 1.350884359524091,
     "allType": false,
     "paragraphs": [
       {
@@ -10993,7 +10993,7 @@
           "Bahá’í Prayers",
           "Revealed to the Bahá’ís of the Southern States"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "type": "info",
         "text": [
           {
@@ -11027,7 +11027,7 @@
           "Revealed to the Bahá’ís of the Southern States",
           "para 1"
         ],
-        "score": 7.68503937007874,
+        "score": 1.4175326738333742,
         "index": 1,
         "text": [
           {
@@ -11086,7 +11086,7 @@
           "Revealed to the Bahá’ís of the Southern States",
           "para 2"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "index": 2,
         "text": [
           {
@@ -11134,7 +11134,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 4.643111638535517,
+    "score": 0.8564383523532523,
     "allType": false,
     "paragraphs": [
       {
@@ -11177,7 +11177,7 @@
           "#125",
           "para 1"
         ],
-        "score": 4.042105263157895,
+        "score": 0.7455806022164151,
         "index": 1,
         "text": [
           {
@@ -11223,7 +11223,7 @@
           "#125",
           "para 2"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "index": 2,
         "text": [
           {
@@ -11474,7 +11474,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.4228368158021991,
+    "score": 0.2325954933403845,
     "allType": false,
     "paragraphs": [
       {
@@ -11491,7 +11491,7 @@
           "#129",
           "para 1"
         ],
-        "score": 1.0121951219512195,
+        "score": 0.16546663758783706,
         "index": 1,
         "text": [
           {
@@ -11532,7 +11532,7 @@
           "#129",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 2,
         "text": [
           {
@@ -11747,7 +11747,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 5.857142857142857,
+    "score": 0.9911501177457258,
     "allType": false,
     "paragraphs": [
       {
@@ -11764,7 +11764,7 @@
           "#132",
           "para 1"
         ],
-        "score": 5.857142857142857,
+        "score": 0.9911501177457258,
         "index": 1,
         "text": [
           {
@@ -12356,7 +12356,7 @@
     "length": 783,
     "fullPath": [],
     "time": "●",
-    "score": 1.008,
+    "score": 0.16478084815012362,
     "allType": false,
     "paragraphs": [
       {
@@ -12372,7 +12372,7 @@
           "#137",
           "para 1"
         ],
-        "score": 1.008,
+        "score": 0.16478084815012362,
         "index": 1,
         "text": [
           {
@@ -12679,7 +12679,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 3.024207952509781,
+    "score": 0.5117587433542296,
     "allType": false,
     "paragraphs": [
       {
@@ -12696,7 +12696,7 @@
           "#140",
           "para 1"
         ],
-        "score": 1.0129870129870129,
+        "score": 0.17141842391167764,
         "index": 1,
         "text": [
           {
@@ -12759,7 +12759,7 @@
           "#140",
           "para 2"
         ],
-        "score": 3.263888888888889,
+        "score": 0.5523177316028859,
         "index": 2,
         "text": [
           {
@@ -13278,7 +13278,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.5740740740740742,
+    "score": 0.2903435263743032,
     "allType": false,
     "paragraphs": [
       {
@@ -13295,7 +13295,7 @@
           "#143",
           "para 1"
         ],
-        "score": 3.1481481481481484,
+        "score": 0.5806870527486064,
         "index": 1,
         "text": [
           {
@@ -13439,7 +13439,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.0067114093959733,
+    "score": 0.17035646155393883,
     "allType": false,
     "paragraphs": [
       {
@@ -13456,7 +13456,7 @@
           "#144",
           "para 1"
         ],
-        "score": 1.0067114093959733,
+        "score": 0.17035646155393883,
         "index": 1,
         "text": [
           {
@@ -13642,7 +13642,7 @@
       "Additional"
     ],
     "time": "●",
-    "score": 1.4310494381156318,
+    "score": 0.26396212676513786,
     "allType": false,
     "paragraphs": [
       {
@@ -13658,7 +13658,7 @@
           "#146",
           "para 1"
         ],
-        "score": 1.0238095238095237,
+        "score": 0.1888452852216056,
         "index": 1,
         "text": [
           {
@@ -13698,7 +13698,7 @@
           "#146",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -13740,7 +13740,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 2.820272557153181,
+    "score": 0.5202092411452767,
     "allType": false,
     "paragraphs": [
       {
@@ -13757,7 +13757,7 @@
           "#147",
           "para 1"
         ],
-        "score": 1.024390243902439,
+        "score": 0.1889524010952424,
         "index": 1,
         "text": [
           {
@@ -13798,7 +13798,7 @@
           "#147",
           "para 2"
         ],
-        "score": 2.86046511627907,
+        "score": 0.5276229007327283,
         "index": 2,
         "text": [
           {
@@ -13844,7 +13844,7 @@
           "#147",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -13886,7 +13886,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.510204081632653,
+    "score": 0.27856248052622223,
     "allType": false,
     "paragraphs": [
       {
@@ -13903,7 +13903,7 @@
           "#148",
           "para 1"
         ],
-        "score": 1.510204081632653,
+        "score": 0.27856248052622223,
         "index": 1,
         "text": [
           {
@@ -14090,7 +14090,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 0.5858407143247674,
+    "score": 0.10806039035408778,
     "allType": false,
     "paragraphs": [
       {
@@ -14133,7 +14133,7 @@
           "Revealed to the Bahá’ís of the Western States",
           "para 1"
         ],
-        "score": 1.0147058823529411,
+        "score": 0.18716608637900584,
         "index": 1,
         "text": [
           {
@@ -14211,7 +14211,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.0064935064935066,
+    "score": 0.17031958786096177,
     "allType": false,
     "paragraphs": [
       {
@@ -14228,7 +14228,7 @@
           "#151",
           "para 1"
         ],
-        "score": 1.0064935064935066,
+        "score": 0.17031958786096177,
         "index": 1,
         "text": [
           {
@@ -14278,7 +14278,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.0121951219512195,
+    "score": 0.1712844195152489,
     "allType": false,
     "paragraphs": [
       {
@@ -14295,7 +14295,7 @@
           "#152",
           "para 1"
         ],
-        "score": 1.0121951219512195,
+        "score": 0.1712844195152489,
         "index": 1,
         "text": [
           {
@@ -14355,7 +14355,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 2.2441991337816067,
+    "score": 0.41395046212904296,
     "allType": false,
     "paragraphs": [
       {
@@ -14371,7 +14371,7 @@
           "Bahá’í Prayers",
           "Revealed to the Bahá’ís of Canada"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "type": "info",
         "text": [
           {
@@ -14405,7 +14405,7 @@
           "Revealed to the Bahá’ís of Canada",
           "para 1"
         ],
-        "score": 1.018181818181818,
+        "score": 0.18780723502799845,
         "index": 1,
         "text": [
           {
@@ -14447,7 +14447,7 @@
           "Revealed to the Bahá’ís of Canada",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -14481,7 +14481,7 @@
           "Revealed to the Bahá’ís of Canada",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -14515,7 +14515,7 @@
           "Revealed to the Bahá’ís of Canada",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 4,
         "text": [
           {
@@ -14558,7 +14558,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 3.55633116420293,
+    "score": 0.6559778527429827,
     "allType": false,
     "paragraphs": [
       {
@@ -14575,7 +14575,7 @@
           "#154",
           "para 1"
         ],
-        "score": 4.029411764705882,
+        "score": 0.7432392415630087,
         "index": 1,
         "text": [
           {
@@ -14621,7 +14621,7 @@
           "#154",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -14664,7 +14664,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 2.4857523000173245,
+    "score": 0.4585057973873354,
     "allType": false,
     "paragraphs": [
       {
@@ -14681,7 +14681,7 @@
           "#155",
           "para 1"
         ],
-        "score": 2.5153846153846153,
+        "score": 0.4639715826893616,
         "index": 1,
         "text": [
           {
@@ -14736,7 +14736,7 @@
           "#155",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -15034,7 +15034,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 2.3094010767585034,
+    "score": 0.4259771909610417,
     "allType": false,
     "paragraphs": [
       {
@@ -15086,7 +15086,7 @@
           "#158",
           "para 2"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "index": 2,
         "text": [
           {
@@ -16545,7 +16545,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 2.0108695652173916,
+    "score": 0.37091199852676326,
     "allType": false,
     "paragraphs": [
       {
@@ -16562,7 +16562,7 @@
           "#172",
           "para 1"
         ],
-        "score": 1.0217391304347827,
+        "score": 0.1884633938460311,
         "index": 1,
         "text": [
           {
@@ -16604,7 +16604,7 @@
           "#172",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -16638,7 +16638,7 @@
           "#172",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -16672,7 +16672,7 @@
           "#172",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 4,
         "text": [
           {
@@ -16800,7 +16800,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.737299446379692,
+    "score": 0.3204510232002382,
     "allType": false,
     "paragraphs": [
       {
@@ -16817,7 +16817,7 @@
           "#174",
           "para 1"
         ],
-        "score": 1.009090909090909,
+        "score": 0.18613038471524848,
         "index": 1,
         "text": [
           {
@@ -16859,7 +16859,7 @@
           "#174",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -16893,7 +16893,7 @@
           "#174",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -17218,7 +17218,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.7401825015011256,
+    "score": 0.32098281290726377,
     "allType": false,
     "paragraphs": [
       {
@@ -17235,7 +17235,7 @@
           "#178",
           "para 1"
         ],
-        "score": 1.0140845070422535,
+        "score": 0.18705147150675905,
         "index": 1,
         "text": [
           {
@@ -17277,7 +17277,7 @@
           "#178",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -17311,7 +17311,7 @@
           "#178",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -17434,7 +17434,7 @@
     "length": 967,
     "fullPath": [],
     "time": "●",
-    "score": 1.4193749257394204,
+    "score": 0.2320295675658337,
     "allType": false,
     "paragraphs": [
       {
@@ -17450,7 +17450,7 @@
           "#180",
           "para 1"
         ],
-        "score": 1.0072992700729928,
+        "score": 0.1646662976821708,
         "index": 1,
         "text": [
           {
@@ -17490,7 +17490,7 @@
           "#180",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 2,
         "text": [
           {
@@ -17532,7 +17532,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.1941176470588235,
+    "score": 0.22025922049239527,
     "allType": false,
     "paragraphs": [
       {
@@ -17549,7 +17549,7 @@
           "#181",
           "para 1"
         ],
-        "score": 1.1941176470588235,
+        "score": 0.22025922049239527,
         "index": 1,
         "text": [
           {
@@ -17703,7 +17703,7 @@
       "Additional"
     ],
     "time": "●",
-    "score": 1.0056497175141244,
+    "score": 0.17017680125550153,
     "allType": false,
     "paragraphs": [
       {
@@ -17719,7 +17719,7 @@
           "#183",
           "para 1"
         ],
-        "score": 1.0056497175141244,
+        "score": 0.17017680125550153,
         "index": 1,
         "text": [
           {
@@ -18059,7 +18059,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 4.190107156525067,
+    "score": 0.7728800745462516,
     "allType": false,
     "paragraphs": [
       {
@@ -18075,7 +18075,7 @@
           "Bahá’í Prayers",
           "Revealed to the Bahá’ís of the Central States"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "type": "info",
         "text": [
           {
@@ -18109,7 +18109,7 @@
           "Revealed to the Bahá’ís of the Central States",
           "para 1"
         ],
-        "score": 4.059701492537314,
+        "score": 0.7488262889176059,
         "index": 1,
         "text": [
           {
@@ -18156,7 +18156,7 @@
           "Revealed to the Bahá’ís of the Central States",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -18190,7 +18190,7 @@
           "Revealed to the Bahá’ís of the Central States",
           "para 3"
         ],
-        "score": 2.3205128205128207,
+        "score": 0.4280267913699004,
         "index": 3,
         "text": [
           {
@@ -18670,7 +18670,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 4.104533893918787,
+    "score": 0.7570957838081701,
     "allType": false,
     "paragraphs": [
       {
@@ -18687,7 +18687,7 @@
           "#192",
           "para 1"
         ],
-        "score": 4.8046875,
+        "score": 0.8862415910745045,
         "index": 1,
         "text": [
           {
@@ -18753,7 +18753,7 @@
           "#192",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -18795,7 +18795,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 0.26263966158357477,
+    "score": 0.04293451011270128,
     "allType": false,
     "paragraphs": [
       {
@@ -18812,7 +18812,7 @@
           "#193",
           "para 1"
         ],
-        "score": 0.37142857142857144,
+        "score": 0.06071856649522696,
         "index": 1,
         "text": [
           {
@@ -19294,7 +19294,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 2.852396846142344,
+    "score": 0.4826847387653817,
     "allType": false,
     "paragraphs": [
       {
@@ -19311,7 +19311,7 @@
           "#198",
           "para 1"
         ],
-        "score": 4.033898305084746,
+        "score": 0.6826193039125172,
         "index": 1,
         "text": [
           {
@@ -19481,7 +19481,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.7389240250592302,
+    "score": 0.2942620308614218,
     "allType": false,
     "paragraphs": [
       {
@@ -19498,7 +19498,7 @@
           "#200",
           "para 1"
         ],
-        "score": 1.0119047619047619,
+        "score": 0.17123528456989165,
         "index": 1,
         "text": [
           {
@@ -19539,7 +19539,7 @@
           "#200",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 2,
         "text": [
           {
@@ -19572,7 +19572,7 @@
           "#200",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 3,
         "text": [
           {
@@ -19614,7 +19614,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.739267685933748,
+    "score": 0.32081407194253453,
     "allType": false,
     "paragraphs": [
       {
@@ -19631,7 +19631,7 @@
           "#201",
           "para 1"
         ],
-        "score": 1.0125,
+        "score": 0.18675920358252973,
         "index": 1,
         "text": [
           {
@@ -19673,7 +19673,7 @@
           "#201",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -19707,7 +19707,7 @@
           "#201",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -19750,7 +19750,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.4199623979924976,
+    "score": 0.2619170830283635,
     "allType": false,
     "paragraphs": [
       {
@@ -19767,7 +19767,7 @@
           "#202",
           "para 1"
         ],
-        "score": 1.008130081300813,
+        "score": 0.1859531566334131,
         "index": 1,
         "text": [
           {
@@ -19809,7 +19809,7 @@
           "#202",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -19852,7 +19852,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.739267685933748,
+    "score": 0.32081407194253453,
     "allType": false,
     "paragraphs": [
       {
@@ -19869,7 +19869,7 @@
           "#203",
           "para 1"
         ],
-        "score": 1.0125,
+        "score": 0.18675920358252973,
         "index": 1,
         "text": [
           {
@@ -19911,7 +19911,7 @@
           "#203",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -19945,7 +19945,7 @@
           "#203",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -20100,7 +20100,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 2.685519239245698,
+    "score": 0.4953535153847779,
     "allType": false,
     "paragraphs": [
       {
@@ -20117,7 +20117,7 @@
           "#205",
           "para 1"
         ],
-        "score": 1.013157894736842,
+        "score": 0.18688055459200506,
         "index": 1,
         "text": [
           {
@@ -20158,7 +20158,7 @@
           "#205",
           "para 2"
         ],
-        "score": 2.6382978723404253,
+        "score": 0.48664336735978325,
         "index": 2,
         "text": [
           {
@@ -20203,7 +20203,7 @@
           "#205",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -20245,7 +20245,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 2.005813953488372,
+    "score": 0.36997947307477896,
     "allType": false,
     "paragraphs": [
       {
@@ -20262,7 +20262,7 @@
           "#206",
           "para 1"
         ],
-        "score": 1.0116279069767442,
+        "score": 0.18659834294206246,
         "index": 1,
         "text": [
           {
@@ -20304,7 +20304,7 @@
           "#206",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -20338,7 +20338,7 @@
           "#206",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -20372,7 +20372,7 @@
           "#206",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 4,
         "text": [
           {
@@ -20415,7 +20415,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.461139896373057,
+    "score": 0.2695124181425108,
     "allType": false,
     "paragraphs": [
       {
@@ -20432,7 +20432,7 @@
           "#207",
           "para 1"
         ],
-        "score": 1.461139896373057,
+        "score": 0.2695124181425108,
         "index": 1,
         "text": [
           {
@@ -20721,7 +20721,7 @@
       "Prayers and Meditations"
     ],
     "time": "●",
-    "score": 1.4236416527889157,
+    "score": 0.24090971079332132,
     "allType": false,
     "paragraphs": [
       {
@@ -20738,7 +20738,7 @@
           "#210",
           "para 1"
         ],
-        "score": 1.0133333333333334,
+        "score": 0.17147702850104918,
         "index": 1,
         "text": [
           {
@@ -20781,7 +20781,7 @@
           "#210",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 2,
         "text": [
           {
@@ -21136,7 +21136,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 2.239733662708806,
+    "score": 0.41312679020689264,
     "allType": false,
     "paragraphs": [
       {
@@ -21152,7 +21152,7 @@
           "Bahá’í Prayers",
           "Revealed to the Bahá’ís of the United States and Canada"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "type": "info",
         "text": [
           {
@@ -21186,7 +21186,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 1"
         ],
-        "score": 1.0081967213114753,
+        "score": 0.1859654486189124,
         "index": 1,
         "text": [
           {
@@ -21228,7 +21228,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -21262,7 +21262,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -21296,7 +21296,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 4,
         "text": [
           {
@@ -21854,7 +21854,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 0.4000537298321816,
+    "score": 0.06769739292669477,
     "allType": false,
     "paragraphs": [
       {
@@ -21871,7 +21871,7 @@
           "#220",
           "para 1"
         ],
-        "score": 0.6929133858267716,
+        "score": 0.11725532408898927,
         "index": 1,
         "text": [
           {
@@ -22249,7 +22249,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 2.007936507936508,
+    "score": 0.32824353254898336,
     "allType": false,
     "paragraphs": [
       {
@@ -22266,7 +22266,7 @@
           "#223",
           "para 1"
         ],
-        "score": 1.0158730158730158,
+        "score": 0.1660678741749797,
         "index": 1,
         "text": [
           {
@@ -22307,7 +22307,7 @@
           "#223",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 2,
         "text": [
           {
@@ -22340,7 +22340,7 @@
           "#223",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 3,
         "text": [
           {
@@ -22373,7 +22373,7 @@
           "#223",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 4,
         "text": [
           {
@@ -22639,7 +22639,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.7407985389202354,
+    "score": 0.3210964431865428,
     "allType": false,
     "paragraphs": [
       {
@@ -22656,7 +22656,7 @@
           "#226",
           "para 1"
         ],
-        "score": 1.0151515151515151,
+        "score": 0.18724828492374848,
         "index": 1,
         "text": [
           {
@@ -22699,7 +22699,7 @@
           "#226",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -22734,7 +22734,7 @@
           "#226",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -22778,7 +22778,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 2.2234858581290946,
+    "score": 0.3762599485520551,
     "allType": false,
     "paragraphs": [
       {
@@ -22795,7 +22795,7 @@
           "#227",
           "para 1"
         ],
-        "score": 1.0178571428571428,
+        "score": 0.17224255094971455,
         "index": 1,
         "text": [
           {
@@ -22837,7 +22837,7 @@
           "#227",
           "para 2"
         ],
-        "score": 1.8333333333333333,
+        "score": 0.31023804498545077,
         "index": 2,
         "text": [
           {
@@ -22884,7 +22884,7 @@
           "#227",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 3,
         "text": [
           {
@@ -23231,7 +23231,7 @@
     "length": 1145,
     "fullPath": [],
     "time": "●",
-    "score": 1.7418364053517523,
+    "score": 0.2847433335442701,
     "allType": false,
     "paragraphs": [
       {
@@ -23247,7 +23247,7 @@
           "#231",
           "para 1"
         ],
-        "score": 1.0169491525423728,
+        "score": 0.1662437935332159,
         "index": 1,
         "text": [
           {
@@ -23287,7 +23287,7 @@
           "#231",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 2,
         "text": [
           {
@@ -23319,7 +23319,7 @@
           "#231",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 3,
         "text": [
           {
@@ -23724,7 +23724,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 0.2006191830280185,
+    "score": 0.037004917378459755,
     "allType": false,
     "paragraphs": [
       {
@@ -23767,7 +23767,7 @@
           "#235",
           "para 1"
         ],
-        "score": 0.4485981308411215,
+        "score": 0.08274551075999934,
         "index": 1,
         "text": [
           {
@@ -23906,7 +23906,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 13.469021229175203,
+    "score": 2.4844085706636507,
     "allType": false,
     "paragraphs": [
       {
@@ -23923,7 +23923,7 @@
           "#236",
           "para 1"
         ],
-        "score": 4.117647058823529,
+        "score": 0.7595145534220527,
         "index": 1,
         "text": [
           {
@@ -23970,7 +23970,7 @@
           "#236",
           "para 2"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "index": 2,
         "text": [
           {
@@ -24009,7 +24009,7 @@
           "#236",
           "para 3"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "index": 3,
         "text": [
           {
@@ -24048,7 +24048,7 @@
           "#236",
           "para 4"
         ],
-        "score": 9,
+        "score": 1.6600818096224865,
         "index": 4,
         "text": [
           {
@@ -24091,7 +24091,7 @@
           "#236",
           "para 5"
         ],
-        "score": 9,
+        "score": 1.6600818096224865,
         "index": 5,
         "text": [
           {
@@ -24258,7 +24258,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 0.2110742919617987,
+    "score": 0.03571815037359091,
     "allType": false,
     "paragraphs": [
       {
@@ -24310,7 +24310,7 @@
           "#238",
           "para 2"
         ],
-        "score": 0.3655913978494624,
+        "score": 0.06186565119944473,
         "index": 2,
         "text": [
           {
@@ -24526,7 +24526,7 @@
       "Prayers and Meditations"
     ],
     "time": "●",
-    "score": 0.5,
+    "score": 0.08461037590512294,
     "allType": false,
     "paragraphs": [
       {
@@ -24605,7 +24605,7 @@
           "#240",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 3,
         "text": [
           {
@@ -24871,7 +24871,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 0.3539325842696629,
+    "score": 0.05989273800025556,
     "allType": false,
     "paragraphs": [
       {
@@ -24888,7 +24888,7 @@
           "#243",
           "para 1"
         ],
-        "score": 0.7078651685393258,
+        "score": 0.11978547600051112,
         "index": 1,
         "text": [
           {
@@ -25785,7 +25785,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.4181202296724684,
+    "score": 0.23997537142249362,
     "allType": false,
     "paragraphs": [
       {
@@ -25802,7 +25802,7 @@
           "#249",
           "para 1"
         ],
-        "score": 1.0055248618784531,
+        "score": 0.1701556730909655,
         "index": 1,
         "text": [
           {
@@ -25844,7 +25844,7 @@
           "#249",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 2,
         "text": [
           {
@@ -25887,7 +25887,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 5.037037037037037,
+    "score": 0.9290992843977702,
     "allType": false,
     "paragraphs": [
       {
@@ -25904,7 +25904,7 @@
           "#250",
           "para 1"
         ],
-        "score": 4.074074074074074,
+        "score": 0.7514773623805495,
         "index": 1,
         "text": [
           {
@@ -25951,7 +25951,7 @@
           "#250",
           "para 2"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "index": 2,
         "text": [
           {
@@ -25990,7 +25990,7 @@
           "#250",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -26025,7 +26025,7 @@
           "#250",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 4,
         "text": [
           {
@@ -26323,7 +26323,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.418865580670375,
+    "score": 0.2401015002787219,
     "allType": false,
     "paragraphs": [
       {
@@ -26340,7 +26340,7 @@
           "#253",
           "para 1"
         ],
-        "score": 1.006578947368421,
+        "score": 0.17033404623005013,
         "index": 1,
         "text": [
           {
@@ -26381,7 +26381,7 @@
           "#253",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 2,
         "text": [
           {
@@ -26820,7 +26820,7 @@
       "Additional"
     ],
     "time": "●",
-    "score": 2.347871376374779,
+    "score": 0.4330731736947868,
     "allType": false,
     "paragraphs": [
       {
@@ -26836,7 +26836,7 @@
           "#258",
           "para 1"
         ],
-        "score": 1.25,
+        "score": 0.23056691800312312,
         "index": 1,
         "text": [
           {
@@ -26876,7 +26876,7 @@
           "#258",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -26908,7 +26908,7 @@
           "#258",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -26940,7 +26940,7 @@
           "#258",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 4,
         "text": [
           {
@@ -26972,7 +26972,7 @@
           "#258",
           "para 5"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 5,
         "text": [
           {
@@ -27552,7 +27552,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 3.5238095238095237,
+    "score": 0.5760479385444609,
     "allType": false,
     "paragraphs": [
       {
@@ -27569,7 +27569,7 @@
           "#263",
           "para 1"
         ],
-        "score": 1.0476190476190477,
+        "score": 0.17125749524294784,
         "index": 1,
         "text": [
           {
@@ -27610,7 +27610,7 @@
           "#263",
           "para 2"
         ],
-        "score": 4,
+        "score": 0.6538922545639826,
         "index": 2,
         "text": [
           {
@@ -27647,7 +27647,7 @@
           "#263",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 3,
         "text": [
           {
@@ -27680,7 +27680,7 @@
           "#263",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 4,
         "text": [
           {
@@ -27722,7 +27722,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 9.198380585774157,
+    "score": 1.6966738098253675,
     "allType": false,
     "paragraphs": [
       {
@@ -27739,7 +27739,7 @@
           "#264",
           "para 1"
         ],
-        "score": 1.0169491525423728,
+        "score": 0.18757986549406627,
         "index": 1,
         "text": [
           {
@@ -27782,7 +27782,7 @@
           "#264",
           "para 2"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "index": 2,
         "text": [
           {
@@ -27821,7 +27821,7 @@
           "#264",
           "para 3"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "index": 3,
         "text": [
           {
@@ -27860,7 +27860,7 @@
           "#264",
           "para 4"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "index": 4,
         "text": [
           {
@@ -27899,7 +27899,7 @@
           "#264",
           "para 5"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "index": 5,
         "text": [
           {
@@ -27938,7 +27938,7 @@
           "#264",
           "para 6"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "index": 6,
         "text": [
           {
@@ -27977,7 +27977,7 @@
           "#264",
           "para 7"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "index": 7,
         "text": [
           {
@@ -28016,7 +28016,7 @@
           "#264",
           "para 8"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 8,
         "text": [
           {
@@ -28538,7 +28538,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.7368620598121243,
+    "score": 0.28393016203929816,
     "allType": false,
     "paragraphs": [
       {
@@ -28555,7 +28555,7 @@
           "#269",
           "para 1"
         ],
-        "score": 1.0083333333333333,
+        "score": 0.16483533917133728,
         "index": 1,
         "text": [
           {
@@ -28596,7 +28596,7 @@
           "#269",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 2,
         "text": [
           {
@@ -28629,7 +28629,7 @@
           "#269",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 3,
         "text": [
           {
@@ -28671,7 +28671,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 15.511146012877507,
+    "score": 2.861085704708479,
     "allType": false,
     "paragraphs": [
       {
@@ -28687,7 +28687,7 @@
           "Bahá’í Prayers",
           "#270"
         ],
-        "score": 9,
+        "score": 1.6600818096224865,
         "type": "info",
         "text": [
           {
@@ -28730,7 +28730,7 @@
           "#270",
           "para 1"
         ],
-        "score": 12.93607305936073,
+        "score": 2.3861043970880287,
         "index": 1,
         "text": [
           {
@@ -28830,7 +28830,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 0.2604166666666667,
+    "score": 0.04406790411725153,
     "allType": false,
     "paragraphs": [
       {
@@ -28847,7 +28847,7 @@
           "#271",
           "para 1"
         ],
-        "score": 0.5208333333333334,
+        "score": 0.08813580823450307,
         "index": 1,
         "text": [
           {
@@ -28986,7 +28986,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.7399597153659956,
+    "score": 0.2944372911537752,
     "allType": false,
     "paragraphs": [
       {
@@ -29003,7 +29003,7 @@
           "#272",
           "para 1"
         ],
-        "score": 1.0136986301369864,
+        "score": 0.17153884430079722,
         "index": 1,
         "text": [
           {
@@ -29044,7 +29044,7 @@
           "#272",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 2,
         "text": [
           {
@@ -29077,7 +29077,7 @@
           "#272",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 3,
         "text": [
           {
@@ -30668,7 +30668,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 0.305656024865096,
+    "score": 0.051723342323002755,
     "allType": false,
     "paragraphs": [
       {
@@ -30720,7 +30720,7 @@
           "#286",
           "para 2"
         ],
-        "score": 0.5294117647058824,
+        "score": 0.08958745684071841,
         "index": 2,
         "text": [
           {
@@ -30805,7 +30805,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.7377111043256384,
+    "score": 0.32052695496333283,
     "allType": false,
     "paragraphs": [
       {
@@ -30822,7 +30822,7 @@
           "#287",
           "para 1"
         ],
-        "score": 1.0098039215686274,
+        "score": 0.18626190238683674,
         "index": 1,
         "text": [
           {
@@ -30863,7 +30863,7 @@
           "#287",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -30896,7 +30896,7 @@
           "#287",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -31650,7 +31650,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 2.849105812220566,
+    "score": 0.4657520557610632,
     "allType": false,
     "paragraphs": [
       {
@@ -31667,7 +31667,7 @@
           "#294",
           "para 1"
         ],
-        "score": 1.0163934426229508,
+        "score": 0.1661529499301923,
         "index": 1,
         "text": [
           {
@@ -31708,7 +31708,7 @@
           "#294",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 2,
         "text": [
           {
@@ -31741,7 +31741,7 @@
           "#294",
           "para 3"
         ],
-        "score": 2.6818181818181817,
+        "score": 0.4384050343099428,
         "index": 3,
         "text": [
           {
@@ -31794,7 +31794,7 @@
           "#294",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 4,
         "text": [
           {
@@ -32002,7 +32002,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 0.8066630747126438,
+    "score": 0.13650413196043812,
     "allType": false,
     "paragraphs": [
       {
@@ -32019,7 +32019,7 @@
           "#296",
           "para 1"
         ],
-        "score": 1.015625,
+        "score": 0.17186482605728098,
         "index": 1,
         "text": [
           {
@@ -32115,7 +32115,7 @@
           "#296",
           "para 4"
         ],
-        "score": 0.5977011494252874,
+        "score": 0.10114343786359525,
         "index": 4,
         "text": [
           {
@@ -32277,7 +32277,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 0.69937883822276,
+    "score": 0.1183494128042318,
     "allType": false,
     "paragraphs": [
       {
@@ -32294,7 +32294,7 @@
           "#298",
           "para 1"
         ],
-        "score": 0.9890710382513661,
+        "score": 0.16737134468663664,
         "index": 1,
         "text": [
           {
@@ -32780,7 +32780,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 2.0217391304347827,
+    "score": 0.33049988953505643,
     "allType": false,
     "paragraphs": [
       {
@@ -32797,7 +32797,7 @@
           "#302",
           "para 1"
         ],
-        "score": 1.0434782608695652,
+        "score": 0.17058058814712587,
         "index": 1,
         "text": [
           {
@@ -32838,7 +32838,7 @@
           "#302",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 2,
         "text": [
           {
@@ -32871,7 +32871,7 @@
           "#302",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 3,
         "text": [
           {
@@ -32904,7 +32904,7 @@
           "#302",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 4,
         "text": [
           {
@@ -33082,7 +33082,7 @@
       "Prayers and Meditations"
     ],
     "time": "●",
-    "score": 0.18624202231923412,
+    "score": 0.03151601503552139,
     "allType": false,
     "paragraphs": [
       {
@@ -33134,7 +33134,7 @@
           "#304",
           "para 2"
         ],
-        "score": 0.3225806451612903,
+        "score": 0.054587339293627704,
         "index": 2,
         "text": [
           {
@@ -33465,7 +33465,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 0.4472135954999579,
+    "score": 0.07567782085026607,
     "allType": false,
     "paragraphs": [
       {
@@ -33571,7 +33571,7 @@
           "#307",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 4,
         "text": [
           {
@@ -33643,7 +33643,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 2.354592051663484,
+    "score": 0.43431282600536003,
     "allType": false,
     "paragraphs": [
       {
@@ -33659,7 +33659,7 @@
           "Bahá’í Prayers",
           "Revealed to the Bahá’ís of the Northeastern States"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "type": "info",
         "text": [
           {
@@ -33693,7 +33693,7 @@
           "Revealed to the Bahá’ís of the Northeastern States",
           "para 1"
         ],
-        "score": 1.0097087378640777,
+        "score": 0.186244345416115,
         "index": 1,
         "text": [
           {
@@ -33762,7 +33762,7 @@
           "Revealed to the Bahá’ís of the Northeastern States",
           "para 3"
         ],
-        "score": 2.25531914893617,
+        "score": 0.4160015882269115,
         "index": 3,
         "text": [
           {
@@ -33840,7 +33840,7 @@
           "Revealed to the Bahá’ís of the Northeastern States",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 4,
         "text": [
           {
@@ -33883,7 +33883,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 5.003787878787879,
+    "score": 0.922966359642805,
     "allType": false,
     "paragraphs": [
       {
@@ -33900,7 +33900,7 @@
           "#309",
           "para 1"
         ],
-        "score": 1.0075757575757576,
+        "score": 0.1858509096631235,
         "index": 1,
         "text": [
           {
@@ -33942,7 +33942,7 @@
           "#309",
           "para 2"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "index": 2,
         "text": [
           {
@@ -33980,7 +33980,7 @@
           "#309",
           "para 3"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "index": 3,
         "text": [
           {
@@ -34018,7 +34018,7 @@
           "#309",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 4,
         "text": [
           {
@@ -34230,7 +34230,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 3.2381270903010035,
+    "score": 0.5972839866504985,
     "allType": false,
     "paragraphs": [
       {
@@ -34247,7 +34247,7 @@
           "#311",
           "para 1"
         ],
-        "score": 1.0153846153846153,
+        "score": 0.18729128108561385,
         "index": 1,
         "text": [
           {
@@ -34289,7 +34289,7 @@
           "#311",
           "para 2"
         ],
-        "score": 3.4608695652173913,
+        "score": 0.6383696234103862,
         "index": 2,
         "text": [
           {
@@ -34335,7 +34335,7 @@
           "#311",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -34369,7 +34369,7 @@
           "#311",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 4,
         "text": [
           {
@@ -34666,7 +34666,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.7356819413373654,
+    "score": 0.32015266867826714,
     "allType": false,
     "paragraphs": [
       {
@@ -34683,7 +34683,7 @@
           "#314",
           "para 1"
         ],
-        "score": 1.0062893081761006,
+        "score": 0.1856136195245268,
         "index": 1,
         "text": [
           {
@@ -34725,7 +34725,7 @@
           "#314",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -34759,7 +34759,7 @@
           "#314",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -35031,7 +35031,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 3.6847025190584564,
+    "score": 0.6796564028621218,
     "allType": false,
     "paragraphs": [
       {
@@ -35047,7 +35047,7 @@
           "Bahá’í Prayers",
           "Revealed to the Bahá’ís of the United States and Canada"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "type": "info",
         "text": [
           {
@@ -35081,7 +35081,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 1"
         ],
-        "score": 1.0256410256410255,
+        "score": 0.18918311220769077,
         "index": 1,
         "text": [
           {
@@ -35123,7 +35123,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 2"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "index": 2,
         "text": [
           {
@@ -35161,7 +35161,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -35195,7 +35195,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 4,
         "text": [
           {
@@ -35229,7 +35229,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 5"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 5,
         "text": [
           {
@@ -35716,7 +35716,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 11.120358988504064,
+    "score": 2.0511895192541676,
     "allType": false,
     "paragraphs": [
       {
@@ -35758,7 +35758,7 @@
           "Bahá’í Prayers",
           "#321"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "type": "info",
         "text": [
           {
@@ -35796,7 +35796,7 @@
           "#321",
           "para 1"
         ],
-        "score": 5,
+        "score": 0.9222676720124925,
         "index": 1,
         "text": [
           {
@@ -35842,7 +35842,7 @@
           "#321",
           "para 2"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "index": 2,
         "text": [
           {
@@ -35880,7 +35880,7 @@
           "#321",
           "para 3"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "index": 3,
         "text": [
           {
@@ -35918,7 +35918,7 @@
           "#321",
           "para 4"
         ],
-        "score": 6.453125,
+        "score": 1.1903017141911232,
         "index": 4,
         "text": [
           {
@@ -35968,7 +35968,7 @@
           "#321",
           "para 5"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "index": 5,
         "text": [
           {
@@ -36006,7 +36006,7 @@
           "#321",
           "para 6"
         ],
-        "score": 4,
+        "score": 0.737814137609994,
         "index": 6,
         "text": [
           {
@@ -36165,7 +36165,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 2.5559663437021927,
+    "score": 0.41783164876827156,
     "allType": false,
     "paragraphs": [
       {
@@ -36182,7 +36182,7 @@
           "#323",
           "para 1"
         ],
-        "score": 1.027027027027027,
+        "score": 0.16789125455021173,
         "index": 1,
         "text": [
           {
@@ -36223,7 +36223,7 @@
           "#323",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 2,
         "text": [
           {
@@ -36256,7 +36256,7 @@
           "#323",
           "para 3"
         ],
-        "score": 2.0849056603773586,
+        "score": 0.34082591570434,
         "index": 3,
         "text": [
           {
@@ -36301,7 +36301,7 @@
           "#323",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 4,
         "text": [
           {
@@ -36343,7 +36343,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.8405076027056548,
+    "score": 0.3008734164688378,
     "allType": false,
     "paragraphs": [
       {
@@ -36360,7 +36360,7 @@
           "#324",
           "para 1"
         ],
-        "score": 1.6028708133971292,
+        "score": 0.26202620248676334,
         "index": 1,
         "text": [
           {
@@ -36421,7 +36421,7 @@
           "#324",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 2,
         "text": [
           {
@@ -36910,7 +36910,7 @@
     "length": 1610,
     "fullPath": [],
     "time": "●",
-    "score": 1.7367447121964352,
+    "score": 0.28391097886505057,
     "allType": false,
     "paragraphs": [
       {
@@ -36926,7 +36926,7 @@
           "#329",
           "para 1"
         ],
-        "score": 1.008130081300813,
+        "score": 0.1648021129388899,
         "index": 1,
         "text": [
           {
@@ -36966,7 +36966,7 @@
           "#329",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 2,
         "text": [
           {
@@ -36998,7 +36998,7 @@
           "#329",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 3,
         "text": [
           {
@@ -37822,7 +37822,7 @@
     "length": 1674,
     "fullPath": [],
     "time": "●",
-    "score": 1.7355928337602247,
+    "score": 0.2837226777681412,
     "allType": false,
     "paragraphs": [
       {
@@ -37838,7 +37838,7 @@
           "#336",
           "para 1"
         ],
-        "score": 1.0061349693251533,
+        "score": 0.16447596587192198,
         "index": 1,
         "text": [
           {
@@ -37878,7 +37878,7 @@
           "#336",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 2,
         "text": [
           {
@@ -37910,7 +37910,7 @@
           "#336",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 3,
         "text": [
           {
@@ -38789,7 +38789,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.7418364053517523,
+    "score": 0.2847433335442701,
     "allType": false,
     "paragraphs": [
       {
@@ -38806,7 +38806,7 @@
           "#343",
           "para 1"
         ],
-        "score": 1.0169491525423728,
+        "score": 0.1662437935332159,
         "index": 1,
         "text": [
           {
@@ -38847,7 +38847,7 @@
           "#343",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 2,
         "text": [
           {
@@ -38880,7 +38880,7 @@
           "#343",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 3,
         "text": [
           {
@@ -38922,7 +38922,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 2.512022840434525,
+    "score": 0.4633514914179516,
     "allType": false,
     "paragraphs": [
       {
@@ -38939,7 +38939,7 @@
           "#344",
           "para 1"
         ],
-        "score": 1.0126582278481013,
+        "score": 0.18678838926835292,
         "index": 1,
         "text": [
           {
@@ -38982,7 +38982,7 @@
           "#344",
           "para 2"
         ],
-        "score": 1.6043956043956045,
+        "score": 0.295936439810602,
         "index": 2,
         "text": [
           {
@@ -39030,7 +39030,7 @@
           "#344",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -39065,7 +39065,7 @@
           "#344",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 4,
         "text": [
           {
@@ -39100,7 +39100,7 @@
           "#344",
           "para 5"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 5,
         "text": [
           {
@@ -39144,7 +39144,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 2.735064199847111,
+    "score": 0.44710932400381564,
     "allType": false,
     "paragraphs": [
       {
@@ -39161,7 +39161,7 @@
           "#345",
           "para 1"
         ],
-        "score": 1.0222222222222221,
+        "score": 0.1671057983885733,
         "index": 1,
         "text": [
           {
@@ -39202,7 +39202,7 @@
           "#345",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 2,
         "text": [
           {
@@ -39235,7 +39235,7 @@
           "#345",
           "para 3"
         ],
-        "score": 2.0935672514619883,
+        "score": 0.34224185253494993,
         "index": 3,
         "text": [
           {
@@ -39281,7 +39281,7 @@
           "#345",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 4,
         "text": [
           {
@@ -39314,7 +39314,7 @@
           "#345",
           "para 5"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 5,
         "text": [
           {
@@ -39356,7 +39356,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 0.9503288904374105,
+    "score": 0.16081536930681542,
     "allType": false,
     "paragraphs": [
       {
@@ -39373,7 +39373,7 @@
           "#346",
           "para 1"
         ],
-        "score": 1.125,
+        "score": 0.19037334578652662,
         "index": 1,
         "text": [
           {
@@ -39415,7 +39415,7 @@
           "#346",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 2,
         "text": [
           {
@@ -40237,7 +40237,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 0.1828839303176599,
+    "score": 0.03373358733251262,
     "allType": false,
     "paragraphs": [
       {
@@ -40289,7 +40289,7 @@
           "#352",
           "para 2"
         ],
-        "score": 0.6065573770491803,
+        "score": 0.11188165201463024,
         "index": 2,
         "text": [
           {
@@ -40579,7 +40579,7 @@
       "Prayers and Meditations"
     ],
     "time": "●",
-    "score": 0.071735470555157,
+    "score": 0.012139130258805425,
     "allType": false,
     "paragraphs": [
       {
@@ -40596,7 +40596,7 @@
           "#353",
           "para 1"
         ],
-        "score": 0.10144927536231885,
+        "score": 0.01716732264741625,
         "index": 1,
         "text": [
           {
@@ -40827,7 +40827,7 @@
       "Prayers and Meditations"
     ],
     "time": "●",
-    "score": 0.4472135954999579,
+    "score": 0.07567782085026607,
     "allType": false,
     "paragraphs": [
       {
@@ -40933,7 +40933,7 @@
           "#355",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 4,
         "text": [
           {
@@ -41002,7 +41002,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.0031347962382444,
+    "score": 0.16398551838595174,
     "allType": false,
     "paragraphs": [
       {
@@ -41019,7 +41019,7 @@
           "#356",
           "para 1"
         ],
-        "score": 1.0031347962382444,
+        "score": 0.16398551838595174,
         "index": 1,
         "text": [
           {
@@ -41744,7 +41744,7 @@
     "length": 1953,
     "fullPath": [],
     "time": "●",
-    "score": 2.006172839506173,
+    "score": 0.32795522026742957,
     "allType": false,
     "paragraphs": [
       {
@@ -41760,7 +41760,7 @@
           "#360",
           "para 1"
         ],
-        "score": 1.0123456790123457,
+        "score": 0.16549124961187214,
         "index": 1,
         "text": [
           {
@@ -41800,7 +41800,7 @@
           "#360",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 2,
         "text": [
           {
@@ -41832,7 +41832,7 @@
           "#360",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 3,
         "text": [
           {
@@ -41864,7 +41864,7 @@
           "#360",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 4,
         "text": [
           {
@@ -41903,7 +41903,7 @@
       "Prayers and Meditations"
     ],
     "time": "●",
-    "score": 0.4703703703703704,
+    "score": 0.07959642770333789,
     "allType": false,
     "paragraphs": [
       {
@@ -41955,7 +41955,7 @@
           "#361",
           "para 2"
         ],
-        "score": 0.9407407407407408,
+        "score": 0.15919285540667577,
         "index": 2,
         "text": [
           {
@@ -42607,7 +42607,7 @@
     "length": 2051,
     "fullPath": [],
     "time": "●",
-    "score": 2.2408767258384987,
+    "score": 0.3663229836146229,
     "allType": false,
     "paragraphs": [
       {
@@ -42623,7 +42623,7 @@
           "#366",
           "para 1"
         ],
-        "score": 1.010752688172043,
+        "score": 0.1652308385188558,
         "index": 1,
         "text": [
           {
@@ -42663,7 +42663,7 @@
           "#366",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 2,
         "text": [
           {
@@ -42695,7 +42695,7 @@
           "#366",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 3,
         "text": [
           {
@@ -42727,7 +42727,7 @@
           "#366",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 4,
         "text": [
           {
@@ -42759,7 +42759,7 @@
           "#366",
           "para 5"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 5,
         "text": [
           {
@@ -43438,7 +43438,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 0.16666666666666666,
+    "score": 0.030742255733749748,
     "allType": false,
     "paragraphs": [
       {
@@ -43544,7 +43544,7 @@
           "#371",
           "para 4"
         ],
-        "score": 0.3333333333333333,
+        "score": 0.061484511467499496,
         "index": 4,
         "text": [
           {
@@ -43777,7 +43777,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 0.5,
+    "score": 0.08173653182049782,
     "allType": false,
     "paragraphs": [
       {
@@ -43829,7 +43829,7 @@
           "#373",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 2,
         "text": [
           {
@@ -44964,7 +44964,7 @@
       "Prayers and Meditations"
     ],
     "time": "●",
-    "score": 0.4169964606688797,
+    "score": 0.07056445457659945,
     "allType": false,
     "paragraphs": [
       {
@@ -45016,7 +45016,7 @@
           "#379",
           "para 2"
         ],
-        "score": 0.9324324324324325,
+        "score": 0.15778691722847252,
         "index": 2,
         "text": [
           {
@@ -45256,7 +45256,7 @@
       "Prayers and Meditations"
     ],
     "time": "●",
-    "score": 0.5030864197530864,
+    "score": 0.08513266217614222,
     "allType": false,
     "paragraphs": [
       {
@@ -45273,7 +45273,7 @@
           "#381",
           "para 1"
         ],
-        "score": 1.0061728395061729,
+        "score": 0.17026532435228445,
         "index": 1,
         "text": [
           {
@@ -45401,7 +45401,7 @@
       "Prayers and Meditations"
     ],
     "time": "●",
-    "score": 0.2581664202177712,
+    "score": 0.04368711572141111,
     "allType": false,
     "paragraphs": [
       {
@@ -45418,7 +45418,7 @@
           "#382",
           "para 1"
         ],
-        "score": 0.1907514450867052,
+        "score": 0.032279102946463085,
         "index": 1,
         "text": [
           {
@@ -45495,7 +45495,7 @@
           "#382",
           "para 3"
         ],
-        "score": 0.32558139534883723,
+        "score": 0.05509512849635913,
         "index": 3,
         "text": [
           {
@@ -45847,7 +45847,7 @@
       "Prayers and Meditations"
     ],
     "time": "●",
-    "score": 0.12203073899735037,
+    "score": 0.02065013339709152,
     "allType": false,
     "paragraphs": [
       {
@@ -45953,7 +45953,7 @@
           "#385",
           "para 4"
         ],
-        "score": 0.29891304347826086,
+        "score": 0.05058228994328002,
         "index": 4,
         "text": [
           {
@@ -46304,7 +46304,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 2.830916937356002,
+    "score": 0.4627786646627701,
     "allType": false,
     "paragraphs": [
       {
@@ -46321,7 +46321,7 @@
           "#387",
           "para 1"
         ],
-        "score": 1.0070422535211268,
+        "score": 0.16462428239903082,
         "index": 1,
         "text": [
           {
@@ -46362,7 +46362,7 @@
           "#387",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 2,
         "text": [
           {
@@ -46395,7 +46395,7 @@
           "#387",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 3,
         "text": [
           {
@@ -46428,7 +46428,7 @@
           "#387",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 4,
         "text": [
           {
@@ -46461,7 +46461,7 @@
           "#387",
           "para 5"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 5,
         "text": [
           {
@@ -46494,7 +46494,7 @@
           "#387",
           "para 6"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 6,
         "text": [
           {
@@ -46527,7 +46527,7 @@
           "#387",
           "para 7"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 7,
         "text": [
           {
@@ -46560,7 +46560,7 @@
           "#387",
           "para 8"
         ],
-        "score": 1,
+        "score": 0.16347306364099565,
         "index": 8,
         "text": [
           {
@@ -46933,7 +46933,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 1.79523093835912,
+    "score": 0.3037903290621435,
     "allType": false,
     "paragraphs": [
       {
@@ -46976,7 +46976,7 @@
           "#389",
           "para 1"
         ],
-        "score": 1.0135135135135136,
+        "score": 0.17150751872660058,
         "index": 1,
         "text": [
           {
@@ -47019,7 +47019,7 @@
           "#389",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 2,
         "text": [
           {
@@ -47054,7 +47054,7 @@
           "#389",
           "para 3"
         ],
-        "score": 2.3838862559241707,
+        "score": 0.4034030244576004,
         "index": 3,
         "text": [
           {
@@ -47496,7 +47496,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 2.8310854209160645,
+    "score": 0.5222037120833531,
     "allType": false,
     "paragraphs": [
       {
@@ -47513,7 +47513,7 @@
           "#392",
           "para 1"
         ],
-        "score": 1.0075187969924813,
+        "score": 0.18584040308221655,
         "index": 1,
         "text": [
           {
@@ -47555,7 +47555,7 @@
           "#392",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -47589,7 +47589,7 @@
           "#392",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -47623,7 +47623,7 @@
           "#392",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 4,
         "text": [
           {
@@ -47657,7 +47657,7 @@
           "#392",
           "para 5"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 5,
         "text": [
           {
@@ -47691,7 +47691,7 @@
           "#392",
           "para 6"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 6,
         "text": [
           {
@@ -47725,7 +47725,7 @@
           "#392",
           "para 7"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 7,
         "text": [
           {
@@ -47759,7 +47759,7 @@
           "#392",
           "para 8"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 8,
         "text": [
           {
@@ -48525,7 +48525,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 5.733077320604314,
+    "score": 1.0574863747882723,
     "allType": false,
     "paragraphs": [
       {
@@ -48542,7 +48542,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 1"
         ],
-        "score": 1.0178571428571428,
+        "score": 0.18774734751682884,
         "index": 1,
         "text": [
           {
@@ -48584,7 +48584,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 2,
         "text": [
           {
@@ -48618,7 +48618,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 3,
         "text": [
           {
@@ -48652,7 +48652,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 4,
         "text": [
           {
@@ -48686,7 +48686,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 5"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 5,
         "text": [
           {
@@ -48720,7 +48720,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 6"
         ],
-        "score": 8.842105263157896,
+        "score": 1.630957567348408,
         "index": 6,
         "text": [
           {
@@ -48770,7 +48770,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 7"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 7,
         "text": [
           {
@@ -48804,7 +48804,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 8"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 8,
         "text": [
           {
@@ -48838,7 +48838,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 9"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 9,
         "text": [
           {
@@ -48872,7 +48872,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 10"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 10,
         "text": [
           {
@@ -48906,7 +48906,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 11"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 11,
         "text": [
           {
@@ -48940,7 +48940,7 @@
           "Revealed to the Bahá’ís of the United States and Canada",
           "para 12"
         ],
-        "score": 1,
+        "score": 0.1844535344024985,
         "index": 12,
         "text": [
           {
@@ -49384,7 +49384,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 0.35355339059327373,
+    "score": 0.05982857056125529,
     "allType": false,
     "paragraphs": [
       {
@@ -49436,7 +49436,7 @@
           "#400",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 2,
         "text": [
           {
@@ -50049,7 +50049,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 0.4708895625456198,
+    "score": 0.07697775942590071,
     "allType": false,
     "paragraphs": [
       {
@@ -50101,7 +50101,7 @@
           "#404",
           "para 2"
         ],
-        "score": 0.5714285714285714,
+        "score": 0.09341317922342608,
         "index": 2,
         "text": [
           {
@@ -50155,7 +50155,7 @@
           "#404",
           "para 3"
         ],
-        "score": 0.582010582010582,
+        "score": 0.09514305291274879,
         "index": 3,
         "text": [
           {
@@ -50476,7 +50476,7 @@
       "Prayers and Meditations"
     ],
     "time": "●",
-    "score": 0.054878048780487805,
+    "score": 0.009286504672513494,
     "allType": false,
     "paragraphs": [
       {
@@ -50555,7 +50555,7 @@
           "#406",
           "para 3"
         ],
-        "score": 0.10975609756097561,
+        "score": 0.018573009345026988,
         "index": 3,
         "text": [
           {
@@ -51050,7 +51050,7 @@
       "Prayers and Meditations"
     ],
     "time": "●",
-    "score": 0.08915694197569511,
+    "score": 0.015087204750229595,
     "allType": false,
     "paragraphs": [
       {
@@ -51237,7 +51237,7 @@
           "#409",
           "para 7"
         ],
-        "score": 0.25217391304347825,
+        "score": 0.04267305915214896,
         "index": 7,
         "text": [
           {
@@ -51947,7 +51947,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 13.48376974134363,
+    "score": 2.2817336528664134,
     "allType": false,
     "paragraphs": [
       {
@@ -51990,7 +51990,7 @@
           "#413",
           "para 1"
         ],
-        "score": 4.027586206896552,
+        "score": 0.681551165911611,
         "index": 1,
         "text": [
           {
@@ -52037,7 +52037,7 @@
           "#413",
           "para 2"
         ],
-        "score": 6.343283582089552,
+        "score": 1.0734152167067836,
         "index": 2,
         "text": [
           {
@@ -52104,7 +52104,7 @@
           "#413",
           "para 3"
         ],
-        "score": 4,
+        "score": 0.6768830072409835,
         "index": 3,
         "text": [
           {
@@ -52143,7 +52143,7 @@
           "#413",
           "para 4"
         ],
-        "score": 9,
+        "score": 1.522986766292213,
         "index": 4,
         "text": [
           {
@@ -52186,7 +52186,7 @@
           "#413",
           "para 5"
         ],
-        "score": 4,
+        "score": 0.6768830072409835,
         "index": 5,
         "text": [
           {
@@ -52225,7 +52225,7 @@
           "#413",
           "para 6"
         ],
-        "score": 6.766990291262136,
+        "score": 1.1451151845800134,
         "index": 6,
         "text": [
           {
@@ -52306,7 +52306,7 @@
           "#413",
           "para 7"
         ],
-        "score": 4,
+        "score": 0.6768830072409835,
         "index": 7,
         "text": [
           {
@@ -52351,7 +52351,7 @@
       "Prayers and Meditations"
     ],
     "time": "●",
-    "score": 0.06087724336648642,
+    "score": 0.010301692890612136,
     "allType": false,
     "paragraphs": [
       {
@@ -52484,7 +52484,7 @@
           "#414",
           "para 5"
         ],
-        "score": 0.13612565445026178,
+        "score": 0.02303528558673504,
         "index": 5,
         "text": [
           {
@@ -53320,7 +53320,7 @@
       "Prayers and Meditations"
     ],
     "time": "●",
-    "score": 0.19621235665705047,
+    "score": 0.033203202507966184,
     "allType": false,
     "paragraphs": [
       {
@@ -53426,7 +53426,7 @@
           "#418",
           "para 4"
         ],
-        "score": 0.4806201550387597,
+        "score": 0.08133090397081585,
         "index": 4,
         "text": [
           {
@@ -54387,7 +54387,7 @@
       "Prayers and Meditations"
     ],
     "time": "●●",
-    "score": 0.10909090909090909,
+    "score": 0.018460445652026824,
     "allType": false,
     "paragraphs": [
       {
@@ -54493,7 +54493,7 @@
           "#422",
           "para 4"
         ],
-        "score": 0.32727272727272727,
+        "score": 0.05538133695608047,
         "index": 4,
         "text": [
           {
@@ -55290,7 +55290,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●●",
-    "score": 0.05808080808080809,
+    "score": 0.009828478009180948,
     "allType": false,
     "paragraphs": [
       {
@@ -55307,7 +55307,7 @@
           "#425",
           "para 1"
         ],
-        "score": 0.17424242424242425,
+        "score": 0.029485434027542844,
         "index": 1,
         "text": [
           {
@@ -55918,7 +55918,7 @@
       "Bahá’í Prayers"
     ],
     "time": "●●",
-    "score": 1.41792450167236,
+    "score": 0.239942250183165,
     "allType": false,
     "paragraphs": [
       {
@@ -55987,7 +55987,7 @@
           "Long Obligatory Prayer",
           "para 1"
         ],
-        "score": 2.208955223880597,
+        "score": 0.3738010637002447,
         "index": 1,
         "text": [
           {
@@ -56082,7 +56082,7 @@
           "Long Obligatory Prayer",
           "para 2"
         ],
-        "score": 0.28888888888888886,
+        "score": 0.04888599496740436,
         "index": 2,
         "text": [
           {
@@ -56202,7 +56202,7 @@
           "Long Obligatory Prayer",
           "para 4"
         ],
-        "score": 4,
+        "score": 0.6768830072409835,
         "index": 4,
         "text": [
           {
@@ -56477,7 +56477,7 @@
           "Long Obligatory Prayer",
           "para 9"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 9,
         "text": [
           {
@@ -56748,7 +56748,7 @@
           "Long Obligatory Prayer",
           "para 14"
         ],
-        "score": 0.3968253968253968,
+        "score": 0.0671510919881928,
         "index": 14,
         "text": [
           {
@@ -58564,7 +58564,7 @@
       "Prayers and Meditations"
     ],
     "time": "●●",
-    "score": 1.6835889192095774,
+    "score": 0.284898182648044,
     "allType": false,
     "paragraphs": [
       {
@@ -58581,7 +58581,7 @@
           "#430",
           "para 1"
         ],
-        "score": 1.0136986301369864,
+        "score": 0.17153884430079722,
         "index": 1,
         "text": [
           {
@@ -58624,7 +58624,7 @@
           "#430",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 2,
         "text": [
           {
@@ -58902,7 +58902,7 @@
           "#430",
           "para 12"
         ],
-        "score": 4,
+        "score": 0.6768830072409835,
         "index": 12,
         "text": [
           {
@@ -58939,7 +58939,7 @@
           "#430",
           "para 13"
         ],
-        "score": 0.2857142857142857,
+        "score": 0.048348786231498825,
         "index": 13,
         "text": [
           {
@@ -59014,7 +59014,7 @@
       "Prayers and Meditations"
     ],
     "time": "●●",
-    "score": 3.7955795365347686,
+    "score": 0.642290822727998,
     "allType": false,
     "paragraphs": [
       {
@@ -59031,7 +59031,7 @@
           "#431",
           "para 1"
         ],
-        "score": 1.0067114093959733,
+        "score": 0.17035646155393883,
         "index": 1,
         "text": [
           {
@@ -59074,7 +59074,7 @@
           "#431",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 2,
         "text": [
           {
@@ -59109,7 +59109,7 @@
           "#431",
           "para 3"
         ],
-        "score": 2.6784452296819787,
+        "score": 0.4532485154493512,
         "index": 3,
         "text": [
           {
@@ -59156,7 +59156,7 @@
           "#431",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 4,
         "text": [
           {
@@ -59191,7 +59191,7 @@
           "#431",
           "para 5"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 5,
         "text": [
           {
@@ -59226,7 +59226,7 @@
           "#431",
           "para 6"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 6,
         "text": [
           {
@@ -59261,7 +59261,7 @@
           "#431",
           "para 7"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 7,
         "text": [
           {
@@ -59296,7 +59296,7 @@
           "#431",
           "para 8"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 8,
         "text": [
           {
@@ -59331,7 +59331,7 @@
           "#431",
           "para 9"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 9,
         "text": [
           {
@@ -59366,7 +59366,7 @@
           "#431",
           "para 10"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 10,
         "text": [
           {
@@ -59428,7 +59428,7 @@
           "#431",
           "para 12"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 12,
         "text": [
           {
@@ -59463,7 +59463,7 @@
           "#431",
           "para 13"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 13,
         "text": [
           {
@@ -59504,7 +59504,7 @@
       "Prayers and Meditations"
     ],
     "time": "●●",
-    "score": 0.557594975887809,
+    "score": 0.09435664102535099,
     "allType": false,
     "paragraphs": [
       {
@@ -59583,7 +59583,7 @@
           "#432",
           "para 3"
         ],
-        "score": 1.375,
+        "score": 0.2326785337390881,
         "index": 3,
         "text": [
           {
@@ -59741,7 +59741,7 @@
           "#432",
           "para 7"
         ],
-        "score": 0.4,
+        "score": 0.06768830072409836,
         "index": 7,
         "text": [
           {
@@ -59782,7 +59782,7 @@
           "#432",
           "para 8"
         ],
-        "score": 0.15656565656565657,
+        "score": 0.026494158111705166,
         "index": 8,
         "text": [
           {
@@ -60330,7 +60330,7 @@
       "Prayers and Meditations"
     ],
     "time": "●●",
-    "score": 0.07851872752974808,
+    "score": 0.01328699810376782,
     "allType": false,
     "paragraphs": [
       {
@@ -60463,7 +60463,7 @@
           "#434",
           "para 5"
         ],
-        "score": 0.3237410071942446,
+        "score": 0.05478369662921629,
         "index": 5,
         "text": [
           {
@@ -60834,7 +60834,7 @@
       "Additional"
     ],
     "time": "●●●",
-    "score": 4.312937852500404,
+    "score": 0.7298385859109854,
     "allType": false,
     "paragraphs": [
       {
@@ -60850,7 +60850,7 @@
           "#435",
           "para 1"
         ],
-        "score": 1.2982456140350878,
+        "score": 0.21969009884137186,
         "index": 1,
         "text": [
           {
@@ -60911,7 +60911,7 @@
           "#435",
           "para 2"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 2,
         "text": [
           {
@@ -60943,7 +60943,7 @@
           "#435",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 3,
         "text": [
           {
@@ -60975,7 +60975,7 @@
           "#435",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 4,
         "text": [
           {
@@ -61007,7 +61007,7 @@
           "#435",
           "para 5"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 5,
         "text": [
           {
@@ -61039,7 +61039,7 @@
           "#435",
           "para 6"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 6,
         "text": [
           {
@@ -61071,7 +61071,7 @@
           "#435",
           "para 7"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 7,
         "text": [
           {
@@ -61103,7 +61103,7 @@
           "#435",
           "para 8"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 8,
         "text": [
           {
@@ -61135,7 +61135,7 @@
           "#435",
           "para 9"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 9,
         "text": [
           {
@@ -61167,7 +61167,7 @@
           "#435",
           "para 10"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 10,
         "text": [
           {
@@ -61199,7 +61199,7 @@
           "#435",
           "para 11"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 11,
         "text": [
           {
@@ -61231,7 +61231,7 @@
           "#435",
           "para 12"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 12,
         "text": [
           {
@@ -61263,7 +61263,7 @@
           "#435",
           "para 13"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 13,
         "text": [
           {
@@ -61295,7 +61295,7 @@
           "#435",
           "para 14"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 14,
         "text": [
           {
@@ -61327,7 +61327,7 @@
           "#435",
           "para 15"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 15,
         "text": [
           {
@@ -61359,7 +61359,7 @@
           "#435",
           "para 16"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 16,
         "text": [
           {
@@ -61391,7 +61391,7 @@
           "#435",
           "para 17"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 17,
         "text": [
           {
@@ -61423,7 +61423,7 @@
           "#435",
           "para 18"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 18,
         "text": [
           {
@@ -61462,7 +61462,7 @@
       "Prayers and Meditations"
     ],
     "time": "●●●",
-    "score": 5.359080050579748,
+    "score": 0.9068675551703954,
     "allType": false,
     "paragraphs": [
       {
@@ -61514,7 +61514,7 @@
           "#436",
           "para 2"
         ],
-        "score": 3.2905982905982905,
+        "score": 0.5568375166405527,
         "index": 2,
         "text": [
           {
@@ -61561,7 +61561,7 @@
           "#436",
           "para 3"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 3,
         "text": [
           {
@@ -61596,7 +61596,7 @@
           "#436",
           "para 4"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 4,
         "text": [
           {
@@ -61658,7 +61658,7 @@
           "#436",
           "para 6"
         ],
-        "score": 2.826771653543307,
+        "score": 0.4783484244084903,
         "index": 6,
         "text": [
           {
@@ -61705,7 +61705,7 @@
           "#436",
           "para 7"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 7,
         "text": [
           {
@@ -61740,7 +61740,7 @@
           "#436",
           "para 8"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 8,
         "text": [
           {
@@ -61775,7 +61775,7 @@
           "#436",
           "para 9"
         ],
-        "score": 0.10506798516687268,
+        "score": 0.01777968344112596,
         "index": 9,
         "text": [
           {
@@ -61842,7 +61842,7 @@
           "#436",
           "para 10"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 10,
         "text": [
           {
@@ -61877,7 +61877,7 @@
           "#436",
           "para 11"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 11,
         "text": [
           {
@@ -61912,7 +61912,7 @@
           "#436",
           "para 12"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 12,
         "text": [
           {
@@ -61947,7 +61947,7 @@
           "#436",
           "para 13"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 13,
         "text": [
           {
@@ -61982,7 +61982,7 @@
           "#436",
           "para 14"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 14,
         "text": [
           {
@@ -62017,7 +62017,7 @@
           "#436",
           "para 15"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 15,
         "text": [
           {
@@ -62052,7 +62052,7 @@
           "#436",
           "para 16"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 16,
         "text": [
           {
@@ -62087,7 +62087,7 @@
           "#436",
           "para 17"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 17,
         "text": [
           {
@@ -62122,7 +62122,7 @@
           "#436",
           "para 18"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 18,
         "text": [
           {
@@ -62157,7 +62157,7 @@
           "#436",
           "para 19"
         ],
-        "score": 2.9138755980861246,
+        "score": 0.4930882193896639,
         "index": 19,
         "text": [
           {
@@ -62204,7 +62204,7 @@
           "#436",
           "para 20"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 20,
         "text": [
           {
@@ -62239,7 +62239,7 @@
           "#436",
           "para 21"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 21,
         "text": [
           {
@@ -62274,7 +62274,7 @@
           "#436",
           "para 22"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 22,
         "text": [
           {
@@ -62315,7 +62315,7 @@
       "Prayers and Meditations"
     ],
     "time": "●●●",
-    "score": 2.132916959887403,
+    "score": 0.3609338115009704,
     "allType": false,
     "paragraphs": [
       {
@@ -62529,7 +62529,7 @@
           "#437",
           "para 8"
         ],
-        "score": 0.4482758620689655,
+        "score": 0.07585757839769643,
         "index": 8,
         "text": [
           {
@@ -62732,7 +62732,7 @@
           "#437",
           "para 15"
         ],
-        "score": 7.482142857142857,
+        "score": 1.2661338394373753,
         "index": 15,
         "text": [
           {
@@ -62781,7 +62781,7 @@
           "#437",
           "para 16"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 16,
         "text": [
           {
@@ -62814,7 +62814,7 @@
           "#437",
           "para 17"
         ],
-        "score": 4,
+        "score": 0.6768830072409835,
         "index": 17,
         "text": [
           {
@@ -63013,7 +63013,7 @@
           "#437",
           "para 24"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 24,
         "text": [
           {
@@ -63424,7 +63424,7 @@
           "#437",
           "para 39"
         ],
-        "score": 1,
+        "score": 0.16922075181024587,
         "index": 39,
         "text": [
           {

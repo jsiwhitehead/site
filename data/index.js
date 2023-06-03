@@ -46,8 +46,23 @@ const getRef = (doc, paras) =>
 
 const allParagraphs = [];
 
-const documents = Object.keys(data).map((id) => {
+const dataKeys = Object.keys(data);
+const fromBab = dataKeys.filter((k) => data[k].years[1] > 1853).length;
+const fromBahaullah = dataKeys.filter((k) => data[k].years[1] > 1892).length;
+const fromAbdulBaha = dataKeys.filter((k) => data[k].years[1] > 1921).length;
+const getPotentialCount = (author, docIndex) => {
+  if (author === "The Báb") return fromBab;
+  if (author === "Bahá’u’lláh") return fromBahaullah;
+  if (author === "‘Abdu’l‑Bahá") return fromAbdulBaha;
+  return dataKeys.length - docIndex;
+};
+
+const documents = dataKeys.map((id, docIndex) => {
   const { paragraphs, path, ...info } = data[id];
+
+  const potentialCount = Math.log(
+    getPotentialCount(info.author, docIndex) * 0.1 + 1
+  );
 
   const cleanPath =
     path &&
@@ -150,7 +165,9 @@ const documents = Object.keys(data).map((id) => {
       score:
         (p.type === "quote" ? [] : p.type === "lines" ? p.lines.flat() : p.text)
           .map((t) => Math.pow(t.count, 2) * t.text.split(" ").length)
-          .reduce((res, n) => res + n, 0) / words[i],
+          .reduce((res, n) => res + n, 0) /
+        words[i] /
+        potentialCount,
       // score: Math.max(
       //   ...(p.type === "quote"
       //     ? []
