@@ -132,6 +132,7 @@ const documents = Object.keys(data).map((id) => {
             const end = p.lines[j + 1] - 1;
             return parts.filter((x) => x.start >= start && x.end <= end);
           }),
+          citations: p.citations,
         };
       }
       return {
@@ -159,6 +160,7 @@ const documents = Object.keys(data).map((id) => {
       //   ).map((t) => t.count)
       // ),
       ...p,
+      citations: p.citations?.refs.map((r) => getRef(data[r.id])),
     }));
   allParagraphs.push(...paras);
 

@@ -1,5 +1,6 @@
 (p, allType, citation, prayer) => {
   level: if p.section & p.title then length(p.section)
+  showCitations is any: no
   ~
   [
     flow: 15
@@ -45,11 +46,12 @@
           else [0, (level - 2) * 20]
         flow: if p.type = 'lines' then 17 / 2
         style: if p.type = 'lines' then [whiteSpace: 'pre-wrap']
+        when click push !showCitations -> showCitations
         ~
         if p.section then p.title | '* * *'
         else if p.type = 'quote' then p.text
-        else if p.type = 'lines' then for l in p.lines renderLine(l, p.author, yes)
-        else renderLine(p.text, p.author, citation)
+        else if p.type = 'lines' then for l in p.lines renderLine(l, p.author, yes, showCitations)
+        else renderLine(p.text, p.author, citation, showCitations)
       ]
     ]
     if p.type = 'quote' then [
@@ -90,6 +92,31 @@
           if i = length(p.ref) then t else '{t},'
         ]
       }
+    ]
+    if showCitations & p.citations then [
+      flow: 8
+      pad: [left: 13]
+      ~
+      for c, index in p.citations [
+        size: 12
+        italic: yes
+        color: colors.link[c[1]] | colors.link['The World Centre']
+        pad: [top: if index = 1 then 10, left: 21]
+        style: [
+          'display': 'list-item'
+          'list-style-type': 'disc'
+        ]
+        ~
+        for t, i in c {
+          if i > 1 then ' '
+          [
+            indent: if i = 1 then -16
+            style: [display: 'inline-block']
+            ~
+            if i = length(c) then t else '{t},'
+          ]
+        }
+      ]
     ]
   ]
 }
