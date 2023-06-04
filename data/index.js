@@ -289,6 +289,7 @@ const prayerThemes = [
   "Unity",
   "Abundance",
   "Compassion",
+  "Abundance",
   "Unity",
   "Steadfastness",
   "Illumination",
