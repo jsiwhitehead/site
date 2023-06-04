@@ -18,8 +18,10 @@ const getFirstChar = (index, text) => {
   return result === undefined ? result : result + 1;
 };
 
-const getRef = (doc, paras) =>
-  unique(
+const getRef = (doc, paras) => ({
+  id: doc.id,
+  paragraph: paras[0],
+  path: unique(
     [
       doc.author,
       ...(doc.path || []).filter(
@@ -42,7 +44,8 @@ const getRef = (doc, paras) =>
               ...paras.map((p) => doc.paragraphs[p].index).filter((x) => x)
             )}`),
     ].filter((x) => x)
-  );
+  ),
+});
 
 const allParagraphs = [];
 
@@ -177,7 +180,9 @@ const documents = dataKeys.map((id, docIndex) => {
       //   ).map((t) => t.count)
       // ),
       ...p,
-      citations: p.citations?.refs.map((r) => getRef(data[r.id])),
+      citations: p.citations?.refs.map((r) =>
+        getRef(data[r.id], [r.paragraph])
+      ),
     }));
   allParagraphs.push(...paras);
 

@@ -1,5 +1,5 @@
 import webfont from "webfontloader";
-import { createBrowserHistory } from "history";
+import { createBrowserHistory, Action } from "history";
 
 import maraca, { atom, derived, effect, resolve } from "./maraca";
 import render from "./render";
@@ -43,22 +43,43 @@ const getUrlBlock = (location) => ({
   items: location.pathname.split(/\//g).filter((x) => x),
 });
 const url = atom(getUrlBlock(history.location), (v) => {
-  const path = `/${v.items.join("/")}`;
-  if (path !== location.pathname) history.push(path);
+  let path = "/";
+  path += v.items.join("/");
+  if (Object.keys(v.values).filter((x) => x).length > 0) {
+    path +=
+      "?" +
+      Object.keys(v.values)
+        .filter((x) => x)
+        .map((k) => `${k}=${v.values[k]}`)
+        .join("&");
+  }
+  if (v.values[""] !== undefined) {
+    path += "#" + v.values[""];
+  }
+  if (path !== location.pathname + location.search + location.hash) {
+    history.push(path);
+  }
   return v;
 });
-history.listen(({ location }) => {
-  url.set(getUrlBlock(location));
-  if (location.hash) {
+const scrollToHash = (pop) => {
+  if (history.location.hash) {
     setTimeout(() => {
-      document.getElementById(location.hash.slice(1))!.scrollIntoView();
-      window.scrollBy(0, -25);
+      const elem = document.getElementById(history.location.hash.slice(1));
+      if (elem) {
+        const top = elem.getBoundingClientRect().top;
+        window.scrollBy(0, top - 25);
+      }
     });
-  } else {
+  } else if (!pop) {
     setTimeout(() => {
       window.scroll(0, 0);
     });
   }
+};
+
+history.listen(({ action, location }) => {
+  url.set(getUrlBlock(location));
+  scrollToHash(action === Action.Pop);
 });
 document.addEventListener("click", (e: any) => {
   if (!e.metaKey) {
@@ -74,7 +95,11 @@ document.addEventListener("click", (e: any) => {
   }
 });
 
-const api = (path, req = {}) => {
+const cachedDocs = {};
+const api = (path, req = {} as any) => {
+  if (path === "documentById" && cachedDocs[req.id]) {
+    return cachedDocs[req.id];
+  }
   const res = atom(null);
   fetch(`/.netlify/functions/${path}`, {
     method: "POST",
@@ -83,7 +108,10 @@ const api = (path, req = {}) => {
     body: JSON.stringify(req),
   })
     .then((res) => res.json())
-    .then((data) => res.set(data));
+    .then((data) => {
+      if (path === "documentById") cachedDocs[req.id] = data;
+      res.set(data);
+    });
   return res;
 };
 
@@ -167,5 +195,5 @@ const compiled = maraca(
 const renderer = render(document.getElementById("app"));
 
 effect((effect) => {
-  renderer(effect, compiled);
+  renderer(effect, compiled, history);
 });

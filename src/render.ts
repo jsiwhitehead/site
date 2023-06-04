@@ -107,8 +107,9 @@ const getItems = (items, $values) => {
   return items;
 };
 
-const getProps = ({ image, link, input }) => {
+const getProps = ({ id, image, link, input }) => {
   const result = {} as any;
+  if (id !== undefined) result.id = id;
   if (image) result.src = image;
   if (link) result.href = link;
   if (input) result.value = input;
@@ -251,7 +252,7 @@ const getStyle = (values, context, flow) => {
   return result;
 };
 
-const updateNode = (effect, node, data, prevContext) => {
+const updateNode = (effect, node, data, prevContext, history) => {
   if (!data) return null;
 
   if (typeof data === "number" || typeof data === "string") {
@@ -292,13 +293,21 @@ const updateNode = (effect, node, data, prevContext) => {
         next.style[k] = v || null;
       }
     );
+    if (history.location.hash && history.location.hash.slice(1) === next.id) {
+      setTimeout(() => {
+        const top = next.getBoundingClientRect().top;
+        window.scrollBy(0, top - 25);
+      });
+    }
   });
 
   effect((effect) => {
     updateChildren(
       next,
       items
-        .map((x, i) => updateNode(effect, next.childNodes[i], x, context))
+        .map((x, i) =>
+          updateNode(effect, next.childNodes[i], x, context, history)
+        )
         .filter((x) => x)
     );
   });
@@ -306,13 +315,14 @@ const updateNode = (effect, node, data, prevContext) => {
   return next;
 };
 
-export default (root) => (effect, data) => {
+export default (root) => (effect, data, history) => {
   updateChildren(root, [
     updateNode(
       effect,
       root.childNodes[0],
       resolve(resolve(data).values.index),
-      { size: 16, line: 1.5 }
+      { size: 16, line: 1.5 },
+      history
     ),
   ]);
 };

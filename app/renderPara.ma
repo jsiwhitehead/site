@@ -1,8 +1,9 @@
-(p, allType, citation, prayer) => {
+(p, paraIndex, allType, citation, prayer) => {
   level: if p.section & p.title then length(p.section)
   showCitations is any: no
   ~
   [
+    id: paraIndex
     flow: 15
     ~
     [
@@ -35,12 +36,14 @@
         uppercase: level = 1 | p.type = 'call'
         bold: level <= 2 | p.type = 'quote'
         italic: level > 2 | p.type = 'info'
-        indent: if !p.type & (p.index != 1) & !citation then  20
+        indent:
+          if !p.type & (p.index != 1) & !citation then  20
+          else if p.type = 'lines' & !allType then -30
         pad:
           if p.type = 'call' | p.type = 'info' then [0, 40]
           else if allType then 0
           else if p.type = 'quote' then [0, 20]
-          else if p.type = 'lines' then [0, 40]
+          else if p.type = 'lines' then [0, 70]
           else if level = 1 then [top: 20]
           else if level <= 2 then 0
           else [0, (level - 2) * 20]
@@ -64,13 +67,16 @@
         'max-width': '470px'
         'margin-left': 'auto'
       ]
+      underline: hover
+      when click push ['': p.ref.paragraph ~ p.ref.id] -> url
       ~
-      for t, i in p.ref {
+      for t, i in p.ref.path {
         if i > 1 then ' '
         [
+          underline: hover
           style: [display: 'inline-block']
           ~
-          if i = length(p.ref) then t else '{t},'
+          if i = length(p.ref.path) then t else '{t},'
         ]
       }
     ]
@@ -83,39 +89,38 @@
         'max-width': '450px'
         'margin-left': 'auto'
       ]
+      underline: hover
+      when click push ['': p.ref.paragraph ~ p.ref.id] -> url
       ~
-      for t, i in p.ref {
+      for t, i in p.ref.path {
         if i > 1 then ' '
         [
+          underline: hover
           style: [display: 'inline-block']
           ~
-          if i = length(p.ref) then t else '{t},'
+          if i = length(p.ref.path) then t else '{t},'
         ]
       }
     ]
     if showCitations & p.citations then [
-      flow: 8
+      flow: 12
       pad: [left: 13]
       ~
-      for c, index in p.citations [
+      for ref, index in p.citations [
         size: 12
         italic: yes
-        color: colors.link[c[1]] | colors.link['The World Centre']
-        pad: [top: if index = 1 then 10, left: 21]
+        color: colors.link[ref.path[1]] | colors.link['The World Centre']
+        pad: [top: if index = 1 then 10, left: 15]
+        indent: -12
         style: [
           'display': 'list-item'
           'list-style-type': 'disc'
         ]
+        underline: hover
+        when click push ['': ref.paragraph ~ ref.id] -> url
         ~
-        for t, i in c {
-          if i > 1 then ' '
-          [
-            indent: if i = 1 then -16
-            style: [display: 'inline-block']
-            ~
-            if i = length(c) then t else '{t},'
-          ]
-        }
+        for t, i in ref.path
+          if i = length(ref.path) then t else '{t}, '
       ]
     ]
   ]

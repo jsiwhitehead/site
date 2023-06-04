@@ -19,12 +19,12 @@
     [
       size: 30
       ~
-      doc.title | '#{doc.item}'
+      doc.title | (doc.item & '#{doc.item}')
     ]
   ]
   [
     flow: 25
     ~
-    for p in doc.paragraphs renderPara(p, doc.allType, no, no)
+    for p, i in doc.paragraphs renderPara(p, i - 1, doc.allType, no, no)
   ]
 ]

@@ -69,7 +69,7 @@
               maxWidth: 630
               pad: [50, 35]
               ~
-              for p in allParagraphs(author, yes) renderPara(p, yes, yes, no)
+              for p in allParagraphs(author, yes) renderPara(p, no, yes, yes, no)
             ]
         ]
       } else {
@@ -214,7 +214,7 @@
             for prayer in prayers()[ppage] [
               flow: 25
               ~
-              for p in prayer.paragraphs renderPara(p, no, no, yes)
+              for p in prayer.paragraphs renderPara(p, no, no, no, yes)
               [
                 align: 'right'
                 italic: yes
