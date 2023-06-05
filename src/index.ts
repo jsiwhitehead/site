@@ -61,7 +61,9 @@ const url = atom(getUrlBlock(history.location), (v) => {
   }
   return v;
 });
-const scrollToHash = (pop) => {
+
+history.listen(({ action, location }) => {
+  url.set(getUrlBlock(location));
   if (history.location.hash) {
     setTimeout(() => {
       const elem = document.getElementById(history.location.hash.slice(1));
@@ -70,16 +72,11 @@ const scrollToHash = (pop) => {
         window.scrollBy(0, top - 25);
       }
     });
-  } else if (!pop) {
+  } else if (action === Action.Push) {
     setTimeout(() => {
       window.scroll(0, 0);
     });
   }
-};
-
-history.listen(({ action, location }) => {
-  url.set(getUrlBlock(location));
-  scrollToHash(action === Action.Pop);
 });
 document.addEventListener("click", (e: any) => {
   if (!e.metaKey) {
@@ -115,9 +112,9 @@ const api = (path, req = {} as any) => {
   return res;
 };
 
-const filterText = (text, max) => {
+const filterText = (text, min) => {
   const res = text.reduce((res, t) => {
-    if (t.count >= max) {
+    if (t.count >= min) {
       return [...res, t];
     }
     if (typeof res[res.length - 1] !== "string") res.push("");
@@ -159,12 +156,21 @@ const compiled = maraca(
               ...p.lines.flatMap((l) => l.map((t) => t.count))
             );
             return {
-              ...p,
-              lines: p.lines.map((l) => filterText(l, (max * 2) / 3)),
+              full: {
+                ...p,
+                lines: p.lines.map((l) => filterText(l, 1)),
+              },
+              partial: {
+                ...p,
+                lines: p.lines.map((l) => filterText(l, (max * 2) / 3)),
+              },
             };
           }
           const max = Math.max(...p.text.map((t) => t.count));
-          return { ...p, text: filterText(p.text, (max * 2) / 3) };
+          return {
+            full: { ...p, text: filterText(p.text, 1) },
+            partial: { ...p, text: filterText(p.text, (max * 2) / 3) },
+          };
         });
       });
     },

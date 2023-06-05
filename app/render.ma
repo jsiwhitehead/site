@@ -25,6 +25,6 @@
   [
     flow: 25
     ~
-    for p, i in doc.paragraphs renderPara(p, i - 1, doc.allType, no, no)
+    for p, i in doc.paragraphs renderPara(p, i - 1, doc.allType, no, no, p)
   ]
 ]

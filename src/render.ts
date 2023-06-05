@@ -297,6 +297,7 @@ const updateNode = (effect, node, data, prevContext, history) => {
       setTimeout(() => {
         const top = next.getBoundingClientRect().top;
         window.scrollBy(0, top - 25);
+        history.replace(history.location.pathname + history.location.search);
       });
     }
   });

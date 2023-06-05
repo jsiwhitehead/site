@@ -1,4 +1,4 @@
-(p, paraIndex, allType, citation, prayer) => {
+(p, paraIndex, allType, citation, prayer, fullPara) => {
   level: if p.section & p.title then length(p.section)
   showCitations is any: no
   ~
@@ -51,10 +51,15 @@
         style: if p.type = 'lines' then [whiteSpace: 'pre-wrap']
         when click push !showCitations -> showCitations
         ~
-        if p.section then p.title | '* * *'
-        else if p.type = 'quote' then p.text
-        else if p.type = 'lines' then for l in p.lines renderLine(l, p.author, yes, showCitations)
-        else renderLine(p.text, p.author, citation, showCitations)
+        if p.section then
+          p.title | '* * *'
+        else if p.type = 'quote' then
+          p.text
+        else if p.type = 'lines' then
+          for l in (if showCitations then fullPara else p).lines 
+            renderLine(l, p.author, yes, showCitations)
+        else
+          renderLine((if showCitations then fullPara else p).text, p.author, citation, showCitations)
       ]
     ]
     if p.type = 'quote' then [
