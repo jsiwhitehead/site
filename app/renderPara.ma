@@ -63,7 +63,7 @@
       ]
     ]
     if p.type = 'quote' then [
-      size: 16
+      size: 15
       italic: yes
       align: 'right'
       color: colors.link[p.author] | colors.link['The World Centre']
@@ -86,7 +86,7 @@
       }
     ]
     if citation then [
-      size: 16
+      size: 15
       align: 'right'
       italic: yes
       color: colors.link[p.author] | colors.link['The World Centre']

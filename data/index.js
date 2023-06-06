@@ -123,24 +123,41 @@ const documents = dataKeys.map((id, docIndex) => {
           .filter((q) => typeof q !== "string")
           .flatMap((q) => [q.start, q.end]),
         ...(p.lines || []).flatMap((l) => [l, l - 1]),
-        ...(p.quotes || []).flatMap((q) => [q.start, q.end]),
+        ...(p.quotes || []).flatMap((q) => [q.start - 1, q.end + 1]),
         text.length,
       ]).sort((a, b) => a - b);
-      const parts = indices.slice(1).map((end, j) => {
+      const parts = indices.slice(1).flatMap((end, j) => {
         const start = indices[j];
-        return {
-          start,
-          end,
-          text: text.slice(start, end),
-          first: first !== undefined && end <= first,
-          count:
-            (p.citations?.parts || []).find(
-              (q) => q.start <= start && q.end >= end
-            )?.count || 0,
-          quote: !!(p.quotes || []).find(
-            (q) => q.start <= start && q.end >= end
-          ),
-        };
+        const quote = (p.quotes || []).find((q) => q.end + 1 === end);
+        return [
+          {
+            start,
+            end,
+            text: text.slice(start, end),
+            first: first !== undefined && end <= first,
+            count:
+              (p.citations?.parts || []).find(
+                (q) => q.start <= start && q.end >= end
+              )?.count || 0,
+            quote: !!(p.quotes || []).find(
+              (q) => q.start - 1 <= start && q.end + 1 >= end
+            ),
+          },
+          ...(quote
+            ? [
+                {
+                  start: end,
+                  end,
+                  text:
+                    " [" +
+                    getRef(data[quote.id], [quote.paragraph]).path.join(", ") +
+                    "]",
+                  count: 1,
+                  ref: getRef(data[quote.id], [quote.paragraph]),
+                },
+              ]
+            : []),
+        ];
       });
       if (p.lines) {
         return {

@@ -15,6 +15,18 @@
       ~
       p.text
     ]
+    else if p.ref then {
+      if highlight then [
+        size: 15
+        italic: yes
+        pad: [5, 0]
+        color: colors.link[p.ref.path[1]] | colors.link['The World Centre']
+        underline: hover
+        when click push ['': p.ref.paragraph ~ p.ref.id] -> url
+        ~
+        p.text
+      ]
+    }
     else [
       bold: p.quote
       pad: [2.5, 0]

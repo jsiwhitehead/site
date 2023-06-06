@@ -247,7 +247,7 @@ const getStyle = (values, context, flow) => {
   }
   if (values.link || values.pointer || values.click !== undefined) {
     result.cursor = "pointer";
-    result.userSelect = "none";
+    // result.userSelect = "none";
   }
   return result;
 };
