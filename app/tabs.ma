@@ -11,7 +11,7 @@
         'lightblue'
       else
         '#ddd'
-    pad: [12, 0]
+    pad: [10, 0]
     width: 150
     align: 'center'
     round: [left: 40]
@@ -29,7 +29,7 @@
         'lightblue'
       else
         '#ddd'
-    pad: [12, 0]
+    pad: [10, 0]
     width: 150
     align: 'center'
     round: [right: 40]

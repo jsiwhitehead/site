@@ -21,6 +21,8 @@
         italic: yes
         pad: [5, 0]
         color: colors.link[p.ref.path[1]] | colors.link['The World Centre']
+        fill: if p.count > 0
+          then 'rgb(255, {240 - p.count * 10}, {240 - p.count * 10})'
         underline: hover
         when click push ['': p.ref.paragraph ~ p.ref.id] -> url
         ~

@@ -33,7 +33,7 @@ const source = Object.keys(app).reduce((res, k) => {
   return res;
 }, {});
 
-const history = createBrowserHistory();
+export const history = createBrowserHistory();
 const getUrlBlock = (location) => ({
   __type: "block",
   values: Object.fromEntries([
@@ -69,7 +69,10 @@ history.listen(({ action, location }) => {
       const elem = document.getElementById(history.location.hash.slice(1));
       if (elem) {
         const top = elem.getBoundingClientRect().top;
-        window.scrollBy(0, top - 25);
+        const navHeight = document
+          .getElementById("nav")!
+          .getBoundingClientRect().height;
+        window.scrollBy(0, top - navHeight - 30);
       }
     });
   } else if (action === Action.Push) {
@@ -152,9 +155,6 @@ const compiled = maraca(
         if (!paras) return paras;
         return paras.map((p) => {
           if (p.type === "lines") {
-            const max = Math.max(
-              ...p.lines.flatMap((l) => l.map((t) => t.count))
-            );
             return {
               full: {
                 ...p,
@@ -162,14 +162,13 @@ const compiled = maraca(
               },
               partial: {
                 ...p,
-                lines: p.lines.map((l) => filterText(l, (max * 2) / 3)),
+                lines: p.lines.map((l) => filterText(l, (p.max * 2) / 3)),
               },
             };
           }
-          const max = Math.max(...p.text.map((t) => t.count));
           return {
             full: { ...p, text: filterText(p.text, 1) },
-            partial: { ...p, text: filterText(p.text, (max * 2) / 3) },
+            partial: { ...p, text: filterText(p.text, (p.max * 2) / 3) },
           };
         });
       });
@@ -198,8 +197,8 @@ const compiled = maraca(
   },
   source
 );
-const renderer = render(document.getElementById("app"));
+const renderer = render(document.getElementById("app"), history);
 
 effect((effect) => {
-  renderer(effect, compiled, history);
+  renderer(effect, compiled);
 });

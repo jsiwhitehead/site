@@ -13,7 +13,7 @@
       ~
       if p.index & !citation & !prayer then [
         size: 13
-        color: '#999'
+        color: if p.max = 0 then '#999' else '#cc6666'
         align: 'right'
         width: 50
         style: [
@@ -67,7 +67,7 @@
       italic: yes
       align: 'right'
       color: colors.link[p.author] | colors.link['The World Centre']
-      pad: [right: 20]
+      pad: [0, 20]
       style: [
         'max-width': '470px'
         'margin-left': 'auto'

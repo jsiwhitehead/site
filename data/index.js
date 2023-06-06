@@ -129,16 +129,17 @@ const documents = dataKeys.map((id, docIndex) => {
       const parts = indices.slice(1).flatMap((end, j) => {
         const start = indices[j];
         const quote = (p.quotes || []).find((q) => q.end + 1 === end);
+        const count =
+          (p.citations?.parts || []).find(
+            (q) => q.start <= start && q.end >= end
+          )?.count || 0;
         return [
           {
             start,
             end,
             text: text.slice(start, end),
             first: first !== undefined && end <= first,
-            count:
-              (p.citations?.parts || []).find(
-                (q) => q.start <= start && q.end >= end
-              )?.count || 0,
+            count,
             quote: !!(p.quotes || []).find(
               (q) => q.start - 1 <= start && q.end + 1 >= end
             ),
@@ -152,13 +153,14 @@ const documents = dataKeys.map((id, docIndex) => {
                     " [" +
                     getRef(data[quote.id], [quote.paragraph]).path.join(", ") +
                     "]",
-                  count: 1,
+                  count,
                   ref: getRef(data[quote.id], [quote.paragraph]),
                 },
               ]
             : []),
         ];
       });
+      const max = Math.max(...parts.map((t) => t.count));
       if (p.lines) {
         return {
           index: p.index,
@@ -168,11 +170,13 @@ const documents = dataKeys.map((id, docIndex) => {
             return parts.filter((x) => x.start >= start && x.end <= end);
           }),
           citations: p.citations,
+          max,
         };
       }
       return {
         ...p,
         text: parts,
+        max,
       };
     })
     .map((p, i) => ({
@@ -203,10 +207,16 @@ const documents = dataKeys.map((id, docIndex) => {
     }));
   allParagraphs.push(...paras);
 
+  const idNum = parseInt(id.slice(-3), 10);
+  const prevId = id.slice(0, -3) + `${idNum - 1}`.padStart(3, "0");
+  const nextId = id.slice(0, -3) + `${idNum + 1}`.padStart(3, "0");
+
   const fullWords = words.reduce((res, n) => res + n, 0);
   return {
     ...info,
     ...(titlePath.length > 0 ? { path: titlePath } : {}),
+    prev: data[prevId] && prevId,
+    next: data[nextId] && nextId,
     fullPath: cleanPath,
     time: getTime(fullWords),
     score:
@@ -503,13 +513,7 @@ const cleanText = (t) =>
 (async () => {
   await fs.writeFile(
     `./data/writings.json`,
-    cleanText(
-      JSON.stringify(
-        documents.filter((d) => d.type !== "Prayer"),
-        null,
-        2
-      )
-    ),
+    cleanText(JSON.stringify(documents, null, 2)),
     "utf-8"
   );
   await fs.writeFile(

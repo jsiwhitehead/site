@@ -16,7 +16,7 @@ export const orderByDate = (array) => {
 };
 
 const authors = {
-  "Bahá’í Era": [
+  "Bahá’í Writings": [
     "The Báb",
     "Bahá’u’lláh",
     "‘Abdu’l‑Bahá",
