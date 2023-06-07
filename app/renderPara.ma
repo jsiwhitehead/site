@@ -1,4 +1,4 @@
-(p, paraIndex, allType, citation, prayer, fullPara) => {
+(p, paraIndex, allType, compilation, citation, prayer, fullPara) => {
   level: if p.section & p.title then length(p.section)
   showCitations is any: no
   ~
@@ -34,7 +34,7 @@
           else 'left'
         size: if level then 25 - level * 2
         uppercase: level = 1 | p.type = 'call'
-        bold: level <= 2 | p.type = 'quote'
+        bold: level <= 2 | (p.type = 'quote' & !compilation)
         italic: level > 2 | p.type = 'info'
         indent:
           if !p.type & (p.index != 1) & !citation then  20

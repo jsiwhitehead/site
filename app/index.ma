@@ -57,7 +57,7 @@
           pad: [50, 35]
           ~
           for p in allParagraphs(author, yes)
-            renderPara(p.partial, no, yes, yes, no, p.full)
+            renderPara(p.partial, no, yes, no, yes, no, p.full)
         ]
     ]
   }

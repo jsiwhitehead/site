@@ -141,7 +141,7 @@
       for prayer in prayers()[ppage] [
         flow: 25
         ~
-        for p in prayer.paragraphs renderPara(p, no, no, no, yes, p)
+        for p in prayer.paragraphs renderPara(p, no, no, no, no, yes, p)
         [
           align: 'right'
           italic: yes

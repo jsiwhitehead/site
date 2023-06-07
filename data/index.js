@@ -223,9 +223,14 @@ const documents = dataKeys.map((id, docIndex) => {
       paras.map((p) => p.score).reduce((res, n) => res + n, 0) /
       Math.sqrt(paras.length),
     // score: Math.max(...paras.map((p) => p.score)),
-    allType: paras.every(
-      (p) => info.id.startsWith("ruhi") || p.section || p.lines || p.type
-    ),
+    allType:
+      info.id.startsWith("ruhi") ||
+      paras.every((p) => p.section || p.lines || p.type) ||
+      undefined,
+    compilation:
+      info.id.startsWith("ruhi") ||
+      paras.every((p) => p.section || p.type) ||
+      undefined,
     paragraphs: paras,
   };
 });

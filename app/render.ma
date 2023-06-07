@@ -16,6 +16,7 @@
     ~
     [
       pad: 10
+      width: 33
       fill: if hover then '#84d984'
       flow: ['row', 'center']
       when click push [] -> url
@@ -24,6 +25,7 @@
     ]
     if doc.prev then [
       pad: 10
+      width: 33
       fill: if hover then '#84d984'
       flow: ['row', 'center']
       when click push [doc.prev] -> url
@@ -31,6 +33,7 @@
       '◀'
     ] else [
       pad: 10
+      width: 33
       style: [visibility: 'hidden']
       ~
       '◀'
@@ -66,6 +69,7 @@
         size: 17
         ~
         doc.title | (doc.item & '#{doc.item}')
+        if doc.compilation then ' (Compilation)'
       ]
     ]
     if doc.next then [
@@ -77,12 +81,14 @@
       '▶'
     ] else [
       pad: 10
+      width: 33
       style: [visibility: 'hidden']
       ~
       '▶'
     ]
     [
       pad: 10
+      width: 33
       style: [visibility: 'hidden']
       ~
       '✖'
@@ -99,7 +105,7 @@
       [
         flow: 25
         ~
-        for p, i in doc.paragraphs renderPara(p, i - 1, doc.allType, no, no, p)
+        for p, i in doc.paragraphs renderPara(p, i - 1, doc.allType, doc.compilation, no, no, p)
       ]
     ]
   ]
