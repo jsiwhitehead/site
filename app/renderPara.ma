@@ -29,7 +29,7 @@
         align:
           if p.section & !p.title then 'center'
           else if p.section then 'left'
-          else if p.type = 'quote' | p.type = 'lines' then 'left'
+          else if p.type = 'blockquote' | p.type = 'lines' then 'left'
           else if p.type then 'center'
           else 'left'
         size: if level then 25 - level * 2
@@ -42,7 +42,7 @@
         pad:
           if p.type = 'call' | p.type = 'info' then [0, 40]
           else if allType then 0
-          else if p.type = 'quote' then [0, 20]
+          else if p.type = 'blockquote' then [0, 20]
           else if p.type = 'lines' then [0, 70]
           else if level = 1 then [top: 20]
           else if level <= 2 then 0

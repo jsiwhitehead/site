@@ -4,6 +4,38 @@ import data from "./data.json" assert { type: "json" };
 
 const unique = (x) => [...new Set(x)];
 
+// for (const id of Object.keys(quotes).filter((id) => documentMap[id])) {
+//   for (const para of Object.keys(quotes[id])) {
+//     const fixedParts = quotes[id][para].map((p) => {
+//       const text = documentMap[id].paragraphs[parseInt(para, 10)].text;
+//       if (!text) console.log(p.ref);
+//       return { ref: p.ref, start: p.start || 0, end: p.end || text?.length };
+//     });
+//     const splits = [
+//       ...new Set(fixedParts.flatMap((p) => [p.start, p.end])),
+//     ].sort((a, b) => a - b);
+//     documentMap[id].paragraphs[para].citations = {
+//       refs: [...new Set(fixedParts.map((p) => JSON.stringify(p.ref)))].map(
+//         (s) => JSON.parse(s)
+//       ),
+//       parts: splits
+//         .slice(0, -1)
+//         .map((start, i) => {
+//           const end = splits[i + 1];
+//           const count = [
+//             ...new Set(
+//               fixedParts
+//                 .filter((p) => p.start <= start && p.end >= end)
+//                 .map((p) => p.ref.id)
+//             ),
+//           ].length;
+//           return { start, end, count };
+//         })
+//         .filter((x) => x.count),
+//     };
+//   }
+// }
+
 const getTime = (words) => {
   const time = words / 238;
   const scale = Math.min(Math.max(Math.round(Math.log(time + 1)), 1), 5);
@@ -60,6 +92,41 @@ const getPotentialCount = (author, docIndex) => {
   return dataKeys.length - docIndex;
 };
 
+const getParaText = (para) => {
+  if (para.section) return para.title || "";
+  return para.parts
+    .map((p) => {
+      if (typeof p === "string") return p;
+      return getParaText(data[p.doc].paragraphs[p.paragraph]).slice(
+        p.start,
+        p.end
+      );
+    })
+    .join("");
+};
+
+const getParaQuotes = (para, maxLength) => {
+  if (para.section) return [];
+  let index = 0;
+  return para.parts
+    .map((p) => {
+      if (typeof p === "string") {
+        index += p.length;
+        return null;
+      }
+      const len = p.end - p.start;
+      const res = {
+        doc: p.doc,
+        paragraph: p.paragraph,
+        start: Math.max(index - 1, 0),
+        end: Math.min(index + len + 1, maxLength),
+      };
+      index += len;
+      return res;
+    })
+    .filter((x) => x);
+};
+
 const documents = dataKeys.map((id, docIndex) => {
   const { paragraphs, path, ...info } = data[id];
 
@@ -80,59 +147,35 @@ const documents = dataKeys.map((id, docIndex) => {
     );
   const titlePath = unique([...cleanPath, info.title]).slice(0, -1);
 
-  const texts = paragraphs
-    .map((p) => {
-      if (p.section) return p.title || "";
-      if (p.id) {
-        const doc = data[p.id];
-        if (!p.parts) return doc.paragraphs[p.paragraphs[0]].text;
-        return p.parts
-          .map((x) =>
-            typeof x === "string"
-              ? x
-              : doc.paragraphs[x.paragraph].text.slice(x.start, x.end)
-          )
-          .join("");
-      }
-      return p.text;
-    })
-    .map((t) =>
-      t
-        .normalize("NFD")
-        .replace(/\u0323/g, "")
-        .normalize("NFC")
-    );
+  const texts = paragraphs.map((p) =>
+    getParaText(p)
+      .normalize("NFD")
+      .replace(/\u0323/g, "")
+      .normalize("NFC")
+  );
   const words = texts.map((t) => t.split(" ").length);
 
   const paras = paragraphs
     .map((p, i) => {
       const text = texts[i];
-      if (p.id) {
-        return {
-          type: "quote",
-          text,
-          author: data[p.id].author,
-          ref: getRef(data[p.id], p.paragraphs),
-        };
-      }
       const first = getFirstChar(p.index, text);
+      const quotes = getParaQuotes(p, text.length);
       const indices = unique([
         0,
         ...(first === undefined ? [] : [first]),
-        ...(p.citations?.parts || [])
-          .filter((q) => typeof q !== "string")
-          .flatMap((q) => [q.start, q.end]),
-        ...(p.lines || []).flatMap((l) => [l, l - 1]),
-        ...(p.quotes || []).flatMap((q) => [q.start - 1, q.end + 1]),
+        ...(p.citations || []).flatMap((c) => [c.start, c.end]),
+        ...(p.lines || []).flatMap((l) => [l - 1, l]),
+        ...quotes.flatMap((q) => [q.start, q.end]),
         text.length,
       ]).sort((a, b) => a - b);
       const parts = indices.slice(1).flatMap((end, j) => {
         const start = indices[j];
-        const quote = (p.quotes || []).find((q) => q.end + 1 === end);
-        const count =
-          (p.citations?.parts || []).find(
-            (q) => q.start <= start && q.end >= end
-          )?.count || 0;
+        const quote = quotes.find((q) => q.end === end);
+        const count = new Set(
+          (p.citations || [])
+            .filter((c) => c.start <= start && c.end >= end)
+            .map((c) => c.doc)
+        ).size;
         return [
           {
             start,
@@ -140,9 +183,7 @@ const documents = dataKeys.map((id, docIndex) => {
             text: text.slice(start, end),
             first: first !== undefined && end <= first,
             count,
-            quote: !!(p.quotes || []).find(
-              (q) => q.start - 1 <= start && q.end + 1 >= end
-            ),
+            quote: !!quotes.find((q) => q.start <= start && q.end >= end),
           },
           ...(quote
             ? [
@@ -151,10 +192,10 @@ const documents = dataKeys.map((id, docIndex) => {
                   end,
                   text:
                     " [" +
-                    getRef(data[quote.id], [quote.paragraph]).path.join(", ") +
+                    getRef(data[quote.doc], [quote.paragraph]).path.join(", ") +
                     "]",
                   count,
-                  ref: getRef(data[quote.id], [quote.paragraph]),
+                  ref: getRef(data[quote.doc], [quote.paragraph]),
                 },
               ]
             : []),
@@ -170,6 +211,17 @@ const documents = dataKeys.map((id, docIndex) => {
             return parts.filter((x) => x.start >= start && x.end <= end);
           }),
           citations: p.citations,
+          max,
+        };
+      }
+      const textParts = parts.filter(
+        (p) => p.text.trim() && p.text.trim() !== ". . ." && !p.ref
+      );
+      if (textParts.length > 0 && textParts.every((p) => p.quote)) {
+        return {
+          ...p,
+          type: "blockquote",
+          text: parts,
           max,
         };
       }
@@ -201,9 +253,8 @@ const documents = dataKeys.map((id, docIndex) => {
       //   ).map((t) => t.count)
       // ),
       ...p,
-      citations: p.citations?.refs.map((r) =>
-        getRef(data[r.id], [r.paragraph])
-      ),
+      parts: undefined,
+      citations: p.citations?.map((c) => getRef(data[c.doc], [c.paragraph])),
     }));
   allParagraphs.push(...paras);
 

@@ -11,7 +11,8 @@
     overflow: 'hidden'
   ]
   ~
-  if url[1] = 'prayers' then prayerspage
+  if no then infopage
+  else if url[1] = 'prayers' then prayerspage
   else if url[1] then {
     id: url[1]
     doc: documentById(id)
