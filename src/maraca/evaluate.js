@@ -170,10 +170,10 @@ const evaluate = (node, context) => {
       if (base === null) return null;
       const block = toBlock(base);
       if (arg in block.values) {
-        return block.values[arg];
+        return block.values[arg] ?? null;
       }
       if (Number.isInteger(arg)) {
-        return resolveItems(block.items)[arg - 1] || null;
+        return resolveItems(block.items)[arg - 1] ?? null;
       }
       return null;
     });
@@ -193,7 +193,7 @@ const evaluate = (node, context) => {
         if (typeof f === "function") {
           return f.reactiveFunc
             ? f(...$args)
-            : f(...$args.map((x) => resolveToFragment(x)));
+            : f(...$args.map((x) => resolveDeep(x)));
         }
         const matches = f.patterns.map((p, i) => getParameters(p, $args[i]));
         return evaluate(

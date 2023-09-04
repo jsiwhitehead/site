@@ -149,7 +149,7 @@ export default (root, history) => {
   };
 
   const getStyle = (values, context, flow) => {
-    const result = { ...(values.style?.values || {}) } as any;
+    const result = {} as any;
     if (context.inline === "inline") {
       if (result.display !== "inline-block") result.display = "inline";
     } else if (context.inline !== "wrap" && !flow.type) {
@@ -263,11 +263,12 @@ export default (root, history) => {
       result.cursor = "pointer";
       // result.userSelect = "none";
     }
+    Object.assign(result, values.style?.values || {});
     return result;
   };
 
   const updateNode = (effect, node, data, prevContext) => {
-    if (!data) return null;
+    if (!data && data !== 0) return null;
 
     if (typeof data === "number" || typeof data === "string") {
       const text = `${data}`;

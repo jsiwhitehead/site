@@ -50,10 +50,10 @@ const grammar = String.raw`Maraca {
     = if | for | function | block | fragment | content | string | number | boolean | label | brackets
 
   if
-    = "if" space* value space* "then" space* value (space* "else" space* value)?
+    = "if" space+ value space+ "then" space+ value (space+ "else" space+ value)?
 
   for
-    = "for" space* pattern (space* "," space* pattern)? space* "in" space* value space* value
+    = "for" space+ pattern (space* "," space* pattern)? space+ "in" space+ value space* value
 
   function
     = "(" space* listOf<pattern, separator> space* ")" space* "=>" space* value
@@ -74,13 +74,13 @@ const grammar = String.raw`Maraca {
     = (pattern | string) space* ":" space* value
 
   push
-    = ("when" space* value space*)? "push" space* value space* "->" space* label
+    = ("when" space+ value space+)? "push" space+ value space* "->" space* label
 
   items
     = listOf<value, separator> space* ","?
 
   pattern
-    = label space* "is" space* t_or -- is
+    = label space+ "is" space+ t_or -- is
     | (t_or | label)
 
   t_or
@@ -133,10 +133,10 @@ const grammar = String.raw`Maraca {
     = digit+ ("." digit+)?
 
   boolean
-    = ("yes" | "no")
+    = ("yes" | "no") ~alnum
 
   label
-    = ~("if" | "then" | "else" | "yes" | "no") alnum+
+    = alnum+
 
   brackets
     = "(" space* value space* ")"

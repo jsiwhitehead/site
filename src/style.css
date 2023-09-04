@@ -28,6 +28,7 @@ img,
 picture,
 video,
 canvas,
+textarea,
 svg {
   display: block;
   max-width: 100%;
