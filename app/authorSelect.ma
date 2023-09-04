@@ -1,6 +1,7 @@
 (selected) => {
   authorItem: (label, pad, span, nested) => [
     pad: [pad, 5]
+    flow: 5
     fill:
       if (selected = label | hover) then
         'lightgreen'
@@ -9,9 +10,13 @@
       else
         '#ddd'
     span: span
-    when click push label -> selected
+    when click push (if label = selected then '' else label) -> selected
     ~
     label
+    if label = 'Heroic Age' then
+      [italic: yes, bold: no, size: 13 ~ '(Writings, Talks & Prayers)']
+    else if label = 'Formative Age' then
+      [italic: yes, bold: no, size: 13 ~ '(Letters & Documents of Guidance)']
   ]
   ~
   [
@@ -24,20 +29,19 @@
       'margin': '0 auto'
     ]
     ~
-    authorItem('Bahá’í Writings', 7.5, 9, [])
-    authorItem('Heroic Age', 7.5, 3, ['Bahá’í Writings'])
-    authorItem('Formative Age', 7.5, 6, ['Bahá’í Writings'])
-    authorItem('Word of God', 7.5, 2, ['Bahá’í Writings', 'Heroic Age'])
-    authorItem('‘Abdu’l‑Bahá', 25, [1, 2], ['Bahá’í Writings', 'Heroic Age'])
-    authorItem('Shoghi Effendi', 7.5, 2, ['Bahá’í Writings', 'Formative Age'])
-    authorItem('The Universal House of Justice', 7.5, 4, ['Bahá’í Writings', 'Formative Age'])
-    authorItem('The Báb', 7.5, 1, ['Bahá’í Writings', 'Heroic Age', 'Word of God'])
-    authorItem('Bahá’u’lláh', 7.5, 1, ['Bahá’í Writings', 'Heroic Age', 'Word of God'])
-    authorItem('First Epoch', 7.5, 1, ['Bahá’í Writings', 'Formative Age', 'Shoghi Effendi'])
-    authorItem('Second Epoch', 7.5, 1, ['Bahá’í Writings', 'Formative Age', 'Shoghi Effendi'])
-    authorItem('Third Epoch', 7.5, 1, ['Bahá’í Writings', 'Formative Age', 'The Universal House of Justice'])
-    authorItem('Fourth Epoch', 7.5, 1, ['Bahá’í Writings', 'Formative Age', 'The Universal House of Justice'])
-    authorItem('Fifth Epoch', 7.5, 1, ['Bahá’í Writings', 'Formative Age', 'The Universal House of Justice'])
-    authorItem('Sixth Epoch', 7.5, 1, ['Bahá’í Writings', 'Formative Age', 'The Universal House of Justice'])
+    authorItem('Heroic Age', 7.5, 3, [])
+    authorItem('Formative Age', 7.5, 6, [])
+    authorItem('Word of God', 7.5, 2, ['Heroic Age'])
+    authorItem('‘Abdu’l‑Bahá', 25, [1, 2], ['Heroic Age'])
+    authorItem('Shoghi Effendi', 7.5, 2, ['Formative Age'])
+    authorItem('The Universal House of Justice', 7.5, 4, ['Formative Age'])
+    authorItem('The Báb', 7.5, 1, ['Heroic Age', 'Word of God'])
+    authorItem('Bahá’u’lláh', 7.5, 1, ['Heroic Age', 'Word of God'])
+    authorItem('First Epoch', 7.5, 1, ['Formative Age', 'Shoghi Effendi'])
+    authorItem('Second Epoch', 7.5, 1, ['Formative Age', 'Shoghi Effendi'])
+    authorItem('Third Epoch', 7.5, 1, ['Formative Age', 'The Universal House of Justice'])
+    authorItem('Fourth Epoch', 7.5, 1, ['Formative Age', 'The Universal House of Justice'])
+    authorItem('Fifth Epoch', 7.5, 1, ['Formative Age', 'The Universal House of Justice'])
+    authorItem('Sixth Epoch', 7.5, 1, ['Formative Age', 'The Universal House of Justice'])
   ]
 }

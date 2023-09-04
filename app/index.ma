@@ -19,13 +19,24 @@
     ~
     render(doc)
   } else {
-    author is any: 'Bahá’í Writings'
+    author is any: ''
     view is any: 'Passages'
     ~
     [
       pad: [top: 10]
       flow: 25
       ~
+      [
+        flow: ['row', 40]
+        style: ['margin': '0 auto']
+        ~
+        [
+          bold: yes
+          size: 20
+          ~
+          'Bahá’í Explorer'
+        ]
+      ]
       [
         pad: [0, 10]
         ~
@@ -37,29 +48,31 @@
           authorSelect(author)
         ]
       ]
-      tabs(view)
-      if view = 'Documents' then
-        [
-          pad: [0, 10, 50]
-          ~
+      if author != '' then {
+        tabs(view)
+        if view = 'Documents' then
           [
-            style: [
-              'overflow-x': 'scroll'
-              'overflow-y': 'hidden'
-            ]
+            pad: [0, 10, 50]
             ~
-            table(author)
+            [
+              style: [
+                'overflow-x': 'scroll'
+                'overflow-y': 'hidden'
+              ]
+              ~
+              table(author)
+            ]
           ]
-        ]
-      else
-        [
-          flow: 80
-          maxWidth: 630
-          pad: [50, 35]
-          ~
-          for p in allParagraphs(author, yes)
-            renderPara(p.partial, no, yes, no, yes, no, p.full)
-        ]
+        else
+          [
+            flow: 80
+            maxWidth: 630
+            pad: [50, 35]
+            ~
+            for p in allParagraphs(author, yes)
+              renderPara(p.partial, no, yes, no, yes, no, p.full)
+          ]
+      }
     ]
   }
 ]

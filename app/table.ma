@@ -1,75 +1,94 @@
-(selected) => [
-  flow: ['grid', 'auto', 'auto', 'auto', 'auto', 'auto']
-  size: 15
+(selected) => {
+  withAuthor: includes(
+    ['Heroic Age', 'Word of God', 'Formative Age', 'The Universal House of Justice', 'Third Epoch', 'Fourth Epoch', 'Fifth Epoch', 'Sixth Epoch'],
+    selected
+  )
+  withCollection: includes(
+    ['Heroic Age', 'Word of God', 'The Báb', 'Bahá’u’lláh', '‘Abdu’l‑Bahá'],
+    selected
+  )
   ~
-  [pad: [7, 10], bold: yes, align: 'center' ~ '#']
-  [pad: [7, 10], bold: yes ~ 'Author']
-  [pad: [7, 10], bold: yes ~ 'Title']
-  [pad: [7, 10], bold: yes ~ 'Collection']
-  [pad: [7, 10], bold: yes ~ 'Length']
-  for d, i in documents(selected) {
-    fill: if i % 2 = 1 then '#eee'
-    color: colors.link[d.author] | colors.link['The World Centre']
-    hovered is maybe: no
+  [
+    size: 15
+    flow: [
+      'grid'
+      47
+      if withAuthor then 'auto'
+      'auto'
+      if withCollection then 'auto'
+      'auto'
+    ]
     ~
-    [
-      pad: [8, 10]
-      bold: yes
-      size: 13
-      align: 'center'
-      color: '#999'
+    [pad: [7, 10], bold: yes, align: 'center' ~ '#']
+    if withAuthor then [pad: [7, 10], bold: yes ~ 'Author']
+    [pad: [7, 10], bold: yes ~ 'Title']
+    if withCollection then [pad: [7, 10], bold: yes ~ 'Collection']
+    [pad: [7, 10], bold: yes ~ 'Length']
+    for d, i in documents(selected) {
+      fill: if i % 2 = 1 then '#eee'
+      color: colors.link[d.author] | colors.link['The World Centre']
+      hovered is maybe: no
       ~
-      i
-    ]
-    [
-      pad: [7, 10]
-      fill: fill
-      round: [topLeft: 10, bottomLeft: 10]
-      color: color
-      underline: hovered
-      when hover push hover -> hovered
-      when click push [d.id] -> url
-      ~
-      d.author
-    ]
-    [
-      pad: [7, 10]
-      fill: fill
-      color: color
-      underline: hovered
-      flow: 10
-      when hover push hover -> hovered
-      when click push [d.id] -> url
-      ~
-      d.title | '#{d.item}'
-      if d.summary then [
-        italic: yes
+      [
+        pad: [8, 10]
+        bold: yes
         size: 13
-        underline: no
+        align: 'center'
+        color: '#999'
         ~
-        d.summary
+        i
       ]
-    ]
-    [
-      pad: [7, 10]
-      fill: fill
-      color: color
-      underline: hovered
-      when hover push hover -> hovered
-      when click push [d.id] -> url
-      ~
-      '{for p, j in d.path { if j != 1 then ', ', p }}'
-    ]
-    [
-      pad: [7, 10]
-      fill: fill
-      round: [topRight: 10, bottomRight: 10]
-      color: color
-      underline: hovered
-      when hover push hover -> hovered
-      when click push [d.id] -> url
-      ~
-      d.time
-    ]
-  }
-]
+      if withAuthor then [
+        pad: [7, 10]
+        fill: fill
+        round: [topLeft: 10, bottomLeft: 10]
+        color: color
+        underline: hovered
+        when hover push hover -> hovered
+        when click push [d.id] -> url
+        ~
+        d.author
+      ]
+      [
+        pad: [7, 10]
+        fill: fill
+        round: if !withAuthor then [topLeft: 10, bottomLeft: 10]
+        color: color
+        underline: hovered
+        flow: 10
+        when hover push hover -> hovered
+        when click push [d.id] -> url
+        ~
+        d.title | '#{d.item}'
+        if d.summary then [
+          italic: yes
+          size: 13
+          underline: no
+          ~
+          d.summary
+        ]
+      ]
+      if withCollection then [
+        pad: [7, 10]
+        fill: fill
+        color: color
+        underline: hovered
+        when hover push hover -> hovered
+        when click push [d.id] -> url
+        ~
+        '{for p, j in d.path { if j != 1 then ', ', p }}'
+      ]
+      [
+        pad: [7, 10]
+        fill: fill
+        round: [topRight: 10, bottomRight: 10]
+        color: color
+        underline: hovered
+        when hover push hover -> hovered
+        when click push [d.id] -> url
+        ~
+        d.time
+      ]
+    }
+  ]
+}

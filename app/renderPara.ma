@@ -34,7 +34,7 @@
           else 'left'
         size: if level then 25 - level * 2
         uppercase: level = 1 | p.type = 'call'
-        bold: level <= 2 | (p.type = 'quote' & !compilation)
+        bold: level <= 2
         italic: level > 2 | p.type = 'info'
         indent:
           if !p.type & (p.index != 1) & !citation then  20
@@ -53,8 +53,6 @@
         ~
         if p.section then
           p.title | '* * *'
-        else if p.type = 'quote' then
-          p.text
         else if p.type = 'lines' then
           for l in (if showCitations then fullPara else p).lines 
             renderLine(l, p.author, yes, showCitations)
