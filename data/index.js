@@ -308,7 +308,8 @@ const prayerCategories = {
     ["their parents. this", "my parents, and", "mother"].some((s) =>
       text.includes(s)
     ) && !text.includes("book"),
-  marriage: (text) => ["marri"].some((s) => text.includes(s)),
+  marriage: (text) =>
+    ["marri", "two souls", "two unrestrained"].some((s) => text.includes(s)),
   family: (text) => text.includes("this family"),
   long: (text) => text.length > 1550,
   journey: (text) => ["my home", "return"].every((s) => text.includes(s)),
