@@ -1,6 +1,6 @@
 (selected) => {
   withAuthor: includes(
-    ['Heroic Age', 'Word of God', 'Formative Age', 'The Universal House of Justice', 'Third Epoch', 'Fourth Epoch', 'Fifth Epoch', 'Sixth Epoch'],
+    ['Heroic Age', 'Word of God'],
     selected
   )
   withCollection: includes(
@@ -59,7 +59,23 @@
         when hover push hover -> hovered
         when click push [d.id] -> url
         ~
-        d.title | '#{d.item}'
+        [
+          flow: 'inline'
+          ~
+          [
+            bold: yes
+            ~
+            d.title | '#{d.item}'
+          ]
+          if d.epoch & d.author != 'Shoghi Effendi'
+            & d.author != 'The Universal House of Justice' then [
+            italic: yes
+            size: 13
+            ~
+            ' ({d.author})'
+          ]
+        ]
+        
         if d.summary then [
           italic: yes
           size: 13
@@ -73,10 +89,12 @@
         fill: fill
         color: color
         underline: hovered
+        flow: 7.5
         when hover push hover -> hovered
         when click push [d.id] -> url
         ~
-        '{for p, j in d.path { if j != 1 then ', ', p }}'
+        for p, j in d.path
+          if j = length(d.path) then p else '{p},'
       ]
       [
         pad: [7, 10]

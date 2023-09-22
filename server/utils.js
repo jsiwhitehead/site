@@ -16,15 +16,20 @@ export const orderByDate = (array) => {
 };
 
 const authors = {
-  "Bahá’í Writings": [
-    "The Báb",
-    "Bahá’u’lláh",
-    "‘Abdu’l‑Bahá",
-    "Shoghi Effendi",
-    "The Universal House of Justice",
-  ],
   "Heroic Age": ["The Báb", "Bahá’u’lláh", "‘Abdu’l‑Bahá"],
-  "Formative Age": ["Shoghi Effendi", "The Universal House of Justice"],
+  "Formative Age": [
+    "Shoghi Effendi",
+    "Third Epoch",
+    "Fourth Epoch",
+    "Fifth Epoch",
+    "Sixth Epoch",
+  ],
+  "The Universal House of Justice and World Centre": [
+    "Third Epoch",
+    "Fourth Epoch",
+    "Fifth Epoch",
+    "Sixth Epoch",
+  ],
   "Word of God": ["The Báb", "Bahá’u’lláh"],
 };
 export const getAuthors = (author) => authors[author] || (author && [author]);

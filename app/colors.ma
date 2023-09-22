@@ -34,7 +34,6 @@
     '‘Abdu’l‑Bahá': '#2980b9',
     'Shoghi Effendi': '#f39c12',
     'The Universal House of Justice': '#4834d4',
-    'Commissioned by the Universal House of Justice': '#4834d4',
     'The World Centre': '#8e44ad',
     'Bahá’í International Community': '#8e44ad',
     'The International Teaching Centre': '#8e44ad',

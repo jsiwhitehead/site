@@ -17,7 +17,9 @@ export const handler = async ({ body = "{}" }) => {
                 "Compilation",
                 "The Bible",
                 "Muḥammad",
-              ].includes(d.author) && d.path?.[0] !== "Additional"
+              ].includes(d.author) &&
+              d.path?.[0] !== "Additional" &&
+              JSON.stringify(d.path) !== '["The Most Holy Book","Notes"]'
           )
           .filter(
             (d) =>
@@ -25,7 +27,12 @@ export const handler = async ({ body = "{}" }) => {
               allAuthors.includes(d.author) ||
               allAuthors.includes(d.epoch)
           )
-          .sort((a, b) => b.score - a.score || a.id.localeCompare(b.id))
+          .sort(
+            (a, b) =>
+              b.time.length - a.time.length ||
+              b.score - a.score ||
+              a.id.localeCompare(b.id)
+          )
           .map(({ paragraphs, ...info }) => info)
           .slice(0, 500)
       ),
