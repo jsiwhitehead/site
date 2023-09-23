@@ -27,25 +27,29 @@
       flow: 25
       ~
       [
-        flow: ['row', 40]
-        style: ['margin': '0 auto']
+        flow: 10
         ~
         [
-          bold: yes
-          size: 20
+          flow: ['row', 40]
+          style: ['margin': '0 auto']
           ~
-          'Bahá’í Explorer'
-        ]
-      ]
-      [
-        pad: [0, 10]
-        ~
-        [
-          style: [
-            overflow: 'scroll'
+          [
+            bold: yes
+            size: 20
+            ~
+            'Bahá’í Explorer'
           ]
+        ]
+        [
+          pad: [0, 10]
           ~
-          authorSelect(author)
+          [
+            style: [
+              overflow: 'scroll'
+            ]
+            ~
+            authorSelect(author)
+          ]
         ]
       ]
       if author != '' then {

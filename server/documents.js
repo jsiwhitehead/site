@@ -19,7 +19,19 @@ export const handler = async ({ body = "{}" }) => {
                 "Muḥammad",
               ].includes(d.author) &&
               d.path?.[0] !== "Additional" &&
-              JSON.stringify(d.path) !== '["The Most Holy Book","Notes"]'
+              !(
+                d.path?.[0] === "Bahá’í Prayers" &&
+                d.author === "Shoghi Effendi"
+              ) &&
+              d.type !== "Prayer" &&
+              JSON.stringify(d.path) !== '["The Most Holy Book","Notes"]' &&
+              JSON.stringify(d.path) !== '["Citadel of Faith","In Memoriam"]' &&
+              ![
+                "Foreword",
+                "Preface",
+                "Introduction",
+                "A Description of the Kitáb‑i‑Aqdas by Shoghi Effendi",
+              ].includes(d.title)
           )
           .filter(
             (d) =>
@@ -31,6 +43,7 @@ export const handler = async ({ body = "{}" }) => {
             (a, b) =>
               b.time.length - a.time.length ||
               b.score - a.score ||
+              (b.years[0] + b.years[1]) / 2 - (a.years[0] + a.years[1]) / 2 ||
               a.id.localeCompare(b.id)
           )
           .map(({ paragraphs, ...info }) => info)

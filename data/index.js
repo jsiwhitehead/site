@@ -38,10 +38,9 @@ const unique = (x) => [...new Set(x)];
 
 const getTime = (words) => {
   const time = words / 238;
-  const scale = Math.min(Math.max(Math.round(Math.log(time + 1)), 1), 5);
-  return Array.from({ length: scale })
-    .map(() => "●")
-    .join("");
+  if (time < 5) return "●";
+  if (time < 20) return "●●";
+  return "●●●";
 };
 
 const getFirstChar = (index, text) => {
@@ -130,9 +129,9 @@ const getParaQuotes = (para, maxLength) => {
 const documents = dataKeys.map((id, docIndex) => {
   const { paragraphs, path, ...info } = data[id];
 
-  const potentialCount = Math.log(
-    getPotentialCount(info.author, docIndex) * 0.1 + 1
-  );
+  // const potentialCount = Math.log(
+  //   getPotentialCount(info.author, docIndex) * 0.1 + 1
+  // );
 
   const cleanPath =
     path &&
@@ -183,6 +182,11 @@ const documents = dataKeys.map((id, docIndex) => {
             text: text.slice(start, end),
             first: first !== undefined && end <= first,
             count,
+            citationDocs: new Set(
+              (p.citations || [])
+                .filter((c) => c.start <= start && c.end >= end)
+                .map((c) => c.doc)
+            ),
             quote: !!quotes.find((q) => q.start <= start && q.end >= end),
           },
           ...(quote
@@ -195,6 +199,11 @@ const documents = dataKeys.map((id, docIndex) => {
                     getRef(data[quote.doc], [quote.paragraph]).path.join(", ") +
                     "]",
                   count,
+                  citationDocs: new Set(
+                    (p.citations || [])
+                      .filter((c) => c.start <= start && c.end >= end)
+                      .map((c) => c.doc)
+                  ),
                   ref: getRef(data[quote.doc], [quote.paragraph]),
                 },
               ]
@@ -238,12 +247,24 @@ const documents = dataKeys.map((id, docIndex) => {
       epoch: info.epoch,
       years: info.years,
       ref: getRef(data[id], [i]),
-      score:
-        (p.type === "quote" ? [] : p.type === "lines" ? p.lines.flat() : p.text)
-          .map((t) => Math.pow(t.count, 2) * t.text.split(" ").length)
-          .reduce((res, n) => res + n, 0) /
-        words[i] /
-        potentialCount,
+      citationDocs: (p.type === "quote"
+        ? []
+        : p.type === "lines"
+        ? p.lines.flat()
+        : p.text
+      )
+        .map((t) => t.citationDocs)
+        .reduce((res, n) => new Set([...res, ...n]), new Set()),
+      score: (p.type === "quote"
+        ? []
+        : p.type === "lines"
+        ? p.lines.flat()
+        : p.text
+      )
+        .map((t) => t.citationDocs)
+        .reduce((res, n) => new Set([...res, ...n]), new Set()).size,
+      // .map((t) => Math.pow(t.count, 2) * t.text.split(" ").length)
+      // .reduce((res, n) => res + n, 0) / words[i], // / potentialCount,
       // score: Math.max(
       //   ...(p.type === "quote"
       //     ? []
@@ -270,9 +291,12 @@ const documents = dataKeys.map((id, docIndex) => {
     next: data[nextId] && nextId,
     fullPath: cleanPath,
     time: getTime(fullWords),
-    score:
-      paras.map((p) => p.score).reduce((res, n) => res + n, 0) /
-      Math.sqrt(paras.length),
+    score: paras
+      .map((p) => p.citationDocs)
+      .reduce((res, n) => new Set([...res, ...n]), new Set()).size,
+    // score:
+    //   paras.map((p) => p.score).reduce((res, n) => res + n, 0) /
+    //   Math.sqrt(paras.length),
     // score: Math.max(...paras.map((p) => p.score)),
     allType:
       info.id.startsWith("ruhi") ||

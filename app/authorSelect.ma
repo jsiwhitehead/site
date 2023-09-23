@@ -16,7 +16,7 @@
     if label = 'Heroic Age' then
       [italic: yes, bold: no, size: 13 ~ '(Writings, Talks & Prayers)']
     else if label = 'Formative Age' then
-      [italic: yes, bold: no, size: 13 ~ '(Letters & Documents of Guidance)']
+      [italic: yes, bold: no, size: 13 ~ '(Letters, Documents & Compilations)']
     else if label = 'The Báb' then
       [italic: yes, bold: no, size: 10 ~ '1844 —']
     else if label = 'Bahá’u’lláh' then
