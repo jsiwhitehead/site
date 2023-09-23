@@ -24,6 +24,7 @@ export const handler = async ({ body = "{}" }) => {
                 d.author === "Shoghi Effendi"
               ) &&
               d.type !== "Prayer" &&
+              !d.compilation &&
               JSON.stringify(d.path) !== '["The Most Holy Book","Notes"]' &&
               JSON.stringify(d.path) !== '["Citadel of Faith","In Memoriam"]' &&
               ![
@@ -39,12 +40,13 @@ export const handler = async ({ body = "{}" }) => {
               allAuthors.includes(d.author) ||
               allAuthors.includes(d.epoch)
           )
-          .sort(
-            (a, b) =>
-              b.time.length - a.time.length ||
-              b.score - a.score ||
-              (b.years[0] + b.years[1]) / 2 - (a.years[0] + a.years[1]) / 2 ||
-              a.id.localeCompare(b.id)
+          .sort((a, b) =>
+            ["The Báb", "Bahá’u’lláh", "‘Abdu’l‑Bahá"].includes(a.author)
+              ? b.time.length - a.time.length || a.id.localeCompare(b.id)
+              : b.time.length - a.time.length ||
+                b.score - a.score ||
+                (b.years[0] + b.years[1]) / 2 - (a.years[0] + a.years[1]) / 2 ||
+                a.id.localeCompare(b.id)
           )
           .map(({ paragraphs, ...info }) => info)
           .slice(0, 500)

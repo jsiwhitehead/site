@@ -38,9 +38,11 @@ const unique = (x) => [...new Set(x)];
 
 const getTime = (words) => {
   const time = words / 238;
-  if (time < 5) return "●";
-  if (time < 20) return "●●";
-  return "●●●";
+  if (time < 1.6) return "●"; // 0.2
+  if (time < 5) return "●●"; // 0.7
+  if (time < 16) return "●●●"; // 1.2
+  if (time < 50) return "●●●●"; // 1.7
+  return "●●●●●";
 };
 
 const getFirstChar = (index, text) => {
@@ -255,16 +257,12 @@ const documents = dataKeys.map((id, docIndex) => {
       )
         .map((t) => t.citationDocs)
         .reduce((res, n) => new Set([...res, ...n]), new Set()),
-      score: (p.type === "quote"
-        ? []
-        : p.type === "lines"
-        ? p.lines.flat()
-        : p.text
-      )
-        .map((t) => t.citationDocs)
-        .reduce((res, n) => new Set([...res, ...n]), new Set()).size,
-      // .map((t) => Math.pow(t.count, 2) * t.text.split(" ").length)
-      // .reduce((res, n) => res + n, 0) / words[i], // / potentialCount,
+      score:
+        (p.type === "quote" ? [] : p.type === "lines" ? p.lines.flat() : p.text)
+          // .map((t) => t.citationDocs)
+          // .reduce((res, n) => new Set([...res, ...n]), new Set()).size,
+          .map((t) => Math.pow(t.count, 2) * t.text.split(" ").length)
+          .reduce((res, n) => res + n, 0) / words[i], // / potentialCount,
       // score: Math.max(
       //   ...(p.type === "quote"
       //     ? []

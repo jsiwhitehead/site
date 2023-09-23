@@ -13,17 +13,17 @@
     flow: [
       'grid'
       47
+      71
       if withAuthor then 'auto'
       'auto'
       if withCollection then 'auto'
-      'auto'
     ]
     ~
     [pad: [7, 10], bold: yes, align: 'center' ~ '#']
+    [pad: [7, 10], bold: yes ~ 'Length']
     if withAuthor then [pad: [7, 10], bold: yes ~ 'Author']
     [pad: [7, 10], bold: yes ~ 'Title']
     if withCollection then [pad: [7, 10], bold: yes ~ 'Collection']
-    [pad: [7, 10], bold: yes ~ 'Length']
     for d, i in documents(selected) {
       fill: if i % 2 = 1 then '#eee'
       color: colors.link[d.author] | colors.link['The World Centre']
@@ -38,10 +38,20 @@
         ~
         i
       ]
-      if withAuthor then [
+      [
         pad: [7, 10]
         fill: fill
         round: [topLeft: 10, bottomLeft: 10]
+        color: color
+        underline: hovered
+        when hover push hover -> hovered
+        when click push [d.id] -> url
+        ~
+        d.time
+      ]
+      if withAuthor then [
+        pad: [7, 10]
+        fill: fill
         color: color
         underline: hovered
         when hover push hover -> hovered
@@ -52,7 +62,7 @@
       [
         pad: [7, 10]
         fill: fill
-        round: if !withAuthor then [topLeft: 10, bottomLeft: 10]
+        round: if !withCollection then [topRight: 10, bottomRight: 10]
         color: color
         underline: hovered
         flow: 10
@@ -87,6 +97,7 @@
       if withCollection then [
         pad: [7, 10]
         fill: fill
+        round: [topRight: 10, bottomRight: 10]
         color: color
         underline: hovered
         flow: 7.5
@@ -95,17 +106,6 @@
         ~
         for p, j in d.path
           if j = length(d.path) then p else '{p},'
-      ]
-      [
-        pad: [7, 10]
-        fill: fill
-        round: [topRight: 10, bottomRight: 10]
-        color: color
-        underline: hovered
-        when hover push hover -> hovered
-        when click push [d.id] -> url
-        ~
-        d.time
       ]
     }
   ]
