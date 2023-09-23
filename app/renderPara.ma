@@ -42,7 +42,7 @@
         pad:
           if p.type = 'call' | p.type = 'info' then [0, 40]
           else if allType then 0
-          else if p.type = 'blockquote' then [0, 20]
+          else if p.type = 'blockquote' & p.author != 'Compilation' then [0, 20]
           else if p.type = 'lines' then [0, 70]
           else if level = 1 then [top: 20]
           else if level <= 2 then 0
@@ -109,22 +109,36 @@
       flow: 12
       pad: [left: 13]
       ~
-      for ref, index in p.citations [
-        size: 12
-        italic: yes
-        color: colors.link[ref.path[1]] | colors.link['The World Centre']
-        pad: [top: if index = 1 then 10, left: 15]
-        indent: -12
-        style: [
-          'display': 'list-item'
-          'list-style-type': 'disc'
+      for ref, index in p.citations
+        if ref.path[1] = 'The Ruhi Institute' then [
+          size: 12
+          italic: yes
+          color: colors.link[ref.path[1]] | colors.link['The World Centre']
+          pad: [top: if index = 1 then 10, left: 15]
+          indent: -12
+          style: [
+            'display': 'list-item'
+            'list-style-type': 'disc'
+          ]
+          ~
+          for t, i in ref.path
+            if i = length(ref.path) then t else '{t}, '
+        ] else [
+          size: 12
+          italic: yes
+          color: colors.link[ref.path[1]] | colors.link['The World Centre']
+          pad: [top: if index = 1 then 10, left: 15]
+          indent: -12
+          style: [
+            'display': 'list-item'
+            'list-style-type': 'disc'
+          ]
+          underline: hover
+          when click push ['': ref.paragraph ~ ref.id] -> url
+          ~
+          for t, i in ref.path
+            if i = length(ref.path) then t else '{t}, '
         ]
-        underline: hover
-        when click push ['': ref.paragraph ~ ref.id] -> url
-        ~
-        for t, i in ref.path
-          if i = length(ref.path) then t else '{t}, '
-      ]
     ]
   ]
 }

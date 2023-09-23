@@ -292,6 +292,7 @@ const documents = dataKeys.map((id, docIndex) => {
     score: paras
       .map((p) => p.citationDocs)
       .reduce((res, n) => new Set([...res, ...n]), new Set()).size,
+    initial: texts.join(" ").replace(/^(.{50}[^ ]*).*/, "$1"),
     // score:
     //   paras.map((p) => p.score).reduce((res, n) => res + n, 0) /
     //   Math.sqrt(paras.length),

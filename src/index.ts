@@ -174,6 +174,7 @@ const compiled = maraca(
       });
     },
     documents: (author) => api("documents", { author }),
+    compilations: (author) => api("compilations", { author }),
     prayers: (author) => {
       const $prayers = api("prayers", { author });
       return derived(() => {

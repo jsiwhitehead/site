@@ -71,11 +71,17 @@
         ~
         [
           flow: 'inline'
+          style: [position: 'relative']
           ~
-          [
+          if d.title then [
             bold: yes
             ~
-            d.title | '#{d.item}'
+            d.title
+          ] else [
+            bold: yes
+            italic: yes
+            ~
+            '“{d.initial} . . .”' 
           ]
           if d.epoch & d.author != 'Shoghi Effendi'
             & d.author != 'The Universal House of Justice' then [
@@ -105,7 +111,7 @@
         when click push [d.id] -> url
         ~
         for p, j in d.path
-          if j = length(d.path) then p else '{p},'
+          if j = length(d.path) then '{p}, #{d.item}' else '{p},'
       ]
     }
   ]

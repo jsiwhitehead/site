@@ -1,4 +1,4 @@
-(view) => [
+(view, extraTab) => [
   flow: ['row', 5, 'center']
   ~
   [
@@ -32,9 +32,27 @@
     pad: [10, 0]
     width: 150
     align: 'center'
-    round: [right: 40]
+    round: if !extraTab then [right: 40]
     when click push 'Documents' -> view
     ~
     'Documents'
+  ]
+  if extraTab then [
+    size: 15
+    bold: yes
+    fill:
+      if view = extraTab then
+        'lightgreen'
+      else if hover then
+        'lightblue'
+      else
+        '#ddd'
+    pad: [10, 0]
+    width: 150
+    align: 'center'
+    round: [right: 40]
+    when click push extraTab -> view
+    ~
+    extraTab
   ]
 ]

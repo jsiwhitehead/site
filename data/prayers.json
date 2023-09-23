@@ -21,6 +21,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O God, my God, my Beloved, my heart’s Desire.",
     "paragraphs": [
       {
         "id": "prayers-001",
@@ -91,6 +92,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "He is God! O God, my God! Bestow upon me a pure heart,",
     "paragraphs": [
       {
         "id": "prayers-002",
@@ -187,6 +189,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O God, guide me, protect me, make of me a shining lamp",
     "paragraphs": [
       {
         "id": "prayers-003",
@@ -274,7 +277,8 @@
       "Bahá’í Prayers"
     ],
     "time": "●",
-    "score": 7,
+    "score": 6,
+    "initial": "Is there any Remover of difficulties save God? Say:",
     "paragraphs": [
       {
         "id": "prayers-004",
@@ -295,7 +299,7 @@
           ]
         },
         "citationDocs": {},
-        "score": 30.88,
+        "score": 29.32,
         "index": 1,
         "citations": [
           {
@@ -345,14 +349,6 @@
               "The Ruhi Institute",
               "Book 6: Teaching the Cause"
             ]
-          },
-          {
-            "id": "compilations-set-world-order-001",
-            "paragraph": 14,
-            "path": [
-              "Compilation",
-              "To Set the World in Order: Building and Preserving Strong Marriages"
-            ]
           }
         ],
         "text": [
@@ -379,7 +375,7 @@
             "end": 78,
             "text": "He is God!",
             "first": false,
-            "count": 7,
+            "count": 6,
             "citationDocs": {},
             "quote": false
           },
@@ -393,7 +389,7 @@
             "quote": false
           }
         ],
-        "max": 7
+        "max": 6
       }
     ],
     "category": "Unity"
@@ -421,6 +417,7 @@
     ],
     "time": "●",
     "score": 3,
+    "initial": "Say: God sufficeth all things above all things, and",
     "paragraphs": [
       {
         "id": "prayers-005",
@@ -518,6 +515,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou peerless Lord! Let this suckling babe be nursed",
     "paragraphs": [
       {
         "id": "prayers-006",
@@ -580,6 +578,7 @@
     "fullPath": [],
     "time": "●",
     "score": 1,
+    "initial": "O my God, O my Lord, O my Master! I beg Thee to forgive",
     "paragraphs": [
       {
         "id": "prayers-007",
@@ -656,6 +655,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou by Whose name the sea of joy moveth and the",
     "paragraphs": [
       {
         "id": "prayers-008",
@@ -727,6 +727,7 @@
     ],
     "time": "●",
     "score": 6,
+    "initial": "To be recited once in twenty‑four hours, at noon I",
     "paragraphs": [
       {
         "id": "prayers-009",
@@ -961,6 +962,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O Lord! Plant this tender seedling in the garden of",
     "paragraphs": [
       {
         "id": "prayers-010",
@@ -1098,6 +1100,7 @@
     ],
     "time": "●",
     "score": 4,
+    "initial": "Blessed is the spot, and the house, and the place,",
     "paragraphs": [
       {
         "id": "prayers-011",
@@ -1212,6 +1215,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "I adjure Thee by Thy might, O my God! Let no harm beset",
     "paragraphs": [
       {
         "id": "prayers-012",
@@ -1313,6 +1317,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praised be Thou, O Lord my God! Sanctify mine eye,",
     "paragraphs": [
       {
         "id": "prayers-013",
@@ -1383,6 +1388,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "O Lord! Enable all the peoples of the earth to gain",
     "paragraphs": [
       {
         "id": "prayers-014",
@@ -1520,6 +1526,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O God! Grant Thy favour, and bestow Thy blessing. Vouchsafe",
     "paragraphs": [
       {
         "id": "prayers-015",
@@ -1590,6 +1597,7 @@
     ],
     "time": "●",
     "score": 3,
+    "initial": "O my God, aid Thou Thy servant to raise up the Word,",
     "paragraphs": [
       {
         "id": "prayers-016",
@@ -1618,7 +1626,7 @@
             "paragraph": 2,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#203"
             ]
           },
@@ -1688,7 +1696,7 @@
             "paragraph": 2,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#203"
             ]
           }
@@ -1732,6 +1740,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Thy name is my healing, O my God, and remembrance of",
     "paragraphs": [
       {
         "id": "prayers-017",
@@ -1802,6 +1811,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "O Lord! Thou art the Remover of every anguish and the",
     "paragraphs": [
       {
         "id": "prayers-018",
@@ -1890,6 +1900,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "I beseech Thee, O my God, by all the transcendent glory",
     "paragraphs": [
       {
         "id": "prayers-019",
@@ -1970,6 +1981,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "I have wakened in Thy shelter, O my God, and it becometh",
     "paragraphs": [
       {
         "id": "prayers-020",
@@ -2040,6 +2052,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O my Lord! O my Lord! This is a lamp lighted by the",
     "paragraphs": [
       {
         "id": "prayers-021",
@@ -2110,6 +2123,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O Lord my God! Assist Thy loved ones to be firm in",
     "paragraphs": [
       {
         "id": "prayers-022",
@@ -2190,6 +2204,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O Lord! I am a child; enable me to grow beneath the",
     "paragraphs": [
       {
         "id": "prayers-023",
@@ -2311,6 +2326,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Lord! Bless this family and grant it happiness in",
     "paragraphs": [
       {
         "id": "prayers-024",
@@ -2378,6 +2394,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "I swear by Thy glory, O my God! I am astonished at",
     "paragraphs": [
       {
         "id": "prayers-025",
@@ -2448,6 +2465,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou most glorious Lord! Make this little maidservant",
     "paragraphs": [
       {
         "id": "prayers-026",
@@ -2518,6 +2536,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "O God, my God! Aid Thou Thy trusted servants to have",
     "paragraphs": [
       {
         "id": "prayers-027",
@@ -2546,7 +2565,7 @@
             "paragraph": 5,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#7"
             ]
           },
@@ -2613,6 +2632,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O beloved child! Praise be to God that thou hast entered",
     "paragraphs": [
       {
         "id": "prayers-028",
@@ -2748,6 +2768,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "O Lord, my God! Confirm them in Thy service; strengthen",
     "paragraphs": [
       {
         "id": "prayers-029",
@@ -2776,7 +2797,7 @@
             "path": [
               "‘Abdu’l‑Bahá",
               "Additional Tablets, Extracts and Talks",
-              "Extract from a Tablet of ‘Abdu’l‑Bahá"
+              "#87"
             ]
           },
           {
@@ -2833,6 +2854,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O my Lord, my Master, and the Goal of my Desire! I",
     "paragraphs": [
       {
         "id": "prayers-030",
@@ -2903,6 +2925,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "O God! Educate these children. These children are the",
     "paragraphs": [
       {
         "id": "prayers-031",
@@ -2928,12 +2951,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-069",
-            "paragraph": 13,
+            "paragraph": 11,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in New York and Brooklyn (11‑20 June 1912)",
-              "Talk at Fourth Unitarian Church Beverly Road, Flatbush, Brooklyn, New York"
+              "New York and Brooklyn, 11‑20 June 1912",
+              "16 June 1912"
             ]
           },
           {
@@ -2990,6 +3013,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Lord, make Thou this marriage to become a cause of",
     "paragraphs": [
       {
         "id": "prayers-032",
@@ -3061,6 +3085,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O God! Rear this little babe in the bosom of Thy love,",
     "paragraphs": [
       {
         "id": "prayers-033",
@@ -3132,6 +3157,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O God! Dispel all those elements which are the cause",
     "paragraphs": [
       {
         "id": "prayers-034",
@@ -3202,6 +3228,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "O my God, my Lord and my Master! I have detached myself",
     "paragraphs": [
       {
         "id": "prayers-035",
@@ -3290,6 +3317,7 @@
     ],
     "time": "●",
     "score": 3,
+    "initial": "O my God! O my God! Unite the hearts of Thy servants,",
     "paragraphs": [
       {
         "id": "prayers-036",
@@ -3387,6 +3415,7 @@
     ],
     "time": "●",
     "score": 4,
+    "initial": "O Thou kind Lord! These lovely children are the handiwork",
     "paragraphs": [
       {
         "id": "prayers-037",
@@ -3559,6 +3588,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Lord! Help this daughter of the Kingdom to be exalted",
     "paragraphs": [
       {
         "id": "prayers-038",
@@ -3694,6 +3724,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou pure God! I am a little child; grant that the",
     "paragraphs": [
       {
         "id": "prayers-039",
@@ -3795,6 +3826,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Grant, O my Lord, that this marriage may be auspicious,",
     "paragraphs": [
       {
         "id": "prayers-040",
@@ -3865,6 +3897,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Praise be unto Thee, O Lord. Forgive us our sins, have",
     "paragraphs": [
       {
         "id": "prayers-041",
@@ -3942,6 +3975,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "He is the Most Glorious! O my merciful Lord! This is",
     "paragraphs": [
       {
         "id": "prayers-042",
@@ -4100,6 +4134,7 @@
     ],
     "time": "●",
     "score": 3,
+    "initial": "O my Lord! Make Thy beauty to be my food, and Thy presence",
     "paragraphs": [
       {
         "id": "prayers-043",
@@ -4253,6 +4288,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "In regard to his affairs, let him repeat nineteen times:",
     "paragraphs": [
       {
         "id": "prayers-044",
@@ -4320,6 +4356,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou kind Lord! Grant that these trees may become",
     "paragraphs": [
       {
         "id": "prayers-045",
@@ -4458,6 +4495,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "I have risen this morning by Thy grace, O my God, and",
     "paragraphs": [
       {
         "id": "prayers-046",
@@ -4562,6 +4600,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O Thou loving Provider! These souls have hearkened",
     "paragraphs": [
       {
         "id": "prayers-047",
@@ -4590,7 +4629,7 @@
             "paragraph": 8,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#17"
             ]
           }
@@ -4644,7 +4683,7 @@
             "paragraph": 8,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#17"
             ]
           }
@@ -4688,6 +4727,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Glory be to Thee, O Lord my God! Make manifest the",
     "paragraphs": [
       {
         "id": "prayers-048",
@@ -4812,6 +4852,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O my God! O Thou forgiver of sins, bestower of gifts,",
     "paragraphs": [
       {
         "id": "prayers-049",
@@ -4950,6 +4991,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou kind Lord! Bestow heavenly confirmation upon",
     "paragraphs": [
       {
         "id": "prayers-050",
@@ -5051,6 +5093,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Lord! Guard Thou the children that are born in Thy",
     "paragraphs": [
       {
         "id": "prayers-051",
@@ -5186,6 +5229,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou forgiving God! Forgive the sins of my loving",
     "paragraphs": [
       {
         "id": "prayers-052",
@@ -5325,6 +5369,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O seeker of Truth! If thou desirest that God may open",
     "paragraphs": [
       {
         "id": "prayers-053",
@@ -5459,6 +5504,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O thou tender plant in the garden of the love of God!",
     "paragraphs": [
       {
         "id": "prayers-054",
@@ -5563,6 +5609,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "O my Lord and my Hope! Help Thou Thy loved ones to",
     "paragraphs": [
       {
         "id": "prayers-055",
@@ -5591,7 +5638,7 @@
             "paragraph": 16,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#206"
             ]
           },
@@ -5653,7 +5700,7 @@
             "paragraph": 16,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#206"
             ]
           },
@@ -5705,6 +5752,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "I beg Thee to forgive me, O my Lord, for every mention",
     "paragraphs": [
       {
         "id": "prayers-056",
@@ -5793,6 +5841,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "O Lord! Make this youth radiant, and confer Thy bounty",
     "paragraphs": [
       {
         "id": "prayers-057",
@@ -5891,6 +5940,7 @@
     ],
     "time": "●",
     "score": 3,
+    "initial": "O Lord! Unto Thee I repair for refuge, and toward all",
     "paragraphs": [
       {
         "id": "prayers-058",
@@ -6224,6 +6274,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou compassionate Lord! O Lord of Hosts! Praise",
     "paragraphs": [
       {
         "id": "prayers-059",
@@ -6294,6 +6345,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O my God! O my God! Thou seest these children who are",
     "paragraphs": [
       {
         "id": "prayers-060",
@@ -6415,6 +6467,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praise be to Thee, O Lord my God, for guiding me unto",
     "paragraphs": [
       {
         "id": "prayers-061",
@@ -6482,6 +6535,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Lord! Grant that this marriage may be blessed and",
     "paragraphs": [
       {
         "id": "prayers-062",
@@ -6552,6 +6606,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Suffer me not, O God, my God, to be kept back from",
     "paragraphs": [
       {
         "id": "prayers-063",
@@ -6653,6 +6708,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "In the Name of our Lord, the Most Holy, the Most Great,",
     "paragraphs": [
       {
         "id": "prayers-064",
@@ -6758,6 +6814,7 @@
     ],
     "time": "●",
     "score": 3,
+    "initial": "O Lord! In this Most Great Dispensation Thou dost accept",
     "paragraphs": [
       {
         "id": "prayers-065",
@@ -6854,6 +6911,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O my God, the God of bounty and mercy! Thou art that",
     "paragraphs": [
       {
         "id": "prayers-066",
@@ -6955,6 +7013,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is God. O Divine Providence! Bestow happiness and",
     "paragraphs": [
       {
         "id": "prayers-067",
@@ -7056,6 +7115,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "In the name of God, the Forgiver! Although this wretched",
     "paragraphs": [
       {
         "id": "prayers-068",
@@ -7160,6 +7220,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O Lord! Make these children excellent plants. Let them",
     "paragraphs": [
       {
         "id": "prayers-069",
@@ -7331,6 +7392,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou kind Lord! Sanctify my heart from all attachment,",
     "paragraphs": [
       {
         "id": "prayers-070",
@@ -7401,6 +7463,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O my Lord, my Beloved, my Desire! Befriend me in my",
     "paragraphs": [
       {
         "id": "prayers-071",
@@ -7496,6 +7559,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou Who art the Lord of Lords! I testify that Thou",
     "paragraphs": [
       {
         "id": "prayers-072",
@@ -7565,6 +7629,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "O my God! O my God! This, Thy servant, hath advanced",
     "paragraphs": [
       {
         "id": "prayers-073",
@@ -7705,6 +7770,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O God, my God! I have set out from my home, holding",
     "paragraphs": [
       {
         "id": "prayers-074",
@@ -7772,6 +7838,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou beloved of my heart and soul! I have no refuge",
     "paragraphs": [
       {
         "id": "prayers-075",
@@ -7907,6 +7974,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is the Peerless! Praise be unto Thee, O Lord my",
     "paragraphs": [
       {
         "id": "prayers-076",
@@ -8008,6 +8076,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is the All‑Glorious. O my Lord, my King, my Ruler,",
     "paragraphs": [
       {
         "id": "prayers-077",
@@ -8109,6 +8178,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O God, my God! Join in accord these two souls and set",
     "paragraphs": [
       {
         "id": "prayers-078",
@@ -8176,6 +8246,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O thou little handmaid of God! I earnestly hope that",
     "paragraphs": [
       {
         "id": "prayers-079",
@@ -8281,6 +8352,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O my God, O Forgiver of sins and Dispeller of afflictions!",
     "paragraphs": [
       {
         "id": "prayers-080",
@@ -8385,6 +8457,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O my God, my Master, the Goal of my desire! This, Thy",
     "paragraphs": [
       {
         "id": "prayers-081",
@@ -8520,6 +8593,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou Provider, O Thou Forgiver! A noble soul hath",
     "paragraphs": [
       {
         "id": "prayers-082",
@@ -8621,6 +8695,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Magnified be Thy name, O God, the Lord of heaven! Attire",
     "paragraphs": [
       {
         "id": "prayers-083",
@@ -8725,6 +8800,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou Whose face is the object of my adoration, Whose",
     "paragraphs": [
       {
         "id": "prayers-084",
@@ -8829,6 +8905,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Peerless Lord! Be Thou a shelter for this poor child",
     "paragraphs": [
       {
         "id": "prayers-085",
@@ -8896,6 +8973,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O ye two tender plants in the Abhá Paradise! Render",
     "paragraphs": [
       {
         "id": "prayers-086",
@@ -9034,6 +9112,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O my Lord, O my Lord! These two bright orbs are wedded",
     "paragraphs": [
       {
         "id": "prayers-087",
@@ -9062,7 +9141,7 @@
             "paragraph": 2,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#87"
             ]
           }
@@ -9116,7 +9195,7 @@
             "paragraph": 3,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#87"
             ]
           }
@@ -9157,6 +9236,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Lord! Grant me a measure of Thy grace and loving‑kindness,",
     "paragraphs": [
       {
         "id": "prayers-088",
@@ -9224,6 +9304,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is God! O peerless Lord! Praised be Thou for having",
     "paragraphs": [
       {
         "id": "prayers-089",
@@ -9362,6 +9443,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O my Lord! O my Lord! I am a child of tender years.",
     "paragraphs": [
       {
         "id": "prayers-090",
@@ -9497,6 +9579,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Divine Providence! Perplexing difficulties have arisen",
     "paragraphs": [
       {
         "id": "prayers-091",
@@ -9564,6 +9647,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou incomparable God! We are Thy humble servants,",
     "paragraphs": [
       {
         "id": "prayers-092",
@@ -9634,6 +9718,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Praise be unto Thee, O Lord my God! We have observed",
     "paragraphs": [
       {
         "id": "prayers-093",
@@ -9711,6 +9796,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is God! O God, my God! We are children who have",
     "paragraphs": [
       {
         "id": "prayers-094",
@@ -9846,6 +9932,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O my God! Verily, the tabernacle of justice hath been",
     "paragraphs": [
       {
         "id": "prayers-095",
@@ -9916,6 +10003,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou Whose tests are a healing medicine to such as",
     "paragraphs": [
       {
         "id": "prayers-096",
@@ -9983,6 +10071,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O God, my God! I yield Thee thanks for having guided",
     "paragraphs": [
       {
         "id": "prayers-097",
@@ -10050,6 +10139,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is the Ever‑Abiding, the Almighty, the Most High.",
     "paragraphs": [
       {
         "id": "prayers-098",
@@ -10154,6 +10244,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O God, my God! Shield Thy trusted servants from the",
     "paragraphs": [
       {
         "id": "prayers-099",
@@ -10221,6 +10312,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O my Lord and my Hope! This Thy servant hath, in obedience",
     "paragraphs": [
       {
         "id": "prayers-100",
@@ -10288,6 +10380,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O thou sapling which hast grown in the garden of the",
     "paragraphs": [
       {
         "id": "prayers-101",
@@ -10423,6 +10516,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O Thou Lord of wondrous grace! Bestow upon us new blessings.",
     "paragraphs": [
       {
         "id": "prayers-102",
@@ -10546,6 +10640,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is God! O Thou pure God! Let these saplings which",
     "paragraphs": [
       {
         "id": "prayers-103",
@@ -10718,6 +10813,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "I am he, O my Lord, that hath set his face towards",
     "paragraphs": [
       {
         "id": "prayers-104",
@@ -10824,6 +10920,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Praise be to Thee, O my God! These are Thy servants",
     "paragraphs": [
       {
         "id": "prayers-105",
@@ -10992,6 +11089,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is God. O Thou forgiving Lord! These servants were",
     "paragraphs": [
       {
         "id": "prayers-106",
@@ -11096,6 +11194,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Remove not, O Lord, the festal board that hath been",
     "paragraphs": [
       {
         "id": "prayers-107",
@@ -11234,6 +11333,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O Thou kind Lord! This gathering is turning to Thee.",
     "paragraphs": [
       {
         "id": "prayers-108",
@@ -11259,12 +11359,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-027",
-            "paragraph": 6,
+            "paragraph": 4,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in Chicago, Wilmette, and Evanston (30 April—5 May 1912)",
-              "Talk at Public Meeting Concluding Convention of Bahá’í Temple Unity Drill Hall, Masonic Temple, Chicago, Illinois"
+              "Chicago, Wilmette, and Evanston, 30 April—5 May 1912",
+              "30 April 1912"
             ]
           }
         ],
@@ -11313,6 +11413,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O God, my God! Give me to drink from the cup of Thy",
     "paragraphs": [
       {
         "id": "prayers-109",
@@ -11383,6 +11484,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Lauded be Thy name, O Lord my God! I entreat Thee by",
     "paragraphs": [
       {
         "id": "prayers-110",
@@ -11521,6 +11623,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "Lord! Pitiful are we, grant us Thy favour; poor, bestow",
     "paragraphs": [
       {
         "id": "prayers-111",
@@ -11690,6 +11793,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "O Thou incomparable God! O Thou Lord of the Kingdom!",
     "paragraphs": [
       {
         "id": "prayers-112",
@@ -11869,6 +11973,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou forgiving Lord! Although some souls have spent",
     "paragraphs": [
       {
         "id": "prayers-113",
@@ -12007,6 +12112,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Magnified art Thou, O Lord of the entire creation,",
     "paragraphs": [
       {
         "id": "prayers-114",
@@ -12069,6 +12175,7 @@
     "fullPath": [],
     "time": "●",
     "score": 0,
+    "initial": "Magnified be Thy Name, O God. Thine in truth are the",
     "paragraphs": [
       {
         "id": "prayers-115",
@@ -12168,6 +12275,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou Who holdest within Thy grasp the Kingdom of",
     "paragraphs": [
       {
         "id": "prayers-116",
@@ -12235,6 +12343,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is God. O God, my God! I have set my face towards",
     "paragraphs": [
       {
         "id": "prayers-117",
@@ -12370,6 +12479,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Lord! Thou didst bestow and Thou didst summon back",
     "paragraphs": [
       {
         "id": "prayers-118",
@@ -12466,6 +12576,7 @@
     "fullPath": [],
     "time": "●",
     "score": 1,
+    "initial": "I implore Thee by the splendour of the light of Thy",
     "paragraphs": [
       {
         "id": "prayers-119",
@@ -12585,6 +12696,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O ye candles which have been lighted by the fingers",
     "paragraphs": [
       {
         "id": "prayers-120",
@@ -12723,6 +12835,7 @@
     ],
     "time": "●",
     "score": 3,
+    "initial": "All the friends of God . . . should contribute to the",
     "paragraphs": [
       {
         "id": "prayers-121",
@@ -12784,7 +12897,7 @@
             "paragraph": 0,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#235"
             ]
           },
@@ -12854,7 +12967,7 @@
             "paragraph": 0,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#235"
             ]
           },
@@ -12915,7 +13028,7 @@
             "paragraph": 0,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#235"
             ]
           },
@@ -12975,6 +13088,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Praised and glorified art Thou, O God! Grant that the",
     "paragraphs": [
       {
         "id": "prayers-122",
@@ -13120,6 +13234,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O my God! O my God! I testify that this is Thy Day",
     "paragraphs": [
       {
         "id": "prayers-123",
@@ -13221,6 +13336,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "My God, my Beloved, my heart’s Desire! These are servants",
     "paragraphs": [
       {
         "id": "prayers-124",
@@ -13315,6 +13431,7 @@
     "fullPath": [],
     "time": "●",
     "score": 2,
+    "initial": "Lauded be Thy Name, O God. Thou art in truth our Lord;",
     "paragraphs": [
       {
         "id": "prayers-125",
@@ -13411,6 +13528,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "I am aware, O Lord, that my trespasses have covered",
     "paragraphs": [
       {
         "id": "prayers-126",
@@ -13536,6 +13654,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Lord, my Lord! I praise Thee and thank Thee for the",
     "paragraphs": [
       {
         "id": "prayers-127",
@@ -13637,6 +13756,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is the All‑Glorious! Praise be to Thee, O my God!",
     "paragraphs": [
       {
         "id": "prayers-128",
@@ -13742,6 +13862,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "I beg Thy forgiveness, O my God, and implore pardon",
     "paragraphs": [
       {
         "id": "prayers-129",
@@ -13868,6 +13989,7 @@
     ],
     "time": "●",
     "score": 3,
+    "initial": "Every soul who travels through the cities, villages",
     "paragraphs": [
       {
         "id": "prayers-130",
@@ -14073,6 +14195,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "Come ye together in gladness unalloyed, and at the",
     "paragraphs": [
       {
         "id": "prayers-131",
@@ -14134,7 +14257,7 @@
             "paragraph": 4,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#37"
             ]
           },
@@ -14196,7 +14319,7 @@
             "paragraph": 5,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#37"
             ]
           },
@@ -14245,6 +14368,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Divine Providence! Immerse the father and mother",
     "paragraphs": [
       {
         "id": "prayers-132",
@@ -14312,6 +14436,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Divine Providence, Thou art the Ever‑Forgiving! O",
     "paragraphs": [
       {
         "id": "prayers-133",
@@ -14382,6 +14507,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praised be Thou, O Lord my God! This is Thy servant",
     "paragraphs": [
       {
         "id": "prayers-134",
@@ -14486,6 +14612,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Glory be to Thee, O God! Thou art the God Who hath",
     "paragraphs": [
       {
         "id": "prayers-135",
@@ -14610,6 +14737,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Thou seest, O my God, how Thy loved ones have been",
     "paragraphs": [
       {
         "id": "prayers-136",
@@ -14745,6 +14873,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O my God, O my God! Verily this plant hath yielded",
     "paragraphs": [
       {
         "id": "prayers-137",
@@ -14815,6 +14944,7 @@
     ],
     "time": "●",
     "score": 3,
+    "initial": "Create in me a pure heart, O my God, and renew a tranquil",
     "paragraphs": [
       {
         "id": "prayers-138",
@@ -14921,6 +15051,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Lord, my God! This is a child that hath sprung from",
     "paragraphs": [
       {
         "id": "prayers-139",
@@ -15022,6 +15153,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O thou hyacinth which hast sprung up beside the heavenly",
     "paragraphs": [
       {
         "id": "prayers-140",
@@ -15191,6 +15323,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Lord, make Thou this marriage to be blessed, prosperous,",
     "paragraphs": [
       {
         "id": "prayers-141",
@@ -15296,6 +15429,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "(The Prayer for the Dead is the only Bahá’í obligatory",
     "paragraphs": [
       {
         "id": "prayers-142",
@@ -15589,6 +15723,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou compassionate Lord, Thou Who art generous and",
     "paragraphs": [
       {
         "id": "prayers-143",
@@ -15651,6 +15786,7 @@
     "fullPath": [],
     "time": "●",
     "score": 1,
+    "initial": "Glorified art Thou, O Lord my God! Thou art in truth",
     "paragraphs": [
       {
         "id": "prayers-144",
@@ -15730,6 +15866,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O my God! O my God! Glory be unto Thee for that Thou",
     "paragraphs": [
       {
         "id": "prayers-145",
@@ -15902,6 +16039,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O my Lord! Thou knowest that the people are encircled",
     "paragraphs": [
       {
         "id": "prayers-146",
@@ -16040,6 +16178,7 @@
     ],
     "time": "●",
     "score": 3,
+    "initial": "My God, my Adored One, my King, my Desire! What tongue",
     "paragraphs": [
       {
         "id": "prayers-147",
@@ -16242,6 +16381,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O my eternal Beloved and my adored Friend! How long",
     "paragraphs": [
       {
         "id": "prayers-148",
@@ -16343,6 +16483,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Lord so rich in bounty, so replete with grace, Whose",
     "allType": true,
     "compilation": true,
     "paragraphs": [
@@ -16765,6 +16906,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "O God, my God! Thou art my Hope and my Beloved, my",
     "paragraphs": [
       {
         "id": "prayers-150",
@@ -16965,6 +17107,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Praised be Thou, O God, my God! These are the days",
     "paragraphs": [
       {
         "id": "prayers-151",
@@ -17042,6 +17185,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou Who art the Lord of all names and Fashioner",
     "paragraphs": [
       {
         "id": "prayers-152",
@@ -17211,6 +17355,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O God, my God! I implore Thee with a throbbing heart",
     "paragraphs": [
       {
         "id": "prayers-153",
@@ -17333,6 +17478,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "O Thou kind Lord! Graciously bestow a pair of heavenly",
     "paragraphs": [
       {
         "id": "prayers-154",
@@ -17519,6 +17665,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "Glory be unto Thee, O my God! Verily, this Thy servant",
     "paragraphs": [
       {
         "id": "prayers-155",
@@ -17626,6 +17773,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Thou seest, O my God, how the wrongs committed by such",
     "paragraphs": [
       {
         "id": "prayers-156",
@@ -17766,6 +17914,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "The following commune is to be read . . . every day:",
     "paragraphs": [
       {
         "id": "prayers-157",
@@ -17914,6 +18063,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "In the Name of Him Who hath been promised in the Books",
     "paragraphs": [
       {
         "id": "prayers-158",
@@ -17994,6 +18144,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Thou seest me, O my Lord, with my face turned towards",
     "paragraphs": [
       {
         "id": "prayers-159",
@@ -18077,6 +18228,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "The spreaders of the fragrances of God should recite",
     "paragraphs": [
       {
         "id": "prayers-160",
@@ -18337,6 +18489,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "O Divine Providence! This assemblage is composed of",
     "paragraphs": [
       {
         "id": "prayers-161",
@@ -18365,7 +18518,7 @@
             "paragraph": 9,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#68"
             ]
           },
@@ -18427,7 +18580,7 @@
             "paragraph": 9,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#68"
             ]
           }
@@ -18471,6 +18624,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "O my God! O my God! Verily, these servants are turning",
     "paragraphs": [
       {
         "id": "prayers-162",
@@ -18496,12 +18650,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-054",
-            "paragraph": 8,
+            "paragraph": 6,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in Cambridge and Boston (22—25 May 1912)",
-              "Huntington Chambers Boston, Massachusetts"
+              "Cambridge and Boston, 22—25 May 1912",
+              "25 May 1912"
             ]
           },
           {
@@ -18568,12 +18722,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-054",
-            "paragraph": 9,
+            "paragraph": 7,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in Cambridge and Boston (22—25 May 1912)",
-              "Huntington Chambers Boston, Massachusetts"
+              "Cambridge and Boston, 22—25 May 1912",
+              "25 May 1912"
             ]
           }
         ],
@@ -18616,6 +18770,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "My God, Whom I worship and adore! I bear witness unto",
     "paragraphs": [
       {
         "id": "prayers-163",
@@ -18751,6 +18906,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O thou verdant plant of the Abhá Paradise! O thou tender",
     "paragraphs": [
       {
         "id": "prayers-164",
@@ -18923,6 +19079,7 @@
     ],
     "time": "●",
     "score": 3,
+    "initial": "O compassionate God! Thanks be to Thee for Thou hast",
     "paragraphs": [
       {
         "id": "prayers-165",
@@ -19108,6 +19265,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O God, my God! I beg of Thee by the ocean of Thy healing,",
     "paragraphs": [
       {
         "id": "prayers-166",
@@ -19243,6 +19401,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is God. O thou who circlest in adoration about the",
     "paragraphs": [
       {
         "id": "prayers-167",
@@ -19348,6 +19507,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praised be Thou, O Lord my God! Graciously grant that",
     "paragraphs": [
       {
         "id": "prayers-168",
@@ -19452,6 +19612,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "How can I choose to sleep, O God, my God, when the",
     "paragraphs": [
       {
         "id": "prayers-169",
@@ -19582,6 +19743,7 @@
     "fullPath": [],
     "time": "●",
     "score": 0,
+    "initial": "Send down Thy blessings, O my God, upon the Tree of",
     "paragraphs": [
       {
         "id": "prayers-170",
@@ -19681,6 +19843,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Lord! What an outpouring of bounty Thou hast vouchsafed,",
     "paragraphs": [
       {
         "id": "prayers-171",
@@ -19782,6 +19945,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou kind God! From America, that distant country,",
     "paragraphs": [
       {
         "id": "prayers-172",
@@ -19985,6 +20149,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "I beseech Thee, O my Lord, by that Remembrance of Thee",
     "paragraphs": [
       {
         "id": "prayers-173",
@@ -20157,6 +20322,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Lauded be Thy name, O my God! I entreat Thee by the",
     "paragraphs": [
       {
         "id": "prayers-174",
@@ -20295,6 +20461,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Lauded be Thy name, O my God and the God of all things,",
     "paragraphs": [
       {
         "id": "prayers-175",
@@ -20433,6 +20600,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glory be to Thee, O my God! My face hath been set towards",
     "paragraphs": [
       {
         "id": "prayers-176",
@@ -20563,6 +20731,7 @@
     "fullPath": [],
     "time": "●",
     "score": 0,
+    "initial": "Thou seest, O my Lord, my dwelling‑place in the heart",
     "paragraphs": [
       {
         "id": "prayers-177",
@@ -20632,6 +20801,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Magnified be Thy name, O Lord my God! Thou art He Whom",
     "paragraphs": [
       {
         "id": "prayers-178",
@@ -20771,6 +20941,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O God, my God! This Thy handmaid is calling upon Thee,",
     "paragraphs": [
       {
         "id": "prayers-179",
@@ -20799,7 +20970,7 @@
             "paragraph": 0,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#90"
             ]
           }
@@ -20853,7 +21024,7 @@
             "paragraph": 1,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#90"
             ]
           }
@@ -20898,7 +21069,7 @@
             "paragraph": 2,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#90"
             ]
           }
@@ -20943,7 +21114,7 @@
             "paragraph": 2,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#90"
             ]
           }
@@ -20984,6 +21155,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is God. O Thou kind Lord! Illumine the hearts with",
     "paragraphs": [
       {
         "id": "prayers-180",
@@ -21088,6 +21260,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O my God! O my God! Verily, Thy servant, humble before",
     "paragraphs": [
       {
         "id": "prayers-181",
@@ -21116,7 +21289,7 @@
             "paragraph": 0,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#165"
             ]
           }
@@ -21170,7 +21343,7 @@
             "paragraph": 1,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#165"
             ]
           }
@@ -21215,7 +21388,7 @@
             "paragraph": 1,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#165"
             ]
           }
@@ -21256,6 +21429,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is God. O ye children of the Kingdom! Give thanks",
     "paragraphs": [
       {
         "id": "prayers-182",
@@ -21391,6 +21565,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glory be to Thee, O my God! I beg of Thee by Thy name,",
     "paragraphs": [
       {
         "id": "prayers-183",
@@ -21492,6 +21667,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O my kind Lord, O Thou the desire of my heart and soul!",
     "paragraphs": [
       {
         "id": "prayers-184",
@@ -21593,6 +21769,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O my Lord and my Hope! Thou hast, through Thy consummate",
     "paragraphs": [
       {
         "id": "prayers-185",
@@ -21697,6 +21874,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O God, my God! Fill up for me the cup of detachment",
     "paragraphs": [
       {
         "id": "prayers-186",
@@ -21725,7 +21903,7 @@
             "paragraph": 8,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#146"
             ]
           }
@@ -21779,7 +21957,7 @@
             "paragraph": 9,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#146"
             ]
           }
@@ -21824,7 +22002,7 @@
             "paragraph": 9,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#146"
             ]
           }
@@ -21868,6 +22046,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glorified art Thou, O Lord my God! I yield Thee thanks",
     "paragraphs": [
       {
         "id": "prayers-187",
@@ -21964,6 +22143,7 @@
     "fullPath": [],
     "time": "●",
     "score": 1,
+    "initial": "Throughout eternity Thou hast been, O my Lord, and",
     "paragraphs": [
       {
         "id": "prayers-188",
@@ -22086,6 +22266,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "O Thou forgiving Lord! Thou art the shelter of all",
     "paragraphs": [
       {
         "id": "prayers-189",
@@ -22111,12 +22292,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-062",
-            "paragraph": 11,
+            "paragraph": 9,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in Philadelphia (9 June 1912)",
-              "Talk at Unitarian Church Fifteenth Street and Girard Avenue, Philadelphia, Pennsylvania"
+              "Philadelphia, 9 June 1912",
+              "9 June 1912"
             ]
           },
           {
@@ -22191,6 +22372,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O God of Mercy! O Thou Omnipotent One! I am but a feeble",
     "paragraphs": [
       {
         "id": "prayers-190",
@@ -22292,6 +22474,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O my God and my Master! Thou seest me among Thy creatures",
     "paragraphs": [
       {
         "id": "prayers-191",
@@ -22371,6 +22554,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glorified art Thou, O Lord my God! I beseech Thee by",
     "paragraphs": [
       {
         "id": "prayers-192",
@@ -22472,6 +22656,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is the All‑Glorious. O ye two closely knit and enlightened",
     "paragraphs": [
       {
         "id": "prayers-193",
@@ -22610,6 +22795,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O God, and the God of all Names, and Maker of the heavens!",
     "paragraphs": [
       {
         "id": "prayers-194",
@@ -22711,6 +22897,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Lauded be Thy name, O Lord my God! Thou seest how Thy",
     "paragraphs": [
       {
         "id": "prayers-195",
@@ -22851,6 +23038,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "Let the spreaders of the fragrances of God recite this",
     "paragraphs": [
       {
         "id": "prayers-196",
@@ -23093,6 +23281,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Thou knowest, O God, and art my witness that I have",
     "paragraphs": [
       {
         "id": "prayers-197",
@@ -23228,6 +23417,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Pure and sanctified art Thou, O my God! How can the",
     "paragraphs": [
       {
         "id": "prayers-198",
@@ -23295,6 +23485,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O my God! O Thou Who endowest every just power and",
     "paragraphs": [
       {
         "id": "prayers-199",
@@ -23430,6 +23621,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is God! O Thou kind Lord! We are poor children,",
     "paragraphs": [
       {
         "id": "prayers-200",
@@ -23602,6 +23794,7 @@
     ],
     "time": "●",
     "score": 3,
+    "initial": "He is the Compassionate, the All‑Bountiful! O God,",
     "paragraphs": [
       {
         "id": "prayers-201",
@@ -23761,6 +23954,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Glory be unto Thee, O God. How can I make mention of",
     "paragraphs": [
       {
         "id": "prayers-202",
@@ -23884,6 +24078,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glorified art Thou, O Lord my God! I implore Thee by",
     "paragraphs": [
       {
         "id": "prayers-203",
@@ -23985,6 +24180,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Divine Providence! Awaken me and make me conscious.",
     "paragraphs": [
       {
         "id": "prayers-204",
@@ -24086,6 +24282,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Exalted art Thou, O Lord my God! I am the one who hath",
     "paragraphs": [
       {
         "id": "prayers-205",
@@ -24221,6 +24418,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praise be to Thee, O Lord my God! Thou seest my tears",
     "paragraphs": [
       {
         "id": "prayers-206",
@@ -24359,6 +24557,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "All praise, O my God, be to Thee Who art the Source",
     "paragraphs": [
       {
         "id": "prayers-207",
@@ -24482,6 +24681,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Lord, O Thou Whose mercy hath encompassed all, Whose",
     "paragraphs": [
       {
         "id": "prayers-208",
@@ -24586,6 +24786,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Glorified art Thou, O Lord my God! Every man of insight",
     "paragraphs": [
       {
         "id": "prayers-209",
@@ -24754,6 +24955,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O God, my God! These are Thy feeble servants; they",
     "paragraphs": [
       {
         "id": "prayers-210",
@@ -24782,7 +24984,7 @@
             "paragraph": 8,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#8"
             ]
           }
@@ -24836,7 +25038,7 @@
             "paragraph": 9,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#8"
             ]
           }
@@ -24881,7 +25083,7 @@
             "paragraph": 10,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#8"
             ]
           }
@@ -24925,6 +25127,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O Thou kind Lord! We are servants of Thy Threshold,",
     "paragraphs": [
       {
         "id": "prayers-211",
@@ -24953,7 +25156,7 @@
             "paragraph": 13,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#193"
             ]
           }
@@ -25007,7 +25210,7 @@
             "paragraph": 14,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#193"
             ]
           }
@@ -25051,6 +25254,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O God, my God! Praise be unto Thee for kindling the",
     "paragraphs": [
       {
         "id": "prayers-212",
@@ -25079,7 +25283,7 @@
             "paragraph": 2,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#206"
             ]
           }
@@ -25133,7 +25337,7 @@
             "paragraph": 3,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#206"
             ]
           }
@@ -25178,7 +25382,7 @@
             "paragraph": 4,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#206"
             ]
           }
@@ -25219,6 +25423,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glorified art Thou, O my God! Thou knowest that in",
     "paragraphs": [
       {
         "id": "prayers-213",
@@ -25357,6 +25562,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "O God, O Thou Who hast cast Thy splendour over the",
     "paragraphs": [
       {
         "id": "prayers-214",
@@ -25542,6 +25748,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O God, my God! This is Thy radiant servant, Thy spiritual",
     "paragraphs": [
       {
         "id": "prayers-215",
@@ -25570,7 +25777,7 @@
             "paragraph": 14,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#19"
             ]
           }
@@ -25624,7 +25831,7 @@
             "paragraph": 15,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#19"
             ]
           }
@@ -25669,7 +25876,7 @@
             "paragraph": 16,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#19"
             ]
           }
@@ -25714,7 +25921,7 @@
             "paragraph": 17,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#19"
             ]
           }
@@ -25758,6 +25965,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "O Thou kind Lord! O Thou Who art generous and merciful!",
     "paragraphs": [
       {
         "id": "prayers-216",
@@ -25783,12 +25991,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-046",
-            "paragraph": 8,
+            "paragraph": 6,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in New York, Montclair, and Jersey City (11—20 May 1912)",
-              "Talk at Unity Church Montclair, New Jersey"
+              "New York, Montclair, and Jersey City, 11—20 May 1912",
+              "12 May 1912"
             ]
           },
           {
@@ -25892,6 +26100,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is God! O peerless Lord! In Thine almighty wisdom",
     "paragraphs": [
       {
         "id": "prayers-217",
@@ -26027,6 +26236,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O God, my God! Glory be to Thee for having guided me",
     "paragraphs": [
       {
         "id": "prayers-218",
@@ -26128,6 +26338,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "God testifieth to the unity of His Godhood and to the",
     "paragraphs": [
       {
         "id": "prayers-219",
@@ -26253,6 +26464,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is the All‑Glorious, the Most Effulgent. O Divine",
     "paragraphs": [
       {
         "id": "prayers-220",
@@ -26354,6 +26566,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou peerless and loving Lord! Though capacity and",
     "paragraphs": [
       {
         "id": "prayers-221",
@@ -26455,6 +26668,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praised be Thou, O my God! Thou seest how Thy righteous",
     "paragraphs": [
       {
         "id": "prayers-222",
@@ -26629,6 +26843,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Whoever sets out on a teaching journey to any place,",
     "paragraphs": [
       {
         "id": "prayers-223",
@@ -26889,6 +27104,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glorified art Thou, O my God! I yield Thee thanks that",
     "paragraphs": [
       {
         "id": "prayers-224",
@@ -27027,6 +27243,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Make firm our steps, O Lord, in Thy path and strengthen",
     "paragraphs": [
       {
         "id": "prayers-225",
@@ -27162,6 +27379,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou unseen Friend! O Desire of all in this world",
     "paragraphs": [
       {
         "id": "prayers-226",
@@ -27229,6 +27447,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praised be Thou, O Lord my God! I bear witness that",
     "paragraphs": [
       {
         "id": "prayers-227",
@@ -27367,6 +27586,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Suffer me, O my God, to draw nigh unto Thee, and to",
     "paragraphs": [
       {
         "id": "prayers-228",
@@ -27505,6 +27725,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "Glorified be Thy name, O Lord my God! I beseech Thee",
     "paragraphs": [
       {
         "id": "prayers-229",
@@ -27676,6 +27897,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glorified art Thou, O Lord my God! I yield Thee thanks",
     "paragraphs": [
       {
         "id": "prayers-230",
@@ -27848,6 +28070,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Lauded be Thy Name, O Lord my God! I am Thy servant",
     "paragraphs": [
       {
         "id": "prayers-231",
@@ -27986,6 +28209,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O God our Lord! Protect us through Thy grace from whatsoever",
     "paragraphs": [
       {
         "id": "prayers-232",
@@ -28195,6 +28419,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glorified art Thou, O Lord my God! I pray Thee, by",
     "paragraphs": [
       {
         "id": "prayers-233",
@@ -28330,6 +28555,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "All praise be to Thee, O my God! Thou beholdest my",
     "paragraphs": [
       {
         "id": "prayers-234",
@@ -28468,6 +28694,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O Thou kind Lord! These are Thy servants who have gathered",
     "paragraphs": [
       {
         "id": "prayers-235",
@@ -28493,12 +28720,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-038",
-            "paragraph": 11,
+            "paragraph": 9,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in Chicago, Wilmette, and Evanston (30 April—5 May 1912)",
-              "Talk to Theosophical Society Northwestern University Hall, Evanston, Illinois"
+              "Chicago, Wilmette, and Evanston, 30 April—5 May 1912",
+              "4 May 1912"
             ]
           }
         ],
@@ -28548,12 +28775,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-038",
-            "paragraph": 12,
+            "paragraph": 10,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in Chicago, Wilmette, and Evanston (30 April—5 May 1912)",
-              "Talk to Theosophical Society Northwestern University Hall, Evanston, Illinois"
+              "Chicago, Wilmette, and Evanston, 30 April—5 May 1912",
+              "4 May 1912"
             ]
           }
         ],
@@ -28594,12 +28821,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-038",
-            "paragraph": 12,
+            "paragraph": 10,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in Chicago, Wilmette, and Evanston (30 April—5 May 1912)",
-              "Talk to Theosophical Society Northwestern University Hall, Evanston, Illinois"
+              "Chicago, Wilmette, and Evanston, 30 April—5 May 1912",
+              "4 May 1912"
             ]
           }
         ],
@@ -28642,6 +28869,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "Say: Magnified be Thy Name, O Lord my God! I beseech",
     "paragraphs": [
       {
         "id": "prayers-236",
@@ -28831,6 +29059,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "I know not, O my God, what the Fire is which Thou didst",
     "paragraphs": [
       {
         "id": "prayers-237",
@@ -29029,6 +29258,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Lord, our God! We are helpless; Thou art the Lord",
     "paragraphs": [
       {
         "id": "prayers-238",
@@ -29130,6 +29360,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Magnified, O Lord my God, be Thy Name, whereby the",
     "paragraphs": [
       {
         "id": "prayers-239",
@@ -29226,6 +29457,7 @@
     "fullPath": [],
     "time": "●",
     "score": 1,
+    "initial": "O my God! I have failed to know Thee as is worthy of",
     "paragraphs": [
       {
         "id": "prayers-240",
@@ -29388,6 +29620,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Lauded be Thy name, O Lord my God! Darkness hath fallen",
     "paragraphs": [
       {
         "id": "prayers-241",
@@ -29557,6 +29790,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Lauded be Thy name, O Thou Who beholdest all things",
     "paragraphs": [
       {
         "id": "prayers-242",
@@ -29692,6 +29926,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glorified art Thou, O Lord my God! Thou hast, in Thine",
     "paragraphs": [
       {
         "id": "prayers-243",
@@ -29830,6 +30065,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Prayer to be said at the close of the meeting of the",
     "paragraphs": [
       {
         "id": "prayers-244",
@@ -30054,6 +30290,7 @@
     ],
     "time": "●",
     "score": 3,
+    "initial": "O my God! O my God! Verily, I invoke Thee and supplicate",
     "paragraphs": [
       {
         "id": "prayers-245",
@@ -30079,12 +30316,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-082",
-            "paragraph": 19,
+            "paragraph": 17,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in New York (1‑15 July 1912)",
-              "Talk at All Souls Unitarian Church Fourth Avenue and Twentieth Street, New York"
+              "New York, 1‑15 July 1912",
+              "14 July 1912"
             ]
           },
           {
@@ -30142,12 +30379,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-082",
-            "paragraph": 20,
+            "paragraph": 18,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in New York (1‑15 July 1912)",
-              "Talk at All Souls Unitarian Church Fourth Avenue and Twentieth Street, New York"
+              "New York, 1‑15 July 1912",
+              "14 July 1912"
             ]
           },
           {
@@ -30196,12 +30433,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-082",
-            "paragraph": 21,
+            "paragraph": 19,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in New York (1‑15 July 1912)",
-              "Talk at All Souls Unitarian Church Fourth Avenue and Twentieth Street, New York"
+              "New York, 1‑15 July 1912",
+              "14 July 1912"
             ]
           },
           {
@@ -30250,12 +30487,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-082",
-            "paragraph": 22,
+            "paragraph": 20,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in New York (1‑15 July 1912)",
-              "Talk at All Souls Unitarian Church Fourth Avenue and Twentieth Street, New York"
+              "New York, 1‑15 July 1912",
+              "14 July 1912"
             ]
           },
           {
@@ -30312,12 +30549,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-082",
-            "paragraph": 23,
+            "paragraph": 21,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in New York (1‑15 July 1912)",
-              "Talk at All Souls Unitarian Church Fourth Avenue and Twentieth Street, New York"
+              "New York, 1‑15 July 1912",
+              "14 July 1912"
             ]
           },
           {
@@ -30376,6 +30613,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glory be to Thee, O my God! Thou hearest Thine ardent",
     "paragraphs": [
       {
         "id": "prayers-246",
@@ -30514,6 +30752,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O Thou Whose nearness is my wish, Whose presence is",
     "paragraphs": [
       {
         "id": "prayers-247",
@@ -30671,6 +30910,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Many a chilled heart, O my God, hath been set ablaze",
     "paragraphs": [
       {
         "id": "prayers-248",
@@ -30840,6 +31080,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Magnified art Thou, O Lord my God! I ask Thee by Thy",
     "paragraphs": [
       {
         "id": "prayers-249",
@@ -31019,6 +31260,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "I give praise to Thee, O Lord my God! I entreat Thee",
     "paragraphs": [
       {
         "id": "prayers-250",
@@ -31154,6 +31396,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praise be to Thee, O my God, that Thou didst graciously",
     "paragraphs": [
       {
         "id": "prayers-251",
@@ -31258,6 +31501,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Praise be to Thee, O Lord my God! I implore Thee, by",
     "paragraphs": [
       {
         "id": "prayers-252",
@@ -31449,6 +31693,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O God, my God! I have turned in repentance unto Thee,",
     "paragraphs": [
       {
         "id": "prayers-253",
@@ -31749,6 +31994,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Lauded be Thy name, O Lord my God! Thou seest me in",
     "paragraphs": [
       {
         "id": "prayers-254",
@@ -31884,6 +32130,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "I give Thee thanks, O my God, for that Thou hast made",
     "paragraphs": [
       {
         "id": "prayers-255",
@@ -32056,6 +32303,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glory to Thee, O my God! One of Thy handmaidens, who",
     "paragraphs": [
       {
         "id": "prayers-256",
@@ -32228,6 +32476,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is the Mighty, the Pardoner, the Compassionate!",
     "paragraphs": [
       {
         "id": "prayers-257",
@@ -32400,6 +32649,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "I magnify Thy Name, O my God, and offer thanksgiving",
     "paragraphs": [
       {
         "id": "prayers-258",
@@ -32526,6 +32776,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "O Thou merciful God! O Thou Who art mighty and powerful!",
     "paragraphs": [
       {
         "id": "prayers-259",
@@ -32551,12 +32802,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-022",
-            "paragraph": 5,
+            "paragraph": 3,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in Washington, D.C. (20—25 April 1912)",
-              "Talk at Home of Mr. and Mrs. Arthur J. Parsons 1700 Eighteenth Street, NW, Washington, D.C."
+              "Washington, D.C., 20—25 April 1912",
+              "24 April 1912"
             ]
           },
           {
@@ -32614,12 +32865,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-022",
-            "paragraph": 6,
+            "paragraph": 4,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in Washington, D.C. (20—25 April 1912)",
-              "Talk at Home of Mr. and Mrs. Arthur J. Parsons 1700 Eighteenth Street, NW, Washington, D.C."
+              "Washington, D.C., 20—25 April 1912",
+              "24 April 1912"
             ]
           },
           {
@@ -32668,12 +32919,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-022",
-            "paragraph": 7,
+            "paragraph": 5,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in Washington, D.C. (20—25 April 1912)",
-              "Talk at Home of Mr. and Mrs. Arthur J. Parsons 1700 Eighteenth Street, NW, Washington, D.C."
+              "Washington, D.C., 20—25 April 1912",
+              "24 April 1912"
             ]
           }
         ],
@@ -32714,12 +32965,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-022",
-            "paragraph": 8,
+            "paragraph": 6,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in Washington, D.C. (20—25 April 1912)",
-              "Talk at Home of Mr. and Mrs. Arthur J. Parsons 1700 Eighteenth Street, NW, Washington, D.C."
+              "Washington, D.C., 20—25 April 1912",
+              "24 April 1912"
             ]
           }
         ],
@@ -32759,6 +33010,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Magnified be Thy name, O Lord my God! I know not what",
     "paragraphs": [
       {
         "id": "prayers-260",
@@ -32897,6 +33149,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O God, Who art the Author of all Manifestations, the",
     "paragraphs": [
       {
         "id": "prayers-261",
@@ -33069,6 +33322,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "This is, O my God, the first of the days on which Thou",
     "paragraphs": [
       {
         "id": "prayers-262",
@@ -33193,6 +33447,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glory be to Thee, O Lord my God! Abase not him whom",
     "paragraphs": [
       {
         "id": "prayers-263",
@@ -33328,6 +33583,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O God! The trials Thou sendest are a salve to the sores",
     "paragraphs": [
       {
         "id": "prayers-264",
@@ -33463,6 +33719,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou Omnipotent Lord! We are all held within the",
     "paragraphs": [
       {
         "id": "prayers-265",
@@ -33533,6 +33790,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glory be unto Thee, O Lord my God! I beg Thee to forgive",
     "paragraphs": [
       {
         "id": "prayers-266",
@@ -33668,6 +33926,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O God, my God! Lowly, humble, and tearful, I turn my",
     "paragraphs": [
       {
         "id": "prayers-267",
@@ -33919,6 +34178,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou Whose face is the object of the adoration of",
     "paragraphs": [
       {
         "id": "prayers-268",
@@ -34088,6 +34348,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praised be Thou, O my God! This servant of Thine testifieth",
     "paragraphs": [
       {
         "id": "prayers-269",
@@ -34226,6 +34487,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Magnified be Thy name, O Lord my God! Behold Thou mine",
     "paragraphs": [
       {
         "id": "prayers-270",
@@ -34398,6 +34660,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praise be to Thee, O Lord my God! I beseech Thee by",
     "paragraphs": [
       {
         "id": "prayers-271",
@@ -34570,6 +34833,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "Glory be unto Thee, O Lord, Thou Who hast brought into",
     "paragraphs": [
       {
         "id": "prayers-272",
@@ -34790,6 +35054,7 @@
     ],
     "time": "●",
     "score": 4,
+    "initial": "O Thou kind Lord! Thou hast created all humanity from",
     "paragraphs": [
       {
         "id": "prayers-273",
@@ -34815,12 +35080,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-041",
-            "paragraph": 9,
+            "paragraph": 7,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in Chicago, Wilmette, and Evanston (30 April—5 May 1912)",
-              "Talk at All‑Souls Church Lincoln Centre, Chicago, Illinois"
+              "Chicago, Wilmette, and Evanston, 30 April—5 May 1912",
+              "5 May 1912"
             ]
           },
           {
@@ -34932,12 +35197,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-041",
-            "paragraph": 10,
+            "paragraph": 8,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in Chicago, Wilmette, and Evanston (30 April—5 May 1912)",
-              "Talk at All‑Souls Church Lincoln Centre, Chicago, Illinois"
+              "Chicago, Wilmette, and Evanston, 30 April—5 May 1912",
+              "5 May 1912"
             ]
           },
           {
@@ -35013,12 +35278,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-041",
-            "paragraph": 11,
+            "paragraph": 9,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in Chicago, Wilmette, and Evanston (30 April—5 May 1912)",
-              "Talk at All‑Souls Church Lincoln Centre, Chicago, Illinois"
+              "Chicago, Wilmette, and Evanston, 30 April—5 May 1912",
+              "5 May 1912"
             ]
           },
           {
@@ -35067,12 +35332,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-041",
-            "paragraph": 11,
+            "paragraph": 9,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in Chicago, Wilmette, and Evanston (30 April—5 May 1912)",
-              "Talk at All‑Souls Church Lincoln Centre, Chicago, Illinois"
+              "Chicago, Wilmette, and Evanston, 30 April—5 May 1912",
+              "5 May 1912"
             ]
           },
           {
@@ -35121,12 +35386,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-041",
-            "paragraph": 11,
+            "paragraph": 9,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in Chicago, Wilmette, and Evanston (30 April—5 May 1912)",
-              "Talk at All‑Souls Church Lincoln Centre, Chicago, Illinois"
+              "Chicago, Wilmette, and Evanston, 30 April—5 May 1912",
+              "5 May 1912"
             ]
           },
           {
@@ -35175,12 +35440,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-041",
-            "paragraph": 11,
+            "paragraph": 9,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in Chicago, Wilmette, and Evanston (30 April—5 May 1912)",
-              "Talk at All‑Souls Church Lincoln Centre, Chicago, Illinois"
+              "Chicago, Wilmette, and Evanston, 30 April—5 May 1912",
+              "5 May 1912"
             ]
           },
           {
@@ -35229,12 +35494,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-041",
-            "paragraph": 15,
+            "paragraph": 13,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in Chicago, Wilmette, and Evanston (30 April—5 May 1912)",
-              "Talk at All‑Souls Church Lincoln Centre, Chicago, Illinois"
+              "Chicago, Wilmette, and Evanston, 30 April—5 May 1912",
+              "5 May 1912"
             ]
           },
           {
@@ -35283,12 +35548,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-041",
-            "paragraph": 16,
+            "paragraph": 14,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in Chicago, Wilmette, and Evanston (30 April—5 May 1912)",
-              "Talk at All‑Souls Church Lincoln Centre, Chicago, Illinois"
+              "Chicago, Wilmette, and Evanston, 30 April—5 May 1912",
+              "5 May 1912"
             ]
           },
           {
@@ -35336,6 +35601,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praise be unto Thee, O my God! Thou seest how He Who",
     "paragraphs": [
       {
         "id": "prayers-274",
@@ -35505,6 +35771,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glorified be Thou, O my God! Behold Thou my head ready",
     "paragraphs": [
       {
         "id": "prayers-275",
@@ -35643,6 +35910,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Lauded and glorified art Thou, O my God! I entreat",
     "paragraphs": [
       {
         "id": "prayers-276",
@@ -35778,6 +36046,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Lauded be Thy name, O my God! Thou beholdest how the",
     "paragraphs": [
       {
         "id": "prayers-277",
@@ -35916,6 +36185,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Thou knowest full well, O my God, that tribulations",
     "paragraphs": [
       {
         "id": "prayers-278",
@@ -36084,6 +36354,7 @@
     ],
     "time": "●",
     "score": 4,
+    "initial": "Whenever ye enter the council‑chamber, recite this",
     "paragraphs": [
       {
         "id": "prayers-279",
@@ -36111,7 +36382,7 @@
             "paragraph": 3,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#42"
             ]
           },
@@ -36174,7 +36445,7 @@
             "paragraph": 4,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#42"
             ]
           },
@@ -36304,6 +36575,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Glory to Thee, O my God! But for the tribulations which",
     "paragraphs": [
       {
         "id": "prayers-280",
@@ -36496,6 +36768,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Glorified art Thou, O my compassionate Lord! I entreat",
     "paragraphs": [
       {
         "id": "prayers-281",
@@ -36661,6 +36934,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glory to Thee, O my God! The first stirrings of the",
     "paragraphs": [
       {
         "id": "prayers-282",
@@ -36830,6 +37104,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is God. O Thou kind and beloved Lord! These friends",
     "paragraphs": [
       {
         "id": "prayers-283",
@@ -36965,6 +37240,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O God, my God! Be Thou not far from me, for tribulation",
     "paragraphs": [
       {
         "id": "prayers-284",
@@ -37032,6 +37308,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praised be Thou, O Lord my God! I implore Thee by Thine",
     "paragraphs": [
       {
         "id": "prayers-285",
@@ -37167,6 +37444,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praise be to Thee, O Lord my God, my Master! Thou hearest",
     "paragraphs": [
       {
         "id": "prayers-286",
@@ -37268,6 +37546,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Lauded be Thy name, O my God! I can discover no one",
     "paragraphs": [
       {
         "id": "prayers-287",
@@ -37406,6 +37685,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glory be to Thee, O King of eternity, and the Maker",
     "paragraphs": [
       {
         "id": "prayers-288",
@@ -37575,6 +37855,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Lauded be Thy name, O my God! Aid Thou by Thy strengthening",
     "paragraphs": [
       {
         "id": "prayers-289",
@@ -37747,6 +38028,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glory be to Thee, O Lord my God! I implore Thee by",
     "paragraphs": [
       {
         "id": "prayers-290",
@@ -37851,6 +38133,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou, at Whose dreadful majesty all things have trembled,",
     "paragraphs": [
       {
         "id": "prayers-291",
@@ -38020,6 +38303,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Lauded be Thy name, O Thou in Whose hands is the kingdom",
     "paragraphs": [
       {
         "id": "prayers-292",
@@ -38192,6 +38476,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glorified art Thou, O Lord my God! I give Thee thanks",
     "paragraphs": [
       {
         "id": "prayers-293",
@@ -38361,6 +38646,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praised be Thou, O Lord my God! Thou art He Who hath",
     "paragraphs": [
       {
         "id": "prayers-294",
@@ -38533,6 +38819,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Dispel my grief by Thy bounty and Thy generosity, O",
     "paragraphs": [
       {
         "id": "prayers-295",
@@ -38699,6 +38986,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O Thou kind Lord! From the horizon of detachment Thou",
     "paragraphs": [
       {
         "id": "prayers-296",
@@ -38867,6 +39155,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glorified art Thou, O Lord my God! I beseech Thee by",
     "paragraphs": [
       {
         "id": "prayers-297",
@@ -39002,6 +39291,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou Who dealest equitably with all who are in heaven",
     "paragraphs": [
       {
         "id": "prayers-298",
@@ -39174,6 +39464,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praised be Thou, O Lord my God! I implore Thee, by",
     "paragraphs": [
       {
         "id": "prayers-299",
@@ -39313,6 +39604,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glory be to Thee, O Lord my God! I beg of Thee by Thy",
     "paragraphs": [
       {
         "id": "prayers-300",
@@ -39482,6 +39774,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praise be to Thee, O Lord my God! I am the one who",
     "paragraphs": [
       {
         "id": "prayers-301",
@@ -39586,6 +39879,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Magnified be Thy name, O my God, for that Thou hast",
     "paragraphs": [
       {
         "id": "prayers-302",
@@ -39724,6 +40018,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "Vouchsafe unto me, O my God, the full measure of Thy",
     "paragraphs": [
       {
         "id": "prayers-303",
@@ -39959,6 +40254,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praised be Thou, O my God! How can I thank Thee for",
     "paragraphs": [
       {
         "id": "prayers-304",
@@ -40165,6 +40461,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "Glory be unto Thee, O Lord of the world and Desire",
     "paragraphs": [
       {
         "id": "prayers-305",
@@ -40364,6 +40661,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is God, exalted is He, the Lord of wisdom and utterance.",
     "paragraphs": [
       {
         "id": "prayers-306",
@@ -40502,6 +40800,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Praised be Thou, O Lord my God! Every time I attempt",
     "paragraphs": [
       {
         "id": "prayers-307",
@@ -40642,6 +40941,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is the Gracious, the All‑Bountiful! O God, my God!",
     "paragraphs": [
       {
         "id": "prayers-308",
@@ -40814,6 +41114,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glorified art Thou, O Lord my God! Thou art He the",
     "paragraphs": [
       {
         "id": "prayers-309",
@@ -41012,6 +41313,7 @@
     "fullPath": [],
     "time": "●",
     "score": 0,
+    "initial": "Through Thy revelation, O my God, Thou hast enabled",
     "paragraphs": [
       {
         "id": "prayers-310",
@@ -41114,6 +41416,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "In the Name of thy Lord, the Creator, the Sovereign,",
     "paragraphs": [
       {
         "id": "prayers-311",
@@ -41323,6 +41626,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Unto Thee be praise, O Lord my God! I beseech Thee",
     "paragraphs": [
       {
         "id": "prayers-312",
@@ -41492,6 +41796,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Lauded be Thy name, O my God! I testify that no thought",
     "paragraphs": [
       {
         "id": "prayers-313",
@@ -41649,6 +41954,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praise and glory be to Thee, O Lord my God! This is",
     "paragraphs": [
       {
         "id": "prayers-314",
@@ -41818,6 +42124,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praise be to Thee, O Lord my God! I swear by Thy might!",
     "paragraphs": [
       {
         "id": "prayers-315",
@@ -41956,6 +42263,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "I give praise to Thee, O my God, that Thou hast awakened",
     "paragraphs": [
       {
         "id": "prayers-316",
@@ -42175,6 +42483,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "The following supplication is to be read by the teachers",
     "paragraphs": [
       {
         "id": "prayers-317",
@@ -42496,6 +42805,7 @@
     ],
     "time": "●",
     "score": 3,
+    "initial": "Thou seest me, O my God, bowed down in lowliness, humbling",
     "paragraphs": [
       {
         "id": "prayers-318",
@@ -42524,7 +42834,7 @@
             "paragraph": 0,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#190"
             ]
           }
@@ -42578,7 +42888,7 @@
             "paragraph": 1,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#190"
             ]
           },
@@ -42631,7 +42941,7 @@
             "paragraph": 2,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#190"
             ]
           },
@@ -42685,7 +42995,7 @@
             "paragraph": 3,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#190"
             ]
           }
@@ -42729,6 +43039,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praise be to Thee, O Lord my God! Thou seest and knowest",
     "paragraphs": [
       {
         "id": "prayers-319",
@@ -42935,6 +43246,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "O Thou Provider! Thou hast breathed over the friends",
     "paragraphs": [
       {
         "id": "prayers-320",
@@ -42963,7 +43275,7 @@
             "paragraph": 14,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#35"
             ]
           }
@@ -43017,7 +43329,7 @@
             "paragraph": 15,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#35"
             ]
           },
@@ -43079,7 +43391,7 @@
             "paragraph": 16,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#35"
             ]
           }
@@ -43124,7 +43436,7 @@
             "paragraph": 16,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#35"
             ]
           }
@@ -43165,6 +43477,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glorified art Thou, O my Lord! Thou beholdest my tribulations",
     "paragraphs": [
       {
         "id": "prayers-321",
@@ -43337,6 +43650,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "In His Name, the Exalted, the All‑Highest, the Most",
     "paragraphs": [
       {
         "id": "prayers-322",
@@ -43475,6 +43789,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O Thou, my God, Who guidest the seeker to the pathway",
     "paragraphs": [
       {
         "id": "prayers-323",
@@ -43503,7 +43818,7 @@
             "paragraph": 0,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#236"
             ]
           }
@@ -43557,7 +43872,7 @@
             "paragraph": 1,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#236"
             ]
           }
@@ -43602,7 +43917,7 @@
             "paragraph": 2,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#236"
             ]
           }
@@ -43646,6 +43961,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O my God and my Master! I am Thy servant and the son",
     "paragraphs": [
       {
         "id": "prayers-324",
@@ -43815,6 +44131,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glorified art Thou, O Lord my God! Rain down, I beseech",
     "paragraphs": [
       {
         "id": "prayers-325",
@@ -43921,6 +44238,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "Let whosoever travels to different parts to teach,",
     "paragraphs": [
       {
         "id": "prayers-326",
@@ -44231,6 +44549,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Magnified be Thy name, O Lord my God, inasmuch as Thou",
     "paragraphs": [
       {
         "id": "prayers-327",
@@ -44400,6 +44719,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Unto Thee be praise, O Lord my God! I entreat Thee,",
     "paragraphs": [
       {
         "id": "prayers-328",
@@ -44569,6 +44889,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou Who art the Ruler of earth and heaven and the",
     "paragraphs": [
       {
         "id": "prayers-329",
@@ -44775,6 +45096,7 @@
     ],
     "time": "●",
     "score": 3,
+    "initial": "(This prayer, revealed by ‘Abdu’l‑Bahá, is read at",
     "paragraphs": [
       {
         "id": "prayers-330",
@@ -44835,7 +45157,7 @@
             "paragraph": 0,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#237"
             ]
           },
@@ -44888,7 +45210,7 @@
             "paragraph": 0,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#237"
             ]
           },
@@ -44950,7 +45272,7 @@
             "paragraph": 2,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#237"
             ]
           },
@@ -45003,7 +45325,7 @@
             "paragraph": 3,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#237"
             ]
           },
@@ -45056,7 +45378,7 @@
             "paragraph": 4,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#237"
             ]
           },
@@ -45126,7 +45448,7 @@
             "paragraph": 5,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#237"
             ]
           },
@@ -45179,7 +45501,7 @@
             "paragraph": 6,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#237"
             ]
           },
@@ -45228,6 +45550,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glorified art Thou, O Lord my God! Behold how one slave",
     "paragraphs": [
       {
         "id": "prayers-331",
@@ -45366,6 +45689,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "Lauded be Thy Name, O Lord our God! Thou art in truth",
     "paragraphs": [
       {
         "id": "prayers-332",
@@ -45595,6 +45919,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "Praise be to Thee, O Lord, my Best Beloved! Make me",
     "paragraphs": [
       {
         "id": "prayers-333",
@@ -45746,6 +46071,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Thou art He, O my God, through Whose names the sick",
     "paragraphs": [
       {
         "id": "prayers-334",
@@ -45847,6 +46173,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou kind Lord! These souls are Thy friends who are",
     "paragraphs": [
       {
         "id": "prayers-335",
@@ -46019,6 +46346,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "From the sweet‑scented streams of Thine eternity give",
     "paragraphs": [
       {
         "id": "prayers-336",
@@ -46120,6 +46448,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou the dread of Whom hath fallen upon all things,",
     "paragraphs": [
       {
         "id": "prayers-337",
@@ -46284,6 +46613,7 @@
     "fullPath": [],
     "time": "●",
     "score": 1,
+    "initial": "Glorified be Thy Name, O Lord! In whom shall I take",
     "paragraphs": [
       {
         "id": "prayers-338",
@@ -46446,6 +46776,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praised be Thou, O Lord my God! I am Thy servant and",
     "paragraphs": [
       {
         "id": "prayers-339",
@@ -46618,6 +46949,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glorified art Thou, O Lord my God! Every time I venture",
     "paragraphs": [
       {
         "id": "prayers-340",
@@ -46821,6 +47153,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Lauded be Thy name, O my God! Thou beholdest me in",
     "paragraphs": [
       {
         "id": "prayers-341",
@@ -46959,6 +47292,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is God! O Lord, my God, my Well‑Beloved! These are",
     "paragraphs": [
       {
         "id": "prayers-342",
@@ -47132,6 +47466,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou Kind Lord! This dearly cherished maidservant",
     "paragraphs": [
       {
         "id": "prayers-343",
@@ -47267,6 +47602,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Thou beholdest, O my God, the Daystar of Thy Word shining",
     "paragraphs": [
       {
         "id": "prayers-344",
@@ -47397,6 +47733,7 @@
     "fullPath": [],
     "time": "●",
     "score": 1,
+    "initial": "How numerous the souls raised to life who were exposed",
     "paragraphs": [
       {
         "id": "prayers-345",
@@ -47559,6 +47896,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is God. O God, my God! With utter lowliness and",
     "paragraphs": [
       {
         "id": "prayers-346",
@@ -47728,6 +48066,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "All praise be to Thee, O Lord, my God! How mysterious",
     "paragraphs": [
       {
         "id": "prayers-347",
@@ -47863,6 +48202,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Thou dost witness, O my God, how He Who is Thy splendour",
     "paragraphs": [
       {
         "id": "prayers-348",
@@ -48066,6 +48406,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "My God, the Object of my adoration, the Goal of my",
     "paragraphs": [
       {
         "id": "prayers-349",
@@ -48235,6 +48576,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "I know not, O my God, what the Fire is with which Thou",
     "paragraphs": [
       {
         "id": "prayers-350",
@@ -48373,6 +48715,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praise be unto Thee, O my God! I am one of Thy servants,",
     "paragraphs": [
       {
         "id": "prayers-351",
@@ -48579,6 +48922,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "O my God! There is no one but Thee to allay the anguish",
     "paragraphs": [
       {
         "id": "prayers-352",
@@ -48773,6 +49117,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praised be God, Who hath adorned the heaven of love",
     "paragraphs": [
       {
         "id": "prayers-353",
@@ -48877,6 +49222,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "O Thou forgiving God! These servants are turning to",
     "paragraphs": [
       {
         "id": "prayers-354",
@@ -48902,12 +49248,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-055",
-            "paragraph": 6,
+            "paragraph": 4,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in New York and Fanwood (26 May ‑ 8 June 1912)",
-              "Talk at Mount Morris Baptist Church Fifth Avenue and 126th Street, New York"
+              "New York and Fanwood, 26 May‑8 June 1912",
+              "26 May 1912"
             ]
           }
         ],
@@ -48957,12 +49303,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-055",
-            "paragraph": 7,
+            "paragraph": 5,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in New York and Fanwood (26 May ‑ 8 June 1912)",
-              "Talk at Mount Morris Baptist Church Fifth Avenue and 126th Street, New York"
+              "New York and Fanwood, 26 May‑8 June 1912",
+              "26 May 1912"
             ]
           },
           {
@@ -49021,12 +49367,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-055",
-            "paragraph": 8,
+            "paragraph": 6,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in New York and Fanwood (26 May ‑ 8 June 1912)",
-              "Talk at Mount Morris Baptist Church Fifth Avenue and 126th Street, New York"
+              "New York and Fanwood, 26 May‑8 June 1912",
+              "26 May 1912"
             ]
           }
         ],
@@ -49067,12 +49413,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-055",
-            "paragraph": 9,
+            "paragraph": 7,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in New York and Fanwood (26 May ‑ 8 June 1912)",
-              "Talk at Mount Morris Baptist Church Fifth Avenue and 126th Street, New York"
+              "New York and Fanwood, 26 May‑8 June 1912",
+              "26 May 1912"
             ]
           }
         ],
@@ -49113,12 +49459,12 @@
         "citations": [
           {
             "id": "abdul-baha-promulgation-universal-peace-055",
-            "paragraph": 10,
+            "paragraph": 8,
             "path": [
               "‘Abdu’l‑Bahá",
               "The Promulgation of Universal Peace",
-              "Talks ‘Abdu’l‑Bahá Delivered in New York and Fanwood (26 May ‑ 8 June 1912)",
-              "Talk at Mount Morris Baptist Church Fifth Avenue and 126th Street, New York"
+              "New York and Fanwood, 26 May‑8 June 1912",
+              "26 May 1912"
             ]
           }
         ],
@@ -49161,6 +49507,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "Glory be unto Thee, O Lord my God! Nothing whatsoever",
     "paragraphs": [
       {
         "id": "prayers-355",
@@ -49435,6 +49782,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "In the Name of God, the Most High! Lauded and glorified",
     "paragraphs": [
       {
         "id": "prayers-356",
@@ -49660,6 +50008,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glory to Thee, O Thou Who art the Lord of all worlds,",
     "paragraphs": [
       {
         "id": "prayers-357",
@@ -49832,6 +50181,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "My God, my Fire and my Light! The days which Thou hast",
     "paragraphs": [
       {
         "id": "prayers-358",
@@ -50035,6 +50385,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Magnified be Thy name, O Thou in Whose grasp are the",
     "paragraphs": [
       {
         "id": "prayers-359",
@@ -50238,6 +50589,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praise be to Thee, O Lord my God! I implore Thee by",
     "paragraphs": [
       {
         "id": "prayers-360",
@@ -50407,6 +50759,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is the All‑Glorious. O my God, O my God! This is",
     "paragraphs": [
       {
         "id": "prayers-361",
@@ -50576,6 +50929,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glorified be Thy name, O Lord my God! Thou beholdest",
     "paragraphs": [
       {
         "id": "prayers-362",
@@ -50680,6 +51034,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "O Lord, my God and my Haven in my distress! My Shield",
     "paragraphs": [
       {
         "id": "prayers-363",
@@ -51106,6 +51461,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Lauded be Thy name, O Lord my God! Thou beholdest how",
     "paragraphs": [
       {
         "id": "prayers-364",
@@ -51238,6 +51594,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "O Thou the Lord of the visible and the invisible, and",
     "paragraphs": [
       {
         "id": "prayers-365",
@@ -51407,6 +51764,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Lauded be Thy name, O my God! I am so carried away",
     "paragraphs": [
       {
         "id": "prayers-366",
@@ -51623,6 +51981,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Verily I am Thy servant, O my God, and Thy poor one",
     "paragraphs": [
       {
         "id": "prayers-367",
@@ -51700,6 +52059,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Thou beholdest, O my God, Thy servant who dwelleth",
     "paragraphs": [
       {
         "id": "prayers-368",
@@ -51873,6 +52233,7 @@
     ],
     "time": "●●",
     "score": 1,
+    "initial": "To be recited daily, in the morning, at noon, and in",
     "paragraphs": [
       {
         "id": "prayers-369",
@@ -52403,6 +52764,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praised be Thou, O my God! Thou seest me shut up in",
     "paragraphs": [
       {
         "id": "prayers-370",
@@ -52567,6 +52929,7 @@
     "fullPath": [],
     "time": "●",
     "score": 1,
+    "initial": "Do Thou ordain for me, O Lord, every good thing Thou",
     "paragraphs": [
       {
         "id": "prayers-371",
@@ -52772,6 +53135,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "Magnified be Thy name, O my God! I testify that if",
     "paragraphs": [
       {
         "id": "prayers-372",
@@ -52960,6 +53324,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Glorified art Thou, O my God! I give praise to Thee,",
     "paragraphs": [
       {
         "id": "prayers-373",
@@ -53129,6 +53494,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "He is the Most Holy, the Most Glorious. In the name",
     "paragraphs": [
       {
         "id": "prayers-374",
@@ -53298,6 +53664,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praise be to Thee, O my God, inasmuch as Thou hast",
     "paragraphs": [
       {
         "id": "prayers-375",
@@ -53433,6 +53800,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praised be Thou, O Lord my God! Thou beholdest my perplexity,",
     "paragraphs": [
       {
         "id": "prayers-376",
@@ -53631,6 +53999,7 @@
     "fullPath": [],
     "time": "●",
     "score": 1,
+    "initial": "The glory of glories and the most resplendent light",
     "paragraphs": [
       {
         "id": "prayers-377",
@@ -53879,6 +54248,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Praised be Thou, O Lord my God! Thou art He the excellence",
     "paragraphs": [
       {
         "id": "prayers-378",
@@ -54116,6 +54486,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Thou beholdest, O my God, how bewildered in their drunkenness",
     "paragraphs": [
       {
         "id": "prayers-379",
@@ -54319,6 +54690,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "Lauded be Thy name, O Lord my God! Thou seest how I",
     "paragraphs": [
       {
         "id": "prayers-380",
@@ -54488,6 +54860,7 @@
     ],
     "time": "●",
     "score": 0,
+    "initial": "Thy unity is inscrutable, O my God, to all except them",
     "paragraphs": [
       {
         "id": "prayers-381",
@@ -54660,6 +55033,7 @@
     ],
     "time": "●",
     "score": 1,
+    "initial": "He is God! O God, my God! These are servants attracted",
     "paragraphs": [
       {
         "id": "prayers-382",
@@ -54844,6 +55218,7 @@
     "fullPath": [],
     "time": "●●",
     "score": 0,
+    "initial": "Thou art God, no God is there but Thee. Lauded and",
     "paragraphs": [
       {
         "id": "prayers-383",
@@ -55078,6 +55453,7 @@
     ],
     "time": "●",
     "score": 2,
+    "initial": "In the Name of God, the Lord of overpowering majesty,",
     "paragraphs": [
       {
         "id": "prayers-384",
@@ -55275,6 +55651,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "He is God, exalted is He, the Lord of might and grandeur!",
     "paragraphs": [
       {
         "id": "prayers-385",
@@ -55750,6 +56127,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "Lauded be Thy name, O my God! Thou seest how I have",
     "paragraphs": [
       {
         "id": "prayers-386",
@@ -55982,6 +56360,7 @@
     "fullPath": [],
     "time": "●●",
     "score": 0,
+    "initial": "Thou art aware, O My God, that since the day Thou didst",
     "paragraphs": [
       {
         "id": "prayers-387",
@@ -56081,6 +56460,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "Praise be unto Thee, O my God! Thou art He Who by a",
     "paragraphs": [
       {
         "id": "prayers-388",
@@ -56321,6 +56701,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "He is the prayer‑hearing, prayer‑answering God! By",
     "paragraphs": [
       {
         "id": "prayers-389",
@@ -56558,6 +56939,7 @@
     ],
     "time": "●●",
     "score": 1,
+    "initial": "Unto Thee be praise, O Lord my God! I testify that",
     "paragraphs": [
       {
         "id": "prayers-390",
@@ -56780,6 +57162,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "Praised be Thou, O Lord my God! I implore Thee by Them",
     "paragraphs": [
       {
         "id": "prayers-391",
@@ -56915,6 +57298,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "Praise be unto God Who hath adorned the human reality",
     "paragraphs": [
       {
         "id": "prayers-392",
@@ -57084,6 +57468,7 @@
     ],
     "time": "●●",
     "score": 1,
+    "initial": "All praise be to Thee, O Lord, my God! I know not how",
     "paragraphs": [
       {
         "id": "prayers-393",
@@ -57263,6 +57648,7 @@
     ],
     "time": "●●",
     "score": 2,
+    "initial": "My God, Thou Whom I adore and worship, Who art Most",
     "paragraphs": [
       {
         "id": "prayers-394",
@@ -57471,6 +57857,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "Thou seest, O my God, how Thy servants have been cleaving",
     "paragraphs": [
       {
         "id": "prayers-395",
@@ -57674,6 +58061,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "Glorified art Thou, O Lord my God! I beseech Thee by",
     "paragraphs": [
       {
         "id": "prayers-396",
@@ -57809,6 +58197,7 @@
     ],
     "time": "●●",
     "score": 1,
+    "initial": "Faded now is all that erstwhile flourished in the Paradise",
     "paragraphs": [
       {
         "id": "prayers-397",
@@ -58065,6 +58454,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "I know not, O my God, whether I should speak forth",
     "paragraphs": [
       {
         "id": "prayers-398",
@@ -58373,6 +58763,7 @@
     ],
     "time": "●●",
     "score": 1,
+    "initial": "Glory be unto Thee, O Lord! Although Thou mayest cause",
     "paragraphs": [
       {
         "id": "prayers-399",
@@ -58761,6 +59152,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "He is God, exalted is He, the Lord of loving‑kindness",
     "paragraphs": [
       {
         "id": "prayers-400",
@@ -59171,6 +59563,7 @@
     ],
     "time": "●●",
     "score": 2,
+    "initial": "(Naw‑Rúz, March 21, is the first day of the Bahá’í",
     "paragraphs": [
       {
         "id": "prayers-401",
@@ -59460,6 +59853,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "The hearts that yearn after Thee, O my God, are burnt",
     "paragraphs": [
       {
         "id": "prayers-402",
@@ -59663,6 +60057,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "Glory be to Thee, O Thou Who hast, through the movement",
     "paragraphs": [
       {
         "id": "prayers-403",
@@ -59869,6 +60264,7 @@
     ],
     "time": "●●",
     "score": 1,
+    "initial": "O Thou kind and loving Providence! The east is astir",
     "paragraphs": [
       {
         "id": "prayers-404",
@@ -59897,7 +60293,7 @@
             "paragraph": 1,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#233"
             ]
           }
@@ -59951,7 +60347,7 @@
             "paragraph": 2,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#233"
             ]
           }
@@ -59996,7 +60392,7 @@
             "paragraph": 3,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#233"
             ]
           }
@@ -60041,7 +60437,7 @@
             "paragraph": 4,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#233"
             ]
           }
@@ -60086,7 +60482,7 @@
             "paragraph": 5,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#233"
             ]
           }
@@ -60131,7 +60527,7 @@
             "paragraph": 6,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#233"
             ]
           }
@@ -60176,7 +60572,7 @@
             "paragraph": 7,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#233"
             ]
           }
@@ -60221,7 +60617,7 @@
             "paragraph": 8,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Selections from the Writings of ‘Abdu’l‑Bahá",
+              "Selections",
               "#233"
             ]
           }
@@ -60262,6 +60658,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "Lauded be Thy name, O Lord my God! Thou dost witness",
     "paragraphs": [
       {
         "id": "prayers-405",
@@ -60431,6 +60828,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "Lauded and glorified art Thou, O Lord my God! Thou",
     "paragraphs": [
       {
         "id": "prayers-406",
@@ -60600,6 +60998,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "Glorified art Thou, O Lord my God! Thou beholdest my",
     "paragraphs": [
       {
         "id": "prayers-407",
@@ -60840,6 +61239,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "He is God! O Lord my God! O Thou Helper of the feeble,",
     "paragraphs": [
       {
         "id": "prayers-408",
@@ -61150,6 +61550,7 @@
     ],
     "time": "●●",
     "score": 3,
+    "initial": "O God, my God! Thou seest how black darkness is enshrouding",
     "paragraphs": [
       {
         "id": "prayers-409",
@@ -61748,6 +62149,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "My God, my Well‑Beloved! No place is there for any",
     "paragraphs": [
       {
         "id": "prayers-410",
@@ -61980,6 +62382,7 @@
     "fullPath": [],
     "time": "●●",
     "score": 0,
+    "initial": "Immeasurably exalted art Thou, O my God, above the",
     "paragraphs": [
       {
         "id": "prayers-411",
@@ -62247,6 +62650,7 @@
     ],
     "time": "●●",
     "score": 1,
+    "initial": "I give praise to Thee, O my God, that the fragrance",
     "paragraphs": [
       {
         "id": "prayers-412",
@@ -62562,6 +62966,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "O Thou Whose remembrance is the delight of the souls",
     "paragraphs": [
       {
         "id": "prayers-413",
@@ -62765,6 +63170,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "Praised be Thou, O Lord my God! Thou seest my poverty",
     "paragraphs": [
       {
         "id": "prayers-414",
@@ -62929,6 +63335,7 @@
     "fullPath": [],
     "time": "●●",
     "score": 0,
+    "initial": "Immeasurably glorified and exalted art Thou. How can",
     "paragraphs": [
       {
         "id": "prayers-415",
@@ -63064,6 +63471,7 @@
     ],
     "time": "●●",
     "score": 1,
+    "initial": "All majesty and glory, O my God, and all dominion and",
     "paragraphs": [
       {
         "id": "prayers-416",
@@ -63320,6 +63728,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "Praised be Thou, O Lord my God! Every time I am reminded",
     "paragraphs": [
       {
         "id": "prayers-417",
@@ -63557,6 +63966,7 @@
     ],
     "time": "●●",
     "score": 1,
+    "initial": "All glory be to Thee, O Lord my God! I bear witness",
     "paragraphs": [
       {
         "id": "prayers-418",
@@ -63754,6 +64164,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "Glory be to Thee, Thou in Whose hand are the heaven",
     "paragraphs": [
       {
         "id": "prayers-419",
@@ -63991,6 +64402,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "Praised be Thou, O my God! Thou beholdest both the",
     "paragraphs": [
       {
         "id": "prayers-420",
@@ -64262,6 +64674,7 @@
     ],
     "time": "●●",
     "score": 1,
+    "initial": "Lauded be Thy name, O Lord my God! How great is Thy",
     "paragraphs": [
       {
         "id": "prayers-421",
@@ -64586,6 +64999,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "Glorified art Thou, O Lord my God! My tongue, both",
     "paragraphs": [
       {
         "id": "prayers-422",
@@ -64891,6 +65305,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "He is the Almighty, the Self‑Subsisting. Glorified",
     "paragraphs": [
       {
         "id": "prayers-423",
@@ -65094,6 +65509,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "He is God! Praise be unto Thee, O my Lord, O my Lord!",
     "paragraphs": [
       {
         "id": "prayers-424",
@@ -65368,6 +65784,7 @@
     ],
     "time": "●●",
     "score": 8,
+    "initial": "(This Tablet is read at the Shrines of Bahá’u’lláh",
     "paragraphs": [
       {
         "id": "prayers-425",
@@ -65799,7 +66216,7 @@
             "paragraph": 2,
             "path": [
               "‘Abdu’l‑Bahá",
-              "Twelve Table Talks given by ‘Abdu’l‑Bahá in ‘Akká",
+              "Twelve Table Talks in ‘Akká",
               "The Wisdom of Fasting",
               "para 3"
             ]
@@ -65939,6 +66356,7 @@
     ],
     "time": "●●",
     "score": 1,
+    "initial": "Thou seest Thy dear One, O my God, lying at the mercy",
     "paragraphs": [
       {
         "id": "prayers-426",
@@ -66170,6 +66588,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "Glorified art Thou, O my God! Thou knowest that my",
     "paragraphs": [
       {
         "id": "prayers-427",
@@ -66470,6 +66889,7 @@
     "fullPath": [],
     "time": "●●",
     "score": 1,
+    "initial": "In the Name of God, the Compassionate, the Merciful.",
     "paragraphs": [
       {
         "id": "prayers-428",
@@ -66812,6 +67232,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "Praise be to Thee, O Lord my God! Thou beholdest what",
     "paragraphs": [
       {
         "id": "prayers-429",
@@ -67151,6 +67572,7 @@
     ],
     "time": "●●",
     "score": 1,
+    "initial": "Unto Thee be praise, O Thou Who inclinest Thine ear",
     "paragraphs": [
       {
         "id": "prayers-430",
@@ -67407,6 +67829,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "Praised be Thou, O my God, that Thou hast been true",
     "paragraphs": [
       {
         "id": "prayers-431",
@@ -67746,6 +68169,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "Glorified art Thou, O Lord my God! Thou seest me dwelling",
     "paragraphs": [
       {
         "id": "prayers-432",
@@ -68080,6 +68504,7 @@
     "fullPath": [],
     "time": "●●",
     "score": 0,
+    "initial": "How can I praise Thee, O Lord, for the evidences of",
     "paragraphs": [
       {
         "id": "prayers-433",
@@ -68476,6 +68901,7 @@
     ],
     "time": "●●",
     "score": 1,
+    "initial": "Praised be Thou, O my God! I beseech Thee by them who",
     "paragraphs": [
       {
         "id": "prayers-434",
@@ -68829,6 +69255,7 @@
     "fullPath": [],
     "time": "●●",
     "score": 0,
+    "initial": "He is God, the Sovereign Ruler, the Ever‑Living, He",
     "paragraphs": [
       {
         "id": "prayers-435",
@@ -69258,6 +69685,7 @@
     ],
     "time": "●●",
     "score": 0,
+    "initial": "Mine eyes are cheered, O my God, when I contemplate",
     "paragraphs": [
       {
         "id": "prayers-436",
@@ -69600,6 +70028,7 @@
     ],
     "time": "●●",
     "score": 1,
+    "initial": "These are, O my God, the days whereon Thou didst enjoin",
     "paragraphs": [
       {
         "id": "prayers-437",
@@ -69968,6 +70397,7 @@
     ],
     "time": "●●●",
     "score": 0,
+    "initial": "Lauded be Thy name, O Thou Who art my God and throbbest",
     "paragraphs": [
       {
         "id": "prayers-438",
@@ -70379,6 +70809,7 @@
     ],
     "time": "●●●",
     "score": 3,
+    "initial": "To be recited once in twenty‑four hours Whoso wisheth",
     "paragraphs": [
       {
         "id": "prayers-439",
@@ -71581,6 +72012,7 @@
     ],
     "time": "●●●",
     "score": 0,
+    "initial": "He is the Healer, the Sufficer, the Helper, the All‑Forgiving,",
     "paragraphs": [
       {
         "id": "prayers-440",
@@ -73215,6 +73647,7 @@
     ],
     "time": "●●●",
     "score": 0,
+    "initial": "I beseech Thee, O my God, by Thy mighty Sign, and by",
     "paragraphs": [
       {
         "id": "prayers-441",
@@ -73724,6 +74157,7 @@
     ],
     "time": "●●●",
     "score": 4,
+    "initial": "Lauded be Thy name, O Lord my God! I testify that Thou",
     "paragraphs": [
       {
         "id": "prayers-442",
@@ -74295,6 +74729,7 @@
     ],
     "time": "●●●",
     "score": 2,
+    "initial": "Praise be to Thee, to Whom the tongues of all created",
     "paragraphs": [
       {
         "id": "prayers-443",
@@ -74931,6 +75366,7 @@
     ],
     "time": "●●●",
     "score": 4,
+    "initial": "Praised be Thou, O Lord my God! I supplicate Thee by",
     "paragraphs": [
       {
         "id": "prayers-444",
@@ -75494,6 +75930,7 @@
     ],
     "time": "●●●",
     "score": 0,
+    "initial": "Glory be to Thee, O Lord my God! These are the days",
     "paragraphs": [
       {
         "id": "prayers-445",
@@ -75969,6 +76406,7 @@
     ],
     "time": "●●●",
     "score": 1,
+    "initial": "Praised be Thou, O Lord my God! The tongues of all",
     "paragraphs": [
       {
         "id": "prayers-446",
@@ -76599,6 +77037,7 @@
     ],
     "time": "●●●",
     "score": 1,
+    "initial": "Exalted art Thou, O Lord my God! I beseech Thee by",
     "paragraphs": [
       {
         "id": "prayers-447",
@@ -77406,6 +77845,7 @@
     ],
     "time": "●●●●",
     "score": 4,
+    "initial": "Since Thou hast, O my God, established Thyself upon",
     "paragraphs": [
       {
         "id": "prayers-448",
@@ -78465,6 +78905,7 @@
     ],
     "time": "●●●●",
     "score": 6,
+    "initial": "Praise be unto Thee, Who art my God and the God of",
     "paragraphs": [
       {
         "id": "prayers-449",

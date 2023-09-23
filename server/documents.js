@@ -42,14 +42,16 @@ export const handler = async ({ body = "{}" }) => {
           )
           .sort((a, b) =>
             ["The Báb", "Bahá’u’lláh", "‘Abdu’l‑Bahá"].includes(a.author)
-              ? b.time.length - a.time.length || a.id.localeCompare(b.id)
+              ? b.time.length - a.time.length ||
+                (b.time.length === 5 ? b.score - a.score : 0) ||
+                a.id.localeCompare(b.id)
               : b.time.length - a.time.length ||
                 b.score - a.score ||
                 (b.years[0] + b.years[1]) / 2 - (a.years[0] + a.years[1]) / 2 ||
                 a.id.localeCompare(b.id)
           )
           .map(({ paragraphs, ...info }) => info)
-          .slice(0, 500)
+          .slice(0, 800)
       ),
       headers: { "Content-Type": "application/json" },
     };
