@@ -74,7 +74,7 @@
       if author != '' then {
         tabs(view, extraTab)
         if view = 'Documents' then [
-          pad: [0, 10, 50]
+          pad: [0, 35, 50]
           ~
           [
             style: [
@@ -82,7 +82,141 @@
               'overflow-y': 'hidden'
             ]
             ~
-            table(author)
+            {
+              allDocs: documents(author)
+              ~
+              [
+                flow: 'row'
+                ~
+                [
+                  width: 0.5
+                  flow: 15
+                  pad: [right: 20]
+                  size: 15
+                  ~
+                  [
+                    flow: 15
+                    ~
+                    [
+                      bold: yes
+                      underline: yes
+                      size: 17
+                      ~
+                      'Long (> 45 mins)'
+                    ]
+                    for d in allDocs.books [
+                      flow: 5
+                      color: colors.link[d.author] | colors.link['The World Centre']
+                      pad: 7.5
+                      style: [margin: '-7.5px']
+                      underline: hover
+                      when click push [d.id] -> url
+                      ~
+                      [
+                        bold: yes
+                        ~
+                        d.title | '“{d.initial} . . .”'
+                      ]
+                      if d.summary & extraTab != 'Prayers' then [
+                        italic: yes
+                        size: 13
+                        ~
+                        d.summary
+                      ]
+                      if length(d.path) > 0 & extraTab = 'Prayers' then [
+                        italic: yes
+                        size: 13
+                        ~
+                        '('
+                        for p, j in d.path
+                          if j = length(d.path) then '{p}, #{d.item}' else '{p}, '
+                        ')'
+                      ]
+                    ]
+                    [
+                      bold: yes
+                      underline: yes
+                      size: 17
+                      pad: [top: 20]
+                      ~
+                      'Medium (> 15 mins)'
+                    ]
+                    for d in allDocs.long [
+                      flow: 5
+                      color: colors.link[d.author] | colors.link['The World Centre']
+                      pad: 7.5
+                      style: [margin: '-7.5px']
+                      underline: hover
+                      when click push [d.id] -> url
+                      ~
+                      [
+                        bold: yes
+                        ~
+                        d.title | '“{d.initial} . . .”'
+                      ]
+                      if d.summary & extraTab != 'Prayers' then [
+                        italic: yes
+                        size: 13
+                        ~
+                        d.summary
+                      ]
+                      if length(d.path) > 0 & extraTab = 'Prayers' then [
+                        italic: yes
+                        size: 13
+                        ~
+                        '('
+                        for p, j in d.path
+                          if j = length(d.path) then '{p}, #{d.item}' else '{p}, '
+                        ')'
+                      ]
+                    ]
+                  ]
+                ]
+                [
+                  width: 0.5
+                  flow: 15
+                  pad: [left: 20]
+                  size: 15
+                  ~
+                  [
+                    bold: yes
+                    underline: yes
+                    size: 17
+                    ~
+                    'Short (< 15 mins)'
+                  ]
+                  for d in allDocs.short [
+                    flow: 5
+                    color: colors.link[d.author] | colors.link['The World Centre']
+                    pad: 7.5
+                    style: [margin: '-7.5px']
+                    underline: hover
+                    when click push [d.id] -> url
+                    ~
+                    [
+                      bold: yes
+                      ~
+                      d.title | '“{d.initial} . . .”'
+                    ]
+                    if d.summary & extraTab != 'Prayers' then [
+                      italic: yes
+                      size: 13
+                      ~
+                      d.summary
+                    ]
+                    if length(d.path) > 0 & extraTab = 'Prayers' then [
+                      italic: yes
+                      size: 13
+                      ~
+                      '('
+                      for p, j in d.path
+                        if j = length(d.path) then '{p}, #{d.item}' else '{p}, '
+                      ')'
+                    ]
+                  ]
+                ]
+              ]
+            }
           ]
         ] else if view = 'Passages' then [
           flow: 80

@@ -35,7 +35,7 @@
         size: if level then 25 - level * 2
         uppercase: level = 1 | p.type = 'call'
         bold: level <= 2
-        italic: level > 2 | p.type = 'info'
+        italic: level > 2 | (p.type = 'info' & p.author != 'The Universal House of Justice' & p.author != 'Shoghi Effendi')
         indent:
           if !p.type & (p.index != 1) & !citation then  20
           else if p.type = 'lines' & !allType then -30

@@ -192,7 +192,11 @@ const compiled = maraca(
     url,
     includes: (list, item) => list.items.includes(item),
     length: (block) =>
-      Array.isArray(block) ? block.length : block.items.length,
+      block === null
+        ? null
+        : Array.isArray(block)
+        ? block.length
+        : block.items.length,
     rgb: (...args) =>
       `#${args.map((x) => x.toString(16).padStart(2, "0")).join("")}`,
   },

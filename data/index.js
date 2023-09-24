@@ -40,8 +40,8 @@ const getTime = (words) => {
   const time = words / 238;
   if (time < 1.6) return "●"; // 0.2
   if (time < 5) return "●●"; // 0.7
-  if (time < 16) return "●●●"; // 1.2
-  if (time < 50) return "●●●●"; // 1.7
+  if (time < 15) return "●●●"; // 1.2
+  if (time < 45) return "●●●●"; // 1.7
   return "●●●●●";
 };
 
@@ -280,6 +280,7 @@ const documents = Object.keys(data).map((id) => {
     next: data[nextId] && nextId,
     fullPath: cleanPath,
     time: getTime(fullWords),
+    mins: Math.round(fullWords / 238),
     score: paras
       .map((p) => p.citationDocs)
       .reduce((res, n) => new Set([...res, ...n]), new Set()).size,
