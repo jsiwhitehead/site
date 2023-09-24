@@ -54,6 +54,7 @@ const getFirstChar = (index, text) => {
 const getRef = (doc, paras) => ({
   id: doc.id,
   paragraph: paras[0],
+  author: doc.author,
   path: unique(
     [
       doc.author,
@@ -81,17 +82,6 @@ const getRef = (doc, paras) => ({
 });
 
 const allParagraphs = [];
-
-const dataKeys = Object.keys(data);
-const fromBab = dataKeys.filter((k) => data[k].years[1] > 1853).length;
-const fromBahaullah = dataKeys.filter((k) => data[k].years[1] > 1892).length;
-const fromAbdulBaha = dataKeys.filter((k) => data[k].years[1] > 1921).length;
-const getPotentialCount = (author, docIndex) => {
-  if (author === "The Báb") return fromBab;
-  if (author === "Bahá’u’lláh") return fromBahaullah;
-  if (author === "‘Abdu’l‑Bahá") return fromAbdulBaha;
-  return dataKeys.length - docIndex;
-};
 
 const getParaText = (para) => {
   if (para.section) return para.title || "";
@@ -128,12 +118,8 @@ const getParaQuotes = (para, maxLength) => {
     .filter((x) => x);
 };
 
-const documents = dataKeys.map((id, docIndex) => {
+const documents = Object.keys(data).map((id) => {
   const { paragraphs, path, ...info } = data[id];
-
-  // const potentialCount = Math.log(
-  //   getPotentialCount(info.author, docIndex) * 0.1 + 1
-  // );
 
   const cleanPath =
     path &&
@@ -232,7 +218,12 @@ const documents = dataKeys.map((id, docIndex) => {
         return {
           ...p,
           type: "blockquote",
-          text: parts,
+          text: parts.filter((p) => !p.ref).map((p) => ({ ...p, quote: true })),
+          refs: [
+            ...new Set(
+              parts.filter((p) => p.ref).map((p) => JSON.stringify(p.ref))
+            ),
+          ].map((s) => JSON.parse(s)),
           max,
         };
       }

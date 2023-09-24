@@ -20,7 +20,7 @@
     render(doc)
   } else {
     author is any: ''
-    view is any: 'Passages'
+    view is any: 'Documents'
     extraTab: if includes(
       ['Heroic Age', 'Word of God', 'The Báb', 'Bahá’u’lláh', '‘Abdu’l‑Bahá'],
       author

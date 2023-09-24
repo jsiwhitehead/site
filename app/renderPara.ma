@@ -60,29 +60,30 @@
           renderLine((if showCitations then fullPara else p).text, p.author, citation, showCitations)
       ]
     ]
-    if p.type = 'quote' then [
-      size: 15
-      italic: yes
-      align: 'right'
-      color: colors.link[p.author] | colors.link['The World Centre']
-      pad: [0, 20]
-      style: [
-        'max-width': '470px'
-        'margin-left': 'auto'
-      ]
-      underline: hover
-      when click push ['': p.ref.paragraph ~ p.ref.id] -> url
-      ~
-      for t, i in p.ref.path {
-        if i > 1 then ' '
-        [
-          underline: hover
-          style: [display: 'inline-block']
-          ~
-          if i = length(p.ref.path) then t else '{t},'
+    if p.type = 'blockquote' then
+      for ref in p.refs [
+        size: 15
+        italic: yes
+        align: 'right'
+        color: colors.link[ref.author] | colors.link['The World Centre']
+        pad: if p.author != 'Compilation' then [0, 20]
+        style: [
+          'max-width': '470px'
+          'margin-left': 'auto'
         ]
-      }
-    ]
+        underline: hover
+        when click push ['': ref.paragraph ~ ref.id] -> url
+        ~
+        for t, i in ref.path {
+          if i > 1 then ' '
+          [
+            underline: hover
+            style: [display: 'inline-block']
+            ~
+            if i = length(ref.path) then t else '{t},'
+          ]
+        }
+      ]
     if citation then [
       size: 15
       align: 'right'
