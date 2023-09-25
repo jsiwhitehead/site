@@ -127,10 +127,11 @@
                       if length(d.path) > 0 & d.path[1] != 'Additional' & ( extraTab = 'Prayers' | d.path[1] = 'The World Order of Bahá’u’lláh') then [
                         italic: yes
                         size: 12
+                        pad: [left: 10]
                         ~
                         '('
                         for p, j in d.path
-                          if j = length(d.path) then '{p}, #{d.item}' else '{p}, '
+                          if j = length(d.path) then p else '{p}, '
                         ')'
                       ]
                     ]
@@ -165,10 +166,11 @@
                       if length(d.path) > 0 & d.path[1] != 'Additional' & ( extraTab = 'Prayers' | d.path[1] = 'The World Order of Bahá’u’lláh') then [
                         italic: yes
                         size: 12
+                        pad: [left: 10]
                         ~
                         '('
                         for p, j in d.path
-                          if j = length(d.path) then '{p}, #{d.item}' else '{p}, '
+                          if j = length(d.path) then p else '{p}, '
                         ')'
                       ]
                     ]
@@ -209,10 +211,11 @@
                     if length(d.path) > 0 & d.path[1] != 'Additional' & ( extraTab = 'Prayers' | d.path[1] = 'The World Order of Bahá’u’lláh') then [
                       italic: yes
                       size: 12
+                      pad: [left: 10]
                       ~
                       '('
                       for p, j in d.path
-                        if j = length(d.path) then '{p}, #{d.item}' else '{p}, '
+                        if j = length(d.path) then p else '{p}, '
                       ')'
                     ]
                   ]
@@ -282,10 +285,11 @@
                 if length(d.path) > 0 & d.path[1] != 'Additional' & ( extraTab = 'Prayers' | d.path[1] = 'The World Order of Bahá’u’lláh') then [
                   italic: yes
                   size: 12
+                  pad: [left: 10]
                   ~
                   '('
                   for p, j in d.path
-                    if j = length(d.path) then '{p}, #{d.item}' else '{p}, '
+                    if j = length(d.path) then p else '{p}, '
                   ')'
                 ]
               ]
