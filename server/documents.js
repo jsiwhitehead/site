@@ -15,7 +15,6 @@ export const handler = async ({ body = "{}" }) => {
             "The Bible",
             "Muḥammad",
           ].includes(d.author) &&
-          d.path?.[0] !== "Additional" &&
           !(
             d.path?.[0] === "Bahá’í Prayers" && d.author === "Shoghi Effendi"
           ) &&
@@ -49,11 +48,13 @@ export const handler = async ({ body = "{}" }) => {
       .slice(0, 800);
     return {
       statusCode: 200,
-      body: JSON.stringify({
-        books: docs.filter((d) => d.time.length === 5),
-        long: docs.filter((d) => d.time.length === 4),
-        short: docs.filter((d) => d.time.length < 4),
-      }),
+      body: JSON.stringify([
+        docs.filter((d) => d.time.length === 1),
+        docs.filter((d) => d.time.length === 2),
+        docs.filter((d) => d.time.length === 3),
+        docs.filter((d) => d.time.length === 4),
+        // docs.filter((d) => d.time.length === 5),
+      ]),
       headers: { "Content-Type": "application/json" },
     };
   } catch (e) {

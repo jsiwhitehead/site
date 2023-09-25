@@ -25,6 +25,7 @@ export const handler = async ({ body = "{}" }) => {
               allAuthors.includes(d.author) ||
               allAuthors.includes(d.epoch)
           )
+          .filter((d) => d.time.length > 1)
           .flatMap((d) => d.paragraphs)
           .filter((p) => p.score > 0)
           .sort(

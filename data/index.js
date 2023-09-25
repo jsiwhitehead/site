@@ -36,17 +36,49 @@ const unique = (x) => [...new Set(x)];
 //   }
 // }
 
+const filterText = (text, min) => {
+  if (text.length === 0) return "";
+  const res = text.reduce((res, t) => {
+    if (t.count >= min) {
+      return [...res, t];
+    }
+    if (typeof res[res.length - 1] !== "string") res.push("");
+    res[res.length - 1] = res[res.length - 1] + t.text;
+    return res;
+  }, []);
+  const mapped = res.map((x, i) =>
+    typeof x === "string"
+      ? {
+          text:
+            !/\w/.test(x) ||
+            (i > 0 && i < res.length - 1 && x.trim().split(" ").length === 1)
+              ? x
+              : " . . . ",
+        }
+      : x
+  );
+  if (mapped.length === 1 && mapped[0].text === " . . . ") return "";
+  if (mapped[0].text === " . . . ") {
+    mapped[0].text = ". . . ";
+  }
+  if (mapped[mapped.length - 1].text === " . . . ") {
+    mapped[mapped.length - 1].text = " . . .";
+  }
+  return mapped.map((m) => m.text).join("");
+};
+
 const getTime = (words) => {
   const time = words / 238;
-  if (time < 1.6) return "●"; // 0.2
-  if (time < 5) return "●●"; // 0.7
-  if (time < 15) return "●●●"; // 1.2
-  if (time < 45) return "●●●●"; // 1.7
-  return "●●●●●";
+  if (time < 2) return "●";
+  if (time < 5) return "●●";
+  // if (time < 10) return "●●●";
+  if (time < 30) return "●●●";
+  return "●●●●";
 };
 
 const getFirstChar = (index, text) => {
   if (index !== 1) return undefined;
+  if (text.startsWith(". . .")) return undefined;
   const result = /[a-z]/i.exec(text)?.index;
   return result === undefined ? result : result + 1;
 };
@@ -132,7 +164,10 @@ const documents = Object.keys(data).map((id) => {
           ].includes(p)
       )
     );
-  const titlePath = unique([...cleanPath, info.title]).slice(0, -1);
+  const titlePath =
+    cleanPath[0] === "The World Order of Bahá’u’lláh"
+      ? cleanPath
+      : unique([...cleanPath, info.title]).slice(0, -1);
 
   const texts = paragraphs.map((p) =>
     getParaText(p)
@@ -273,6 +308,7 @@ const documents = Object.keys(data).map((id) => {
   const nextId = id.slice(0, -3) + `${idNum + 1}`.padStart(3, "0");
 
   const fullWords = words.reduce((res, n) => res + n, 0);
+  const fullMax = Math.max(...paras.map((p) => p.max));
   return {
     ...info,
     ...(titlePath.length > 0 ? { path: titlePath } : {}),
@@ -280,11 +316,31 @@ const documents = Object.keys(data).map((id) => {
     next: data[nextId] && nextId,
     fullPath: cleanPath,
     time: getTime(fullWords),
-    mins: Math.round(fullWords / 238),
+    mins:
+      fullWords / 238 > 60
+        ? `${Math.round((fullWords / 238 / 60) * 10) / 10} hours`
+        : fullWords / 238 < 5
+        ? `${Math.round(fullWords / 238)} mins`
+        : `${Math.round(fullWords / 238 / 5) * 5} mins`,
     score: paras
       .map((p) => p.citationDocs)
       .reduce((res, n) => new Set([...res, ...n]), new Set()).size,
-    initial: texts.join(" ").replace(/^(.{50}[^ ]*).*/, "$1"),
+    initial:
+      getTime(fullWords).length === 1
+        ? filterText(
+            paras
+              .reduce(
+                (res, p, i) => [
+                  ...res,
+                  ...(i === 0 ? [] : [[{ text: " ", count: 0 }]]),
+                  ...(p.type === "lines" ? p.lines : [p.text]),
+                ],
+                []
+              )
+              .flat(),
+            (fullMax * 2) / 3
+          ).replace(/^(.{50}[^ ]*).*/, "$1")
+        : texts.join(" ").replace(/^(.{50}[^ ]*).*/, "$1"),
     // score:
     //   paras.map((p) => p.score).reduce((res, n) => res + n, 0) /
     //   Math.sqrt(paras.length),

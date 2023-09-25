@@ -91,8 +91,8 @@
                 [
                   width: 0.5
                   flow: 15
-                  pad: [right: 20]
-                  size: 15
+                  pad: [right: 30]
+                  size: 14
                   ~
                   [
                     flow: 15
@@ -102,9 +102,9 @@
                       underline: yes
                       size: 17
                       ~
-                      'Long (> 45 mins)'
+                      'Long (30+ mins)'
                     ]
-                    for d in allDocs.books [
+                    for d in allDocs[4] [
                       flow: 5
                       color: colors.link[d.author] | colors.link['The World Centre']
                       pad: 7.5
@@ -116,16 +116,17 @@
                         bold: yes
                         ~
                         d.title | '“{d.initial} . . .”'
+                        ' ({d.mins})'
                       ]
                       if d.summary & extraTab != 'Prayers' then [
                         italic: yes
-                        size: 13
+                        size: 12
                         ~
                         d.summary
                       ]
-                      if length(d.path) > 0 & extraTab = 'Prayers' then [
+                      if length(d.path) > 0 & d.path[1] != 'Additional' & ( extraTab = 'Prayers' | d.path[1] = 'The World Order of Bahá’u’lláh') then [
                         italic: yes
-                        size: 13
+                        size: 12
                         ~
                         '('
                         for p, j in d.path
@@ -139,9 +140,9 @@
                       size: 17
                       pad: [top: 20]
                       ~
-                      'Medium (> 15 mins)'
+                      'Medium (5-30 mins)'
                     ]
-                    for d in allDocs.long [
+                    for d in allDocs[3] [
                       flow: 5
                       color: colors.link[d.author] | colors.link['The World Centre']
                       pad: 7.5
@@ -153,16 +154,17 @@
                         bold: yes
                         ~
                         d.title | '“{d.initial} . . .”'
+                        ' ({d.mins})'
                       ]
                       if d.summary & extraTab != 'Prayers' then [
                         italic: yes
-                        size: 13
+                        size: 12
                         ~
                         d.summary
                       ]
-                      if length(d.path) > 0 & extraTab = 'Prayers' then [
+                      if length(d.path) > 0 & d.path[1] != 'Additional' & ( extraTab = 'Prayers' | d.path[1] = 'The World Order of Bahá’u’lláh') then [
                         italic: yes
-                        size: 13
+                        size: 12
                         ~
                         '('
                         for p, j in d.path
@@ -175,17 +177,17 @@
                 [
                   width: 0.5
                   flow: 15
-                  pad: [left: 20]
-                  size: 15
+                  pad: [left: 30]
+                  size: 14
                   ~
                   [
                     bold: yes
                     underline: yes
                     size: 17
                     ~
-                    'Short (< 15 mins)'
+                    'Short (2-5 mins)'
                   ]
-                  for d in allDocs.short [
+                  for d in allDocs[2] [
                     flow: 5
                     color: colors.link[d.author] | colors.link['The World Centre']
                     pad: 7.5
@@ -200,13 +202,13 @@
                     ]
                     if d.summary & extraTab != 'Prayers' then [
                       italic: yes
-                      size: 13
+                      size: 12
                       ~
                       d.summary
                     ]
-                    if length(d.path) > 0 & extraTab = 'Prayers' then [
+                    if length(d.path) > 0 & d.path[1] != 'Additional' & ( extraTab = 'Prayers' | d.path[1] = 'The World Order of Bahá’u’lláh') then [
                       italic: yes
-                      size: 13
+                      size: 12
                       ~
                       '('
                       for p, j in d.path
@@ -218,14 +220,78 @@
               ]
             }
           ]
-        ] else if view = 'Passages' then [
-          flow: 80
-          maxWidth: 630
-          pad: [50, 35]
+        ] else if view = 'Passages' then {
+          allDocs: documents(author)
           ~
-          for p in allParagraphs(author, yes)
-            renderPara(p.partial, no, yes, no, yes, no, p.full)
-        ] else if view = 'Compilations' then [
+          [
+            flow: 'row'
+            pad: [0, 35, 50]
+            ~
+            [
+              width: 0.5
+              flow: 15
+              pad: [right: 30]
+              size: 14
+              ~
+              [
+                bold: yes
+                underline: yes
+                size: 17
+                ~
+                'From documents'
+              ]
+              [
+                flow: 50
+                ~
+                for p in allParagraphs(author, yes)
+                  renderPara(p.partial, no, yes, no, yes, no, p.full)
+              ]
+            ]
+            [
+              width: 0.5
+              flow: 15
+              pad: [left: 30]
+              size: 14
+              ~
+              [
+                bold: yes
+                underline: yes
+                size: 17
+                ~
+                'Additional passages'
+              ]
+              for d in allDocs[1] [
+                flow: 5
+                color: colors.link[d.author] | colors.link['The World Centre']
+                pad: 7.5
+                style: [margin: '-7.5px']
+                underline: hover
+                when click push [d.id] -> url
+                ~
+                [
+                  bold: yes
+                  ~
+                  d.title | '“{d.initial} . . .”'
+                ]
+                if d.summary & extraTab != 'Prayers' then [
+                  italic: yes
+                  size: 12
+                  ~
+                  d.summary
+                ]
+                if length(d.path) > 0 & d.path[1] != 'Additional' & ( extraTab = 'Prayers' | d.path[1] = 'The World Order of Bahá’u’lláh') then [
+                  italic: yes
+                  size: 12
+                  ~
+                  '('
+                  for p, j in d.path
+                    if j = length(d.path) then '{p}, #{d.item}' else '{p}, '
+                  ')'
+                ]
+              ]
+            ]
+          ]
+        } else if view = 'Compilations' then [
           maxWidth: 670
           width: 1
           pad: [30, 35, 50]
