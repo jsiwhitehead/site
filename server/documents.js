@@ -44,8 +44,7 @@ export const handler = async ({ body = "{}" }) => {
             (b.years[0] + b.years[1]) / 2 - (a.years[0] + a.years[1]) / 2 ||
             a.id.localeCompare(b.id)
       )
-      .map(({ paragraphs, ...info }) => info)
-      .slice(0, 800);
+      .map(({ paragraphs, ...info }) => info);
     return {
       statusCode: 200,
       body: JSON.stringify([

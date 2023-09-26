@@ -322,9 +322,12 @@ const documents = Object.keys(data).map((id) => {
         : fullWords / 238 < 5
         ? `${Math.round(fullWords / 238)} mins`
         : `${Math.round(fullWords / 238 / 5) * 5} mins`,
-    score: paras
-      .map((p) => p.citationDocs)
-      .reduce((res, n) => new Set([...res, ...n]), new Set()).size,
+    score:
+      paras
+        .map((p) => p.citationDocs)
+        .reduce((res, n) => new Set([...res, ...n]), new Set()).size *
+      (paras.map((p) => p.score).reduce((res, n) => res + n, 0) /
+        Math.sqrt(paras.length)),
     initial:
       getTime(fullWords).length === 1
         ? filterText(
