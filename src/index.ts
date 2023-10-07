@@ -164,11 +164,19 @@ const compiled = maraca(
                 ...p,
                 lines: p.lines.map((l) => filterText(l, (p.max * 2) / 3)),
               },
+              author: p.author,
+              id: p.id,
+              initial: p.initialLong,
+              path: p.path,
             };
           }
           return {
             full: { ...p, text: filterText(p.text, 1) },
             partial: { ...p, text: filterText(p.text, (p.max * 2) / 3) },
+            author: p.author,
+            id: p.id,
+            initial: p.initialLong,
+            path: p.path,
           };
         });
       });

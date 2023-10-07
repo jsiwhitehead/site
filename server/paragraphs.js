@@ -26,13 +26,17 @@ export const handler = async ({ body = "{}" }) => {
               allAuthors.includes(d.epoch)
           )
           .filter((d) => d.time.length > 1)
-          .flatMap((d) => d.paragraphs)
+          .flatMap((d) =>
+            d.paragraphs.map((p) => ({
+              path: [d.title, ...(d.path || [])].filter((x) => x),
+              ...p,
+            }))
+          )
           .filter((p) => p.score > 0)
           .sort(
             (a, b) =>
               b.score - a.score || a.id.localeCompare(b.id) || a.index - b.index
           )
-          .map(({ paragraphs, ...info }) => info)
           .slice(0, 250)
       ),
       headers: { "Content-Type": "application/json" },

@@ -4,38 +4,6 @@ import data from "./data.json" assert { type: "json" };
 
 const unique = (x) => [...new Set(x)];
 
-// for (const id of Object.keys(quotes).filter((id) => documentMap[id])) {
-//   for (const para of Object.keys(quotes[id])) {
-//     const fixedParts = quotes[id][para].map((p) => {
-//       const text = documentMap[id].paragraphs[parseInt(para, 10)].text;
-//       if (!text) console.log(p.ref);
-//       return { ref: p.ref, start: p.start || 0, end: p.end || text?.length };
-//     });
-//     const splits = [
-//       ...new Set(fixedParts.flatMap((p) => [p.start, p.end])),
-//     ].sort((a, b) => a - b);
-//     documentMap[id].paragraphs[para].citations = {
-//       refs: [...new Set(fixedParts.map((p) => JSON.stringify(p.ref)))].map(
-//         (s) => JSON.parse(s)
-//       ),
-//       parts: splits
-//         .slice(0, -1)
-//         .map((start, i) => {
-//           const end = splits[i + 1];
-//           const count = [
-//             ...new Set(
-//               fixedParts
-//                 .filter((p) => p.start <= start && p.end >= end)
-//                 .map((p) => p.ref.id)
-//             ),
-//           ].length;
-//           return { start, end, count };
-//         })
-//         .filter((x) => x.count),
-//     };
-//   }
-// }
-
 const filterText = (text, min) => {
   if (text.length === 0) return "";
   const res = text.reduce((res, t) => {
@@ -69,9 +37,8 @@ const filterText = (text, min) => {
 
 const getTime = (words) => {
   const time = words / 238;
-  if (time < 2) return "●";
+  if (time < 1) return "●";
   if (time < 5) return "●●";
-  // if (time < 10) return "●●●";
   if (time < 30) return "●●●";
   return "●●●●";
 };
@@ -150,215 +117,277 @@ const getParaQuotes = (para, maxLength) => {
     .filter((x) => x);
 };
 
-const documents = Object.keys(data).map((id) => {
-  const { paragraphs, path, ...info } = data[id];
+const documents = Object.keys(data)
+  .filter((id) => !["bible", "quran"].some((s) => id.startsWith(s)))
+  .map((id) => {
+    const { paragraphs, path, ...info } = data[id];
 
-  const cleanPath =
-    path &&
-    unique(
-      path.filter(
-        (p) =>
-          ![
-            "Selections from the Writings of the Báb",
-            "Part Two: Letters from Shoghi Effendi",
-          ].includes(p)
-      )
-    );
-  const titlePath =
-    cleanPath[0] === "The World Order of Bahá’u’lláh"
-      ? cleanPath
-      : unique([...cleanPath, info.title]).slice(0, -1);
-
-  const texts = paragraphs.map((p) =>
-    getParaText(p)
-      .normalize("NFD")
-      .replace(/\u0323/g, "")
-      .normalize("NFC")
-  );
-  const words = texts.map((t) => t.split(" ").length);
-
-  const paras = paragraphs
-    .map((p, i) => {
-      const text = texts[i];
-      const first = getFirstChar(p.index, text);
-      const quotes = getParaQuotes(p, text.length);
-      const indices = unique([
-        0,
-        ...(first === undefined ? [] : [first]),
-        ...(p.citations || []).flatMap((c) => [c.start, c.end]),
-        ...(p.lines || []).flatMap((l) => [l - 1, l]),
-        ...quotes.flatMap((q) => [q.start, q.end]),
-        text.length,
-      ]).sort((a, b) => a - b);
-      const parts = indices.slice(1).flatMap((end, j) => {
-        const start = indices[j];
-        const quote = quotes.find((q) => q.end === end);
-        const count = new Set(
-          (p.citations || [])
-            .filter((c) => c.start <= start && c.end >= end)
-            .map((c) => c.doc)
-        ).size;
-        return [
-          {
-            start,
-            end,
-            text: text.slice(start, end),
-            first: first !== undefined && end <= first,
-            count,
-            citationDocs: new Set(
-              (p.citations || [])
-                .filter((c) => c.start <= start && c.end >= end)
-                .map((c) => c.doc)
-            ),
-            quote: !!quotes.find((q) => q.start <= start && q.end >= end),
-          },
-          ...(quote
-            ? [
-                {
-                  start: end,
-                  end,
-                  text:
-                    " [" +
-                    getRef(data[quote.doc], [quote.paragraph]).path.join(", ") +
-                    "]",
-                  count,
-                  citationDocs: new Set(
-                    (p.citations || [])
-                      .filter((c) => c.start <= start && c.end >= end)
-                      .map((c) => c.doc)
-                  ),
-                  ref: getRef(data[quote.doc], [quote.paragraph]),
-                },
-              ]
-            : []),
-        ];
-      });
-      const max = Math.max(...parts.map((t) => t.count));
-      if (p.lines) {
-        return {
-          index: p.index,
-          type: "lines",
-          lines: p.lines.slice(0, -1).map((start, j) => {
-            const end = p.lines[j + 1] - 1;
-            return parts.filter((x) => x.start >= start && x.end <= end);
-          }),
-          citations: p.citations,
-          max,
-        };
-      }
-      const textParts = parts.filter(
-        (p) => p.text.trim() && p.text.trim() !== ". . ." && !p.ref
+    const cleanPath =
+      path &&
+      unique(
+        path.filter(
+          (p) =>
+            ![
+              "Selections from the Writings of the Báb",
+              "Part Two: Letters from Shoghi Effendi",
+            ].includes(p)
+        )
       );
-      if (textParts.length > 0 && textParts.every((p) => p.quote)) {
+    const titlePath =
+      cleanPath[0] === "The World Order of Bahá’u’lláh"
+        ? cleanPath
+        : unique([...cleanPath, info.title]).slice(0, -1);
+
+    const texts = paragraphs.map((p) =>
+      getParaText(p)
+        .normalize("NFD")
+        .replace(/\u0323/g, "")
+        .normalize("NFC")
+    );
+    const words = texts.map((t) => t.split(" ").length);
+
+    const paras = paragraphs
+      .map((p, i) => {
+        const text = texts[i];
+        const first = getFirstChar(p.index, text);
+        const quotes = getParaQuotes(p, text.length);
+        const indices = unique([
+          0,
+          ...(first === undefined ? [] : [first]),
+          ...(p.citations || []).flatMap((c) => [c.start, c.end]),
+          ...(p.lines || []).flatMap((l) => [l - 1, l]),
+          ...quotes.flatMap((q) => [q.start, q.end]),
+          text.length,
+        ]).sort((a, b) => a - b);
+        const parts = indices.slice(1).flatMap((end, j) => {
+          const start = indices[j];
+          const quote = quotes.find((q) => q.end === end);
+          const allCitations = new Set(
+            (p.citations || [])
+              .filter((c) => c.start <= start && c.end >= end)
+              .map((c) => c.doc)
+          );
+          const distinctCitations = new Set(
+            (p.citations || [])
+              .filter((c) => c.start <= start && c.end >= end)
+              .map((c) =>
+                c.doc.startsWith("compilations") &&
+                c.doc !== "compilations-bahai-org-001"
+                  ? "compilations"
+                  : c.doc.startsWith("ruhi")
+                  ? "ruhi"
+                  : c.doc
+              )
+          );
+          return [
+            {
+              start,
+              end,
+              text: text.slice(start, end),
+              first: first !== undefined && end <= first,
+              distinctCitations,
+              count: allCitations.size,
+              quote: !!quotes.find((q) => q.start <= start && q.end >= end),
+            },
+            ...(quote
+              ? [
+                  {
+                    start: end,
+                    end,
+                    text:
+                      " [" +
+                      getRef(data[quote.doc], [quote.paragraph]).path.join(
+                        ", "
+                      ) +
+                      "]",
+                    distinctCitations,
+                    count: allCitations.size,
+                    ref: getRef(data[quote.doc], [quote.paragraph]),
+                  },
+                ]
+              : []),
+          ];
+        });
+        const max = Math.max(...parts.map((t) => t.count));
+        if (p.lines) {
+          return {
+            index: p.index,
+            type: "lines",
+            lines: p.lines.slice(0, -1).map((start, j) => {
+              const end = p.lines[j + 1] - 1;
+              return parts.filter((x) => x.start >= start && x.end <= end);
+            }),
+            citations: p.citations,
+            max,
+          };
+        }
+        const textParts = parts.filter(
+          (p) => p.text.trim() && p.text.trim() !== ". . ." && !p.ref
+        );
+        if (textParts.length > 0 && textParts.every((p) => p.quote)) {
+          return {
+            ...p,
+            type: "blockquote",
+            text: parts
+              .filter((p) => !p.ref)
+              .map((p) => ({ ...p, quote: true })),
+            refs: [
+              ...new Set(
+                parts.filter((p) => p.ref).map((p) => JSON.stringify(p.ref))
+              ),
+            ].map((s) => JSON.parse(s)),
+            max,
+          };
+        }
         return {
           ...p,
-          type: "blockquote",
-          text: parts.filter((p) => !p.ref).map((p) => ({ ...p, quote: true })),
-          refs: [
-            ...new Set(
-              parts.filter((p) => p.ref).map((p) => JSON.stringify(p.ref))
-            ),
-          ].map((s) => JSON.parse(s)),
+          text: parts,
           max,
         };
-      }
-      return {
+      })
+      .map((p, i) => ({
+        id,
+        prayer: info.type === "Prayer",
+        author: p.author || info.author,
+        epoch: info.epoch,
+        years: info.years,
+        ref: getRef(data[id], [i]),
+        distinctCitations: (p.type === "quote"
+          ? []
+          : p.type === "lines"
+          ? p.lines.flat()
+          : p.text
+        )
+          .map((t) => t.distinctCitations)
+          .reduce((res, n) => new Set([...res, ...n]), new Set()),
+        score:
+          (p.type === "quote"
+            ? []
+            : p.type === "lines"
+            ? p.lines.flat()
+            : p.text
+          )
+            // .map((t) => t.citationDocs)
+            // .reduce((res, n) => new Set([...res, ...n]), new Set()).size,
+            .map(
+              (t) =>
+                Math.pow(t.distinctCitations.size, 2) * t.text.split(" ").length
+            )
+            .reduce((res, n) => res + n, 0) / words[i], // / potentialCount,
+        // score: Math.max(
+        //   ...(p.type === "quote"
+        //     ? []
+        //     : p.type === "lines"
+        //     ? p.lines.flat()
+        //     : p.text
+        //   ).map((t) => t.count)
+        // ),
         ...p,
-        text: parts,
-        max,
-      };
-    })
-    .map((p, i) => ({
-      id,
-      prayer: info.type === "Prayer",
-      author: p.author || info.author,
-      epoch: info.epoch,
-      years: info.years,
-      ref: getRef(data[id], [i]),
-      citationDocs: (p.type === "quote"
-        ? []
-        : p.type === "lines"
-        ? p.lines.flat()
-        : p.text
-      )
-        .map((t) => t.citationDocs)
-        .reduce((res, n) => new Set([...res, ...n]), new Set()),
-      score:
-        (p.type === "quote" ? [] : p.type === "lines" ? p.lines.flat() : p.text)
-          // .map((t) => t.citationDocs)
-          // .reduce((res, n) => new Set([...res, ...n]), new Set()).size,
-          .map((t) => Math.pow(t.count, 2) * t.text.split(" ").length)
-          .reduce((res, n) => res + n, 0) / words[i], // / potentialCount,
-      // score: Math.max(
-      //   ...(p.type === "quote"
-      //     ? []
-      //     : p.type === "lines"
-      //     ? p.lines.flat()
-      //     : p.text
-      //   ).map((t) => t.count)
-      // ),
-      ...p,
-      parts: undefined,
-      citations: p.citations?.map((c) => getRef(data[c.doc], [c.paragraph])),
-    }));
-  allParagraphs.push(...paras);
-
-  const idNum = parseInt(id.slice(-3), 10);
-  const prevId = id.slice(0, -3) + `${idNum - 1}`.padStart(3, "0");
-  const nextId = id.slice(0, -3) + `${idNum + 1}`.padStart(3, "0");
-
-  const fullWords = words.reduce((res, n) => res + n, 0);
-  const fullMax = Math.max(...paras.map((p) => p.max));
-  return {
-    ...info,
-    ...(titlePath.length > 0 ? { path: titlePath } : {}),
-    prev: data[prevId] && prevId,
-    next: data[nextId] && nextId,
-    fullPath: cleanPath,
-    time: getTime(fullWords),
-    mins:
-      fullWords / 238 > 60
-        ? `${Math.round((fullWords / 238 / 60) * 10) / 10} hours`
-        : fullWords / 238 < 5
-        ? `${Math.round(fullWords / 238)} mins`
-        : `${Math.round(fullWords / 238 / 5) * 5} mins`,
-    score:
-      paras
-        .map((p) => p.citationDocs)
-        .reduce((res, n) => new Set([...res, ...n]), new Set()).size *
-      (paras.map((p) => p.score).reduce((res, n) => res + n, 0) /
-        Math.sqrt(paras.length)),
-    initial:
-      getTime(fullWords).length === 1
-        ? filterText(
-            paras
-              .reduce(
-                (res, p, i) => [
+        parts: undefined,
+        citations: p.citations?.map((c) => getRef(data[c.doc], [c.paragraph])),
+        initial: filterText(
+          p.type === "lines"
+            ? p.lines.reduce(
+                (res, l, i) => [
                   ...res,
-                  ...(i === 0 ? [] : [[{ text: " ", count: 0 }]]),
-                  ...(p.type === "lines" ? p.lines : [p.text]),
+                  ...(i === 0 ? [] : [{ text: " ", count: 0 }]),
+                  ...l,
                 ],
                 []
               )
-              .flat(),
-            (fullMax * 2) / 3
-          ).replace(/^(.{50}[^ ]*).*/, "$1")
-        : texts.join(" ").replace(/^(.{50}[^ ]*).*/, "$1"),
-    // score:
-    //   paras.map((p) => p.score).reduce((res, n) => res + n, 0) /
-    //   Math.sqrt(paras.length),
-    // score: Math.max(...paras.map((p) => p.score)),
-    allType:
-      info.id.startsWith("ruhi") ||
-      paras.every((p) => p.section || p.lines || p.type) ||
-      undefined,
-    compilation:
-      info.id.startsWith("ruhi") ||
-      paras.every((p) => p.section || p.type) ||
-      undefined,
-    paragraphs: paras,
-  };
-});
+            : p.text,
+          (p.max * 2) / 3
+        ).replace(/^(.{50}[^ ]*).*/, "$1"),
+        initialLong: filterText(
+          p.type === "lines"
+            ? p.lines.reduce(
+                (res, l, i) => [
+                  ...res,
+                  ...(i === 0 ? [] : [{ text: " ", count: 0 }]),
+                  ...l,
+                ],
+                []
+              )
+            : p.text,
+          (p.max * 2) / 3
+        ).replace(/^(.{200}[^ ]*).*/, "$1"),
+      }));
+    allParagraphs.push(...paras);
+
+    const idNum = parseInt(id.slice(-3), 10);
+    const prevId = id.slice(0, -3) + `${idNum - 1}`.padStart(3, "0");
+    const nextId = id.slice(0, -3) + `${idNum + 1}`.padStart(3, "0");
+
+    const fullWords = words.reduce((res, n) => res + n, 0);
+    const fullMax = Math.max(...paras.map((p) => p.max));
+    return {
+      ...info,
+      ...(titlePath.length > 0 ? { path: titlePath } : {}),
+      prev: data[prevId] && prevId,
+      next: data[nextId] && nextId,
+      fullPath: cleanPath,
+      time: getTime(fullWords),
+      mins:
+        fullWords / 238 > 60
+          ? `${Math.round((fullWords / 238 / 60) * 10) / 10} hours`
+          : fullWords / 238 < 5
+          ? `${Math.round(fullWords / 238)} mins`
+          : `${Math.round(fullWords / 238 / 5) * 5} mins`,
+      score: paras
+        .map((p) => p.distinctCitations)
+        .reduce((res, n) => new Set([...res, ...n]), new Set()).size,
+      //    *
+      // (paras.map((p) => p.score).reduce((res, n) => res + n, 0) /
+      //   Math.sqrt(paras.length)),
+      initial:
+        getTime(fullWords).length === 1
+          ? filterText(
+              paras
+                .reduce(
+                  (res, p, i) => [
+                    ...res,
+                    ...(i === 0 ? [] : [[{ text: " ", count: 0 }]]),
+                    ...(p.type === "lines" ? p.lines : [p.text]),
+                  ],
+                  []
+                )
+                .flat(),
+              (fullMax * 2) / 3
+            ).replace(/^(.{50}[^ ]*).*/, "$1")
+          : texts.join(" ").replace(/^(.{50}[^ ]*).*/, "$1"),
+      initialLong:
+        getTime(fullWords).length === 1
+          ? filterText(
+              paras
+                .reduce(
+                  (res, p, i) => [
+                    ...res,
+                    ...(i === 0 ? [] : [[{ text: " ", count: 0 }]]),
+                    ...(p.type === "lines" ? p.lines : [p.text]),
+                  ],
+                  []
+                )
+                .flat(),
+              (fullMax * 2) / 3
+            ).replace(/^(.{200}[^ ]*).*/, "$1")
+          : texts.join(" ").replace(/^(.{200}[^ ]*).*/, "$1"),
+      // score:
+      //   paras.map((p) => p.score).reduce((res, n) => res + n, 0) /
+      //   Math.sqrt(paras.length),
+      // score: Math.max(...paras.map((p) => p.score)),
+      allType:
+        (info.id.startsWith("ruhi") &&
+          info.id !== "ruhi-the-bahai-faith-001") ||
+        paras.every((p) => p.section || p.lines || p.type) ||
+        undefined,
+      compilation:
+        (info.id.startsWith("ruhi") &&
+          info.id !== "ruhi-the-bahai-faith-001") ||
+        paras.every((p) => p.section || p.type) ||
+        undefined,
+      paragraphs: paras,
+    };
+  });
 
 const prayerCategories = {
   ayyamiha: (text) => text.includes("ayyam‑i‑ha"),
@@ -507,6 +536,7 @@ const prayerThemes = [
   "Compassion",
   "Steadfastness",
   "Longing",
+  "Compassion",
   "Abundance",
   "Illumination",
   "Unity",
@@ -629,6 +659,9 @@ const allPrayers = documents
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
       .toLowerCase();
+    // if (!Object.keys(prayerCategories).find((c) => prayerCategories[c](text))) {
+    //   console.log(d.initial);
+    // }
     return {
       ...d,
       category:
