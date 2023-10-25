@@ -1,12 +1,12 @@
 import { computed, effect as baseEffect, signal } from "@preact/signals-core";
 
-export const atom = (initial, map) => {
+export const atom = (initial) => {
   const s = signal(initial);
   return {
     __type: "signal",
     get: () => s.value,
     set: (v) => {
-      s.value = map ? map(v) : v;
+      s.value = v;
     },
   };
 };
@@ -52,15 +52,9 @@ export const resolveToFragment = (x) => {
 };
 
 export const resolveToSingle = (x) => {
-  const fragment = resolveToFragment(x);
-  if (fragment === null) return null;
-  const result = fragment?.__type === "fragment" ? fragment.value[0] : fragment;
-  if (result?.__type !== "block") return result;
-  return {
-    __type: "block",
-    values: result.values,
-    items: resolveItems(result.items),
-  };
+  const value = resolveToFragment(x);
+  if (value === null) return null;
+  return value?.__type === "fragment" ? value.value[0] : value;
 };
 
 export const resolveDeep = (x) => {
@@ -68,18 +62,18 @@ export const resolveDeep = (x) => {
   if (value?.__type === "block") {
     return {
       __type: "block",
-      values: Object.fromEntries(
-        Object.entries(value.values)
-          .map(([k, y]) => [k, resolveDeep(y)])
-          .filter(([_, v]) => v !== null)
-      ),
-      items: resolveDeep(resolveItems(value.items)),
+      values: resolveDeep(value.values),
+      items: resolveDeep(value.items),
     };
   }
-  if (Array.isArray(value)) return value.map((y) => resolveDeep(y));
+  if (Array.isArray(value)) {
+    return resolveItems(value).map((y) => resolveDeep(y));
+  }
   if (value && typeof value === "object") {
     return Object.fromEntries(
-      Object.entries(value).map(([k, y]) => [k, resolveDeep(y)])
+      Object.entries(value)
+        .map(([k, y]) => [k, resolveDeep(y)])
+        .filter(([_, v]) => v !== null)
     );
   }
   return value;

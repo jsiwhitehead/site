@@ -1,10 +1,14 @@
 import webfont from "webfontloader";
-import { createBrowserHistory, Action } from "history";
 
-import maraca, { atom, derived, effect, resolve } from "./maraca";
+import getTokens from "../search";
+
+import maraca, { effect } from "./maraca";
 import render from "./render";
 
 import "./style.css";
+
+import data from "../data/writings.json";
+import searchIndex from "../data/search.json";
 
 webfont.load({
   google: {
@@ -33,184 +37,119 @@ const source = Object.keys(app).reduce((res, k) => {
   return res;
 }, {});
 
-export const history = createBrowserHistory();
-const getUrlBlock = (location) => ({
-  __type: "block",
-  values: Object.fromEntries([
-    ...(location.hash ? [["", location.hash.slice(1)]] : []),
-    ...new URLSearchParams(location.search),
-  ]),
-  items: location.pathname.split(/\//g).filter((x) => x),
-});
-const url = atom(getUrlBlock(history.location), (v) => {
-  let path = "/";
-  path += v.items.join("/");
-  if (Object.keys(v.values).filter((x) => x).length > 0) {
-    path +=
-      "?" +
-      Object.keys(v.values)
-        .filter((x) => x)
-        .map((k) => `${k}=${v.values[k]}`)
-        .join("&");
-  }
-  if (v.values[""] !== undefined) {
-    path += "#" + v.values[""];
-  }
-  if (path !== location.pathname + location.search + location.hash) {
-    history.push(path);
-  }
-  return v;
-});
+const synonyms = [[getTokens("meet")[0], getTokens("gather")[0]]];
 
-history.listen(({ action, location }) => {
-  url.set(getUrlBlock(location));
-  if (history.location.hash) {
-    setTimeout(() => {
-      const elem = document.getElementById(history.location.hash.slice(1));
-      if (elem) {
-        const top = elem.getBoundingClientRect().top;
-        const navHeight = document
-          .getElementById("nav")!
-          .getBoundingClientRect().height;
-        window.scrollBy(0, top - navHeight - 30);
+const getSearchDocs = (tokens) => {
+  if (tokens.length === 0) {
+    const shortDocs = (data as any).filter((d) => d.length === 1);
+    const paras = (data as any)
+      .filter((d) => d.length > 1)
+      .flatMap((d) =>
+        d.paragraphs.map((p) => ({
+          ...d,
+          paragraphs: [p],
+          citations: p.citations,
+        }))
+      );
+    return [...shortDocs, ...paras].sort(
+      (a, b) => (b.citations || 0) - (a.citations || 0)
+    );
+  }
+
+  const matchSets = tokens.map((t) => [
+    ...new Set(
+      (synonyms.find((s) => s.includes(t)) || [t]).flatMap(
+        (t) => searchIndex[t] || []
+      )
+    ),
+  ]);
+  const matchItems = matchSets
+    .map((matches) => matches.map((m) => /([^:]*):?(.*)/.exec(m)![1]))
+    .reduce((a, b) => a.filter((x) => b.includes(x)));
+  return matchItems
+    .map((x) => {
+      const scoreLists = matchSets.map((matches) => {
+        const m = matches.find((m) => m.startsWith(x));
+        return /([^:]*):?(.*)/
+          .exec(m)![2]
+          .split(",")
+          .filter((x) => x);
+      });
+      const score =
+        scoreLists[0].length &&
+        Math.max(
+          ...scoreLists.reduce((res, l) => res.map((a, i) => Math.min(a, l[i])))
+        );
+      const score2 =
+        scoreLists[0].length &&
+        Math.max(
+          ...scoreLists.reduce((res, l) => res.map((a, i) => Math.max(a, l[i])))
+        );
+      if (!x.includes("-")) {
+        return { ...data[parseInt(x, 10)], score, score2 };
       }
-    });
-  } else if (action === Action.Push) {
-    setTimeout(() => {
-      window.scroll(0, 0);
-    });
-  }
-});
-document.addEventListener("click", (e: any) => {
-  if (!e.metaKey) {
-    const origin = e.target.closest("a");
-    if (
-      origin &&
-      origin.role !== "button" &&
-      origin.host === window.location.host
-    ) {
-      e.preventDefault();
-      history.push(origin.href);
-    }
-  }
-});
-
-const cachedDocs = {};
-const api = (path, req = {} as any) => {
-  if (path === "documentById" && cachedDocs[req.id]) {
-    return cachedDocs[req.id];
-  }
-  const res = atom(null);
-  fetch(`/.netlify/functions/${path}`, {
-    method: "POST",
-    mode: "cors",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(req),
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      if (path === "documentById") cachedDocs[req.id] = data;
-      res.set(data);
-    });
-  return res;
-};
-
-const filterText = (text, min) => {
-  const res = text.reduce((res, t) => {
-    if (t.count >= min) {
-      return [...res, t];
-    }
-    if (typeof res[res.length - 1] !== "string") res.push("");
-    res[res.length - 1] = res[res.length - 1] + t.text;
-    return res;
-  }, []);
-  const mapped = res.map((x, i) =>
-    typeof x === "string"
-      ? {
-          text:
-            !/\w/.test(x) ||
-            (i > 0 && i < res.length - 1 && x.trim().split(" ").length === 1)
-              ? x
-              : " . . . ",
-        }
-      : x
-  );
-  if (mapped.length === 1 && mapped[0].text === " . . . ") return null;
-  if (mapped[0].text === " . . . ") {
-    mapped[0].text = ". . . ";
-  }
-  if (mapped[mapped.length - 1].text === " . . . ") {
-    mapped[mapped.length - 1].text = " . . .";
-  }
-  return mapped;
+      const [i, j] = x.split("-").map((y) => parseInt(y, 10));
+      return {
+        ...data[i],
+        paragraphs: [data[i].paragraphs[j]],
+        citations: data[i].paragraphs[j].citations,
+        score,
+        score2,
+      };
+    })
+    .sort(
+      (a, b) =>
+        (b.score || 0) - (a.score || 0) ||
+        (b.score2 || 0) - (a.score2 || 0) ||
+        (b.citations || 0) - (a.citations || 0) ||
+        a.id.localeCompare(b.id)
+    );
 };
 
 const compiled = maraca(
   {
-    allParagraphs: (author, top) => {
-      const $paras = api("paragraphs", { author });
-      if (!top) return $paras;
-      return derived(() => {
-        const paras = resolve($paras);
-        if (!paras) return paras;
-        return paras.map((p) => {
-          if (p.type === "lines") {
-            return {
-              full: {
-                ...p,
-                lines: p.lines.map((l) => filterText(l, 1)),
-              },
-              partial: {
-                ...p,
-                lines: p.lines.map((l) => filterText(l, (p.max * 2) / 3)),
-              },
-              author: p.author,
-              id: p.id,
-              initial: p.initialLong,
-              path: p.path,
-            };
+    document: (id) => (data as any).find((d) => d.id === id),
+    passages: (search) => {
+      const tokens = getTokens(search);
+      const docs = getSearchDocs(tokens);
+      const allTokens = tokens.flatMap(
+        (t) => synonyms.find((s) => s.includes(t)) || [t]
+      );
+      return docs.slice(0, 50).map((d) => {
+        const texts = d.paragraphs.map((para) =>
+          para.lines
+            ? para.lines
+                .map((parts) => parts.map((p) => p.text).join(""))
+                .join(" ")
+            : para.parts.map((p) => p.text).join("")
+        );
+        const highlighted = texts.map((text) => {
+          const split = text.split(/([a-zA-Z0-9]+)/g).map((t) => ({
+            text: t,
+            highlight: allTokens.includes(getTokens(t)[0]),
+          }));
+          const res = [{ text: "" }];
+          for (const s of split) {
+            if (s.highlight) res.push(s, { text: "" });
+            else res[res.length - 1].text += s.text;
           }
-          return {
-            full: { ...p, text: filterText(p.text, 1) },
-            partial: { ...p, text: filterText(p.text, (p.max * 2) / 3) },
-            author: p.author,
-            id: p.id,
-            initial: p.initialLong,
-            path: p.path,
-          };
+          return res;
         });
+        return {
+          ...d,
+          paragraphs: highlighted,
+        };
       });
     },
-    documents: (author) => api("documents", { author }),
-    compilations: (author) => api("compilations", { author }),
-    prayers: (author) => {
-      const $prayers = api("prayers", { author });
-      return derived(() => {
-        const prayers = resolve($prayers);
-        if (!prayers) return prayers;
-        const res = {};
-        for (const p of prayers) {
-          res[p.category] = [...(res[p.category] || []), p];
-        }
-        console.log(res);
-        return res;
-      });
+    length: (block) => {
+      if (!block) return null;
+      if (Array.isArray(block)) return block.length;
+      return block.items.length;
     },
-    documentById: (id) => id && api("documentById", { id }),
-    url,
-    includes: (list, item) => list.items.includes(item),
-    length: (block) =>
-      block === null
-        ? null
-        : Array.isArray(block)
-        ? block.length
-        : block.items.length,
-    rgb: (...args) =>
-      `#${args.map((x) => x.toString(16).padStart(2, "0")).join("")}`,
   },
   source
 );
-const renderer = render(document.getElementById("app"), history);
+const renderer = render(document.getElementById("app"));
 
 effect((effect) => {
   renderer(effect, compiled);

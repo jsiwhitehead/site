@@ -1,112 +1,114 @@
-(doc) => [
-  for x in [1, 2] [
-    id: if x = 1 then 'nav'
-    flow: ['row']
-    fill: 'lightgreen'
-    size: 14
-    style: if x = 2 then [
-      position: 'fixed'
-      width: '100%'
-      zIndex: 100
-      'min-height': '59px'
-    ] else [
-      visibility: 'hidden'
-      'min-height': '59px'
-    ]
+{
+  renderLine: (parts, author) => [
+    flow: 'inline'
+    ~
+    for p in parts
+      if p.first [
+        size: 60
+        line: 1
+        pad: [right: 8 ~ 2.5, 0]
+        color:
+          colors.link[author] | colors.link['The World Centre']
+        fill: if p.citations > 0
+          'rgb(255, {240 - p.allCitations * 10}, {240 - p.allCitations * 10})'
+        style: [float: 'left', margin: '-6px 0 -10px']
+        ~
+        p.text
+      ] else [
+        bold: if p.doc yes
+        pad: [2.5, 0]
+        fill: if p.citations > 0
+          'rgb(255, {240 - p.allCitations * 10}, {240 - p.allCitations * 10})'
+        ~
+        p.text
+      ]
+  ]
+  ~
+  (para, author, allSpecial) => [
+    flow: 'row'
+    gap: config.baseSize / 2
     ~
     [
-      pad: 10
-      width: 33
-      fill: if hover then '#84d984'
-      flow: ['row', 'center']
-      when click push [] -> url
+      width: config.sideWidth - gap
+      color: '#999'
+      size: 12
+      align: 'right'
+      pad: [top: 2.5]
       ~
-      '✖'
+      if para.index (para.index)
     ]
-    if doc.prev then [
-      pad: 10
-      width: 33
-      fill: if hover then '#84d984'
-      flow: ['row', 'center']
-      when click push [doc.prev] -> url
-      ~
-      '◀'
-    ] else [
-      pad: 10
-      width: 33
-      style: [visibility: 'hidden']
-      ~
-      '◀'
-    ]
+
     [
-      pad: [10, 0]
-      flow: 10
-      align: 'center'
-      style: [
-        'flex-grow': 1
-      ]
+      gap: 15
       ~
-      [
-        italic: yes
-        size: 12
+      if para.section {
+        level: length(para.section)
         ~
         [
-          style: [display: 'inline-block']
+          size: 25 - level * 2
+          uppercase: level = 1
+          bold: level <= 2
+          italic: level > 2
+          align: if !para.title 'center'
+          pad:
+            if level = 1
+              [top: 20]
+            else if level <= 2
+              0
+            else
+              [0, (level - 2) * 20]
           ~
-          if !doc.path then doc.author else '{doc.author},'
+          para.title | '* * *'
         ]
-        for t, i in doc.path {
-          ' '
+      } else if para.lines [
+        gap: config.baseSize / 2
+        pad: if !allSpecial [0, 70]
+        indent: if !allSpecial -30
+        style: [whiteSpace: 'pre-wrap']
+        ~
+        for line in para.lines {
+          renderLine(line, author)
+        }
+      ] else [
+        uppercase: para.type = 'call'
+        italic: para.type = 'info'
+        bold: para.quote
+        align: if para.type 'justify-center'
+        indent: if para.index != 1 & !para.type 20
+        pad:
+          if para.type
+            [0, 40]
+          else if allSpecial
+            0
+          else if para.quote
+            [0, 20]
+        ~
+        renderLine(para.parts, author)
+      ]
+
+      for ref in para.ref [
+        size: 15
+        italic: yes
+        align: 'right'
+        color: colors.link[ref[1]] | colors.link['The World Centre']
+        pad: [0, 20]
+        underline: hover
+        ~
+        for t, i in ref {
+          if i > 1 ' '
           [
+            underline: hover
             style: [display: 'inline-block']
             ~
-            if i = length(doc.path) then t else '{t},'
+            if i = length(ref) t else '{t},'
           ]
         }
       ]
-      [
-        bold: yes
-        size: 17
-        ~
-        doc.title | (doc.item & '#{doc.item}')
-        if doc.compilation then ' (Compilation)'
-      ]
     ]
-    if doc.next then [
-      pad: 10
-      fill: if hover then '#84d984'
-      flow: ['row', 'center']
-      when click push [doc.next] -> url
-      ~
-      '▶'
-    ] else [
-      pad: 10
-      width: 33
-      style: [visibility: 'hidden']
-      ~
-      '▶'
-    ]
+
     [
-      pad: 10
-      width: 33
-      style: [visibility: 'hidden']
+      width: config.sideWidth - gap
       ~
-      '✖'
     ]
   ]
-  [
-    pad: [50, 35]
-    ~
-    [
-      maxWidth: 630
-      flow: 50
-      ~
-      
-      [
-        flow: 25
-        ~
-        for p, i in doc.paragraphs renderPara(p, i - 1, doc.allType, doc.compilation, no, no, p)
-      ]
-    ]
-  ]
-]
+}

@@ -11,6 +11,7 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 html,
@@ -19,11 +20,7 @@ body,
   height: 100%;
 }
 
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-
+/* *,
 img,
 picture,
 video,
@@ -57,4 +54,4 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-}
+} */
