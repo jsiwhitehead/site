@@ -35,7 +35,7 @@ const sliceParts = (parts, start, end) => {
   return res;
 };
 
-const getPath = (doc, paras) => {
+export const getPath = (doc, paras) => {
   const indices = paras.map((p) => doc.paragraphs[p].index).filter((x) => x);
   if (doc.path?.[0] === "Additional") {
     return [doc.author];
@@ -82,33 +82,32 @@ const getParaParts = (data, para) => {
 };
 
 const getFirstChar = (index, text) => {
-  if (index !== 1) return undefined;
-  if (text.startsWith(". . .")) return undefined;
+  if (index !== 1) return false;
+  if (text.startsWith(". . .")) return false;
   const result = /[a-z]/i.exec(text)?.index;
-  return result === undefined ? result : result + 1;
+  return result === undefined ? false : result + 1;
 };
 
-export const distinctCitations = (data, citations) =>
-  citations && [
-    ...new Set(
-      citations.map((c) =>
-        data[c.doc].id.startsWith("compilations") &&
-        data[c.doc].id !== "compilations-bahai-org-001"
-          ? "compilations"
-          : data[c.doc].id.startsWith("ruhi")
-          ? "ruhi"
-          : data[c.doc].id
-      )
-    ),
-  ];
+export const distinctCitations = (data, citations) => [
+  ...new Set(
+    citations.map((c) =>
+      data[c.doc].id.startsWith("compilations") &&
+      data[c.doc].id !== "compilations-bahai-org-001"
+        ? "compilations"
+        : data[c.doc].id.startsWith("ruhi")
+        ? "ruhi"
+        : data[c.doc].id
+    )
+  ),
+];
 
-export const compileParagraph = (data, para) => {
+export const compileParagraph = (data, para, withFirst) => {
   if (para.section) return para;
   const baseParts = getParaParts(data, para);
   const text = baseParts.map((p) => p.text).join("");
-  const first = getFirstChar(!para.lines && para.index, text);
+  const first = withFirst && getFirstChar(!para.lines && para.index, text);
   const split = splitParts(baseParts, [
-    ...(first === undefined ? [] : [first]),
+    ...(first ? [first] : []),
     ...(para.citations || []).flatMap((c) => [c.start, c.end]),
     ...(para.lines || []).flatMap((l) => [l - 1, l]),
   ]);
@@ -155,16 +154,6 @@ export const compileParagraph = (data, para) => {
     parts,
     citations: undefined,
     ...(paraCitations > 0 ? { citations: paraCitations } : {}),
-    ...(para.quote
-      ? {
-          ref: unique(parts.map((p) => p.doc).filter((x) => x)).map((doc) =>
-            getPath(
-              data[doc],
-              unique(parts.filter((p) => p.doc === doc).map((p) => p.paragraph))
-            )
-          ),
-        }
-      : {}),
   };
 };
 
@@ -183,9 +172,9 @@ const getLength = (text) => {
   return 4;
 };
 
-export const compileDoc = (data, index) => {
+export const compileDoc = (data, index, withFirst) => {
   const paragraphs = data[index].paragraphs.map((para) =>
-    compileParagraph(data, para)
+    compileParagraph(data, para, withFirst)
   );
   return {
     ...data[index],
@@ -204,11 +193,25 @@ export const getDocByKey = (data, key) => {
   if (!para) {
     return {
       ...doc,
-      paragraphs: doc.paragraphs.map((para) => compileParagraph(data, para)),
+      path: !doc.title ? [...doc.path, `#${doc.item}`] : doc.path,
+      paragraphs: doc.paragraphs.map((para) =>
+        compileParagraph(data, para, true)
+      ),
+      citedBy: unique(
+        doc.paragraphs.flatMap((para) =>
+          (para.citations || []).map((c) => c.doc)
+        )
+      )
+        .sort((a, b) => a - b)
+        .map((index) => getPath(data[index], [])),
     };
   }
   return {
     ...doc,
-    paragraphs: [compileParagraph(data, doc.paragraphs[para])],
+    path: !doc.title ? [...doc.path, `#${doc.item}`] : doc.path,
+    paragraphs: [compileParagraph(data, doc.paragraphs[para], true)],
+    citedBy: unique((doc.paragraphs[para].citations || []).map((c) => c.doc))
+      .sort((a, b) => a - b)
+      .map((index) => getPath(data[index], [])),
   };
 };

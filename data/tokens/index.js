@@ -2,6 +2,7 @@ import stem from "./stem.js";
 import stopwords from "./stopwords.js";
 
 export default (text) => {
+  if (!text) return [];
   const words = text
     .toLowerCase()
     .normalize("NFD")

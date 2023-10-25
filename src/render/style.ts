@@ -53,7 +53,8 @@ export default (values, context) => {
     result.gap = `${values.gap}px`;
   }
   if (values.position) {
-    result.alignItems = values.position;
+    result.alignItems =
+      { left: "start", right: "end" }[values.position] || values.position;
   }
 
   if (values.font) result.fontFamily = values.font;

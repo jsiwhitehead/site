@@ -8,20 +8,12 @@ import data from "./data.json" assert { type: "json" };
 const getLast = (x) => x[x.length - 1];
 const getParts = (para) => {
   if (para.section) return [{ text: para.title || "" }];
-  if (para.lines) {
-    return para.lines.reduce(
-      (res, x) =>
-        res.length === 0 ? x : [...res, { text: " ", citations: 1 }, ...x],
-      []
-    );
-  }
-  const result = para.parts.filter((p) => !p.first);
-  result[0].text =
-    para.parts
-      .filter((p) => p.first)
-      .map((p) => p.text)
-      .join("") + result[0].text;
-  return result;
+  if (!para.lines) return para.parts;
+  return para.lines.reduce(
+    (res, x) =>
+      res.length === 0 ? x : [...res, { text: " ", citations: 1 }, ...x],
+    []
+  );
 };
 const getParaChunks = (para) => {
   const parts = getParts(para);
@@ -62,7 +54,7 @@ const citationsMap = [];
 
 data.forEach(({ id }, index) => {
   console.log(id);
-  const doc = compileDoc(data, index);
+  const doc = compileDoc(data, index, false);
   if (doc.length > 1) {
     doc.paragraphs.forEach((para, i) => {
       updateIndex(`${index}_${i}`, getParaChunks(para));

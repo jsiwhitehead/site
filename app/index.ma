@@ -2,7 +2,7 @@
   search:: ''
   ~
   [
-    font: 'Atkinson Hyperlegible'
+    font: 'Atkinson Hyperlegible, sans-serif'
     color: '#333'
     position: 'center'
     size: config.baseSize
@@ -31,22 +31,64 @@
       ]
       [
         gap: 40
-        position: 'center'
         ~
         for passage in passages(search) {
           [
             gap: 25
-            maxWidth: config.textWidth
+            position: 'center'
             ~
-            for para in passage.paragraphs [
-              flow: 'inline'
+            [
+              gap: 10
+              color: colors.link[passage.author] | colors.link['The World Centre']
               ~
-              for part in para [
-                fill: if part.highlight '#fff79e'
-                pad: [2.5, 3.5]
-                style: [margin: '0 -3.5px']
+              [
+                bold: yes
+                flow: 'inline'
                 ~
-                part.text
+                if passage.title
+                  for p, i in [passage.author, passage.title] {
+                    if i > 1 ' '
+                    [
+                      style: [display: 'inline-block']
+                      ~
+                      if i = 2 p else '{p},'
+                    ]
+                  }
+                else
+                  [
+                    style: [display: 'inline-block']
+                    ~
+                    passage.author
+                  ]
+              ]
+              if length(passage.path) > 0 [
+                size: 14
+                italic: yes
+                ~
+                for p, i in passage.path {
+                  if i > 1 ' '
+                  [
+                    style: [display: 'inline-block']
+                    ~
+                    if i = length(passage.path) p else '{p},'
+                  ]
+                }
+              ]
+            ]
+            [
+              gap: 15
+              maxWidth: config.textWidth
+              ~
+              for para in passage.paragraphs [
+                flow: 'inline'
+                ~
+                for part in para [
+                  fill: if part.highlight '#fff79e'
+                  pad: [2.5, 3.5]
+                  style: [margin: '0 -3.5px']
+                  ~
+                  part.text
+                ]
               ]
             ]
           ]

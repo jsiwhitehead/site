@@ -1,5 +1,3 @@
-import webfont from "webfontloader";
-
 import getTokens from "../data/tokens";
 import { getParagraphText } from "../data/utils";
 
@@ -13,17 +11,6 @@ import "./style.css";
 
 const $data = import("../data/data.json");
 const $searchIndex = import("../data/search.json");
-
-webfont.load({
-  google: {
-    families: [
-      "Atkinson Hyperlegible",
-      "Atkinson Hyperlegible:italic",
-      "Atkinson Hyperlegible:bold",
-      "Atkinson Hyperlegible:bolditalic",
-    ],
-  },
-});
 
 const set = (obj, path, value) =>
   path.reduce(
@@ -44,10 +31,16 @@ const source = Object.keys(app).reduce((res, k) => {
 const highlightDoc = (doc, tokens) => {
   const texts = doc.paragraphs.map((para) => getParagraphText(para));
   const highlighted = texts.map((text) => {
-    const split = text.split(/\b/g).map((t) => ({
-      text: t,
-      highlight: tokens.includes(getTokens(t)[0]),
-    }));
+    const split = text.split(/([\w‑]+)/g).flatMap((t) => {
+      const highlight = tokens.includes(getTokens(t)[0]);
+      if (t.includes("‑") && !highlight) {
+        return t.split(/(‑)/g).map((x) => ({
+          text: x,
+          highlight: tokens.includes(getTokens(x)[0]),
+        }));
+      }
+      return [{ text: t, highlight }];
+    });
     const res = [{ text: "" }];
     for (const s of split) {
       if (s.highlight) res.push(s, { text: "" });
