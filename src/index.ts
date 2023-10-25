@@ -1,14 +1,12 @@
 import webfont from "webfontloader";
 
-import getTokens from "../search";
+import getTokens from "../data/tokens";
 
 import maraca, { effect } from "./maraca";
 import render from "./render";
+import { getDocument, getSearchDocs, getSynonyms } from "./documents";
 
 import "./style.css";
-
-import data from "../data/writings.json";
-import searchIndex from "../data/search.json";
 
 webfont.load({
   google: {
@@ -37,84 +35,13 @@ const source = Object.keys(app).reduce((res, k) => {
   return res;
 }, {});
 
-const synonyms = [[getTokens("meet")[0], getTokens("gather")[0]]];
-
-const getSearchDocs = (tokens) => {
-  if (tokens.length === 0) {
-    const shortDocs = (data as any).filter((d) => d.length === 1);
-    const paras = (data as any)
-      .filter((d) => d.length > 1)
-      .flatMap((d) =>
-        d.paragraphs.map((p) => ({
-          ...d,
-          paragraphs: [p],
-          citations: p.citations,
-        }))
-      );
-    return [...shortDocs, ...paras].sort(
-      (a, b) => (b.citations || 0) - (a.citations || 0)
-    );
-  }
-
-  const matchSets = tokens.map((t) => [
-    ...new Set(
-      (synonyms.find((s) => s.includes(t)) || [t]).flatMap(
-        (t) => searchIndex[t] || []
-      )
-    ),
-  ]);
-  const matchItems = matchSets
-    .map((matches) => matches.map((m) => /([^:]*):?(.*)/.exec(m)![1]))
-    .reduce((a, b) => a.filter((x) => b.includes(x)));
-  return matchItems
-    .map((x) => {
-      const scoreLists = matchSets.map((matches) => {
-        const m = matches.find((m) => m.startsWith(x));
-        return /([^:]*):?(.*)/
-          .exec(m)![2]
-          .split(",")
-          .filter((x) => x);
-      });
-      const score =
-        scoreLists[0].length &&
-        Math.max(
-          ...scoreLists.reduce((res, l) => res.map((a, i) => Math.min(a, l[i])))
-        );
-      const score2 =
-        scoreLists[0].length &&
-        Math.max(
-          ...scoreLists.reduce((res, l) => res.map((a, i) => Math.max(a, l[i])))
-        );
-      if (!x.includes("-")) {
-        return { ...data[parseInt(x, 10)], score, score2 };
-      }
-      const [i, j] = x.split("-").map((y) => parseInt(y, 10));
-      return {
-        ...data[i],
-        paragraphs: [data[i].paragraphs[j]],
-        citations: data[i].paragraphs[j].citations,
-        score,
-        score2,
-      };
-    })
-    .sort(
-      (a, b) =>
-        (b.score || 0) - (a.score || 0) ||
-        (b.score2 || 0) - (a.score2 || 0) ||
-        (b.citations || 0) - (a.citations || 0) ||
-        a.id.localeCompare(b.id)
-    );
-};
-
 const compiled = maraca(
   {
-    document: (id) => (data as any).find((d) => d.id === id),
+    document: (id) => getDocument(id),
     passages: (search) => {
       const tokens = getTokens(search);
       const docs = getSearchDocs(tokens);
-      const allTokens = tokens.flatMap(
-        (t) => synonyms.find((s) => s.includes(t)) || [t]
-      );
+      const allTokens = tokens.flatMap((t) => getSynonyms(t));
       return docs.slice(0, 50).map((d) => {
         const texts = d.paragraphs.map((para) =>
           para.lines
