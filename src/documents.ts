@@ -1,7 +1,7 @@
 import getTokens from "../data/tokens";
 import { compileDoc } from "../data/utils";
 
-import data from "../data/base.json";
+import data from "../data/data.json";
 import initialDocs from "../data/initial.json";
 import searchIndex from "../data/search.json";
 
@@ -10,7 +10,7 @@ const synonyms = [[getTokens("meet")[0], getTokens("gather")[0]]];
 export const getSynonyms = (token) =>
   synonyms.find((s) => s.includes(token)) || [token];
 
-export const getDocument = (id) => compileDoc(data, id);
+export const getDocument = (index) => compileDoc(data, index);
 
 const getDocByKey = (key) => {
   const [id, para] = key.split("_");

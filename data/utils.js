@@ -88,16 +88,16 @@ const getFirstChar = (index, text) => {
   return result === undefined ? result : result + 1;
 };
 
-const distinctCitations = (citations) =>
+const distinctCitations = (data, citations) =>
   citations && [
     ...new Set(
       citations.map((c) =>
-        c.doc.startsWith("compilations") &&
-        c.doc !== "compilations-bahai-org-001"
+        data[c.doc].id.startsWith("compilations") &&
+        data[c.doc].id !== "compilations-bahai-org-001"
           ? "compilations"
-          : c.doc.startsWith("ruhi")
+          : data[c.doc].id.startsWith("ruhi")
           ? "ruhi"
-          : c.doc
+          : data[c.doc].id
       )
     ),
   ];
@@ -110,8 +110,8 @@ const getLength = (words) => {
   return 4;
 };
 
-export const compileDoc = (data, id) => {
-  const { paragraphs, ...info } = data[id];
+export const compileDoc = (data, index) => {
+  const { paragraphs, ...info } = data[index];
 
   const totalCitations = [];
   let words = 0;
@@ -142,7 +142,7 @@ export const compileDoc = (data, id) => {
         ...(first !== undefined && end <= first ? { first: true } : {}),
         ...(partCitations.length > 0
           ? {
-              citations: distinctCitations(partCitations).length,
+              citations: distinctCitations(data, partCitations).length,
               allCitations: partCitations.length,
             }
           : {}),

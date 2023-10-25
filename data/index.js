@@ -5,10 +5,6 @@ import { compileDoc } from "./utils.js";
 
 import data from "./data.json" assert { type: "json" };
 
-const base = Object.keys(data)
-  .filter((id) => !["bible", "quran"].some((s) => id.startsWith(s)))
-  .reduce((res, k) => ({ ...res, [k]: data[k] }), {});
-
 const getLast = (x) => x[x.length - 1];
 const getParts = (para) => {
   if (para.section) return [{ text: para.title || "" }];
@@ -64,27 +60,27 @@ const updateIndex = (key, chunks) => {
 
 const citationsMap = [];
 
-Object.keys(base).forEach((id) => {
+data.forEach(({ id }, index) => {
   console.log(id);
-  const doc = compileDoc(base, id);
+  const doc = compileDoc(data, index);
   if (doc.length > 1) {
     doc.paragraphs.forEach((para, i) => {
-      updateIndex(`${id}_${i}`, getParaChunks(para));
-      citationsMap.push({ key: `${id}_${i}`, citations: para.citations });
+      updateIndex(`${index}_${i}`, getParaChunks(para));
+      citationsMap.push({ key: `${index}_${i}`, citations: para.citations });
     });
   } else {
     updateIndex(
-      `${id}`,
+      `${index}`,
       doc.paragraphs.flatMap((para) => getParaChunks(para))
     );
-    citationsMap.push({ key: id, citations: doc.citations });
+    citationsMap.push({ key: `${index}`, citations: doc.citations });
   }
 });
 
 await Promise.all([
   fs.writeFile(
-    `./data/base.json`,
-    JSON.stringify(base)
+    `./data/data.json`,
+    JSON.stringify(data)
       .normalize("NFD")
       .replace(/\u0323/g, "")
       .normalize("NFC"),
