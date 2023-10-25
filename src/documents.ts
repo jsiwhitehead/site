@@ -1,33 +1,40 @@
 import getTokens from "../data/tokens";
-import { compileDoc } from "../data/utils";
-
-import data from "../data/data.json";
-import initialDocs from "../data/initial.json";
-import searchIndex from "../data/search.json";
+import { distinctCitations, getDocByKey } from "../data/utils";
 
 const synonyms = [[getTokens("meet")[0], getTokens("gather")[0]]];
 
 export const getSynonyms = (token) =>
   synonyms.find((s) => s.includes(token)) || [token];
 
-export const getDocument = (index) => compileDoc(data, index);
+// export const getDocument = (data, index) => compileDoc(data, index);
 
-const getDocByKey = (key) => {
+const getDocInfo = (data, key) => {
   const [id, para] = key.split("_");
-  const doc = compileDoc(data, id);
-  if (!para) return doc;
+  const doc = data[id];
+  if (!para) {
+    return {
+      ...doc,
+      citations: Math.max(
+        doc.paragraphs.map(
+          (para) => distinctCitations(data, para.citations || []).length
+        )
+      ),
+    };
+  }
   const paragraph = doc.paragraphs[parseInt(para, 10)];
-  return { ...doc, paragraphs: [paragraph], citations: paragraph.citations };
+  return {
+    ...doc,
+    paragraphs: [paragraph],
+    citations: distinctCitations(data, paragraph.citations || []).length,
+  };
 };
 
-export const getSearchDocs = (tokens) => {
-  if (tokens.length === 0) {
-    return initialDocs.map((key) => getDocByKey(key));
-  }
-
-  const matchSets = tokens.map((t) => [
-    ...new Set(getSynonyms(t).flatMap((t) => searchIndex[t] || [])),
-  ]);
+export const getSearchDocs = (data, searchIndex, tokens) => {
+  const matchSets = tokens
+    .map((t) => [
+      ...new Set(getSynonyms(t).flatMap((t) => searchIndex[t] || [])),
+    ])
+    .filter((matches) => matches.length > 0);
   const matchItems = matchSets
     .map((matches) => matches.map((m) => /([^:]*):?(.*)/.exec(m)![1]))
     .reduce((a, b) => a.filter((x) => b.includes(x)));
@@ -50,13 +57,16 @@ export const getSearchDocs = (tokens) => {
         Math.max(
           ...scoreLists.reduce((res, l) => res.map((a, i) => Math.max(a, l[i])))
         );
-      return { ...getDocByKey(x), score, score2 };
+      const info = getDocInfo(data, x);
+      return { key: x, score, score2, citations: info.citations };
     })
     .sort(
       (a, b) =>
         (b.score || 0) - (a.score || 0) ||
         (b.score2 || 0) - (a.score2 || 0) ||
         (b.citations || 0) - (a.citations || 0) ||
-        a.id.localeCompare(b.id)
-    );
+        a.key.localeCompare(b.key)
+    )
+    .slice(0, 50)
+    .map((d) => getDocByKey(data, d.key));
 };

@@ -1,7 +1,7 @@
 import { promises as fs } from "fs";
 
 import getTokens from "./tokens/index.js";
-import { compileDoc } from "./utils.js";
+import { compileDoc, getDocByKey } from "./utils.js";
 
 import data from "./data.json" assert { type: "json" };
 
@@ -97,7 +97,7 @@ await Promise.all([
             a.key.localeCompare(b.key)
         )
         .slice(0, 50)
-        .map((a) => a.key)
+        .map((a) => getDocByKey(data, a.key))
     ),
     "utf-8"
   ),
