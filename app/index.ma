@@ -15,7 +15,7 @@
     ~
     [
       gap: 40
-      pad: [40, 0]
+      pad: [40, 15]
       maxWidth: config.textWidth + (2 * config.sideWidth)
       ~
       [
@@ -76,7 +76,7 @@
               ]
             ]
             [
-              gap: 15
+              gap: 25
               maxWidth: config.textWidth
               ~
               for para in passage.paragraphs [
