@@ -49,11 +49,13 @@ var rgxSFXstep2WithReplacements = [
   { rgx: /(.*)([cdeghkmnrt])(li)$/, replacement: "$1$2" },
 ];
 // Definition for Step III suffixes; once again spot the longest one first!
-var rgxSFXstep3 = /(ational|tional|alise|icate|iciti|ative|ical|ness|ful)$/;
+var rgxSFXstep3 =
+  /(ational|tional|alise|iance|icate|iciti|ative|ical|ness|ful)$/;
 var rgxSFXstep3WithReplacements = [
   { rgx: /ational$/, replacement: "ate" },
   { rgx: /tional$/, replacement: "tion" },
   { rgx: /alise$/, replacement: "al" },
+  { rgx: /iance$/, replacement: "iant" },
   { rgx: /(.*)(icate|iciti|ical)$/, replacement: "$1ic" },
   { rgx: /(ness|ful)$/, replacement: "" },
 ];

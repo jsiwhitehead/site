@@ -5,7 +5,7 @@ import initialDocs from "../data/initial.json";
 
 import maraca, { atom, effect } from "./maraca";
 import render from "./render";
-import { getSearchDocs, getSynonyms } from "./documents";
+import { getSearchDocs } from "./documents";
 
 import "./style.css";
 
@@ -64,10 +64,9 @@ const compiled = maraca(
       clearTimeout(searchTimer);
 
       const tokens = getTokens(search);
-      const allTokens = tokens.flatMap((t) => getSynonyms(t));
 
       if (tokens.length === 0) {
-        searchAtom.set(initialDocs.map((d) => highlightDoc(d, allTokens)));
+        searchAtom.set(initialDocs.map((d) => highlightDoc(d, tokens)));
       } else {
         searchTimer = setTimeout(() => {
           Promise.all([$data, $searchIndex]).then(([data, searchIndex]) => {
@@ -77,7 +76,7 @@ const compiled = maraca(
               tokens
             );
             searchAtom.set(
-              docs.slice(0, 50).map((d) => highlightDoc(d, allTokens))
+              docs.slice(0, 50).map((d) => highlightDoc(d, tokens))
             );
           });
         }, 250);
