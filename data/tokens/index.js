@@ -1,7 +1,7 @@
 import stem from "./stem.js";
 import stopwords from "./stopwords.js";
 
-export default (text) => {
+export default (text, onStem) => {
   if (!text) return [];
   const words = text
     .toLowerCase()
@@ -14,6 +14,14 @@ export default (text) => {
     .flatMap((s) => [s.replace(/‑/g, ""), ...s.split(/‑/g)])
     .filter((s) => s);
   return [
-    ...new Set(words.filter((w) => !stopwords.includes(w)).map((w) => stem(w))),
+    ...new Set(
+      words
+        .filter((w) => !stopwords.includes(w))
+        .map((w) => {
+          const res = stem(w);
+          if (onStem) onStem(w, res);
+          return res;
+        })
+    ),
   ];
 };

@@ -66,7 +66,7 @@ const compiled = maraca(
       const tokens = getTokens(search);
 
       if (tokens.length === 0) {
-        searchAtom.set(initialDocs.map((d) => highlightDoc(d, tokens)));
+        searchAtom.set(initialDocs.map((d) => highlightDoc(d, [])));
       } else {
         searchTimer = setTimeout(() => {
           Promise.all([$data, $searchIndex]).then(([data, searchIndex]) => {
@@ -75,9 +75,7 @@ const compiled = maraca(
               searchIndex.default,
               tokens
             );
-            searchAtom.set(
-              docs.slice(0, 50).map((d) => highlightDoc(d, tokens))
-            );
+            searchAtom.set(docs.map((d) => highlightDoc(d, tokens)));
           });
         }, 250);
       }

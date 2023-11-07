@@ -1,7 +1,7 @@
 // ## Regex Definitions
 
 // Regex definition of `double`.
-var rgxDouble = /(bb|dd|ff|gg|mm|nn|pp|rr|tt)$/;
+var rgxDouble = /(bb|dd|ff|gg|ll|mm|nn|pp|rr|tt)$/;
 // Definition for Step Ia suffixes.
 var rgxSFXsses = /(.+)(sses)$/;
 var rgxSFXiedORies2 = /(.{2,})(ied|ies)$/;
@@ -9,14 +9,14 @@ var rgxSFXiedORies1 = /(.{1})(ied|ies)$/;
 var rgxSFXusORss = /(.+)(us|ss)$/;
 var rgxSFXs = /(.+)(s)$/;
 // Definition for Step Ib suffixes.
-var rgxSFXeedlyOReed = /(.*)(eedly|eed)$/;
-var rgxSFXedORedlyORinglyORing = /([aeiouy].*)(ed|edly|ingly|ing)$/;
+var rgxSFXeedlyOReed = /(.*)(eedly|eed|eeth|eest)$/;
+var rgxSFXedORedlyORinglyORing = /([aeiouy].*)(ed|edly|ingly|ing|eth|est)$/;
 var rgxSFXatORblORis = /(at|bl|is)$/;
 // Definition for Step Ic suffixes.
 var rgxSFXyOR3 = /(.+[^aeiouy])([y3])$/;
 // Definition for Step II suffixes; note we have spot the longest suffix.
 var rgxSFXstep2 =
-  /(isation|ational|fulness|ousness|iveness|tional|biliti|lessli|entli|ation|alism|aliti|ousli|iviti|fulli|enci|anci|abli|iser|ator|alli|bli|ogi|li)$/;
+  /(isation|ational|fulness|ousness|iveness|liness|tional|biliti|lessli|entli|ation|alism|aliti|ousli|iviti|fulli|enci|anci|ence?|ance?|abli|iser|ator|alli|elli|bli|aci|eci|ogi|li)$/;
 var rgxSFXstep2WithReplacements = [
   // Length 7.
   { rgx: /ational$/, replacement: "ate" },
@@ -28,6 +28,7 @@ var rgxSFXstep2WithReplacements = [
   { rgx: /tional$/, replacement: "tion" },
   { rgx: /biliti$/, replacement: "ble" },
   { rgx: /lessli$/, replacement: "less" },
+  { rgx: /liness$/, replacement: "" },
   // Length 5.
   { rgx: /iviti$/, replacement: "ive" },
   { rgx: /ousli$/, replacement: "ous" },
@@ -37,16 +38,21 @@ var rgxSFXstep2WithReplacements = [
   { rgx: /fulli$/, replacement: "ful" },
   // Length 4.
   { rgx: /alli$/, replacement: "al" },
+  { rgx: /elli$/, replacement: "el" },
   { rgx: /ator$/, replacement: "ate" },
   { rgx: /iser$/, replacement: "ise" },
-  { rgx: /enci$/, replacement: "ence" },
-  { rgx: /anci$/, replacement: "ance" },
+  { rgx: /enci$/, replacement: "ent" },
+  { rgx: /anci$/, replacement: "ant" },
+  { rgx: /ence?$/, replacement: "ent" },
+  { rgx: /ance?$/, replacement: "ant" },
   { rgx: /abli$/, replacement: "able" },
   // Length 3.
   { rgx: /bli$/, replacement: "ble" },
+  { rgx: /aci$/, replacement: "at" },
+  { rgx: /eci$/, replacement: "et" },
   { rgx: /(.*)(l)(ogi)$/, replacement: "$1$2og" },
   // Length 2.
-  { rgx: /(.*)([cdeghkmnrt])(li)$/, replacement: "$1$2" },
+  { rgx: /(.*)([cdeghikmnrt])(li)$/, replacement: "$1$2" },
 ];
 // Definition for Step III suffixes; once again spot the longest one first!
 var rgxSFXstep3 =
@@ -77,8 +83,15 @@ exceptions1.idly = "idl";
 exceptions1.gently = "gentl";
 exceptions1.ugly = "ugli";
 exceptions1.early = "earli";
+exceptions1.earliest = "earli";
 exceptions1.only = "onli";
 exceptions1.singly = "singl";
+exceptions1.humility = "humbl";
+exceptions1.cruelly = "cruel";
+exceptions1.lowliness = "lowli";
+exceptions1.ironically = "ironi";
+exceptions1.pacification = "pacifi";
+exceptions1.haply = "happi";
 // Invariants!
 exceptions1.sky = "sky";
 exceptions1.news = "news";
@@ -86,6 +99,68 @@ exceptions1.atlas = "atlas";
 exceptions1.cosmos = "cosmos";
 exceptions1.bias = "bias";
 exceptions1.andes = "andes";
+
+const ilEndings = ["beli", "layli", "tripli"];
+
+const iEndings = [
+  "allegi",
+  "anti",
+  "appli",
+  "armi",
+  "batteri",
+  "belli",
+  "benefici",
+  "booti",
+  "bulli",
+  "busi",
+  "commodi",
+  "contenti",
+  "conveni",
+  "crafti",
+  "credenti",
+  "delici",
+  "deni",
+  "directori",
+  "elegi",
+  "faceti",
+  "factori",
+  "forti",
+  "furi",
+  "heavi",
+  "illustri",
+  "imparti",
+  "imperi",
+  "insidi",
+  "ironi",
+  "ladi",
+  "licenti",
+  "liveri",
+  "mani",
+  "mari",
+  "milli",
+  "pacifi",
+  "pari",
+  "parti",
+  "piti",
+  "polici",
+  "politi",
+  "potenti",
+  "presenti",
+  "readi",
+  "recipi",
+  "registri",
+  "reveri",
+  "rubi",
+  "slipperi",
+  "steadi",
+  "studi",
+  "tini",
+  "treati",
+  "tricki",
+  "victori",
+  "wari",
+  "weari",
+];
 
 // Exceptions Set II.
 // Note, these are to be treated as full words.
@@ -338,16 +413,32 @@ var stem = function (word) {
   str = prelude(str);
   str = step1a(str);
 
+  // console.log(word);
+  // console.log("1a", str);
+
   if (!rgxException2.test(str)) {
     str = step1b(str);
+    // console.log("1b", str);
     str = step1c(str);
+    // console.log("1c", str);
     str = step2(str);
+    // console.log("2", str);
     str = step3(str);
+    // console.log("3", str);
     str = step4(str);
+    // console.log("4", str);
     str = step5(str);
+    // console.log("5", str);
   }
 
+  if (/li$/.test(str) && !ilEndings.includes(str)) str = str.slice(0, -2);
+  // console.log("li", str);
+
+  if (/i$/.test(str) && !iEndings.includes(str)) str = str.slice(0, -1);
+  // console.log("i", str);
+
   str = str.replace(/3/g, "y");
+  // console.log("y", str);
   return str;
 }; // stem()
 
