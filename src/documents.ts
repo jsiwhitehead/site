@@ -36,20 +36,31 @@ const sum = (x) => x.reduce((res, a) => res + a, 0);
 export const getSearchDocs = (data, searchIndex, tokens) => {
   const matches = [
     ...tokens,
-    ...tokens.slice(0, -1).map((t1, i) => `${t1}_${tokens[i + 1]}`),
+    // ...tokens.slice(0, -1).map((t1, i) => `${t1}_${tokens[i + 1]}`),
   ].flatMap((token) =>
     (searchIndex[token] || []).map((m) => {
       const [key, score] = m.split(":");
       return { token, key, score: parseInt(score || 2, 10) };
     })
   );
+  const max = tokens.length === 1 ? 1000 : Math.max(20 / tokens.length, 5);
   return [...new Set(matches.map((m) => m.key))]
-    .map((key) => ({
-      key,
-      score:
-        sum(matches.filter((m) => m.key === key).map((m) => m.score)) *
-        itemLengths[key],
-    }))
+    .map((key) => {
+      const scores = {};
+      for (const m of matches) {
+        if (m.key === key) {
+          if (!scores[m.token]) scores[m.token] = 0;
+          scores[m.token] += m.score;
+        }
+      }
+      return {
+        key,
+        score:
+          // sum(matches.filter((m) => m.key === key).map((m) => m.score)) *
+          sum(tokens.map((t) => Math.min(scores[t] || 0, max))) *
+          itemLengths[key],
+      };
+    })
     .sort(
       (a, b) => (b.score || 0) - (a.score || 0) || a.key.localeCompare(b.key)
     )

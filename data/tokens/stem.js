@@ -91,8 +91,12 @@ exceptions1.cruelly = "cruel";
 exceptions1.lowliness = "lowli";
 exceptions1.ironically = "ironi";
 exceptions1.pacification = "pacifi";
-exceptions1.haply = "happi";
+exceptions1.haply = "happ";
+exceptions1.institutes = "institute";
+exceptions1.lieth = "lie";
+exceptions1.dieth = "die";
 // Invariants!
+exceptions1.institute = "institute";
 exceptions1.sky = "sky";
 exceptions1.news = "news";
 exceptions1.atlas = "atlas";
@@ -160,6 +164,85 @@ const iEndings = [
   "victori",
   "wari",
   "weari",
+];
+
+const erEndings = [
+  "adder",
+  "adulter",
+  "arter",
+  "barber",
+  "baser",
+  "beer",
+  "bower",
+  "buckler",
+  "butter",
+  "career",
+  "cater",
+  "charter",
+  "collater",
+  "corner",
+  "counter",
+  "defer",
+  "deleter",
+  "ember",
+  "feder",
+  "finer",
+  "flower",
+  "folder",
+  "forger",
+  "former",
+  "further",
+  "halter",
+  "hater",
+  "hoover",
+  "hunger",
+  "imper",
+  "inner",
+  "inoper",
+  "lacer",
+  "layer",
+  "lever",
+  "liter",
+  "master",
+  "mater",
+  "matter",
+  "mother",
+  "muster",
+  "number",
+  "nurser",
+  "outer",
+  "per",
+  "peter",
+  "pitcher",
+  "ponder",
+  "porter",
+  "poster",
+  "proper",
+  "quer",
+  "render",
+  "rider",
+  "riper",
+  "ser",
+  "shower",
+  "sincer",
+  "slaver",
+  "sober",
+  "sticker",
+  "stranger",
+  "supper",
+  "surer",
+  "taper",
+  "teller",
+  "temper",
+  "templer",
+  "tender",
+  "tiller",
+  "under",
+  "user",
+  "ver",
+  "wager",
+  "waver",
+  "writer",
 ];
 
 // Exceptions Set II.
@@ -436,6 +519,9 @@ var stem = function (word) {
 
   if (/i$/.test(str) && !iEndings.includes(str)) str = str.slice(0, -1);
   // console.log("i", str);
+
+  if (/er$/.test(str) && !erEndings.includes(str)) str = str.slice(0, -2);
+  // console.log("er", str);
 
   str = str.replace(/3/g, "y");
   // console.log("y", str);
