@@ -17,6 +17,8 @@ const french = [
   /“que, si je voyais.*de ces grands avantages.”/,
   /“L’opinion générale.*âmes a peu près.”/,
   /“. . . Le Bábisme a pris.*grandes religions.”/,
+  /“La Behá’isme est.*ne craignez rien.”/,
+  /“Ce fut une.*notre Grand Gazi\?’”/,
 ];
 
 const getParts = (para, removeFrench) => {
@@ -50,13 +52,30 @@ const getStemWord = (stem) => {
   );
 };
 
-const itemLengths = {};
+const itemFactors = {};
 const tokenPairs = new Map();
 const tokenTotals = {};
 
+const getDateValue = (years) => {
+  if (years[0] !== years[1] || !`${years[0]}`.includes(".")) {
+    return new Date((years[0] + years[1]) / 2, 0, 1);
+  }
+  const [y, x] = `${years[0]}`.split(".");
+  const m = x.slice(0, 2);
+  const d = x.slice(2, 4);
+  return new Date(parseInt(y, 10), parseInt(m, 10) - 1, parseInt(d, 10));
+};
+const getFactor = (length, years) => {
+  const base = 1 / Math.sqrt(Math.max(length, 100));
+  if (!years) return base;
+  const diff =
+    (new Date() - getDateValue(years)) / (1000 * 60 * 60 * 24 * 365.25);
+  return base * (1 + 4 / (diff + 1));
+};
+
 const searchIndex = {};
 const doublesCounter = {};
-const updateIndex = (key, paraParts) => {
+const updateIndex = (key, paraParts, years) => {
   const scores = {};
   let length = 0;
   for (const parts of paraParts) {
@@ -103,7 +122,7 @@ const updateIndex = (key, paraParts) => {
     if (!searchIndex[t]) searchIndex[t] = [];
     searchIndex[t].push(scores[t] === 2 ? `${key}` : `${key}:${scores[t]}`);
   }
-  itemLengths[key] = 1 / Math.sqrt(Math.max(length, 100));
+  itemFactors[key] = getFactor(length, years);
 };
 
 const citationsMap = [];
@@ -114,16 +133,25 @@ data.forEach(({ id }, index) => {
   if (doc.length > 1) {
     doc.paragraphs.forEach((para, i) => {
       if (!para.quote) {
-        updateIndex(`${index}_${i}`, [
-          getParts(para, id === "shoghi-effendi-god-passes-by-002"),
-        ]);
+        updateIndex(
+          `${index}_${i}`,
+          [
+            getParts(
+              para,
+              id.startsWith("shoghi-effendi-god-passes-by-002") ||
+                id.startsWith("shoghi-effendi-bahai-administration")
+            ),
+          ],
+          doc.epoch && doc.years
+        );
         citationsMap.push({ key: `${index}_${i}`, citations: para.citations });
       }
     });
   } else {
     updateIndex(
       `${index}`,
-      doc.paragraphs.map((para) => (para.quote ? [] : getParts(para)))
+      doc.paragraphs.map((para) => (para.quote ? [] : getParts(para))),
+      doc.epoch && doc.years
     );
     citationsMap.push({ key: `${index}`, citations: doc.citations });
   }
@@ -198,12 +226,12 @@ await Promise.all([
     "utf-8"
   ),
   fs.writeFile(`./data/search.json`, JSON.stringify(searchIndex), "utf-8"),
-  fs.writeFile(`./data/lengths.json`, JSON.stringify(itemLengths), "utf-8"),
+  fs.writeFile(`./data/factors.json`, JSON.stringify(itemFactors), "utf-8"),
   fs.writeFile(
     `./data/initial.json`,
     JSON.stringify(
       citationsMap
-        .map((c) => ({ ...c, score: (c.citations || 0) * itemLengths[c.key] }))
+        .map((c) => ({ ...c, score: (c.citations || 0) * itemFactors[c.key] }))
         .sort((a, b) => b.score - a.score || a.key.localeCompare(b.key))
         .slice(0, 50)
         .map((a) => getDocByKey(data, a.key))

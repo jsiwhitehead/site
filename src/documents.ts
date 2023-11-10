@@ -1,7 +1,7 @@
 // import getTokens from "../data/tokens";
 import { getDocByKey } from "../data/utils";
 
-import itemLengths from "../data/lengths.json";
+import itemFactors from "../data/factors.json";
 
 // const synonyms = [[getTokens("meet")[0], getTokens("gather")[0]]];
 
@@ -58,7 +58,7 @@ export const getSearchDocs = (data, searchIndex, tokens) => {
         score:
           // sum(matches.filter((m) => m.key === key).map((m) => m.score)) *
           sum(tokens.map((t) => Math.min(scores[t] || 0, max))) *
-          itemLengths[key],
+          itemFactors[key],
       };
     })
     .sort(
