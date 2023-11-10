@@ -160,11 +160,11 @@ await Promise.all([
   fs.writeFile(
     "./data/stems.txt",
     stemKeys
-      // .filter((k) => stemKeys.some((k2) => k2 === `${k}er`))
+      // .filter((k) => stemKeys.some((k2) => k2 === `${k}i`))
       .sort()
       .map((stem) => `${stem}: ${[...fullStems[stem]].sort().join(", ")}`)
       // .map((stem) =>
-      //   [stem, `${stem}er`]
+      //   [stem, `${stem}i`]
       //     .filter((s) => fullStems[s])
       //     .map((s) => `${s}: ${[...fullStems[s]].sort().join(", ")}`)
       //     .join("\n")

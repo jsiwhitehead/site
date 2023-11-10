@@ -95,6 +95,8 @@ exceptions1.haply = "happ";
 exceptions1.institutes = "institute";
 exceptions1.lieth = "lie";
 exceptions1.dieth = "die";
+exceptions1.deadlier = "dead";
+exceptions1.holier = "ho";
 // Invariants!
 exceptions1.institute = "institute";
 exceptions1.sky = "sky";
@@ -104,74 +106,50 @@ exceptions1.cosmos = "cosmos";
 exceptions1.bias = "bias";
 exceptions1.andes = "andes";
 
-const ilEndings = ["beli", "layli", "tripli"];
+const ierEndings = [
+  "denier",
+  "earlier",
+  "frontier",
+  "heavier",
+  "pitier",
+  "readier",
+  "soldier",
+  "tinier",
+];
 
-const iEndings = [
-  "allegi",
-  "anti",
-  "appli",
-  "armi",
-  "batteri",
-  "belli",
-  "benefici",
-  "booti",
-  "bulli",
-  "busi",
-  "commodi",
-  "contenti",
-  "conveni",
-  "crafti",
-  "credenti",
-  "delici",
-  "deni",
-  "directori",
-  "elegi",
-  "faceti",
-  "factori",
-  "forti",
-  "furi",
-  "heavi",
-  "illustri",
-  "imparti",
-  "imperi",
-  "insidi",
-  "ironi",
-  "ladi",
-  "licenti",
-  "liveri",
-  "mani",
-  "mari",
-  "milli",
-  "pacifi",
-  "pari",
-  "parti",
-  "piti",
-  "polici",
-  "politi",
-  "potenti",
-  "presenti",
-  "readi",
-  "recipi",
-  "registri",
+const eriEndings = [
+  "adulteri",
+  "archeri",
+  "arteri",
+  "boweri",
+  "deleteri",
+  "fineri",
+  "forgeri",
+  "masteri",
+  "materi",
+  "nurseri",
+  "queri",
   "reveri",
-  "rubi",
-  "slipperi",
-  "steadi",
-  "studi",
-  "tini",
-  "treati",
-  "tricki",
-  "victori",
-  "wari",
-  "weari",
+  "slaveri",
+];
+
+const liEndings = [
+  "beli",
+  "earli",
+  "impli",
+  "layli",
+  "pli",
+  "realli",
+  "sli",
+  "tripli",
 ];
 
 const erEndings = [
   "adder",
   "adulter",
-  "arter",
   "barber",
   "baser",
+  "batter",
   "beer",
   "bower",
   "buckler",
@@ -182,14 +160,13 @@ const erEndings = [
   "collater",
   "corner",
   "counter",
-  "defer",
-  "deleter",
   "ember",
+  "enter",
+  "ever",
   "feder",
   "finer",
   "flower",
   "folder",
-  "forger",
   "former",
   "further",
   "halter",
@@ -199,17 +176,14 @@ const erEndings = [
   "imper",
   "inner",
   "inoper",
-  "lacer",
   "layer",
-  "lever",
   "liter",
+  "liver",
   "master",
-  "mater",
   "matter",
   "mother",
   "muster",
   "number",
-  "nurser",
   "outer",
   "per",
   "peter",
@@ -218,14 +192,12 @@ const erEndings = [
   "porter",
   "poster",
   "proper",
-  "quer",
   "render",
   "rider",
   "riper",
-  "ser",
   "shower",
   "sincer",
-  "slaver",
+  "slipper",
   "sober",
   "sticker",
   "stranger",
@@ -237,12 +209,75 @@ const erEndings = [
   "templer",
   "tender",
   "tiller",
-  "under",
   "user",
   "ver",
   "wager",
-  "waver",
   "writer",
+];
+
+const iEndings = [
+  "allegi",
+  "anti",
+  "armi",
+  "beli",
+  "benefici",
+  "booti",
+  "busi",
+  "commodi",
+  "contenti",
+  "conveni",
+  "crafti",
+  "credenti",
+  "defi",
+  "delici",
+  "deni",
+  "directori",
+  "earli",
+  "elegi",
+  "fi",
+  "faceti",
+  "factori",
+  "forti",
+  "fronti",
+  "furi",
+  "headi",
+  "heavi",
+  "illustri",
+  "imparti",
+  "insidi",
+  "ironi",
+  "laci",
+  "ladi",
+  "levi",
+  "licenti",
+  "mani",
+  "mari",
+  "pacifi",
+  "pari",
+  "parti",
+  "piti",
+  "polici",
+  "politi",
+  "potenti",
+  "presenti",
+  "readi",
+  "recipi",
+  "registri",
+  "rubi",
+  "saniti",
+  "seminari",
+  "soldi",
+  "steadi",
+  "studi",
+  "tendenti",
+  "tini",
+  "treati",
+  "tricki",
+  "undi",
+  "victori",
+  "wari",
+  "wavi",
+  "weari",
 ];
 
 // Exceptions Set II.
@@ -514,14 +549,20 @@ var stem = function (word) {
     // console.log("5", str);
   }
 
-  if (/li$/.test(str) && !ilEndings.includes(str)) str = str.slice(0, -2);
-  // console.log("li", str);
+  if (/ier$/.test(str) && !ierEndings.includes(str)) str = str.slice(0, -3);
+  // console.log("ier", str);
 
-  if (/i$/.test(str) && !iEndings.includes(str)) str = str.slice(0, -1);
-  // console.log("i", str);
+  if (/eri$/.test(str) && !eriEndings.includes(str)) str = str.slice(0, -3);
+  // console.log("eri", str);
+
+  if (/li$/.test(str) && !liEndings.includes(str)) str = str.slice(0, -2);
+  // console.log("li", str);
 
   if (/er$/.test(str) && !erEndings.includes(str)) str = str.slice(0, -2);
   // console.log("er", str);
+
+  if (/i$/.test(str) && !iEndings.includes(str)) str = str.slice(0, -1);
+  // console.log("i", str);
 
   str = str.replace(/3/g, "y");
   // console.log("y", str);

@@ -2104,11 +2104,11 @@ alexandrian: alexandrian
 
 alfr: alfred
 
+alg: algiers
+
 algebra: algebra
 
 algeria: algeria
-
-algi: algiers
 
 aliakbar: aliakbar
 
@@ -3028,7 +3028,7 @@ arcad: arcade
 
 arcan: arcane
 
-arch: arch, arched, archery, arches, arching
+arch: arch, arched, arches, arching
 
 archaeolog: archaeological
 
@@ -3045,6 +3045,8 @@ archduchess: archduchess
 archduk: archduke
 
 archenem: archenemies, archenemy
+
+archer: archery
 
 archetyp: archetypal, archetype, archetypes
 
@@ -4072,6 +4074,8 @@ baroda: baroda
 
 baron: baron
 
+barr: barrier, barriers
+
 barrack: barrack, barracks
 
 barracksquar: barracksquare
@@ -4081,8 +4085,6 @@ barrag: barrage
 barren: barren, barrenness
 
 barrett: barrett
-
-barri: barrier, barriers
 
 barricad: barricades
 
@@ -4158,13 +4160,13 @@ bathhous: bathhouse, bathhouses
 
 batlik: batlike
 
-batt: batter, battered, battering
+batt: batteries
 
 battalion: battalions
 
 battambang: battambang
 
-batteri: batteries
+batter: batter, battered, battering
 
 battl: battle, battles, battling
 
@@ -4374,7 +4376,7 @@ beirut: beirut
 
 bejewel: bejewel, bejewelled
 
-bel: belie, belied, belies, bellies, belly
+bel: bellies, belly
 
 belabour: belabour, belaboured
 
@@ -4389,6 +4391,8 @@ belgian: belgian
 belgium: belgium
 
 belgrad: belgrade
+
+beli: belie, belied, belies
 
 belief: belief, beliefs
 
@@ -5774,9 +5778,7 @@ carpentr: carpentry
 
 carpet: carpet, carpets
 
-carr: carried, carries, carrieth, carry, carrying
-
-carri: carrier
+carr: carried, carrier, carries, carrieth, carry, carrying
 
 carriag: carriage, carriages
 
@@ -7526,23 +7528,21 @@ coupl: couple, coupled, couples, coupling
 
 couplet: couplet
 
+cour: courier, couriers
+
 courag: courage, courageous, courageously
 
 courant: courant
-
-couri: courier, couriers
 
 courosh: courosh
 
 cours: course, coursed, courses, coursing, coursings
 
-court: court, courting, courts
+court: court, courtiers, courting, courts
 
 courteous: courteous, courteously
 
 courtes: courtesy
-
-courti: courtiers
 
 courtship: courtship
 
@@ -7580,7 +7580,7 @@ coy: coyness
 
 cozumel: cozumel
 
-cr: cried, cries, crieth, cry, crying
+cr: cried, crier, criers, cries, crieth, cry, crying
 
 crack: cracked, cracks
 
@@ -7663,8 +7663,6 @@ crestfallen: crestfallen
 crete: crete
 
 crew: crew
-
-cri: crier, criers
 
 crime: crime, crimes
 
@@ -8106,11 +8104,9 @@ dea: dealy
 
 deactiv: deactivated
 
-dead: dead, deadliest, deadly, deadness
+dead: dead, deadlier, deadliest, deadly, deadness
 
 deaden: deaden, deadeneth, deadening
-
-deadli: deadlier
 
 deadlin: deadline, deadlines
 
@@ -8256,7 +8252,7 @@ deeproot: deeprooted
 
 deepseat: deepseated
 
-def: defied, defies, defy, defying
+def: defer, deference, deferment, deferred, deferreth, deferring, defers
 
 defac: deface
 
@@ -8284,11 +8280,11 @@ defens: defensive, defensiveness
 
 defent: defence, defences
 
-defer: defer, deference, deferment, deferred, deferreth, deferring, defers
-
 deferent: deferentially
 
 deffet: deffet
+
+defi: defied, defies, defy, defying
 
 defiant: defiance, defiant
 
@@ -8514,7 +8510,7 @@ derisor: derisory
 
 deriv: derivation, derivative, derivatives, derive, derived, derives, deriveth, deriving
 
-derni: dernier
+dern: dernier
 
 derog: derogating
 
@@ -9664,9 +9660,7 @@ earthwork: earthwork
 
 earthworm: earthworms
 
-eas: ease, eased, easeful, eases, easily, easing, easy
-
-easi: easier
+eas: ease, eased, easeful, eases, easier, easily, easing, easy
 
 east: east, easts
 
@@ -10280,13 +10274,15 @@ ensu: ensue, ensued, ensues, ensuing
 
 ensur: ensure, ensured, ensures, ensureth, ensuring
 
-ent: enter, entered, enterest, entereth, entering, enters
+ent: entier, entiere
 
 entail: entail, entailed, entaileth, entailing, entails
 
 entangl: entangle, entangled, entanglement, entanglements, entangling
 
 entent: entente
+
+enter: enter, entered, enterest, entereth, entering, enters
 
 enterpr: enterprise, enterprises, enterprising
 
@@ -10301,8 +10297,6 @@ enthus: enthuse, enthused, enthusing
 enthusiasm: enthusiasm, enthusiasms
 
 enthusiast: enthusiastic, enthusiastically, enthusiasts
-
-enti: entier, entiere
 
 entic: enticed, enticements, enticing, enticingly
 
@@ -10590,7 +10584,7 @@ european: european, europeans
 
 eustatius: eustatius
 
-ev: ever, every
+ev: every
 
 evacu: evacuate, evacuation
 
@@ -10617,6 +10611,8 @@ event: event, eventful, events
 eventid: eventide
 
 eventu: eventual, eventualities, eventuality, eventually, eventuate, eventuated
+
+ever: ever
 
 everabid: everabiding
 
@@ -13048,9 +13044,7 @@ globe: globe, globes
 
 globegirdl: globegirdling
 
-gloom: gloom, gloominess, gloomy
-
-gloomi: gloomier
+gloom: gloom, gloomier, gloominess, gloomy
 
 glor: gloried, glories, glorieth, glory, glorying
 
@@ -13752,11 +13746,9 @@ haphazard: haphazard, haphazardly
 
 hapless: hapless
 
-happ: haply, happiest, happily, happiness, happy
+happ: haply, happier, happiest, happily, happiness, happy
 
 happen: happen, happened, happeneth, happening, happenings, happens
-
-happi: happier
 
 happylook: happylooking
 
@@ -13786,15 +13778,13 @@ harbing: harbinger, harbingers
 
 harbour: harbour, harboured, harboureth, harbouring, harbours
 
-hard: hard, harder, hardest, hardly, hardness, hardy
+hard: hard, harder, hardest, hardier, hardly, hardness, hardy
 
 hardearn: hardearned
 
 harden: hardened, hardening
 
 hardheart: hardhearted
-
-hardi: hardier
 
 hardlywon: hardlywon
 
@@ -13960,13 +13950,15 @@ haziratul: haziratul
 
 haziratulqud: haziratulquds
 
-head: head, headed, heading, headings, heads, heady
+head: head, headed, heading, headings, heads
 
 headcornerston: headcornerstone
 
 headdress: headdress
 
 headgear: headgear, headgears
+
+headi: heady
 
 headless: headless
 
@@ -13990,15 +13982,13 @@ headway: headway
 
 heal: heal, healed, healer, healers, healeth, healing, heals
 
-health: health, healthy
+health: health, healthier, healthy
 
 healthcar: healthcare
 
 healthdestroy: healthdestroying
 
 healthgiv: healthgiving
-
-healthi: healthier
 
 healthrel: healthrelated
 
@@ -14412,7 +14402,7 @@ hivaid: hivaids
 
 hive: hive
 
-ho: holies, holiest, holiness, holy
+ho: holier, holies, holiest, holiness, holy
 
 hoagg: hoagg
 
@@ -14441,8 +14431,6 @@ hold: hold, holder, holders, holdest, holdeth, holding, holdings, holds
 holden: holden
 
 hole: hole, holes
-
-holi: holier
 
 holiday: holiday, holidays
 
@@ -15142,7 +15130,7 @@ immut: immutability, immutable
 
 imola: imola
 
-imp: implied, implies, implieth, imply, implying
+imp: imperial, imperialism, imperious
 
 impact: impact, impacted, impacts
 
@@ -15176,8 +15164,6 @@ impercept: imperceptible, imperceptibly
 
 imperfect: imperfect, imperfection, imperfections, imperfectly
 
-imperi: imperial, imperialism, imperious
-
 imperialist: imperialist
 
 imperil: imperil, imperilled, imperilling
@@ -15205,6 +15191,8 @@ impiet: impiety
 imping: impinge, impinging
 
 impious: impious, impiously
+
+impl: implied, implies, implieth, imply, implying
 
 implac: implacability, implacable
 
@@ -17638,13 +17626,13 @@ laborator: laboratories, laboratory
 
 labour: labour, laboured, labourer, labourers, labouring, labours
 
-lac: lacy
+lac: lacerate, lacerated, lacerates, lacerating, laceration
 
 laccad: laccadive
 
 lace: lace
 
-lacer: lacerate, lacerated, lacerates, lacerating, laceration
+laci: lacy
 
 lack: lack, lacked, lacking, lacks
 
@@ -18090,13 +18078,13 @@ letterhead: letterhead, letterheads
 
 leur: leur
 
-lev: levied, levies, levy
+lev: lever
 
 levant: levant
 
 level: level, levelled, levelling, levels
 
-lever: lever
+levi: levied, levies, levy
 
 leviathan: leviathan, leviathans
 
@@ -18326,7 +18314,7 @@ litterateur: litterateurs
 
 littl: little
 
-liv: liver
+liv: livery
 
 liva: liva
 
@@ -18334,7 +18322,7 @@ live: live, lived, liveliest, liveliness, lively, lives, livest, liveth, living
 
 livelihood: livelihood, livelihoods
 
-liveri: livery
+liver: liver
 
 liverpool: liverpool
 
@@ -18396,9 +18384,7 @@ lodg: lodge, lodged, lodges, lodging
 
 lofoten: lofoten
 
-loft: loftiest, loftiness, lofty
-
-lofti: loftier
+loft: loftier, loftiest, loftiness, lofty
 
 loftyturban: loftyturbaned
 
@@ -18652,9 +18638,9 @@ lul: lulled
 
 lull: lull
 
-lumb: lumber
+lum: lumiere
 
-lumi: lumiere
+lumb: lumber
 
 lumin: luminous
 
@@ -19838,9 +19824,7 @@ midwif: midwife
 
 midwint: midwinter
 
-might: might, mightest, mightiest, mightily, mighty
-
-mighti: mightier
+might: might, mightest, mightier, mightiest, mightily, mighty
 
 migrat: migrate, migrated, migration, migrations
 
@@ -22592,7 +22576,7 @@ oxus: oxus
 
 oxygen: oxygen
 
-p: p, plied, ply, plying
+p: p, piers
 
 pace: pace, paced, paces, pacing
 
@@ -23392,8 +23376,6 @@ physiognom: physiognomies, physiognomy
 
 physiolog: physiological, physiologically, physiology
 
-pi: piers
-
 piast: piasters
 
 piastr: piastres
@@ -23513,6 +23495,8 @@ pittsburgh: pittsburgh
 pius: pius
 
 pivot: pivot, pivotal, pivots
+
+pl: plied, ply, plying
 
 placat: placate, placated
 
@@ -24004,11 +23988,11 @@ preliminar: preliminaries, preliminary
 
 prelud: prelude, preluding
 
+prem: premier, premiere
+
 prematur: premature, prematurely
 
 premedit: premeditated, premeditation
-
-premi: premier, premiere
 
 premiership: premiership
 
@@ -24524,7 +24508,7 @@ pulsat: pulsate, pulsates, pulsateth, pulsating, pulsations
 
 pump: pumping
 
-pun: puniest, puny
+pun: punier, puniest, puny
 
 punctual: punctuality
 
@@ -24533,8 +24517,6 @@ punctuat: punctuated
 pundit: pundits
 
 pungent: pungent
-
-puni: punier
 
 punish: punish, punishable, punished, punishes, punishing, punishment, punishments
 
@@ -25182,7 +25164,7 @@ readorn: readorned
 
 reaffirm: reaffirm, reaffirmation, reaffirmed, reaffirms
 
-real: real, really
+real: real
 
 realign: realign, realignment
 
@@ -25191,6 +25173,8 @@ realis: realisation, realisations, realise, realised, realises, realiseth, reali
 realist: realistic, realistically
 
 realit: realities, reality
+
+reall: really
 
 realloc: reallocated
 
@@ -26002,13 +25986,13 @@ reveng: revenge, revengeful, revenger
 
 revenu: revenue, revenues
 
+rever: reveries
+
 reverb: reverberate, reverberated, reverberates, reverberating, reverberations
 
 reverend: reverend
 
 reverent: reverential
-
-reveri: reveries
 
 revers: reversal, reverse, reversed, reverses, reversing, reversion
 
@@ -26520,7 +26504,7 @@ ryukyu: ryukyu
 
 ryukyus: ryukyus
 
-s: s, sly
+s: s, series
 
 sa: sa, sais
 
@@ -26864,9 +26848,11 @@ sangsar: sangsar
 
 sanguin: sanguine
 
-sanit: sanitation, sanity
+sanit: sanitation
 
 sanitar: sanitary
+
+saniti: sanity
 
 sanjiv: sanjiv, sanjivs
 
@@ -27510,7 +27496,9 @@ semiindepend: semiindependent
 
 semin: seminal
 
-seminar: seminar, seminaries, seminars, seminary
+seminar: seminar, seminars
+
+seminari: seminaries, seminary
 
 seminarian: seminarians
 
@@ -27591,8 +27579,6 @@ sequent: sequence, sequences, sequencing, sequential, sequentially
 sequest: sequestered
 
 sequestr: sequestration
-
-ser: series
 
 serajevo: serajevo
 
@@ -28458,6 +28444,8 @@ skytemp: skytempered
 
 skyward: skyward
 
+sl: sly
+
 slab: slab, slabs
 
 slack: slack, slackness
@@ -28508,9 +28496,9 @@ sling: slings
 
 slip: slip, slipped, slipping
 
-slipp: slippers
+slipp: slippery
 
-slipperi: slippery
+slipper: slippers
 
 slit: slit, slits
 
@@ -29022,9 +29010,7 @@ speech: speech, speeches
 
 speechless: speechless, speechlessness
 
-speed: speed, speedeth, speedily, speeding, speeds, speedy
-
-speedi: speedier
+speed: speed, speedeth, speedier, speedily, speeding, speeds, speedy
 
 spel: spelled, spelling, spellings
 
@@ -29466,7 +29452,7 @@ stolid: stolid
 
 stomach: stomach
 
-ston: stony
+ston: stonier, stony
 
 stone: stone, stoned, stones, stonest, stoning
 
@@ -29477,8 +29463,6 @@ stonelik: stonelike
 stonerestor: stonerestoration
 
 stonework: stonework
-
-stoni: stonier
 
 stood: stood
 
@@ -30306,7 +30290,7 @@ systemat: systematic, systematically, systematisation, systematise, systematised
 
 szechwan: szechwan
 
-t: t
+t: t, tiers
 
 ta: ta, tai
 
@@ -30682,7 +30666,9 @@ tenant: tenancy, tenant, tenants
 
 tend: tend, tended, tendeth, tending, tends
 
-tendent: tendencies, tendency, tendentious
+tendent: tendencies, tendency
+
+tendenti: tendentious
 
 tender: tender, tendered, tenderest, tendereth, tenderly, tenderness
 
@@ -31099,8 +31085,6 @@ thwart: thwart, thwarted
 thyolo: thyolo
 
 thyself: thyself
-
-ti: tiers
 
 tiberia: tiberias
 
@@ -32300,7 +32284,7 @@ uncrit: uncritical, uncritically
 
 uncultiv: uncultivated
 
-und: undying
+und: underlie, underlies, underlieth, underlying
 
 undamag: undamaged
 
@@ -32325,8 +32309,6 @@ undeliv: undelivered
 unden: undeniable, undeniably
 
 undenomin: undenominational
-
-under: underlie, underlies, underlieth, underlying
 
 underbrush: underbrush
 
@@ -32393,6 +32375,8 @@ undetermin: undetermined
 undev: undeviating, undeviatingly
 
 undevelop: undeveloped
+
+undi: undying
 
 undim: undimmed
 
@@ -33354,7 +33338,7 @@ uzunkupru: uzunkupru
 
 uzza: uzza
 
-v: v
+v: v, verily
 
 v1: v1
 
@@ -33560,7 +33544,7 @@ ventur: venture, ventured, venturer, ventures
 
 venu: venue, venues
 
-ver: verily, vers
+ver: vers
 
 vera: vera
 
@@ -34042,7 +34026,7 @@ watl: watling
 
 watson: watson
 
-wav: wavy
+wav: waver, wavered, waverers, wavering
 
 wave: wave, waved, waves, waveth, waving
 
@@ -34050,7 +34034,7 @@ waveless: waveless
 
 wavelet: wavelets
 
-waver: waver, wavered, waverers, wavering
+wavi: wavy
 
 wax: wax, waxed, waxes, waxeth, waxing
 
@@ -34112,9 +34096,7 @@ weep: weep, weepeth, weeping, weeps
 
 weigh: weigh, weighed, weighing, weighs
 
-weight: weight, weighted, weightiest, weights, weighty
-
-weighti: weightier
+weight: weight, weighted, weightier, weightiest, weights, weighty
 
 weimar: weimar
 
@@ -34788,9 +34770,7 @@ worshipp: worshipper, worshippers
 
 worst: worst
 
-worth: worth, worthiest, worthily, worthiness, worthy
-
-worthi: worthier
+worth: worth, worthier, worthiest, worthily, worthiness, worthy
 
 worthless: worthless
 
