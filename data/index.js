@@ -70,11 +70,12 @@ const getFactor = (length, years) => {
   if (!years) return base;
   const diff =
     (new Date() - getDateValue(years)) / (1000 * 60 * 60 * 24 * 365.25);
-  return base * (1 + 4 / (diff + 1));
+  return base * (0.4 + 3 / (diff + 5));
 };
 
-const searchIndex = {};
-const doublesCounter = {};
+const searchIndex = new Map();
+const counts = {};
+const wordCounts = {};
 const updateIndex = (key, paraParts, years) => {
   const scores = {};
   let length = 0;
@@ -83,22 +84,24 @@ const updateIndex = (key, paraParts, years) => {
       getTokens(part.text, (word, stem) => {
         if (!fullStems[stem]) fullStems[stem] = new Set();
         fullStems[stem].add(word);
+        wordCounts[word] = (wordCounts[word] || 0) + 1;
       }).map((token) => ({
         token,
         citations: (part.citations || 0) + 2,
       }))
     );
-    const doubleTokens = tokens.slice(0, -1).map((t1, i) => {
+    const doubleTokens = tokens.slice(0, -1).flatMap((t1, i) => {
       const t2 = tokens[i + 1];
       const t = {
         token: `${t1.token}_${t2.token}`,
         citations: t1.citations + t2.citations,
       };
-      if (!doublesCounter[t.token]) doublesCounter[t.token] = 0;
-      doublesCounter[t.token]++;
-      return t;
+      if (/[0A-Z]/.test(t.token)) return [];
+      return [t];
     });
     for (const t of [...tokens, ...doubleTokens]) {
+      if (!counts[t.token]) counts[t.token] = 0;
+      counts[t.token]++;
       if (!scores[t.token]) scores[t.token] = 0;
       scores[t.token] += t.citations;
     }
@@ -119,8 +122,10 @@ const updateIndex = (key, paraParts, years) => {
     length += tokens.length;
   }
   for (const t of Object.keys(scores)) {
-    if (!searchIndex[t]) searchIndex[t] = [];
-    searchIndex[t].push(scores[t] === 2 ? `${key}` : `${key}:${scores[t]}`);
+    searchIndex.set(t, [
+      ...(searchIndex.get(t) || []),
+      scores[t] === 2 ? `${key}` : `${key}:${scores[t]}`,
+    ]);
   }
   itemFactors[key] = getFactor(length, years);
 };
@@ -142,7 +147,7 @@ data.forEach(({ id }, index) => {
                 id.startsWith("shoghi-effendi-bahai-administration")
             ),
           ],
-          doc.epoch && doc.years
+          doc.epoch && doc.author !== "Shoghi Effendi" && doc.years
         );
         citationsMap.push({ key: `${index}_${i}`, citations: para.citations });
       }
@@ -151,14 +156,24 @@ data.forEach(({ id }, index) => {
     updateIndex(
       `${index}`,
       doc.paragraphs.map((para) => (para.quote ? [] : getParts(para))),
-      doc.epoch && doc.years
+      doc.epoch && doc.author !== "Shoghi Effendi" && doc.years
     );
     citationsMap.push({ key: `${index}`, citations: doc.citations });
   }
 });
-for (const k of Object.keys(doublesCounter)) {
-  if (doublesCounter[k] < 5) delete searchIndex[k];
+for (const k of Object.keys(counts)) {
+  if (counts[k] === 1) delete counts[k];
+  //   if (doublesCounter[k] > 50) searchIndex.delete(k);
 }
+
+// console.log(
+//   Object.keys(wordCounts)
+//     .map((k) => ({ stem: k, count: wordCounts[k] }))
+//     .sort((a, b) => b.count - a.count)
+//     .slice(0, 500)
+//     .map((x) => x.stem)
+//     .join("\n")
+// );
 
 const stemKeys = Object.keys(fullStems);
 
@@ -184,10 +199,16 @@ for (const [key, count] of tokenPairs.entries()) {
   }
 }
 
+const searchIndexObject = {};
+for (const [k, v] of searchIndex.entries()) {
+  searchIndexObject[k] = v;
+}
+
 await Promise.all([
   fs.writeFile(
     "./data/stems.txt",
     stemKeys
+      .filter((k) => !k.includes("‑"))
       // .filter((k) => stemKeys.some((k2) => k2 === `${k}i`))
       .sort()
       .map((stem) => `${stem}: ${[...fullStems[stem]].sort().join(", ")}`)
@@ -225,7 +246,12 @@ await Promise.all([
       .normalize("NFC"),
     "utf-8"
   ),
-  fs.writeFile(`./data/search.json`, JSON.stringify(searchIndex), "utf-8"),
+  fs.writeFile(
+    `./data/search.json`,
+    JSON.stringify(searchIndexObject),
+    "utf-8"
+  ),
+  fs.writeFile(`./data/counts.json`, JSON.stringify(counts), "utf-8"),
   fs.writeFile(`./data/factors.json`, JSON.stringify(itemFactors), "utf-8"),
   fs.writeFile(
     `./data/initial.json`,

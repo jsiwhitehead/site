@@ -1,3 +1,5 @@
+import { doubleMetaphone } from "double-metaphone";
+
 import getTokens from "../data/tokens";
 import { getParagraphText } from "../data/utils";
 
@@ -31,7 +33,7 @@ const source = Object.keys(app).reduce((res, k) => {
 const highlightDoc = (doc, tokens) => {
   const texts = doc.paragraphs.map((para) => getParagraphText(para));
   const highlighted = texts.map((text) => {
-    const split = text.split(/([\w‑]+)/g).flatMap((t) => {
+    const split = text.split(/([ —]+)/g).flatMap((t) => {
       const highlight = tokens.includes(getTokens(t)[0]);
       if (t.includes("‑") && !highlight) {
         return t.split(/(‑)/g).map((x) => ({
@@ -63,13 +65,16 @@ const compiled = maraca(
     passages: (search) => {
       clearTimeout(searchTimer);
 
-      const tokens = getTokens(search);
+      const baseTokens = getTokens(search);
 
-      if (tokens.length === 0) {
+      if (baseTokens.length === 0) {
         searchAtom.set(initialDocs.map((d) => highlightDoc(d, [])));
       } else {
         searchTimer = setTimeout(() => {
           Promise.all([$data, $searchIndex]).then(([data, searchIndex]) => {
+            const tokens = baseTokens.map((t) =>
+              searchIndex[t] ? t : doubleMetaphone(t)[0]
+            );
             const docs = getSearchDocs(
               data.default,
               searchIndex.default,

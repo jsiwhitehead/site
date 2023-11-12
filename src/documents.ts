@@ -2,6 +2,7 @@
 import { getDocByKey } from "../data/utils";
 
 import itemFactors from "../data/factors.json";
+import tokenCounts from "../data/counts.json";
 
 // const synonyms = [[getTokens("meet")[0], getTokens("gather")[0]]];
 
@@ -34,17 +35,15 @@ import itemFactors from "../data/factors.json";
 const sum = (x) => x.reduce((res, a) => res + a, 0);
 
 export const getSearchDocs = (data, searchIndex, tokens) => {
-  const matches = [
-    ...tokens,
-    // ...tokens.slice(0, -1).map((t1, i) => `${t1}_${tokens[i + 1]}`),
-  ].flatMap((token) =>
+  const doubles = tokens.slice(0, -1).map((t1, i) => `${t1}_${tokens[i + 1]}`);
+  const matches = [...tokens, ...doubles].flatMap((token) =>
     (searchIndex[token] || []).map((m) => {
       const [key, score] = m.split(":");
       return { token, key, score: parseInt(score || 2, 10) };
     })
   );
-  const max = tokens.length === 1 ? 1000 : Math.max(20 / tokens.length, 5);
-  return [...new Set(matches.map((m) => m.key))]
+  const max = tokens.length === 1 ? 1000 : Math.max(0.1 / tokens.length, 0.02);
+  const res = [...new Set(matches.map((m) => m.key))]
     .map((key) => {
       const scores = {};
       for (const m of matches) {
@@ -55,15 +54,27 @@ export const getSearchDocs = (data, searchIndex, tokens) => {
       }
       return {
         key,
+        scores,
+        divided: Object.keys(scores).reduce(
+          (res, k) => ({
+            ...res,
+            [k]: (scores[k] || 0) / (tokenCounts[k] || 1),
+          }),
+          {}
+        ),
         score:
           // sum(matches.filter((m) => m.key === key).map((m) => m.score)) *
-          sum(tokens.map((t) => Math.min(scores[t] || 0, max))) *
-          itemFactors[key],
+          sum(
+            // [...tokens, ...doubles].map((t) => Math.min(scores[t] || 0, max))
+            [...tokens, ...doubles].map((t) =>
+              Math.min((scores[t] || 0) / (tokenCounts[t] || 1), max)
+            )
+          ) * itemFactors[key],
       };
     })
     .sort(
       (a, b) => (b.score || 0) - (a.score || 0) || a.key.localeCompare(b.key)
     )
-    .slice(0, 50)
-    .map((d) => getDocByKey(data, d.key));
+    .slice(0, 50);
+  return res.map((d) => getDocByKey(data, d.key));
 };
