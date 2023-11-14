@@ -25,9 +25,22 @@
         'Bahá’í Library'
       ]
       [
-        pad: [5, 10]
-        placeholder: 'Search here...'
-        input: search
+        gap: 15
+        ~
+        [
+          pad: [5, 10]
+          placeholder: 'Search here...'
+          input: search
+        ]
+        [
+          italic: yes
+          size: 14
+          ~
+          'Related: '
+          for s, i in similar(search) {
+            if i = 1 (s) else ', {s}'
+          }
+        ]
       ]
       [
         gap: 40

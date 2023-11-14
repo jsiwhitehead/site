@@ -2096,7 +2096,7 @@ NXPR: nishapur
 
 NXRFN: anushirvan, nawshiravan
 
-P: abbas, ayyub, ayyubi, bagh, bih, hupeh, yap
+P: aba, abbas, abha, ayyub, ayyubi, bagh, bih, hupeh, yap
 
 P0LHM: bethlehem
 
@@ -2160,7 +2160,7 @@ PKTT: bagdadi
 
 PKX: bakhsh
 
-PL: abul, paolo, pohl, upolu
+PL: abel, abul, paolo, pohl, upolu
 
 PLF: bolivia, pahlavi
 
@@ -2232,7 +2232,7 @@ PMN: bahman
 
 PMP: pemba
 
-PN: abyanih, ibn, upon
+PN: abyanih, ibn
 
 PNFRT: ibn‑i‑farid
 
@@ -2288,6 +2288,8 @@ PNTK: banaduk
 
 PNTLKN: pentelikon
 
+PNTN: abandon, abandoned, abandonest, abandoneth, abandoning, abandonment
+
 PNTP: ibn‑i‑dhib
 
 PNTX: bentwitch
@@ -2296,7 +2298,7 @@ PNXRF: ibn‑i‑ashraf
 
 PNXT: upanishads
 
-PP: babiyyih, beba, bopp, habibih, ibibio
+PP: ababa, babiyyih, beba, bopp, habibih, ibibio
 
 PPFK: ibibio‑efik
 
@@ -2310,9 +2312,11 @@ PPLSR: babulsar
 
 PPNSR: bhubaneswar
 
+PPSR: aba‑basir
+
 PPT: babiyyat
 
-PR: epyeru
+PR: abhar, epyeru
 
 PRF: abbreviated, payravi
 
@@ -2402,7 +2406,7 @@ PRTX: pradesh
 
 PRXP: beersheba
 
-PS: paz, pius
+PS: abase, abased, abasement, abaser, abaseth, abasing, abazih, paz, pius
 
 PSFRS: bosphorus
 
@@ -2436,7 +2440,7 @@ PSTN: pasadena
 
 PSTR: piastres
 
-PT: abbud, badiih, bahta, bayt, peyote
+PT: abad, abadi, abadih, abate, abated, abatement, abating, abbud, abduh, badiih, bahta, bayt, peyote
 
 PTJN: abidjan
 
@@ -2524,7 +2528,7 @@ PTT: baghdad, baghdadi
 
 PTXT: badasht
 
-PX: hypatia
+PX: abashed, hypatia
 
 PXKK: bishkek
 
@@ -3524,8 +3528,6 @@ TS: dizful, itza, taziyihs
 
 TSL: itsel
 
-TSLF: itself
-
 TSMN: tasmania
 
 TSN: yat‑sen
@@ -3744,26 +3746,6 @@ a: aerie, ali
 
 ab: abi, ably
 
-aba: aba
-
-ababa: ababa
-
-ababasir: aba‑basir
-
-abad: abad, abadi
-
-abadih: abadih
-
-abandon: abandon, abandoned, abandonest, abandoneth, abandoning, abandonment
-
-abas: abase, abased, abasement, abaser, abaseth, abasing
-
-abash: abashed
-
-abat: abate, abated, abatement, abating
-
-abazih: abazih
-
 abdic: abdicate, abdicated, abdication
 
 abdomin: abdominal
@@ -3772,23 +3754,15 @@ abdu: abdu
 
 abduct: abducted, abductions
 
-abduh: abduh
-
 abdusahib: abdu‑sahib
 
 abdusalam: abdu‑salam
 
 abdusalih: abdu‑salih
 
-abel: abel
-
 aberr: aberrant, aberration, aberrations
 
 abey: abeyance
-
-abha: abha
-
-abhar: abhar
 
 abhor: abhor, abhorred, abhorrest, abhorreth, abhors
 
@@ -3835,8 +3809,6 @@ aborigin: aboriginal, aborigines
 abort: abortion, abortive
 
 abound: abound, abounded, aboundeth, abounding, abounds
-
-about: about
 
 abov: above
 
@@ -4462,8 +4434,6 @@ alishawkat: ali‑shawkat
 
 aliv: alive
 
-all: all
-
 allabid: all‑abiding
 
 allabsorb: all‑absorbing
@@ -4802,7 +4772,7 @@ amur: amur
 
 amus: amused, amusement, amusements, amuses
 
-an: anis, any
+an: anis
 
 ana: anas
 
@@ -6060,7 +6030,7 @@ bazar: bazar, bazars
 
 bbc: bbc
 
-be: be, being, beings
+be: being, beings
 
 beacon: beacon, beaconing, beacons
 
@@ -6096,8 +6066,6 @@ beav: beaver
 
 becam: became
 
-becaus: because
-
 beck: beck
 
 beckon: beckon, beckoning, beckons
@@ -6127,8 +6095,6 @@ beech: beecher
 beef: beef
 
 beehiv: beehive
-
-been: been
 
 beer: beer
 
@@ -7146,8 +7112,6 @@ businessman: businessman
 
 businessmen: businessmen
 
-but: but
-
 butch: butcher, butchering, butchers, butchery
 
 butl: butler
@@ -7275,8 +7239,6 @@ campbel: campbell
 camphor: camphor, camphorated
 
 campus: campus, campuses
-
-can: can
 
 canaan: canaan
 
@@ -7524,7 +7486,7 @@ caught: caught
 
 cauldron: cauldron
 
-caus: cause, caused, causer, causes, causest, causeth, causing
+caus: caused, causer, causes, causest, causeth, causing
 
 causal: causal
 
@@ -9024,8 +8986,6 @@ couch: couch, couched, couches
 
 cough: cough
 
-could: could
-
 couldst: couldst
 
 council: council, councils
@@ -10160,8 +10120,6 @@ dictatorship: dictatorship, dictatorships
 
 dictionar: dictionaries, dictionary
 
-did: did
-
 didact: didactic
 
 didst: didst
@@ -10646,7 +10604,7 @@ divorc: divorce, divorced, divorces, divorcing
 
 divulg: divulge, divulged, divulgeth, divulging
 
-do: do, doer, doers, doest, doeth, doing, doings
+do: doer, doers, doest, doeth, doing, doings
 
 docil: docile
 
@@ -10660,7 +10618,7 @@ documentar: documentary
 
 dodg: dodge
 
-doe: doe, does
+doe: doe
 
 dog: dog, dogged, dogs
 
@@ -11875,8 +11833,6 @@ euphrat: euphrates
 europ: europe
 
 european: european, europeans
-
-ev: every
 
 evacu: evacuate, evacuation
 
@@ -14128,7 +14084,7 @@ gnaw: gnawing
 
 gnostic: gnostic, gnosticism
 
-go: go, goest, goeth, going, goings
+go: goest, goeth, going, goings
 
 goad: goad
 
@@ -14520,7 +14476,7 @@ guyana: guyana
 
 gyps: gypsy
 
-h: her, heri, hers
+h: heri
 
 hab: habiliments
 
@@ -14534,7 +14490,7 @@ habitu: habitual, habitually, habituated
 
 hack: hacked, hacking
 
-had: had, hadi
+had: hadi
 
 hadst: hadst
 
@@ -14760,8 +14716,6 @@ hatemong: hate‑mongering, hate‑mongers
 
 hater: hater, haters
 
-hath: hath
-
 hatless: hatless
 
 hatr: hatred, hatreds
@@ -14776,7 +14730,7 @@ haunt: haunted, haunting, haunts
 
 havana: havana
 
-have: have, haves, having
+have: haves
 
 haven: haven, havens
 
@@ -14799,8 +14753,6 @@ hazard: hazarded, hazards
 haze: haze
 
 hazira: hazira, haziras
-
-he: he
 
 head: head, headed, heading, headings, heads
 
@@ -15008,8 +14960,6 @@ herculean: herculean
 
 herd: herd, herded, herds
 
-here: here
-
 hereabout: hereabouts
 
 hereaft: hereafter
@@ -15053,8 +15003,6 @@ heroin: heroin, heroine, heroines
 heroism: heroism
 
 herr: herr
-
-herself: herself
 
 hesit: hesitancy, hesitant, hesitate, hesitated, hesitateth, hesitating, hesitation, hesitations
 
@@ -15152,11 +15100,9 @@ hilt: hilt
 
 hiltdeep: hilt‑deep
 
-him: him, him‑
+him: him‑
 
 himalaya: himalayas
-
-himself: himself
 
 hin: hin
 
@@ -15189,8 +15135,6 @@ hira: hira
 hire: hire, hired
 
 hirih: hirih
-
-his: his
 
 hisamu: hisamu
 
@@ -15410,8 +15354,6 @@ housew: housewives
 
 hov: hovering
 
-how: how
-
 howard: howard
 
 howbeit: howbeit
@@ -15595,8 +15537,6 @@ idolworship: idol‑worship
 idolworshipp: idol‑worshippers
 
 idr: idris
-
-if: if
 
 ignaz: ignaz
 
@@ -15914,7 +15854,7 @@ impur: impure, impurities, impurity
 
 imput: imputation, imputations, impute, imputed, imputest, imputeth, imputing
 
-in: in, inly
+in: inly
 
 inabl: inabilities, inability
 
@@ -16733,8 +16673,6 @@ intim: intimate, intimated, intimately, intimates, intimation, intimations
 intimat: intimacy
 
 intimid: intimidate, intimidated, intimidating, intimidation
-
-into: into
 
 intol: intolerable, intolerance, intolerant
 
@@ -18724,7 +18662,7 @@ maximum: maximum
 
 maxwel: maxwell
 
-may: may, mayest
+may: mayest
 
 maya: maya
 
@@ -18735,8 +18673,6 @@ mayb: maybe
 mayberr: mayberry
 
 mayor: mayor, mayors
-
-me: me
 
 mead: meads
 
@@ -19454,7 +19390,7 @@ mosqu: mosque, mosques
 
 mosquito: mosquito
 
-most: most, mostly
+most: mostly
 
 mostglor: most‑glorious
 
@@ -19644,8 +19580,6 @@ muskscent: musk‑scent, musk‑scented
 
 muslim: muslim, muslims
 
-must: must
-
 mustard: mustard
 
 mustardse: mustard‑seed
@@ -19666,13 +19600,11 @@ mutual: mutual, mutuality, mutually
 
 muze: muze
 
-my: my, myers
+my: myers
 
 myriad: myriad, myriads
 
 myrtl: myrtles
-
-myself: myself
 
 mysor: mysore
 
@@ -20030,9 +19962,7 @@ nob: nobly
 
 nobel: nobel
 
-nobil: nobility
-
-nobl: noble, nobleness, nobler, nobles, noblest
+nobl: nobility, noble, nobleness, nobler, nobles, noblest
 
 nobleheart: noble‑hearted
 
@@ -20234,7 +20164,7 @@ nose: nose, noses
 
 nostril: nostril, nostrils
 
-not: not, nots
+not: nots
 
 notabl: notabilities, notable, notables, notably
 
@@ -20341,8 +20271,6 @@ nurtur: nurture, nurtured, nurtures, nurtureth, nurturing
 nut: nuts
 
 nutrit: nutritious
-
-o: o
 
 oakland: oakland
 
@@ -20514,8 +20442,6 @@ oftrep: oft‑repeated
 
 ofttim: oft‑times
 
-oh: oh
-
 ohio: ohio
 
 oil: oil
@@ -20556,7 +20482,7 @@ omnipres: omnipresent
 
 omnisc: omniscience, omniscient
 
-on: on, onerous
+on: onerous
 
 onc: once
 
@@ -20570,7 +20496,7 @@ onceinalifetim: once‑in‑a‑lifetime
 
 oncom: oncoming
 
-one: one, oneness, ones
+one: oneness, ones
 
 onecolour: one‑coloured
 
@@ -20684,8 +20610,6 @@ option: option, optional, options
 
 opul: opulence, opulent
 
-or: or
-
 oral: oral, orally
 
 oran: oran
@@ -20768,11 +20692,7 @@ ought: ought
 
 ounc: ounce, ounces
 
-our: our, ours
-
 ourself: ourself
-
-ourselv: ourselves
 
 oust: oust, ousting
 
@@ -21045,8 +20965,6 @@ owl: owl, owls
 own: own, owned, owner, owners, owneth, owning, owns
 
 ownership: ownership
-
-ox: ox
 
 oxen: oxen
 
@@ -25492,7 +25410,7 @@ shaven: shaven
 
 shavird: shavirdi
 
-she: she, sheer
+she: sheer
 
 sheaf: sheaf
 
@@ -25628,7 +25546,7 @@ shorttim: short‑time
 
 shot: shot, shots
 
-should: should, shoulder, shouldered, shouldering, shoulders
+should: shoulder, shouldered, shouldering, shoulders
 
 shouldertoshould: shoulder‑to‑shoulder
 
@@ -27266,8 +27184,6 @@ succul: succulent
 
 succumb: succumb, succumbed, succumbing
 
-such: such
-
 suchandsuch: such‑and‑such
 
 suck: suck, sucked, sucking
@@ -28022,7 +27938,7 @@ textual: textual
 
 textur: texture
 
-th: ther, thy
+th: ther
 
 tha: tha, thai
 
@@ -28036,7 +27952,7 @@ thame: thames
 
 thamud: thamud
 
-than: than, thani
+than: thani
 
 thank: thank, thanked, thankful, thankfully, thankfulness, thanking, thanks
 
@@ -28054,21 +27970,13 @@ theatrego: theatre‑going
 
 theatric: theatrical
 
-thee: thee
-
 theft: theft
 
-their: their, theirs
-
 thelma: thelma
-
-them: them
 
 themat: thematic
 
 theme: theme, themes
-
-themselv: themselves
 
 thenc: thence
 
@@ -28097,8 +28005,6 @@ theosophist: theosophists
 therap: therapy
 
 therapeut: therapeutics
-
-there: there
 
 thereabout: thereabouts
 
@@ -28132,11 +28038,9 @@ thermodynam: thermodynamics
 
 thes: thesis
 
-these: these, theses
+these: theses
 
 thew: thew
-
-they: they
 
 thick: thick, thicker, thickest, thickly
 
@@ -28230,10 +28134,6 @@ thorough: thorough, thoroughly, thoroughness
 
 thoroughfar: thoroughfare
 
-those: those
-
-thou: thou
-
 thoud: thoud
 
 though: though
@@ -28313,8 +28213,6 @@ throe: throes
 throne: throne, throned, thrones
 
 throng: throng, thronged, thronging, throngs
-
-through: through
 
 throughout: throughout
 
@@ -28491,8 +28389,6 @@ tonguet: tongue‑tied
 tonight: tonight
 
 tonn: tonnes
-
-too: too
 
 took: took
 
@@ -30224,13 +30120,11 @@ unten: untenable, untenanted
 
 unthink: unthinkable, unthinking, unthinkingly
 
-until: until, untilled
+until: untilled
 
 untim: untimely
 
 untir: untiring, untiringly
-
-unto: unto
 
 untold: untold
 
@@ -30397,8 +30291,6 @@ urin: urine
 ursula: ursula
 
 urum: urumi
-
-us: us
 
 usa: usa
 
@@ -31050,8 +30942,6 @@ wayward: wayward, waywardness
 
 wayworn: wayworn
 
-we: we
-
 weak: weak, weaker, weakest, weakly, weakness, weaknesses
 
 weaken: weaken, weakened, weakeneth, weakening, weakens
@@ -31258,8 +31148,6 @@ went: went
 
 wept: wept
 
-were: were
-
 wert: wert
 
 west: west, wests
@@ -31274,11 +31162,7 @@ westward: westward, westwards
 
 wet: wet, wetness
 
-wh: why
-
 whale: whales
-
-what: what
 
 whatev: whatever
 
@@ -31288,15 +31172,13 @@ wheat: wheat
 
 wheel: wheel, wheels
 
-when: when
-
 whenc: whence
 
 whenev: whenever
 
 whensoev: whensoever
 
-where: where, whereer
+where: whereer
 
 wherea: whereas
 
@@ -31336,13 +31218,9 @@ wheth: whether
 
 whey: whey
 
-which: which
-
 whichev: whichever
 
 whichsoev: whichsoever
-
-while: while
 
 whilst: whilst
 
@@ -31380,8 +31258,6 @@ whithersoev: whithersoever
 
 whittl: whittle, whittling
 
-who: who
-
 whoev: whoever
 
 whol: wholly
@@ -31395,8 +31271,6 @@ wholehearted: wholeheartedness
 wholesal: wholesale
 
 wholesom: wholesome, wholesomeness
-
-whom: whom
 
 whomev: whomever
 
@@ -31468,7 +31342,7 @@ wildlif: wildlife
 
 wile: wiles
 
-will: will, willfulness, wills
+will: willfulness, wills
 
 william: williams
 
@@ -31764,8 +31638,6 @@ worthless: worthless
 
 worthwhil: worthwhile
 
-would: would
-
 wouldb: would‑be
 
 wouldbevictim: would‑be‑victim
@@ -31868,19 +31740,11 @@ yore: yore
 
 york: york
 
-you: you
-
 youd: youd
 
 young: young, younger, youngest
 
 youngst: youngsters
-
-your: your, yours
-
-yourself: yourself
-
-yourselv: yourselves
 
 youth: youth, youthful, youthfulness, youths
 

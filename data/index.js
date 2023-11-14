@@ -44,6 +44,7 @@ const specialStems = {
   train: "training",
   sever: "severe",
   temp: "tempest",
+  institut: "institution",
 };
 const getStemWord = (stem) => {
   return (
@@ -93,7 +94,7 @@ const updateIndex = (key, paraParts, years) => {
     const doubleTokens = tokens.slice(0, -1).flatMap((t1, i) => {
       const t2 = tokens[i + 1];
       const t = {
-        token: `${t1.token}_${t2.token}`,
+        token: [t1.token, t2.token].sort().join("_"),
         citations: t1.citations + t2.citations,
       };
       if (/[0A-Z]/.test(t.token)) return [];
@@ -110,13 +111,15 @@ const updateIndex = (key, paraParts, years) => {
       if (!tokenTotals[distinct[i]]) tokenTotals[distinct[i]] = 0;
       tokenTotals[distinct[i]]++;
       for (let j = i + 1; j < distinct.length; j++) {
-        if (
-          !distinct[i].includes(distinct[j]) &&
-          !distinct[j].includes(distinct[i])
-        ) {
-          const pairKey = `${distinct[i]}_${distinct[j]}`;
+        // if (
+        //   !distinct[i].includes(distinct[j]) &&
+        //   !distinct[j].includes(distinct[i])
+        // ) {
+        const pairKey = `${distinct[i]}_${distinct[j]}`;
+        if (!/[0A-Z]/.test(pairKey)) {
           tokenPairs.set(pairKey, (tokenPairs.get(pairKey) || 0) + 1);
         }
+        // }
       }
     }
     length += tokens.length;
@@ -175,34 +178,50 @@ for (const k of Object.keys(counts)) {
 //     .join("\n")
 // );
 
-const stemKeys = Object.keys(fullStems);
-
-const topPairs = ["cluster", "love", "test"]
-  .map((w) => getTokens(w)[0])
-  .reduce((res, k) => ({ ...res, [k]: [] }), {});
-
+const topPairs = {};
+// let topPairKeys = ["cluster", "love"].map((w) => getTokens(w)[0]);
+// while (topPairKeys.length > 0) {
+// console.log(JSON.stringify(topPairKeys));
+// for (const k of topPairKeys) topPairs[k] = [];
 for (const [key, count] of tokenPairs.entries()) {
   if (count > 1) {
     const [k1, k2] = key.split("_");
-    if (topPairs[k1]) {
-      topPairs[k1].push({
-        word: getStemWord(k2),
-        score: count / (tokenTotals[k1] + tokenTotals[k2]),
-      });
-    }
-    if (topPairs[k2]) {
-      topPairs[k2].push({
-        word: getStemWord(k1),
-        score: count / (tokenTotals[k1] + tokenTotals[k2]),
-      });
-    }
+    // if (topPairKeys.includes(k1)) {
+    if (!topPairs[k1]) topPairs[k1] = [];
+    topPairs[k1].push({
+      key: k2,
+      word: getStemWord(k2),
+      score: count / (tokenTotals[k1] + tokenTotals[k2]),
+    });
+    // }
+    // if (topPairKeys.includes(k2)) {
+    if (!topPairs[k2]) topPairs[k2] = [];
+    topPairs[k2].push({
+      key: k1,
+      word: getStemWord(k1),
+      score: count / (tokenTotals[k1] + tokenTotals[k2]),
+    });
+    // }
   }
 }
+//   const newKeys = new Set();
+//   for (const k of topPairKeys) {
+//     topPairs[k] = topPairs[k]
+//       .sort((a, b) => b.score - a.score)
+//       .filter((a) => a.score > 0.1);
+//     for (const x of topPairs[k]) {
+//       if (!topPairs[x.key]) newKeys.add(x.key);
+//     }
+//   }
+//   topPairKeys = [...newKeys];
+// }
 
 const searchIndexObject = {};
 for (const [k, v] of searchIndex.entries()) {
   searchIndexObject[k] = v;
 }
+
+const stemKeys = Object.keys(fullStems);
 
 await Promise.all([
   fs.writeFile(
@@ -223,16 +242,17 @@ await Promise.all([
   fs.writeFile(
     `./data/pairs.json`,
     JSON.stringify(
-      Object.keys(topPairs).reduce(
-        (res, k) => ({
-          ...res,
-          [getStemWord(k)]: topPairs[k]
+      Object.keys(topPairs)
+        .sort()
+        .reduce((res, k) => {
+          const items = topPairs[k]
             .sort((a, b) => b.score - a.score)
-            .map((x) => x.word)
-            .slice(0, 50),
-        }),
-        {}
-      ),
+            // .filter((a, i) => i < 5 || a.score > 0.1);
+            .slice(0, 5)
+            .map((x) => ({ ...x, score: Math.sqrt(x.score) }));
+          if (items.length === 0) return res;
+          return { ...res, [k]: items };
+        }, {}),
       null,
       2
     ),

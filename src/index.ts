@@ -4,6 +4,7 @@ import getTokens from "../data/tokens";
 import { getParagraphText } from "../data/utils";
 
 import initialDocs from "../data/initial.json";
+import pairs from "../data/pairs.json";
 
 import maraca, { atom, effect } from "./maraca";
 import render from "./render";
@@ -86,6 +87,25 @@ const compiled = maraca(
       }
 
       return searchAtom;
+    },
+    similar: (search) => {
+      const allPairs = {};
+      const pairCounts = {};
+      const tokens = getTokens(search);
+      for (const t of tokens) {
+        for (const p of pairs[t] || []) {
+          if (!tokens.includes(p.key)) {
+            allPairs[p.word] = (allPairs[p.word] || 0) + p.score;
+            pairCounts[p.word] = (pairCounts[p.word] || 0) + 1;
+          }
+        }
+      }
+      for (const k of Object.keys(allPairs)) {
+        allPairs[k] = allPairs[k] / pairCounts[k];
+      }
+      return Object.keys(allPairs)
+        .sort((a, b) => allPairs[b] - allPairs[a])
+        .slice(0, 10);
     },
     length: (block) => {
       if (!block) return null;

@@ -3,24 +3,6 @@ import { doubleMetaphone } from "double-metaphone";
 import stem from "./stem.js";
 import stopwords from "./stopwords.js";
 
-const short = [
-  "o",
-  "be",
-  "do",
-  "go",
-  "he",
-  "if",
-  "in",
-  "me",
-  "my",
-  "oh",
-  "on",
-  "or",
-  "ox",
-  "us",
-  "we",
-];
-
 export default (text, onStem) => {
   if (!text) return [];
   const words = text
@@ -35,9 +17,7 @@ export default (text, onStem) => {
     .split(/ +/g)
     .flatMap((s) => (s.includes("‑") ? [s, ...s.split(/‑/g)] : [s]))
     .filter((s) => s && (!/[0-9]|^[ivxcl]+$/.test(s) || s === "ill"))
-    .filter(
-      (w) => (w.length > 2 || short.includes(w)) && !stopwords.includes(w)
-    );
+    .filter((w) => w.length > 2 && !stopwords.includes(w));
   return words.map((w) => {
     const res = stem(w);
     if (res[0] === "*") {

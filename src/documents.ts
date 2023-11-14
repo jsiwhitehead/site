@@ -34,15 +34,22 @@ import tokenCounts from "../data/counts.json";
 
 const sum = (x) => x.reduce((res, a) => res + a, 0);
 
+const sqrts = {};
+const getSqrt = (x) => {
+  return sqrts[x] || (sqrts[x] = Math.sqrt(x));
+};
+
 export const getSearchDocs = (data, searchIndex, tokens) => {
-  const doubles = tokens.slice(0, -1).map((t1, i) => `${t1}_${tokens[i + 1]}`);
+  const doubles = tokens
+    .slice(0, -1)
+    .map((t1, i) => [t1, tokens[i + 1]].sort().join("_"));
   const matches = [...tokens, ...doubles].flatMap((token) =>
     (searchIndex[token] || []).map((m) => {
       const [key, score] = m.split(":");
       return { token, key, score: parseInt(score || 2, 10) };
     })
   );
-  const max = tokens.length === 1 ? 1000 : Math.max(0.1 / tokens.length, 0.02);
+  const max = tokens.length === 1 ? 10000 : 20 / Math.pow(tokens.length, 0.3);
   const res = [...new Set(matches.map((m) => m.key))]
     .map((key) => {
       const scores = {};
@@ -58,7 +65,7 @@ export const getSearchDocs = (data, searchIndex, tokens) => {
         divided: Object.keys(scores).reduce(
           (res, k) => ({
             ...res,
-            [k]: (scores[k] || 0) / (tokenCounts[k] || 1),
+            [k]: ((scores[k] || 0) / (getSqrt(tokenCounts[k]) || 1)) * 100,
           }),
           {}
         ),
@@ -67,7 +74,10 @@ export const getSearchDocs = (data, searchIndex, tokens) => {
           sum(
             // [...tokens, ...doubles].map((t) => Math.min(scores[t] || 0, max))
             [...tokens, ...doubles].map((t) =>
-              Math.min((scores[t] || 0) / (tokenCounts[t] || 1), max)
+              Math.min(
+                ((scores[t] || 0) / (getSqrt(tokenCounts[t]) || 1)) * 100,
+                max
+              )
             )
           ) * itemFactors[key],
       };
