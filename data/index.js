@@ -54,6 +54,7 @@ const getStemWord = (stem) => {
 };
 
 const itemFactors = {};
+const itemLengths = {};
 const tokenPairs = new Map();
 const tokenTotals = {};
 
@@ -66,63 +67,53 @@ const getDateValue = (years) => {
   const d = x.slice(2, 4);
   return new Date(parseInt(y, 10), parseInt(m, 10) - 1, parseInt(d, 10));
 };
-const getFactor = (length, years) => {
-  const base = 1 / Math.sqrt(Math.max(length, 100));
-  if (!years) return base;
+const getDateFactor = (years) => {
   const diff =
     (new Date() - getDateValue(years)) / (1000 * 60 * 60 * 24 * 365.25);
-  return base * (0.4 + 3 / (diff + 5));
+  return 0.4 + 3 / (diff + 5);
 };
 
 const searchIndex = new Map();
 const counts = {};
 const wordCounts = {};
-const updateIndex = (key, paraParts, years) => {
+const updateIndex = (docIndex, paraIndex, parts) => {
+  const key = `${docIndex}_${paraIndex}`;
   const scores = {};
-  let length = 0;
-  for (const parts of paraParts) {
-    const tokens = parts.flatMap((part) =>
-      getTokens(part.text, (word, stem) => {
-        if (!fullStems[stem]) fullStems[stem] = new Set();
-        fullStems[stem].add(word);
-        wordCounts[word] = (wordCounts[word] || 0) + 1;
-      }).map((token) => ({
-        token,
-        citations: (part.citations || 0) + 2,
-      }))
-    );
-    const doubleTokens = tokens.slice(0, -1).flatMap((t1, i) => {
-      const t2 = tokens[i + 1];
-      const t = {
-        token: [t1.token, t2.token].sort().join("_"),
-        citations: t1.citations + t2.citations,
-      };
-      if (/[0A-Z]/.test(t.token)) return [];
-      return [t];
-    });
-    for (const t of [...tokens, ...doubleTokens]) {
-      if (!counts[t.token]) counts[t.token] = 0;
-      counts[t.token]++;
-      if (!scores[t.token]) scores[t.token] = 0;
-      scores[t.token] += t.citations;
-    }
-    const distinct = [...new Set(tokens.map((t) => t.token))].sort();
-    for (let i = 0; i < distinct.length; i++) {
-      if (!tokenTotals[distinct[i]]) tokenTotals[distinct[i]] = 0;
-      tokenTotals[distinct[i]]++;
-      for (let j = i + 1; j < distinct.length; j++) {
-        // if (
-        //   !distinct[i].includes(distinct[j]) &&
-        //   !distinct[j].includes(distinct[i])
-        // ) {
-        const pairKey = `${distinct[i]}_${distinct[j]}`;
-        if (!/[0A-Z]/.test(pairKey)) {
-          tokenPairs.set(pairKey, (tokenPairs.get(pairKey) || 0) + 1);
-        }
-        // }
+  const tokens = parts.flatMap((part) =>
+    getTokens(part.text, (word, stem) => {
+      if (!fullStems[stem]) fullStems[stem] = new Set();
+      fullStems[stem].add(word);
+      wordCounts[word] = (wordCounts[word] || 0) + 1;
+    }).map((token) => ({
+      token,
+      citations: (part.citations || 0) + 2,
+    }))
+  );
+  const doubleTokens = tokens.slice(0, -1).flatMap((t1, i) => {
+    const t2 = tokens[i + 1];
+    const t = {
+      token: [t1.token, t2.token].sort().join("_"),
+      citations: t1.citations + t2.citations,
+    };
+    if (/[0A-Z]/.test(t.token)) return [];
+    return [t];
+  });
+  for (const t of [...tokens, ...doubleTokens]) {
+    if (!counts[t.token]) counts[t.token] = 0;
+    counts[t.token]++;
+    if (!scores[t.token]) scores[t.token] = 0;
+    scores[t.token] += t.citations;
+  }
+  const distinct = [...new Set(tokens.map((t) => t.token))].sort();
+  for (let i = 0; i < distinct.length; i++) {
+    if (!tokenTotals[distinct[i]]) tokenTotals[distinct[i]] = 0;
+    tokenTotals[distinct[i]]++;
+    for (let j = i + 1; j < distinct.length; j++) {
+      const pairKey = `${distinct[i]}_${distinct[j]}`;
+      if (!/[0A-Z]/.test(pairKey)) {
+        tokenPairs.set(pairKey, (tokenPairs.get(pairKey) || 0) + 1);
       }
     }
-    length += tokens.length;
   }
   for (const t of Object.keys(scores)) {
     searchIndex.set(t, [
@@ -130,7 +121,7 @@ const updateIndex = (key, paraParts, years) => {
       scores[t] === 2 ? `${key}` : `${key}:${scores[t]}`,
     ]);
   }
-  itemFactors[key] = getFactor(length, years);
+  itemLengths[docIndex][paraIndex] = tokens.length;
 };
 
 const citationsMap = [];
@@ -138,31 +129,28 @@ const citationsMap = [];
 data.forEach(({ id }, index) => {
   console.log(id);
   const doc = compileDoc(data, index, false);
-  if (doc.length > 1) {
-    doc.paragraphs.forEach((para, i) => {
-      if (!para.quote) {
-        updateIndex(
-          `${index}_${i}`,
-          [
-            getParts(
-              para,
-              id.startsWith("shoghi-effendi-god-passes-by-002") ||
-                id.startsWith("shoghi-effendi-bahai-administration")
-            ),
-          ],
-          doc.epoch && doc.author !== "Shoghi Effendi" && doc.years
-        );
-        citationsMap.push({ key: `${index}_${i}`, citations: para.citations });
+  itemLengths[index] = [];
+  doc.paragraphs.forEach((para, i) => {
+    if (!para.quote) {
+      updateIndex(
+        index,
+        i,
+        getParts(
+          para,
+          id.startsWith("shoghi-effendi-god-passes-by-002") ||
+            id.startsWith("shoghi-effendi-bahai-administration")
+        )
+      );
+      if (doc.epoch && doc.author !== "Shoghi Effendi") {
+        itemFactors[index] = getDateFactor(doc.years);
       }
-    });
-  } else {
-    updateIndex(
-      `${index}`,
-      doc.paragraphs.map((para) => (para.quote ? [] : getParts(para))),
-      doc.epoch && doc.author !== "Shoghi Effendi" && doc.years
-    );
-    citationsMap.push({ key: `${index}`, citations: doc.citations });
-  }
+      citationsMap.push({ doc: index, para: i, citations: para.citations });
+    } else {
+      itemLengths[index][i] = getParts(para).flatMap((part) =>
+        getTokens(part.text)
+      ).length;
+    }
+  });
 });
 for (const k of Object.keys(counts)) {
   if (counts[k] === 1) delete counts[k];
@@ -258,14 +246,20 @@ await Promise.all([
   ),
   fs.writeFile(`./data/counts.json`, JSON.stringify(counts), "utf-8"),
   fs.writeFile(`./data/factors.json`, JSON.stringify(itemFactors), "utf-8"),
+  fs.writeFile(`./data/lengths.json`, JSON.stringify(itemLengths), "utf-8"),
   fs.writeFile(
     `./data/initial.json`,
     JSON.stringify(
       citationsMap
-        .map((c) => ({ ...c, score: (c.citations || 0) * itemFactors[c.key] }))
-        .sort((a, b) => b.score - a.score || a.key.localeCompare(b.key))
+        .map((c) => ({
+          ...c,
+          score:
+            ((c.citations || 0) * (itemFactors[c.doc] || 1)) /
+            Math.pow(Math.max(itemLengths[c.doc][c.para], 80), 0.75),
+        }))
+        .sort((a, b) => b.score - a.score || a.doc - b.doc || a.para - b.para)
         .slice(0, 50)
-        .map((a) => getDocByKey(data, a.key))
+        .map((d) => getDocByKey(data, d.doc, d.para))
     ),
     "utf-8"
   ),
