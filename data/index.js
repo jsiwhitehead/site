@@ -166,7 +166,11 @@ data.forEach(({ id }, index) => {
 });
 for (const k of Object.keys(counts)) {
   if (counts[k] === 1) delete counts[k];
-  //   if (doublesCounter[k] > 50) searchIndex.delete(k);
+  if (k.includes("_") && counts[k] > 50) {
+    // console.log(k, counts[k]);
+    searchIndex.delete(k);
+    delete counts[k];
+  }
 }
 
 // console.log(
@@ -179,42 +183,23 @@ for (const k of Object.keys(counts)) {
 // );
 
 const topPairs = {};
-// let topPairKeys = ["cluster", "love"].map((w) => getTokens(w)[0]);
-// while (topPairKeys.length > 0) {
-// console.log(JSON.stringify(topPairKeys));
-// for (const k of topPairKeys) topPairs[k] = [];
 for (const [key, count] of tokenPairs.entries()) {
   if (count > 1) {
     const [k1, k2] = key.split("_");
-    // if (topPairKeys.includes(k1)) {
     if (!topPairs[k1]) topPairs[k1] = [];
     topPairs[k1].push({
       key: k2,
       word: getStemWord(k2),
       score: count / (tokenTotals[k1] + tokenTotals[k2]),
     });
-    // }
-    // if (topPairKeys.includes(k2)) {
     if (!topPairs[k2]) topPairs[k2] = [];
     topPairs[k2].push({
       key: k1,
       word: getStemWord(k1),
       score: count / (tokenTotals[k1] + tokenTotals[k2]),
     });
-    // }
   }
 }
-//   const newKeys = new Set();
-//   for (const k of topPairKeys) {
-//     topPairs[k] = topPairs[k]
-//       .sort((a, b) => b.score - a.score)
-//       .filter((a) => a.score > 0.1);
-//     for (const x of topPairs[k]) {
-//       if (!topPairs[x.key]) newKeys.add(x.key);
-//     }
-//   }
-//   topPairKeys = [...newKeys];
-// }
 
 const searchIndexObject = {};
 for (const [k, v] of searchIndex.entries()) {

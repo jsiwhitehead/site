@@ -7,12 +7,12 @@ export default (text, onStem) => {
   if (!text) return [];
   const words = text
     .toLowerCase()
+    .replace(/[’']s\b/g, "")
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .normalize("NFC")
     .replace(/-/g, "‑")
     .replace(/—/g, " ")
-    .replace(/[’']s\b/g, "")
     .replace(/[^ a-z0-9‑]/g, "")
     .split(/ +/g)
     .flatMap((s) => (s.includes("‑") ? [s, ...s.split(/‑/g)] : [s]))
