@@ -21,7 +21,7 @@ export default (text, onStem) => {
   return words.map((w) => {
     const res = stem(w);
     if (res[0] === "*") {
-      const m = doubleMetaphone(res)[0];
+      const m = [...new Set(doubleMetaphone(res))].join("|");
       if (onStem) onStem(w, m);
       return m;
     }

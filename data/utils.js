@@ -158,7 +158,7 @@ export const compileParagraph = (data, para, withFirst) => {
 };
 
 export const getParagraphText = (para) => {
-  if (para.section) return para.title || "";
+  if (para.section) return para.title || "* * *";
   if (!para.lines) return para.parts.map((p) => p.text).join("");
   return para.lines.map((parts) => parts.map((p) => p.text).join("")).join(" ");
 };

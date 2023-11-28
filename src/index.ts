@@ -63,7 +63,7 @@ const searchAtom = atom([]);
 const compiled = maraca(
   {
     // document: (id) => getDocument(data, id),
-    passages: (search) => {
+    passages: (search, filter) => {
       clearTimeout(searchTimer);
 
       const baseTokens = getTokens(search);
@@ -74,12 +74,13 @@ const compiled = maraca(
         searchTimer = setTimeout(() => {
           Promise.all([$data, $searchIndex]).then(([data, searchIndex]) => {
             const tokens = baseTokens.map((t) =>
-              searchIndex[t] ? t : doubleMetaphone(t)[0]
+              searchIndex[t] ? t : [...new Set(doubleMetaphone(t))].join("|")
             );
             const docs = getSearchDocs(
               data.default,
               searchIndex.default,
-              tokens
+              tokens,
+              filter
             );
             searchAtom.set(docs.map((d) => highlightDoc(d, tokens)));
           });

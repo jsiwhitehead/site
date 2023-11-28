@@ -1,5 +1,6 @@
 {
   search:: ''
+  filter:: 'All Writings and Prayers'
   ~
   [
     font: 'Atkinson Hyperlegible, sans-serif'
@@ -41,11 +42,24 @@
             if i = 1 (s) else ', {s}'
           }
         ]
+        [
+          pad: [5, 10]
+          options: [
+            'All Writings and Prayers',
+            'All Prayers',
+            'Bahá’u’lláh',
+            'The Báb',
+            '‘Abdu’l‑Bahá',
+            'Shoghi Effendi',
+            'The Universal House of Justice'
+          ]
+          input: filter
+        ]
       ]
       [
         gap: 40
         ~
-        for passage in passages(search) {
+        for passage in passages(search, filter) {
           [
             gap: 25
             position: 'center'

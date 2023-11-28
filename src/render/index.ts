@@ -23,6 +23,7 @@ const updateChildren = (node, children) => {
 const getTag = ($values) => {
   // if (resolve($values.image)) return "img";
   // if (resolve($values.link)) return "a";
+  if ($values.options) return "select";
   if ($values.input) return "input";
   return resolve($values.tag) || "div";
 };
@@ -110,12 +111,27 @@ const updateNode = (effect, node, data, prevContext) => {
   });
 
   effect((effect) => {
-    updateChildren(
-      next,
-      items
-        .map((x, i) => updateNode(effect, next.childNodes[i], x, context))
-        .filter((x) => x)
-    );
+    if (tag === "select") {
+      const value = resolve(data.values.input);
+      const options = resolve(data.values.options).items;
+      if (!options.includes(value)) options.unshift("");
+      next.replaceChildren(
+        ...options.map((opt) => {
+          const n = document.createElement("option");
+          n.text = opt;
+          n.value = opt;
+          if (opt === value) n.selected = true;
+          return n;
+        })
+      );
+    } else {
+      updateChildren(
+        next,
+        items
+          .map((x, i) => updateNode(effect, next.childNodes[i], x, context))
+          .filter((x) => x)
+      );
+    }
   });
 
   return next;

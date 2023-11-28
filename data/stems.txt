@@ -1,60 +1,60 @@
 : erred, erring, hawaii, heri, ihis, ioas, iowa
 
-0: athos, tha, thai
+0K|TK: ithaca, thacher
 
-0K: ithaca, thacher
+0LM|TLM: thelma
 
-0L: ethel, thule, thyolo
+0LNT|TLNT: thailand
 
-0LM: thelma
+0L|TL: ethel, thule, thyolo
 
-0LNT: thailand
+0MN|TMN: uthman, uthmaniyyih
 
-0M: athim
+0M|TM: athim
 
-0MN: uthman, uthmaniyyih
+0NNLSPN|TNNLSPN: thonon‑les‑bains
 
-0N: ithna, thani
+0NN|TNN: thonon
 
-0NN: thonon
+0NSS|TNSS: athanasius
 
-0NNLSPN: thonon‑les‑bains
+0NXR|TNXR: ithna‑ashariyyih
 
-0NSS: athanasius
+0N|TN: ithna, thani
 
-0NXR: ithna‑ashariyyih
+0PN|TPN: ethiopian, ethiopians
 
-0P: ethiopia
+0PSKN|TPSKN: athabascan
 
-0PN: ethiopian, ethiopians
+0PTSRFSTN|TPTSRFSTN: thabit‑sarvistani
 
-0PSKN: athabascan
+0PT|TPT: thabit
 
-0PT: thabit
+0P|TP: ethiopia
 
-0PTSRFSTN: thabit‑sarvistani
+0RNPRKKRP|TRNPRKKRP: thornburgh‑cropper
 
-0RNPRK: thornburgh
+0RNPRK|TRNPRK: thornburgh
 
-0RNPRKKRP: thornburgh‑cropper
+0RNTN|TRNTN: thornton
 
-0RNTN: thornton
+0RP|TRP: yathrib
 
-0RP: yathrib
+0RSN|TRSN: thoresen
 
-0RSN: thoresen
+0|T: athos, tha, thai
 
 F: avih, foo, haifa, iva, ives, vali, valis, vuyiya, yuva
 
-F0: fath, fathe, fath‑ali
+F0K|FTK: vuthqa
 
-F0K: vuthqa
+F0LHKM|FTLHKM: fathullah‑i‑qumi
 
-F0L: fathullah
+F0L|FTL: fathullah
 
-F0LHKM: fathullah‑i‑qumi
+F0SM|FTSM: fathe‑aazam
 
-F0SM: fathe‑aazam
+F0|FT: fath, fathe, fath‑ali
 
 FF: vafa, vafai, vav
 
@@ -64,11 +64,11 @@ FH: fayha
 
 FHT: vahid, vahids
 
-FJ: fiji
-
 FJN: fijian
 
 FJTN: vujdani
+
+FJ|F: fiji
 
 FK: afaqi, efik, fuego, vikings
 
@@ -180,13 +180,13 @@ FPKRSN: vahhab‑i‑khurasani
 
 FR: avarih, faroe, faroes, furu, furuhi, hoover, vera
 
-FRJ: faraj
-
 FRJL: farajullah
 
-FRJN: virginia
+FRJN|FRKN: virginia
 
-FRJT: firayjat
+FRJT|FRHT: firayjat
+
+FRJ|FR: faraj
 
 FRK: farrukh, faruqi, furughi, furughiyyih, varqa, varqaiyyih
 
@@ -220,7 +220,7 @@ FRNK: farangi, farhangi, france, francis, franco, francs
 
 FRNKFRT: frankfurt, frankfurter
 
-FRNKKRMN: franco‑german
+FRNKKRMN|FRNKJRMN: franco‑german
 
 FRNKLN: franklin
 
@@ -236,15 +236,15 @@ FRNNTS: fernandez
 
 FRNS: franz
 
-FRNSSJSF: francis‑joseph
+FRNSSJSF|FRNSSHSF: francis‑joseph
 
 FRNSSK: francesco, francisco
 
-FRNX: french
+FRNXKNTN|FRNKKNTN: french‑canadian
 
-FRNXKNTN: french‑canadian
+FRNXMN|FRNKMN: frenchman
 
-FRNXMN: frenchman
+FRNX|FRNK: french
 
 FRP: farabi, ferraby
 
@@ -262,13 +262,13 @@ FRSL: versailles
 
 FRSM: farzam
 
-FRSN: frisian
-
 FRSNK: farsang
+
+FRSN|FRXN: frisian
 
 FRST: farzad
 
-FRT: euphrates, faraid, farhad, farid, ferretti, firdaws, fred, verde
+FRT: euphrates, faraid, farhad, farid, ferretti, fred, verde
 
 FRTN: firaydun, freetown, furutan
 
@@ -278,11 +278,13 @@ FRTP: avoirdupois
 
 FRTRK: frederick
 
-FRTRX: friedrich
+FRTRX|FRTRK: friedrich
 
 FRTS: firdawsi, firdawsiyyih
 
-FRTSN: ferdosian
+FRTSN|FRTXN: ferdosian
+
+FRT|FRTF: firdaws
 
 FRX: farashah, farrash, farrashes, furush
 
@@ -294,9 +296,11 @@ FSF: vis‑a‑vis
 
 FSL: feisal
 
-FSN: avicenna, fezzan, fizan
+FSN: avicenna, fizan
 
 FSNT: vicente
+
+FSN|FTSN: fezzan
 
 FSR: vazir, vazirs, vizir, vizirs
 
@@ -348,11 +352,11 @@ FTTNHM: vahdat‑nihami
 
 FTTPXR: vahdat‑i‑bashar
 
-FX: afchih
-
 FXN: afshin
 
 FXXX: vashshash
+
+FX|FK: afchih
 
 H: ohio, yahya, yahyay
 
@@ -360,9 +364,7 @@ HNSLRN: hohenzollern
 
 HTRP: yahyay‑i‑darabi
 
-J: haji, hajis, hujahs
-
-J0R: jethro
+J0R|JTR: jethro
 
 JF: jaffa, java
 
@@ -370,9 +372,11 @@ JFHRL: javahirul
 
 JFHRLSRR: javahirul‑asrar
 
-JFN: giovanni, javan, juvayni
+JFN: javan, juvayni
 
 JFNMRT: javan‑mard
+
+JFN|KFN: giovanni
 
 JFR: jafar, jafariyyih
 
@@ -396,7 +400,7 @@ JHF: jehovah
 
 JHL: jahiliyyih
 
-JHNJR: jahangir
+JHNJR|JHNKR: jahangir
 
 JHNSPRK: johannesburg
 
@@ -404,7 +408,7 @@ JHP: jeehoba
 
 JHXFT: jehoshaphat
 
-JJ: hajj, hajjih
+JJ: hajjih
 
 JJT: hujjat
 
@@ -412,7 +416,9 @@ JJTL: hujjatul
 
 JJTLLM: hujjatul‑islam
 
-JK: giachery, jack, jacks, juk
+JJ|J: hajj
+
+JK: jack, jacks, juk
 
 JKP: jacob
 
@@ -424,7 +430,9 @@ JKRT: jakarta
 
 JKSN: jackson
 
-JL: gila, gill, jahl, joel, julia
+JK|KK: giachery
+
+JL: jahl, joel, julia
 
 JLF: julfa
 
@@ -440,17 +448,23 @@ JLLTL: jalalud‑dawlih
 
 JLLTPRS: jalil‑i‑tabrizi
 
-JLN: gilan, julian
+JLN: julian
 
-JLPRT: gilbert
+JLN|KLN: gilan
+
+JLPRT|KLPRT: gilbert
 
 JLR: jhalawar
 
 JLS: julius
 
-JLSLT: gill‑slits
+JLSLT|KLSLT: gill‑slits
 
-JLT: gilded, juliet
+JLT: juliet
+
+JLT|KLT: gilded
+
+JL|KL: gila, gill
 
 JM: james, jamia, jim, jumih
 
@@ -472,9 +486,9 @@ JMPSR: jumih‑bazar
 
 JMR: jamrah
 
-JMT0: jamadiyuth
+JMT00N|JMTTTN: jamadiyuth‑thani
 
-JMT00N: jamadiyuth‑thani
+JMT0|JMTT: jamadiyuth
 
 JMTL: jamadiyul
 
@@ -482,11 +496,11 @@ JMTLF: jamadiyul‑avval
 
 JMXT: jamshid
 
-JMXTKRJ: jamshid‑i‑gurji
+JMXTKRJ|JMXTKR: jamshid‑i‑gurji
 
 JN: hajiyan, jan, jane, jani, jean, jennings, jinn, joan, john, jones, juan
 
-JNF: geneva
+JNF|KNF: geneva
 
 JNK: zhang
 
@@ -506,7 +520,7 @@ JNPFTL: jinab‑i‑fadil
 
 JNPFTLMSNTRN: jinab‑i‑fadil‑i‑mazandarani, jinab‑i‑fadil‑i‑mazindarani
 
-JNPHJ: jinab‑i‑haji
+JNPHJ|JNPH: jinab‑i‑haji
 
 JNPHSN: jinab‑i‑husayn
 
@@ -570,9 +584,9 @@ JNR: janeiro
 
 JNS: zhinus
 
-JNTRM: gendarmes
+JNTRM|KNTRM: gendarmes
 
-JNX: genscher
+JNX|KNX: genscher
 
 JP: hajib
 
@@ -594,21 +608,23 @@ JPNS: japanese
 
 JPR: hajipur, jabir
 
-JPT: egypt, hajibud, jibt
+JPT: hajibud, jibt
 
 JPTL: hajibud‑dawlih
 
-JPXN: egyptian, egyptians
+JPT|KPT: egypt
 
-JR: azhar, hegira, hijra
+JPXN|KPXN: egyptian, egyptians
 
-JRJ: georgia
+JR: azhar, hijra
 
-JRJN: georgian
+JRJN|KRKN: georgian
 
-JRK: george
+JRJ|KRK: georgia
 
-JRKTN: georgetown
+JRKTN|KRKTN: georgetown
+
+JRK|KRK: george
 
 JRM: jahrum, jahrumi, jeremiah
 
@@ -620,31 +636,37 @@ JRS: jersey
 
 JRSLM: jerusalem
 
-JRTN: giordano, jordan
+JRTN: jordan
 
-JRX: jericho
+JRTN|KRTN: giordano
 
-JS: hijaz, jaz, jesse, jose
+JRX|JRK: jericho
 
-JSF: josef, joseph
+JR|KR: hegira
 
-JSFLK: joseph‑like
+JS: jaz, jesse
 
-JSFN: josephine
+JSFLK|HSFLK: joseph‑like
 
-JSFS: josephus
+JSFN|HSFN: josephine
 
-JSN: giesswein
+JSFS|HSFS: josephus
+
+JSF|HSF: josef, joseph
+
+JSN|KSN: giesswein
 
 JSP: jessup
 
 JSR: jaziriy
 
-JSRFL: geyserville
+JSRFL|KSRFL: geyserville
 
-JSRKTR: jaziriy‑i‑khadra
+JSRKTR|JTSRKTR: jaziriy‑i‑khadra
 
-JT: geddes, gita, jaddih, jowett, jud, judah, judas, judea
+JS|HS: hijaz, jose
+
+JT: jaddih, jowett, jud, judah, judas, judea
 
 JTN: ajudan
 
@@ -652,17 +674,23 @@ JTNPX: ajudan‑bashi
 
 JTSM: judaism
 
+JT|KT: geddes, gita
+
 JX: joshua
 
 JXN: jawshan
 
-K: acca, aegis, akka, aqa, aqay, cali, haggai, hague, haqq, hoagg, kaiser, kee, kha, khayli, khui, khuy, kuh, kuli, kyuy, qays, ugo
+J|: haji, hajis
 
-K0: cathay, keith, kith
+J|H: hujahs
 
-K0R: guthrie, kawthar
+K: acca, aegis, akka, aqa, aqay, cali, haggai, hague, haqq, hoagg, kee, kha, khayli, khui, khuy, kuh, kuli, kyuy, qays, ugo
 
-K0SMN: gethsemane
+K0R|KTR: guthrie, kawthar
+
+K0SMN|KTSMN: gethsemane
+
+K0|KT: cathay, keith, kith
 
 KF: caiaphas, kaf, kafi, kiev, kofi, kufih, qaf, qahvih, waqf, waqfs
 
@@ -680,7 +708,7 @@ KFR: ghaffar, ghafray, khavar
 
 KFRKN: kevorkian
 
-KFX: qahvih‑chi
+KFX|KFK: qahvih‑chi
 
 KHKF: kuh‑i‑qaf
 
@@ -698,9 +726,9 @@ KJNK: kajang
 
 KJNT: khujand
 
-KJR: qajar, qajars
-
 KJRT: gujrati
+
+KJR|KHR: qajar, qajars
 
 KK: caicos, cauca, gog, haqiqi, huquq, kuching
 
@@ -708,17 +736,19 @@ KKL: guayaquil, huququllah
 
 KKLM: aqay‑i‑kalim
 
-KKLN: quaglino
+KKLN|KLN: quaglino
 
 KKM: kigoma
 
 KKN: cagayan, kegan
 
-KKS: caucasia, caucus
+KKS: caucus
 
 KKSS: caucasus
 
 KKSTN: caxton
+
+KKS|KKX: caucasia
 
 KKTK: aguacateca
 
@@ -740,9 +770,9 @@ KLHFRNK: kulah‑i‑farangi
 
 KLHM: oklahoma
 
-KLJ: cluj
-
 KLJPT: khalajabadi
+
+KLJ|KL: cluj
 
 KLK: khaliq
 
@@ -800,9 +830,11 @@ KLRNTN: clarendon
 
 KLRT: colorado
 
-KLS: kalazoo, kilisa
+KLS: kilisa
 
 KLSPSFR: quliy‑i‑sabzivari
+
+KLS|KLTS: kalazoo
 
 KLT: claudia, haykalut, kaldih, khalid, khalidiyyih, kullut, qullut
 
@@ -818,7 +850,7 @@ KLTT: haykalut‑tawhid
 
 KLX: ghoulishly, kull‑i‑shay
 
-KM: guam, guaymi, hakim, kawmu, khayyam, khumm, qaim, qayyum, qum, qumi
+KM: guam, guaymi, hakim, khayyam, khumm, qaim, qayyum, qum, qumi
 
 KMKM: qaim‑maqam, qaim‑maqams
 
@@ -848,7 +880,7 @@ KMPNK: kampong
 
 KMPRTK: cambridge
 
-KMPS: kambiz
+KMPS|KMPTS: kambiz
 
 KMPT: cambodia
 
@@ -862,17 +894,17 @@ KMRKKLS: qumruq‑kilisa
 
 KMRN: cameroon, kamran
 
-KMS: khamsi, khamsih
+KMS: kawmus, khamsi, khamsih
 
 KMSM: qayyum‑i‑asma
 
 KMSR: qamsar
 
-KMST: kawmu‑saayidih
+KMST: kawmus‑saayidih
 
 KMT: comte, hikmat
 
-KN: agnew, cain, canoas, cowan, ghana, guiana, guianas, guinea, guinee, guney, guyana, haakon, iqan, kanawa, kani, kenya, kenyah, khan, khani, khanih, khanis, khans, khun, kiani, kinney, kun, qain, qaini, yahgan, yukon
+KN: cain, canoas, cowan, ghana, guiana, guianas, guinea, guinee, guney, guyana, haakon, iqan, kanawa, kani, kenya, kenyah, khan, khani, khanih, khanis, khans, khun, kiani, kinney, kun, qain, qaini, yahgan, yukon
 
 KNFMT: khan‑i‑avamid
 
@@ -896,7 +928,7 @@ KNKRMN: khan‑i‑kirmani
 
 KNKS: kiangsu
 
-KNKSFN: khan‑i‑qazvini
+KNKSFN|KNKTSFN: khan‑i‑qazvini
 
 KNKSTN: kingston, kingstown
 
@@ -928,7 +960,7 @@ KNPS: guinea‑bissau
 
 KNR: khianra, kinar
 
-KNRJRT: kinar‑gird
+KNRJRT|KNRKRT: kinar‑gird
 
 KNRP: khan‑i‑arab
 
@@ -962,9 +994,11 @@ KNX: kenosha
 
 KNXFRT: khan‑i‑shavirdi
 
-KNXNPR: kanchanpur
+KNXNPR|KNKNPR: kanchanpur
 
 KNXS: kinshasa
+
+KN|KNF: agnew
 
 KP: cobb, cuba, ekpe, kaaba, kab, kabih, kappes, khub, yaqub, yukpa
 
@@ -978,7 +1012,7 @@ KPMTHT: yaqub‑i‑muttahidih
 
 KPN: cuban, gabon, gobineau
 
-KPNJN: copenhagen
+KPNJN|KPNKN: copenhagen
 
 KPP: kabab
 
@@ -1002,21 +1036,21 @@ KPTLN: capitolina
 
 KPTN: kebdani
 
-KR: accra, achor, agra, akhir, cairo, cor, gawhar, ghari, ghawr, ghayur, gyawur, hagar, khar, kiri, korah, korea, kray, kurr, qarih, qurra, ukhra
+KR: accra, achor, agra, akhir, cairo, cor, gawhar, ghari, ghawr, ghayur, hagar, khar, kiri, korah, korea, kray, kurr, qarih, qurra, ukhra
 
-KR0JNN: carthaginian
+KR0JNN|KRTKNN: carthaginian
 
 KRFN: craven
 
 KRHM: graham
 
-KRJ: gurji, karaj
+KRJN|KRKN: gurgin
 
-KRJN: gurgin
+KRJSSTN|KRKTSSTN: kyrgyzstan
 
-KRJSSTN: kyrgyzstan
+KRJ|KR: gurji, karaj
 
-KRK: curacao, greece, greek, greeks, gyawur‑kyuy, karachi, karkh, khayrkhah, khirqiy, kruka
+KRK: curacao, greece, greek, greeks, karachi, karkh, khayrkhah, khirqiy, kruka
 
 KRKHR: qarih‑kahar
 
@@ -1026,13 +1060,15 @@ KRKL: caracollo
 
 KRKN: gurgan
 
-KRKPSS: aqay‑i‑rikab‑saz
+KRKPSS|KRKPSTS: aqay‑i‑rikab‑saz
 
 KRKR: gregory
 
 KRKRN: gregorian
 
 KRKXRF: khirqiy‑i‑sharif
+
+KRK|JRK: gyawur‑kyuy
 
 KRL: carol, karl, khayrullah, koirala
 
@@ -1050,15 +1086,17 @@ KRML: carmel, karmil
 
 KRMLT: carmelite
 
-KRMN: carmen, crimean, germain, german, germane, germanic, germans, germany, kerman, kermani, kirman, kirmani
+KRMN: carmen, crimean, kerman, kermani, kirman, kirmani
 
-KRMNS: germanus
+KRMNS|JRMNS: germanus
 
 KRMNX: kirmanshah, kirmanshahi
 
+KRMN|JRMN: germain, german, germane, germanic, germans, germany
+
 KRN: aguaruna, akron, carina, carney, corinne, korean, koreans, krans, qarun, quran, quranic, ukraine
 
-KRN0N: corinthian, corinthians
+KRN0N|KRNTN: corinthian, corinthians
 
 KRNFL: granville
 
@@ -1082,7 +1120,7 @@ KRPL: karbila, karbilai
 
 KRPN: caribbean, qurban, qurban‑ali
 
-KRPRT: gerbert
+KRPRT|JRPRT: gerbert
 
 KRPT: corbet, kharput, kiribati
 
@@ -1106,7 +1144,7 @@ KRTF: cordova
 
 KRTJ: karadja
 
-KRTJN: cartagena
+KRTJN|KRTKN: cartagena
 
 KRTL: qurratul
 
@@ -1130,19 +1168,21 @@ KRXN: krishna, qurrat‑i‑ayni
 
 KRXT: khurshid, khurshid‑i
 
+KR|JR: gyawur
+
 KS: aqasi, aqsa, cuso, ghazi
 
 KSF: ex‑vali
 
 KSFN: qazvin, qazvini
 
-KSFRNX: ex‑french
+KSFRNX|KSFRNK: ex‑french
 
 KSFRT: oxford
 
 KSKLNT: aguascalientes
 
-KSKSTN: kazakhstan
+KSKSTN|KTSKSTN: kazakhstan
 
 KSKT: ex‑khedive
 
@@ -1154,17 +1194,19 @@ KSLFN: yugoslavians
 
 KSLSP: khasail‑i‑sabih
 
-KSM: kassimi, kazemi, kazim, kazims, qasim
+KSM: kassimi, qasim
 
 KSML: cozumel
 
-KSMN: kazimayn
+KSMN|KTSMN: kazimayn
 
-KSMRXT: kazim‑i‑rashti
+KSMRXT|KTSMRXT: kazim‑i‑rashti
 
-KSMSNJN: kazim‑i‑zanjani
+KSMSNJN|KTSMTSNJN: kazim‑i‑zanjani
 
-KSN: aghsan, caissons, ghazna, ghusn, kazan
+KSM|KTSM: kazemi, kazim, kazims
+
+KSN: aghsan, caissons, ghazna, ghusn
 
 KSNF: ghaznavi
 
@@ -1176,15 +1218,17 @@ KSNN: ghusnan
 
 KSNSM: ghusn‑i‑azam
 
-KSP: kaszab
+KSN|KTSN: kazan
 
 KSPH: quasi‑bahai
 
-KSPLJN: ex‑belgian
+KSPLJN|KSPLKN: ex‑belgian
 
 KSPN: caspian
 
-KSR: khusraw
+KSP|KXP: kaszab
+
+KSR|KSRF: khusraw
 
 KSS: oxus
 
@@ -1216,7 +1260,7 @@ KTKT: kadkhudas, kad‑khuda, kad‑khudas
 
 KTL: catulle, goodall, katuyola
 
-KTLJR: guadalajara
+KTLJR|KTLHR: guadalajara
 
 KTLNT: gotland
 
@@ -1244,7 +1288,7 @@ KTPKN: kitab‑i‑iqan
 
 KTPKT: kitab‑iaqdas, kitab‑i‑aqdas
 
-KTPKXKXN: khuda‑bakhsh‑i‑quchani
+KTPKXKXN|KTPKXKKN: khuda‑bakhsh‑i‑quchani
 
 KTPL: kitabul
 
@@ -1294,33 +1338,39 @@ KXF: kashfi, kashifi
 
 KXFNJFPT: kashifi‑najafabadi
 
-KXK: kaishek, kashk, kuchik
+KXK: kaishek, kashk
 
 KXKL: kashkul
 
-KXKXKMX: kuchik‑chakmachih
+KXKXKMX|KKKKKMK: kuchik‑chakmachih
+
+KXK|KKK: kuchik
 
 KXLK: qishlaq
 
 KXMR: kashmir, kashmiri
 
-KXN: kashan, kashani, kashanih, kitchener, quchani
+KXN: kashan, kashani, kashanih, kitchener
 
-KXPMP: cochabamba
+KXN|KKN: quchani
+
+KXPMP|KKPMP: cochabamba
 
 KXR: qishri
 
 KXXHT: akhush‑shahid
 
-L: ala, alai, alas, ali, aliy, allah, ayala, elias, ella, ellis, eloy, heloise, hilli, hillih, holley, iel, ilahi, iyalih, lae, lao, laos, lawh, lee, leo, lewis, louis, lua, oelia, olyai, oule, wales
+K|KS: kaiser
 
-L0: llth, luther
+L: ala, alai, alas, ali, aliy, allah, ayala, elias, ella, ellis, eloy, hilli, hillih, holley, iel, ilahi, iyalih, lae, lao, laos, lawh, lee, leo, louis, lua, oelia, olyai, oule, wales
 
-L0N: lathenee, lithuania
+L0NN|LTNN: lithuanian
 
-L0NN: lithuanian
+L0N|LTN: lathenee, lithuania
 
-L0RN: lutheran, lutherans
+L0RN|LTRN: lutheran, lutherans
+
+L0|LT: llth, luther
 
 LF: alif, liva
 
@@ -1358,15 +1408,17 @@ LHR: allah‑yar, lahore, lawh‑i‑huriyyih
 
 LHRFT: lawh‑i‑hurufat
 
-LHTJ: lawh‑i‑hawdaj
+LHTJ|LHT: lawh‑i‑hawdaj
 
-LJ: elijah, loggia, loggias
+LJMN|LKMN: allgemeine
 
-LJMN: allgemeine
-
-LJN: ali‑jan
+LJN|LHN: ali‑jan
 
 LJR: al‑azhar
+
+LJ|LH: elijah
+
+LJ|LK: loggia, loggias
 
 LK: algiers, ali‑kuli, ali‑quli, ellice, hulagu, lagos, lucas, luigi, luke, olga, wlgi
 
@@ -1376,17 +1428,19 @@ LKMN: luqman
 
 LKMT: lakhmite
 
-LKN: aliy‑i‑kani, ilkhani, il‑khan, lucknow
+LKN: aliy‑i‑kani, ilkhani, il‑khan
+
+LKN|LKNF: lucknow
 
 LKPR: ali‑akbar
 
-LKPRKXN: ali‑akbar‑i‑quchani
+LKPRKXN|LKPRKKN: ali‑akbar‑i‑quchani
 
 LKPRNKJFN: ali‑akbar‑i‑nakhjavani
 
-LKPRXMRST: ali‑akbar‑i‑shahmirzadi
+LKPRXMRST|LKPRXMRTST: ali‑akbar‑i‑shahmirzadi
 
-LKR: algeria, aligarh
+LKR: aligarh
 
 LKRKS: lycurgus
 
@@ -1395,6 +1449,8 @@ LKRML: lawh‑i‑karmil
 LKRMNX: aliy‑i‑kirmanshahi
 
 LKRX: lucretia
+
+LKR|LJR: algeria
 
 LKSMPRK: luxembourg
 
@@ -1430,15 +1486,15 @@ LMHL: allamiy‑i‑hilli
 
 LMHMT: ali‑muhammad
 
-LMJ: limji
+LMJ|LM: limji
 
 LMKST: lawh‑i‑maqsud
 
 LMNKTN: lamington
 
-LMNKX: lawh‑i‑manikchi
+LMNKX|LMNKK: lawh‑i‑manikchi
 
-LMPNX: lamp‑niche
+LMPNX|LMPNK: lamp‑niche
 
 LMPR: lumpur
 
@@ -1458,7 +1514,7 @@ LMXR: islam‑shahr
 
 LN: alan, allen, elena, helen, helena, ileana, ilhan, illinois, leone, ulaan, ulan
 
-LNJNN: langenhain
+LNJNN|LNKNN: langenhain
 
 LNK: lanka, lengua, leong, olinga
 
@@ -1514,7 +1570,7 @@ LPSTM: aliy‑i‑bastami
 
 LR: laura, lawhur, lawhur‑ruh, lawh‑i‑rais, lawh‑i‑ruya, leroux, leroy, lur, lurs, oloro
 
-LRJN: larijan, larijani
+LRJN|LRHN: larijan, larijani
 
 LRNT: lawrence
 
@@ -1524,7 +1580,7 @@ LRTFN: lawhur‑ridvan
 
 LS: alusi, ileus, las, lasse, lawh‑i‑sayyah, les, los, louisa, louise, lucia
 
-LS0: lesotho
+LS0|LST: lesotho
 
 LSK: alaska, lusaka
 
@@ -1534,13 +1590,13 @@ LSKR: ali‑asghar, ali‑askar
 
 LSKRMLN: ali‑asghar‑i‑milani
 
-LSKRTPRS: ali‑askar‑i‑tabrizi
+LSKRTPRS|LSKRTPRTS: ali‑askar‑i‑tabrizi
 
 LSLFTR: el‑salvador
 
 LSLTN: lawh‑i‑sultan
 
-LSN: louisiana, wilson
+LSN: wilson
 
 LSNJN: aliy‑i‑zanjani
 
@@ -1549,6 +1605,8 @@ LSNK: helsinki
 LSNKFR: helsingfors
 
 LSNN: wilsonian
+
+LSN|LXN: louisiana
 
 LSP: elizabeth
 
@@ -1562,9 +1620,11 @@ LSRS: lazarus
 
 LSS: laicization
 
-LST: alizadih, al‑awsat, lisiate
+LST: alizadih, al‑awsat
 
 LSTR: alistair
+
+LST|LXT: lisiate
 
 LT: aleuts, aliyat, lawhut, lidia, lloyd, yaldai
 
@@ -1594,17 +1654,21 @@ LXM: lutchmaya
 
 LXN: aleutian, aleutians
 
+L|LF: lewis
+
+L|LS: heloise
+
 M: ama, amalie, ameer, ammu, amos, amu, ayyam, homer, mah, mali, maya, meyer, myers, umm, wyoming, yawm, yimou
 
-M0: mathew, mathews, matthew
+M0KL|MTKL: mithqal, mithqals
 
-M0K: mithaqi, mithaqiyyih
+M0KN|MTKN: mithaqiyan
 
-M0KL: mithqal, mithqals
+M0K|MTK: mithaqi, mithaqiyyih
 
-M0KN: mithaqiyan
+M0N|MTN: mathani
 
-M0N: mathani
+M0|MTF: mathew, mathews, matthew
 
 MF: muaviyih, muaviyihs
 
@@ -1654,7 +1718,7 @@ MHMTKMTHT: muhammad‑taqiy‑i‑mujtahid
 
 MHMTKN: muhammad‑i‑qaini
 
-MHMTKNJF: muhammad‑taqiy‑i‑najafi
+MHMTKNJF|MHMTKNHF: muhammad‑taqiy‑i‑najafi
 
 MHMTKRM: muhammad‑karim
 
@@ -1732,7 +1796,7 @@ MHNT: mohandas
 
 MHPT: mahabad
 
-MHRJ: maharaja, maharajas
+MHRJ|MHRH: maharaja, maharajas
 
 MHRM: muharram
 
@@ -1740,7 +1804,7 @@ MHRP: muharib
 
 MHT: muhit, muhyid
 
-MHT0N: muhaddithins
+MHT0N|MHTTN: muhaddithins
 
 MHTKRMN: muhit‑i‑kirmani
 
@@ -1750,13 +1814,11 @@ MHTN: muhyid‑din
 
 MHTNRP: muhyid‑din‑i‑arabi
 
-MJ: majlis, mujeres
+MJHTN|MHHTN: mujaheddin
 
-MJHTN: mujaheddin
+MJLN|MKLN: magellan
 
-MJLN: magellan
-
-MJN: emogene
+MJN|MKN: emogene
 
 MJR: majuro
 
@@ -1774,13 +1836,13 @@ MJTTL: majdud‑dawlih
 
 MJTTN: majdid‑din
 
+MJ|M: majlis, mujeres
+
 MK: macau, macy, mah‑ku, maka, makkiyyih, mecca, micah
 
 MKFK: macveagh
 
 MKK: magog
-
-MKL: michael
 
 MKLFLN: mclaughlin
 
@@ -1790,21 +1852,23 @@ MKLNK: mcclung
 
 MKLRN: mclaren
 
+MKL|MXL: michael
+
 MKM: maqam, maqami, maqams, muqimi
 
 MKMPN: muqimi‑abyanih
 
 MKNKL: magonigle
 
-MKNS: mackenzie
+MKNS|MKNTS: mackenzie
 
 MKNT: macnutt
 
 MKP: mawkab
 
-MKR0: mccarthy
+MKR0|MKRT: mccarthy
 
-MKRNS: micronesia
+MKRNS|MKRNX: micronesia
 
 MKRP: muqarrabi
 
@@ -1838,7 +1902,7 @@ MKTSN: muqaddasins
 
 MKTX: mogadishu
 
-ML: amelia, amul, emil, emilia, himalaya, himalayas, imola, mal, malawi, malaya, malih, mulla, mullah, mullahs, mullas, ummal, yawm‑al
+ML: amelia, amul, emil, emilia, himalaya, himalayas, imola, mal, malaya, malih, mulla, mullah, mullahs, mullas, ummal, yawm‑al
 
 MLF: mawlavi, mawlavis
 
@@ -1858,7 +1922,7 @@ MLLN: malyalan
 
 MLN: himalayan, malun, mawlana, melanau, milan, milani, milne
 
-MLNS: melanesia
+MLNS|MLNX: melanesia
 
 MLP: malabo
 
@@ -1866,11 +1930,13 @@ MLPR: mulberry
 
 MLPX: mulla‑bashi
 
-MLS: malaysia
+MLSKT|MLTSKT: ummal‑i‑zakat
 
-MLSKT: ummal‑i‑zakat
+MLSN: malison
 
-MLSN: malaysian, malison
+MLSN|MLXN: malaysian
+
+MLS|MLX: malaysia
 
 MLT: malietoa, malta
 
@@ -1880,9 +1946,11 @@ MLTN: hamilton, malden
 
 MLTS: maltese
 
-MLXLJL: muhlschlegel
+MLXLJL|MLXLKL: muhlschlegel
 
-MLXN: mulchen
+MLXN|MLKN: mulchen
+
+ML|MLF: malawi
 
 MM: imam, imamate, imams, mehmed, miami, mim
 
@@ -1908,23 +1976,23 @@ MMTS: mumtaz, mumtazi
 
 MN: amin, aminu, amman, ammon, ayman, emanu, emmanu, haman, maani, maine, mann, mayans, minu, miyan, muna, oman, umana, yemen
 
-MNJ0: munajathay
+MNJ0SM|MNHTSM: munajathay‑i‑siyam
 
-MNJ0SM: munajathay‑i‑siyam
+MNJ0|MNHT: munajathay
 
 MNJL: manjalo
 
-MNJT: munajat, munajats
+MNJT|MNHT: munajat, munajats
 
 MNK: managua, monaco
 
-MNKJ: manekji
+MNKJ|MNK: manekji
 
 MNKL: mongolia
 
 MNKLN: mongolian
 
-MNKX: manikchi
+MNKX|MNKK: manikchi
 
 MNL: aminul, amin‑i‑ilahi, emanu‑el, emmanuel, emmanu‑el, manila, muinul
 
@@ -1982,7 +2050,7 @@ MNTKTR: mantiqut‑tayr
 
 MNTL: aminud‑dawlih, mandalay, mandela
 
-MNTLJ: mandalij
+MNTLJ|MNTL: mandalij
 
 MNTN: montana
 
@@ -1998,17 +2066,19 @@ MNTRN: mandarin
 
 MNTSRT: montserrat
 
-MNX: mancho, manshiyyih
+MNX: manshiyyih
 
-MNXK: manchukuo
+MNXK|MNKK: manchukuo
 
-MNXR: manchuria, manouchehr, manuchihr, manuchir
+MNXR|MNKR: manchuria, manouchehr, manuchihr, manuchir
 
-MNXST: manchester
+MNXST|MNKST: manchester
 
 MNXT: manshad, manshadi
 
-MP0: mmabatho
+MNX|MNK: mancho
+
+MP0|MPT: mmabatho
 
 MPK: mabuku
 
@@ -2038,7 +2108,7 @@ MPXR: hampshire
 
 MR: amharic, amir, amirs, amr, amur, maori, maoris, maria, marie, marwah, mary, mihr, mihr‑ali, mir, miri, moore, murray, umar, weimar
 
-MR0: martha
+MR0|MRT: martha
 
 MRF: hammerfest
 
@@ -2046,11 +2116,11 @@ MRFN: marvan, marvans
 
 MRFTXT: marvdasht
 
-MRJ: miraj
-
-MRJN0M: mergentheim
+MRJN0M|MRKNTM: mergentheim
 
 MRJR: marjory
+
+MRJ|MR: miraj
 
 MRK: maraghih, maraghii, marques, morocco, murgh
 
@@ -2074,7 +2144,7 @@ MRMR: marmara
 
 MRN: imran, mariana, marianna, marino, marion, murun
 
-MRNJS: mihrangiz
+MRNJS|MRNKS: mihrangiz
 
 MRNSM: amir‑nizam
 
@@ -2126,13 +2196,13 @@ MRTTK: murtada‑quli
 
 MRTTNSR: murtaday‑i‑ansari
 
-MRX: murchih
-
-MRXKR: murchih‑khar
+MRXKR|MRKKR: murchih‑khar
 
 MRXLS: marshallese
 
 MRXT: murshid
+
+MRX|MRK: murchih
 
 MS: hamzih, imsiest, masih, mauser, mce, musa, musay, wemyss
 
@@ -2142,7 +2212,7 @@ MSFRT: muzaffarid
 
 MSFRTN: muzaffarid‑din
 
-MSK: masikh, missagh, moscow
+MSK: masikh, missagh
 
 MSKKN: muskegon
 
@@ -2150,11 +2220,15 @@ MSKKRN: musakhkhirins
 
 MSKM: musay‑i‑qumi
 
-MSKN: mazgan, mazgani, mazkani
+MSKN: mazgan, mazgani
+
+MSKN|MTSKN: mazkani
 
 MSKST: massachusetts
 
 MSKT: masqat
+
+MSK|MSKF: moscow
 
 MSL: masehla, mosul
 
@@ -2170,9 +2244,11 @@ MSM: masum
 
 MSMPK: mozambique
 
-MSN: muezzin, muhsin
+MSN: muhsin
 
 MSNTRN: mazandaran, mazandarani, mazindaran, mazindarani
+
+MSN|MTSN: muezzin
 
 MSP: musayyib
 
@@ -2200,7 +2276,7 @@ MSTFLMMLK: mustawfiyul‑mamalik
 
 MSTFRT: mastai‑ferretti
 
-MSTK0: mustaghath
+MSTK0|MSTKT: mustaghath
 
 MSTKF: masjid‑i‑kufih
 
@@ -2290,27 +2366,27 @@ MTSRF: mutasarrifs, mutisarrif, mutisarrifs
 
 MTT: madad, midhat, umtata
 
-MTTHJ: mihdiy‑i‑dahaji
+MTTHJ|MTTH: mihdiy‑i‑dahaji
 
 MTTN: muadhdhin, muadhdhins
 
 MTTRNN: mediterranean
 
-MTXL: medchal
+MTXL|MTKL: medchal
 
 MTXR: mutasharris
 
-MX: mich
-
-MXKN: michigan, mishkin
+MXKN: mishkin
 
 MXKNKLM: mishkin‑qalam
 
+MXKN|MKKN: michigan
+
 MXL: mashallah, mashaullah
 
-MXLNJL: michelangelo
+MXLNJL|MKLNKL: michelangelo
 
-MXNR: mchenry
+MXNR|MKNR: mchenry
 
 MXR: mushirs
 
@@ -2318,7 +2394,7 @@ MXRK: mashrak
 
 MXRKL: mashriqul
 
-MXRKLSKR: mashrak‑el‑azcar
+MXRKLSKR|MXRKLTSKR: mashrak‑el‑azcar
 
 MXRKLTKR: mashriquladhkar, mashriqul‑adhkar, mashriqul‑adhkars
 
@@ -2330,13 +2406,15 @@ MXT: mahshid, mashhad, mashhadi, mashiyyat
 
 MXTT: ayyam‑i‑shidad
 
-MXTX: michitoshi
+MXTX|MKTX: michitoshi
 
-N: agnes, ainu, anas, anhwei, anis, ann, anna, annas, anne, annie, ayn, ayni, een, ein, haney, hans, hawaiian, hin, hon, inouye, naw, niue, noah, uno, yan, yawning
+MX|MK: mich
 
-N0N: nathan
+N: ainu, anas, anhwei, anis, ann, anna, annas, anne, annie, ayn, ayni, een, ein, haney, hans, hawaiian, hin, hon, inouye, niue, noah, uno, yan, yawning
 
-N0T: hanthawaddy
+N0N|NTN: nathan
+
+N0T|NTT: hanthawaddy
 
 NF: hanifih, nove
 
@@ -2366,21 +2444,21 @@ NHR: nahariya
 
 NHT: nahid
 
-NJ: naji
+NJFLSNJN|NHFLSNJN: najaf‑aliy‑i‑zanjani
 
-NJF: najaf, najafi, najaf‑ali
+NJFPT|NHFPT: najafabad, najafabadi, najaf‑abad, najaf‑abadi
 
-NJFLSNJN: najaf‑aliy‑i‑zanjani
-
-NJFPT: najafabad, najafabadi, najaf‑abad, najaf‑abadi
+NJF|NHF: najaf, najafi, najaf‑ali
 
 NJP: najib, najibiyyih
 
-NJR: nigeria
-
 NJRN: najran
 
+NJR|NKR: nigeria
+
 NJT: najd
+
+NJ|N: naji
 
 NK: enoch, hoehnke, hong, inca, niger, nikko, nuk, ong
 
@@ -2394,9 +2472,11 @@ NKL: angola, nicolas
 
 NKLF: nukualofa
 
-NKLFX: nicolaevich, nicolaevitch
+NKLFX: nicolaevitch
 
-NKLKN: anglican
+NKLFX|NKLFK: nicolaevich
+
+NKLKN|NLKN: anglican
 
 NKLNT: england
 
@@ -2404,7 +2484,7 @@ NKLSKSN: anglo‑saxon
 
 NKLT: englewood, inglewood
 
-NKLXMN: englishman
+NKLXMN|NLXMN: englishman
 
 NKMP: newcomb
 
@@ -2466,7 +2546,7 @@ NMRT: nimrod, nimrods
 
 NMS: namaz
 
-NMSKN: namaz‑khanih
+NMSKN|NMTSKN: namaz‑khanih
 
 NMTL: nimatullah
 
@@ -2510,13 +2590,13 @@ NPRSK: nebraska
 
 NPSLTN: naibu‑saltanih, nayibu‑saltanih
 
-NPXTNSR: nebuchadnezzar
+NPXTNSR|NPKTNTSR: nebuchadnezzar
 
 NR: henry, honiara, nahr, nahri, nair, nauru, nayyiri, norway, nur, nuri
 
-NRJL: nargileh
+NRJL|NRKL: nargileh
 
-NRJN: norwegian
+NRJN|NRKN: norwegian
 
 NRK: naraq, naraqi
 
@@ -2526,19 +2606,21 @@ NRMNT: nirumand
 
 NRP: nairobi
 
-NRS: naw‑ruz, nayriz
+NRS: nayriz
 
-NRS0N: neurasthenia
+NRS0N|NRSTN: neurasthenia
 
 NRSFHN: nayyiri‑isfahani
 
 NRSSS: narcissus
 
+NRS|NRTS: naw‑ruz
+
 NRT: norte, wainwright
 
 NRTK: nordic
 
-NS: anisa, hanza, ignaz, nazi, nice, nissa, niyaz
+NS: anisa, hanza, nazi, nice, nissa, niyaz
 
 NSL: hanzala
 
@@ -2552,9 +2634,9 @@ NSMLLM: nizamul‑ulama
 
 NSMT: nizamud
 
-NSMTL: nizamud‑dawlih
+NSMTL|NTSMTL: nizamud‑dawlih
 
-NSN: insignia
+NSN|NSKN: insignia
 
 NSPN: nisibin
 
@@ -2588,7 +2670,9 @@ NSTRN: nestorians
 
 NSTRS: nestorius
 
-NSTTRX: hans‑dietrich
+NSTTRX|NSTTRK: hans‑dietrich
+
+NS|KNS: ignaz
 
 NT: aeneid, andheri, enayati, hindiyyih, inayati, india, indias, indies, indo, nadi, nadu, naidu, nity, yaounde
 
@@ -2600,7 +2684,7 @@ NTKST: anticosti
 
 NTL: anatolia, antilles, inayatullah, nadler
 
-NTLS: andalusia
+NTLS|NTLX: andalusia
 
 NTMN: andaman
 
@@ -2612,31 +2696,33 @@ NTNP: indianapolis
 
 NTNPRK: hindenburg
 
-NTNS: indonesia
+NTNSN|NTNXN: indonesian
 
-NTNSN: indonesian
+NTNS|NTNX: indonesia
 
 NTP: nudbih
 
 NTPH: anti‑bahai
 
-NTR: andhra, andor, andorra, andrei, andres, andrew, honduras, indira, indore, nadir, nadiri, nadr, ontario
+NTR: andhra, andor, andorra, andrei, andres, honduras, indira, indore, nadir, nadiri, nadr, ontario
 
-NTRPNHR0: nadr‑ibn‑i‑harith
+NTRPNHR0|NTRPNHRT: nadr‑ibn‑i‑harith
 
 NTRSN: henderson
 
 NTRT: niederreiter
 
+NTR|NTRF: andrew
+
 NTSR: windsor
 
 NTST: windust
 
-NTXN: indochina, indo‑china
+NTXN|NTKN: indochina, indo‑china
 
-NX: hainisch, niche
+NX: hainisch
 
-NXL: nicholas
+NXL|NKL: nicholas
 
 NXNT: inshindo
 
@@ -2644,19 +2730,25 @@ NXPR: nishapur
 
 NXRFN: anushirvan, nawshiravan
 
-NXRK: anchorage
+NXRK|NKRK: anchorage
 
-NXRT: anchorites
+NXRT|NKRT: anchorites
+
+NX|NK: niche
+
+N|KN: agnes
+
+N|NF: naw
 
 P: aba, abbas, abha, abu, abu‑ali, apia, appa, ayyub, ayyubi, bagh, bali, bey, bih, hebe, hobbes, hooper, hoopoe, hopper, hupeh, ober, ubayy, wahb, yap
 
-P0: batha
+P0KR|PTKR: pythagoras
 
-P0KR: pythagoras
+P0LHM|PTLHM: bethlehem
 
-P0LHM: bethlehem
+P0|PT: batha
 
-PF0TSN: bophuthatswana
+PF0TSN|PFTTSN: bophuthatswana
 
 PFK: ibavc
 
@@ -2666,7 +2758,9 @@ PFP: abvab, bvp
 
 PFPRP: abvab‑i‑arbaih
 
-PFRT: abivard, abi‑ghafray‑i‑tai, bagh‑i‑firdaws
+PFRT: abivard, abi‑ghafray‑i‑tai
+
+PFRT|PFRTF: bagh‑i‑firdaws
 
 PH: baha, bahai, bahais, bahia, bahiyyih, beha, bihe
 
@@ -2700,21 +2794,21 @@ PHSPNSR: bahai‑sponsored
 
 PHSTTSKPSTS: bahai‑studiescapast‑issues
 
-PJ: bahji, beijing
+PJFRTS|PHFRTS: abu‑jafar‑i‑tusi
 
-PJFR: abu‑jafar
+PJFR|PHFR: abu‑jafar
 
-PJFRTS: abu‑jafar‑i‑tusi
-
-PJL: abu‑jahl
+PJL|PHL: abu‑jahl
 
 PJMPR: bujumbura
 
-PJN: bijan
+PJN|PHN: bijan
 
 PJSTN: bahjestani, bajistani
 
 PJT: abjad
+
+PJ|P: bahji, beijing
 
 PK: baku, bayk, beecher, buyuk, pago, pak, peking
 
@@ -2746,7 +2840,7 @@ PKTT: bagdadi
 
 PKX: bakhsh
 
-PKXKMX: buyuk‑chakmachih
+PKXKMX|PKKKMK: buyuk‑chakmachih
 
 PL: abel, abul, bailey, bala, bolles, boole, boyle, palau, palo, paolo, paul, paulo, pohl, upolu
 
@@ -2764,9 +2858,9 @@ PLFTLKLPKN: abul‑fadl‑i‑gulpaygani
 
 PLHP: abu‑lahab
 
-PLJM: belgium
+PLJM|PLKM: belgium
 
-PLJN: belgian
+PLJN|PLKN: belgian
 
 PLK: baluch, bleck, obloquy
 
@@ -2790,7 +2884,7 @@ PLKSMKRSN: abul‑qasim‑i‑khurasani
 
 PLKSMKX: abul‑qasim‑i‑kashi
 
-PLKSMMSKN: abul‑qasim‑i‑mazkani
+PLKSMMSKN|PLKSMMTSKN: abul‑qasim‑i‑mazkani
 
 PLKSMXRS: abul‑qasim‑i‑shirazi
 
@@ -2798,25 +2892,31 @@ PLL: balal, balliol
 
 PLMFLT: blomfield
 
-PLMN0: blumenthal
+PLMN0|PLMNT: blumenthal
 
 PLMR: palmyra
 
-PLN: bologna, polin
+PLN: polin
 
 PLNKN: palanquin
 
-PLNS: balinus, polynesia
+PLNS: balinus
+
+PLNS|PLNX: polynesia
+
+PLN|PLKN: bologna
 
 PLP: balboa
 
 PLPR: bolepur
 
-PLR: balearic, ballerio, blair
+PLR: balearic, blair
 
 PLRM: palermo
 
 PLRS: belarus
+
+PLR|PR: ballerio
 
 PLS: balyuzi, belize
 
@@ -2844,7 +2944,7 @@ PLXFK: bolshevik
 
 PLXFST: bolshevistic
 
-PLXSTN: baluchistan
+PLXSTN|PLKSTN: baluchistan
 
 PM: payam
 
@@ -2866,13 +2966,15 @@ PNHJP: ibn‑i‑hajib
 
 PNHXM: bani‑hashim
 
-PNJ: panj, panjali
+PNJ: panjali
 
 PNJL: banjul
 
 PNJMN: benjamin
 
 PNJP: punjab, punjabi
+
+PNJ|PN: panj
 
 PNK: bangui, bengali
 
@@ -2944,7 +3046,7 @@ PNTPTR: point‑a‑pitre
 
 PNTR: bandar
 
-PNTRJS: bandar‑i‑jaz
+PNTRJS|PNTRHS: bandar‑i‑jaz
 
 PNTRN: puntarenas
 
@@ -2952,7 +3054,7 @@ PNTRP: bandar‑abbas
 
 PNTX: bentwitch
 
-PNXKN: panchgani
+PNXKN|PNKKN: panchgani
 
 PNXRF: ibn‑i‑ashraf
 
@@ -2988,9 +3090,9 @@ PPTL: abi‑abdillah, abu‑abdillah
 
 PPTN: babud‑din
 
-PR: abhar, boors, borrah, epyeru, hebrew, hebrews, para, paras, paris, peary, peoria, perai, peres, peru
+PR: abhar, boors, borrah, epyeru, para, paras, paris, peary, peoria, perai, peres, peru
 
-PR0: perth
+PR0|PRT: perth
 
 PRF: abbreviated, payravi
 
@@ -3040,9 +3142,9 @@ PRN: bahrayn, bahrein, baraghani, barney, bern, borneo, browne, brunei, bruno, b
 
 PRNFK: upernavik
 
-PRNK: barnekow
-
 PRNKL: pringle
+
+PRNK|PRNKF: barnekow
 
 PRNLM: bornholm
 
@@ -3100,11 +3202,13 @@ PRTNKR: biratnagar
 
 PRTPRNK: port‑au‑prince
 
-PRTSM0: portsmouth
+PRTSM0|PRTSMT: portsmouth
 
 PRTX: british, pradesh
 
 PRXP: beersheba
+
+PR|PRF: hebrew, hebrews
 
 PS: abase, abased, abasement, abaser, abaseth, abasing, abazih, bissau, paz, pius
 
@@ -3186,11 +3290,11 @@ PTLKLK: abdul‑khaliq
 
 PTLKLKSFHN: abdul‑khaliq‑i‑isfahani
 
-PTLKLKST: abdul‑khaliq‑i‑yazdi
+PTLKLKST|PTLKLKTST: abdul‑khaliq‑i‑yazdi
 
 PTLKRM: abdul‑karim
 
-PTLKRMKSFN: abdul‑karim‑i‑qazvini
+PTLKRMKSFN|PTLKRMKTSFN: abdul‑karim‑i‑qazvini
 
 PTLKRMTRN: abdul‑karim‑i‑tihrani
 
@@ -3244,15 +3348,17 @@ PTRMNKRKK: abdur‑rahman‑i‑karkuki
 
 PTRP: abu‑turab
 
-PTRRX: patriarch
+PTRRX|PTRRK: patriarch
 
 PTRSLKM: abdur‑rasul‑i‑qumi
 
 PTRSPRK: petersburg
 
-PTSHP: abdu‑sahib
+PTS: abdus
 
-PTSL: abdu‑salih
+PTSHP: abdus‑sahib
+
+PTSL: abdus‑salih
 
 PTSLM: abdu‑salam
 
@@ -3272,13 +3378,15 @@ PXKPRS: pashay‑i‑qibrisi
 
 PXL: patiala
 
-PXNLNT: bechuanaland
+PXNLNT|PKNLNT: bechuanaland
 
-PXR: bashar, bashir, bucharest, bushihr, bushrui, bushruyih
+PXR: bashar, bashir, bushihr, bushrui, bushruyih
 
 PXRL: bashir‑i‑ilahi
 
 PXRT: bisharat
+
+PXR|PKR: bucharest
 
 PXSM: bayt‑i‑azam
 
@@ -3288,9 +3396,9 @@ PXTTN: pishdadiyan
 
 R: arya, herr, hira, hirih, hor, hrh, huris, huriyyih, oriya, oro, rais, rio, roo, roy, ruh, ruhi, ruya, yar
 
-R0: harith, ruth
+R0R|RTR: arthur
 
-R0R: arthur
+R0|RT: harith, ruth
 
 RF: arafih, arif, harvey, rafi, ravi
 
@@ -3300,7 +3408,7 @@ RFT: hurufat, rafat
 
 RFTL: urvatul
 
-RFTLF0K: urvatul‑vuthqa
+RFTLF0K|RFTLFTK: urvatul‑vuthqa
 
 RH: ruha, ruhiyyih
 
@@ -3318,19 +3426,21 @@ RHP: rahib
 
 RHPM: rehoboam
 
-RJ: iraj, rajai
+RJL|RKL: herrigel
 
-RJL: herrigel
+RJNTN|RKNTN: argentina, argentine
 
-RJN: regina
-
-RJNTN: argentina, argentine
-
-RJP: rajab, rajab‑ali
+RJN|RKN: regina
 
 RJPTN: rajputana
 
-RJS0N: rajasthani
+RJP|RHP: rajab, rajab‑ali
+
+RJS0N|RHSTN: rajasthani
+
+RJ|R: iraj
+
+RJ|RH: rajai
 
 RK: arakawa, arawak, eric, erik, horace, iraq, iraqi, iraqis, iroquois, rakah, rakahs, rica, rico, rogers, ruqiyyih, ryukyu, uruguay, yarka, york
 
@@ -3386,7 +3496,7 @@ RMNX: romansch
 
 RMRS: ramoroesi
 
-RMSK: hurmuzak
+RMSK|RMTSK: hurmuzak
 
 RMSTRNK: armstrong
 
@@ -3420,9 +3530,9 @@ RNTTR: arnadottir
 
 RP: arbaih, aruba, horeb, rabbi, rabbis, rabbiyal, rabiih, robe, robed, robes, rupees
 
-RP0: rabiuth
+RP00N|RPTTN: rabiuth‑thani
 
-RP00N: rabiuth‑thani
+RP0|RPT: rabiuth
 
 RPL: arbil, irbil, rabiul
 
@@ -3432,19 +3542,19 @@ RPLP: rabbiyal‑abha
 
 RPN: arbain, rabbani, rabbinical, urbana
 
-RPNTRN0: rabindranath
+RPNTRN0|RPNTRNT: rabindranath
 
 RPP: arbab
 
 RPRT: herbert, robarts, robert
 
-RS: arius, ar‑rass, rass, rhazes, rosalie, rousseau, russia, russo, ruz, warsaw
+RS: arius, ar‑rass, rass, rhazes, rosalie, rousseau, russia, russo, ruz
 
 RSF: recife
 
 RSFLT: roosevelt
 
-RSJPNS: russo‑japanese
+RSJPNS|RSHPNS: russo‑japanese
 
 RSKFN: herzegovina
 
@@ -3456,11 +3566,13 @@ RSLN: arslan
 
 RSLRP: rasul‑i‑arab
 
-RSN: arizona, racine, rizwan, russian, russians
+RSN: arizona, racine, russian, russians
 
 RSNN: rissanen
 
 RSNPRK: rosenberg
+
+RSN|RTSN: rizwan
 
 RSP: ruz‑bih
 
@@ -3470,11 +3582,15 @@ RSST: worcester
 
 RST: ruzita
 
-RSTKS: rastakhiz
+RSTKS|RSTKTS: rastakhiz
 
-RSTM: rustam, rustami, rusztem
+RSTM: rustam, rustami
+
+RSTM|RXTM: rusztem
 
 RSTRKX: russo‑turkish
+
+RS|RSF: warsaw
 
 RT: ard, harati, harwood, herod, howard, radiyih, rawdih, rawdiy, rhode, rida, ridai, riday, roddy, urdu
 
@@ -3510,11 +3626,11 @@ RTR: arturo, eritrea, rotorua
 
 RTRK: rodrigo, rodrigues
 
-RTS: rhodesia
-
 RTSFR: riday‑i‑saffar
 
 RTSTN: ardistan
+
+RTS|RTX: rhodesia
 
 RTT: redwood
 
@@ -3528,17 +3644,17 @@ RXM: hiroshima, rashh‑i‑ama
 
 RXMN: irishmen
 
-RXMNT: richmond
+RXMNT|RKMNT: richmond
 
 RXN: rawshani
 
-RXPLK: archipelago
+RXPLK|RKPLK: archipelago
 
-RXRT: richard
+RXRTSN|RKRTSN: richardson
 
-RXRTSN: richardson
+RXRT|RKRT: richard
 
-RXST: rochester
+RXST|RKST: rochester
 
 RXT: rashid, rasht, rashti, rushdi
 
@@ -3546,13 +3662,13 @@ RXTL: irshadul
 
 RXTLFM: irshadul‑avam
 
-S: ahsa, ahsai, asiyih, azali, azalis, esau, hasa, hosea, isa, isaiah, sao, sayyah, seyyed, sighih, siyah, soe, usa, uzza, zia
+S: ahsa, ahsai, asiyih, azali, azalis, esau, hasa, hosea, isa, isaiah, sao, sayyah, seyyed, sighih, siyah, soe, usa, zia
 
-S0: seth
+S0MS|STMS: isthmus
 
-S0MS: isthmus
+S0RLNT|STRLNT: sutherland
 
-S0RLNT: sutherland
+S0|ST: seth
 
 SF: cephas, safa, saffa, sivas, sophia, suef, sufi, sufis, suva, yusif, yusuf
 
@@ -3596,7 +3712,7 @@ SHP: sahib, suhayb
 
 SHPS: sahibuz
 
-SHPSMN: sahibuz‑zaman
+SHPSMN|SHPTSMN: sahibuz‑zaman
 
 SHR: sahara, zahir
 
@@ -3604,17 +3720,19 @@ SHRN: saharan
 
 SHTN: zahidan
 
-SK: czech, czechs, hezekiah, isaac, iski, sakha, sikh, zakiyyih, zog
+SK: isaac, iski, sakha, sikh, zog
 
 SKFN: sclavonia
 
-SKL: ezekiel, scala
+SKL: scala
 
 SKLN: askelon, sakhalin
 
+SKL|TSKL: ezekiel
+
 SKM: eskimo, eskimos, sikkim, zaqqum
 
-SKN: saigon, szechwan
+SKN: saigon
 
 SKNSN: wisconsin
 
@@ -3628,11 +3746,13 @@ SKNTRN: iskandarun
 
 SKNTRPT: secunderabad
 
+SKN|XKN: szechwan
+
 SKR: asghar, askar, azcar, zachariah, zacharias
 
 SKRF: sakharov
 
-SKRL: zekrullah, zikrullah
+SKRL|TSKRL: zekrullah, zikrullah
 
 SKRMNT: sacramento
 
@@ -3642,19 +3762,25 @@ SKRST: asgarzadeh
 
 SKRT: iscariot, socrates
 
-SKS: czekus
-
 SKSN: saxon
 
-SKT: scott, sukhtih, zakat
+SKS|XKS: czekus
+
+SKT: scott, sukhtih
 
 SKTLNT: scotland
 
 SKTN: sakatani
 
+SKT|TSKT: zakat
+
 SKX: scotia, suqush
 
 SKXXK: suqush‑shuyukh
+
+SK|TSK: hezekiah, zakiyyih
+
+SK|XK: czech, czechs
 
 SL: azal, azaliyyih, oslo, salih, salle, seoul, sewell, ziaoullah, ziaullah, zillu, zulu
 
@@ -3694,7 +3820,7 @@ SLMNT: esslemont
 
 SLN: ceylon, solano
 
-SLNJN: esslingen
+SLNJN|SLNKN: esslingen
 
 SLNT: iceland, salient, zealand
 
@@ -3730,17 +3856,17 @@ SLTNXXHT: sultanush‑shuhada
 
 SLTTNFRNT: soldatenfreund
 
-SM: aazam, asma, azam, azim, hisamu, isms, sam, sama, sami, samoa, siam, siyam, symes, uzum
+SM: aazam, asma, azam, azim, hisamu, isms, sam, sama, sami, samoa, siyam, symes, uzum
 
-SM0: smith
+SM0FLT|SMTFLT: smithfield
 
-SM0FLT: smithfield
+SM0|SMT: smith
 
 SMF: samavih
 
-SMJ: samaj, somaj
+SMJ|SM: samaj, somaj
 
-SMK: zamky
+SMK|TSMK: zamky
 
 SML: ismail, ismailiyyih, ismul, ismullah, samuel, somalia
 
@@ -3796,9 +3922,11 @@ SMT: azamat, samad, samadiyyih, zamid
 
 SMTR: sumatra
 
-SN: eisenhower, hasan, hasan‑ali, hosannas, hossain, husayn, husayniyyih, husayn‑ali, hussein, san, sanai, sen, sijn, sina, sinai, sinaia, sunni, sunnis, uzun, zayn, zena, zina, zion
+SM|XM: siam
 
-SN0: zenith
+SN: hasan, hasan‑ali, hosannas, hossain, husayn, husayniyyih, husayn‑ali, hussein, san, sanai, sen, sijn, sina, sinai, sinaia, sunni, sunnis, uzun, zayn, zena, zina, zion
+
+SN0|SNT: zenith
 
 SNF: asnaf
 
@@ -3818,7 +3946,9 @@ SNKN: husayn‑khan
 
 SNKNK: sinkiang
 
-SNKPR: singapore, uzun‑kupru
+SNKPR: singapore
+
+SNKPR|TSNKPR: uzun‑kupru
 
 SNKRN: sankaran
 
@@ -3834,7 +3964,7 @@ SNKXN: husayn‑i‑kashani
 
 SNL: zaynul
 
-SNLJRM: husayn‑aliy‑i‑jahrumi
+SNLJRM|SNLHRM: husayn‑aliy‑i‑jahrumi
 
 SNLMKRPN: zaynul‑muqarrabin
 
@@ -3854,7 +3984,7 @@ SNMTN: sijn‑i‑matin
 
 SNN: sanani, sinan
 
-SNNTJ: sanandaj
+SNNTJ|SNNT: sanandaj
 
 SNP: zaynab, zenobia
 
@@ -3872,11 +4002,11 @@ SNSF: hasan‑i‑safa
 
 SNSM: zionism
 
-SNSN: asuncion
-
 SNSNS: hasan‑i‑zunuzi
 
 SNSNT: cincinnati
+
+SNSN|SNXN: asuncion
 
 SNSPR: zanzibar
 
@@ -3892,11 +4022,13 @@ SNTRXS: husayn‑i‑turshizi
 
 SNXK: santiago
 
-SNXRSKRTM: husayn‑i‑shiraziy‑i‑khurtumi
+SNXRSKRTM|SNXRTSKRTM: husayn‑i‑shiraziy‑i‑khurtumi
+
+SN|SNF: eisenhower
 
 SP: asbahi, saba, sabah, sabbagh, sabih, sahba, subh, subhi
 
-SP0: sabbath
+SP0|SPT: sabbath
 
 SPF: sibavayh
 
@@ -3904,7 +4036,7 @@ SPHL: zabihullah
 
 SPK: sabbaq, uzbegs
 
-SPKSTN: uzbekistan
+SPKSTN|TSPKSTN: uzbekistan
 
 SPL: isabel, isabella, isobel, sapele
 
@@ -3950,9 +4082,9 @@ SPSMTN: sabzih‑maydan
 
 SPT: sabeti
 
-SPTSPRJN: spitsbergen, spitzbergen
+SPTSPRJN|SPTSPRKN: spitsbergen, spitzbergen
 
-SR: asare, asr, assr, assyria, azores, czar, czars, ezra, hazira, haziras, israeli, sar, sara, sarah, sarh, sari, seir, sierra, sri, surih, surihs, suriy, suriya, syria, ussr, zaire, zawra
+SR: asare, asr, assr, assyria, azores, ezra, hazira, haziras, israeli, sar, sara, sarah, sarh, sari, seir, sierra, sri, surih, surihs, suriy, suriya, syria, ussr, zaire
 
 SRF: sarraf
 
@@ -3960,7 +4092,7 @@ SRFL: israfil
 
 SRFSTN: sarvistan, sarvistani
 
-SRHJJ: suriy‑i‑hajj
+SRHJJ|SRHJ: suriy‑i‑hajj
 
 SRHK: suriy‑i‑haykal
 
@@ -3972,11 +4104,11 @@ SRK: sarawak, syriac
 
 SRKL: sar‑galu
 
-SRKNT: zarkandih
+SRKNT|TSRKNT: zarkandih
 
 SRL: israel, izrail, sirrullah, zahrul
 
-SRLKF: zahrul‑kufih
+SRLKF|TSRLKF: zahrul‑kufih
 
 SRLT: israelite, israelites
 
@@ -3994,7 +4126,7 @@ SRNM: surinam
 
 SRNT: zarand, zarandi
 
-SRNTJ: zarrin‑taj
+SRNTJ|SRNT: zarrin‑taj
 
 SRP: serbia, serbs, sohrab, suhrab
 
@@ -4014,9 +4146,11 @@ SRSPR: suriy‑i‑sabr
 
 SRSS: surcease
 
-SRST: czarist, zoroaster
+SRST: zoroaster
 
 SRSTRN: zoroastrian, zoroastrianism, zoroastrians
+
+SRST|XRST: czarist
 
 SRT: sirat, ziyarat
 
@@ -4032,19 +4166,25 @@ SRTN: sardinia
 
 SRTR: sardar
 
-SRX: sar‑chah
-
 SRXP: suriy‑i‑ashab
 
-SRXXM: sar‑chashmih
+SRXXM|SRKXM: sar‑chashmih
+
+SRX|SRK: sar‑chah
+
+SR|TSR: zawra
+
+SR|XR: czar, czars
 
 SS: azeiza, aziz, azizi, saz, swiss
 
-SSJN: sezgin
+SSJN|SSKN: sezgin
 
-SSK: ciskei, suzuki
+SSK: ciskei
 
 SSKXN: saskatchewan
+
+SSK|STSK: suzuki
 
 SSL: azizullah, sicily
 
@@ -4060,7 +4200,7 @@ SSR: cesar
 
 SSTN: sistan
 
-ST: awsat, cida, ist, izzat, saayidih, sadi, saudi, sidihi, siyyid, siyyids, yazd, yazdi, yazid, yazids, zadih, zadihs, zayd, zayta
+ST: awsat, cida, ist, saayidih, sadi, saudi, sidihi, siyyid, siyyids, yazd, yazdi, yazid, yazids, zadih, zadihs, zayd, zayta
 
 STFN: stephen, stevens
 
@@ -4070,11 +4210,11 @@ STHN: siyah‑dihan
 
 STHNT: said‑i‑hindi
 
-STJ: sadhij
+STJRT|STKRT: yazdigird
 
-STJRT: yazdigird
+STJ|ST: sadhij
 
-STK: asdaq, izzat‑aqa, sadiq, saduqi, sidq, sidq‑ali
+STK: asdaq, sadiq, saduqi, sidq, sidq‑ali
 
 STKKRSN: sadiq‑i‑khurasani
 
@@ -4090,7 +4230,9 @@ STKTPRS: sadiq‑i‑tabrizi
 
 STKTPTP: sadiq‑i‑tabatabai
 
-STL: asadullah, estall, izzatullah, sadler, saidul, seattle
+STK|TSTK: izzat‑aqa
+
+STL: asadullah, estall, sadler, saidul, seattle
 
 STLHMSNTRN: asadullah‑i‑mazindarani
 
@@ -4101,6 +4243,8 @@ STLHSP: asadullah‑i‑sabbagh
 STLLM: saidul‑ulama
 
 STLN: stalin
+
+STL|TSTL: izzatullah
 
 STMFRT: stamford
 
@@ -4144,11 +4288,15 @@ STRL: australia, sadrul
 
 STRLLM: sadrul‑ulama
 
-STRLN: australian, australia‑new
+STRLN: australian
+
+STRLN|STRLNF: australia‑new
 
 STRN: austrian, austrians
 
 STRNLT: austrian‑lloyd
+
+STRS: sadrus
 
 STRSM: sadr‑i‑azam
 
@@ -4156,11 +4304,11 @@ STRSMN: stresemann
 
 STRSPRK: strasbourg
 
-STRSTR: sadru‑sudur
+STRSTR: sadrus‑sudur, sadru‑sudur
 
 STRT: sadrud, stewart
 
-STRTJM: stratagem
+STRTJM|STRTKM: stratagem
 
 STRTL: sadratul, sadrud‑dawlih
 
@@ -4170,7 +4318,7 @@ STRTLSFHN: sadrud‑dawliy‑i‑isfahani
 
 STSFHN: sad‑i‑isfahani
 
-STSRLNT: switzerland
+STSRLNT|SFXRLNT: switzerland
 
 STT: ciudad, siyyid‑hood, ustad
 
@@ -4178,19 +4326,23 @@ STTKRT: stuttgart
 
 STTS: eustatius
 
-SX: siyah‑chal
+ST|TST: izzat
 
-SXL: seychelles
+SXL|SKL: seychelles
 
-SXR: zechariah
+SXR|SKR: zechariah
 
-SXSLFK: czechoslovakia
+SXSLFK|XKSLFK: czechoslovakia
 
-T: addas, ahd, ahdi, ahdieh, ata, ayadi, ayadiyi, daisy, dealy, der, dih, dili, diya, diyaiyyih, diyi, dugh, etah, hadi, hadiy, haiti, hayat, hideya, howdah, howdahs, hud, huda, hyde, idha, italy, ottawa, tah, tai, taiyyih, tayy, towa, ude, udi, utah, wadia, whyte, wight, yat
+SX|SK: siyah‑chal
 
-T0: edith, hadith
+S|TS: uzza
 
-T0JPR: hadith‑i‑jabir
+T: addas, ahd, ahdi, ahdieh, ata, ayadi, ayadiyi, dealy, der, dih, dili, diya, diyaiyyih, diyi, dugh, etah, hadi, hadiy, haiti, hayat, hideya, howdah, howdahs, hud, huda, hyde, idha, italy, ottawa, tah, tai, taiyyih, tayy, towa, ude, udi, utah, wadia, whyte, wight, yat
+
+T0JPR|TTHPR: hadith‑i‑jabir
+
+T0|TT: edith, hadith
 
 TF: taf, taff, tiflis
 
@@ -4218,7 +4370,7 @@ TFT: david, davud, davudi, taft
 
 TH: duha, idaho
 
-THJ: dahaji
+THJ|TH: dahaji
 
 THM: dahomey
 
@@ -4230,7 +4382,7 @@ THRST: taherzadeh
 
 THT: ettehadiyeye, ijtihad, ittihad, tahiti
 
-TJ: adja, hawdaj, taj, tajes
+TJ: adja, tajes
 
 TJJL: dajjal
 
@@ -4240,11 +4392,13 @@ TJKRT: djakarta
 
 TJKSTN: tajikistan
 
-TJL: tajalli
+TJLT|THLT: tajalliyat, tajalliyyat
 
-TJLT: tajalliyat, tajalliyyat
+TJL|THL: tajalli
 
 TJNT: djoneidi
+
+TJ|T: hawdaj, taj
 
 TK: daga, dhaka, diego, dowager, hayat‑quli, takyihs, takyiy, taqi, taqiy, taqiyyih, togo, tokyo, tuqa
 
@@ -4258,7 +4412,7 @@ TKMLN: takyiy‑i‑mawlana
 
 TKMR: dagmar
 
-TKNJF: taqiy‑i‑najafi
+TKNJF|TKNHF: taqiy‑i‑najafi
 
 TKP: tacubaya
 
@@ -4390,9 +4544,11 @@ TNPRPTRFSK: dnipropetrovsk
 
 TNR: dinars, hadiy‑i‑nahri
 
-TNS: tennessee, tunisia
+TNS: tennessee
 
 TNSN: tanzania, tennyson
+
+TNS|TNX: tunisia
 
 TNX: danish
 
@@ -4406,7 +4562,7 @@ TPHMKTM: dhabihi‑muqaddam
 
 TPK: atabik, tobago
 
-TPKSM: atabik‑i‑azam
+TPKSM|TPKTSM: atabik‑i‑azam
 
 TPL: adibul, dih‑bala
 
@@ -4422,7 +4578,7 @@ TPLT: tablighat
 
 TPLTLM: tablighat‑i‑islami
 
-TPNJN: tubingen
+TPNJN|TPNKN: tubingen
 
 TPR: tabor, tiberias
 
@@ -4432,11 +4588,11 @@ TPT: dugh‑abad, tibet
 
 TPTP: tabataba, tabatabai
 
-TPXNT: dipchand
+TPXNT|TPKNT: dipchand
 
-TR: attar, dar, dhar, diyar, hataria, haydar, haydariyyih, haydar‑ali, idris, taereh, tar, tarawa, tayr, tierra, torah, torahs, troy, tyre, woodrow
+TR: attar, dar, dhar, diyar, hataria, haydar, haydariyyih, haydar‑ali, idris, taereh, tar, tarawa, tayr, tierra, torah, torahs, troy, tyre
 
-TR0: dorothy
+TR0|TRT: dorothy
 
 TRF: trefah
 
@@ -4448,7 +4604,7 @@ TRFSPRN: dreyfus‑barney
 
 TRFX: darvish, darvish‑ali
 
-TRJL: trujillo
+TRJL|TRJ: trujillo
 
 TRK: darughih, tiriki, turco, turk, turkey, turks
 
@@ -4480,7 +4636,7 @@ TRNPL: adrianople
 
 TRNSK: transkei
 
-TRNSKKSN: transcaucasian
+TRNSKKSN|TRNSKKXN: transcaucasian
 
 TRNSKSN: transoxania
 
@@ -4492,7 +4648,7 @@ TRNTT: trinidad
 
 TRP: darab, darabi, draper, tripoli, turab
 
-TRPJN: adhirbayjan
+TRPJN|TRPHN: adhirbayjan
 
 TRPKR: diyarbakr, diyar‑bakr
 
@@ -4504,7 +4660,7 @@ TRPT: hyderabad, tarbiyat, turbat
 
 TRPTHTR: turbat‑i‑haydariyyih
 
-TRS: darius, druses, druze, druzes, taraz, terrazzo
+TRS: darius, druses, druze, druzes, taraz
 
 TRSL: tarazullah
 
@@ -4512,19 +4668,25 @@ TRSLM: dar‑es‑salaam
 
 TRST: tarazat
 
+TRS|TRTS: terrazzo
+
 TRT: eduard, edward, edwards, hadrat
 
 TRX: daryush
 
 TRXS: turshiz, turshizi
 
-TS: addis, dizful, dos, itza, taziyihs, tusi
+TR|TRF: woodrow
+
+TS: adasiyyih, addis, dizful, dos, itza, taziyihs, tusi
 
 TSKN: tuscany
 
-TSL: itsel, witzel
+TSL: itsel
 
 TSLM: taslimi
+
+TSL|FXL: witzel
 
 TSMN: tasman, tasmania
 
@@ -4550,11 +4712,11 @@ TTL: hidayatullah
 
 TTLTPT: hadiy‑i‑dawlat‑abadi
 
-TTN: daidanaw, daidanow
-
 TTNJ: tutunjiyyih
 
-TTNKLS: daidanow‑kalazoo
+TTNKLS|TTNKLTS: daidanow‑kalazoo
+
+TTN|TTNF: daidanaw, daidanow
 
 TTRJR: tetrujiro
 
@@ -4562,7 +4724,7 @@ TTRNM: deuteronomy
 
 TTRT: detroit
 
-TTRX: dietrich
+TTRX|TTRK: dietrich
 
 TTS: titus
 
@@ -4574,11 +4736,13 @@ TXM: ehtesham
 
 TXNP: dushanbe
 
-TXST: techeste
+TXST|TKST: techeste
 
 TXT: dasht
 
-X: chah, chi, hisher, ischia, shah, shahs, shay, shiah, shiahs, shiih, shiihs, shoa, shoghi
+T|TS: daisy
+
+X: hisher, ischia, shah, shahs, shay, shiah, shiahs, shiih, shiihs, shoa, shoghi
 
 XF: shafi
 
@@ -4598,35 +4762,35 @@ XHT: shahid, shuhada, shuhaday
 
 XHTKMS: shuhaday‑i‑khamsih
 
-XHXK: chahishk
-
-XJL: shujaul
+XHXK|KHXK: chahishk
 
 XJLMLK: shujaul‑mulk
 
-XJT: shujaud
+XJL|XHL: shujaul
 
 XJTL: shujaud‑dawlih
 
-XK: chagos, ichiki, shaykh, shaykhi, shaykhis, shaykhs, sheikh, shukuhi, shuyukh
+XJT|XHT: shujaud
 
-XKK: chicago
+XK: shaykh, shaykhi, shaykhis, shaykhs, sheikh, shukuhi, shuyukh
+
+XKK|KKK: chicago
 
 XKL: shaykhul
 
 XKLLM: shaykhul‑islam, shaykhul‑islams
 
-XKMSKN: shaykh‑i‑mazgani
+XKMSKN|XKMTSKN: shaykh‑i‑mazgani
 
-XKMX: chakmachih
+XKMX|KKMK: chakmachih
 
-XKN: chigan
+XKN|KKN: chigan
 
 XKPT: ashkhabad, ishqabad
 
 XKR: shaykhur, shaykhur‑rais
 
-XKRN: chagrin
+XKRN|KKRN: chagrin
 
 XKS: shaykh‑i‑ahsai
 
@@ -4640,15 +4804,21 @@ XKTM: shaykhdoms
 
 XKXK: ash‑i‑kashk
 
-XL: chal, chellie, chilaw, chile, chiloe, shuaullah
+XK|KK: chagos, ichiki
 
-XLKPP: chilaw‑kabab
+XL: shuaullah
 
-XLN: chilean
+XLKPP|KLKPP: chilaw‑kabab
 
-XLT: chaldea, chaldees
+XLN|KLN: chilean
 
-XLTN: chaldean, chaldeans
+XLTN|KLTN: chaldean, chaldeans
+
+XLT|KLT: chaldea, chaldees
+
+XL|KL: chal, chellie, chile, chiloe
+
+XL|KLF: chilaw
 
 XM: hashemi, hashim, shem
 
@@ -4682,9 +4852,9 @@ XMTT: hishmatud
 
 XMTTL: hishmatud‑dawlih
 
-XN: chennai, cheyne, china, shan
+XN: shan
 
-XNJS: changiz
+XNJS|KNKS: changiz
 
 XNK: hushang, shanghai
 
@@ -4694,27 +4864,33 @@ XNKTN: washington
 
 XNM: shahnameh
 
-XNR: chinar
+XNRSKT|KNRSKT: chinar‑sukhtih
 
-XNRSKT: chinar‑sukhtih
+XNRT|KNRT: china‑ward
 
-XNRT: china‑ward
+XNR|KNR: chinar
 
-XNS: chinese, shahnaz, shensi
+XNS: shahnaz, shensi
 
-XNSSPK: chinese‑speaking
+XNSSPK|KNSSPK: chinese‑speaking
+
+XNS|KNS: chinese
 
 XNTNK: shantung
 
 XNTNKTN: shantineketan
 
+XN|KN: chennai, cheyne, china
+
 XP: ashab, sheba, shoeb
 
 XPL: shibboleths, shibl
 
-XPMP: chibombo
+XPMP|KPMP: chibombo
 
-XPN: chupan, shaban, shayban
+XPN: shaban, shayban
+
+XPN|KPN: chupan
 
 XPR: shapoor
 
@@ -4732,7 +4908,7 @@ XRFR: shahrivar
 
 XRFSNJN: ashraf‑i‑zanjani
 
-XRK: cherokee, chihriq, ishraq, ishraqi, sharik
+XRK: ishraq, ishraqi, sharik
 
 XRKST: sharh‑i‑qasidih
 
@@ -4742,63 +4918,81 @@ XRKT: ishraqat, shirkat
 
 XRKTNNHLN: shirkat‑i‑nawnahalan
 
-XRL: charles, chirol, chorrillos, sherrill
+XRK|KRK: cherokee, chihriq
 
-XRLT: charlotte
+XRL: sherrill
+
+XRLT|KRLT: charlotte
+
+XRL|KR: chorrillos
+
+XRL|KRL: charles, chirol
 
 XRM: shahram
 
 XRN: eshraghian, sharon, sherwin, shirin
 
-XRS: schwarz, shiraz, shirazi, shiraziy
+XRS: shiraz, shirazi, shiraziy
 
-XRSTF: christopher
+XRSTF|KRSTF: christopher
 
-XRSTL: christaller
+XRSTL|KRSTL: christaller
 
 XRSTN: shahristan
 
-XRSTP: christobal
+XRSTP|KRSTP: christobal
 
-XRXL: churchill
+XRS|XRTS: schwarz
 
-XSN: chisinau
+XRXL|KRKL: churchill
 
-XSR: chosroes
+XSN|KSN: chisinau
 
-XST: chester, shah‑zadihs
+XSR|KSR: chosroes
 
-XT: chad, chita, shattiyyih, shiite, shiites
+XST: shah‑zadihs
+
+XST|KST: chester
+
+XT: shattiyyih, shiite, shiites
 
 XTHRT: ishtihard
 
-XTL: chattel, shattul
+XTL: shattul
 
 XTLNT: shetland
 
 XTLRP: shattul‑arab
 
+XTL|KTL: chattel
+
 XTN: shidan
 
 XTPR: shadpur
 
-XTR: chadurs, shatir, ushidar
+XTR: shatir, ushidar
 
 XTRM: ushidar‑mah
 
 XTRSN: shatir‑hasan
 
+XTR|KTR: chadurs
+
 XTT: shadid, shidad
+
+XT|KT: chad, chita
 
 XX: hashish, shishih
 
-XXM: chashmih
-
-XXMH: chashmih‑ali
+XXMH|KXMH: chashmih‑ali
 
 XXMN: shishman
 
+XXM|KXM: chashmih
+
 XXTR: shushtar
+
+X|K: chah, chi
 
 a: aerie
 
@@ -5174,7 +5368,7 @@ affection: affectionate, affectionately
 
 affin: affinities, affinity
 
-affirm: affirm, affirmation, affirmations, affirmative, affirmed, affirmest, affirmeth, affirming, affirms
+affirm: affirm, affirmation, affirmations, affirmative, affirmatively, affirmed, affirmest, affirmeth, affirming, affirms
 
 affix: affix, affixed, affixing
 
@@ -5329,6 +5523,8 @@ alchem: alchemy
 alcohol: alcohol, alcoholic
 
 alcov: alcove, alcoves
+
+alemb: alembic
 
 alert: alert, alerted, alertness
 
@@ -5684,7 +5880,11 @@ angr: angrily, angry
 
 anguish: anguish, anguished
 
-anim: animal, animalism, animals, animate, animated, animates, animateth, animating, animation, animator, animators
+anim: animate, animated, animates, animateth, animating, animation, animator, animators
+
+animal: animal, animals
+
+animalism: animalism
 
 animalist: animalistic
 
@@ -6720,7 +6920,7 @@ begot: begot
 
 begotten: begotten
 
-beguil: beguile, beguiled
+beguil: beguile, beguiled, beguiling
 
 begun: begun
 
@@ -8400,6 +8600,8 @@ coalit: coalition
 
 coars: coarse, coarsely, coarser, coarsest
 
+coarsen: coarsened
+
 coast: coast, coasts
 
 coat: coat
@@ -8624,9 +8826,9 @@ comparison: comparison, comparisons
 
 compartment: compartmentalise
 
-compass: compass, compassed, compasses, compassing, compassion, compassions
+compass: compass, compassed, compasses, compassing
 
-compassion: compassionate, compassionately
+compassion: compassion, compassionate, compassionately, compassions
 
 compat: compatibility, compatible
 
@@ -9572,13 +9774,9 @@ dang: danger, dangerous, dangerously, dangers
 
 dare: dare, dared, dares, dareth, daring
 
-dark: dark, darker, darkest, darkly, darkness, darknesses
+dark: dark, darken, darkened, darkening, darker, darkest, darkly, darkness, darknesses, darksome
 
 darkcolour: dark‑coloured
-
-darken: darken, darkened, darkening
-
-darksom: darksome
 
 darl: darling
 
@@ -9792,9 +9990,7 @@ def: defer, deference, deferment, deferred, deferreth, deferring, defers
 
 defac: deface
 
-defam: defamation, defamations, defame, defamed, defamer, defamers, defaming
-
-defamator: defamatory
+defam: defamation, defamations, defamatory, defame, defamed, defamer, defamers, defaming
 
 default: default
 
@@ -9810,11 +10006,7 @@ defector: defectors
 
 defenceless: defenceless
 
-defend: defend, defendant, defendants, defended, defender, defenders, defendeth, defending
-
-defens: defensive, defensiveness
-
-defent: defence, defences
+defend: defence, defences, defend, defendant, defendants, defended, defender, defenders, defendeth, defending, defensive, defensiveness
 
 deferent: deferentially
 
@@ -9909,6 +10101,8 @@ delud: delude, deluded, deluding
 delug: deluge, deluged
 
 delus: delusion, delusions
+
+delusor: delusory
 
 delv: delve, delving
 
@@ -10160,9 +10354,11 @@ devolut: devolution
 
 devolv: devolve, devolved, devolves, devolveth, devolving
 
-devot: devote, devoted, devotedly, devotes, devoting, devotion, devotional, devotions
+devot: devote, devoted, devotedly, devotes, devoting, devotion, devotions
 
 devote: devotees
+
+devotional: devotional
 
 devour: devour, devoured, devoureth, devouring, devours
 
@@ -10232,7 +10428,7 @@ dig: dig, digged, digging
 
 digest: digest, digesting, digestion, digestive
 
-dignif: dignified
+dignif: dignified, dignifying
 
 dignit: dignity
 
@@ -10292,7 +10488,7 @@ disaccord: disaccord
 
 disadvantag: disadvantage, disadvantaged, disadvantageous, disadvantages
 
-disaffect: disaffection
+disaffect: disaffected, disaffection
 
 disagr: disagreement, disagreements
 
@@ -11682,7 +11878,7 @@ erewhil: erewhile
 
 ern: ernest
 
-erod: erode, eroded
+erod: erode, eroded, eroding
 
 eros: erosion
 
@@ -11702,7 +11898,7 @@ erudit: erudite, erudition
 
 erupt: erupt, erupted, eruption
 
-escal: escalation
+escal: escalating, escalation
 
 escap: escape, escaped, escapes, escapeth, escaping
 
@@ -11962,7 +12158,7 @@ evolv: evolve, evolved, evolves, evolving
 
 ewe: ewe
 
-exacerb: exacerbate, exacerbated, exacerbating
+exacerb: exacerbate, exacerbated, exacerbating, exacerbation
 
 exact: exact, exacted, exacting, exactions, exactly, exactness
 
@@ -12118,7 +12314,7 @@ explan: explanation, explanations
 
 explanator: explanatory
 
-explic: explicate
+explic: explicate, explicated, explication
 
 explicit: explicit, explicitly
 
@@ -13424,11 +13620,9 @@ friction: friction
 
 friday: friday
 
-friend: friend, friendliness, friendly, friends
+friend: friend, friendliness, friendly, friends, friendship, friendships
 
 friendless: friendless
-
-friendship: friendship, friendships
 
 fright: fright, frightful
 
@@ -13480,7 +13674,7 @@ fruition: fruition
 
 fruitladen: fruit‑laden
 
-fruitless: fruitless, fruitlessness
+fruitless: fruitless, fruitlessly, fruitlessness
 
 frustrat: frustrate, frustrated, frustrates, frustrating, frustration, frustrations
 
@@ -13686,7 +13880,7 @@ gend: gender
 
 gene: gene
 
-general: general, generalised, generalising, generality, generally, generals
+general: general, generalisation, generalised, generalising, generality, generally, generals
 
 generalship: generalship
 
@@ -13694,9 +13888,7 @@ generat: generate, generated, generates, generating, generation, generational, g
 
 generic: generic
 
-generos: generosity
-
-generous: generous, generously
+generous: generosity, generous, generously
 
 generousheart: generous‑hearted
 
@@ -14424,9 +14616,7 @@ headstrong: headstrong
 
 headway: headway
 
-heal: heal, healed, healer, healers, healeth, healing, heals
-
-health: health, healthier, healthy
+heal: heal, healed, healer, healers, healeth, healing, heals, health, healthier, healthy
 
 healthcar: healthcare
 
@@ -14798,9 +14988,9 @@ homogen: homogeneity, homogeneous
 
 homosexu: homosexual, homosexuality
 
-hone: hone, honed, honest
+hone: hone, honed
 
-honest: honestly, honesty
+honest: honest, honestly, honesty
 
 honey: honey, honeyed
 
@@ -15218,7 +15408,7 @@ immun: immune, immunity
 
 immur: immured
 
-immut: immutability, immutable
+immut: immutability, immutable, immutably
 
 imp: imperial, imperialism, imperious
 
@@ -16420,13 +16610,11 @@ journalist: journalists
 
 journey: journey, journeyed, journeyeth, journeying, journeyings, journeys
 
-joy: joy, joyful, joyfully, joyfulness, joys
+joy: joy, joyful, joyfully, joyfulness, joyous, joyously, joyousness, joys
 
 joycreat: joy‑creating
 
 joyday: joy‑days
-
-joyous: joyous, joyously, joyousness
 
 ju: july
 
@@ -17122,7 +17310,7 @@ log: log
 
 logic: logic, logical, logically
 
-logist: logistics
+logist: logistical, logistics
 
 loin: loins
 
@@ -17536,6 +17724,8 @@ mann: manner, mannered, manners
 
 manna: manna
 
+manoeuvr: manoeuvring
+
 manpow: manpower
 
 mansion: mansion, mansioned, mansions
@@ -17553,8 +17743,6 @@ manufactur: manufacture, manufactured, manufacturing
 manumiss: manumission
 
 manuscript: manuscript, manuscripts
-
-manuvr: manuvring
 
 manycentur: many‑centuried
 
@@ -18104,7 +18292,7 @@ mishap: mishaps
 
 misinform: misinformation, misinformed
 
-misinterpret: misinterpret, misinterpretation, misinterpreted, misinterpreteth
+misinterpret: misinterpret, misinterpretation, misinterpretations, misinterpreted, misinterpreteth
 
 misjudg: misjudged
 
@@ -18598,7 +18786,7 @@ nav: navies, navy
 
 naval: naval
 
-navig: navigate, navigating, navigation, navigator
+navig: navigate, navigates, navigating, navigation, navigator
 
 nay: nay
 
@@ -19152,9 +19340,9 @@ obey: obey, obeyed, obeyest, obeyeth, obeying, obeys
 
 obfusc: obfuscation
 
-object: object, objected, objection, objections, objective, objectively, objectives, objectivity, objects
+object: object, objective, objectively, objectives, objectivity, objects
 
-objection: objectionable
+objection: objected, objection, objectionable, objections
 
 objectlesson: object‑lesson
 
@@ -20058,7 +20246,9 @@ patholog: pathologies, pathology
 
 pathway: pathway, pathways
 
-patient: patience, patient, patiently, patients
+patient: patience, patient, patiently
+
+patients: patients
 
 patriarch: patriarchal, patriarchs
 
@@ -20710,13 +20900,13 @@ polici: policies, policy
 
 polish: polish, polished
 
-polit: polite, politely, politeness, politic, political, politically, politics
+polit: political, politically, politician, politicians, politicising, politics
+
+polite: polite, politely, politeness
 
 politi: polity
 
-politic: politicising
-
-politician: politician, politicians
+politic: politic
 
 pollut: pollute, polluted, polluting, pollution
 
@@ -21230,6 +21420,8 @@ program: programming
 
 programm: programme, programmes
 
+programmat: programmatic
+
 progress: progress, progressed, progresses, progressing, progression, progressions, progressive, progressively, progressiveness
 
 prohibit: prohibit, prohibited, prohibiting, prohibition, prohibitions, prohibitive, prohibitively, prohibits
@@ -21476,11 +21668,9 @@ punit: punitive
 
 pupil: pupil, pupils
 
-pur: purer
-
 purchas: purchase, purchased, purchaser, purchasing
 
-pure: pure, purely, purest
+pure: pure, purely, purer, purest, purity
 
 pureheart: purehearted, pure‑hearted
 
@@ -21489,8 +21679,6 @@ purg: purge, purged, purges, purgeth, purging
 purgat: purgative
 
 purif: purification, purified, purifies, purifieth, purify, purifying
-
-purit: purity
 
 puritan: puritanism
 
@@ -22004,7 +22192,7 @@ reded: rededicate, rededicating, rededication
 
 redeem: redeem, redeemed, redeemer, redeeming
 
-redefin: redefined
+redefin: redefine, redefined
 
 redefinit: redefinition
 
@@ -22014,7 +22202,7 @@ redevelop: redevelopment
 
 redhot: red‑hot
 
-redirect: redirected
+redirect: redirected, redirects
 
 redistribut: redistributing, redistribution
 
@@ -23394,6 +23582,8 @@ self: self
 
 selfabneg: self‑abnegating, self‑abnegation
 
+selfabsorb: self‑absorbed
+
 selfaggrandis: self‑aggrandisement
 
 selfappetit: self‑appetites
@@ -23706,19 +23896,15 @@ serpentin: serpentine
 
 serr: serried
 
-serv: serve, served, serves, serveth, serving
-
-servant: servant, servants
+serv: servant, servants, serve, served, serves, serveth, service, services, serving, servitude
 
 servantinattend: servant‑in‑attendance
 
-servic: service, serviceable, serviced, services
+servic: serviceable, serviced
 
 servil: servile, servility
 
 servitor: servitor, servitors
-
-servitud: servitude
 
 session: session, sessions
 
@@ -24306,9 +24492,7 @@ slumb: slumber, slumbered, slumberer, slumberers, slumbering
 
 smack: smack
 
-smal: smallest
-
-small: small, smaller, smallness
+small: small, smaller, smallest, smallness
 
 smallmind: small‑minded
 
@@ -24764,13 +24948,11 @@ spine: spine
 
 spiral: spiral
 
-spirit: spirit, spirited, spirits
+spirit: spirit, spirited, spirits, spiritual, spiritualisation, spiritualise, spiritualising, spiritualism, spiritualities, spirituality, spiritually
 
 spiritimpart: spirit‑imparting
 
 spiritsubdu: spirit‑subduers
-
-spiritu: spiritual, spiritualisation, spiritualise, spiritualising, spiritualism, spiritualities, spirituality, spiritually
 
 spiritualist: spiritualiste, spiritualists
 
@@ -24782,9 +24964,7 @@ spite: spite, spites
 
 splendid: splendid, splendidly
 
-splendour: splendour, splendours
-
-splendrous: splendrous
+splendour: splendour, splendours, splendrous
 
 splint: splintered, splintering
 
@@ -24903,6 +25083,8 @@ stal: stalled
 stale: stale
 
 stalk: stalk, stalked, stalketh
+
+stall: stalls
 
 stallion: stallion
 
@@ -25061,8 +25243,6 @@ stewardship: stewardship
 stick: stick, sticking, sticks
 
 sticker: stickers
-
-stife: stife
 
 stiff: stiff
 
@@ -25456,7 +25636,7 @@ succour: succour, succoured, succourer, succourers, succoureth, succouring
 
 succul: succulent
 
-succumb: succumb, succumbed, succumbing
+succumb: succumb, succumbed, succumbing, succumbs
 
 suchandsuch: such‑and‑such
 
@@ -25934,11 +26114,15 @@ taxat: taxation
 
 tea: tea
 
-teach: teach, teacher, teachers, teaches, teacheth, teaching, teachings
+teach: teach, teaches, teacheth, teaching
+
+teacher: teacher, teachers
 
 teachertostud: teacher‑to‑student
 
 teachinglearn: teaching‑learning
+
+teachings: teachings
 
 teacup: tea‑cup
 
@@ -26119,8 +26303,6 @@ textil: textiles
 textual: textual
 
 textur: texture
-
-th: ther
 
 thank: thank, thanked, thankful, thankfully, thankfulness, thanking, thanks
 
@@ -26692,7 +26874,7 @@ tranship: transhipped
 
 transient: transience, transient
 
-transit: transit, transition, transitional
+transit: transit, transition, transitional, transitions
 
 transitionar: transitionary
 
@@ -26854,7 +27036,7 @@ trio: trio
 
 trip: trip, trips
 
-tripl: triple, tripling, triply
+tripl: triple, tripled, tripling, triply
 
 trisect: trisected
 
@@ -26926,9 +27108,11 @@ trusteeship: trusteeship
 
 trustworth: trustworthiness, trustworthy
 
-truth: truth, truthful, truthfully, truthfulness, truths
+truth: truth, truths
 
 truthbear: truth‑bearing
+
+truthful: truthful, truthfully, truthfulness
 
 truthseek: truth‑seeker, truth‑seeking
 
@@ -26986,7 +27170,9 @@ turquois: turquoise, turquoises
 
 tutelag: tutelage
 
-tutor: tutor, tutorial, tutoring, tutors
+tutor: tutor, tutoring, tutors
+
+tutorial: tutorial
 
 tutorship: tutorship
 
@@ -27261,6 +27447,8 @@ unblind: unblinded
 unborn: unborn
 
 unbound: unbounded
+
+unbow: unbowed
 
 unbreach: unbreachable
 
@@ -29356,7 +29544,7 @@ withdrew: withdrew
 
 withheld: withheld
 
-withhold: withhold, withholder, withholdeth, withholding
+withhold: withhold, withholder, withholdeth, withholding, withholds
 
 within: within
 

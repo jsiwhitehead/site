@@ -70,7 +70,7 @@ const getDateValue = (years) => {
 const getDateFactor = (years) => {
   const diff =
     (new Date() - getDateValue(years)) / (1000 * 60 * 60 * 24 * 365.25);
-  return 0.4 + 3 / (diff + 5);
+  return 0.6 + 2 / (diff + 5);
 };
 
 const searchIndex = new Map();
@@ -79,16 +79,20 @@ const wordCounts = {};
 const updateIndex = (docIndex, paraIndex, parts) => {
   const key = `${docIndex}_${paraIndex}`;
   const scores = {};
-  const tokens = parts.flatMap((part) =>
-    getTokens(part.text, (word, stem) => {
+  const allTokens = [];
+  const tokens = [];
+  for (const part of parts) {
+    const partTokens = getTokens(part.text, (word, stem) => {
       if (!fullStems[stem]) fullStems[stem] = new Set();
       fullStems[stem].add(word);
       wordCounts[word] = (wordCounts[word] || 0) + 1;
     }).map((token) => ({
       token,
       citations: (part.citations || 0) + 2,
-    }))
-  );
+    }));
+    allTokens.push(...partTokens);
+    if (!part.doc) tokens.push(...partTokens);
+  }
   const doubleTokens = tokens.slice(0, -1).flatMap((t1, i) => {
     const t2 = tokens[i + 1];
     const t = {
@@ -121,7 +125,7 @@ const updateIndex = (docIndex, paraIndex, parts) => {
       scores[t] === 2 ? `${key}` : `${key}:${scores[t]}`,
     ]);
   }
-  itemLengths[docIndex][paraIndex] = tokens.length;
+  itemLengths[docIndex][paraIndex] = allTokens.length;
 };
 
 const citationsMap = [];
@@ -143,6 +147,9 @@ data.forEach(({ id }, index) => {
       );
       if (doc.epoch && doc.author !== "Shoghi Effendi") {
         itemFactors[index] = getDateFactor(doc.years);
+        if (doc.author !== "The Universal House of Justice") {
+          itemFactors[index] *= 0.7;
+        }
       }
       citationsMap.push({ doc: index, para: i, citations: para.citations });
     } else {

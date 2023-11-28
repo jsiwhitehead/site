@@ -121,6 +121,31 @@ exceptions1.layered = "layer";
 exceptions1.layers = "layer";
 exceptions1.nuclei = "nucleus";
 exceptions1.pearly = "pearl";
+exceptions1.objected = "objection";
+exceptions1.objection = "objection";
+exceptions1.objections = "objection";
+exceptions1.objector = "objection";
+exceptions1.compassion = "compassion";
+exceptions1.compassions = "compassion";
+exceptions1.truthful = "truthful";
+exceptions1.truthfully = "truthful";
+exceptions1.truthfulness = "truthful";
+exceptions1.devotional = "devotional";
+exceptions1.animal = "animal";
+exceptions1.animals = "animal";
+exceptions1.animalism = "animalism";
+exceptions1.teacher = "teacher";
+exceptions1.teachers = "teacher";
+exceptions1.teachings = "teachings";
+exceptions1.tutorial = "tutorial";
+exceptions1.smallest = "small";
+exceptions1.defamatory = "defam";
+exceptions1.service = "serv";
+exceptions1.services = "serv";
+exceptions1.servitude = "serv";
+exceptions1.purer = "pure";
+exceptions1.purity = "pure";
+exceptions1.splendrous = "splendour";
 // Invariants!
 exceptions1.institute = "institute";
 exceptions1.sky = "sky";
@@ -164,10 +189,25 @@ exceptions1.shams = "*shams";
 exceptions1.sicily = "*sicily";
 exceptions1.starr = "*starr";
 exceptions1.timor = "*timor";
+exceptions1.politic = "politic";
+exceptions1.patients = "patients";
+exceptions1.honest = "honest";
 // Tweaks!
 var tweaks = Object.create(null);
 tweaks.aggressor = "aggress";
 tweaks.anathema = "anathemat";
+tweaks.politic = "polit";
+tweaks.politician = "polit";
+tweaks.defens = "defend";
+tweaks.defent = "defend";
+tweaks.darken = "dark";
+tweaks.darksom = "dark";
+tweaks.health = "heal";
+tweaks.generos = "generous";
+tweaks.servant = "serv";
+tweaks.joyous = "joy";
+tweaks.friendship = "friend";
+tweaks.spiritu = "spirit";
 
 const ierReg = /ier$/;
 const eriReg = /eri$/;
@@ -818,6 +858,7 @@ const nameFarsiInclude = [
   "hilm",
   "himalaya",
   "hin",
+  "hitler",
   "hoagg",
   "hobb",
   "hoehnk",
@@ -1688,9 +1729,9 @@ var step5 = function (s) {
  */
 var stem = function (word) {
   var str = word.toLowerCase().replace(/‑/g, "");
-  // if (numReg.test(str)) return `#${str}`;
   if (str.length < 3) return str;
   if (exceptions1[str]) return exceptions1[str];
+  if (str.startsWith("polite")) return "polite";
   str = prelude(str);
   str = step1a(str);
 
