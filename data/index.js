@@ -45,6 +45,7 @@ const specialStems = {
   sever: "severe",
   temp: "tempest",
   institut: "institution",
+  intens: "intensity",
 };
 const getStemWord = (stem) => {
   return (
