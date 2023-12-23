@@ -175,6 +175,17 @@ exceptions1.clustered = "clustered";
 exceptions1.clustering = "clustered";
 exceptions1.coincidence = "coincident";
 exceptions1.coincident = "coincident";
+exceptions1.damped = "dampen";
+exceptions1.discretion = "discreet";
+exceptions1.diversion = "divert";
+exceptions1.duplicity = "duplicit";
+exceptions1.eastern = "east";
+exceptions1.entranced = "entranced";
+exceptions1.entrancing = "entranced";
+exceptions1.executes = "executor";
+exceptions1.executing = "executor";
+exceptions1.fevered = "feverish";
+exceptions1.furnishings = "furnitur";
 // Invariants!
 exceptions1.institute = "institute";
 exceptions1.sky = "sky";
@@ -233,6 +244,13 @@ exceptions1.betty = "*betty";
 exceptions1.cooper = "*cooper";
 exceptions1.currency = "currency";
 exceptions1.currents = "currents";
+exceptions1.darteth = "darteth";
+exceptions1.earnest = "earnest";
+exceptions1.electrons = "electrons";
+exceptions1.equation = "equation";
+exceptions1.equator = "equator";
+exceptions1.facile = "facile";
+exceptions1.farthing = "farthing";
 // Tweaks!
 var tweaks = Object.create(null);
 tweaks.aggressor = "aggress";
@@ -525,6 +543,221 @@ tweaks.crystallin = "crystal";
 tweaks.curios = "curious";
 tweaks.curvatur = "curv";
 tweaks.customar = "custom";
+tweaks.damnat = "damn";
+tweaks.dawntid = "dawn";
+tweaks.deafen = "deaf";
+tweaks.dealt = "deal";
+tweaks.death = "dead";
+tweaks.debtor = "debt";
+tweaks.deceiv = "deceit";
+tweaks.decomposit = "decompos";
+tweaks.dedicator = "dedic";
+tweaks.defector = "defect";
+tweaks.deferent = "def";
+tweaks.defiant = "defi";
+tweaks.definit = "defin";
+tweaks.degenerat = "degen";
+tweaks.deific = "deif";
+tweaks.delightsom = "delight";
+tweaks.delus = "delud";
+tweaks.delusor = "delud";
+tweaks.demolit = "demolish";
+tweaks.denial = "deni";
+tweaks.densit = "dens";
+tweaks.denunciator = "denunc";
+tweaks.departur = "depart";
+tweaks.depositor = "deposit";
+tweaks.depute = "deput";
+tweaks.deris = "derid";
+tweaks.derogator = "derog";
+tweaks.descent = "descend";
+tweaks.descript = "describ";
+tweaks.destruct = "destroy";
+tweaks.detaine = "detain";
+tweaks.determinist = "determin";
+tweaks.detractor = "detract";
+tweaks.devilish = "devil";
+tweaks.devolut = "devolv";
+tweaks.devote = "devot";
+tweaks.dictator = "dictat";
+tweaks.dictatorship = "dictat";
+tweaks.different = "diff";
+tweaks.dignit = "dignif";
+tweaks.dilator = "dilat";
+tweaks.dimm = "dim";
+tweaks.disagre = "disagr";
+tweaks.disarma = "disarm";
+tweaks.disastr = "disast";
+tweaks.disbelief = "disbeliev";
+tweaks.discipleship = "discipl";
+tweaks.disciplinar = "disciplin";
+tweaks.disclosur = "disclos";
+tweaks.discomfitur = "discomfit";
+tweaks.discourtes = "discourt";
+tweaks.disenchant = "disench";
+tweaks.dishonest = "dishon";
+tweaks.disillusion = "disillus";
+tweaks.disinterested = "disinterest";
+tweaks.disloyalt = "disloy";
+tweaks.disobed = "disobey";
+tweaks.displeasur = "displeas";
+tweaks.disproof = "disprov";
+tweaks.disquietud = "disquiet";
+tweaks.dissatisfact = "dissatisf";
+tweaks.distributor = "distribut";
+tweaks.disunit = "disun";
+tweaks.div = "divers";
+tweaks.division = "divis";
+tweaks.documentar = "document";
+tweaks.dogmat = "dogma";
+tweaks.donor = "donat";
+tweaks.doub = "doubl";
+tweaks.drawn = "draw";
+tweaks.dreamt = "dream";
+tweaks.drew = "draw";
+tweaks.driv = "drive";
+tweaks.driven = "drive";
+tweaks.drove = "drive";
+tweaks.duchess = "duke";
+tweaks.dwel = "dwell";
+tweaks.eastward = "east";
+tweaks.ecclesiastic = "ecclesiast";
+tweaks.eclectic = "eclect";
+tweaks.economist = "econom";
+tweaks.ecstat = "ecstas";
+tweaks.editor = "edit";
+tweaks.educationalist = "educ";
+tweaks.effectu = "effect";
+tweaks.efficat = "efficac";
+tweaks.election = "elect";
+tweaks.elector = "elect";
+tweaks.elementar = "element";
+tweaks.embed = "emb";
+tweaks.employe = "employ";
+tweaks.empress = "emperor";
+tweaks.enactor = "enact";
+tweaks.encumbr = "encumb";
+tweaks.energet = "energ";
+tweaks.enfranchis = "enfranch";
+tweaks.engraven = "engrav";
+tweaks.enhanc = "enhant";
+tweaks.enigmat = "enigma";
+tweaks.entiret = "entir";
+tweaks.entrant = "entr";
+tweaks.enviabl = "env";
+tweaks.envious = "env";
+tweaks.envisag = "envis";
+tweaks.episcopalian = "episcop";
+tweaks.equabl = "equal";
+tweaks.equat = "equal";
+tweaks.equilibrium = "equilibr";
+tweaks.equinoct = "equinox";
+tweaks.eros = "erod";
+tweaks.erron = "error";
+tweaks.euphoria = "euphor";
+tweaks.european = "europ";
+tweaks.evangelist = "evangel";
+tweaks.eve = "evening";
+tweaks.evoc = "evok";
+tweaks.evolut = "evolv";
+tweaks.evolutionar = "evolv";
+tweaks.exactitud = "exact";
+tweaks.examin = "exam";
+tweaks.exclam = "exclaim";
+tweaks.execution = "execut";
+tweaks.existent = "exist";
+tweaks.experimentalist = "experimental";
+tweaks.explan = "explain";
+tweaks.explanator = "explain";
+tweaks.explorator = "explor";
+tweaks.explos = "explod";
+tweaks.expositor = "exposit";
+tweaks.exposur = "expos";
+tweaks.extortion = "extort";
+tweaks.extremist = "extrem";
+tweaks.factious = "faction";
+tweaks.factual = "fact";
+tweaks.failur = "fail";
+tweaks.fal = "fall";
+tweaks.fallat = "fallac";
+tweaks.fallen = "fall";
+tweaks.falsehood = "fals";
+tweaks.falsit = "fals";
+tweaks.fanatic = "fanat";
+tweaks.fantast = "fantas";
+tweaks.farmhous = "farm";
+tweaks.farmland = "farm";
+tweaks.farthermost = "farth";
+tweaks.fascism = "fascist";
+tweaks.fatherhood = "fath";
+tweaks.fearsom = "fear";
+tweaks.fed = "feed";
+tweaks.felicit = "felic";
+tweaks.fell = "fall";
+tweaks.felt = "feel";
+tweaks.feminist = "femin";
+tweaks.fervid = "fervent";
+tweaks.fervour = "fervent";
+tweaks.festal = "festiv";
+tweaks.fi = "fire";
+tweaks.fictit = "fiction";
+tweaks.fiendish = "fiend";
+tweaks.finant = "financ";
+tweaks.fixit = "fix";
+tweaks.flamelik = "flame";
+tweaks.fled = "flee";
+tweaks.fledgl = "fledg";
+tweaks.fleeth = "flee";
+tweaks.fleeting = "fleet";
+tweaks.flew = "f";
+tweaks.flight = "f";
+tweaks.flora = "flower";
+tweaks.floral = "flower";
+tweaks.flowerb = "flower";
+tweaks.flown = "f";
+tweaks.fluenc = "fluent";
+tweaks.fluidit = "fluid";
+tweaks.flung = "fling";
+tweaks.foc = "focus";
+tweaks.focal = "focus";
+tweaks.foemen = "foe";
+tweaks.foetal = "foetus";
+tweaks.foolish = "fool";
+tweaks.fora = "forum";
+tweaks.forbad = "forbid";
+tweaks.forbidden = "forbid";
+tweaks.forborn = "forbear";
+tweaks.forcibl = "forc";
+tweaks.foregon = "forego";
+tweaks.foresaw = "forese";
+tweaks.foreseen = "forese";
+tweaks.foresight = "forese";
+tweaks.foretold = "foretel";
+tweaks.forevermor = "forev";
+tweaks.forfeitur = "forfeit";
+tweaks.forgav = "forgiv";
+tweaks.forgiven = "forgiv";
+tweaks.forgon = "forgo";
+tweaks.forgot = "forget";
+tweaks.forgotten = "forget";
+tweaks.forsaken = "forsak";
+tweaks.forsook = "forsak";
+tweaks.fought = "fight";
+tweaks.fragmentar = "fragment";
+tweaks.frailt = "frail";
+tweaks.fram = "frame";
+tweaks.fraudul = "fraud";
+tweaks.fre = "free";
+tweaks.freed = "free";
+tweaks.freeth = "free";
+tweaks.frenetic = "frenet";
+tweaks.freshen = "fresh";
+tweaks.frighten = "fright";
+tweaks.fruitag = "fruit";
+tweaks.fruition = "fruit";
+tweaks.ful = "full";
+tweaks.furious = "furi";
+tweaks.fusion = "fuse";
 
 const ierReg = /ier$/;
 const eriReg = /eri$/;
@@ -1056,11 +1289,14 @@ const nameFarsiInclude = [
   "dais",
   "damm",
   "dasht",
+  "daylamit",
   "dayyan",
   "dea",
   "del",
+  "delawar",
   "delh",
   "denv",
+  "desaparecido",
   "detroit",
   "diego",
   "dinar",
@@ -1078,9 +1314,12 @@ const nameFarsiInclude = [
   "dunbar",
   "dunn",
   "dunya",
+  "durham",
   "dushanb",
   "dutch",
   "easton",
+  "ecosoc",
+  "eden",
   "edith",
   "eduard",
   "een",
@@ -1095,8 +1334,12 @@ const nameFarsiInclude = [
   "enayat",
   "enoch",
   "erl",
+  "ernest",
   "esau",
   "estal",
+  "estell",
+  "esth",
+  "estlin",
   "etah",
   "ethel",
   "ethiopian",
@@ -2059,24 +2302,40 @@ var stem = function (word) {
   var str = word.toLowerCase().replace(/‑/g, "");
   if (str.length < 3) return str;
   if (exceptions1[str]) return exceptions1[str];
-  if (word.startsWith("polite")) return "polite";
-  if (word.startsWith("arrogat")) return "arrogat";
-  if (word.startsWith("authoris")) return "authoris";
-  if (word.startsWith("authorit")) return "authorit";
-  if (word.startsWith("availa")) return "availa";
-  if (word.startsWith("candidat")) return "candidat";
-  if (word.startsWith("captivat")) return "captivat";
-  if (word.startsWith("chairm")) return "chairperson";
-  if (word.startsWith("chairp")) return "chairperson";
-  if (word.startsWith("civilisation")) return "civilisation";
-  if (word.startsWith("collaborator")) return "collaborator";
-  if (word.startsWith("conception")) return "conception";
-  if (word.startsWith("conference")) return "conference";
-  if (word.startsWith("constitution")) return "constitution";
-  if (word.startsWith("continent")) return "continent";
-  if (word.startsWith("craftsm")) return "craftsperson";
-  if (word.startsWith("craftsp")) return "craftsperson";
-  if (word.startsWith("custod")) return "custod";
+  if (!word.includes("‑")) {
+    if (word.startsWith("polite")) return "polite";
+    if (word.startsWith("arrogat")) return "arrogat";
+    if (word.startsWith("authoris")) return "authoris";
+    if (word.startsWith("authorit")) return "authorit";
+    if (word.startsWith("availa")) return "availa";
+    if (word.startsWith("candidat")) return "candidat";
+    if (word.startsWith("captivat")) return "captivat";
+    if (word.startsWith("chairm")) return "chairperson";
+    if (word.startsWith("chairp")) return "chairperson";
+    if (word.startsWith("civilisation")) return "civilisation";
+    if (word.startsWith("collaborator")) return "collaborator";
+    if (word.startsWith("conception")) return "conception";
+    if (word.startsWith("conference")) return "conference";
+    if (word.startsWith("constitution")) return "constitution";
+    if (word.startsWith("continent")) return "continent";
+    if (word.startsWith("craftsm")) return "craftsperson";
+    if (word.startsWith("craftsp")) return "craftsperson";
+    if (word.startsWith("custod")) return "custod";
+    if (word.startsWith("drama")) return "drama";
+    if (word.startsWith("drunk")) return "drunk";
+    if (word.startsWith("dwelling")) return "dwelling";
+    if (word.startsWith("effective")) return "effective";
+    if (word.startsWith("ego")) return "ego";
+    if (word.startsWith("enthus")) return "enthus";
+    if (word.startsWith("evening")) return "evening";
+    if (word.startsWith("executive")) return "executor";
+    if (word.startsWith("expeditious")) return "expeditious";
+    if (word.startsWith("expedition")) return "expedition";
+    if (word.startsWith("fish")) return "fish";
+    if (word.startsWith("formalism")) return "formal";
+    if (word.startsWith("formalis")) return "formalis";
+    if (word.startsWith("fundamentalis")) return "fundamentalis";
+  }
 
   str = prelude(str);
   str = step1a(str);

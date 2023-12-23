@@ -1,4 +1,4 @@
-: erred, erring, hawaii, heri, ihis, ioas, iowa
+: erred, erring, hawaii, heri, ioas, iowa
 
 0K|TK: ithaca, thacher
 
@@ -357,6 +357,8 @@ FXXX: vashshash
 FX|FK: afchih
 
 H: ohio, yahya, yahyay
+
+HL: ahaullah
 
 HNSLRN: hohenzollern
 
@@ -850,7 +852,7 @@ KLTT: haykalut‑tawhid
 
 KLX: ghoulishly, kull‑i‑shay
 
-KM: guam, guaymi, hakim, kawmu, khayyam, khumm, qaim, qayyum, qum, qumi
+KM: guam, guaymi, hakim, khayyam, khumm, qaim, qayyum, qum, qumi
 
 KMKM: qaim‑maqam, qaim‑maqams
 
@@ -894,13 +896,13 @@ KMRKKLS: qumruq‑kilisa
 
 KMRN: cameroon, kamran
 
-KMS: khamsi, khamsih
+KMS: kawmus, khamsi, khamsih
 
 KMSM: qayyum‑i‑asma
 
 KMSR: qamsar
 
-KMST: kawmu‑saayidih
+KMST: kawmus‑saayidih
 
 KMT: comte, hikmat
 
@@ -1179,6 +1181,8 @@ KSFN: qazvin, qazvini
 KSFRNX|KSFRNK: ex‑french
 
 KSFRT: oxford
+
+KSK: ecosoc
 
 KSKLNT: aguascalientes
 
@@ -3358,9 +3362,11 @@ PTRSLKM: abdur‑rasul‑i‑qumi
 
 PTRSPRK: petersburg
 
-PTSHP: abdu‑sahib
+PTS: abdus
 
-PTSL: abdu‑salih
+PTSHP: abdus‑sahib
+
+PTSL: abdus‑salih
 
 PTSLM: abdu‑salam
 
@@ -3670,7 +3676,7 @@ S0MS|STMS: isthmus
 
 S0RLNT|STRLNT: sutherland
 
-S0|ST: seth
+S0|ST: esther, seth
 
 SF: cephas, safa, saffa, sivas, sophia, suef, sufi, sufis, suva, yusif, yusuf
 
@@ -4236,7 +4242,7 @@ STKTPTP: sadiq‑i‑tabatabai
 
 STK|TSTK: izzat‑aqa
 
-STL: asadullah, estall, sadler, saidul, seattle
+STL: asadullah, estall, estelle, sadler, saidul, seattle
 
 STLHMSNTRN: asadullah‑i‑mazindarani
 
@@ -4246,7 +4252,7 @@ STLHSP: asadullah‑i‑sabbagh
 
 STLLM: saidul‑ulama
 
-STLN: stalin
+STLN: estlin, stalin
 
 STL|TSTL: izzatullah
 
@@ -4300,13 +4306,15 @@ STRN: austrian, austrians
 
 STRNLT: austrian‑lloyd
 
+STRS: sadrus
+
 STRSM: sadr‑i‑azam
 
 STRSMN: stresemann
 
 STRSPRK: strasbourg
 
-STRSTR: sadru‑sudur
+STRSTR: sadrus‑sudur, sadru‑sudur
 
 STRT: sadrud, stewart
 
@@ -4456,13 +4464,15 @@ TLL: dalail
 
 TLLSP: dalail‑i‑sabih
 
-TLMT: deylamite, talmud, talmudic
+TLMT: daylamite, daylamites, deylamite, talmud, talmudic
 
 TLN: italian, italians
 
 TLNT: atlanta
 
 TLP: talebi, talib, tullabs
+
+TLR: delaware
 
 TLSS: italo‑swiss
 
@@ -4514,7 +4524,7 @@ TMTT: itimadud
 
 TMTTL: itimadud‑dawlih
 
-TN: adhan, aydin, dayyan, doyen, dunn, dunya, edna, taiwan, tanna, tehna, tina, tinai, tunis
+TN: adhan, aydin, dayyan, doyen, dunn, dunya, eden, edna, taiwan, tanna, tehna, tina, tinai, tunis
 
 TNF: denver
 
@@ -4626,7 +4636,7 @@ TRKX: turkish
 
 TRKXN: derakhshan
 
-TRM: ahderom, dharma, dirhams
+TRM: ahderom, dharma, dirhams, durham
 
 TRMSTT: darmesteter
 
@@ -4697,6 +4707,8 @@ TSN: dawson, hudson, watson, yat‑sen
 TSNK: tsinghai
 
 TSNT: hatzionut
+
+TSPRST: desaparecidos
 
 TSR: tsar
 
@@ -5838,7 +5850,7 @@ annot: annotated, annotation, annotations
 
 announc: announce, announced, announcement, announcements, announcer, announces, announceth, announcing
 
-annoy: annoying
+annoy: annoyance, annoying
 
 annual: annual, annually
 
@@ -8032,7 +8044,9 @@ civil: civilise, civilised, civiliser, civilising, civility
 
 civilian: civilians
 
-civilisation: civilisation, civilisations, civilisation‑building
+civilisation: civilisation, civilisations
+
+civilisationbuild: civilisation‑building
 
 clad: clad, cladding
 
@@ -8716,7 +8730,9 @@ contigu: contiguous
 
 contin: continence
 
-continent: continent, continental, continentally, continents, continent‑wide
+continent: continent, continental, continentally, continents
+
+continentwid: continent‑wide
 
 conting: contingent, contingents
 
@@ -9228,13 +9244,11 @@ dam: dam
 
 damag: damage, damaged, damages, damaging
 
-damn: damned
+damn: damnation, damned
 
-damnat: damnation
+damp: damp
 
-damp: damp, damped
-
-dampen: dampen, dampened
+dampen: damped, dampen, dampened
 
 damsel: damsel, damsels
 
@@ -9250,7 +9264,9 @@ darkcolour: dark‑coloured
 
 darl: darling
 
-dart: dart, darteth, darting, darts
+dart: dart, darting, darts
+
+darteth: darteth
 
 dash: dash, dashed
 
@@ -9270,7 +9286,7 @@ daunt: daunted, daunting
 
 dauntless: dauntless, dauntlessly, dauntlessness
 
-dawn: dawn, dawned, dawneth, dawning, dawnings, dawns
+dawn: dawn, dawned, dawneth, dawning, dawnings, dawns, dawntide
 
 dawnbreak: dawnbreakers, dawn‑breakers
 
@@ -9280,15 +9296,11 @@ dawningplac: dawning‑place, dawning‑places
 
 dawningpoint: dawning‑point, dawning‑points
 
-dawntid: dawntide
-
 dawntim: dawn‑time
 
 day: day, days
 
 daybreak: daybreak
-
-daylamit: daylamite, daylamites
 
 daylight: daylight
 
@@ -9308,19 +9320,15 @@ de: deer
 
 deactiv: deactivated
 
-dead: dead, deadlier, deadliest, deadly, deadness
+dead: dead, deadlier, deadliest, deadly, deadness, death, deaths
 
 deaden: deaden, deadeneth, deadening
 
 deadlin: deadline, deadlines
 
-deaf: deaf, deafness
+deaf: deaf, deafened, deafness
 
-deafen: deafened
-
-deal: deal, dealers, dealest, dealeth, dealing, dealings, deals
-
-dealt: dealt
+deal: deal, dealers, dealest, dealeth, dealing, dealings, deals, dealt
 
 dean: dean
 
@@ -9333,8 +9341,6 @@ dearlybelov: dearly‑beloved
 dearlylov: dearly‑loved
 
 dearth: dearth
-
-death: death, deaths
 
 deathb: deathbed
 
@@ -9364,9 +9370,7 @@ debilit: debilitate, debilitated, debilitating
 
 debit: debits
 
-debt: debt, debts
-
-debtor: debtor
+debt: debt, debtor, debts
 
 decad: decade, decadence, decadent, decades
 
@@ -9380,9 +9384,7 @@ decay: decay, decayed, decayeth, decaying
 
 deceas: decease, deceased
 
-deceit: deceit, deceitful, deceitfully, deceitfulness, deceits
-
-deceiv: deceive, deceived, deceiver, deceives
+deceit: deceit, deceitful, deceitfully, deceitfulness, deceits, deceive, deceived, deceiver, deceives
 
 decemb: december
 
@@ -9412,9 +9414,7 @@ declar: declarant, declarants, declaration, declarations, declare, declared, dec
 
 declin: decline, declined, declines, declineth, declining
 
-decompos: decompose, decomposed, decomposes, decomposing
-
-decomposit: decomposition
+decompos: decompose, decomposed, decomposes, decomposing, decomposition
 
 deconstruction: deconstructionism
 
@@ -9430,9 +9430,7 @@ decreas: decrease, decreased, decreaseth, decreasing
 
 decrepit: decrepit
 
-dedic: dedicate, dedicated, dedicateth, dedicating, dedication
-
-dedicator: dedicatory
+dedic: dedicate, dedicated, dedicateth, dedicating, dedication, dedicatory
 
 deduc: deduce, deduced, deduces, deducing
 
@@ -9456,7 +9454,7 @@ deeproot: deep‑rooted
 
 deepseat: deepseated, deep‑seated
 
-def: defer, deference, deferment, deferred, deferreth, deferring, defers
+def: defer, deference, deferentially, deferment, deferred, deferreth, deferring, defers
 
 defac: deface
 
@@ -9468,21 +9466,15 @@ defeat: defeat, defeated, defeating, defeats
 
 defeatless: defeatless
 
-defect: defect, defection, defections, defective, defectiveness, defects
+defect: defect, defection, defections, defective, defectiveness, defectors, defects
 
 defectivemind: defective‑minded
-
-defector: defectors
 
 defenceless: defenceless
 
 defend: defence, defences, defend, defendant, defendants, defended, defender, defenders, defendeth, defending, defensive, defensiveness
 
-deferent: deferentially
-
-defi: defied, defies, defy, defying
-
-defiant: defiance, defiant
+defi: defiance, defiant, defied, defies, defy, defying
 
 defic: deficiencies, deficiency, deficient
 
@@ -9490,9 +9482,7 @@ deficit: deficit
 
 defil: defile, defiled, defilement, defilements, defiles, defileth
 
-defin: definable, define, defined, defines, defining
-
-definit: definite, definitely, definition, definitions, definitive
+defin: definable, define, defined, defines, defining, definite, definitely, definition, definitions, definitive
 
 deflect: deflect, deflected, deflecting, deflection
 
@@ -9506,9 +9496,7 @@ deft: deft
 
 defunct: defunct
 
-degen: degenerate, degenerated, degenerates, degenerating, degeneration
-
-degenerat: degeneracy
+degen: degeneracy, degenerate, degenerated, degenerates, degenerating, degeneration
 
 degrad: degradation, degradations, degrade, degraded, degradeth, degrading
 
@@ -9516,9 +9504,7 @@ degre: degree, degrees
 
 dehuman: dehumanising
 
-deif: deified, deify, deifying
-
-deific: deification
+deif: deification, deified, deify, deifying
 
 deign: deign, deigned
 
@@ -9527,8 +9513,6 @@ deistic: deistic
 deit: deity
 
 deject: dejected, dejection
-
-delawar: delaware
 
 delay: delay, delayed, delayest, delaying, delays
 
@@ -9550,9 +9534,7 @@ delicat: delicacies, delicacy
 
 delici: delicious
 
-delight: delight, delighted, delighteth, delightful, delighting, delights
-
-delightsom: delightsome
+delight: delight, delighted, delighteth, delightful, delighting, delights, delightsome
 
 delimit: delimit, delimited, delimits
 
@@ -9566,13 +9548,9 @@ deliv: deliver, deliverance, delivered, deliverer, deliverers, deliverest, deliv
 
 dell: dell
 
-delud: delude, deluded, deluding
+delud: delude, deluded, deluding, delusion, delusions, delusory
 
 delug: deluge, deluged
-
-delus: delusion, delusions
-
-delusor: delusory
 
 delv: delve, delving
 
@@ -9596,9 +9574,7 @@ democrat: democracies, democracy, democratic, democratically, democratisation, d
 
 demograph: demographic, demographics
 
-demolish: demolish, demolished, demolishing
-
-demolit: demolition
+demolish: demolish, demolished, demolishing, demolition
 
 demon: demonic, demonise, demons
 
@@ -9612,9 +9588,7 @@ demur: demur
 
 den: den, dens
 
-deni: denied, denier, deniers, denies, deniest, denieth, deny, denying
-
-denial: denial, denials
+deni: denial, denials, denied, denier, deniers, denies, deniest, denieth, deny, denying
 
 denigr: denigrate
 
@@ -9626,19 +9600,13 @@ denot: denote, denotes, denoteth, denoting
 
 denounc: denounce, denounced, denounces, denouncing
 
-dens: dense, densest
-
-densit: density
+dens: dense, densest, density
 
 denud: denuded
 
-denunc: denunciation, denunciations
+denunc: denunciation, denunciations, denunciatory
 
-denunciator: denunciatory
-
-depart: depart, departed, departeth, departing, department, departments, departs
-
-departur: departure, departures
+depart: depart, departed, departeth, departing, department, departments, departs, departure, departures
 
 depend: depend, dependability, dependable, dependants, depended, dependence, dependencies, dependency, dependent, dependeth, depending, depends
 
@@ -9654,9 +9622,7 @@ deport: deportation, deportations, deported
 
 depos: depose, deposed, deposing
 
-deposit: deposit, deposited, depositing, deposition, depositions, deposits
-
-depositor: depositories, depository
+deposit: deposit, deposited, depositing, deposition, depositions, depositories, depository, deposits
 
 depossess: depossessed
 
@@ -9674,9 +9640,7 @@ depriv: deprivation, deprivations, deprive, deprived, deprives, depriveth, depri
 
 depth: depth, depths
 
-deput: deputation, depute, deputies, deputisation, deputise, deputised, deputises, deputising, deputy
-
-depute: deputees
+deput: deputation, depute, deputees, deputies, deputisation, deputise, deputised, deputises, deputising, deputy
 
 deputygovernor: deputy‑governor
 
@@ -9684,31 +9648,21 @@ derail: derailed
 
 derang: derange, deranged, derangement, deranges, deranging
 
-derid: deride, derided, deriding
-
-deris: derision, derisive, derisively
+derid: deride, derided, deriding, derision, derisive, derisively
 
 derisor: derisory
 
 deriv: derivation, derivative, derivatives, derive, derived, derives, deriveth, deriving
 
-derog: derogating
-
-derogator: derogatory
+derog: derogating, derogatory
 
 dervish: dervish, dervishes
 
-desaparecido: desaparecidos
-
-descend: descend, descendant, descendants, descended, descendeth, descending, descends
-
-descent: descent
+descend: descend, descendant, descendants, descended, descendeth, descending, descends, descent
 
 descr: descried
 
-describ: describe, described, describes, describing
-
-descript: description, descriptions, descriptive
+describ: describe, described, describes, describing, description, descriptions, descriptive
 
 desecr: desecrated, desecration
 
@@ -9754,9 +9708,7 @@ destinyshap: destiny‑shaping
 
 destitut: destitute, destitution
 
-destroy: destroy, destroyed, destroyer, destroyers, destroyeth, destroying, destroys
-
-destruct: destructible, destruction, destructive, destructiveness
+destroy: destroy, destroyed, destroyer, destroyers, destroyeth, destroying, destroys, destructible, destruction, destructive, destructiveness
 
 desultor: desultory
 
@@ -9766,9 +9718,7 @@ detach: detach, detached, detacheth, detaching, detachment
 
 detail: detail, detailed, detailing, details
 
-detain: detain, detained, detainment
-
-detaine: detainees
+detain: detain, detained, detainees, detainment
 
 dete: detest
 
@@ -9778,17 +9728,13 @@ detent: detention, detentions
 
 deterior: deteriorate, deteriorated, deteriorates, deteriorating, deterioration
 
-determin: determination, determinations, determine, determined, determinedly, determines, determinest, determineth, determining
-
-determinist: deterministic
+determin: determination, determinations, determine, determined, determinedly, determines, determinest, determineth, determining, deterministic
 
 detest: detestable, detestation, detested
 
 dethron: dethrone, dethroned, dethronement, dethroning
 
-detract: detract, detracteth, detracting, detraction, detracts
-
-detractor: detractors
+detract: detract, detracteth, detracting, detraction, detractors, detracts
 
 detriment: detriment, detrimental
 
@@ -9808,9 +9754,7 @@ deviat: deviate, deviated, deviates, deviateth, deviating, deviation, deviations
 
 devic: device, devices
 
-devil: devil
-
-devilish: devilish
+devil: devil, devilish
 
 devious: devious
 
@@ -9820,13 +9764,9 @@ devit: devitalisation
 
 devoid: devoid
 
-devolut: devolution
+devolv: devolution, devolve, devolved, devolves, devolveth, devolving
 
-devolv: devolve, devolved, devolves, devolveth, devolving
-
-devot: devote, devoted, devotedly, devotes, devoting, devotion, devotions
-
-devote: devotees
+devot: devote, devoted, devotedly, devotees, devotes, devoting, devotion, devotions
 
 devotional: devotional
 
@@ -9868,11 +9808,7 @@ diaspora: diaspora
 
 dichotom: dichotomies, dichotomous, dichotomy
 
-dictat: dictate, dictated, dictates, dictating, dictation, dictator, dictators
-
-dictator: dictatorial
-
-dictatorship: dictatorship, dictatorships
+dictat: dictate, dictated, dictates, dictating, dictation, dictator, dictatorial, dictators, dictatorship, dictatorships
 
 dictionar: dictionaries, dictionary
 
@@ -9884,9 +9820,7 @@ die: die, died, dies, dieth, dying
 
 diet: diet
 
-diff: differ, differed, difference, differences, different, differently, differing, differs
-
-different: differentials, differentiate, differentiated, differentiates, differentiating, differentiation, differentiations, differentiator
+diff: differ, differed, difference, differences, different, differentials, differentiate, differentiated, differentiates, differentiating, differentiation, differentiations, differentiator, differently, differing, differs
 
 difficult: difficult, difficulties, difficulty
 
@@ -9898,9 +9832,7 @@ dig: dig, digged, digging
 
 digest: digest, digesting, digestion, digestive
 
-dignif: dignified, dignifying
-
-dignit: dignity
+dignif: dignified, dignifying, dignity
 
 dignitar: dignitaries, dignitary
 
@@ -9908,9 +9840,7 @@ digress: digress, digressed
 
 dilapid: dilapidated
 
-dilat: dilate, dilated, dilates
-
-dilator: dilatory
+dilat: dilate, dilated, dilates, dilatory
 
 dilemma: dilemma, dilemmas
 
@@ -9918,15 +9848,13 @@ dilig: diligence, diligent, diligently
 
 dilut: diluted, dilutes, dilution
 
-dim: dim, dimly, dimmed, dimmest, dimming
+dim: dim, dimly, dimmed, dimmer, dimmest, dimming
 
 dimens: dimension, dimensions
 
 diminish: diminish, diminished, diminishes, diminishing
 
 diminut: diminution, diminutive
-
-dimm: dimmer
 
 din: din
 
@@ -9960,9 +9888,7 @@ disadvantag: disadvantage, disadvantaged, disadvantageous, disadvantages
 
 disaffect: disaffected, disaffection
 
-disagr: disagreement, disagreements
-
-disagre: disagree, disagreeable, disagreed, disagreeing, disagrees
+disagr: disagree, disagreeable, disagreed, disagreeing, disagreement, disagreements, disagrees
 
 disappear: disappear, disappearance, disappearances, disappeared, disappeareth, disappearing, disappears
 
@@ -9970,23 +9896,17 @@ disappoint: disappoint, disappointed, disappointest, disappointing, disappointme
 
 disapprov: disapproval, disapprove, disapproved, disapproves
 
-disarm: disarm, disarmed, disarming
-
-disarma: disarmament
+disarm: disarm, disarmament, disarmed, disarming
 
 disarray: disarray
 
-disast: disaster, disasters
-
-disastr: disastrous, disastrously
+disast: disaster, disasters, disastrous, disastrously
 
 disavow: disavow, disavowal, disavowed
 
 disband: disband, disbanded, disbanding, disbands
 
-disbelief: disbelief
-
-disbeliev: disbelieve, disbelieved, disbeliever, disbelievers, disbelieveth
+disbeliev: disbelief, disbelieve, disbelieved, disbeliever, disbelievers, disbelieveth
 
 disburs: disburse, disbursed, disbursement, disburses, disburseth, disbursing
 
@@ -9998,25 +9918,17 @@ discern: discern, discerned, discernest, discerneth, discernible, discerning, di
 
 discharg: discharge, discharged, discharges, dischargeth, discharging
 
-discipl: disciple, disciples
+discipl: disciple, disciples, discipleship
 
-discipleship: discipleship
-
-disciplin: discipline, disciplined, disciplines, disciplining
-
-disciplinar: disciplinary
+disciplin: disciplinary, discipline, disciplined, disciplines, disciplining
 
 disclaim: disclaimed, disclaiming, disclaims
 
-disclos: disclose, disclosed, discloses, discloseth, disclosing
-
-disclosur: disclosure, disclosures
+disclos: disclose, disclosed, discloses, discloseth, disclosing, disclosure, disclosures
 
 discolour: discoloured
 
-discomfit: discomfited
-
-discomfitur: discomfiture
+discomfit: discomfited, discomfiture
 
 discomfort: discomfort
 
@@ -10038,19 +9950,17 @@ discourag: discourage, discouraged, discouragement, discourages, discouraging
 
 discours: discourse, discoursed, discourses, discoursing
 
-discourt: discourteous
-
-discourtes: discourtesy
+discourt: discourteous, discourtesy
 
 discov: discover, discovered, discoverer, discoverers, discovereth, discoveries, discovering, discovers, discovery
 
 discredit: discredit, discreditable, discredited
 
-discreet: discreet, discreetly
+discreet: discreet, discreetly, discretion
 
 discrep: discrepancies
 
-discret: discrete, discretion
+discret: discrete
 
 discrimin: discriminate, discriminating, discrimination, discriminations, discriminative
 
@@ -10068,9 +9978,7 @@ disembowel: disembowelled
 
 disempow: disempower
 
-disench: disenchanted
-
-disenchant: disenchantment
+disench: disenchanted, disenchantment
 
 disencumb: disencumber, disencumbered
 
@@ -10100,15 +10008,11 @@ dishearten: disheartened, disheartening
 
 dishevel: dishevelled
 
-dishon: dishonest
-
-dishonest: dishonestly, dishonesty
+dishon: dishonest, dishonestly, dishonesty
 
 dishonour: dishonour, dishonourable, dishonoured, dishonoureth, dishonouring
 
-disillus: disillusion, disillusioned
-
-disillusion: disillusionment
+disillus: disillusion, disillusioned, disillusionment
 
 disinclin: disinclined
 
@@ -10120,9 +10024,7 @@ disint: disinter, disinterred
 
 disintegr: disintegrate, disintegrated, disintegrates, disintegrating, disintegration
 
-disinterest: disinterested, disinterestedly
-
-disinterested: disinterestedness
+disinterest: disinterested, disinterestedly, disinterestedness
 
 disjoint: disjointed
 
@@ -10132,9 +10034,7 @@ dislik: dislike, disliked, dislikes
 
 disloc: dislocated, dislocation, dislocations
 
-disloy: disloyal
-
-disloyalt: disloyalty
+disloy: disloyal, disloyalty
 
 dismal: dismal
 
@@ -10148,9 +10048,7 @@ dismiss: dismiss, dismissal, dismissals, dismissed, dismissing
 
 dismount: dismount, dismounted
 
-disobed: disobedience, disobedient
-
-disobey: disobey, disobeyed, disobeyeth, disobeying, disobeys
+disobey: disobedience, disobedient, disobey, disobeyed, disobeyeth, disobeying, disobeys
 
 disor: disoriented
 
@@ -10182,9 +10080,7 @@ displac: displace, displaced, displacement
 
 display: display, displayed, displaying, displays
 
-displeas: displease, displeased, displeaseth, displeasing
-
-displeasur: displeasure
+displeas: displease, displeased, displeaseth, displeasing, displeasure
 
 disport: disport, disportest, disporting
 
@@ -10196,19 +10092,15 @@ dispossess: dispossessed, dispossessing
 
 disprais: dispraised
 
-disproof: disproof
-
 disproportion: disproportionate, disproportionately
 
-disprov: disprove, disproved, disproving
+disprov: disproof, disprove, disproved, disproving
 
 disput: disputants, disputation, disputations, dispute, disputed, disputes, disputest, disputeth, disputing
 
 disqualif: disqualified
 
-disquiet: disquiet, disquieted, disquieting
-
-disquietud: disquietude
+disquiet: disquiet, disquieted, disquieting, disquietude
 
 disregard: disregard, disregarded, disregarding, disregards
 
@@ -10220,9 +10112,7 @@ disrespect: disrespect, disrespectful
 
 disrupt: disrupt, disrupted, disrupter, disrupting, disruption, disruptions, disruptive
 
-dissatisf: dissatisfied
-
-dissatisfact: dissatisfaction
+dissatisf: dissatisfaction, dissatisfied
 
 dissect: dissect, dissected, dissection
 
@@ -10280,9 +10170,7 @@ distraught: distraught
 
 distress: distress, distressed, distressful, distressing, distressingly
 
-distribut: distribute, distributed, distributing, distribution
-
-distributor: distributor
+distribut: distribute, distributed, distributing, distribution, distributor
 
 district: district, districts
 
@@ -10290,25 +10178,21 @@ distrust: distrust
 
 disturb: disturb, disturbance, disturbances, disturbed, disturbers, disturbing
 
-disun: disunity
+disun: disunited, disunity
 
 disunion: disunion
 
-disunit: disunited
-
 disus: disuse
-
-div: divers
 
 dive: dive, dives, divest, diving
 
 diverg: diverge, diverged, divergence, divergences, divergent
 
-divers: diverse, diversion, diversities, diversity
+divers: divers, diverse, diversities, diversity
 
 diversif: diversification, diversified, diversify, diversifying
 
-divert: divert, diverted, diverting
+divert: diversion, divert, diverted, diverting
 
 divest: divested, divesteth
 
@@ -10338,9 +10222,7 @@ divinelypurpos: divinely‑purposed
 
 divinelyrev: divinely‑revealed
 
-divis: divisibility, divisible, division, divisions, divisive, divisiveness
-
-division: divisional
+divis: divisibility, divisible, division, divisional, divisions, divisive, divisiveness
 
 divorc: divorce, divorced, divorces, divorcing
 
@@ -10354,9 +10236,7 @@ doctor: doctor, doctoral, doctors
 
 doctrin: doctrinal, doctrine, doctrines
 
-document: document, documentation, documented, documenting, documents
-
-documentar: documentary
+document: document, documentary, documentation, documented, documenting, documents
 
 dodg: dodge
 
@@ -10364,9 +10244,7 @@ doe: doe
 
 dog: dog, dogged, dogs
 
-dogma: dogma, dogmas
-
-dogmat: dogmatic, dogmatically, dogmatism
+dogma: dogma, dogmas, dogmatic, dogmatically, dogmatism
 
 dole: dole
 
@@ -10390,13 +10268,11 @@ dominion: dominion, dominions
 
 don: don, donned
 
-donat: donated, donation, donations
+donat: donated, donation, donations, donor, donors
 
 done: done
 
 donkey: donkey, donkeys
-
-donor: donor, donors
 
 dont: dont, donts
 
@@ -10424,9 +10300,7 @@ dot: dot, dotted
 
 doth: doth
 
-doub: doubly
-
-doubl: double, doubled, doubling
+doubl: double, doubled, doubling, doubly
 
 doubt: doubt, doubted, doubter, doubters, doubtest, doubteth, doubtful, doubtfulness, doubting, doubts
 
@@ -10472,11 +10346,7 @@ dragon: dragon, dragons
 
 drain: drain, drained, draining
 
-drama: drama, dramas
-
-dramat: dramatic, dramatically, dramatis, dramatise, dramatised, dramatising
-
-dramatist: dramatists
+drama: drama, dramas, dramatic, dramatically, dramatis, dramatise, dramatised, dramatising, dramatists
 
 drank: drank
 
@@ -10486,21 +10356,17 @@ drastic: drastic, drastically
 
 draught: draught, draughts
 
-draw: draw, drawest, draweth, drawing, drawings, draws
+draw: draw, drawest, draweth, drawing, drawings, drawn, draws, drew
 
 drawback: drawback
-
-drawn: drawn
 
 dread: dread, dreaded, dreadful, dreading
 
 dreadnought: dreadnoughts
 
-dream: dream, dreamed, dreamer, dreamers, dreameth, dreaming, dreams
+dream: dream, dreamed, dreamer, dreamers, dreameth, dreaming, dreams, dreamt
 
 dreamless: dreamless
-
-dreamt: dreamt
 
 drear: dreary
 
@@ -10512,8 +10378,6 @@ dress: dress, dressed, dresses, dressing
 
 dressmak: dressmakers
 
-drew: drew
-
 driedup: dried‑up
 
 drift: drift, drifted, drifting
@@ -10524,11 +10388,7 @@ drink: drink, drinker, drinkest, drinketh, drinking, drinks
 
 drip: dripped, dripping
 
-driv: drivers
-
-drive: drive, drives, driveth, driving
-
-driven: driven
+drive: drive, driven, drivers, drives, driveth, driving, drove
 
 driveway: driveway
 
@@ -10542,8 +10402,6 @@ droplet: droplet, droplets
 
 dross: dross
 
-drove: drove
-
 drown: drown, drowned, drowning
 
 drudg: drudgery
@@ -10556,11 +10414,7 @@ drumbeat: drumbeat, drumbeats
 
 drumm: drummers
 
-drunk: drunk
-
-drunkard: drunkard
-
-drunken: drunken, drunkenness
+drunk: drunk, drunkard, drunken, drunkenness
 
 du: duly
 
@@ -10572,13 +10426,11 @@ dubiet: dubieties
 
 duch: duchy
 
-duchess: duchess
-
 due: due, dues
 
 dug: dug
 
-duke: duke
+duke: duchess, duke
 
 dul: dulled, dullest
 
@@ -10602,9 +10454,9 @@ dunghil: dunghill
 
 dupe: dupe, duped
 
-duplic: duplicate, duplicated, duplication, duplicity
+duplic: duplicate, duplicated, duplication
 
-duplicit: duplicitously
+duplicit: duplicitously, duplicity
 
 durabl: durable
 
@@ -10613,8 +10465,6 @@ durat: duration, durations
 dure: during
 
 duress: duress
-
-durham: durham
 
 dusk: dusk
 
@@ -10632,9 +10482,9 @@ dut: duties, dutiful, dutifully, duty
 
 dwarf: dwarf, dwarfing, dwarfs
 
-dwel: dwellest, dwelleth, dwelling, dwellings
+dwell: dwell, dweller, dwellers, dwellest, dwelleth, dwells
 
-dwell: dwell, dweller, dwellers, dwells
+dwelling: dwelling, dwellings
 
 dwellingplac: dwelling‑place, dwelling‑places
 
@@ -10670,9 +10520,9 @@ earli: earlier, earliest, early
 
 earmark: earmark, earmarked
 
-earn: earn, earned, earners, earnest, earneth, earning, earnings
+earn: earn, earned, earners, earneth, earning, earnings
 
-earnest: earnestly, earnestness
+earnest: earnest, earnestly, earnestness
 
 earth: earth, earthly, earths, earthy
 
@@ -10696,11 +10546,9 @@ earthworm: earthworms
 
 eas: ease, eased, easeful, eases, easier, easily, easing, easy
 
-east: east, easts
+east: east, eastern, easts, eastward
 
-eastern: eastern, easterners
-
-eastward: eastward
+eastern: easterners
 
 eat: eat, eaten, eater, eaters, eateth, eating, eats
 
@@ -10710,17 +10558,13 @@ ebul: ebullient
 
 ebullit: ebullition, ebullitions
 
-ecclesiast: ecclesiastic, ecclesiastical, ecclesiastics
-
-ecclesiastic: ecclesiasticism
+ecclesiast: ecclesiastic, ecclesiastical, ecclesiasticism, ecclesiastics
 
 echelon: echelons
 
 echo: echo, echoed, echoes
 
-eclect: eclectic
-
-eclectic: eclecticism
+eclect: eclectic, eclecticism
 
 eclips: eclipse, eclipsed, eclipses, eclipseth, eclipsing
 
@@ -10728,21 +10572,13 @@ eclipt: ecliptic
 
 ecolog: ecological
 
-econom: economic, economical, economically, economics, economies, economy
-
-economist: economists
-
-ecosoc: ecosoc
+econom: economic, economical, economically, economics, economies, economists, economy
 
 ecosystem: ecosystem
 
-ecstas: ecstasies, ecstasy
-
-ecstat: ecstatic
+ecstas: ecstasies, ecstasy, ecstatic
 
 ecumen: ecumenism
-
-eden: eden
 
 edg: edge, edged, edging
 
@@ -10754,19 +10590,15 @@ edif: edification, edified, edify, edifying
 
 edific: edifice, edifices
 
-edit: edited, editing, edition, editions
+edit: edited, editing, edition, editions, editor, editorial, editors
 
-editor: editor, editorial, editors
-
-educ: educate, educated, educates, educateth, educating, education, educational, educative, educator, educators
-
-educationalist: educationalists
+educ: educate, educated, educates, educateth, educating, education, educational, educationalists, educative, educator, educators
 
 effac: efface, effaced, effacement, effaces, effacing
 
-effect: effect, effected, effecteth, effecting, effective, effectively, effectiveness, effects
+effect: effect, effected, effecteth, effecting, effects, effectual, effectually, effectuate, effectuates
 
-effectu: effectual, effectually, effectuate, effectuates
+effective: effective, effectively, effectiveness
 
 effervesc: effervescence, effervescing
 
@@ -10774,9 +10606,7 @@ effet: effete
 
 effic: efficiency, efficient, efficiently
 
-efficac: efficacious
-
-efficat: efficacy
+efficac: efficacious, efficacy
 
 effig: effigies
 
@@ -10800,15 +10630,7 @@ eggshel: eggshell
 
 eglantin: eglantine
 
-ego: ego, egos
-
-egoism: egoism
-
-egoist: egoistic
-
-egot: egotism
-
-egotist: egotistical
+ego: ego, egoism, egoistic, egos, egotism, egotistical
 
 egreg: egregious
 
@@ -10868,25 +10690,21 @@ eld: eld, elder, elderly, elders, eldest
 
 eldermil: elder‑miller
 
-elect: elect, elected, electing, election, elections, elective, elects
-
-election: electioneering
-
-elector: elector, electoral, electorate, electorates, electors
+elect: elect, elected, electing, election, electioneering, elections, elective, elector, electoral, electorate, electorates, electors, elects
 
 electr: electric, electrical, electricity
 
 electrif: electrified, electrifying
 
-electron: electronic, electronically, electronics, electrons
+electron: electronic, electronically, electronics
+
+electrons: electrons
 
 eleg: elegance, elegant
 
 elegi: elegy
 
-element: element, elemental, elements
-
-elementar: elementary
+element: element, elemental, elementary, elements
 
 eleph: elephant, elephants
 
@@ -10938,7 +10756,7 @@ emancip: emancipate, emancipated, emancipating, emancipation, emancipator
 
 emascul: emasculated
 
-emb: embeds
+emb: embedded, embeds
 
 embargo: embargo
 
@@ -10949,8 +10767,6 @@ embarrass: embarrassed, embarrassing, embarrassment, embarrassments
 embass: embassies, embassy
 
 embattl: embattled
-
-embed: embedded
 
 embellish: embellish, embellished, embellishes, embellisheth, embellishment, embellishments
 
@@ -11010,7 +10826,7 @@ emot: emotion, emotional, emotionalism, emotionally, emotions, emotive
 
 empath: empathy
 
-emperor: emperor, emperors
+emperor: emperor, emperors, empress, empresses
 
 emphas: emphasis, emphasise, emphasised, emphasises, emphasising
 
@@ -11018,17 +10834,13 @@ emphat: emphatic, emphatically
 
 empir: empire, empires, empirical
 
-employ: employ, employability, employed, employer, employers, employing, employment, employs
-
-employe: employee, employees
+employ: employ, employability, employed, employee, employees, employer, employers, employing, employment, employs
 
 employeremploye: employeremployee
 
 emporium: emporiums
 
 empow: empower, empowered, empowereth, empowering, empowerment, empowers
-
-empress: empress, empresses
 
 empt: emptied, emptiness, empty, emptying
 
@@ -11042,9 +10854,7 @@ emul: emulate, emulated, emulating, emulation
 
 enabl: enable, enabled, enables, enablest, enableth, enabling
 
-enact: enact, enacted, enacteth, enacting, enactment, enactments
-
-enactor: enactor
+enact: enact, enacted, enacteth, enacting, enactment, enactments, enactor
 
 enamour: enamoured
 
@@ -11078,9 +10888,7 @@ encroach: encroach, encroaching, encroachments
 
 encrust: encrustations, encrusted
 
-encumb: encumber
-
-encumbr: encumbrances
+encumb: encumber, encumbrances
 
 encyclopaedia: encyclopaedia
 
@@ -11106,9 +10914,7 @@ endur: endurance, endure, endured, endures, endureth, enduring
 
 enem: enemies, enemy
 
-energ: energies, energise, energised, energises, energising, energy
-
-energet: energetic, energetically
+energ: energetic, energetically, energies, energise, energised, energises, energising, energy
 
 energyconsum: energy‑consuming
 
@@ -11120,9 +10926,7 @@ enfold: enfold, enfolded, enfolding, enfolds
 
 enforc: enforce, enforceable, enforced, enforcement, enforces, enforceth, enforcing
 
-enfranch: enfranchise
-
-enfranchis: enfranchisement
+enfranch: enfranchise, enfranchisement
 
 engag: engage, engaged, engagement, engagements, engages, engageth, engaging
 
@@ -11134,21 +10938,15 @@ english: english, englishing, english‑
 
 englishspeak: english‑speaking
 
-engrav: engrave, engraved
-
-engraven: engraven
+engrav: engrave, engraved, engraven
 
 engross: engross, engrossed, engrossing, engrossment
 
 engulf: engulf, engulfed, engulfing, engulfs
 
-enhanc: enhancement
+enhant: enhance, enhanced, enhancement, enhances, enhancing
 
-enhant: enhance, enhanced, enhances, enhancing
-
-enigma: enigma, enigmas
-
-enigmat: enigmatic
+enigma: enigma, enigmas, enigmatic
 
 enjoin: enjoin, enjoined, enjoineth, enjoining, enjoins
 
@@ -11216,17 +11014,11 @@ enthral: enthralled, enthralling
 
 enthron: enthroned, enthronement
 
-enthus: enthuse, enthused, enthusing
-
-enthusiasm: enthusiasm, enthusiasms
-
-enthusiast: enthusiastic, enthusiastically, enthusiasts
+enthus: enthuse, enthused, enthusiasm, enthusiasms, enthusiastic, enthusiastically, enthusiasts, enthusing
 
 entic: enticed, enticements, enticing, enticingly
 
-entir: entire, entirely
-
-entiret: entirety
+entir: entire, entirely, entirety
 
 entit: entities, entity
 
@@ -11238,9 +11030,9 @@ entomologist: entomologist
 
 entourag: entourage
 
-entr: entries, entry
+entr: entrance, entrances, entries, entry
 
-entrant: entrance, entranced, entrances, entrancing
+entranced: entranced, entrancing
 
 entrap: entrap, entrapped
 
@@ -11256,21 +11048,15 @@ enum: enumerate, enumerated, enumerates, enumerating, enumeration
 
 enunc: enunciate, enunciated, enunciates, enunciating, enunciation
 
-env: envied, envy
+env: enviable, enviably, envied, envious, envy
 
 envelop: envelop, envelope, enveloped, envelopeth, enveloping, envelopment, envelops
-
-enviabl: enviable, enviably
-
-envious: envious
 
 environ: environed, environment, environments, environs
 
 environment: environmental, environmentalism
 
-envis: envision, envisioned, envisioning, envisions
-
-envisag: envisage, envisaged, envisages
+envis: envisage, envisaged, envisages, envision, envisioned, envisioning, envisions
 
 envoy: envoy, envoys
 
@@ -11288,9 +11074,7 @@ epileps: epilepsy
 
 epilogu: epilogue
 
-episcop: episcopal
-
-episcopalian: episcopalian
+episcop: episcopal, episcopalian
 
 episod: episode, episodes
 
@@ -11304,23 +11088,17 @@ epoch: epoch, epochal, epochs
 
 epochmak: epoch‑making
 
-equabl: equable
-
-equal: equal, equalisation, equalise, equalised, equalities, equality, equalled, equalleth, equalling, equally, equals
+equal: equable, equal, equalisation, equalise, equalised, equalities, equality, equalled, equalleth, equalling, equally, equals, equate, equated
 
 equanim: equanimity
 
-equat: equate, equated, equation, equator
+equation: equation
 
-equator: equatorial
+equator: equator, equatorial
 
-equilibr: equilibration
+equilibr: equilibration, equilibrium
 
-equilibrium: equilibrium
-
-equinoct: equinoctial
-
-equinox: equinox
+equinox: equinoctial, equinox
 
 equip: equip, equipment, equipped, equipping
 
@@ -11348,9 +11126,7 @@ erewhil: erewhile
 
 ern: ernest
 
-erod: erode, eroded, eroding
-
-eros: erosion
+erod: erode, eroded, eroding, erosion
 
 err: err
 
@@ -11358,9 +11134,7 @@ errand: errand, errands
 
 errant: errant
 
-erron: erroneous
-
-error: error, errors
+error: erroneous, error, errors
 
 erstwhil: erstwhile
 
@@ -11398,13 +11172,7 @@ estat: estate, estates
 
 esteem: esteem, esteemed, esteemeth, esteeming
 
-estell: estelle
-
-esth: esther
-
 estim: estimable, estimate, estimated, estimates, estimating, estimation
-
-estlin: estlin
 
 estrang: estrange, estranged, estrangement, estranging
 
@@ -11434,13 +11202,9 @@ eunuch: eunuch
 
 euphem: euphemisms
 
-euphor: euphoric
+euphor: euphoria, euphoric
 
-euphoria: euphoria
-
-europ: europe
-
-european: european, europeans
+europ: europe, european, europeans
 
 evacu: evacuate, evacuation
 
@@ -11450,17 +11214,15 @@ evalu: evaluate, evaluated, evaluating, evaluation
 
 evanesc: evanescence, evanescent
 
-evangel: evangel, evangelical
-
-evangelist: evangelist
+evangel: evangel, evangelical, evangelist
 
 evapor: evaporation
 
 evas: evasion, evasions, evasive
 
-eve: eve
+even: even, evenly
 
-even: even, evening, evenings, evenly
+evening: eve, evening, evenings
 
 event: event, eventful, events
 
@@ -11616,31 +11378,21 @@ evilwish: evil‑wishers
 
 evinc: evince, evinced, evinces, evincing
 
-evoc: evocation, evocative
+evok: evocation, evocative, evoke, evoked, evokes, evoketh, evoking
 
-evok: evoke, evoked, evokes, evoketh, evoking
-
-evolut: evolution, evolutions
-
-evolutionar: evolutionary
-
-evolv: evolve, evolved, evolves, evolving
+evolv: evolution, evolutionary, evolutions, evolve, evolved, evolves, evolving
 
 ewe: ewe
 
 exacerb: exacerbate, exacerbated, exacerbating, exacerbation
 
-exact: exact, exacted, exacting, exactions, exactly, exactness
-
-exactitud: exactitude
+exact: exact, exacted, exacting, exactions, exactitude, exactly, exactness
 
 exagg: exaggerate, exaggerated, exaggerating, exaggeration, exaggerations
 
 exalt: exalt, exaltation, exalted, exaltest, exalteth, exalting, exalts
 
-exam: exam
-
-examin: examination, examinations, examine, examined, examiners, examines, examining
+exam: exam, examination, examinations, examine, examined, examiners, examines, examining
 
 exampl: example, examples
 
@@ -11664,9 +11416,7 @@ exchang: exchange, exchanged, exchanges, exchangest, exchanging
 
 excit: excitable, excitation, excite, excited, excitement, excites, exciting
 
-exclaim: exclaim, exclaimed, exclaimeth, exclaiming, exclaims
-
-exclam: exclamations
+exclaim: exclaim, exclaimed, exclaimeth, exclaiming, exclaims, exclamations
 
 exclud: exclude, excluded, excludes, excluding
 
@@ -11684,11 +11434,9 @@ excus: excusableness, excuse, excused, excuses
 
 execr: execrate, execrated, execration
 
-execut: execute, executed, executes, executing, execution, executions, executive, executives
+execut: execute, executed, execution, executioner, executioners, executions
 
-execution: executioner, executioners
-
-executor: executor, executors
+executor: executes, executing, executive, executives, executor, executors
 
 exeges: exegeses, exegesis
 
@@ -11722,9 +11470,7 @@ exil: exile, exiled, exiles, exiling
 
 exilarch: exilarch
 
-exist: exist, existed, existence, existences, existent, existeth, existing, exists
-
-existent: existential
+exist: exist, existed, existence, existences, existent, existential, existeth, existing, exists
 
 exit: exit, exiting
 
@@ -11754,9 +11500,11 @@ expect: expect, expectancy, expectant, expectantly, expectation, expectations, e
 
 exped: expedience, expediencies, expediency, expedient, expedients
 
-expedit: expedite, expedited, expediting, expedition, expeditions, expeditious, expeditiously
+expedit: expedite, expedited, expediting
 
-expeditionar: expeditionary
+expedition: expedition, expeditionary, expeditions
+
+expeditious: expeditious, expeditiously
 
 expel: expel, expelled, expelling
 
@@ -11770,7 +11518,7 @@ experient: experiential
 
 experiment: experimental, experimentally, experimentation
 
-experimentalist: experimentalist
+experimental: experimentalist
 
 expert: expert, expertise, expertness, experts
 
@@ -11778,37 +11526,25 @@ expiat: expiate
 
 expir: expiration, expire, expired, expiring, expiry
 
-explain: explain, explained, explainer, explaining, explains
-
-explan: explanation, explanations
-
-explanator: explanatory
+explain: explain, explained, explainer, explaining, explains, explanation, explanations, explanatory
 
 explic: explicate, explicated, explication
 
 explicit: explicit, explicitly
 
-explod: explode, exploded, exploding
+explod: explode, exploded, exploding, explosion, explosive, explosives
 
 exploit: exploit, exploitation, exploitative, exploited, exploiting, exploits
 
-explor: exploration, explorations, explore, explored, explores, exploring
-
-explorator: exploratory
-
-explos: explosion, explosive, explosives
+explor: exploration, explorations, exploratory, explore, explored, explores, exploring
 
 expon: exponent, exponents
 
 exponent: exponential
 
-expos: expose, exposed, exposes, exposing
+expos: expose, exposed, exposes, exposing, exposure
 
-exposit: exposition, expositions
-
-expositor: expositor, expository
-
-exposur: exposure
+exposit: exposition, expositions, expositor, expository
 
 expound: expound, expounded, expounder, expounders, expoundeth, expounding, expounds
 
@@ -11850,9 +11586,7 @@ extirp: extirpate, extirpating, extirpation
 
 extol: extol, extoleth, extolled, extolling, extols
 
-extort: extort, extorted, extorting, extortion
-
-extortion: extortionate
+extort: extort, extorted, extorting, extortion, extortionate
 
 extra: extra
 
@@ -11874,9 +11608,7 @@ extraterrestr: extraterrestrial
 
 extravag: extravagance, extravagances, extravagant, extravagantly
 
-extrem: extreme, extremely, extremes, extremest, extremities, extremity
-
-extremist: extremist
+extrem: extreme, extremely, extremes, extremest, extremist, extremities, extremity
 
 extric: extricate, extricating
 
@@ -11894,7 +11626,7 @@ eyesight: eye‑sight
 
 eyewit: eyewitness, eyewitnesses, eye‑witness, eye‑witnesses
 
-f: flies, flieth, fly, flying
+f: flew, flies, flieth, flight, flights, flown, fly, flying
 
 fa: faery
 
@@ -11910,23 +11642,21 @@ facet: facet, facets
 
 faceti: facetiousness
 
-facil: facile, facilities, facility
+facil: facilities, facility
+
+facile: facile
 
 facilit: facilitate, facilitated, facilitates, facilitating, facilitation, facilitator, facilitators
 
 facsimil: facsimile
 
-fact: fact, facts
+fact: fact, facts, factual, factually
 
-faction: faction, factionalism, factions
-
-factious: factious
+faction: faction, factionalism, factions, factious
 
 factor: factor, factors
 
 factori: factories, factory
-
-factual: factual, factually
 
 facult: faculties, faculty
 
@@ -11936,9 +11666,7 @@ fade: fade, faded, fades, fadeth, fading
 
 fadeless: fadeless
 
-fail: fail, failed, failest, faileth, failing, failings, fails
-
-failur: failure, failures
+fail: fail, failed, failest, faileth, failing, failings, fails, failure, failures
 
 fain: fain
 
@@ -11964,31 +11692,21 @@ faith: faith, faithful, faithfully, faithfulness, faiths
 
 faithless: faithless, faithlessly, faithlessness
 
-fal: falleth, falling
-
 falcon: falcon, falcons
 
-fall: fall, falls
+fall: fall, fallen, falleth, falling, falls, fell
 
-fallac: fallacious
-
-fallat: fallacies, fallacy
-
-fallen: fallen
+fallac: fallacies, fallacious, fallacy
 
 fallibl: fallible
 
 fallow: fallow
 
-fals: false, falsely
+fals: false, falsehood, falsehoods, falsely, falsities, falsity
 
 falseheart: false‑hearted
 
-falsehood: falsehood, falsehoods
-
 falsif: falsification, falsified, falsify, falsifying
-
-falsit: falsities, falsity
 
 falt: falter, faltered, faltering, falters
 
@@ -12010,9 +11728,7 @@ famous: famous
 
 fan: fan, fanned, fanning, fannings, fans
 
-fanat: fanatic, fanatical, fanatically, fanatics
-
-fanatic: fanaticism, fanaticisms
+fanat: fanatic, fanatical, fanatically, fanaticism, fanaticisms, fanatics
 
 fanc: fancied, fancies, fanciful, fancifully, fancy
 
@@ -12022,9 +11738,7 @@ fanfar: fanfare
 
 fang: fangs
 
-fantas: fantasies, fantasy
-
-fantast: fantastic, fantastical
+fantas: fantasies, fantastic, fantastical, fantasy
 
 far: far
 
@@ -12050,11 +11764,7 @@ fargon: far‑gone
 
 fargreat: far‑greater
 
-farm: farm, farmed, farmer, farmers, farming, farms
-
-farmhous: farmhouse
-
-farmland: farmland
+farm: farm, farmed, farmer, farmers, farmhouse, farming, farmland, farms
 
 faroff: far‑off
 
@@ -12070,9 +11780,9 @@ farstretch: far‑stretching
 
 farstrewn: far‑strewn
 
-farth: farther, farthest, farthing
+farth: farther, farthermost, farthest
 
-farthermost: farthermost
+farthing: farthing
 
 farvis: far‑visioned
 
@@ -12080,9 +11790,7 @@ farwestern: far‑western
 
 fascin: fascinate, fascinated, fascinating, fascination
 
-fascism: fascism
-
-fascist: fascist
+fascist: fascism, fascist
 
 fashion: fashion, fashionable, fashioned, fashioner, fashioneth, fashioning, fashions
 
@@ -12122,9 +11830,7 @@ fate: fate, fated, fateful
 
 fateladen: fate‑laden
 
-fath: father, fathered, fatherly, fathers
-
-fatherhood: fatherhood
+fath: father, fathered, fatherhood, fatherly, fathers
 
 fatherinlaw: father‑in‑law
 
@@ -12158,11 +11864,9 @@ fax: fax, faxed
 
 fealt: fealty
 
-fear: fear, feared, fearest, feareth, fearful, fearing, fears
+fear: fear, feared, fearest, feareth, fearful, fearing, fears, fearsome
 
 fearless: fearless, fearlessly, fearlessness
-
-fearsom: fearsome
 
 fearstricken: fear‑stricken
 
@@ -12184,17 +11888,15 @@ februar: february
 
 fecund: fecund, fecundity
 
-fed: fed
-
 feder: federal, federalism, federated, federation
 
 fee: fee, fees
 
 feebl: feeble, feebleness, feebler, feeblest
 
-feed: feed, feedest, feedeth, feeding, feeds
+feed: fed, feed, feedest, feedeth, feeding, feeds
 
-feel: feel, feeleth, feeling, feelings, feels
+feel: feel, feeleth, feeling, feelings, feels, felt
 
 feet: feet
 
@@ -12202,11 +11904,7 @@ feign: feigned, feigning
 
 fel: felled, felling
 
-felic: felicity
-
-felicit: felicitation, felicitations, felicitous
-
-fell: fell
+felic: felicitation, felicitations, felicitous, felicity
 
 fellow: fellow, fellows
 
@@ -12284,15 +11982,11 @@ fellowwork: fellow‑worker, fellow‑workers
 
 fellowyouth: fellow‑youth
 
-felt: felt
-
 femal: female, females
 
-femin: feminism
+femin: feminism, feminist
 
 feminin: feminine
-
-feminist: feminist
 
 fenc: fenced, fences, fencing
 
@@ -12308,17 +12002,11 @@ ferrous: ferrous
 
 fertil: fertile, fertilisation, fertilise, fertilised, fertilising, fertility
 
-fervent: fervency, fervent, fervently
-
-fervid: fervid, fervidly
-
-fervour: fervour
+fervent: fervency, fervent, fervently, fervid, fervidly, fervour
 
 fest: fester, festering
 
-festal: festal
-
-festiv: festival, festivals, festive, festivities, festivity
+festiv: festal, festival, festivals, festive, festivities, festivity
 
 fetch: fetch, fetched
 
@@ -12330,15 +12018,13 @@ fett: fetter, fettered, fettering, fetters
 
 feud: feud, feuding, feuds
 
-fev: fever, fevered, fevers
+fev: fever, fevers
 
-feverish: feverish, feverishly
+feverish: fevered, feverish, feverishly
 
 feverstricken: fever‑stricken
 
 few: few, fewer, fewest, fewness
-
-fi: fiery
 
 fiat: fiat
 
@@ -12348,9 +12034,7 @@ fickl: fickle, fickleness
 
 ficklemind: fickle‑minded
 
-fiction: fiction, fictional, fictions
-
-fictit: fictitious
+fiction: fiction, fictional, fictions, fictitious
 
 fidel: fidelity
 
@@ -12358,9 +12042,7 @@ fie: fie
 
 field: field, fields
 
-fiend: fiend
-
-fiendish: fiendish
+fiend: fiend, fiendish
 
 fierc: fierce, fiercely, fierceness, fiercer, fiercest
 
@@ -12404,7 +12086,7 @@ fiftyyearold: fifty‑year‑old
 
 fig: fig, figs
 
-fight: fight, fighters, fighting
+fight: fight, fighters, fighting, fought
 
 figment: figment, figments
 
@@ -12426,9 +12108,7 @@ fin: fin, finis
 
 final: final, finality, finally
 
-financ: financial, financially, financier, financiers
-
-finant: finance, financed, finances, financing
+financ: finance, financed, finances, financial, financially, financier, financiers, financing
 
 find: find, finder, findest, findeth, finding, findings, finds
 
@@ -12446,7 +12126,7 @@ finish: finish, finished, finishes, finishing
 
 finit: finite
 
-fire: fire, fired, fires, firing
+fire: fiery, fire, fired, fires, firing
 
 firearm: firearms
 
@@ -12492,11 +12172,7 @@ firsthand: firsthand, first‑hand
 
 fiscal: fiscal
 
-fish: fish, fisher, fishers, fishes, fishing
-
-fisherman: fisherman
-
-fishermen: fishermen
+fish: fish, fisher, fisherman, fishermen, fishers, fishes, fishing
 
 fissur: fissures
 
@@ -12520,9 +12196,7 @@ fivethousandcentur: five‑thousand‑century
 
 fiveyear: five‑year
 
-fix: fix, fixed, fixes, fixeth, fixing
-
-fixit: fixity
+fix: fix, fixed, fixes, fixeth, fixing, fixity
 
 fixtur: fixtures
 
@@ -12536,9 +12210,7 @@ flagrant: flagrant, flagrantly
 
 flamboy: flamboyant
 
-flame: flame, flamed, flames, flaming
-
-flamelik: flamelike
+flame: flame, flamed, flamelike, flames, flaming
 
 flank: flank, flanked, flanking, flanks
 
@@ -12566,37 +12238,25 @@ fleainfest: flea‑infested
 
 fleck: fleck
 
-fled: fled
+fledg: fledged, fledging, fledgling, fledglings
 
-fledg: fledged, fledging
+flee: fled, flee, fleeing, fleeth
 
-fledgl: fledgling, fledglings
-
-flee: flee, fleeing
-
-fleet: fleet, fleeting, fleetingly, fleets
+fleet: fleet, fleeting, fleetingly, fleetingness, fleets
 
 fleetfoot: fleet‑footed
 
-fleeth: fleeth
-
-fleeting: fleetingness
-
 flesh: flesh
-
-flew: flew
 
 flexibl: flexibility, flexible
 
 flick: flicked, flicker, flickered, flickering, flickerings
 
-flight: flight, flights
-
 flims: flimsiest
 
 flinch: flinch
 
-fling: fling, flingest, flinging
+fling: fling, flingest, flinging, flung
 
 flint: flint
 
@@ -12618,10 +12278,6 @@ floodlit: floodlit
 
 floor: floor, flooring, floors
 
-flora: flora
-
-floral: floral
-
 flound: floundering
 
 flour: flour
@@ -12632,9 +12288,7 @@ flout: flout, flouted, flouting
 
 flow: flow, flowed, floweth, flowing, flows
 
-flower: flower, flowered, flowering, flowers
-
-flowerb: flowerbeds
+flower: flora, floral, flower, flowerbeds, flowered, flowering, flowers
 
 flowerbord: flower‑bordered
 
@@ -12642,19 +12296,11 @@ flowerfac: flower‑faced
 
 flowerspangl: flower‑spangled
 
-flown: flown
-
 fluctuat: fluctuating, fluctuations
 
-fluenc: fluency
+fluent: fluency, fluent
 
-fluent: fluent
-
-fluid: fluid
-
-fluidit: fluidity
-
-flung: flung
+fluid: fluid, fluidity
 
 flurr: flurries, flurry
 
@@ -12668,27 +12314,19 @@ flux: flux
 
 foam: foam
 
-foc: foci
-
-focal: focal, focalisation
-
 focalcentr: focal‑centre
 
 focalpoint: focal‑point
 
-focus: focus, focused, focuses, focusing
+focus: focal, focalisation, foci, focus, focused, focuses, focusing
 
 fodd: fodder
 
-foe: foe, foes
-
-foemen: foemen
-
-foetal: foetal
+foe: foe, foemen, foes
 
 foetid: foetid
 
-foetus: foetus
+foetus: foetal, foetus
 
 fog: fog
 
@@ -12716,9 +12354,7 @@ fond: fond, fondest, fondly, fondness
 
 food: food, foods
 
-fool: fool, fools
-
-foolish: foolish, foolishly, foolishness
+fool: fool, foolish, foolishly, foolishness, fools
 
 foot: foot, footed, footing
 
@@ -12740,29 +12376,19 @@ footstep: footsteps
 
 footstool: footstool, foot‑stool
 
-fora: fora
-
 forasmuch: forasmuch
 
-forbad: forbad, forbade
+forbear: forbear, forbearance, forbearing, forborne
 
-forbear: forbear, forbearance, forbearing, forbears
+forbid: forbad, forbade, forbid, forbidden, forbiddest, forbiddeth, forbidding, forbids
 
-forbid: forbid, forbiddest, forbiddeth, forbidding, forbids
-
-forbidden: forbidden
-
-forborn: forborne
-
-forc: force, forced, forceful, forcefully, forces, forcing
-
-forcibl: forcible, forcibly
+forc: force, forced, forceful, forcefully, forces, forcible, forcibly, forcing
 
 ford: ford, forded, fords
 
 fore: fore, forest, forests
 
-forebear: forebearance, forebears
+forebear: forebears
 
 forebod: foreboders, forebodes, foreboding, forebodings
 
@@ -12776,9 +12402,7 @@ forefront: forefront
 
 foregath: foregathered
 
-forego: forego, foregoing
-
-foregon: foregone
+forego: forego, foregoing, foregone
 
 foreground: foreground
 
@@ -12798,11 +12422,7 @@ foreordain: foreordained
 
 forerunn: forerunner, forerunners
 
-foresaw: foresaw
-
-forese: foresee, foreseeable, foreseeing, foresees, foreseeth
-
-foreseen: foreseen
+forese: foresaw, foresee, foreseeable, foreseeing, foreseen, foresees, foreseeth, foresight, foresighted
 
 foreshadow: foreshadow, foreshadowed, foreshadoweth, foreshadowing, foreshadows
 
@@ -12810,55 +12430,39 @@ foreshorten: foreshorten
 
 foreshow: foreshowing
 
-foresight: foresight, foresighted
-
 forestal: forestall
 
 forestr: forestry
 
 foretast: foretaste
 
-foretel: foretell, foretelling, foretells
+foretel: foretell, foretelling, foretells, foretold
 
-foretold: foretold
-
-forev: forever
-
-forevermor: forevermore
+forev: forever, forevermore
 
 forewarn: forewarned, forewarning
 
 foreword: foreword
 
-forfeit: forfeit, forfeited, forfeiting, forfeits
-
-forfeitur: forfeiture
+forfeit: forfeit, forfeited, forfeiting, forfeits, forfeiture
 
 forg: forge, forged, forges, forgeth, forging
 
-forgav: forgave
-
 forger: forgery
 
-forget: forget, forgetful, forgetfulness, forgets, forgetteth, forgetting
+forget: forget, forgetful, forgetfulness, forgets, forgetteth, forgetting, forgot, forgotten
 
-forgiv: forgivable, forgive, forgiveness, forgiver, forgives, forgivest, forgiveth, forgiving
+forgiv: forgave, forgivable, forgive, forgiven, forgiveness, forgiver, forgives, forgivest, forgiveth, forgiving
 
-forgiven: forgiven
-
-forgo: forgo, forgoeth, forgoing
-
-forgon: forgone
-
-forgot: forgot
-
-forgotten: forgotten
+forgo: forgo, forgoeth, forgoing, forgone
 
 forlorn: forlorn
 
 form: form, formed, formeth, forming, forms
 
-formal: formal, formalisation, formalise, formalised, formalises, formalising, formalism, formalities, formality, formally
+formal: formal, formalism, formalities, formality, formally
+
+formalis: formalisation, formalise, formalised, formalises, formalising
 
 format: format, formation, formations, formative
 
@@ -12874,11 +12478,7 @@ formwork: formwork
 
 fornic: fornication
 
-forsak: forsake, forsakes, forsaketh, forsaking
-
-forsaken: forsaken
-
-forsook: forsook
+forsak: forsake, forsaken, forsakes, forsaketh, forsaking, forsook
 
 forsooth: forsooth
 
@@ -12938,7 +12538,7 @@ fortyyearlong: forty‑year‑long
 
 fortyyearold: forty‑year‑old
 
-forum: forum, forums
+forum: fora, forum, forums
 
 forward: forward, forwarded, forwarding, forwardness
 
@@ -12949,8 +12549,6 @@ forwardmarch: forward‑marching
 fossil: fossilisation, fossilised
 
 fost: foster, fostered, fosterer, fostereth, fostering, fosters
-
-fought: fought
 
 foul: foul, foulest, foully, foulness
 
@@ -13012,21 +12610,15 @@ fractur: fractured, fractures
 
 fragil: fragile, fragility
 
-fragment: fragment, fragmentation, fragmented, fragments
-
-fragmentar: fragmentary
+fragment: fragment, fragmentary, fragmentation, fragmented, fragments
 
 fragrant: fragrance, fragrances, fragrant
 
-frail: frail, frailest
+frail: frail, frailest, frailties, frailty
 
 frailbod: frail‑bodied
 
-frailt: frailties, frailty
-
-fram: framers
-
-frame: frame, framed, frames, framing
+frame: frame, framed, framers, frames, framing
 
 framework: framework
 
@@ -13038,21 +12630,15 @@ fratern: fraternal, fraternally, fraternised, fraternity
 
 fratricid: fratricidal
 
-fraud: fraud
-
-fraudul: fraudulent, fraudulently
+fraud: fraud, fraudulent, fraudulently
 
 fraught: fraught
 
 fray: fray, frayed
 
-fre: freer
-
-free: free, freeing, freely, frees
+free: free, freed, freeing, freely, freer, frees, freeth
 
 freeboot: freebooting
-
-freed: freed
 
 freedom: freedom, freedoms
 
@@ -13062,23 +12648,17 @@ freehold: freehold
 
 freerang: free‑ranging
 
-freeth: freeth
-
 freez: freeze, freezeth, freezing
 
 freight: freighted, freighter, freighting
 
-frenet: frenetic
-
-frenetic: freneticism
+frenet: frenetic, freneticism
 
 frenz: frenzied, frenzy
 
 frequent: frequency, frequent, frequented, frequenting, frequently
 
-fresh: fresh, freshest, freshly, freshness
-
-freshen: freshened
+fresh: fresh, freshened, freshest, freshly, freshness
 
 fret: fretting
 
@@ -13092,9 +12672,7 @@ friend: friend, friendliness, friendly, friends, friendship, friendships
 
 friendless: friendless
 
-fright: fright, frightful
-
-frighten: frighten, frightened, frightening
+fright: fright, frighten, frightened, frightening, frightful
 
 frigid: frigid
 
@@ -13132,13 +12710,9 @@ fructif: fructified, fructify
 
 frugal: frugal, frugality
 
-fruit: fruit, fruited, fruitful, fruitfully, fruitfulness, fruiting, fruits
-
-fruitag: fruitage
+fruit: fruit, fruitage, fruited, fruitful, fruitfully, fruitfulness, fruiting, fruition, fruits
 
 fruitbear: fruit‑bearing
-
-fruition: fruition
 
 fruitladen: fruit‑laden
 
@@ -13150,13 +12724,11 @@ fuel: fuel, fuelled, fuelling, fuels
 
 fugit: fugitive, fugitives
 
-ful: fullest, fully
-
 fulcrum: fulcrum
 
 fulfil: fulfil, fulfileth, fulfilled, fulfilling, fulfilment, fulfilments, fulfils
 
-full: full, fuller, fullers, fullness, full‑
+full: full, fuller, fullers, fullest, fullness, fully, full‑
 
 fullblown: full‑blown
 
@@ -13192,9 +12764,9 @@ functionless: functionless
 
 fund: fund, funded, funding, funds
 
-fundament: fundamental, fundamentalism, fundamentally, fundamentals
+fundament: fundamental, fundamentally, fundamentals
 
-fundamentalist: fundamentalist, fundamentalists
+fundamentalis: fundamentalism, fundamentalist, fundamentalists
 
 fundrais: fundraising, fund‑raising
 
@@ -13202,15 +12774,13 @@ funnel: funnelling
 
 fur: fur, furs
 
-furi: furies, fury
-
-furious: furious, furiously
+furi: furies, furious, furiously, fury
 
 furnac: furnace, furnaces
 
-furnish: furnish, furnished, furnishes, furnisheth, furnishing, furnishings
+furnish: furnish, furnished, furnishes, furnisheth, furnishing
 
-furnitur: furniture
+furnitur: furnishings, furniture
 
 furrow: furrow, furrows
 
@@ -13224,9 +12794,7 @@ furthermost: furthermost
 
 furtiv: furtive, furtively
 
-fuse: fuse, fused, fusing
-
-fusion: fusion
+fuse: fuse, fused, fusing, fusion
 
 futil: futile, futility
 
@@ -16098,6 +15666,8 @@ judic: judicial, judicious, judiciously
 
 judiciar: judiciary
 
+jug: jug
+
 julyaugust: julyaugust
 
 jump: jump
@@ -18262,7 +17832,7 @@ nay: nay
 
 ne: neer
 
-near: near, nearer, nearest, nearing, nearly, nearness
+near: near, neared, nearer, nearest, nearing, nearly, nearness
 
 nearb: nearby
 
@@ -22480,6 +22050,8 @@ roof: roof, roofed
 
 roofless: roofless
 
+rooftop: rooftops
+
 room: room, rooms
 
 root: root, rooted, rooting, roots
@@ -22682,7 +22254,7 @@ salt: salt, salted, saltiness, salty
 
 salubr: salubrious, salubrity
 
-salut: salutation, salutations
+salut: salutation, salutations, saluted
 
 salutar: salutary
 
@@ -22886,7 +22458,7 @@ scourg: scourge, scourged, scourging, scourgings
 
 scout: scouts
 
-scream: screamed, screaming
+scream: screamed, screaming, screams
 
 screen: screen
 
@@ -24609,6 +24181,8 @@ startl: startled, startling
 starv: starve, starved, starves, starving
 
 starvat: starvation
+
+stat: stat
 
 state: state, stated, stately, states, stating
 
@@ -26706,6 +26280,8 @@ twentythre: twenty‑three
 
 twentytwo: twenty‑two
 
+twentytwoyearold: twenty‑two‑year‑old
+
 twentyyear: twenty‑year
 
 twentyyearold: twenty‑year‑old
@@ -27404,6 +26980,8 @@ uninterest: uninterested
 
 uninterrupt: uninterrupted, uninterruptedly
 
+uninvit: uninvited
+
 uninvolv: uninvolved
 
 union: union, unions
@@ -27881,6 +27459,8 @@ unvit: unvitiated
 unwant: unwanted
 
 unwar: unwary
+
+unwarn: unwarned
 
 unwarr: unwarranted
 
@@ -28515,6 +28095,8 @@ watchword: watchword
 waterbrook: waterbrooks
 
 waterfal: waterfalls
+
+waterjug: water‑jug
 
 watermark: watermark, water‑mark
 
