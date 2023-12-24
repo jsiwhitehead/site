@@ -194,6 +194,12 @@ exceptions1.imported = "imports";
 exceptions1.imprecise = "imprecis";
 exceptions1.intimated = "intimation";
 exceptions1.intimates = "intimation";
+exceptions1.judicial = "judiciar";
+exceptions1.just = "jus";
+exceptions1.landed = "landed";
+exceptions1.landing = "landed";
+exceptions1.literate = "literar";
+exceptions1.maximise = "maximum";
 // Invariants!
 exceptions1.institute = "institute";
 exceptions1.sky = "sky";
@@ -270,6 +276,14 @@ exceptions1.incidental = "incidental";
 exceptions1.industrious = "industrious";
 exceptions1.integral = "integral";
 exceptions1.integrity = "integrity";
+exceptions1.judgemental = "judgemental";
+exceptions1.leste = "*leste";
+exceptions1.lester = "*lester";
+exceptions1.locke = "*locke";
+exceptions1.meanness = "meanness";
+exceptions1.militated = "militated";
+exceptions1.monumental = "monumental";
+exceptions1.morale = "morale";
 // Tweaks!
 var tweaks = Object.create(null);
 tweaks.aggressor = "aggress";
@@ -921,6 +935,161 @@ tweaks.invoc = "invok";
 tweaks.irreligion = "irrelig";
 tweaks.isolationist = "isol";
 tweaks.issuant = "issu";
+tweaks.jewish = "jew";
+tweaks.jewr = "jew";
+tweaks.joint = "join";
+tweaks.journalist = "journal";
+tweaks.judgement = "judg";
+tweaks.jurid = "judiciar";
+tweaks.jurisprud = "judiciar";
+tweaks.justic = "just";
+tweaks.kept = "keep";
+tweaks.kil = "kill";
+tweaks.kindr = "kin";
+tweaks.kinfolk = "kin";
+tweaks.kinsfolk = "kin";
+tweaks.kinship = "kin";
+tweaks.kinsman = "kin";
+tweaks.kinsmen = "kin";
+tweaks.kinswoman = "kin";
+tweaks.kingship = "king";
+tweaks.knelt = "kneel";
+tweaks.knew = "know";
+tweaks.knighthood = "knight";
+tweaks.knive = "knife";
+tweaks.knowabl = "know";
+tweaks.known = "know";
+tweaks.labor = "labour";
+tweaks.laci = "lace";
+tweaks.laid = "lay";
+tweaks.lain = "lay";
+tweaks.lat = "late";
+tweaks.laudabl = "laud";
+tweaks.laudat = "laud";
+tweaks.laudator = "laud";
+tweaks.laught = "laugh";
+tweaks.laxit = "lax";
+tweaks.laymen = "layman";
+tweaks.leadership = "lead";
+tweaks.leapt = "leap";
+tweaks.learnt = "learn";
+tweaks.led = "lead";
+tweaks.legalist = "legal";
+tweaks.legate = "legat";
+tweaks.legendar = "legend";
+tweaks.legislatur = "legisl";
+tweaks.legitimat = "legitim";
+tweaks.lengthen = "length";
+tweaks.lepros = "lep";
+tweaks.lessen = "less";
+tweaks.liaison = "liais";
+tweaks.lineal = "lineag";
+tweaks.linkag = "link";
+tweaks.lioness = "lion";
+tweaks.liquef = "liquid";
+tweaks.literalist = "liter";
+tweaks.literat = "literar";
+tweaks.literatur = "literar";
+tweaks.loathsom = "loath";
+tweaks.lonesom = "lone";
+tweaks.loosen = "loos";
+tweaks.lordship = "lord";
+tweaks.loss = "lose";
+tweaks.lost = "lose";
+tweaks.lov = "love";
+tweaks.lovabl = "love";
+tweaks.lovesom = "love";
+tweaks.lowbr = "lowborn";
+tweaks.lowli = "low";
+tweaks.loyalt = "loyal";
+tweaks.lul = "lull";
+tweaks.luminos = "lumin";
+tweaks.luncheon = "lunch";
+tweaks.lustrous = "lustr";
+tweaks.madman = "mad";
+tweaks.made = "make";
+tweaks.magian = "mag";
+tweaks.magistrat = "magistr";
+tweaks.maidserv = "maid";
+tweaks.mak = "make";
+tweaks.malefactor = "malefic";
+tweaks.manhood = "man";
+tweaks.manifest = "manif";
+tweaks.manifestor = "manif";
+tweaks.marit = "marr";
+tweaks.marketplac = "market";
+tweaks.marriag = "marr";
+tweaks.martyrdom = "martyr";
+tweaks.mathematician = "mathemat";
+tweaks.matrimon = "marr";
+tweaks.mead = "meadow";
+tweaks.meag = "meagr";
+tweaks.meaning = "mean";
+tweaks.meant = "mean";
+tweaks.mediumship = "medium";
+tweaks.men = "man";
+tweaks.meritor = "merit";
+tweaks.merriment = "merr";
+tweaks.messeng = "messag";
+tweaks.messengership = "messag";
+tweaks.messiahship = "messiah";
+tweaks.messian = "messiah";
+tweaks.met = "meet";
+tweaks.metallurg = "metal";
+tweaks.metaphysician = "metaphys";
+tweaks.methodolog = "method";
+tweaks.metropolitan = "metropo";
+tweaks.mileag = "mile";
+tweaks.milieus = "milieu";
+tweaks.militar = "milit";
+tweaks.militarist = "milit";
+tweaks.millennia = "millenn";
+tweaks.millennialist = "millenn";
+tweaks.millennium = "millenn";
+tweaks.minded = "mind";
+tweaks.min = "mine";
+tweaks.minimum = "minim";
+tweaks.ministr = "minist";
+tweaks.minutia = "minut";
+tweaks.miracul = "miracl";
+tweaks.misapprehens = "misapprehend";
+tweaks.misbeliev = "misbelief";
+tweaks.mischiev = "mischief";
+tweaks.misconceiv = "misconc";
+tweaks.misconcept = "misconc";
+tweaks.misl = "mislead";
+tweaks.misrepresent = "misrepres";
+tweaks.mistaken = "mistak";
+tweaks.misunderstood = "misunderstand";
+tweaks.mixtur = "mix";
+tweaks.modernist = "modern";
+tweaks.moisten = "moist";
+tweaks.moistur = "moist";
+tweaks.mole = "molest";
+tweaks.monarchist = "monarch";
+tweaks.monastic = "monast";
+tweaks.mon = "money";
+tweaks.monetar = "money";
+tweaks.monk = "monast";
+tweaks.monopo = "monopol";
+tweaks.monotheist = "monoth";
+tweaks.monstros = "monstrous";
+tweaks.moonlit = "moonlight";
+tweaks.moralist = "moral";
+tweaks.morningtid = "morn";
+tweaks.motherhood = "mother";
+tweaks.mountainsid = "mountain";
+tweaks.mountaintop = "mountain";
+tweaks.mov = "move";
+tweaks.movabl = "move";
+tweaks.movement = "move";
+tweaks.mown = "mow";
+tweaks.mudd = "mud";
+tweaks.mulet = "mule";
+tweaks.multipl = "multip";
+tweaks.multitudin = "multitud";
+tweaks.musician = "music";
+tweaks.mytholog = "myth";
 
 const ierReg = /ier$/;
 const eriReg = /eri$/;
@@ -1673,6 +1842,7 @@ const nameFarsiInclude = [
   "lofoten",
   "loggia",
   "lome",
+  "london",
   "los",
   "luca",
   "lucia",
@@ -1696,11 +1866,14 @@ const nameFarsiInclude = [
   "manekj",
   "margaret",
   "marguerit",
+  "marina",
   "marino",
   "marseill",
+  "marshall",
   "marshalles",
   "martha",
   "marvan",
+  "mason",
   "masqat",
   "massachusett",
   "masta",
@@ -1720,26 +1893,34 @@ const nameFarsiInclude = [
   "mentawa",
   "merida",
   "messr",
+  "metropol",
   "metz",
   "miam",
+  "millerit",
   "mim",
   "minneapo",
   "minsk",
   "minu",
   "mir",
   "miraj",
+  "mississipp",
   "missour",
+  "mithraic",
+  "mithraism",
   "modl",
   "molucca",
   "monaco",
   "mond",
   "moneeb",
   "montt",
+  "moor",
   "moresb",
+  "mormon",
   "morten",
   "moscow",
   "mosul",
   "motua",
+  "mulk",
   "mumtaz",
   "munib",
   "my",
@@ -2521,6 +2702,18 @@ var stem = function (word) {
     if (word.startsWith("internalis")) return "internalis";
     if (word.startsWith("international")) return "international";
     if (word.startsWith("intimation")) return "intimation";
+    if (word.startsWith("legatees")) return "legat";
+    if (word.startsWith("legat")) return "legate";
+    if (word.startsWith("liberat")) return "liberat";
+    if (word.startsWith("likeness")) return "liken";
+    if (word.startsWith("majorit")) return "majorit";
+    if (word.startsWith("materialism")) return "materialist";
+    if (word.startsWith("materialist")) return "materialist";
+    if (word.startsWith("materialis")) return "materialis";
+    if (word.startsWith("memorabl")) return "memorabl";
+    if (word.startsWith("memorial")) return "memorial";
+    if (word.startsWith("memoris")) return "memoris";
+    if (word.startsWith("mineral")) return "mineral";
   }
 
   str = prelude(str);

@@ -854,7 +854,7 @@ KLTT: haykalut‑tawhid
 
 KLX: ghoulishly, kull‑i‑shay
 
-KM: guam, guaymi, hakim, kawmu, khayyam, khumm, qaim, qayyum, qum, qumi
+KM: guam, guaymi, hakim, khayyam, khumm, qaim, qayyum, qum, qumi
 
 KMKM: qaim‑maqam, qaim‑maqams
 
@@ -898,13 +898,13 @@ KMRKKLS: qumruq‑kilisa
 
 KMRN: cameroon, kamran
 
-KMS: khamsi, khamsih
+KMS: kawmus, khamsi, khamsih
 
 KMSM: qayyum‑i‑asma
 
 KMSR: qamsar
 
-KMST: kawmu‑saayidih
+KMST: kawmus‑saayidih
 
 KMT: comte, hikmat
 
@@ -1426,7 +1426,7 @@ LJ|LH: elijah
 
 LJ|LK: loggia, loggias
 
-LK: algiers, ali‑kuli, ali‑quli, ellice, hulagu, lagos, lucas, luigi, luke, olga, wlgi
+LK: algiers, ali‑kuli, ali‑quli, ellice, hulagu, lagos, locke, lucas, luigi, luke, olga, wlgi
 
 LKLTM: lawh‑i‑kullut‑taam
 
@@ -1546,6 +1546,8 @@ LNT: all‑india, holland, lunt, ulan‑ude
 
 LNTK: landegg
 
+LNTN: london
+
 LP: aleppo, elba, el‑abha, halabi, lapp, lapps, libya
 
 LPLN: ljubljana
@@ -1624,9 +1626,9 @@ LSPSFR: aliy‑i‑sabzivari
 
 LSRS: lazarus
 
-LST: alizadih, al‑awsat
+LST: alizadih, al‑awsat, leste
 
-LSTR: alistair
+LSTR: alistair, lester
 
 LST|LXT: lisiate
 
@@ -1671,6 +1673,10 @@ M0KN|MTKN: mithaqiyan
 M0K|MTK: mithaqi, mithaqiyyih
 
 M0N|MTN: mathani
+
+M0RK|MTRK: mithraic
+
+M0RSM|MTRSM: mithraism
 
 M0|MTF: mathew, mathews, matthew
 
@@ -1914,7 +1920,7 @@ MLFL: melville
 
 MLFRT: milford
 
-MLK: malachi, malik, milwaukee, moluccas, muluk
+MLK: malachi, malik, milwaukee, moluccas, mulk, muluk
 
 MLKM: malkam
 
@@ -1933,6 +1939,8 @@ MLP: malabo
 MLPR: mulberry
 
 MLPX: mulla‑bashi
+
+MLRT: millerites
 
 MLSKT|MLTSKT: ummal‑i‑zakat
 
@@ -2110,7 +2118,7 @@ MPTKL: empedocles
 
 MPXR: hampshire
 
-MR: amharic, amir, amirs, amr, amur, maori, maoris, maria, marie, marwah, mary, mihr, mihr‑ali, mir, miri, moore, murray, umar, weimar
+MR: amharic, amir, amirs, amr, amur, maori, maoris, maria, marie, marwah, mary, mihr, mihr‑ali, mir, miri, moore, moors, murray, umar, weimar
 
 MR0|MRT: martha
 
@@ -2144,9 +2152,11 @@ MRLNT: maryland
 
 MRM: mahrami, mariam, maryam
 
+MRMN: mormons
+
 MRMR: marmara
 
-MRN: imran, mariana, marianna, marino, marion, murun
+MRN: imran, mariana, marianna, marina, marino, marion, murun
 
 MRNJS|MRNKS: mihrangiz
 
@@ -2248,7 +2258,7 @@ MSM: masum
 
 MSMPK: mozambique
 
-MSN: muhsin
+MSN: mason, masonic, muhsin
 
 MSNTRN: mazandaran, mazandarani, mazindaran, mazindarani
 
@@ -2269,6 +2279,8 @@ MSRFXXX: mazraiy‑i‑vashshash
 MSRK: masaryk
 
 MSS: mzuzu
+
+MSSP: mississippi
 
 MST: masjid, masjids, mastai, masud
 
@@ -2351,6 +2363,8 @@ MTPT: ahmedabad
 MTR: madeira, madras, maitreya, maitreye, mudirs
 
 MTRNT: mitterrand
+
+MTRPL: metropol
 
 MTRS: madrasihs, madrisihs, madrisiy
 
@@ -3364,9 +3378,11 @@ PTRSLKM: abdur‑rasul‑i‑qumi
 
 PTRSPRK: petersburg
 
-PTSHP: abdu‑sahib
+PTS: abdus
 
-PTSL: abdu‑salih
+PTSHP: abdus‑sahib
+
+PTSL: abdus‑salih
 
 PTSLM: abdu‑salam
 
@@ -4306,13 +4322,15 @@ STRN: austrian, austrians
 
 STRNLT: austrian‑lloyd
 
+STRS: sadrus
+
 STRSM: sadr‑i‑azam
 
 STRSMN: stresemann
 
 STRSPRK: strasbourg
 
-STRSTR: sadru‑sudur
+STRSTR: sadrus‑sudur, sadru‑sudur
 
 STRT: sadrud, stewart
 
@@ -13488,8 +13506,6 @@ hardwork: hardworking, hard‑working
 
 harem: harem
 
-harken: harkened
-
 harm: harm, harmed, harmeth, harmful, harmfulness, harming, harms
 
 harmless: harmless
@@ -14219,8 +14235,6 @@ imagin: imaginable, imaginary, imagination, imaginations, imaginative, imaginati
 imbal: imbalance, imbalances
 
 imbecil: imbecile, imbecilic
-
-imbed: imbedded
 
 imbib: imbibe, imbibed, imbibes, imbibing
 
@@ -15354,15 +15368,11 @@ jet: jet, jetted, jetting
 
 jetblack: jet‑black
 
-jew: jew, jews
+jew: jew, jewish, jewry, jews
 
 jewel: jewel, jewelled, jeweller, jewellers, jewels
 
 jewell: jewellery
-
-jewish: jewish
-
-jewr: jewry
 
 jibb: jibber
 
@@ -15372,17 +15382,13 @@ joblik: job‑like
 
 jockey: jockeying
 
-join: join, joined, joineth, joining, joins
-
-joint: joint, jointly
+join: join, joined, joineth, joining, joins, joint, jointly
 
 joke: joke, jokes, joking, jokingly
 
 jot: jot
 
-journal: journal, journalism, journals
-
-journalist: journalists
+journal: journal, journalism, journalists, journals
 
 journey: journey, journeyed, journeyeth, journeying, journeyings, journeys
 
@@ -15398,13 +15404,13 @@ jubil: jubilant, jubilantly, jubilation
 
 jubile: jubilee, jubilees
 
-judg: judge, judged, judges, judgeth, judging
+judg: judge, judged, judgement, judgements, judges, judgeth, judging
 
-judgement: judgement, judgemental, judgements
+judgemental: judgemental
 
-judic: judicial, judicious, judiciously
+judic: judicious, judiciously
 
-judiciar: judiciary
+judiciar: judicial, judiciary, juridical, jurisprudence
 
 jug: jug
 
@@ -15422,17 +15428,13 @@ junior: junior
 
 jur: juries, jury
 
-jurid: juridical
-
 jurisdict: jurisdiction, jurisdictions
-
-jurisprud: jurisprudence
 
 jurist: jurist, jurists
 
-just: just, justly, justness
+jus: just
 
-justic: justice
+just: justice, justly, justness
 
 justiceseek: justice‑seeking
 
@@ -15444,11 +15446,9 @@ keen: keen, keener, keenest, keenly, keenness
 
 keensight: keen‑sighted
 
-keep: keep, keeper, keepers, keepeth, keeping, keeps
+keep: keep, keeper, keepers, keepeth, keeping, keeps, kept
 
 ken: ken
-
-kept: kept
 
 kerchief: kerchief
 
@@ -15464,45 +15464,25 @@ kid: kid
 
 kidnap: kidnapped
 
-kil: killed, killest, killeth, killing
-
-kill: kill, killer, kills
+kill: kill, killed, killer, killest, killeth, killing, kills
 
 kilometr: kilometres
 
-kin: kin
+kin: kin, kindred, kindreds, kinfolk, kinsfolk, kinship, kinships, kinsman, kinsmen, kinswoman
 
 kind: kind, kinder, kindliest, kindliness, kindly, kindness, kindnesses, kinds
 
 kindergarten: kindergartens
 
-kindgom: kindgom
-
 kindl: kindle, kindled, kindles, kindleth, kindling
 
 kindlydispos: kindly‑disposed
 
-kindr: kindred, kindreds
-
-kinfolk: kinfolk
-
-king: king, kingly, kings
+king: king, kingly, kings, kingship
 
 kingdom: kingdom, kingdoms
 
 kingemperor: king‑emperor
-
-kingship: kingship
-
-kinsfolk: kinsfolk
-
-kinship: kinship, kinships
-
-kinsman: kinsman
-
-kinsmen: kinsmen
-
-kinswoman: kinswoman
 
 kiss: kiss, kissed, kisseth, kissing
 
@@ -15512,53 +15492,37 @@ knead: kneaded, kneading
 
 knee: knee, knees
 
-kneel: kneel, kneeleth, kneeling
+kneel: kneel, kneeleth, kneeling, knelt
 
 knell: knell
 
-knelt: knelt
+knife: knife, knives
 
-knew: knew, knewest
-
-knife: knife
-
-knight: knight, knighted, knights
-
-knighthood: knighthood
+knight: knight, knighted, knighthood, knights
 
 knit: knit, knits, knitteth, knitting
-
-knive: knives
 
 knock: knocketh, knocking
 
 knoll: knoll
 
-know: know, knower, knowers, knowest, knoweth, knowing, knowingly, knows
-
-knowabl: knowable
+know: knew, knewest, know, knowable, knower, knowers, knowest, knoweth, knowing, knowingly, known, knows
 
 knowledg: knowledge, knowledgeable, knowledges
 
 knowledgeableignor: knowledgeable‑ignorant
 
-known: known
-
 l: lilies, lily
 
 label: label, labelled, labelling, labels
 
-labor: laborious, laboriously
-
 laborator: laboratories, laboratory
 
-labour: labour, laboured, labourer, labourers, labouring, labours
+labour: laborious, laboriously, labour, laboured, labourer, labourers, labouring, labours
 
 lac: lacerate, lacerated, lacerates, lacerating, laceration
 
-lace: lace
-
-laci: lacy
+lace: lace, lacy
 
 lack: lack, lacked, lacking, lacks
 
@@ -15576,11 +15540,7 @@ lag: lag, lagged, lagging
 
 laicis: laicisation
 
-laid: laid
-
 laidout: laid‑out
-
-lain: lain
 
 lair: lair, lairs
 
@@ -15604,7 +15564,9 @@ lanc: lance, lances
 
 lancehead: lance‑head
 
-land: land, landed, landing, lands
+land: land, lands
+
+landed: landed, landing
 
 landingstag: landing‑stage
 
@@ -15650,9 +15612,7 @@ last: last, lasted, lasteth, lasting, lastly, lastness, lasts
 
 lastminut: last‑minute
 
-lat: later
-
-late: late, lately, lateness, latest
+late: late, lately, lateness, later, latest
 
 latent: latent
 
@@ -15666,19 +15626,11 @@ latt: latter
 
 latterday: latter‑day
 
-laud: laud, lauded, lauding, lauds
+laud: laud, laudable, laudations, laudatory, lauded, lauding, lauds
 
-laudabl: laudable
-
-laudat: laudations
-
-laudator: laudatory
-
-laugh: laugh, laughed, laugheth, laughing, laughingly
+laugh: laugh, laughed, laugheth, laughing, laughingly, laughter
 
 laughingstock: laughingstock
-
-laught: laughter
 
 launch: launch, launched, launches, launching
 
@@ -15700,29 +15652,23 @@ lawless: lawless, lawlessness
 
 lawy: lawyer, lawyers
 
-lax: lax
+lax: lax, laxity
 
-laxit: laxity
-
-lay: lay, layest, layeth, laying, lays
+lay: laid, lain, lay, layest, layeth, laying, lays
 
 layer: layer, layered, layers
 
-layman: layman
-
-laymen: laymen
+layman: layman, laymen
 
 laz: lazy
 
 leach: leach
 
-lead: lead, leader, leaders, leadeth, leading, leadings, leads
+lead: lead, leader, leaders, leadership, leadeth, leading, leadings, leads, led
 
 leaden: leaden
 
 leaderless: leaderless
-
-leadership: leadership
 
 leaf: leaf
 
@@ -15734,13 +15680,9 @@ leagu: league, leagued, leagues
 
 lean: lean, leaned, leaning, leans
 
-leap: leap, leaped, leapeth, leaping, leaps
+leap: leap, leaped, leapeth, leaping, leaps, leapt
 
-leapt: leapt
-
-learn: learn, learned, learners, learneth, learning, learnings, learns
-
-learnt: learnt
+learn: learn, learned, learners, learneth, learning, learnings, learns, learnt
 
 leas: lease, leases
 
@@ -15762,8 +15704,6 @@ lecturehal: lecture‑halls
 
 lectureroom: lecture‑room
 
-led: led
-
 ledg: ledgers
 
 leeway: leeway
@@ -15772,27 +15712,19 @@ left: left
 
 leg: leg, legged, legs
 
-legal: legal, legalise, legalising, legally
+legal: legal, legalise, legalising, legalistic, legally
 
-legalist: legalistic
+legat: legacies, legacy, legatees
 
-legat: legacies, legacy, legate, legation, legations
+legate: legate, legation, legations
 
-legate: legatees
-
-legend: legend, legends
-
-legendar: legendary
+legend: legend, legendary, legends
 
 legion: legion, legions
 
-legisl: legislate, legislated, legislating, legislation, legislative, legislators
+legisl: legislate, legislated, legislating, legislation, legislative, legislators, legislature, legislatures
 
-legislatur: legislature, legislatures
-
-legitim: legitimate, legitimately, legitimising
-
-legitimat: legitimacy
+legitim: legitimacy, legitimate, legitimately, legitimising
 
 leisur: leisure
 
@@ -15802,9 +15734,7 @@ len: lens
 
 lend: lend, lender, lendeth, lending, lends
 
-length: length, lengthiest, lengthily, lengths, lengthy
-
-lengthen: lengthen, lengthened, lengthening
+length: length, lengthen, lengthened, lengthening, lengthiest, lengthily, lengths, lengthy
 
 lenient: leniency, lenient
 
@@ -15814,17 +15744,13 @@ leonin: leonine
 
 leopard: leopard
 
-lep: leper, lepers
+lep: leper, lepers, leprosy
 
-lepros: leprosy
-
-less: less, lesser
-
-lessen: lessen, lessened, lessening
+less: less, lessen, lessened, lessening, lesser
 
 lesson: lesson, lessons
 
-lest: lest, leste, lester
+lest: lest
 
 let: let, lets, letting
 
@@ -15848,15 +15774,15 @@ liabil: liabilities, liability
 
 liabl: liable
 
-liais: liaise
-
-liaison: liaison
+liais: liaise, liaison
 
 liar: liar, liars
 
-lib: liberal, liberalised, liberalising, liberalism, liberality, liberally, liberals, liberate, liberated, liberates, liberating, liberation, liberator
+lib: liberal, liberalised, liberalising, liberalism, liberality, liberally, liberals
 
 liberalmind: liberal‑minded
+
+liberat: liberate, liberated, liberates, liberating, liberation, liberator
 
 libert: liberties, liberty
 
@@ -15936,13 +15862,13 @@ lightless: lightless
 
 lightn: lightning, lightnings
 
-like: like, liked, likely, likeness, likenesses, likes, liking, likings
+like: like, liked, likely, likes, liking, likings
 
 likelihood: likelihood
 
 likemind: like‑minded
 
-liken: likened, likeneth, likening, likens
+liken: likened, likeness, likenesses, likeneth, likening, likens
 
 likew: likewise
 
@@ -15970,9 +15896,7 @@ lin: liner, liners
 
 line: line, lined, lines, lining
 
-lineag: lineage, lineages
-
-lineal: lineal
+lineag: lineage, lineages, lineal
 
 linen: linen
 
@@ -15980,15 +15904,11 @@ ling: linger, lingered, lingereth, lingering, lingers
 
 linguist: linguistic, linguistics
 
-link: link, linked, linking, links
-
-linkag: linkage, linkages
+link: link, linkage, linkages, linked, linking, links
 
 lintel: lintels
 
-lion: lion, lions
-
-lioness: lioness
+lion: lion, lioness, lions
 
 lionheart: lionhearted, lionhearts, lion‑hearted
 
@@ -15998,9 +15918,7 @@ lipden: lip‑denial
 
 lipservic: lip‑service
 
-liquef: liquefied
-
-liquid: liquid, liquidate, liquids
+liquid: liquefied, liquid, liquidate, liquids
 
 liquor: liquor, liquors
 
@@ -16014,15 +15932,9 @@ lit: lit
 
 litan: litany
 
-liter: literal, literally, literalness, literate
+liter: literal, literalist, literalistic, literally, literalness
 
-literalist: literalist, literalistic
-
-literar: literary
-
-literat: literacy
-
-literatur: literature
+literar: literacy, literary, literate, literature
 
 litig: litigants, litigation, litigations, litigious
 
@@ -16052,9 +15964,7 @@ loam: loam
 
 loan: loan
 
-loath: loathes
-
-loathsom: loathsome
+loath: loathes, loathsome
 
 loav: loaves
 
@@ -16066,7 +15976,7 @@ local: local, localised, localities, locality, locally, locals
 
 locat: locate, located, locates, location, locations
 
-lock: lock, locke, locked, locks
+lock: lock, locked, locks
 
 lockout: lockout
 
@@ -16096,11 +16006,7 @@ loin: loins
 
 loit: loiterers
 
-london: london
-
-lone: lone, loneliness, lonely
-
-lonesom: lonesome
+lone: lone, loneliness, lonely, lonesome
 
 long: long, longed, longer, longest, longeth, longing, longingly, longings, longs, long‑
 
@@ -16192,23 +16098,15 @@ lookout: lookout, look‑out
 
 loom: loom, loomed, looming, looms
 
-loos: loose, loosed, loosely, loosing
-
-loosen: loosen, looseneth, loosening, loosens
+loos: loose, loosed, loosely, loosen, looseneth, loosening, loosens, loosing
 
 loot: loot, looted, looting
 
-lord: lord, lordly, lords
-
-lordship: lordship
+lord: lord, lordly, lords, lordship
 
 lore: lore
 
-lose: lose, loses, loseth, losing
-
-loss: loss, losses
-
-lost: lost
+lose: lose, loses, loseth, losing, loss, losses, lost
 
 lot: lot, lots
 
@@ -16224,11 +16122,7 @@ lotus: lotus
 
 loud: loud, louder, loudly
 
-lov: lover, lovers
-
-lovabl: lovable
-
-love: love, loved, loveliest, loveliness, lovely, loves, lovest, loveth, loving, lovingly
+love: lovable, love, loved, loveliest, loveliness, lovely, lover, lovers, loves, lovesome, lovest, loveth, loving, lovingly
 
 lovecr: love‑creating
 
@@ -16238,17 +16132,13 @@ loveintox: love‑intoxicated
 
 lovepow: love‑power
 
-lovesom: lovesome
-
 lovingkind: loving‑kindness
 
 lovingprovid: loving‑providence
 
 low: low, lower, lowered, lowereth, lowering, lowest, lowliest, lowly
 
-lowborn: lowborn, low‑born
-
-lowbr: lowbred
+lowborn: lowborn, lowbred, low‑born
 
 lowdens: low‑density
 
@@ -16262,9 +16152,7 @@ lowroof: low‑roofed
 
 lowwat: low‑water
 
-loyal: loyal, loyally
-
-loyalt: loyalties, loyalty
+loyal: loyal, loyally, loyalties, loyalty
 
 lsd: lsd
 
@@ -16288,17 +16176,13 @@ luggag: luggage
 
 lukewarm: lukewarm
 
-lul: lulled
-
-lull: lull
+lull: lull, lulled
 
 lumb: lumber
 
-lumin: luminous
+lumin: luminosity, luminous
 
 luminar: luminaries, luminary
-
-luminos: luminosity
 
 lump: lump, lumps
 
@@ -16306,9 +16190,7 @@ lunar: lunar
 
 lunat: lunacies, lunatic
 
-lunch: lunch
-
-luncheon: luncheon
+lunch: lunch, luncheon
 
 lung: lungs
 
@@ -16328,9 +16210,7 @@ lust: lust, lustful, lusts
 
 lusterless: lusterless
 
-lustr: lustre
-
-lustrous: lustrous
+lustr: lustre, lustrous
 
 lute: lute
 
@@ -16348,19 +16228,15 @@ macrocosm: macrocosm
 
 macroevolutionar: macroevolutionary
 
-mad: mad, madly, madness
+mad: mad, madly, madman, madness
 
 madam: madame
-
-made: made
-
-madman: madman
 
 maelstrom: maelstrom
 
 mafia: mafia
 
-mag: magi
+mag: magi, magian, magians
 
 magazin: magazine, magazines
 
@@ -16368,15 +16244,11 @@ magazineformat: magazine‑format
 
 maggot: maggots
 
-magian: magian, magians
-
 magic: magic, magically
 
 magician: magician, magicians
 
-magistr: magistrate, magistrates
-
-magistrat: magistracy
+magistr: magistracy, magistrate, magistrates
 
 magnanim: magnanimities, magnanimity, magnanimous, magnanimously
 
@@ -16390,11 +16262,9 @@ magnific: magnificence, magnificent, magnificently
 
 magnitud: magnitude, magnitudes
 
-maid: maid, maids
+maid: maid, maids, maidservant, maidservants, maid‑servant, maid‑servants
 
 maiden: maiden, maidens
-
-maidserv: maidservant, maidservants, maid‑servant, maid‑servants
 
 mail: mail, mailed, mailing
 
@@ -16416,11 +16286,11 @@ mainten: maintenance
 
 majest: majestic, majestically, majesties, majesty
 
-major: major, majorities, majority
+major: major
 
-mak: maker, makers
+majorit: majorities, majority
 
-make: make, makes, makest, maketh, making
+make: made, make, maker, makers, makes, makest, maketh, making
 
 makeup: makeup, make‑up
 
@@ -16438,9 +16308,7 @@ male: male, males
 
 maledict: malediction
 
-malefactor: malefactor
-
-malefic: maleficence, maleficent
+malefic: malefactor, maleficence, maleficent
 
 malevol: malevolence, malevolent, malevolently
 
@@ -16464,7 +16332,7 @@ maltreat: maltreated
 
 mammoth: mammoth
 
-man: man, manfully, manly, manned
+man: man, manfully, manhood, manly, manned, men
 
 manacl: manacled
 
@@ -16480,17 +16348,11 @@ mandolin: mandolin
 
 mangl: mangled
 
-manhood: manhood
-
 mani: many
 
 manic: manic
 
-manif: manifest, manifests
-
-manifest: manifestation, manifestational, manifestations, manifested, manifesteth, manifesting, manifestly
-
-manifestor: manifestor, manifestors
+manif: manifest, manifestation, manifestational, manifestations, manifested, manifesteth, manifesting, manifestly, manifestor, manifestors, manifests
 
 manifold: manifold, manifoldly
 
@@ -16546,21 +16408,13 @@ marijuana: marijuana
 
 marin: marine, mariner
 
-marina: marina
-
-marit: marital
-
 mark: mark, marked, markedly, markers, marketh, marking, marks
 
-market: market, marketed, marketing, markets
-
-marketplac: marketplace, marketplaces, market‑place
+market: market, marketed, marketing, marketplace, marketplaces, markets, market‑place
 
 marksmanship: marksmanship
 
-marr: married, marry, marrying
-
-marriag: marriage, marriages
+marr: marital, marriage, marriages, married, marry, marrying, matrimony
 
 marrow: marrow
 
@@ -16568,9 +16422,7 @@ marshal: marshal, marshall, marshalled, marshalling, marshals
 
 martial: martial
 
-martyr: martyr, martyred, martyrs
-
-martyrdom: martyrdom, martyrdoms
+martyr: martyr, martyrdom, martyrdoms, martyred, martyrs
 
 martyrherald: martyr‑herald
 
@@ -16585,8 +16437,6 @@ marvel: marvel, marvelled, marvelleth, marvelling, marvellous, marvellously, mar
 masculin: masculine
 
 mask: mask, masked
-
-mason: mason, masonic
 
 masonr: masonry
 
@@ -16624,17 +16474,15 @@ matchless: matchless
 
 mate: mate, mated, mates, mating
 
-mater: material, materialisation, materialise, materialised, materialising, materialism, materialities, materiality, materially, materials
+mater: material, materialities, materiality, materially, materials
 
-materialist: materialist, materialistic, materialists
+materialis: materialisation, materialise, materialised, materialising
+
+materialist: materialism, materialist, materialistic, materialists
 
 matern: maternal
 
-mathemat: mathematical, mathematically, mathematics
-
-mathematician: mathematician, mathematicians
-
-matrimon: matrimony
+mathemat: mathematical, mathematically, mathematician, mathematicians, mathematics
 
 matrix: matrix
 
@@ -16650,9 +16498,9 @@ mausoleum: mausoleum, mausoleums
 
 maw: maw
 
-maxim: maxim, maximise
+maxim: maxim
 
-maximum: maximum
+maximum: maximise, maximum
 
 may: mayest
 
@@ -16660,25 +16508,19 @@ mayb: maybe
 
 mayor: mayor, mayors
 
-mead: meads
+meadow: meadow, meadows, meads
 
-meadow: meadow, meadows
-
-meag: meagerness
-
-meagr: meagre
+meagr: meagerness, meagre
 
 meal: meal, meals
 
-mean: mean, meanest, meaneth, meaning, meanings, meanness, means
+mean: mean, meanest, meaneth, meaning, meaningful, meaningfully, meanings, means, meant
 
 meand: meandering
 
-meaning: meaningful, meaningfully
-
 meaningless: meaningless
 
-meant: meant
+meanness: meanness
 
 meantim: meantime
 
@@ -16710,9 +16552,7 @@ mediocr: mediocre, mediocrity
 
 medit: meditate, meditated, meditates, meditateth, meditating, meditation, meditations, meditative
 
-medium: medium, mediums
-
-mediumship: mediumship
+medium: medium, mediums, mediumship
 
 mediumsiz: medium‑size
 
@@ -16722,7 +16562,7 @@ meed: meed
 
 meek: meek, meekness
 
-meet: meet, meeteth, meeting, meetings, meets
+meet: meet, meeteth, meeting, meetings, meets, met
 
 meetinghous: meeting‑house
 
@@ -16746,13 +16586,17 @@ memento: memento
 
 memoir: memoir, memoirs
 
-memor: memorable, memorably, memorial, memorialise, memorialised, memorials, memories, memorisation, memorise, memorised, memorising, memory
+memor: memories, memory
+
+memorabl: memorable, memorably
 
 memorandum: memorandum
 
-memoryladen: memory‑laden
+memorial: memorial, memorialise, memorialised, memorials
 
-men: men
+memoris: memorisation, memorise, memorised, memorising
+
+memoryladen: memory‑laden
 
 menac: menace, menaced, menacing, menacingly
 
@@ -16792,45 +16636,27 @@ merg: merge, merged, merging
 
 meridian: meridian
 
-merit: merit, merited, merits
+merit: merit, merited, meritorious, merits
 
-meritor: meritorious
-
-merr: merrily, merry
-
-merriment: merriment
+merr: merrily, merriment, merry
 
 mesh: mesh, meshes
 
 mesm: mesmerise, mesmerised, mesmerising
 
-messag: message, messages
+messag: message, messages, messenger, messengers, messengership
 
-messeng: messenger, messengers
-
-messengership: messengership
-
-messiah: messiah
-
-messiahship: messiahship
-
-messian: messianic
-
-met: met
+messiah: messiah, messiahship, messianic
 
 metabol: metabolism
 
-metal: metal, metals
-
-metallurg: metallurgy
+metal: metal, metallurgy, metals
 
 metamorphos: metamorphose, metamorphosed, metamorphoses
 
 metaphor: metaphor, metaphorical, metaphors
 
-metaphys: metaphysic, metaphysical, metaphysics
-
-metaphysician: metaphysicians
+metaphys: metaphysic, metaphysical, metaphysicians, metaphysics
 
 mete: mete, meted, meting
 
@@ -16842,19 +16668,13 @@ meteorlik: meteor‑like
 
 methink: methinks
 
-method: method, methodical, methodically, methods
-
-methodolog: methodological, methodologies, methodology
+method: method, methodical, methodically, methodological, methodologies, methodology, methods
 
 meticul: meticulous, meticulously, meticulousness
 
 metr: metre, metres
 
-metropo: metropolis
-
-metropol: metropol
-
-metropolitan: metropolitan
+metropo: metropolis, metropolitan
 
 mettl: mettle
 
@@ -16916,37 +16736,23 @@ mil: milli
 
 mild: mild, milder, mildest, mildness
 
-mile: mile, miles
-
-mileag: mileage
+mile: mile, mileage, miles
 
 mileston: milestone, milestones
 
-milieu: milieu
+milieu: milieu, milieus
 
-milieus: milieus
+milit: militancy, militant, militarily, militarised, militarism, militaristic, military
 
-milit: militancy, militant, militated
-
-militar: militarily, militarised, militarism, military
-
-militarist: militaristic
+militated: militated
 
 milk: milk, milked, milky
 
 mill: mill, miller, mills
 
-millenn: millennial
-
-millennia: millennia
-
-millennialist: millennialist
+millenn: millennia, millennial, millennialist, millennium, millenniums
 
 millennialong: millennia‑long
-
-millennium: millennium, millenniums
-
-millerit: millerites
 
 million: million, millions
 
@@ -16954,33 +16760,27 @@ millionair: millionaires
 
 millston: millstones
 
-min: mineral, minerals, miners
-
 minaret: minaret, minarets
 
-mind: mind, minded, mindedly, mindful, mindfulness, minds
-
-minded: mindedness
+mind: mind, minded, mindedly, mindedness, mindful, mindfulness, minds
 
 mindless: mindless
 
 mindset: mindset, mindsets, mind‑set
 
-mine: mine, mines
+mine: mine, miners, mines
+
+mineral: mineral, minerals
 
 mingl: mingle, mingled, mingleth, mingling
 
 miniatur: miniature, miniatured
 
-minim: minimal, minimise, minimised, minimises, minimising
-
-minimum: minimum
+minim: minimal, minimise, minimised, minimises, minimising, minimum
 
 minion: minions
 
-minist: minister, ministered, ministerial, ministering, ministerings, ministers
-
-ministr: ministrations, ministries, ministry
+minist: minister, ministered, ministerial, ministering, ministerings, ministers, ministrations, ministries, ministry
 
 minor: minor, minorities, minority, minors
 
@@ -16990,13 +16790,9 @@ minus: minus
 
 minuscul: minuscule
 
-minut: minute, minutely, minuteness, minutes, minutest
+minut: minute, minutely, minuteness, minutes, minutest, minutiae
 
-minutia: minutiae
-
-miracl: miracle, miracles
-
-miracul: miraculous, miraculously
+miracl: miracle, miracles, miraculous, miraculously
 
 mirag: mirage
 
@@ -17010,9 +16806,7 @@ mirth: mirth
 
 mis: miser, miserable, miserably, miseries, misery
 
-misapprehend: misapprehended
-
-misapprehens: misapprehension, misapprehensions
+misapprehend: misapprehended, misapprehension, misapprehensions
 
 misappropr: misappropriate, misappropriated
 
@@ -17020,9 +16814,7 @@ misbegotten: misbegotten
 
 misbehaviour: misbehaviour
 
-misbelief: misbelief
-
-misbeliev: misbelieved, misbeliever, misbelievers
+misbelief: misbelief, misbelieved, misbeliever, misbelievers
 
 miscalcul: miscalculated
 
@@ -17032,19 +16824,13 @@ miscellan: miscellaneous
 
 mischant: mischance
 
-mischief: mischief, mischiefs
+mischief: mischief, mischiefs, mischievous, mischievously
 
 mischiefkindl: mischief‑kindling
 
 mischiefmak: mischief‑maker, mischief‑makers, mischief‑making
 
-mischiev: mischievous, mischievously
-
-misconc: misconceive
-
-misconceiv: misconceived, misconceiving
-
-misconcept: misconception, misconceptions
+misconc: misconceive, misconceived, misconceiving, misconception, misconceptions
 
 misconduct: misconduct
 
@@ -17076,9 +16862,7 @@ misinterpret: misinterpret, misinterpretation, misinterpretations, misinterprete
 
 misjudg: misjudged
 
-misl: misled
-
-mislead: mislead, misleader, misleaders, misleadeth, misleading
+mislead: mislead, misleader, misleaders, misleadeth, misleading, misled
 
 mislik: mislike
 
@@ -17088,9 +16872,7 @@ misperceiv: misperceived
 
 misplac: misplaced
 
-misrepres: misrepresent, misrepresented, misrepresenting
-
-misrepresent: misrepresentation, misrepresentations
+misrepres: misrepresent, misrepresentation, misrepresentations, misrepresented, misrepresenting
 
 misrul: misrule, misruled
 
@@ -17102,8 +16884,6 @@ mission: mission, missions
 
 missionar: missionaries, missionary
 
-mississipp: mississippi
-
 missiv: missive, missives
 
 misspent: misspent
@@ -17112,9 +16892,7 @@ misstep: missteps
 
 mist: mist, mists
 
-mistak: mistake, mistakes, mistaketh, mistaking
-
-mistaken: mistaken, mistakenly
+mistak: mistake, mistaken, mistakenly, mistakes, mistaketh, mistaking
 
 mistreat: mistreating, mistreatment
 
@@ -17122,21 +16900,13 @@ mistress: mistress
 
 mistrust: mistrust
 
-misunderstand: misunderstand, misunderstanding, misunderstandings
-
-misunderstood: misunderstood
+misunderstand: misunderstand, misunderstanding, misunderstandings, misunderstood
 
 misus: misuse, misused, misusing
 
-mithraic: mithraic
-
-mithraism: mithraism
-
 mitig: mitigate, mitigated, mitigates, mitigation
 
-mix: mix, mixed
-
-mixtur: mixture
+mix: mix, mixed, mixture
 
 moan: moan, moaned, moaneth, moaning, moanings, moans
 
@@ -17154,9 +16924,7 @@ mode: mode, modes, modest
 
 model: model, modelled, models
 
-modern: modern, modernisation, modernising, modernism, modernity
-
-modernist: modernists
+modern: modern, modernisation, modernising, modernism, modernists, modernity
 
 modest: modestly, modesty
 
@@ -17164,21 +16932,15 @@ modif: modification, modifications, modified, modifies, modify
 
 modul: modulations, module, modules
 
-moist: moist
-
-moisten: moisten, moistening
+moist: moist, moisten, moistening, moisture
 
 moistgerm: moist‑germ
 
-moistur: moisture
-
 molar: molars
-
-mole: molest
 
 molecul: molecules
 
-molest: molestation, molestations, molested, molesters, molesting
+molest: molest, molestation, molestations, molested, molesters, molesting
 
 molten: molten
 
@@ -17188,21 +16950,13 @@ momentar: momentarily, momentary
 
 momentum: momentum
 
-mon: monies
+monarch: monarch, monarchical, monarchies, monarchist, monarchs, monarchy
 
-monarch: monarch, monarchical, monarchies, monarchs, monarchy
-
-monarchist: monarchist
-
-monast: monasteries, monastery, monastic
-
-monastic: monasticism
+monast: monasteries, monastery, monastic, monasticism, monk, monks
 
 monday: monday
 
-monetar: monetary
-
-money: money
+money: monetary, money, monies
 
 moneychang: money‑changer
 
@@ -17214,8 +16968,6 @@ monit: monition
 
 monitor: monitor, monitored, monitoring, monitors
 
-monk: monk, monks
-
 monkey: monkey, monkeys
 
 monocultur: monoculture
@@ -17224,25 +16976,21 @@ monogam: monogamy
 
 monolith: monolith
 
-monopo: monopolies
+monopol: monopolies, monopolisation, monopolise, monopolised
 
-monopol: monopolisation, monopolise, monopolised
-
-monoth: monotheism
-
-monotheist: monotheistic, monotheists
+monoth: monotheism, monotheistic, monotheists
 
 monoton: monotonous, monotony
 
 monst: monster, monsters
 
-monstros: monstrosity
-
-monstrous: monstrous
+monstrous: monstrosity, monstrous
 
 month: month, monthly, months
 
-monument: monument, monumental, monuments
+monument: monument, monuments
+
+monumental: monumental
 
 mood: mood, moods, moody
 
@@ -17250,15 +16998,11 @@ moon: moon, moons
 
 moonless: moonless
 
-moonlight: moonlight
+moonlight: moonlight, moonlit
 
-moonlit: moonlit
+moral: moral, moralists, moralities, morality, morally, morals
 
-moor: moors
-
-moral: moral, morale, moralities, morality, morally, morals
-
-moralist: moralists
+morale: morale
 
 morass: morass
 
@@ -17272,17 +17016,13 @@ morgu: morgue
 
 moribund: moribund
 
-mormon: mormons
-
-morn: morn, morning, mornings, morns
+morn: morn, morning, mornings, morningtide, morns
 
 morningbright: morning‑brightness
 
 morninglight: morning‑light
 
 morningstar: morning‑star
-
-morningtid: morningtide
 
 morrow: morrow
 
@@ -17295,8 +17035,6 @@ mortif: mortification, mortifications, mortified
 mosaic: mosaic
 
 mose: moses
-
-moslem: moslem, moslems
 
 mosqu: mosque, mosques
 
@@ -17312,11 +17050,9 @@ mote: mote, motes
 
 moth: moth, moths
 
-mother: mother, mothers
+mother: mother, motherhood, mothers
 
 motherbook: mother‑book
-
-motherhood: motherhood
 
 motherinlaw: mother‑in‑law
 
@@ -17342,11 +17078,7 @@ mould: mould, moulded, mouldering, moulding, moulds
 
 mount: mount, mounted, mounteth, mounting, mounts
 
-mountain: mountain, mountains
-
-mountainsid: mountainside
-
-mountaintop: mountaintop, mountaintops, mountain‑top
+mountain: mountain, mountains, mountainside, mountaintop, mountaintops, mountain‑top
 
 mourn: mourn, mourned, mourners, mournful, mourning
 
@@ -17358,17 +17090,9 @@ mouth: mouth, mouthful, mouths
 
 mouthpiec: mouthpiece, mouthpieces
 
-mov: mover, movers
+move: movable, move, moved, movement, movements, mover, movers, moves, movest, moveth, moving, movingly
 
-movabl: movable
-
-move: move, moved, moves, movest, moveth, moving, movingly
-
-movement: movement, movements
-
-mow: mow, mowed
-
-mown: mown
+mow: mow, mowed, mown
 
 mrs: mrs
 
@@ -17396,15 +17120,9 @@ muchpriz: much‑prized
 
 muchvaunt: much‑vaunted
 
-mud: mud
+mud: mud, muddy
 
-mudd: muddy
-
-mule: mule, mules
-
-mulet: muleteers
-
-mulk: mulk
+mule: mule, mules, muleteers
 
 mult: multi
 
@@ -17420,15 +17138,11 @@ multihu: multi‑hued
 
 multin: multinational
 
-multip: multiplied, multiplies, multiply, multiplying
-
-multipl: multiple, multiplication, multiplicity
+multip: multiple, multiplication, multiplicity, multiplied, multiplies, multiply, multiplying
 
 multisector: multisectoral
 
-multitud: multitude, multitudes
-
-multitudin: multitudinous
+multitud: multitude, multitudes, multitudinous
 
 multiyear: multi‑year
 
@@ -17454,9 +17168,7 @@ muse: muse, musings
 
 museum: museum, museums
 
-music: music, musical
-
-musician: musician, musicians
+music: music, musical, musician, musicians
 
 musk: musk, musky
 
@@ -17498,9 +17210,7 @@ myst: mysteries, mysterious, mysteriously, mystery
 
 mystic: mystic, mystical, mysticism, mystics
 
-myth: myth
-
-mytholog: mythology
+myth: myth, mythology
 
 nail: nail, nailed, nails
 
