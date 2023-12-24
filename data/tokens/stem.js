@@ -186,6 +186,14 @@ exceptions1.executes = "executor";
 exceptions1.executing = "executor";
 exceptions1.fevered = "feverish";
 exceptions1.furnishings = "furnitur";
+exceptions1.generals = "generalship";
+exceptions1.hanged = "hangman";
+exceptions1.heroin = "heroi";
+exceptions1.imports = "imports";
+exceptions1.imported = "imports";
+exceptions1.imprecise = "imprecis";
+exceptions1.intimated = "intimation";
+exceptions1.intimates = "intimation";
 // Invariants!
 exceptions1.institute = "institute";
 exceptions1.sky = "sky";
@@ -251,6 +259,17 @@ exceptions1.equation = "equation";
 exceptions1.equator = "equator";
 exceptions1.facile = "facile";
 exceptions1.farthing = "farthing";
+exceptions1.galvani = "*galvani";
+exceptions1.generality = "generality";
+exceptions1.historic = "historic";
+exceptions1.humanities = "humanities";
+exceptions1.hindi = "*hindi";
+exceptions1.identical = "identical";
+exceptions1.imperious = "imperious";
+exceptions1.incidental = "incidental";
+exceptions1.industrious = "industrious";
+exceptions1.integral = "integral";
+exceptions1.integrity = "integrity";
 // Tweaks!
 var tweaks = Object.create(null);
 tweaks.aggressor = "aggress";
@@ -758,6 +777,150 @@ tweaks.fruition = "fruit";
 tweaks.ful = "full";
 tweaks.furious = "furi";
 tweaks.fusion = "fuse";
+tweaks.gainsaid = "gainsay";
+tweaks.gallantr = "gallant";
+tweaks.gase = "gas";
+tweaks.gaseous = "gas";
+tweaks.gave = "give";
+tweaks.gentlemen = "gentleman";
+tweaks.geologist = "geolog";
+tweaks.gigant = "giant";
+tweaks.giv = "give";
+tweaks.given = "give";
+tweaks.gladden = "glad";
+tweaks.gladsom = "glad";
+tweaks.glorif = "glor";
+tweaks.glorious = "glor";
+tweaks.goe = "go";
+tweaks.golden = "gold";
+tweaks.gone = "go";
+tweaks.gotten = "get";
+tweaks.government = "govern";
+tweaks.governorship = "governor";
+tweaks.gradualist = "gradual";
+tweaks.grammarian = "grammar";
+tweaks.grammat = "grammar";
+tweaks.gratitud = "grate";
+tweaks.grav = "grave";
+tweaks.grew = "grow";
+tweaks.griev = "grief";
+tweaks.grimm = "grim";
+tweaks.grown = "grow";
+tweaks.growth = "grow";
+tweaks.guarantor = "guarante";
+tweaks.guardianship = "guardian";
+tweaks.guardsmen = "guard";
+tweaks.habitu = "habit";
+tweaks.halv = "half";
+tweaks.handmaiden = "handmaid";
+tweaks.harvest = "harv";
+tweaks.hasten = "hast";
+tweaks.hater = "hate";
+tweaks.hatr = "hate";
+tweaks.haz = "haze";
+tweaks.heard = "hear";
+tweaks.hearst = "hear";
+tweaks.heartbroken = "heartbreak";
+tweaks.hearted = "heart";
+tweaks.heartfelt = "heart";
+tweaks.heathenish = "heathen";
+tweaks.held = "hold";
+tweaks.hellish = "hell";
+tweaks.helpmeet = "helpmat";
+tweaks.hereditar = "hered";
+tweaks.heroic = "hero";
+tweaks.heroism = "hero";
+tweaks.hid = "hide";
+tweaks.hidden = "hide";
+tweaks.hindrant = "hind";
+tweaks.hinduism = "hindu";
+tweaks.hindus = "hindu";
+tweaks.hindustan = "hindu";
+tweaks.historian = "histor";
+tweaks.historicist = "histor";
+tweaks.historiograph = "histor";
+tweaks.holden = "hold";
+tweaks.honorar = "honour";
+tweaks.horsemen = "horseman";
+tweaks.hostess = "host";
+tweaks.hott = "hot";
+tweaks.humankind = "human";
+tweaks.humor = "humour";
+tweaks.hung = "hang";
+tweaks.hungr = "hunger";
+tweaks.huntsman = "hunt";
+tweaks.husbandmen = "husbandman";
+tweaks.husbandr = "husbandman";
+tweaks.hypocris = "hypocrit";
+tweaks.heroin = "hero";
+tweaks.idealist = "ideal";
+tweaks.ideat = "idea";
+tweaks.ideologu = "ideolog";
+tweaks.idolat = "idol";
+tweaks.idolatr = "idol";
+tweaks.illegitimat = "illegitim";
+tweaks.illiterat = "illit";
+tweaks.illum = "illumin";
+tweaks.illusor = "illus";
+tweaks.imaginar = "imagin";
+tweaks.immaculat = "immacul";
+tweaks.immediat = "immed";
+tweaks.immobil = "immobl";
+tweaks.imperialist = "imp";
+tweaks.impetuos = "impetu";
+tweaks.impiet = "impious";
+tweaks.impostur = "impostor";
+tweaks.impractic = "impract";
+tweaks.inaccurat = "inaccur";
+tweaks.inadequat = "inadequ";
+tweaks.incapac = "incap";
+tweaks.incapacit = "incap";
+tweaks.incident = "incid";
+tweaks.indebted = "indebt";
+tweaks.indiscret = "indiscreet";
+tweaks.indisposit = "indispos";
+tweaks.individualist = "individu";
+tweaks.industrialist = "industr";
+tweaks.ineffectu = "ineffect";
+tweaks.ineptitud = "inept";
+tweaks.infantil = "infant";
+tweaks.infinit = "infin";
+tweaks.infinitud = "infin";
+tweaks.infinitum = "infin";
+tweaks.inflationar = "inflat";
+tweaks.inflictor = "inflict";
+tweaks.ingenu = "ingen";
+tweaks.inheritor = "inherit";
+tweaks.iniquit = "iniqu";
+tweaks.inoper = "inop";
+tweaks.inscript = "inscrib";
+tweaks.inspector = "inspect";
+tweaks.instinctu = "instinct";
+tweaks.instructor = "instruct";
+tweaks.intellectu = "intellect";
+tweaks.intensif = "intens";
+tweaks.intercessor = "intercess";
+tweaks.interconnected = "interconnect";
+tweaks.intermarriag = "intermarr";
+tweaks.intermediar = "intermed";
+tweaks.interposit = "interpos";
+tweaks.interrelationship = "interrel";
+tweaks.interrogator = "interrog";
+tweaks.interwoven = "interweav";
+tweaks.intestat = "intest";
+tweaks.intimat = "intim";
+tweaks.intoxic = "intox";
+tweaks.intricat = "intric";
+tweaks.introduct = "introduc";
+tweaks.introductor = "introduc";
+tweaks.intrud = "intrus";
+tweaks.invas = "invad";
+tweaks.inventor = "invent";
+tweaks.invers = "invert";
+tweaks.invoc = "invok";
+tweaks.irreligion = "irrelig";
+tweaks.isolationist = "isol";
+tweaks.issuant = "issu";
 
 const ierReg = /ier$/;
 const eriReg = /eri$/;
@@ -1414,6 +1577,7 @@ const nameFarsiInclude = [
   "hamzih",
   "han",
   "haney",
+  "harris",
   "harvey",
   "havana",
   "hazira",
@@ -1429,7 +1593,8 @@ const nameFarsiInclude = [
   "hilm",
   "himalaya",
   "hin",
-  "hitler",
+  "hitl",
+  "hivaid",
   "hoagg",
   "hobb",
   "hoehnk",
@@ -1438,9 +1603,11 @@ const nameFarsiInclude = [
   "hom",
   "hoover",
   "hopp",
+  "horne",
   "hulagu",
   "hur",
   "hyde",
+  "iceland",
   "idaho",
   "idha",
   "idr",
@@ -2335,6 +2502,25 @@ var stem = function (word) {
     if (word.startsWith("formalism")) return "formal";
     if (word.startsWith("formalis")) return "formalis";
     if (word.startsWith("fundamentalis")) return "fundamentalis";
+    if (word.startsWith("generalis")) return "generalis";
+    if (word.startsWith("globalis")) return "globalis";
+    if (word.startsWith("habita")) return "habita";
+    if (word.startsWith("horr")) return "horr";
+    if (word.startsWith("humanis")) return "humanis";
+    if (word.startsWith("humane")) return "humane";
+    if (word.startsWith("importation")) return "imports";
+    if (word.startsWith("impression")) return "impression";
+    if (word.startsWith("income")) return "income";
+    if (word.startsWith("incurable")) return "incurable";
+    if (word.startsWith("individualised")) return "individualit";
+    if (word.startsWith("individualit")) return "individualit";
+    if (word.startsWith("individualis")) return "individualis";
+    if (word.startsWith("individuat")) return "individuat";
+    if (word.startsWith("inequit")) return "inequit";
+    if (word.startsWith("interest")) return "interest";
+    if (word.startsWith("internalis")) return "internalis";
+    if (word.startsWith("international")) return "international";
+    if (word.startsWith("intimation")) return "intimation";
   }
 
   str = prelude(str);

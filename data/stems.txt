@@ -312,7 +312,7 @@ FSTR: fozdar
 
 FSX: ficicchia
 
-FT: fattah, fida, fuad, hoveida, ift, ivd
+FT: fattah, fida, fuad, hivaids, hoveida, ift, ivd
 
 FTF: fatva, fatvas
 
@@ -760,6 +760,8 @@ KLF: calif, culver, qawlavayh
 
 KLFLNT: cleveland
 
+KLFN: galvani
+
 KLFR: calvary
 
 KLFRN: california
@@ -852,7 +854,7 @@ KLTT: haykalut‑tawhid
 
 KLX: ghoulishly, kull‑i‑shay
 
-KM: guam, guaymi, hakim, khayyam, khumm, qaim, qayyum, qum, qumi
+KM: guam, guaymi, hakim, kawmu, khayyam, khumm, qaim, qayyum, qum, qumi
 
 KMKM: qaim‑maqam, qaim‑maqams
 
@@ -896,13 +898,13 @@ KMRKKLS: qumruq‑kilisa
 
 KMRN: cameroon, kamran
 
-KMS: kawmus, khamsi, khamsih
+KMS: khamsi, khamsih
 
 KMSM: qayyum‑i‑asma
 
 KMSR: qamsar
 
-KMST: kawmus‑saayidih
+KMST: kawmu‑saayidih
 
 KMT: comte, hikmat
 
@@ -2678,7 +2680,7 @@ NSTTRX|NSTTRK: hans‑dietrich
 
 NS|KNS: ignaz
 
-NT: aeneid, andheri, enayati, hindiyyih, inayati, india, indias, indies, indo, nadi, nadu, naidu, nity, yaounde
+NT: aeneid, andheri, enayati, hindi, hindiyyih, inayati, india, indias, indies, indo, nadi, nadu, naidu, nity, yaounde
 
 NTFKST: antofagasta
 
@@ -3362,11 +3364,9 @@ PTRSLKM: abdur‑rasul‑i‑qumi
 
 PTRSPRK: petersburg
 
-PTS: abdus
+PTSHP: abdu‑sahib
 
-PTSHP: abdus‑sahib
-
-PTSL: abdus‑salih
+PTSL: abdu‑salih
 
 PTSLM: abdu‑salam
 
@@ -3830,7 +3830,7 @@ SLN: ceylon, solano
 
 SLNJN|SLNKN: esslingen
 
-SLNT: iceland, salient, zealand
+SLNT: iceland, icelanders, icelandic, salient, zealand
 
 SLP: celebes
 
@@ -4306,15 +4306,13 @@ STRN: austrian, austrians
 
 STRNLT: austrian‑lloyd
 
-STRS: sadrus
-
 STRSM: sadr‑i‑azam
 
 STRSMN: stresemann
 
 STRSPRK: strasbourg
 
-STRSTR: sadrus‑sudur, sadru‑sudur
+STRSTR: sadru‑sudur
 
 STRT: sadrud, stewart
 
@@ -4442,7 +4440,7 @@ TKSN: dickson
 
 TKT: dakota, taghut
 
-TL: adl, adliyyih, ataullah, attila, ayatollah, ayatullah, dallas, dawlih, dawliy, del, delhi, dhil, diyaullah, italo, watling, yadullah
+TL: adl, adliyyih, ataullah, attila, ayatollah, ayatullah, dallas, dawlih, dawliy, del, delhi, dhil, diyaullah, hitler, italo, watling, yadullah
 
 TLF: adolf
 
@@ -12804,9 +12802,7 @@ gaiet: gaieties, gaiety
 
 gain: gain, gained, gaineth, gainful, gaining, gains
 
-gainsaid: gainsaid
-
-gainsay: gainsay, gainsayest, gainsaying
+gainsay: gainsaid, gainsay, gainsayest, gainsaying
 
 gainst: gainst
 
@@ -12820,9 +12816,7 @@ gale: gale, gales
 
 gall: galleries, gallery
 
-gallant: gallant
-
-gallantr: gallantry
+gallant: gallant, gallantry
 
 gallon: gallon
 
@@ -12834,7 +12828,7 @@ gallow: gallows
 
 gallowstre: gallows‑tree
 
-galvan: galvani, galvanic, galvanise, galvanised, galvanises, galvanising
+galvan: galvanic, galvanise, galvanised, galvanises, galvanising
 
 gambl: gamble, gambled, gambles, gambling
 
@@ -12862,11 +12856,7 @@ garn: garner, garnered
 
 garrison: garrison, garrisons
 
-gas: gas
-
-gase: gases
-
-gaseous: gaseous
+gas: gas, gaseous, gases
 
 gaslight: gaslight
 
@@ -12889,8 +12879,6 @@ gatheringplac: gathering‑place, gathering‑places
 gaug: gauge, gauged, gauges, gauging
 
 gaunt: gaunt
-
-gave: gave, gavest
 
 gay: gay
 
@@ -12916,9 +12904,13 @@ gend: gender
 
 gene: gene
 
-general: general, generalisation, generalised, generalising, generality, generally, generals
+general: general, generally
 
-generalship: generalship
+generalis: generalisation, generalised, generalising
+
+generality: generality
+
+generalship: generals, generalship
 
 generat: generate, generated, generates, generating, generation, generational, generations, generative
 
@@ -12942,13 +12934,9 @@ gentil: gentile, gentiles
 
 gentl: gentle, gentleness, gentler, gently
 
-gentleman: gentleman
-
-gentlemen: gentlemen
+gentleman: gentleman, gentlemen
 
 genuflect: genuflection, genuflections
-
-genuflexion: genuflexions
 
 genuin: genuine, genuinely, genuineness
 
@@ -12956,9 +12944,7 @@ genus: genus
 
 geograph: geographic, geographical, geographically, geography
 
-geolog: geological, geology
-
-geologist: geologist
+geolog: geological, geologist, geology
 
 geometr: geometric, geometrical, geometry
 
@@ -12968,13 +12954,11 @@ germin: germinate, germinated, germinates, germinating
 
 gestur: gesture, gestures
 
-get: get, gets, getting
+get: get, gets, getting, gotten
 
-giant: giant, giants
+giant: giant, giants, gigantic
 
 gift: gift, gifted, gifts
-
-gigant: gigantic
 
 gird: gird, girded, girding, girds
 
@@ -12986,17 +12970,9 @@ girt: girt
 
 gist: gist
 
-giv: giver, givers
+give: gave, gavest, give, given, giver, givers, gives, givest, giveth, giving
 
-give: give, gives, givest, giveth, giving
-
-given: given
-
-glad: glad, gladly, gladness
-
-gladden: gladden, gladdened, gladdens
-
-gladsom: gladsome
+glad: glad, gladden, gladdened, gladdens, gladly, gladness, gladsome
 
 gladston: gladstone
 
@@ -13028,7 +13004,9 @@ glisten: glisten, glisteneth
 
 glitt: glitter, glittering
 
-global: global, globalisation, globalising, globally
+global: global, globally
+
+globalis: globalisation, globalising
 
 globe: globe, globes
 
@@ -13036,11 +13014,7 @@ globegirdl: globe‑girdling
 
 gloom: gloom, gloomier, gloominess, gloomy
 
-glor: gloried, glories, glorieth, glory, glorying
-
-glorif: glorification, glorified, glorifier, glorifies, glorifiest, glorifieth, glorify, glorifying
-
-glorious: glorious, gloriously
+glor: gloried, glories, glorieth, glorification, glorified, glorifier, glorifies, glorifiest, glorifieth, glorify, glorifying, glorious, gloriously, glory, glorying
 
 gloss: glosses
 
@@ -13056,7 +13030,7 @@ gnaw: gnawing
 
 gnostic: gnostic, gnosticism
 
-go: goest, goeth, going, goings
+go: goes, goest, goeth, going, goings, gone
 
 goad: goad
 
@@ -13104,15 +13078,9 @@ godsent: god‑sent
 
 godspe: godspeed
 
-goe: goes
-
-gold: gold
-
-golden: golden
+gold: gold, golden
 
 goldenheart: golden‑hearted
-
-gone: gone
 
 good: good, goodliest, goodliness, goodly, goodness, goods, good‑
 
@@ -13142,27 +13110,21 @@ got: got
 
 gothic: gothic
 
-gotten: gotten
-
 goug: gouged
 
 gougedout: gouged‑out
 
 gout: gout, gouts
 
-govern: govern, governance, governed, governing, government, governments, governs
-
-government: governmental
+govern: govern, governance, governed, governing, government, governmental, governments, governs
 
 governmenthous: government‑house
 
 governmentsponsor: government‑sponsored
 
-governor: governor, governorate, governors
+governor: governor, governorate, governors, governorship, governorships
 
 governorgen: governor‑general, governor‑generals
-
-governorship: governorship, governorships
 
 grace: grace, graced, graceful, gracefully, gracefulness, graces, gracing
 
@@ -13174,9 +13136,7 @@ gradat: gradation
 
 grade: grade, grades
 
-gradual: gradual, gradually
-
-gradualist: gradualist
+gradual: gradual, gradualist, gradually
 
 graduat: graduate, graduated, graduates, graduating, graduation
 
@@ -13186,11 +13146,7 @@ grain: grain, grains
 
 gramm: grammes
 
-grammar: grammar
-
-grammarian: grammarian, grammarians
-
-grammat: grammatical
+grammar: grammar, grammarian, grammarians, grammatical
 
 granar: granaries
 
@@ -13238,17 +13194,13 @@ grassroot: grassroots, grass‑roots
 
 grat: gratis
 
-grate: grateful, gratefully, gratefulness
+grate: grateful, gratefully, gratefulness, gratitude
 
 gratif: gratification, gratified, gratifies, gratify, gratifying
 
-gratitud: gratitude
-
 gratuit: gratuitous
 
-grav: graver
-
-grave: grave, gravely, graves, gravest
+grave: grave, gravely, graver, graves, gravest
 
 gravedigg: gravedigger
 
@@ -13278,23 +13230,17 @@ green: green, greenery, greens
 
 greet: greet, greeted, greeteth, greeting, greetings, greets
 
-grew: grew
-
 grey: grey
 
-grief: grief, griefs
+grief: grief, griefs, grieve, grieved, grieves, grieveth, grieving
 
 griefstricken: grief‑stricken
-
-griev: grieve, grieved, grieves, grieveth, grieving
 
 grievant: grievance, grievances
 
 grievous: grievous, grievously, grievousness
 
-grim: grim, grimly, grimmest
-
-grimm: grimmer
+grim: grim, grimly, grimmer, grimmest
 
 grind: grind, grinding
 
@@ -13328,13 +13274,9 @@ grove: grove, groves
 
 grovel: grovelling
 
-grow: grow, grower, groweth, growing, grows
-
-grown: grown
+grow: grew, grow, grower, groweth, growing, grown, grows, growth
 
 grownup: grown‑up
-
-growth: growth
 
 growthproduc: growth‑producing
 
@@ -13348,17 +13290,11 @@ grunt: grunting
 
 gu: guest, guests
 
-guarante: guarantee, guaranteed, guaranteeing, guarantees
+guarante: guarantee, guaranteed, guaranteeing, guarantees, guarantor, guarantors
 
-guarantor: guarantor, guarantors
+guard: guard, guarded, guardest, guardeth, guarding, guards, guardsmen
 
-guard: guard, guarded, guardest, guardeth, guarding, guards
-
-guardian: guardian, guardians
-
-guardianship: guardianship
-
-guardsmen: guardsmen
+guardian: guardian, guardians, guardianship
 
 guess: guess
 
@@ -13400,11 +13336,11 @@ gyps: gypsy
 
 hab: habiliments
 
-habit: habit, habitable, habitation, habitations, habits
+habit: habit, habits, habitual, habitually, habituated
+
+habita: habitable, habitation, habitations
 
 habitform: habit‑forming
-
-habitu: habitual, habitually, habituated
 
 hack: hacked, hacking
 
@@ -13428,7 +13364,7 @@ halcyon: halcyon
 
 hale: hale
 
-half: half
+half: half, halves
 
 halfbroth: half‑brother, half‑brothers
 
@@ -13470,8 +13406,6 @@ halter: halter, halters
 
 haltingplac: halting‑place, halting‑places
 
-halv: halves
-
 hamlet: hamlet, hamlets
 
 hamm: hammer, hammered, hammers
@@ -13500,17 +13434,15 @@ handkerchief: handkerchief
 
 handl: handle, handled, handling
 
-handmaid: handmaid, handmaids
-
-handmaiden: handmaiden, handmaidens
+handmaid: handmaid, handmaiden, handmaidens, handmaids
 
 handsom: handsome
 
 handwrit: handwriting
 
-hang: hang, hanged, hangeth, hanging, hangs
+hang: hang, hangeth, hanging, hangs, hung
 
-hangman: hangman
+hangman: hanged, hangman
 
 hank: hanker, hankereth
 
@@ -13572,13 +13504,9 @@ harrow: harrowing
 
 harsh: harsh, harsher, harshest, harshly, harshness
 
-harv: harvest, harvests
+harv: harvest, harvested, harvester, harvesting, harvests
 
-harvest: harvested, harvester, harvesting
-
-hast: hast, haste, hasted, hastily, hasting, hasty
-
-hasten: hasten, hastened, hasteneth, hastening, hastens
+hast: hast, haste, hasted, hasten, hastened, hasteneth, hastening, hastens, hastily, hasting, hasty
 
 hat: hat, hats
 
@@ -13586,17 +13514,13 @@ hatch: hatch
 
 hatchet: hatchet, hatchets
 
-hate: hate, hated, hateful, hating
+hate: hate, hated, hateful, hater, haters, hating, hatred, hatreds
 
 hatefil: hate‑filled
 
 hatemong: hate‑mongering, hate‑mongers
 
-hater: hater, haters
-
 hatless: hatless
-
-hatr: hatred, hatreds
 
 hatsoev: hatsoever
 
@@ -13618,11 +13542,9 @@ havoc: havoc
 
 hawk: hawk, hawks
 
-haz: hazy
-
 hazard: hazarded, hazards
 
-haze: haze
+haze: haze, hazy
 
 head: head, headed, heading, headings, heads
 
@@ -13666,17 +13588,13 @@ heap: heap, heaped, heaping, heaps
 
 heapedup: heaped‑up
 
-hear: hear, hearer, hearers, hearest, heareth, hearing, hears
-
-heard: heard
+hear: hear, heard, hearer, hearers, hearest, heareth, hearing, hears, hearst
 
 hearken: hearken, hearkened, hearkenest, hearkeneth, hearkening
 
 hearsay: hearsay
 
-hearst: hearst
-
-heart: heart, hearted, heartedly, heartily, hearts, hearty
+heart: heart, hearted, heartedly, heartedness, heartfelt, heartily, hearts, hearty
 
 heartach: heartache
 
@@ -13684,15 +13602,9 @@ heartattach: heart‑attachment
 
 heartbeat: heartbeat
 
-heartbreak: heartbreaking, heartbreakingly, heartbreaks, heart‑breaking
-
-heartbroken: heartbroken, heart‑broken
-
-hearted: heartedness
+heartbreak: heartbreaking, heartbreakingly, heartbreaks, heartbroken, heart‑breaking, heart‑broken
 
 hearten: hearten, heartened, heartening
-
-heartfelt: heartfelt
 
 hearth: hearth
 
@@ -13716,9 +13628,7 @@ heartwrench: heart‑wrenching
 
 heat: heat, heated, heating
 
-heathen: heathen, heathens
-
-heathenish: heathenish
+heathen: heathen, heathenish, heathens
 
 heav: heaved, heaves, heaving
 
@@ -13758,15 +13668,11 @@ heir: heir, heirs
 
 heirloom: heirlooms
 
-held: held
-
-hell: hell
+hell: hell, hellish
 
 hellen: hellenic
 
 hellfir: hellfire, hell‑fire
-
-hellish: hellish
 
 helm: helm
 
@@ -13774,9 +13680,7 @@ help: help, helped, helper, helpers, helpeth, helpful, helpfulness, helping, hel
 
 helpless: helpless, helplessly, helplessness
 
-helpmat: helpmate, helpmates
-
-helpmeet: helpmeet
+helpmat: helpmate, helpmates, helpmeet
 
 hem: hem, hemmed
 
@@ -13810,9 +13714,7 @@ hereaft: hereafter
 
 hereb: hereby
 
-hered: heredity
-
-hereditar: hereditary
+hered: hereditary, heredity
 
 herein: herein
 
@@ -13834,13 +13736,9 @@ hermit: hermit
 
 hermitlik: hermit‑like
 
-hero: hero, heroes
+hero: hero, heroes, heroic, heroically, heroine, heroines, heroism
 
-heroic: heroic, heroically
-
-heroin: heroin, heroine, heroines
-
-heroism: heroism
+heroi: heroin
 
 hesit: hesitancy, hesitant, hesitate, hesitated, hesitateth, hesitating, hesitation, hesitations
 
@@ -13862,11 +13760,7 @@ heyday: heyday, hey‑day
 
 hiatus: hiatus
 
-hid: hid
-
-hidden: hidden
-
-hide: hide, hides, hidest, hideth, hiding
+hide: hid, hidden, hide, hides, hidest, hideth, hiding
 
 hideous: hideous, hideously, hideousness
 
@@ -13930,19 +13824,11 @@ hiltdeep: hilt‑deep
 
 him: him‑
 
-hind: hinder, hindered, hindereth, hindering, hinders, hindi
-
-hindrant: hindrance, hindrances
+hind: hinder, hindered, hindereth, hindering, hinders, hindrance, hindrances
 
 hindsight: hindsight
 
-hindu: hindu
-
-hinduism: hinduism
-
-hindus: hindus
-
-hindustan: hindustani
+hindu: hindu, hinduism, hindus, hindustani
 
 hing: hinge, hinges
 
@@ -13952,13 +13838,9 @@ hinterland: hinterland
 
 hire: hire, hired
 
-histor: historic, historical, historically, histories, history
+histor: historian, historians, historical, historically, historicist, histories, historiography, history
 
-historian: historian, historians
-
-historicist: historicist
-
-historiograph: historiography
+historic: historic
 
 historymak: history‑making
 
@@ -13969,10 +13851,6 @@ hitch: hitch
 hith: hither
 
 hitherto: hitherto
-
-hitl: hitler
-
-hivaid: hivaids
 
 hive: hive
 
@@ -13990,9 +13868,7 @@ hoc: hoc
 
 hoist: hoist, hoisted, hoisting
 
-hold: hold, holder, holders, holdest, holdeth, holding, holdings, holds
-
-holden: holden
+hold: held, hold, holden, holder, holders, holdest, holdeth, holding, holdings, holds
 
 hole: hole, holes
 
@@ -14036,9 +13912,7 @@ honeydew: honeydew, honey‑dew
 
 honeysweet: honey‑sweet, honey‑sweetness
 
-honorar: honorary
-
-honour: honour, honourable, honourably, honoured, honouring, honours
+honour: honorary, honour, honourable, honourably, honoured, honouring, honours
 
 hood: hood
 
@@ -14066,15 +13940,7 @@ horizon: horizon, horizons
 
 horn: horn, horne, horns
 
-horrend: horrendous
-
-horribl: horrible, horribles, horribly
-
-horrid: horrid
-
-horrif: horrific, horrified, horrifying
-
-horror: horror, horrors
+horr: horrendous, horrible, horribles, horribly, horrid, horrific, horrified, horrifying, horror, horrors
 
 horrorstricken: horror‑stricken
 
@@ -14082,31 +13948,25 @@ hors: horse, horses
 
 horseback: horseback
 
-horseman: horseman
-
-horsemen: horsemen
+horseman: horseman, horsemen
 
 hospic: hospice
 
 hospit: hospitable, hospital, hospitality, hospitals
 
-host: host, hosted, hosting, hosts
+host: host, hosted, hostess, hostesses, hosting, hosts
 
 hostag: hostage, hostages
 
 hostel: hostel, hostels
 
-hostess: hostess, hostesses
-
 hostil: hostile, hostilities, hostility
 
-hot: hot, hotly, hottest
+hot: hot, hotly, hotter, hottest
 
 hotb: hotbed, hot‑beds
 
 hotel: hotel
-
-hott: hotter
 
 hound: hound, hounded, hounding, hounds
 
@@ -14148,13 +14008,15 @@ hulk: hulking
 
 hum: humiliate, humiliated, humiliating, humiliation, humiliations
 
-human: human, humane, humaneness, humanism, humanities, humanity, humanly, humans
+human: human, humanity, humankind, humanly, humans
 
-humanist: humanist, humanistic
+humane: humane, humaneness
+
+humanis: humanism, humanist, humanistic
 
 humanitarian: humanitarian, humanitarianism, humanitarians
 
-humankind: humankind
+humanities: humanities
 
 humanlik: human‑like
 
@@ -14162,9 +14024,7 @@ humbl: humble, humbled, humbleness, humblest, humbling, humbly, humility
 
 humid: humid, humidity
 
-humor: humorous
-
-humour: humour
+humour: humorous, humour
 
 hundr: hundred, hundreds
 
@@ -14180,15 +14040,9 @@ hundredyear: hundred‑year
 
 hundredyearold: hundred‑year‑old
 
-hung: hung
+hunger: hunger, hungered, hungering, hungers, hungrily, hungry
 
-hunger: hunger, hungered, hungering, hungers
-
-hungr: hungrily, hungry
-
-hunt: hunt, hunted, hunter, hunteth, hunting
-
-huntsman: huntsman
+hunt: hunt, hunted, hunter, hunteth, hunting, huntsman
 
 hurdl: hurdles
 
@@ -14204,11 +14058,7 @@ hurtl: hurtling
 
 husband: husband, husbands
 
-husbandman: husbandman
-
-husbandmen: husbandmen
-
-husbandr: husbandry
+husbandman: husbandman, husbandmen, husbandry
 
 hush: hushed
 
@@ -14230,9 +14080,7 @@ hyperbol: hyperbole
 
 hypnot: hypnotiser
 
-hypocris: hypocrisies, hypocrisy
-
-hypocrit: hypocrite, hypocrites, hypocritical, hypocritically
+hypocrit: hypocrisies, hypocrisy, hypocrite, hypocrites, hypocritical, hypocritically
 
 hypothes: hypotheses, hypothesis, hypothesise
 
@@ -14244,35 +14092,25 @@ icebound: icebound
 
 icecold: ice‑cold
 
-iceland: icelanders, icelandic
-
 iconoclast: iconoclast, iconoclastic
 
-idea: idea, ideas
+idea: idea, ideas, ideation
 
-ideal: ideal, idealisation, idealised, idealism, ideality, ideally, ideals
+ideal: ideal, idealisation, idealised, idealism, idealistic, idealists, ideality, ideally, ideals
 
-idealist: idealistic, idealists
+ident: identities, identity
 
-ideat: ideation
-
-ident: identical, identities, identity
+identical: identical
 
 identif: identification, identified, identifies, identifieth, identify, identifying
 
-ideolog: ideological, ideologically, ideologies, ideology
-
-ideologu: ideologue
+ideolog: ideological, ideologically, ideologies, ideologue, ideology
 
 idioc: idiocy
 
 idl: idle, idleness, idly
 
-idol: idol, idolator, idolators, idolised, idols
-
-idolat: idolaters
-
-idolatr: idolatrous, idolatry
+idol: idol, idolaters, idolator, idolators, idolatrous, idolatry, idolised, idols
 
 idolworship: idol‑worship
 
@@ -14312,9 +14150,7 @@ illdo: ill‑doings
 
 illeg: illegal
 
-illegitim: illegitimate
-
-illegitimat: illegitimacy
+illegitim: illegitimacy, illegitimate
 
 illequip: ill‑equipped
 
@@ -14340,9 +14176,7 @@ illinform: ill‑informed
 
 illintent: ill‑intentioned
 
-illit: illiterate, illiterates
-
-illiterat: illiteracy
+illit: illiteracy, illiterate, illiterates
 
 illmann: ill‑mannered
 
@@ -14362,17 +14196,13 @@ illtemp: ill‑tempered
 
 illtreat: ill‑treat, ill‑treated
 
-illum: illuming
-
-illumin: illuminate, illuminated, illuminates, illuminateth, illuminating, illumination, illuminative, illuminator, illumine, illumined, illumines, illumineth, illumining
+illumin: illuminate, illuminated, illuminates, illuminateth, illuminating, illumination, illuminative, illuminator, illumine, illumined, illumines, illumineth, illuming, illumining
 
 illuminat: illuminati
 
-illus: illusion, illusions
+illus: illusion, illusions, illusory
 
 illusag: ill‑usage
-
-illusor: illusory
 
 illustr: illustrate, illustrated, illustrates, illustrating, illustration, illustrations, illustrative
 
@@ -14384,9 +14214,7 @@ illwish: ill‑wisher, ill‑wishers
 
 imag: image, imagery, images
 
-imagin: imaginable, imagination, imaginations, imaginative, imaginatively, imagine, imagined, imagines, imagineth, imagining, imaginings
-
-imaginar: imaginary
+imagin: imaginable, imaginary, imagination, imaginations, imaginative, imaginatively, imagine, imagined, imagines, imagineth, imagining, imaginings
 
 imbal: imbalance, imbalances
 
@@ -14400,9 +14228,7 @@ imbu: imbue, imbued, imbues, imbuing
 
 imit: imitate, imitated, imitates, imitating, imitation, imitations, imitator, imitators
 
-immacul: immaculate
-
-immaculat: immaculacy
+immacul: immaculacy, immaculate
 
 imman: immanent
 
@@ -14412,9 +14238,7 @@ immatur: immature, immaturity
 
 immeasur: immeasurable, immeasurably
 
-immed: immediate, immediately
-
-immediat: immediacy
+immed: immediacy, immediate, immediately
 
 immemor: immemorial
 
@@ -14426,9 +14250,7 @@ immigr: immigrants, immigration
 
 immin: imminence, imminent, imminently
 
-immobil: immobilised
-
-immobl: immobility
+immobl: immobilised, immobility
 
 immod: immoderate
 
@@ -14446,7 +14268,7 @@ immur: immured
 
 immut: immutability, immutable, immutably
 
-imp: imperial, imperialism, imperious
+imp: imperial, imperialism, imperialist
 
 impact: impact, impacted, impacts
 
@@ -14480,9 +14302,9 @@ impercept: imperceptible, imperceptibly
 
 imperfect: imperfect, imperfection, imperfections, imperfectly
 
-imperialist: imperialist
-
 imperil: imperil, imperilled, imperilling
+
+imperious: imperious
 
 imperish: imperishable
 
@@ -14496,17 +14318,13 @@ imperturb: imperturbability, imperturbable
 
 imperv: impervious, imperviousness
 
-impetu: impetuous, impetuously
-
-impetuos: impetuosity
+impetu: impetuosity, impetuous, impetuously
 
 impetus: impetus
 
-impiet: impiety
-
 imping: impinge, impinging
 
-impious: impious, impiously
+impious: impiety, impious, impiously
 
 impl: implied, implies, implieth, imply, implying
 
@@ -14528,7 +14346,9 @@ impolit: impolite
 
 impond: imponderable
 
-import: import, importance, important, importantly, importation, importations, imported, imports
+import: import, importance, important, importantly
+
+imports: importation, importations, imported, imports
 
 importun: importunate, importune, importuned, importuning, importunities, importunity
 
@@ -14540,27 +14360,23 @@ imposs: impossibility, impossible, impossibly
 
 impost: impost
 
-impostor: impostor, impostors
-
-impostur: imposture
+impostor: impostor, impostors, imposture
 
 impot: impotence, impotent, impotently
 
 impoverish: impoverish, impoverished, impoverishing, impoverishment
 
-impract: impractical, impracticality
+impract: impracticability, impracticable, impractical, impracticality
 
-impractic: impracticability, impracticable
+imprec: imprecate, imprecation, imprecations
 
-imprec: imprecate, imprecation, imprecations, imprecise
-
-imprecis: imprecision
+imprecis: imprecise, imprecision
 
 impregn: impregnable, impregnably, impregnated
 
-impress: impress, impressed, impresses, impressing, impression, impressions, impressive, impressively, impressiveness
+impress: impress, impressed, impresses, impressing, impressive, impressively, impressiveness
 
-impression: impressionable
+impression: impression, impressionable, impressions
 
 imprint: imprint, imprinted, imprinteth
 
@@ -14594,15 +14410,11 @@ inabl: inabilities, inability
 
 inaccess: inaccessible, inaccessibly
 
-inaccur: inaccurate
-
-inaccurat: inaccuracies, inaccuracy
+inaccur: inaccuracies, inaccuracy, inaccurate
 
 inact: inaction, inactive, inactivity
 
-inadequ: inadequate, inadequately
-
-inadequat: inadequacies, inadequacy
+inadequ: inadequacies, inadequacy, inadequate, inadequately
 
 inadmiss: inadmissible
 
@@ -14638,11 +14450,7 @@ incandesc: incandescent
 
 incant: incantations
 
-incap: incapable
-
-incapac: incapacity
-
-incapacit: incapacitated
+incap: incapable, incapacitated, incapacity
 
 incarc: incarcerate, incarcerated, incarcerating, incarceration, incarcerations
 
@@ -14662,7 +14470,7 @@ incess: incessant, incessantly
 
 incid: incidence, incident, incidents
 
-incident: incidental
+incidental: incidental
 
 incip: incipient
 
@@ -14686,7 +14494,9 @@ incognito: incognito
 
 incoh: incoherent
 
-incom: income, incomes, incoming
+incom: incoming
+
+income: income, incomes
 
 incommensur: incommensurate
 
@@ -14750,15 +14560,15 @@ inculp: inculpability
 
 incumb: incumbency, incumbent
 
-incur: incur, incurable, incurables, incurred, incurring
+incur: incur, incurred, incurring
+
+incurable: incurable, incurables
 
 incurs: incursion, incursions
 
 inde: indeed
 
-indebt: indebted
-
-indebted: indebtedness
+indebt: indebted, indebtedness
 
 indec: indecencies, indecency
 
@@ -14802,17 +14612,13 @@ indign: indignant, indignation, indignities, indignity
 
 indirect: indirect, indirectly, indirectness
 
-indiscreet: indiscreet
-
-indiscret: indiscretions
+indiscreet: indiscreet, indiscretions
 
 indiscrimin: indiscriminate, indiscriminately, indiscriminating
 
 indispens: indispensability, indispensable
 
-indispos: indisposed
-
-indisposit: indisposition, indispositions
+indispos: indisposed, indisposition, indispositions
 
 indisput: indisputable, indisputably
 
@@ -14822,9 +14628,13 @@ indistinct: indistinct
 
 indistinguish: indistinguishable
 
-individu: individual, individualised, individualism, individualities, individuality, individually, individuals, individuated, individuation, individuations
+individu: individual, individually, individuals
 
-individualist: individualistic
+individualis: individualism, individualistic
+
+individualit: individualised, individualities, individuality
+
+individuat: individuated, individuation, individuations
 
 indivis: indivisibility, indivisible
 
@@ -14844,9 +14654,9 @@ induct: induction, inductive
 
 indulg: indulge, indulged, indulgence, indulgences, indulgent, indulges, indulging
 
-industr: industrial, industrialisation, industrialised, industrialism, industries, industrious, industry
+industr: industrial, industrialisation, industrialised, industrialism, industrialists, industries, industry
 
-industrialist: industrialists
+industrious: industrious
 
 indwel: indwelling
 
@@ -14856,9 +14666,7 @@ ineff: ineffable
 
 ineffac: ineffaceable
 
-ineffect: ineffective, ineffectiveness
-
-ineffectu: ineffectual
+ineffect: ineffective, ineffectiveness, ineffectual
 
 ineffic: inefficiencies, inefficiency, inefficient, inefficiently
 
@@ -14866,13 +14674,11 @@ ineleg: inelegant
 
 inelig: ineligibility, ineligible
 
-inept: ineptly
+inept: ineptitude, ineptitudes, ineptly
 
-ineptitud: ineptitude, ineptitudes
+inequ: inequalities, inequality
 
-inequ: inequalities, inequality, inequities, inequity
-
-inequit: inequitable
+inequit: inequitable, inequities, inequity
 
 ineradic: ineradicable
 
@@ -14914,9 +14720,7 @@ infal: infallibility, infallible, infallibly
 
 infam: infamous, infamy
 
-infant: infancy, infant, infants
-
-infantil: infantile
+infant: infancy, infant, infantile, infants
 
 infantr: infantry
 
@@ -14938,15 +14742,9 @@ infight: infighting
 
 infiltr: infiltrated, infiltration
 
-infin: infinity
-
-infinit: infinite, infinitely
+infin: infinite, infinitely, infinitude, infinitum, infinity
 
 infinitesim: infinitesimal
-
-infinitud: infinitude
-
-infinitum: infinitum
 
 infirm: infirm, infirmities, infirmity
 
@@ -14956,15 +14754,11 @@ inflamm: inflammable
 
 inflammator: inflammatory
 
-inflat: inflated, inflation
-
-inflationar: inflationary
+inflat: inflated, inflation, inflationary
 
 inflex: inflexibility, inflexible, inflexibly
 
-inflict: inflict, inflicted, inflicteth, inflicting, infliction, inflicts
-
-inflictor: inflictor
+inflict: inflict, inflicted, inflicteth, inflicting, infliction, inflictor, inflicts
 
 inflow: inflow, inflowing
 
@@ -14992,9 +14786,7 @@ ing: ing
 
 ingath: ingathering, in‑gathering
 
-ingen: ingenious, ingeniously
-
-ingenu: ingenuity
+ingen: ingenious, ingeniously, ingenuity
 
 ingest: ingested, ingesting
 
@@ -15018,9 +14810,7 @@ inhal: inhale, inhaled, inhales, inhaleth, inhaling
 
 inharmon: inharmony
 
-inherit: inherit, inheritance, inheritances, inherited, inheriting, inherits
-
-inheritor: inheritor, inheritors
+inherit: inherit, inheritance, inheritances, inherited, inheriting, inheritor, inheritors, inherits
 
 inhibit: inhibit, inhibited, inhibiting, inhibition, inhibitions, inhibits
 
@@ -15034,9 +14824,7 @@ inim: inimical
 
 inimit: inimitable
 
-iniqu: iniquities, iniquity
-
-iniquit: iniquitous
+iniqu: iniquities, iniquitous, iniquity
 
 init: initial, initially, initiate, initiated, initiates, initiating, initiation, initiative, initiatives, initiator, initiators
 
@@ -15082,9 +14870,7 @@ inocul: inoculated, inoculation
 
 inoffens: inoffensive
 
-inop: inoperative
-
-inoper: inoperable
+inop: inoperable, inoperative
 
 inordin: inordinate, inordinately
 
@@ -15102,9 +14888,7 @@ insanitar: insanitary
 
 insat: insatiable, insatiate
 
-inscrib: inscribe, inscribed, inscribing
-
-inscript: inscription, inscriptions
+inscrib: inscribe, inscribed, inscribing, inscription, inscriptions
 
 inscrut: inscrutable
 
@@ -15142,9 +14926,7 @@ insol: insolence, insolent, insolently
 
 insolubl: insoluble
 
-inspect: inspected, inspection
-
-inspector: inspector
+inspect: inspected, inspection, inspector
 
 inspir: inspiration, inspirational, inspirations, inspire, inspired, inspirer, inspirers, inspires, inspireth, inspiring
 
@@ -15164,9 +14946,7 @@ instig: instigate, instigated, instigation, instigations, instigator, instigator
 
 instil: instil, instileth, instilled, instilling, instils
 
-instinct: instinct, instinctive, instinctively, instincts
-
-instinctu: instinctual
+instinct: instinct, instinctive, instinctively, instincts, instinctual
 
 institut: instituted, instituting, institution, institutional, institutions
 
@@ -15174,9 +14954,7 @@ institute: institute, institutes
 
 institution: institutionalised, institutionalising
 
-instruct: instruct, instructed, instructeth, instructing, instruction, instructional, instructions, instructive, instructs
-
-instructor: instructor, instructors
+instruct: instruct, instructed, instructeth, instructing, instruction, instructional, instructions, instructive, instructor, instructors, instructs
 
 instrument: instrument, instrumental, instrumentalities, instrumentality, instruments
 
@@ -15200,7 +14978,7 @@ insurmount: insurmountable, insurmountably
 
 insurrect: insurrection, insurrections
 
-int: inter, interest, interests, interment, interred, interring
+int: inter, interment, interred, interring
 
 intact: intact
 
@@ -15208,11 +14986,13 @@ intang: intangible
 
 integ: integers
 
-integr: integral, integrate, integrated, integrates, integrating, integration, integrative, integrity
+integr: integrate, integrated, integrates, integrating, integration, integrative
 
-intellect: intellect, intellection, intellects
+integral: integral
 
-intellectu: intellectual, intellectuality, intellectually, intellectuals
+integrity: integrity
+
+intellect: intellect, intellection, intellects, intellectual, intellectuality, intellectually, intellectuals
 
 intellig: intelligence, intelligences, intelligent, intelligently, intelligible
 
@@ -15222,9 +15002,7 @@ intemp: intemperance, intemperate
 
 intend: intend, intended, intendest, intending, intends
 
-intens: intense, intensely, intenser, intensity, intensive, intensively
-
-intensif: intensification, intensified, intensifies, intensify, intensifying
+intens: intense, intensely, intenser, intensification, intensified, intensifies, intensify, intensifying, intensity, intensive, intensively
 
 intent: intent, intention, intentionally, intentioned, intentions, intently, intents
 
@@ -15244,17 +15022,13 @@ interced: intercede, interceded, interceding
 
 intercept: intercept, interception
 
-intercess: intercession, intercessions
-
-intercessor: intercessor
+intercess: intercession, intercessions, intercessor
 
 interchang: interchange
 
 intercommun: intercommunication, intercommunity, inter‑communication, inter‑community
 
-interconnect: interconnected, interconnection, interconnections
-
-interconnected: interconnectedness
+interconnect: interconnected, interconnectedness, interconnection, interconnections
 
 intercontinent: intercontinental, intercontinentally
 
@@ -15268,7 +15042,7 @@ interdict: interdicted, interdiction, interdicts
 
 interdisciplinar: interdisciplinary
 
-interest: interested, interesting, interestingly
+interest: interest, interested, interesting, interestingly, interests
 
 interethn: interethnic
 
@@ -15298,13 +15072,9 @@ interlocutor: interlocutor
 
 interlud: interlude
 
-intermarr: intermarry
+intermarr: intermarriage, intermarry
 
-intermarriag: intermarriage
-
-intermed: intermediate, intermediation
-
-intermediar: intermediaries, intermediary
+intermed: intermediaries, intermediary, intermediate, intermediation
 
 intermin: interminable
 
@@ -15314,7 +15084,11 @@ intermitt: intermittent, intermittently
 
 intermixtur: intermixture
 
-intern: internal, internalise, internalised, internalising, internally, international, internationalism, internationally, inter‑national
+intern: internal, internally, inter‑national
+
+internalis: internalise, internalised, internalising
+
+international: international, internationalism, internationally
 
 internecin: internecine
 
@@ -15330,23 +15104,17 @@ interplay: interplay
 
 interpol: interpolate, interpolated, interpolating, interpolation
 
-interpos: interpose, interposed, interposeth
-
-interposit: interposition, interpositions
+interpos: interpose, interposed, interposeth, interposition, interpositions
 
 interpret: interpret, interpretation, interpretations, interpretative, interpreted, interpreter, interpreters, interpreteth, interpreting, interpretive, interprets
 
 interrac: interracial, inter‑racial
 
-interrel: interrelated, interrelation
-
-interrelationship: interrelationship, interrelationships
+interrel: interrelated, interrelation, interrelationship, interrelationships
 
 interrelig: interreligious, inter‑religious
 
-interrog: interrogate, interrogated, interrogates, interrogation, interrogations, interrogators
-
-interrogator: interrogatory
+interrog: interrogate, interrogated, interrogates, interrogation, interrogations, interrogators, interrogatory
 
 interrupt: interrupt, interrupted, interruption, interruptions, interrupts
 
@@ -15370,19 +15138,15 @@ intervent: intervention, interventions
 
 interview: interview, interviewed, interviewer, interviewing, interviews
 
-interweav: interweaving
+interweav: interweaving, interwoven
 
-interwoven: interwoven
-
-intest: intestate
-
-intestat: intestacy
+intest: intestacy, intestate
 
 intestin: intestine
 
-intim: intimate, intimated, intimately, intimates, intimation, intimations
+intim: intimacy, intimate, intimately
 
-intimat: intimacy
+intimation: intimated, intimates, intimation, intimations
 
 intimid: intimidate, intimidated, intimidating, intimidation
 
@@ -15390,9 +15154,7 @@ intol: intolerable, intolerance, intolerant
 
 inton: intonations, intone, intoned, intoners, intoneth, intoning
 
-intox: intoxicate, intoxicated, intoxicating, intoxication
-
-intoxic: intoxicant, intoxicants
+intox: intoxicant, intoxicants, intoxicate, intoxicated, intoxicating, intoxication
 
 intract: intractable
 
@@ -15402,23 +15164,15 @@ intrench: intrenched
 
 intrepid: intrepid, intrepidity
 
-intric: intricate
-
-intricat: intricacies, intricacy
+intric: intricacies, intricacy, intricate
 
 intrigu: intrigue, intrigued, intriguer, intrigues, intriguing
 
 intrins: intrinsic, intrinsically
 
-introduc: introduce, introduced, introduces, introducing
+introduc: introduce, introduced, introduces, introducing, introduction, introductory
 
-introduct: introduction
-
-introductor: introductory
-
-intrud: intrudes
-
-intrus: intrusion, intrusive
+intrus: intrudes, intrusion, intrusive
 
 intuit: intuition, intuitions, intuitive, intuitively
 
@@ -15428,7 +15182,7 @@ inur: inured, inures
 
 inv: invest, invests
 
-invad: invade, invaded, invaders, invades, invading
+invad: invade, invaded, invaders, invades, invading, invasion
 
 invalid: invalid, invalidate, invalidated, invalidateth, invalids
 
@@ -15436,19 +15190,13 @@ invalu: invaluable
 
 invar: invariable, invariably
 
-invas: invasion
-
 invect: invective, invectives
 
 inveigl: inveigle
 
-invent: invent, invented, invention, inventions, inventive, inventiveness, invents
+invent: invent, invented, invention, inventions, inventive, inventiveness, inventor, invents
 
-inventor: inventor
-
-invers: inversion
-
-invert: inverted
+invert: inversion, inverted
 
 invertebr: invertebrate
 
@@ -15470,9 +15218,7 @@ invis: invisibility, invisible, invisibles, invisibly
 
 invit: invitation, invitations, invite, invited, invites, inviting
 
-invoc: invocation, invocations
-
-invok: invoke, invoked, invokes, invokest, invoketh, invoking
+invok: invocation, invocations, invoke, invoked, invokes, invokest, invoketh, invoking
 
 involuntar: involuntarily, involuntary
 
@@ -15518,9 +15264,7 @@ irregular: irregular, irregularities, irregularity, irregularly
 
 irrelev: irrelevant
 
-irrelig: irreligious
-
-irreligion: irreligion
+irrelig: irreligion, irreligious
 
 irremed: irremediable, irremediably
 
@@ -15560,13 +15304,9 @@ islam: islam, islami, islamic, islams
 
 island: island, islanders, islands
 
-isol: isolate, isolated, isolates, isolating, isolation
+isol: isolate, isolated, isolates, isolating, isolation, isolationist
 
-isolationist: isolationist
-
-issu: issue, issued, issues, issueth, issuing
-
-issuant: issuance
+issu: issuance, issue, issued, issues, issueth, issuing
 
 item: item, items
 
