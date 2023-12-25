@@ -102,6 +102,8 @@ FLMRL: valiyy‑i‑amrullah
 
 FLMX: flemish
 
+FLN: philonism
+
 FLNTN: valentine
 
 FLP: philip
@@ -161,6 +163,8 @@ FNRNTS: fianarantsoa
 FNS: phoenicia
 
 FNSL: venezuela
+
+FNSN: phoenicians
 
 FNSNT: vincent
 
@@ -810,7 +814,7 @@ KLNKN: glenconner
 
 KLNR: gulnar, kolonario
 
-KLNT: auckland, galindo, glenwood
+KLNT: auckland, galindo, glenwood, oakland
 
 KLNTR: kalantar, qalandar
 
@@ -854,7 +858,7 @@ KLTT: haykalut‑tawhid
 
 KLX: ghoulishly, kull‑i‑shay
 
-KM: guam, guaymi, hakim, khayyam, khumm, qaim, qayyum, qum, qumi
+KM: guam, guaymi, hakim, kawmu, khayyam, khumm, qaim, qayyum, qum, qumi
 
 KMKM: qaim‑maqam, qaim‑maqams
 
@@ -898,13 +902,13 @@ KMRKKLS: qumruq‑kilisa
 
 KMRN: cameroon, kamran
 
-KMS: kawmus, khamsi, khamsih
+KMS: khamsi, khamsih
 
 KMSM: qayyum‑i‑asma
 
 KMSR: qamsar
 
-KMST: kawmus‑saayidih
+KMST: kawmu‑saayidih
 
 KMT: comte, hikmat
 
@@ -2428,9 +2432,11 @@ MXTX|MKTX: michitoshi
 
 MX|MK: mich
 
-N: ainu, anas, anhwei, anis, ann, anna, annas, anne, annie, ayn, ayni, een, ein, haney, hans, hawaiian, hin, hon, inouye, niue, noah, uno, yan, yawning
+N: ainu, anas, anhwei, anis, ann, anna, annas, anne, annie, ayn, ayni, een, ein, haney, hans, hawaiian, hin, hon, inouye, niue, noah, owen, uno, yan, yawning
 
 N0N|NTN: nathan
+
+N0RLNT|NTRLNT: netherlanders, netherlands
 
 N0T|NTT: hanthawaddy
 
@@ -2542,7 +2548,7 @@ NKX: naqsh
 
 NKXPNT: naqshbandiyyih
 
-NL: anello, aynul, aynullahi, niyala
+NL: anello, aynul, aynullahi, nile, niyala
 
 NLL: honolulu
 
@@ -2598,9 +2604,15 @@ NPLL: naibul‑iyalih
 
 NPLMSFR: nabil‑i‑musafir
 
+NPLN: napoleon, napoleonic, napoleons
+
 NPLSM: nabil‑i‑azam
 
 NPLSRNT: nabil‑i‑zarandi
+
+NPLTN: neo‑platonic
+
+NPLTNST: neo‑platonists
 
 NPN: annobon
 
@@ -2694,7 +2706,7 @@ NSTTRX|NSTTRK: hans‑dietrich
 
 NS|KNS: ignaz
 
-NT: aeneid, andheri, enayati, hindi, hindiyyih, inayati, india, indias, indies, indo, nadi, nadu, naidu, nity, yaounde
+NT: aeneid, andheri, enayati, hindi, hindiyyih, inayati, india, indias, indies, indo, nadi, nadu, naidu, nity, oneida, yaounde
 
 NTFKST: antofagasta
 
@@ -2916,13 +2928,15 @@ PLMN0|PLMNT: blumenthal
 
 PLMR: palmyra
 
-PLN: polin
+PLN: pliny, polin
 
 PLNKN: palanquin
 
 PLNS: balinus
 
 PLNS|PLNX: polynesia
+
+PLNT: poland
 
 PLN|PLKN: bologna
 
@@ -2950,13 +2964,19 @@ PLSPP: beelzebub
 
 PLSR: pelisor
 
+PLST: oblast, oblasts
+
 PLSTN: palestine
 
-PLT: abul‑huda, balts, hippolyte, pilate, pleiades
+PLT: abul‑huda, balts, hippolyte, pilate, plato, platos, pleiades
 
 PLTK: baltic, baltics
 
 PLTMR: baltimore
+
+PLTN: platonic
+
+PLTNST: platonist, platonists
 
 PLXF: bolshevism
 
@@ -3036,6 +3056,8 @@ PNPR: ibn‑i‑abhar
 
 PNPRT: bonaparte
 
+PNPSF: pan‑pacific
+
 PNR: benares, bonaire
 
 PNRHP: ibn‑i‑rahib
@@ -3054,7 +3076,7 @@ PNSTK: ibn‑i‑asdaq
 
 PNSTR: bani‑sadr
 
-PNT: benito, punta
+PNT: benito, pointe, punta
 
 PNTK: banaduk
 
@@ -3126,6 +3148,8 @@ PRFS: parviz
 
 PRFT: burafato
 
+PRFTNS: providencia
+
 PRHM: abraham, abrahamic, ibrahim
 
 PRHMKLL: ibrahim‑i‑khalil
@@ -3142,7 +3166,11 @@ PRK: barakih, birkas, paraguay, parc
 
 PRKL: barclay, berkeley, breakwell
 
+PRKLMPN: pre‑columbian
+
 PRKLN: brooklyn
+
+PRKLT: paraclete
 
 PRKN: baraqani
 
@@ -3176,6 +3204,8 @@ PRNRT: barnard, bernard, bernhardt
 
 PRNSK: brunswick
 
+PRNSP: principe
+
 PRNSTN: princeton
 
 PRNT: burhanid, burundi
@@ -3202,7 +3232,11 @@ PRSN: apperson, brazen, brazenly, parsons, pearson, prussian
 
 PRSNTRKX: persian‑turkish
 
+PRSN|PRXN: parisians
+
 PRSPN: brisbane
+
+PRSPTRN: presbyterian
 
 PRSTL: bristol
 
@@ -3218,13 +3252,15 @@ PRTKS: portuguese
 
 PRTLNT: portland
 
-PRTN: bretton, britain, britannic
+PRTN: bretton, britain, britannic, puritanism
 
 PRTNKM: brittingham
 
 PRTNKR: biratnagar
 
 PRTPRNK: port‑au‑prince
+
+PRTRTK: partridge
 
 PRTSM0|PRTSMT: portsmouth
 
@@ -3235,6 +3271,8 @@ PRXP: beersheba
 PR|PRF: hebrew, hebrews
 
 PS: abase, abased, abasement, abaser, abaseth, abasing, abazih, bissau, paz, pius
+
+PSF: pacific
 
 PSFN: abu‑sufyan
 
@@ -3378,17 +3416,17 @@ PTRSLKM: abdur‑rasul‑i‑qumi
 
 PTRSPRK: petersburg
 
-PTS: abdus
+PTSHP: abdu‑sahib
 
-PTSHP: abdus‑sahib
-
-PTSL: abdus‑salih
+PTSL: abdu‑salih
 
 PTSLM: abdu‑salam
 
 PTSN: botswana
 
 PTSPRK: pittsburgh
+
+PTST: pietists
 
 PTT: baghdad, baghdadi
 
@@ -3686,7 +3724,7 @@ RXTL: irshadul
 
 RXTLFM: irshadul‑avam
 
-S: ahsa, ahsai, asiyih, azali, azalis, esau, hasa, hosea, isa, isaiah, sao, sayyah, seyyed, sighih, siyah, soe, usa, zia
+S: ahsa, ahsai, asiyih, azali, azalis, esau, hasa, hosea, isa, isaiah, osed, sao, sayyah, seyyed, sighih, siyah, soe, usa, zia
 
 S0MS|STMS: isthmus
 
@@ -4322,15 +4360,13 @@ STRN: austrian, austrians
 
 STRNLT: austrian‑lloyd
 
-STRS: sadrus
-
 STRSM: sadr‑i‑azam
 
 STRSMN: stresemann
 
 STRSPRK: strasbourg
 
-STRSTR: sadrus‑sudur, sadru‑sudur
+STRSTR: sadru‑sudur
 
 STRT: sadrud, stewart
 
@@ -8470,7 +8506,9 @@ complexion: complexion
 
 compliant: compliance, compliant
 
-complic: complicate, complicated, complication, complications, complicity
+complic: complicate, complicated, complication, complications
+
+complicity: complicity
 
 compliment: compliment
 
@@ -17214,25 +17252,17 @@ myth: myth, mythology
 
 nail: nail, nailed, nails
 
-naiv: naive
+naiv: naive, naivete
 
-naivet: naivete
+nake: naked, nakedness
 
-nake: naked
-
-naked: nakedness
-
-name: name, named, namely, names, naming
+name: name, named, namely, names, namesake, naming
 
 nameless: nameless
-
-namesak: namesake
 
 nape: nape
 
 naphtha: naphtha
-
-napoleon: napoleon, napoleonic, napoleons
 
 narcot: narcotic, narcotics
 
@@ -17248,17 +17278,15 @@ nascent: nascent
 
 natal: natal
 
-nation: nation, national, nationalised, nationalism, nationalities, nationality, nationally, nationals, nations
+nation: nation, national, nationalities, nationality, nationally, nationals, nationhood, nations, nationwide, nation‑wide
 
-nationalist: nationalist, nationalistic, nationalists
+nationalis: nationalism, nationalist, nationalistic, nationalists
+
+nationalised: nationalised
 
 nationbuild: nation‑building
 
-nationhood: nationhood
-
 nationst: nation‑state, nation‑states
-
-nationwid: nationwide, nation‑wide
 
 nativ: native, natives, nativities, nativity
 
@@ -17266,15 +17294,15 @@ nativeborn: native‑born
 
 nativeland: native‑land
 
-natur: natural, naturalism, naturally, nature, natured, natures
+natur: nature, natured, natures
 
-naturalist: naturalist
+natural: natural, naturally
+
+naturalis: naturalism, naturalist
 
 naught: naught
 
-nav: navies, navy
-
-naval: naval
+nav: naval, navies, navy
 
 navig: navigate, navigates, navigating, navigation, navigator
 
@@ -17282,19 +17310,13 @@ nay: nay
 
 ne: neer
 
-near: near, neared, nearer, nearest, nearing, nearly, nearness
-
-nearb: nearby
+near: near, nearby, neared, nearer, nearest, nearing, nearly, nearness
 
 neath: neath
 
 nebul: nebulous
 
-necess: necessities, necessity
-
-necessar: necessaries, necessarily, necessary
-
-necessit: necessitate, necessitated, necessitates, necessitating
+necess: necessaries, necessarily, necessary, necessitate, necessitated, necessitates, necessitating, necessities, necessity
 
 neck: neck, necked, necks
 
@@ -17302,29 +17324,27 @@ necklac: necklace
 
 nectar: nectar
 
-need: need, needed, needeth, needful, needfulness, needing, needs, needy
+need: need, needed, needeth, needful, needfulness, needing, needs, needst, needy
 
 needl: needle, needles
 
 needless: needless, needlessly
 
-needst: needst
-
 nefar: nefarious
 
-negat: negate, negated, negation, negative, negatively
+negat: negate, negated, negation
 
-neglect: neglect, neglected, neglecteth, neglectful, neglecting, neglects
+negative: negative, negatively
 
-neglig: negligence, negligent, negligible
+neglect: neglect, neglected, neglecteth, neglectful, neglecting, neglects, negligence, negligent
+
+negligible: negligible
 
 negot: negotiable, negotiate, negotiated, negotiation, negotiations
 
 negro: negro, negroes
 
-neighbor: neighborly
-
-neighbour: neighbour, neighbouring, neighbours
+neighbour: neighborly, neighbour, neighbouring, neighbours
 
 neighbourhood: neighbourhood, neighbourhoods
 
@@ -17336,17 +17356,13 @@ neo: neo
 
 neophyt: neophyte, neophytes
 
-neoplaton: neo‑platonic
-
-neoplatonist: neo‑platonists
-
 nephew: nephew, nephews
 
-nerv: nerve, nerved, nerves
+nerv: nerve, nerved
 
 nervecentr: nerve‑centre
 
-nervous: nervous
+nervous: nerves, nervous
 
 nest: nest, nests
 
@@ -17355,8 +17371,6 @@ nestl: nestle, nestling
 net: net
 
 neth: nether
-
-netherland: netherlanders, netherlands
 
 nethermost: nethermost
 
@@ -17438,9 +17452,7 @@ newtonian: newtonian
 
 next: next
 
-ngo: ngo
-
-ngos: ngos
+ngo: ngo, ngos
 
 nib: nibbed
 
@@ -17448,13 +17460,11 @@ niec: niece, nieces
 
 nigh: nigh
 
-night: night, nightly, nights
+night: night, nightfall, nightly, nights
 
 nightasc: night‑ascent
 
 nightcap: night‑cap
-
-nightfal: nightfall
 
 nightingal: nightingale, nightingales
 
@@ -17468,11 +17478,7 @@ nightseason: night‑season
 
 nighttim: night‑time
 
-nihil: nihilism
-
-nihilist: nihilist, nihilistic
-
-nile: nile
+nihil: nihilism, nihilist, nihilistic
 
 nimbl: nimble
 
@@ -17522,13 +17528,9 @@ nineyearold: nine‑year‑old
 
 ninth: ninth
 
-nobl: nobility, noble, nobleness, nobler, nobles, noblest, nobly
+nobl: nobility, noble, nobleman, noblemen, nobleness, nobler, nobles, noblest, nobly
 
 nobleheart: noble‑hearted
-
-nobleman: nobleman
-
-noblemen: noblemen
 
 noblemind: noble‑minded
 
@@ -17550,9 +17552,9 @@ nomad: nomad, nomadic, nomads
 
 nomenclatur: nomenclature
 
-nomin: nominal, nominally, nominate, nominated, nomination, nominations
+nomin: nominate, nominated, nomination, nominations, nominee, nominees
 
-nomine: nominee, nominees
+nominal: nominal, nominally
 
 non: non
 
@@ -17676,11 +17678,7 @@ nonwestern: non‑western
 
 nook: nook, nooks
 
-noon: noon
-
-noonday: noonday
-
-noontid: noontide, noon‑tide
+noon: noon, noonday, noontide, noon‑tide
 
 noos: noose
 
@@ -17690,21 +17688,13 @@ norm: norm, norms
 
 normal: normal, normally
 
-north: north, northerly
+north: north, northerly, northern, northerner, northward, northwards
 
-northeast: northeast, north‑east
-
-northeastern: northeastern, north‑eastern
-
-northern: northern, northerner
+northeast: northeast, northeastern, north‑east, north‑eastern
 
 northernmost: northernmost
 
-northw: northwest, north‑west
-
-northward: northward, northwards
-
-northwestern: northwestern
+northw: northwest, northwestern, north‑west
 
 nose: nose, noses
 
@@ -17726,9 +17716,7 @@ notepap: notepaper
 
 noteworth: noteworthy
 
-noth: nothing
-
-nothing: nothingness
+noth: nothing, nothingness
 
 notic: notice, noticeable, noticeably, noticed, noticing
 
@@ -17736,9 +17724,7 @@ notif: notification, notified, notify, notifying
 
 notion: notion, notions
 
-notor: notorious, notoriously
-
-notoriet: notoriety
+notor: notoriety, notorious, notoriously
 
 nottoodetail: not‑too‑detailed
 
@@ -17782,15 +17768,13 @@ nucleus: nuclei, nucleus
 
 nudism: nudism
 
-nullif: nullified, nullify
+nullif: nullified, nullify, nullity
 
-nullit: nullity
-
-num: numerical, numerically, numerous, numerously
+num: numerous, numerously
 
 numb: numbed
 
-number: number, numbered, numbering, numbers
+number: number, numbered, numbering, numbers, numerical, numerically
 
 numberless: numberless
 
@@ -17808,8 +17792,6 @@ nut: nuts
 
 nutrit: nutritious
 
-oakland: oakland
-
 oar: oars
 
 oas: oasis
@@ -17818,9 +17800,7 @@ oat: oats
 
 oath: oath, oaths
 
-obdur: obdurate
-
-obdurat: obduracy
+obdur: obduracy, obdurate
 
 obed: obedience, obedient, obediently
 
@@ -17832,19 +17812,13 @@ obfusc: obfuscation
 
 object: object, objective, objectively, objectives, objectivity, objects
 
-objection: objected, objection, objectionable, objections
+objection: objected, objection, objectionable, objections, objectors
 
 objectlesson: object‑lesson
 
-objector: objectors
-
-oblast: oblast, oblasts
-
 oblat: oblation
 
-oblig: obligated, obligation, obligations, oblige, obliged
-
-obligator: obligatory
+oblig: obligated, obligation, obligations, obligatory, oblige, obliged
 
 oblit: obliterate, obliterated, obliterating, obliteration
 
@@ -17858,9 +17832,7 @@ obnox: obnoxious
 
 obscen: obscenities
 
-obscur: obscure, obscured, obscures, obscureth, obscuring, obscurities, obscurity
-
-obscurant: obscurantism
+obscur: obscurantism, obscure, obscured, obscures, obscureth, obscuring, obscurities, obscurity
 
 obsequ: obsequious
 
@@ -17868,15 +17840,11 @@ observ: observable, observance, observances, observant, observation, observation
 
 obsess: obsessed, obsession, obsessions
 
-obsolesc: obsolescence, obsolescent
-
-obsolet: obsolete
+obsolet: obsolescence, obsolescent, obsolete
 
 obstacl: obstacle, obstacles
 
-obstin: obstinate, obstinately
-
-obstinat: obstinacy
+obstin: obstinacy, obstinate, obstinately
 
 obstruct: obstruct, obstructed, obstructeth, obstructing, obstruction, obstructions, obstructive, obstructiveness, obstructs
 
@@ -17892,23 +17860,19 @@ occas: occasion, occasioned, occasioning, occasions
 
 occasion: occasional, occasionally
 
-occid: occident
-
-occident: occidental, occidentals
+occid: occident, occidental, occidentals
 
 occult: occult, occultation, occultations, occultism
 
 occup: occupancy, occupant, occupants, occupation, occupational, occupations, occupied, occupies, occupieth, occupy, occupying
 
-occur: occur, occurred, occurreth, occurring, occurs
+occur: occur, occurred, occurrence, occurrences, occurreth, occurring, occurs
 
-occurr: occurrence, occurrences
-
-ocean: ocean, oceanic, oceans
+ocean: ocean, oceans
 
 oceanbord: ocean‑bordering
 
-oceania: oceania
+oceania: oceania, oceanic
 
 oceantid: ocean‑tide
 
@@ -17924,9 +17888,7 @@ odd: odd, odds
 
 ode: ode, odes
 
-odious: odious, odiously
-
-odium: odium
+odious: odious, odiously, odium
 
 odour: odour, odours
 
@@ -17936,17 +17898,11 @@ off: offer, offered, offereth, offering, offerings, offers
 
 offenceless: offenceless
 
-offend: offend, offended, offender, offenders, offends
-
-offens: offensive
-
-offent: offence, offences
+offend: offence, offences, offend, offended, offender, offenders, offends, offensive
 
 offhand: offhand
 
-offic: office, officer, officers, offices, official, officially, officials
-
-officialdom: officialdom
+offic: office, officer, officers, offices, official, officialdom, officially, officials
 
 offset: offset
 
@@ -17956,9 +17912,7 @@ offshor: offshore
 
 offspr: offspring
 
-oft: oft
-
-often: often
+often: oft, often
 
 oftenquot: often‑quoted
 
@@ -17978,9 +17932,7 @@ oil: oil
 
 okay: okay
 
-old: old, older, oldest
-
-olden: olden
+old: old, olden, older, oldest
 
 oldestablish: old‑established
 
@@ -17996,9 +17948,7 @@ omen: omened, omens
 
 omin: ominous, ominously
 
-omiss: omission, omissions
-
-omit: omit, omits, omitted
+omit: omission, omissions, omit, omits, omitted
 
 omnipot: omnipotence, omnipotent
 
@@ -18031,8 +17981,6 @@ oneey: one‑eyed
 onefifth: one‑fifth
 
 onehalf: one‑half
-
-oneida: oneida
 
 onepart: one‑party
 
@@ -18100,33 +18048,29 @@ operaballet: operaballet
 
 opiat: opiate
 
-opinion: opinion, opinionated, opinions
+opinion: opinion, opinions
 
-opinionated: opinionatedness
+opinionated: opinionated, opinionatedness
 
 opium: opium
 
 oppon: opponent, opponents
 
-opportun: opportune, opportunities, opportunity
+opportun: opportune, opportunistic, opportunities, opportunity
 
-opportunist: opportunistic
+oppos: oppose, opposed, opposer, opposers, opposes, opposeth, opposing, opposition, oppositions
 
-oppos: oppose, opposed, opposer, opposers, opposes, opposeth, opposing
+opposit: opposite, opposites
 
-opposit: opposite, opposites, opposition, oppositions
-
-oppress: oppress, oppressed, oppresses, oppressing, oppression, oppressions, oppressive, oppressively, oppressiveness
-
-oppressor: oppressor, oppressors
+oppress: oppress, oppressed, oppresses, oppressing, oppression, oppressions, oppressive, oppressively, oppressiveness, oppressor, oppressors
 
 opprobrium: opprobrium
 
 opt: opt, opted
 
-optim: optimal, optimise, optimism
+optim: optimal, optimise
 
-optimist: optimistic
+optimist: optimism, optimistic
 
 option: option, optional, options
 
@@ -18136,9 +18080,7 @@ oral: oral, orally
 
 orang: oranges
 
-orat: orations, orator
-
-orator: oratorical
+orat: orations, orator, oratorical
 
 orb: orb, orbs
 
@@ -18160,13 +18102,19 @@ ordinar: ordinarily, ordinary
 
 org: orgy
 
-organ: organ, organic, organically, organisation, organisations, organise, organised, organiser, organisers, organises, organising, organism, organisms, organs
+orga: organ, organs
 
-organis: organisational
+organ: organic, organically
 
-orient: orient, oriental, orientals, orientate, orientated, orientation, orientations, oriented, orienting, orients
+organis: organise, organised, organiser, organisers, organises, organising
 
-orientalist: orientalist, orientalists
+organisation: organisation, organisational, organisations
+
+organism: organism, organisms
+
+orient: orientate, orientated, orientation, orientations, oriented, orienting, orients
+
+oriental: orient, oriental, orientalist, orientalists, orientals
 
 origin: origin, original, originality, originally, originals, originate, originated, originates, originating, origination, originator, originators, origins
 
@@ -18174,21 +18122,15 @@ orison: orisons
 
 ornament: ornament, ornamental, ornamentation, ornamented, ornaments
 
-orphan: orphan, orphaned, orphans
-
-orphanag: orphanage, orphanages
+orphan: orphan, orphanage, orphanages, orphaned, orphans
 
 orthodox: orthodox, orthodoxies, orthodoxy
 
 oscil: oscillation
 
-ose: osed
-
 ostens: ostensible, ostensibly
 
-ostent: ostentation
-
-ostentat: ostentatious, ostentatiously
+ostent: ostentation, ostentatious, ostentatiously
 
 ostrac: ostracised, ostracism
 
@@ -18224,9 +18166,7 @@ outdat: outdated
 
 outdist: outdistance, outdistanced
 
-outdo: outdo
-
-outdon: outdone
+outdo: outdo, outdone
 
 outdoor: outdoor, outdoors
 
@@ -18238,11 +18178,7 @@ outflow: outflow, outflowing
 
 outgo: outgoing
 
-outgrow: outgrow
-
-outgrown: outgrown
-
-outgrowth: outgrowth
+outgrow: outgrow, outgrown, outgrowth
 
 outing: outings
 
@@ -18286,9 +18222,7 @@ outriv: outrivalled
 
 outset: outset
 
-outshin: outshine, outshines, outshineth, outshining
-
-outshon: outshone
+outshin: outshine, outshines, outshineth, outshining, outshone
 
 outsid: outside, outsider, outsiders
 
@@ -18342,15 +18276,13 @@ overbear: overbearance, overbearing
 
 overburden: overburden, overburdened, over‑burdened
 
-overcam: overcame
-
 overcast: overcast
 
 overcentr: overcentralisation, over‑centralisation
 
 overcloud: overcloud
 
-overcom: overcome, overcomes, overcometh, overcoming
+overcom: overcame, overcome, overcomes, overcometh, overcoming
 
 overcomplex: over‑complexity
 
@@ -18374,9 +18306,7 @@ overhaul: overhauled
 
 overhead: overhead
 
-overhear: overhear
-
-overheard: overheard
+overhear: overhear, overheard
 
 overjoy: overjoyed
 
@@ -18388,9 +18318,7 @@ overleap: overleap, overleaping
 
 overlook: overlook, overlooked, overlooketh, overlooking, overlooks
 
-overlord: overlord
-
-overlordship: overlordship
+overlord: overlord, overlordship
 
 overmast: overmastering
 
@@ -18404,27 +18332,19 @@ overpow: overpower, overpowered, overpowereth, overpowering, over‑powered
 
 overr: overrate
 
-overran: overran
-
 overreact: overreaction, over‑react
 
 overrid: override, overriding, over‑riding
 
 overrul: overrule, overruled, overruleth, overruling
 
-overrun: overrun, overrunning
+overrun: overran, overrun, overrunning
 
-overs: overseer
-
-overse: oversee, overseeing, oversees
+overse: oversee, overseeing, overseen, overseer, oversees, oversight
 
 oversea: overseas
 
-overseen: overseen
-
 overshadow: overshadow, overshadowed, overshadowest, overshadoweth, overshadowing, overshadows
-
-oversight: oversight
 
 overspread: overspread, overspreading, overspreads
 
@@ -18436,19 +18356,11 @@ overstress: overstress, overstressed
 
 overt: overt, overtly
 
-overtak: overtake, overtakes, overtaketh, overtaking
-
-overtaken: overtaken
+overtak: overtake, overtaken, overtakes, overtaketh, overtaking, overtook
 
 overtax: overtaxed
 
-overthrew: overthrew
-
-overthrow: overthrow, overthrowing
-
-overthrown: overthrown
-
-overtook: overtook
+overthrow: overthrew, overthrow, overthrowing, overthrown
 
 overtur: overtures
 
@@ -18468,13 +18380,9 @@ overzeal: over‑zealous
 
 owe: owe, owed, owes, oweth, owing
 
-owen: owen
-
 owl: owl, owls
 
-own: owned, owner, owners, owneth, owning, owns
-
-ownership: ownership
+own: owned, owner, owners, ownership, owneth, owning, owns
 
 oxen: oxen
 
@@ -18484,11 +18392,7 @@ p: piers
 
 pace: pace, paced, paces, pacing
 
-pacif: pacific
-
-pacifi: pacification, pacify
-
-pacifist: pacifists
+pacifi: pacification, pacifists, pacify
 
 pack: pack, packed
 
@@ -18504,19 +18408,13 @@ pagan: pagan, paganism, pagans
 
 page: page, pages
 
-pageant: pageant, pageants
-
-pageantr: pageantry
-
-paid: paid
+pageant: pageant, pageantry, pageants
 
 pain: pain, pained, painful, painfully, pains
 
 painstak: painstaking, painstakingly
 
-paint: paint, painted, painter, painters, painting, paintings
-
-paintbrush: paintbrush
+paint: paint, paintbrush, painted, painter, painters, painting, paintings
 
 pair: pair, paired, pairing, pairs
 
@@ -18524,7 +18422,9 @@ palac: palace, palaces
 
 palacecourt: palace‑court
 
-palat: palatable, palate, palates
+palat: palate, palates
+
+palatable: palatable
 
 pale: pale, paled, paleness, pales, paleth, paling
 
@@ -18568,29 +18468,19 @@ panicstricken: panic‑stricken
 
 panop: panoply
 
-panoram: panoramic
-
-panorama: panorama, panoramas
-
-panpacif: pan‑pacific
+panorama: panorama, panoramas, panoramic
 
 pant: pant, panted, panteth, panting
 
-pantheism: pantheism
-
-pantheist: pantheistic
+pantheism: pantheism, pantheistic
 
 pap: paper, papers
 
-papal: papal
-
-papat: papacy
+papal: papacy, papal, pope, popes
 
 par: par
 
 parabl: parable, parables
-
-paraclet: paraclete
 
 parad: parade, paraded, parading, paradise
 
@@ -18628,15 +18518,9 @@ pardon: pardon, pardoned, pardoner, pardoning
 
 pare: pare, paring
 
-parent: parent, parental, parenting, parents
-
-parentag: parentage
-
-parenthood: parenthood
+parent: parent, parentage, parental, parenthood, parenting, parents
 
 pariah: pariahs
-
-parisian: parisians
 
 parit: parity
 
@@ -18644,11 +18528,7 @@ park: parks
 
 parlant: parlance
 
-parliament: parliament, parliaments
-
-parliamentar: parliamentary
-
-parliamentarian: parliamentarians
+parliament: parliament, parliamentarians, parliamentary, parliaments
 
 paroch: parochial
 
@@ -18658,37 +18538,23 @@ parrot: parrot, parrots
 
 part: part, parted, parting, partly, parts, part‑
 
-partak: partake, partaker, partakers, partakes, partaketh, partaking
-
-partaken: partaken
+partak: partake, partaken, partaker, partakers, partakes, partaketh, partaking, partook
 
 parti: parties, party
 
 partial: partial, partiality, partially
 
-particip: participant, participants, participate, participated, participates, participateth, participating, participation, participator, participators
-
-participator: participatory
+particip: participant, participants, participate, participated, participates, participateth, participating, participation, participator, participators, participatory
 
 particl: particle, particles
 
-particular: particular, particularised, particularism, particularisms, particularly, particulars
+particular: particular, particularised, particularism, particularisms, particularistic, particularly, particulars
 
-particularist: particularistic
-
-partisan: partisan, partisans
-
-partisanship: partisanship
+partisan: partisan, partisans, partisanship
 
 partit: partition, partitions
 
-partn: partner, partners
-
-partnership: partnership, partnerships
-
-partook: partook
-
-partridg: partridge
+partn: partner, partners, partnership, partnerships
 
 parttim: part‑time
 
@@ -18708,7 +18574,9 @@ passiv: passive, passively, passivity
 
 passport: passport, passports
 
-past: past, paste, pasted
+past: past
+
+paste: paste, pasted
 
 pastim: pastime, pastimes
 
@@ -18720,9 +18588,9 @@ patch: patch, patched
 
 patent: patent, patently
 
-patern: paternal, paternalism, paternity
+patern: paternal, paternity
 
-paternalist: paternalistic
+paternalis: paternalism, paternalistic, patronised, patronising
 
 path: path, paths
 
@@ -18730,9 +18598,7 @@ pathet: pathetic, pathetically
 
 patho: pathos
 
-pathogen: pathogenic
-
-patholog: pathologies, pathology
+patholog: pathogenic, pathologies, pathology
 
 pathway: pathway, pathways
 
@@ -18748,9 +18614,7 @@ patriot: patriot, patriotic, patriotically, patriotism, patriotisms
 
 patrol: patrol
 
-patron: patron, patronised, patronising, patrons
-
-patronag: patronage
+patron: patron, patronage, patrons
 
 patronageseek: patronage‑seekers
 
@@ -18768,17 +18632,11 @@ pavilion: pavilion, pavilions
 
 pawn: pawns
 
-pay: pay, payeth, paying, pays
-
-payabl: payable
-
-payment: payment, payments
+pay: paid, pay, payable, payeth, paying, payment, payments, pays
 
 pe: peer, peering, peers
 
-peac: peace, peaceful, peacefully, peacefulness
-
-peaceabl: peaceable, peaceably
+peac: peace, peaceable, peaceably, peaceful, peacefully, peacefulness
 
 peacebring: peace‑bringing
 
@@ -18828,11 +18686,9 @@ pelt: pelt, pelted
 
 pen: pen, penned, penning, pens
 
-penal: penal, penalise, penalised
+penal: penal, penalise, penalised, penalties, penalty
 
 penalcolon: penal‑colony
-
-penalt: penalties, penalty
 
 penant: penance
 
@@ -18844,9 +18700,7 @@ pendulum: pendulum
 
 penetr: penetrate, penetrated, penetrates, penetratest, penetrateth, penetrating, penetration, penetrative
 
-peninsula: peninsula, peninsulas
-
-peninsular: peninsular
+peninsula: peninsula, peninsular, peninsulas
 
 penit: penitence, penitent
 
@@ -18892,9 +18746,7 @@ peradventur: peradventure
 
 perceiv: perceive, perceived, perceives, perceivest, perceiveth, perceiving
 
-percent: percent
-
-percentag: percentage, percentages
+percent: percent, percentage, percentages
 
 percept: perceptible, perceptibly, perception, perceptions, perceptive, perceptiveness, perceptivity
 
@@ -18942,9 +18794,7 @@ perk: perks
 
 perman: permanence, permanency, permanent, permanently
 
-permeabl: permeable
-
-permeat: permeate, permeated, permeates, permeating
+permeat: permeable, permeate, permeated, permeates, permeating
 
 permiss: permissibility, permissible, permission, permissive, permissiveness
 
@@ -18962,15 +18812,11 @@ perplex: perplex, perplexed, perplexedly, perplexes, perplexing, perplexities, p
 
 perquisit: perquisitions
 
-persecut: persecute, persecuted, persecuting, persecution, persecutions
-
-persecutor: persecutor, persecutors
+persecut: persecute, persecuted, persecuting, persecution, persecutions, persecutor, persecutors
 
 persev: perseverance, persevere, persevered, perseveres, persevering, perseveringly
 
-persia: persia
-
-persian: persian, persians
+persia: persia, persian, persians
 
 persianlanguag: persian‑language
 
@@ -18994,13 +18840,9 @@ perspicu: perspicuous
 
 perspir: perspiring
 
-persuad: persuade, persuaded, persuading
+persuas: persuade, persuaded, persuading, persuasion, persuasions, persuasive, persuasively, persuasiveness
 
-persuas: persuasion, persuasions, persuasive, persuasively, persuasiveness
-
-pertain: pertain, pertained, pertaineth, pertaining, pertains
-
-pertin: pertinent, pertinently
+pertain: pertain, pertained, pertaineth, pertaining, pertains, pertinent, pertinently
 
 pertinac: pertinacity
 
@@ -19008,9 +18850,7 @@ perturb: perturb, perturbation, perturbations, perturbed
 
 perus: perusal, perusals, peruse, perused, perusing
 
-pervad: pervade, pervaded, pervades, pervadeth, pervading
-
-pervas: pervasive, pervasiveness
+pervad: pervade, pervaded, pervades, pervadeth, pervading, pervasive, pervasiveness
 
 pervers: perverse, perversely, perversion, perversions, perversity
 
@@ -19018,17 +18858,13 @@ pervert: pervert, perverted, perverting
 
 pessimist: pessimistic
 
-pestil: pestilence, pestilences
-
-pestilent: pestilential
+pestil: pestilence, pestilences, pestilential
 
 pet: pet
 
 petal: petalled, petals
 
-petit: petition, petitioned, petitions
-
-petition: petitioner, petitioners
+petit: petition, petitioned, petitioner, petitioners, petitions
 
 petrif: petrifieth, petrify
 
@@ -19046,13 +18882,9 @@ phantasm: phantasm
 
 phantom: phantom, phantoms
 
-pharaoh: pharaoh, pharaohic, pharaohs
+pharaoh: pharaoh, pharaohic, pharaohs, pharaonic
 
-pharaon: pharaonic
-
-pharisa: pharisaical
-
-pharise: pharisee, pharisees
+pharise: pharisaical, pharisee, pharisees
 
 pharmacist: pharmacists
 
@@ -19064,23 +18896,15 @@ pheasant: pheasant
 
 phenomen: phenomenal
 
-phenomena: phenomena
+phenomena: phenomena, phenomenon
 
-phenomenon: phenomenon
-
-philanthrop: philanthropic, philanthropies, philanthropy
-
-philanthropist: philanthropist, philanthropists
+philanthrop: philanthropic, philanthropies, philanthropist, philanthropists, philanthropy
 
 philolog: philology
 
-philon: philonism
-
-philoprogenet: philoprogenetive
+philoprogenit: philoprogenitive
 
 philosoph: philosopher, philosophers, philosophic, philosophical, philosophically, philosophies, philosophy
-
-phoenician: phoenicians
 
 phoenix: phoenix
 
@@ -19088,21 +18912,19 @@ phoenixlik: phoenix‑like
 
 phonograph: phonograph
 
-photo: photo
+photo: photo, photograph, photographed, photographic, photographs, photography
 
 photocop: photocopied, photocopies, photocopy
-
-photograph: photograph, photographed, photographic, photographs, photography
 
 photostat: photostatic
 
 phrase: phrase, phrased, phrases
 
-physic: physical, physically, physics
+physic: physicist, physics
+
+physical: physical, physically
 
 physician: physician, physicians
-
-physicist: physicist
 
 physiognom: physiognomies, physiognomy
 
@@ -19126,11 +18948,7 @@ piec: piece, pieces
 
 pierc: pierce, pierced, pierceth, piercing
 
-piet: pieties, piety
-
-pietism: pietism
-
-pietist: pietists
+piet: pieties, pietism, piety, pious, piously
 
 pigeon: pigeon
 
@@ -19140,9 +18958,7 @@ pilast: pilasters
 
 pile: pile, piled, piles
 
-pilgrim: pilgrim, pilgrims
-
-pilgrimag: pilgrimage, pilgrimages
+pilgrim: pilgrim, pilgrimage, pilgrimages, pilgrims
 
 pilgrimemperor: pilgrim‑emperor
 
@@ -19170,11 +18986,7 @@ pinnacl: pinnacle, pinnacles
 
 pione: pioneer, pioneered, pioneering, pioneers
 
-pious: pious, piously
-
-pip: piper
-
-pipe: pipe, piping
+pipe: pipe, piper, piping
 
 pistachio: pistachios
 
@@ -19194,9 +19006,7 @@ pitfal: pitfall, pitfalls
 
 pith: pith
 
-piti: pitier, pitiful, pitifully, pity
-
-pitiabl: pitiable
+piti: pitiable, pitier, pitiful, pitifully, pity
 
 pitiless: pitiless, pitilessly
 
@@ -19208,11 +19018,9 @@ pl: plied, ply, plying
 
 placat: placate, placated
 
-place: place, placed, places, placeth, placing
+place: place, placed, placement, places, placeth, placing
 
 placeless: placeless
-
-placement: placement
 
 plagu: plague, plagued, plagues, plaguing
 
@@ -19224,17 +19032,13 @@ plaintiff: plaintiff, plaintiffs
 
 plaintiv: plaintive
 
-plan: plan, planned, planning, plans
+plan: plan, planned, planners, planning, plans
 
 plane: plane, planes
 
-planet: planet, planetisation, planets
-
-planetar: planetary
+planet: planet, planetary, planetisation, planets
 
 planetwid: planet‑wide
-
-plann: planners
 
 plant: plant, planted, planteth, planting, plants
 
@@ -19242,25 +19046,15 @@ plantat: plantation, plantations
 
 plantlik: plant‑like
 
-plast: plaster, plastered
-
-plasterwork: plasterwork
+plast: plaster, plastered, plasterwork
 
 plastic: plastic
 
 plate: plate
 
-plateau: plateau
-
-plateaus: plateaus
+plateau: plateau, plateaus
 
 platform: platform, platforms
-
-plato: plato, platos
-
-platon: platonic
-
-platonist: platonist, platonists
 
 platt: platters
 
@@ -19276,9 +19070,7 @@ playwright: playwright
 
 plaza: plaza
 
-plea: plea, pleas
-
-plead: plead, pleaded, pleadeth, pleading, pleadings, pleads
+plea: plea, plead, pleaded, pleadeth, pleading, pleadings, pleads, pleas, pled
 
 pleas: please, pleased, pleases, pleasest, pleaseth, pleasing
 
@@ -19292,19 +19084,13 @@ pleasureseek: pleasure‑seeking
 
 plebeian: plebeian
 
-pled: pled
-
 pledg: pledge, pledged, pledges, pledgeth, pledging
 
 plenar: plenary
 
 plenipotentiar: plenipotentiaries
 
-plenitud: plenitude
-
-plent: plentiful, plentifully, plenty
-
-plenteous: plenteous, plenteousness
+plent: plenitude, plenteous, plenteousness, plentiful, plentifully, plenty
 
 plethora: plethora
 
@@ -19312,21 +19098,11 @@ pliabl: pliable
 
 plight: plight, plighted
 
-plin: pliny
-
 plodd: plodder
 
-plot: plot, plots, plotted, plotting, plottings
+plot: plot, plots, plotted, plotter, plotters, plotting, plottings
 
-plott: plotter, plotters
-
-plough: plough, ploughed, ploughing, ploughs
-
-ploughman: ploughman
-
-ploughmen: ploughmen
-
-ploughshar: ploughshares
+plough: plough, ploughed, ploughing, ploughman, ploughmen, ploughs, ploughshares
 
 ploy: ploys
 
@@ -19348,23 +19124,15 @@ pocket: pocket, pockets
 
 podium: podium
 
-poem: poem, poems
-
-poet: poet, poets
-
-poetess: poetess
-
-poetic: poetic
+poet: poem, poems, poet, poetess, poetic, poetry, poets
 
 poetlaur: poet‑laureate
-
-poetr: poetry
 
 pogrom: pogrom, pogroms
 
 poignant: poignancy, poignant, poignantly
 
-point: point, pointe, pointed, pointedly, pointing, points
+point: point, pointed, pointedly, pointing, points
 
 pois: poise, poised
 
@@ -19372,27 +19140,21 @@ poison: poison, poisoned, poisoning, poisonous, poisons
 
 pol: polling
 
-poland: poland
-
 polar: polar, polarisation, polarised, polarising
 
 pole: pole, poles
 
 polem: polemical, polemics
 
-polic: police, policing
-
-policemen: policemen
+polic: police, policemen, policing
 
 polici: policies, policy
 
 polish: polish, polished
 
-polit: political, politically, politician, politicians, politicising, politics
+polit: political, politically, politician, politicians, politicising, politics, polity
 
 polite: polite, politely, politeness
-
-politi: polity
 
 politic: politic
 
@@ -19408,9 +19170,7 @@ polyth: polytheism
 
 pomegran: pomegranate
 
-pomp: pomp, pomps
-
-pompous: pompous
+pomp: pomp, pompous, pomps
 
 pond: pond
 
@@ -19428,11 +19188,7 @@ poor: poor, poorer, poorest, poorly
 
 poorbox: poor‑box
 
-pope: pope, popes
-
-popul: populated, populates, population, populations, populous
-
-populac: populace
+popul: populace, populated, populates, population, populations, populous
 
 popular: popular, popularity, popularly
 
@@ -19446,9 +19202,7 @@ port: port
 
 portal: portal, portals
 
-portend: portend, portended
-
-portent: portent, portentous, portents
+portend: portend, portended, portent, portentous, portents
 
 porter: porters
 
@@ -19462,13 +19216,17 @@ portray: portray, portrayal, portrayals, portrayed, portraying, portrays
 
 pose: pose, posed, poses, posing
 
-posit: posited, position, positioned, positions, positive, positively
+posit: posited
 
-possess: possess, possessed, possesses, possessest, possesseth, possessing, possession, possessions
+position: position, positioned, positions
 
-possessor: possessor, possessors
+positive: positive, positively
 
-possibl: possibilities, possibility, possible, possibly
+possess: possess, possessed, possesses, possessest, possesseth, possessing, possession, possessions, possessor, possessors
+
+possibilit: possibilities, possibility
+
+possibl: possible, possibly
 
 post: post, posted, posting, postings, posts
 
@@ -19476,7 +19234,9 @@ postag: postage
 
 postal: postal
 
-poster: posterity, posters
+poster: posters
+
+posterity: posterity
 
 postgradu: post‑graduate
 
@@ -19492,13 +19252,13 @@ postur: posture
 
 postwar: post‑war
 
-pot: pot
+pot: pot, potter, pottery
 
-potent: potencies, potency, potent, potentate, potentates
+potent: potencies, potency, potent
+
+potentate: potentate, potentates
 
 potenti: potential, potentialities, potentiality, potentially
-
-pott: potter, pottery
 
 pouch: pouch
 
@@ -19522,9 +19282,9 @@ powerseek: power‑seeking
 
 pr: priest, priests, pry, prying
 
-practic: practicability, practicable, practical, practicality, practically, practice, practices
+practic: practicability, practicable, practical, practicality, practically
 
-practis: practise, practised, practising
+practis: practice, practices, practise, practised, practising
 
 practition: practitioner, practitioners
 
@@ -19554,6 +19314,8 @@ prayerhous: prayer‑house
 
 prayerlead: prayer‑leaders
 
+pre: pre
+
 preach: preach, preached, preacher, preachers, preaching
 
 preambl: preamble
@@ -19562,9 +19324,7 @@ prearrang: prearranged
 
 precar: precarious, precariously
 
-precaut: precaution, precautions
-
-precautionar: precautionary
+precaut: precaution, precautionary, precautions
 
 preced: precede, preceded, precedence, precedent, precedents, precedes, precedeth, preceding
 
@@ -19582,23 +19342,15 @@ preclud: preclude, precluded, precludes, precludeth
 
 precoc: precocious, precocity
 
-precolumbian: precolumbian
-
-preconceiv: preconceived
-
-preconcept: preconceptions
+preconceiv: preconceived, preconceptions
 
 precondit: precondition, preconditions
 
 precursor: precursor, precursors
 
-predat: predate
+predat: predate, predatory
 
-predator: predatory
-
-predeceas: predeceases
-
-predecessor: predecessor, predecessors
+predeceas: predeceases, predecessor, predecessors
 
 predestin: predestination, predestined
 
@@ -19612,9 +19364,7 @@ predict: predict, predictable, predicted, predicting, prediction, predictions, p
 
 predilect: predilection, predilections
 
-predispos: predisposed
-
-predisposit: predisposition
+predispos: predisposed, predisposition
 
 predomin: predominant, predominantly, predominate, predominated, predominates, predominating
 
@@ -19622,13 +19372,11 @@ preemin: preeminence, preeminent, preeminently
 
 preexist: preexistence, preexistences, preexistent
 
-pref: prefer, preferable, preferably, preference, preferences, preferment, preferred, preferrest, preferreth, preferring, prefers
+pref: prefer, preferable, preferably, preference, preferences, preferential, preferment, preferred, preferrest, preferreth, preferring, prefers
 
 prefac: preface, prefaced, prefacing
 
 prefator: prefatory
-
-preferent: preferential
 
 prefigur: prefigured, prefiguring
 
@@ -19636,9 +19384,7 @@ prefix: prefixed
 
 pregnant: pregnancy, pregnant
 
-prejud: prejudiced, prejudicing
-
-prejudic: prejudice, prejudices, prejudicial
+prejud: prejudice, prejudiced, prejudices, prejudicial, prejudicing
 
 prelat: prelate, prelates
 
@@ -19656,17 +19402,13 @@ premiership: premiership
 
 premis: premise, premises
 
-premonit: premonition
-
-premonitor: premonitory
+premonit: premonition, premonitory
 
 preoccup: preoccupation, preoccupations, preoccupied, preoccupy
 
 preordain: preordained
 
-prepar: preparation, preparations, prepare, prepared, prepares, prepareth, preparing
-
-preparator: preparatory
+prepar: preparation, preparations, preparatory, prepare, prepared, prepares, prepareth, preparing
 
 prepond: preponderant, preponderate, preponderating
 
@@ -19682,17 +19424,15 @@ prerog: prerogative, prerogatives
 
 presag: presage, presaged, presages, presaging
 
-presbyterian: presbyterian
-
 preschool: preschool, preschools
 
 prescient: prescient
 
-prescrib: prescribe, prescribed, prescribes, prescribest, prescribeth, prescribing
+prescrib: prescribe, prescribed, prescribes, prescribest, prescribeth, prescribing, prescription, prescriptions, prescriptive
 
-prescript: prescription, prescriptions, prescriptive
+present: presence, present, presented, presenting, presents
 
-present: presence, present, presentation, presentations, presented, presenting, presently, presents
+presentation: presentation, presentations
 
 presentday: present‑day
 
@@ -19700,11 +19440,13 @@ presentdayconcern: present‑day‑concerns
 
 presenti: presentiment
 
+presently: presently
+
 preserv: preservation, preserve, preserved, preserver, preserves, preservest, preserveth, preserving
 
-presid: preside, presided, presidency, president, presidents, presides, presiding
+presid: preside, presided, presides, presiding
 
-president: presidential
+presiden: presidency, president, presidential, presidents
 
 press: press, pressed, presses, pressing
 
@@ -19712,11 +19454,7 @@ pressur: pressure, pressured, pressures, pressuring
 
 prestig: prestige, prestigious
 
-presum: presumably, presume, presumed, presumes, presumeth, presuming
-
-presumpt: presumption, presumptions, presumptive
-
-presumptu: presumptuous, presumptuously, presumptuousness
+presum: presumably, presume, presumed, presumes, presumeth, presuming, presumption, presumptions, presumptive, presumptuous, presumptuously, presumptuousness
 
 presuppos: presuppose, presupposes, presupposeth
 
@@ -19730,9 +19468,7 @@ pretext: pretext, pretexts
 
 preunivers: preuniversity
 
-prevail: prevail, prevailed, prevaileth, prevailing, prevails
-
-preval: prevalence, prevalent
+prevail: prevail, prevailed, prevaileth, prevailing, prevails, prevalence, prevalent
 
 prevent: prevent, preventable, prevented, preventeth, preventing, prevention, preventive, prevents
 
@@ -19756,11 +19492,7 @@ pride: pride, prided, prideful, pridest, prideth, priding
 
 prideintox: pride‑intoxicated
 
-priest: priestly
-
-priestcraft: priestcraft
-
-priesthood: priesthood, priesthoods
+priest: priestcraft, priesthood, priesthoods, priestly
 
 priestprompt: priest‑prompted
 
@@ -19780,13 +19512,11 @@ primogenitur: primogeniture
 
 primord: primordial, primordially
 
-princ: prince, princely, princes
+princ: prince, princelings, princely, princes, princess, princesses
 
-princel: princelings
+princip: principal, principally
 
-princess: princess, princesses
-
-princip: principal, principalities, principally, principe
+principalit: principalities
 
 principl: principle, principled, principles
 
@@ -19818,7 +19548,11 @@ pristin: pristine
 
 priv: privily, privy
 
-privat: privacy, private, privately, privates, privation, privations
+privat: privacy, private, privately
+
+privates: privates
+
+privation: privation, privations
 
 privileg: privilege, privileged, privileges
 
@@ -19834,9 +19568,7 @@ probe: probe, probed, probing
 
 probit: probity
 
-problem: problem, problems
-
-problemat: problematic
+problem: problem, problematic, problems
 
 problemsolv: problem‑solving
 
@@ -19846,9 +19578,7 @@ proceed: proceed, proceeded, proceedeth, proceeding, proceedings, proceeds
 
 process: process, processes, processing, procession
 
-proclaim: proclaim, proclaimed, proclaimer, proclaimers, proclaimeth, proclaiming, proclaims
-
-proclam: proclamation, proclamations
+proclaim: proclaim, proclaimed, proclaimer, proclaimers, proclaimeth, proclaiming, proclaims, proclamation, proclamations
 
 procliv: proclivities, proclivity
 
@@ -19864,15 +19594,19 @@ prodig: prodigal, prodigality, prodigies, prodigious, prodigy
 
 produc: produce, produced, producer, producers, produces, produceth, producing
 
-product: product, production, productions, productive, productively, productivity, products
+product: product, products
+
+production: production, productions
+
+productiv: productive, productively, productivity
 
 prof: prof
 
 profan: profanation, profane, profaned, profaneth, profanity
 
-profess: profess, professed, professedly, professes, professeth, professing, profession, professions
+profess: profess, professed, professedly, professes, professeth, professing
 
-profession: professional, professionals
+profession: profession, professional, professionals, professions
 
 professor: professor, professors
 
@@ -19888,13 +19622,9 @@ profitless: profitless
 
 profitshar: profit‑sharing
 
-proflig: profligate
+proflig: profligacy, profligate
 
-profligat: profligacy
-
-profound: profound, profoundest, profoundly
-
-profund: profundity
+profound: profound, profoundest, profoundly, profundity
 
 profus: profuse, profusely, profusion
 
@@ -19906,17 +19636,19 @@ prognost: prognostication, prognostications
 
 program: programming
 
-programm: programme, programmes
-
-programmat: programmatic
+programm: programmatic, programme, programmes
 
 progress: progress, progressed, progresses, progressing, progression, progressions, progressive, progressively, progressiveness
 
 prohibit: prohibit, prohibited, prohibiting, prohibition, prohibitions, prohibitive, prohibitively, prohibits
 
-project: project, projected, projecteers, projecting, projection, projections, projects
+project: project, projecteers, projects
 
 projectil: projectiles
+
+projecting: projecting
+
+projection: projected, projection, projections
 
 proletariat: proletariat
 
@@ -19932,17 +19664,13 @@ promenad: promenade
 
 promin: prominence, prominent, prominently
 
-promis: promise, promised, promises, promising
+promis: promise, promised, promises, promising, promissory
 
 promiscu: promiscuity, promiscuous
 
-promissor: promissory
-
 promot: promote, promoted, promoter, promoters, promotes, promoteth, promoting, promotion, promotional
 
-prompt: prompt, prompted, prompteth, prompting, promptings, promptly, promptness, prompts
-
-promptitud: promptitude
+prompt: prompt, prompted, prompteth, prompting, promptings, promptitude, promptly, promptness, prompts
 
 promulg: promulgate, promulgated, promulgates, promulgateth, promulgating, promulgation, promulgator, promulgators
 
@@ -19954,17 +19682,13 @@ pronoun: pronoun, pronouns
 
 pronounc: pronounce, pronounced, pronouncement, pronouncements, pronounces, pronouncing
 
-proof: proof, proofs
+proof: proof, proofs, provable, prove, proved, proven, proves, proveth, proving
 
 prop: prop, propped
 
-propag: propagate, propagated, propagates, propagating, propagation, propagative, propagator, propagators
+propag: propagat, propagate, propagated, propagates, propagating, propagation, propagative, propagator, propagators
 
-propaganda: propaganda
-
-propagandist: propagandists
-
-propagat: propagat
+propaganda: propaganda, propagandists
 
 propel: propel, propellant, propelled, propelling, propels
 
@@ -19976,13 +19700,9 @@ properlyfunct: properly‑functioning
 
 propert: properties, property
 
-prophes: prophesied, prophesies, prophesy, prophesying
-
-prophet: prophecies, prophecy, prophet, prophetic, prophetically, prophets
+prophet: prophecies, prophecy, prophesied, prophesies, prophesy, prophesying, prophet, prophethood, prophetic, prophetically, prophets
 
 prophetherald: prophet‑herald
-
-prophethood: prophethood
 
 prophetpilgrim: prophet‑pilgrim
 
@@ -19990,9 +19710,7 @@ propit: propitious, propitiously, propitiousness
 
 propon: proponents
 
-proport: proportion, proportional, proportioned, proportioning, proportions
-
-proportion: proportionate, proportionately
+proport: proportion, proportional, proportionate, proportionately, proportioned, proportioning, proportions
 
 propos: proposal, proposals, propose, proposed, proposes, proposing
 
@@ -20000,21 +19718,15 @@ proposit: proposition, propositions
 
 propound: propound, propounded, propounding
 
-propriet: propriety
-
-proprietor: proprietor, proprietors
+propriet: proprietor, proprietors, propriety
 
 propuls: propulsion
 
-proscrib: proscribed
-
-proscript: proscription
+proscrib: proscribed, proscription
 
 prose: prose
 
-prosecut: prosecute, prosecuted, prosecuting, prosecution
-
-prosecutor: prosecutor, prosecutors
+prosecut: prosecute, prosecuted, prosecuting, prosecution, prosecutor, prosecutors
 
 proselyt: proselytes, proselytisation, proselytise, proselytising, proselytism
 
@@ -20030,15 +19742,13 @@ protagonist: protagonist, protagonists
 
 prote: protest, protests
 
-protect: protect, protected, protectest, protecteth, protecting, protection, protections, protective, protects
+protect: protect, protected, protectest, protecteth, protecting, protection, protections, protective, protector, protectors, protects
 
-protector: protector, protectorate, protectorates, protectors
+protectorate: protectorate, protectorates, protectorship
 
-protectorship: protectorship
+protest: protestation, protestations, protested, protesting
 
-protest: protestant, protestants, protestation, protestations, protested, protesting
-
-protestant: protestantism
+protestant: protestant, protestantism, protestants
 
 protocol: protocol, protocols
 
@@ -20052,17 +19762,11 @@ protrud: protrude, protruding
 
 proud: proud, proudly
 
-provabl: provable
-
-prove: prove, proved, proves, proveth, proving
-
-proven: proven, provenance
+provenance: provenance
 
 proverb: proverb, proverbial
 
 provid: provide, provided, providence, provider, providers, provides, provideth, providing
-
-providencia: providencia
 
 provident: providential, providentially
 
@@ -20072,9 +19776,7 @@ provis: provision, provisions
 
 provision: provisional, provisionally
 
-provoc: provocation, provocations, provocative
-
-provok: provoke, provoked, provokes, provoketh, provoking
+provok: provocation, provocations, provocative, provoke, provoked, provokes, provoketh, provoking
 
 prowess: prowess
 
@@ -20090,29 +19792,25 @@ prune: prune, pruned, pruning
 
 pruninghook: pruninghooks
 
-psalm: psalms
-
-psalmist: psalmist
+psalm: psalmist, psalms
 
 psych: psyche
 
-psychiatr: psychiatric
-
-psychiatrist: psychiatrist, psychiatrists
+psychiatr: psychiatric, psychiatrist, psychiatrists
 
 psychic: psychic, psychical
 
-psycholog: psychological, psychologically, psychology
-
-psychologist: psychologist, psychologists
+psycholog: psychological, psychologically, psychologist, psychologists, psychology
 
 pubert: puberty
 
-public: public, publication, publications, publicise, publicised, publicising, publicity, publicly, publics
+public: public, publicly, publics
 
 publican: publicans
 
-publicist: publicist, publicists
+publication: publication, publications
+
+publicis: publicise, publicised, publicising, publicist, publicists, publicity
 
 publicpolic: public‑policy
 
@@ -20124,9 +19822,7 @@ pueril: puerile
 
 puf: puffed
 
-pul: pulled, pulling
-
-pull: pull
+pul: pull, pulled, pulling
 
 pulp: pulp
 
@@ -20134,9 +19830,7 @@ pulpit: pulpit, pulpits
 
 pulpittop: pulpit‑top, pulpit‑tops
 
-puls: pulse, pulsing, pulsings
-
-pulsat: pulsate, pulsates, pulsateth, pulsating, pulsations
+puls: pulsate, pulsates, pulsateth, pulsating, pulsations, pulse, pulsing, pulsings
 
 pump: pumping
 
@@ -20150,9 +19844,7 @@ pundit: pundits
 
 pungent: pungent
 
-punish: punish, punishable, punished, punishes, punishing, punishment, punishments
-
-punit: punitive
+punish: punish, punishable, punished, punishes, punishing, punishment, punishments, punitive
 
 pupil: pupil, pupils
 
@@ -20168,8 +19860,6 @@ purgat: purgative
 
 purif: purification, purified, purifies, purifieth, purify, purifying
 
-puritan: puritanism
-
 purl: purling
 
 purpl: purple
@@ -20182,15 +19872,9 @@ purposeless: purposeless
 
 purs: purse, pursing
 
-pursu: pursue, pursued, pursues, pursueth, pursuing
+pursu: pursuance, pursuant, pursue, pursued, pursues, pursueth, pursuing, pursuit, pursuits
 
-pursuant: pursuance, pursuant
-
-pursuit: pursuit, pursuits
-
-purvey: purveyed, purveying
-
-purveyor: purveyor, purveyors
+purvey: purveyed, purveying, purveyor, purveyors
 
 purview: purview
 
@@ -20198,9 +19882,7 @@ push: push, pushed, pushing
 
 put: put, puts, puttest, putteth, putting
 
-putrid: putrid
-
-putrif: putrified
+putrid: putrid, putrified
 
 puzzl: puzzle, puzzled, puzzles
 
