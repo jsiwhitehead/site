@@ -138,7 +138,7 @@ exceptions1.animalistic = "animalism";
 exceptions1.teacher = "teacher";
 exceptions1.teachers = "teacher";
 exceptions1.teachings = "teachings";
-exceptions1.tutorial = "tutorial";
+exceptions1.tutorial = "tuition";
 exceptions1.smallest = "small";
 exceptions1.defamatory = "defam";
 exceptions1.service = "serv";
@@ -208,6 +208,22 @@ exceptions1.organs = "orga";
 exceptions1.orient = "oriental";
 exceptions1.projected = "projection";
 exceptions1.publicity = "publicis";
+exceptions1.ravening = "ravenous";
+exceptions1.saw = "see";
+exceptions1.seeth = "see";
+exceptions1.should = "shoul";
+exceptions1.smoking = "smok";
+exceptions1.solicitous = "solicitud";
+exceptions1.sooth = "soothsay";
+exceptions1.stating = "stated";
+exceptions1.subsidy = "subsidis";
+exceptions1.succeedeth = "successiv";
+exceptions1.succeeding = "successiv";
+exceptions1.tax = "taxat";
+exceptions1.taxes = "taxat";
+exceptions1.tears = "tearful";
+exceptions1.unit = "units";
+exceptions1.wondering = "wondere";
 // Invariants!
 exceptions1.institute = "institute";
 exceptions1.sky = "sky";
@@ -230,6 +246,7 @@ exceptions1.barbe = "*barbe";
 exceptions1.browne = "*browne";
 exceptions1.chary = "chary";
 exceptions1.dais = "dais";
+exceptions1.daisy = "daisy";
 exceptions1.digest = "digest";
 exceptions1.fars = "*fars";
 exceptions1.fath = "*fath";
@@ -302,6 +319,36 @@ exceptions1.principe = "*principe";
 exceptions1.privates = "privates";
 exceptions1.projecting = "projecting";
 exceptions1.provenance = "provenance";
+exceptions1.quite = "quite";
+exceptions1.ravenous = "ravenous";
+exceptions1.rayy = "*rayy";
+exceptions1.rev = "revv";
+exceptions1.rights = "rights";
+exceptions1.seconds = "seconds";
+exceptions1.secretes = "secretes";
+exceptions1.shades = "shades";
+exceptions1.shortly = "shortly";
+exceptions1.sophists = "*sophists";
+exceptions1.stafi = "*stafi";
+exceptions1.stately = "stately";
+exceptions1.stated = "stated";
+exceptions1.suite = "suite";
+exceptions1.supp = "supp";
+exceptions1.suspense = "suspense";
+exceptions1.temps = "*temps";
+exceptions1.temperate = "temperate";
+exceptions1.temperance = "temperance";
+exceptions1.tempered = "tempered";
+exceptions1.texting = "texting";
+exceptions1.thorne = "*thorne";
+exceptions1.under = "under";
+exceptions1.undertaker = "undertaker";
+exceptions1.units = "units";
+exceptions1.wages = "wages";
+exceptions1.wast = "wast";
+exceptions1.woking = "*woking";
+exceptions1.wretches = "wretches";
+exceptions1.writings = "writings";
 // Tweaks!
 var tweaks = Object.create(null);
 tweaks.aggressor = "aggress";
@@ -1284,6 +1331,474 @@ tweaks.pursuant = "pursu";
 tweaks.pursuit = "pursu";
 tweaks.purveyor = "purvey";
 tweaks.putrif = "putrid";
+tweaks.quaff = "quaf";
+tweaks.quarrelsom = "quarrel";
+tweaks.quicken = "quick";
+tweaks.quietud = "quiet";
+tweaks.quintessent = "quintess";
+tweaks.quotat = "quot";
+tweaks.racial = "race";
+tweaks.racist = "racism";
+tweaks.radiat = "radiant";
+tweaks.rancor = "rancour";
+tweaks.raptur = "rapt";
+tweaks.rational = "ration";
+tweaks.rationalist = "ration";
+tweaks.reaction = "react";
+tweaks.readabl = "read";
+tweaks.readership = "read";
+tweaks.rebellion = "rebel";
+tweaks.reborn = "rebirth";
+tweaks.rebuilt = "rebuild";
+tweaks.reclam = "reclaim";
+tweaks.recognis = "recogn";
+tweaks.recognit = "recogn";
+tweaks.recurr = "recur";
+tweaks.redden = "red";
+tweaks.redefinit = "redefin";
+tweaks.reduct = "reduc";
+tweaks.reentr = "reent";
+tweaks.reflector = "reflect";
+tweaks.reformator = "reform";
+tweaks.regrett = "regret";
+tweaks.reincarnationist = "reincarn";
+tweaks.relief = "reliev";
+tweaks.religion = "relig";
+tweaks.religionist = "relig";
+tweaks.remaind = "remain";
+tweaks.remembr = "rememb";
+tweaks.renaiss = "renasc";
+tweaks.rental = "rent";
+tweaks.repaid = "repay";
+tweaks.replica = "replic";
+tweaks.represent = "repres";
+tweaks.reproduct = "reproduc";
+tweaks.reproof = "reprov";
+tweaks.republican = "republ";
+tweaks.request = "requ";
+tweaks.resident = "resid";
+tweaks.respons = "respond";
+tweaks.restraint = "restrain";
+tweaks.resumpt = "resum";
+tweaks.retributor = "retribut";
+tweaks.reunit = "reunion";
+tweaks.revealedst = "reveal";
+tweaks.reverent = "rev";
+tweaks.rhythmic = "rhythm";
+tweaks.ribaldr = "ribald";
+tweaks.ridden = "ride";
+tweaks.rider = "ride";
+tweaks.riflemen = "rifl";
+tweaks.rigor = "rigour";
+tweaks.ripen = "ripe";
+tweaks.riper = "ripe";
+tweaks.risen = "rise";
+tweaks.ritualist = "ritual";
+tweaks.rivalr = "rival";
+tweaks.robb = "rob";
+tweaks.rocklik = "rock";
+tweaks.rode = "ride";
+tweaks.roll = "rol";
+tweaks.ros = "rose";
+tweaks.roseat = "rose";
+tweaks.roseb = "rose";
+tweaks.rosebud = "rose";
+tweaks.rotten = "rot";
+tweaks.royalt = "royal";
+tweaks.rudimentar = "rudiment";
+tweaks.ruinous = "ruin";
+tweaks.rul = "rule";
+tweaks.rulership = "rule";
+tweaks.runn = "run";
+tweaks.sacred = "sacr";
+tweaks.sacrific = "sacrif";
+tweaks.sadden = "sad";
+tweaks.safet = "safe";
+tweaks.sale = "sell";
+tweaks.said = "say";
+tweaks.sailor = "sail";
+tweaks.saintship = "saint";
+tweaks.saith = "say";
+tweaks.sanctit = "sanctif";
+tweaks.sang = "sing";
+tweaks.sanitar = "sanit";
+tweaks.saniti = "sane";
+tweaks.sank = "sink";
+tweaks.sat = "sit";
+tweaks.satiet = "satiat";
+tweaks.satisfact = "satisf";
+tweaks.satisfactor = "satisf";
+tweaks.sawn = "saw";
+tweaks.scarcit = "scarc";
+tweaks.schem = "scheme";
+tweaks.schismat = "schism";
+tweaks.scholarship = "scholar";
+tweaks.scholast = "scholar";
+tweaks.schoolchildren = "schoolchild";
+tweaks.scientif = "scienc";
+tweaks.scientist = "scienc";
+tweaks.scof = "scoff";
+tweaks.sculptor = "sculptur";
+tweaks.secess = "seced";
+tweaks.seclus = "seclud";
+tweaks.secondar = "second";
+tweaks.secretariat = "secretar";
+tweaks.sectarian = "sect";
+tweaks.seduct = "seduc";
+tweaks.seedb = "seed";
+tweaks.seedl = "seed";
+tweaks.seen = "see";
+tweaks.seest = "see";
+tweaks.sel = "sell";
+tweaks.selv = "self";
+tweaks.seminarian = "seminari";
+tweaks.sensibl = "sens";
+tweaks.sensor = "sens";
+tweaks.sensuous = "sensual";
+tweaks.sent = "send";
+tweaks.sequestr = "sequest";
+tweaks.serfdom = "serf";
+tweaks.sew = "sow";
+tweaks.sewn = "sow";
+tweaks.shaken = "shake";
+tweaks.shalt = "shall";
+tweaks.shap = "shape";
+tweaks.shar = "share";
+tweaks.sharpen = "sharp";
+tweaks.shaven = "shave";
+tweaks.shedd = "shed";
+tweaks.shew = "show";
+tweaks.shod = "shoe";
+tweaks.shone = "shine";
+tweaks.shook = "shake";
+tweaks.shopkeep = "shop";
+tweaks.shorn = "shear";
+tweaks.shorten = "short";
+tweaks.shortsighted = "shortsight";
+tweaks.shot = "shoot";
+tweaks.shouldst = "shoul";
+tweaks.shown = "show";
+tweaks.shrank = "shrink";
+tweaks.shril = "shrill";
+tweaks.shrunk = "shrink";
+tweaks.shrunken = "shrink";
+tweaks.sicken = "sick";
+tweaks.sighted = "sight";
+tweaks.silken = "silk";
+tweaks.simp = "simpl";
+tweaks.simplic = "simpl";
+tweaks.singular = "singl";
+tweaks.sinn = "sin";
+tweaks.skil = "skill";
+tweaks.skyward = "sky";
+tweaks.slacken = "slack";
+tweaks.slain = "slay";
+tweaks.slaughterhous = "slaught";
+tweaks.slaver = "slave";
+tweaks.slavish = "slave";
+tweaks.slept = "sleep";
+tweaks.slipp = "slip";
+tweaks.smel = "smell";
+tweaks.smit = "smite";
+tweaks.smitten = "smite";
+tweaks.smote = "smite";
+tweaks.snakelik = "snake";
+tweaks.snuf = "snuff";
+tweaks.sobriet = "sober";
+tweaks.soften = "soft";
+tweaks.sold = "sell";
+tweaks.solidif = "solid";
+tweaks.solitud = "solitar";
+tweaks.soloist = "solo";
+tweaks.solubl = "solv";
+tweaks.solut = "solv";
+tweaks.songst = "song";
+tweaks.sought = "seek";
+tweaks.southern = "south";
+tweaks.southernmost = "south";
+tweaks.southward = "south";
+tweaks.sovereignt = "sovereign";
+tweaks.sown = "sow";
+tweaks.spacious = "space";
+tweaks.spake = "speak";
+tweaks.spasmod = "spasm";
+tweaks.sped = "speed";
+tweaks.spel = "spell";
+tweaks.spent = "spend";
+tweaks.spheric = "sphere";
+tweaks.spil = "spill";
+tweaks.spilt = "spill";
+tweaks.spinal = "spine";
+tweaks.spat = "spit";
+tweaks.spoke = "speak";
+tweaks.spoken = "speak";
+tweaks.sponsorship = "sponsor";
+tweaks.sprang = "spring";
+tweaks.springtid = "spring";
+tweaks.springtim = "spring";
+tweaks.sprung = "spring";
+tweaks.staf = "staff";
+tweaks.stagnant = "stagnat";
+tweaks.staircas = "stair";
+tweaks.stairway = "stair";
+tweaks.stal = "stall";
+tweaks.starr = "star";
+tweaks.starvat = "starv";
+tweaks.stellar = "star";
+tweaks.stepmoth = "stepfath";
+tweaks.stewardship = "steward";
+tweaks.stiffen = "stiff";
+tweaks.stigmat = "stigma";
+tweaks.stil = "still";
+tweaks.stirr = "stir";
+tweaks.stoical = "stoic";
+tweaks.ston = "stone";
+tweaks.stonework = "stone";
+tweaks.stood = "stand";
+tweaks.stopp = "stop";
+tweaks.stoppag = "stop";
+tweaks.storag = "store";
+tweaks.stranglehold = "strangl";
+tweaks.strangul = "strangl";
+tweaks.stratagem = "strateg";
+tweaks.stratum = "strata";
+tweaks.strengthen = "strength";
+tweaks.strewn = "strew";
+tweaks.striv = "strive";
+tweaks.striven = "strive";
+tweaks.strode = "stride";
+tweaks.strol = "stroll";
+tweaks.strove = "strive";
+tweaks.struck = "strike";
+tweaks.strung = "string";
+tweaks.student = "studi";
+tweaks.studious = "studi";
+tweaks.stuf = "stuff";
+tweaks.stung = "sting";
+tweaks.stupefact = "stupef";
+tweaks.subcontinent = "subcontin";
+tweaks.subdivis = "subdivid";
+tweaks.subscript = "subscrib";
+tweaks.subterranean = "subterren";
+tweaks.subtil = "subtl";
+tweaks.subtlet = "subtl";
+tweaks.suburban = "suburb";
+tweaks.subvers = "subvert";
+tweaks.successorship = "successor";
+tweaks.suffragist = "suffrag";
+tweaks.suitabl = "suit";
+tweaks.sullen = "sulk";
+tweaks.summertim = "summ";
+tweaks.summons = "summon";
+tweaks.sung = "sing";
+tweaks.sunk = "sink";
+tweaks.superbl = "superb";
+tweaks.supererogator = "supererog";
+tweaks.supersedur = "supersed";
+tweaks.supervis = "superv";
+tweaks.supervisor = "superv";
+tweaks.supplementar = "supplement";
+tweaks.supposit = "suppos";
+tweaks.supremat = "suprem";
+tweaks.surer = "sure";
+tweaks.suret = "sure";
+tweaks.survivor = "surviv";
+tweaks.suspens = "suspend";
+tweaks.suspicion = "suspic";
+tweaks.susten = "sustain";
+tweaks.sware = "swear";
+tweaks.sweeten = "sweet";
+tweaks.swel = "swell";
+tweaks.swept = "sweep";
+tweaks.swollen = "swell";
+tweaks.swordsman = "sword";
+tweaks.swore = "swear";
+tweaks.sworn = "swear";
+tweaks.swung = "swing";
+tweaks.sympathet = "sympath";
+tweaks.symposia = "symposium";
+tweaks.taken = "take";
+tweaks.taught = "teach";
+tweaks.teenag = "teen";
+tweaks.teeth = "tooth";
+tweaks.tel = "tell";
+tweaks.televis = "telev";
+tweaks.temperament = "tempera";
+tweaks.tempestu = "temp";
+tweaks.temptat = "tempt";
+tweaks.tension = "tens";
+tweaks.testamentar = "testament";
+tweaks.thanksgiv = "thank";
+tweaks.theatric = "theatr";
+tweaks.themat = "theme";
+tweaks.theologian = "theolog";
+tweaks.theorist = "theor";
+tweaks.theosophist = "theosoph";
+tweaks.these = "thes";
+tweaks.theft = "thief";
+tweaks.thiev = "thief";
+tweaks.thraldom = "thrall";
+tweaks.threaten = "threat";
+tweaks.threw = "throw";
+tweaks.thril = "thrill";
+tweaks.throve = "thrive";
+tweaks.thrown = "throw";
+tweaks.tidal = "tide";
+tweaks.tighten = "tight";
+tweaks.til = "till";
+tweaks.tillag = "till";
+tweaks.tiller = "till";
+tweaks.toilsom = "toil";
+tweaks.told = "tell";
+tweaks.tombston = "tomb";
+tweaks.took = "take";
+tweaks.topmost = "top";
+tweaks.tormentor = "torment";
+tweaks.torn = "tear";
+tweaks.torpor = "torpid";
+tweaks.tortuous = "tortur";
+tweaks.traceabl = "trace";
+tweaks.trad = "trade";
+tweaks.tradesman = "trade";
+tweaks.tradesmen = "trade";
+tweaks.traditionalist = "tradit";
+tweaks.traditionar = "tradit";
+tweaks.traged = "tragic";
+tweaks.traine = "train";
+tweaks.transcendent = "transcend";
+tweaks.transcript = "transcrib";
+tweaks.transgressor = "transgress";
+tweaks.transmigrationist = "transmigr";
+tweaks.transmitt = "transmit";
+tweaks.trellis = "trel";
+tweaks.triangular = "triangl";
+tweaks.tribal = "tribe";
+tweaks.tribesman = "tribe";
+tweaks.tributar = "tribut";
+tweaks.triumphal = "triumph";
+tweaks.triumphant = "triumph";
+tweaks.trod = "tread";
+tweaks.trodden = "tread";
+tweaks.troublemak = "troubl";
+tweaks.troublesom = "troubl";
+tweaks.troublous = "troubl";
+tweaks.trusteeship = "truste";
+tweaks.tumultu = "tumult";
+tweaks.tumultuar = "tumult";
+tweaks.tutorship = "tuition";
+tweaks.tyrann = "tyrant";
+tweaks.unbeliev = "unbelief";
+tweaks.unbroken = "unbreak";
+tweaks.uncertaint = "uncertain";
+tweaks.unchasten = "unchast";
+tweaks.undefeat = "undef";
+tweaks.undergon = "undergo";
+tweaks.understood = "understand";
+tweaks.undertaken = "undertak";
+tweaks.undertook = "undertak";
+tweaks.underw = "undergo";
+tweaks.undon = "undo";
+tweaks.undreamt = "undream";
+tweaks.unforeseen = "unforese";
+tweaks.unknown = "unknow";
+tweaks.unloosen = "unloos";
+tweaks.unmanifest = "unmanif";
+tweaks.unprepared = "unprepar";
+tweaks.unprovoc = "unprovok";
+tweaks.unrealist = "unreal";
+tweaks.unsatisfactor = "unsatisf";
+tweaks.unseeabl = "unse";
+tweaks.unseen = "unse";
+tweaks.unshaken = "unshak";
+tweaks.untruth = "untru";
+tweaks.unwilling = "unwil";
+tweaks.unwisdom = "unwis";
+tweaks.upheld = "uphold";
+tweaks.uppermost = "upp";
+tweaks.utopian = "utopia";
+tweaks.vacant = "vacat";
+tweaks.vainglor = "vain";
+tweaks.valor = "valour";
+tweaks.valuabl = "valu";
+tweaks.vanit = "vain";
+tweaks.var = "vari";
+tweaks.vengeant = "veng";
+tweaks.verdur = "verdant";
+tweaks.vexat = "vex";
+tweaks.viabil = "viabl";
+tweaks.vicarship = "vicar";
+tweaks.victimhood = "victim";
+tweaks.victor = "victori";
+tweaks.viewpoint = "view";
+tweaks.vigor = "vigour";
+tweaks.vil = "vile";
+tweaks.vineyard = "vine";
+tweaks.viol = "violin";
+tweaks.violinist = "violin";
+tweaks.virtuous = "virtu";
+tweaks.visitor = "visit";
+tweaks.voluntar = "volunt";
+tweaks.vot = "vote";
+tweaks.waken = "wake";
+tweaks.wal = "wall";
+tweaks.warcraft = "war";
+tweaks.warfar = "war";
+tweaks.warlik = "war";
+tweaks.warlord = "war";
+tweaks.warmong = "war";
+tweaks.warmth = "warm";
+tweaks.warrior = "war";
+tweaks.watchmen = "watchman";
+tweaks.weaken = "weak";
+tweaks.weakl = "weak";
+tweaks.weaponr = "weapon";
+tweaks.wearisom = "weari";
+tweaks.wedlock = "wed";
+tweaks.wept = "weep";
+tweaks.western = "west";
+tweaks.westernmost = "west";
+tweaks.westward = "west";
+tweaks.whiten = "white";
+tweaks.whol = "whole";
+tweaks.wholehearted = "wholeheart";
+tweaks.wid = "wide";
+tweaks.width = "wide";
+tweaks.wintertim = "wint";
+tweaks.wintr = "wint";
+tweaks.wis = "wise";
+tweaks.wisdom = "wise";
+tweaks.withdrawn = "withdraw";
+tweaks.withdrew = "withdraw";
+tweaks.withheld = "withhold";
+tweaks.withstood = "withstand";
+tweaks.witt = "wit";
+tweaks.wive = "wife";
+tweaks.woeful = "woe";
+tweaks.woke = "wake";
+tweaks.wolv = "wolf";
+tweaks.womanhood = "woman";
+tweaks.womankind = "woman";
+tweaks.women = "woman";
+tweaks.womenfolk = "woman";
+tweaks.wondrous = "wond";
+tweaks.wooden = "wood";
+tweaks.woodland = "wood";
+tweaks.wore = "wear";
+tweaks.workabl = "work";
+tweaks.workingmen = "workman";
+tweaks.workmen = "workman";
+tweaks.worriment = "worr";
+tweaks.worsen = "wors";
+tweaks.worshipp = "worship";
+tweaks.worst = "wors";
+tweaks.wreckag = "wreck";
+tweaks.wretched = "wretch";
+tweaks.writer = "write";
+tweaks.written = "write";
+tweaks.wrongdo = "wrong";
+tweaks.wrote = "write";
+tweaks.youngst = "young";
+tweaks.zonal = "zone";
 
 const ierReg = /ier$/;
 const eriReg = /eri$/;
@@ -1292,7 +1807,7 @@ const erReg = /er$/;
 const iReg = /i$/;
 
 const nameFarsiExceptions = [
-  "gilded",
+  "alas",
   "america",
   "american",
   "abandon",
@@ -1369,6 +1884,11 @@ const nameFarsiExceptions = [
   "footstool",
   "gainsay",
   "gentleman",
+  "ghastly",
+  "ghost",
+  "ghoulishly",
+  "gilded",
+  "gill",
   "governor",
   "graveyard",
   "guardian",
@@ -1389,6 +1909,7 @@ const nameFarsiExceptions = [
   "humanitarian",
   "imperil",
   "inertia",
+  "insignia",
   "insofar",
   "invalid",
   "journal",
@@ -1420,6 +1941,8 @@ const nameFarsiExceptions = [
   "mustard",
   "naphtha",
   "newtonian",
+  "niche",
+  "nicknames",
   "nobleman",
   "nonsectarian",
   "nucleus",
@@ -1428,6 +1951,7 @@ const nameFarsiExceptions = [
   "paradigm",
   "paragon",
   "parallel",
+  "partridge",
   "passport",
   "peacock",
   "peninsula",
@@ -1448,6 +1972,7 @@ const nameFarsiExceptions = [
   "remould",
   "replica",
   "republican",
+  "salient",
   "sandbank",
   "sarcophagus",
   "satchel",
@@ -1618,6 +2143,7 @@ const nameFarsiExceptions = [
   "itself",
 ];
 const nameFarsiInclude = [
+  "aba",
   "abidin",
   "abjad",
   "acca",
@@ -1759,6 +2285,7 @@ const nameFarsiInclude = [
   "canoa",
   "canterbur",
   "cape",
+  "capr",
   "carina",
   "cathay",
   "catherin",
@@ -2238,6 +2765,7 @@ const nameFarsiInclude = [
   "rhine",
   "rio",
   "roan",
+  "robert",
   "rochest",
   "rog",
   "rolf",
@@ -2260,6 +2788,7 @@ const nameFarsiInclude = [
   "saigon",
   "salvan",
   "salvar",
+  "samovar",
   "sampa",
   "sapel",
   "sar",
@@ -2269,23 +2798,29 @@ const nameFarsiInclude = [
   "scala",
   "scandinavian",
   "schecht",
+  "schopfloch",
   "sedan",
   "seir",
   "sen",
   "seoul",
+  "serampor",
+  "serpentin",
   "seth",
   "sevill",
   "sewel",
   "shaban",
   "shadid",
   "shaf",
+  "shakespear",
   "shams",
+  "sharpl",
   "shatir",
   "shavird",
   "sheba",
   "sheikh",
   "shem",
   "shens",
+  "sherbrook",
   "sherril",
   "shirin",
   "shoa",
@@ -2298,6 +2833,7 @@ const nameFarsiInclude = [
   "siloam",
   "simeon",
   "simin",
+  "simnan",
   "simon",
   "sistan",
   "siva",
@@ -2307,6 +2843,7 @@ const nameFarsiInclude = [
   "soe",
   "sohrab",
   "solano",
+  "solomon",
   "somaj",
   "sophia",
   "sorabje",
@@ -2347,6 +2884,7 @@ const nameFarsiInclude = [
   "tehna",
   "telegu",
   "tennesse",
+  "teresa",
   "texa",
   "than",
   "thelma",
@@ -2384,7 +2922,10 @@ const nameFarsiInclude = [
   "tyre",
   "ubay",
   "unep",
+  "unesco",
   "ungava",
+  "unicef",
+  "unifem",
   "uno",
   "unwin",
   "urbana",
@@ -2396,6 +2937,7 @@ const nameFarsiInclude = [
   "vaino",
   "val",
   "valentin",
+  "valids",
   "valiy",
   "varqa",
   "vera",
@@ -2423,9 +2965,10 @@ const nameFarsiInclude = [
   "westminst",
   "whyte",
   "wight",
+  "wilberforc",
   "william",
   "wilson",
-  "winckler",
+  "winckl",
   "windust",
   "witzel",
   "woodrow",
@@ -2438,7 +2981,7 @@ const nameFarsiEnd =
   /(ship|hood|less|ress|st|en|way|th|aid|ft|et|sm|tus|ix|ox|ct|ic|ead|ney|um|op|lf|rn|ous|our|nt|ear|oar|ght|old|ind|ward|pt|rew|iew|er|ound|sman|woman|rman|hand|tood|lk|ork|eon|eof|oof|word|lord|uch|ach|lar|ook|rior|day|om|out|tor|ild|era|up|ion|aph|ish|end|it|human|ugh|ain|rgo|iar|gn|row|del|rel|ial|ess)$/;
 
 const nameFarsiReg =
-  /(^(aa|aba[^nst]?|abb|abdu([^c]|$)|abe[^ry]|abha|abi([^dl]|$)|abra|abu([^ns]|$)|abv|adh[^e]|ad[il]|adl|af[cgnsu]|agu|ah[dmrs]|ain|aju|ak[bhkr]|ala([^bcr]|$)|alb[au]|ale[ux]|ali([ajmqy])|alma|alu|ama([^nsz]|$)|amh|ami[nr]|amm[^u]|amr|amu([^s]|$)|an[dhku]|ane[^cw]|angu[^i]|aq[^u]|ara[^b]|arba|ard[ai]|ar[nuy]|arge|arka|arme|art[ahu]|as[abdgmnr]|ashik|ashr|asi[my]|ata|avam|avv|aws|ay[admny]|az|baa|bab([^ey]|$)|bad[aikr]|bag[dhu]|bah|baj|bak[hru]|bala([^n]|$)|bal[bfkty]|ban[gj]|baq|bar[af]|barb[ou]|bas[hqr]|basi[rt]|bay[^o]|be[bi]|belg|ben[gs]|ber[ln]|bh|bi[hjk]|blum|bog[do]|bolsh|bona[ip]|bop|bos[cnt]|bra[dhz]|brit|brun[eo]|bry|bu[jk]|buch|buda|bulg|bur[muy]|bvp|bwn|byz|cai|calif|calv|cam[bo]|cana[^lr]|capr|car[lm]|carne|carol|cauc|ca[xy]|cha[dh]|chal(d|$)|charl|che[lnsy]|chil[eo]|chin[ae]|chi[rt]|christo|cid|cinc|cisk|congo|constantin|copen|copt|cor[bi]|coz|cte|cuba|cz|da[hjk]|dag[am]|dal[al]|dan[ai]|dar([aimvw]|$)|dav|daw[lsu]|deut|dey|dh|di[hyz]|dipc|dirh|d[jn]|dolg|doro|dru[sz]|dukh|ed[now]|efi|egy|eht|ei[dns]|ekp|elb|eli[ajz]|ell|emil|epy|eri|es[hkw]|esper|essl|esthl|ett|eus|fad[il]|fakh|fara[^w]|far[hiuvz]|farma|fatim|fay|ferr[ae]|fez|fid[ar]|fi[jz]|finn|fir[adu]|foz|franc|french|fuq|furu|ga[bw]|gan[dj]|germa|get[hs]|gey|gh|gi[lot]|goh|gree[ck]|gua[dmy]|guin|guj|gul[^f]|gu[rw]|gwa|gya|haa|had[^s]|hai[fnt]|ha[jk]|hama|hamid|han[intz]|haq|hara[kmnt]|har[il]|has[ah]|hatz|haw[ad]|hay|he[bz]|hel[es]|hen[ru]|hi[jk]|hippo|hir[ai]|his[ahp]|ho[hk]|hon([adg]|$)|hoop|hor([ae]|$)|hos[aes]|how[ad]|hrh|hu[djpqvx]|hur[mu]|hungar|husa|iaq|ib|ich|ihd|iel|ifn|ift|ijt|il[^l]|ima[^g]|im[orst]|india|iqa|ira[jnq]|ir[bis]|is[^los]|ith|itim|it[astz]|iv[ade]|i[yz]|ja[bdfhklmpz]|jan([^u]|$)|jav[^e]|je[ehr]|jha|jin|jo[aehnrsw]|ju[ak]|jud([ae]|$)|jul[^y]|jumi|juna|juv|k[ahoruvy]|ke[^epry].|ki[aigry]|kili|kina|kish|kit[acht]|la[ho]|lat[av]|lawh|lenin|ler|lim[aj]|lis[bi]|lj|ll|lou([hi]|$)|lu[abiq]|lud[ow]|lut[^e]|lyc|ma[ab]|mac([ak]|$)|madr|mada[dn]|ma[hoqz]|mago|maj[^eo]|mak[ak]|mala[bcgwy]|mali[hk]|mal[ku]|malt[ae]|mama|manch|mani[kl]|mans[hou]|mar[adjqwxy]|mari([ao]|$)|martin|mas[^ckoqst]|maw.|may[ad]|mba|mc|me[hxy]|mic[ah]|mid[hi]|mih|mil[anw]|mirz|mith[aq]|miy|mna|mo[fghz]|mu[abefhijkqv]|mud[ai]|mul[bclu]|mun[atz]|munir|mur[^dkm]|mus[ahsu]|musta[^r]|muta[^t]|mutis|mutta|mwi|mz|na[bdghjqwz]|nai[^lv]|nak[hu]|nama|nami[bq]|nara|nas[ir]|nay.|ne[hl]|ni[ackrstuyz]|nudb|nu[kqs]|nya|ol[oy]|oma|osb|ot[at]|ou[al]|pa[hko]|parv|pah[ah]|pan[cjk]|pars|pash|paul|payr|paz|pem|pey|phili|phn|pi[adru]|plato|poh|port[suv]|pto|pui|pun[jot]|q[ai]|qu[cdlmr]|ra[bhjkqsu]|raf[^f]|ram[alo]|raw.|re[xy]|rh[ao]|ri[akz]|ric[ao]|rid[av]|ris[as]|rls|rob[ae]|rod[dr]|roman([^t]|$)|ru[hqyz]|rum[^bo]|russ|r[wy]|sa[ah]|sab[^l]|sad[hru]|saf[afw]|said.|sak[^e]|sala[adhmstv]|sal[ijlms]|sam([^ep]|$)|san([ajt]|$)|sanka|sao|sar[^c]|sas[^h]|say[fy]|saz|scot|seat.|sen[eo]|serb|se[yz]|sha[hnwy]|shar[ahio]|shi[abdi]|shim[^m]|shira|shu[hy]|sid[^e]|si[jky]|sin[ad]|sing[ah]|sir[aju]|slav([^ei]|$)|spanish|spit[sz]|subh|sudan|suf[iy]|su[hk]|sul[^klpt]|sunn|su[qtvz]|sur[aci]|syr|tab[ar]|tabli|ta[fghjqyz]|tak[uy]|tan[nu]|tara|tas[hlm]|taw[fh]|tbi|te[gt]|tem[iu]|tha([bcm]|$)|thom|ti[bfh]|tir[ai]|ts|tuma|tu[qsv]|tur[aciks]|u[dk]|ug[ao]|ula|um[amt]|up[aeo]|ur[dsuv]|uth|uz|va[fhkmtvz]|van[cn]|varaq|vas[hu]|vel[lm]|vien|viz|vla|volt|vu[ty]|wa[dq]|wem|wilm|wlg|wur|wyo|ya[^r]|yar([^d]|$)|ye[mr]|yi[^e]|yos|yu|z[^eo]|ze[cin]|zo[gr])|(anih|llah))/;
+  /(^(aa|aba[^nst]|abb|abdu([^c]|$)|abe[^ry]|abha|abi([^dl]|$)|abra|abu([^ns]|$)|abv|adh[^e]|ad[il]|adl|af[cgnsu]|agu|ah[dmrs]|ain|aju|ak[bhkr]|ala([^bcr]|$)|alb[au]|ale[ux]|ali([ajmqy])|alma|alu|ama([^nsz]|$)|amh|ami[nr]|amm[^u]|amr|amu([^s]|$)|an[dhku]|ane[^cw]|angu[^i]|aq[^u]|ara[^b]|arba|ard[ai]|ar[nuy]|arge|arka|arme|art[ahu]|as[abdgmnr]|ashik|ashr|asi[my]|ata|avam|avv|aws|ay[admny]|az|baa|bab([^ey]|$)|bad[aikr]|bag[dhu]|bah|baj|bak[hru]|bala([^n]|$)|bal[bfkty]|ban[gj]|baq|bar[af]|barb[ou]|bas[hqr]|basi[rt]|bay[^o]|be[bi]|belg|ben[gs]|ber[ln]|bh|bi[hjk]|blum|bog[do]|bolsh|bona[ip]|bop|bos[cnt]|bra[dhz]|brit|brun[eo]|bry|bu[jk]|buch|buda|bulg|bur[muy]|bvp|bwn|byz|cai|calif|calv|cam[bo]|cana[^lr]|car[lm]|carne|carol|cauc|ca[xy]|cha[dh]|chal(d|$)|charl|che[lnsy]|chil[eo]|chin[ae]|chi[rt]|christo|cid|cinc|cisk|congo|constantin|copen|copt|cor[bi]|coz|cte|cuba|cz|da[hjk]|dag[am]|dal[al]|dan[ai]|dar([aimvw]|$)|dav|daw[lsu]|deut|dey|dh|di[hyz]|dipc|dirh|d[jn]|dolg|doro|dru[sz]|dukh|ed[now]|efi|egy|eht|ei[dns]|ekp|elb|eli[ajz]|ell|emil|epy|eri|es[hkw]|esper|essl|esthl|ett|eus|fad[il]|fakh|fara[^w]|far[hiuvz]|farma|fatim|fay|ferr[ae]|fez|fid[ar]|fi[jz]|finn|fir[adu]|foz|franc|french|fuq|furu|ga[bw]|gan[dj]|germa|get[hs]|gey|gh|gi[lot]|goh|gree[ck]|gua[dmy]|guin|guj|gul[^f]|gu[rw]|gwa|gya|haa|had[^s]|hai[fnt]|ha[jk]|hama|hamid|han[intz]|haq|hara[kmnt]|har[il]|has[ah]|hatz|haw[ad]|hay|he[bz]|hel[es]|hen[ru]|hi[jk]|hippo|hir[ai]|his[ahp]|ho[hk]|hon([adg]|$)|hoop|hor([ae]|$)|hos[aes]|how[ad]|hrh|hu[djpqvx]|hur[mu]|hungar|husa|iaq|ib|ich|ihd|iel|ifn|ift|ijt|il[^l]|ima[^g]|im[orst]|india|iqa|ira[jnq]|ir[bis]|is[^los]|ith|itim|it[astz]|iv[ade]|i[yz]|ja[bdfhklmpz]|jan([^u]|$)|jav[^e]|je[ehr]|jha|jin|jo[aehnrsw]|ju[ak]|jud([ae]|$)|jul[^y]|jumi|juna|juv|k[ahoruvy]|ke[^epry].|ki[aigry]|kili|kina|kish|kit[acht]|la[ho]|lat[av]|lawh|lenin|ler|lim[aj]|lis[bi]|lj|ll|lou([hi]|$)|lu[abiq]|lud[ow]|lut[^e]|lyc|ma[ab]|mac([ak]|$)|madr|mada[dn]|ma[hoqz]|mago|maj[^eo]|mak[ak]|mala[bcgwy]|mali[hk]|mal[ku]|malt[ae]|mama|manch|mani[kl]|mans[hou]|mar[adjqwxy]|mari([ao]|$)|martin|mas[^ckoqst]|maw.|may[ad]|mba|mc|me[hxy]|mic[ah]|mid[hi]|mih|mil[anw]|mirz|mith[aq]|miy|mna|mo[fghz]|mu[abefhijkqv]|mud[ai]|mul[bclu]|mun[atz]|munir|mur[^dkm]|mus[ahsu]|musta[^r]|muta[^t]|mutis|mutta|mwi|mz|na[bdghjqwz]|nai[^lv]|nak[hu]|nama|nami[bq]|nara|nas[ir]|nay.|ne[hl]|ni[ackrstuyz]|nudb|nu[kqs]|nya|ol[oy]|oma|osb|ot[at]|ou[al]|pa[hko]|parv|pah[ah]|pan[cjk]|pars|pash|paul|payr|paz|pem|pey|phili|phn|pi[adru]|plato|poh|port[suv]|pto|pui|pun[jot]|q[ai]|qu[cdlmr]|ra[bhjkqu]|raf[^f]|ram[alo]|ras[^h]|rash[hit]|raw.|re[xy]|rh[ao]|ri[akz]|ric[ao]|rid[av]|ris[as]|rls|roba|rod[dr]|roman([^t]|$)|ru[hqyz]|rum[^bo]|russ|r[wy]|sa[ah]|sab[^l]|sad[hru]|saf[afw]|said.|sak[^e]|sala[adhmstv]|sal[ijlms]|sam([^ep]|$)|san([ajt]|$)|sanka|sao|sar[^c]|sas[^h]|say[fy]|saz|scot|seat.|sen[eo]|serb|se[yz]|sha[hnwy]|shar[ahio]|shi[abdi]|shim[^m]|shira|shu[hy]|sid[^e]|si[jky]|sin[ad]|sing[ah]|sir[aju]|slav([^ei]|$)|spanish|spit[sz]|subh|sudan|suf[iy]|su[hk]|sul[^klpt]|sunn|su[qtvz]|sur[aci]|syr|tab[ar]|tabli|ta[fghjqyz]|tak[uy]|tan[nu]|tara|tas[hlm]|taw[fh]|tbi|te[gt]|tem[iu]|tha([bcm]|$)|thom|ti[bfh]|tir[ai]|ts|tuma|tu[qsv]|tur[aciks]|u[dk]|ug[ao]|ula|um[amt]|up[aeo]|ur[dsuv]|uth|uz|va[fhkmtvz]|van[cn]|varaq|vas[hu]|vel[lm]|vien|viz|vla|volt|vu[ty]|wa[dq]|wem|wilm|wlg|wur|wyo|ya[^r]|yar([^d]|$)|ye[mr]|yi[^e]|yos|yu|z[^eo]|ze[cin]|zo[gr])|(anih|llah))/;
 
 const isException = (word, stem) =>
   ((word === stem &&
@@ -2447,7 +2990,7 @@ const isException = (word, stem) =>
     !nameFarsiEnd.test(stem)) ||
     nameFarsiReg.test(stem) ||
     nameFarsiInclude.includes(stem)) &&
-  !nameFarsiExceptions.includes(stem);
+  !nameFarsiExceptions.includes(word);
 
 const ierEndings = [
   "denier",
@@ -2962,6 +3505,48 @@ var stem = function (word) {
     if (word.startsWith("protestant")) return "protestant";
     if (word.startsWith("publication")) return "publication";
     if (word.startsWith("publicis")) return "publicis";
+    if (word.startsWith("receptiv")) return "receptiv";
+    if (word.startsWith("regale")) return "regale";
+    if (word.startsWith("relatives")) return "relatives";
+    if (word.startsWith("relative")) return "relative";
+    if (word.startsWith("relativi")) return "relativi";
+    if (word.startsWith("reputa")) return "reputa";
+    if (word.startsWith("reservation")) return "reservation";
+    if (word.startsWith("responsiv")) return "responsiv";
+    if (word.startsWith("responsib")) return "responsib";
+    if (word.startsWith("revelat")) return "revelat";
+    if (word.startsWith("revolution")) return "revolution";
+    if (word.startsWith("sensibilit")) return "sensibilit";
+    if (word.startsWith("several")) return "several";
+    if (word.startsWith("severit")) return "severe";
+    if (word.startsWith("severeth")) return "sever";
+    if (word.startsWith("severed")) return "sever";
+    if (word.startsWith("severe")) return "severe";
+    if (word.startsWith("sever")) return "sever";
+    if (word.startsWith("situation")) return "situation";
+    if (word.startsWith("socialis")) return "socialis";
+    if (word.startsWith("specialis")) return "specialis";
+    if (word.startsWith("spokes")) return "spokes";
+    if (word.startsWith("statesm")) return "statesm";
+    if (word.startsWith("steamer")) return "steamship";
+    if (word.startsWith("subjectiv")) return "subjectiv";
+    if (word.startsWith("subsidis")) return "subsidis";
+    if (word.startsWith("successiv")) return "successiv";
+    if (word.startsWith("successi")) return "successor";
+    if (word.startsWith("tearful")) return "tearful";
+    if (word.startsWith("transition")) return "transition";
+    if (word.startsWith("universit")) return "universit";
+    if (word.startsWith("universal")) return "universal";
+    if (word.startsWith("unlikel")) return "unlikel";
+    if (word.startsWith("vacation")) return "vacation";
+    if (word.startsWith("vari")) return "vari";
+    if (word.startsWith("westernis")) return "westernis";
+    if (word.startsWith("wicked")) return "wicked";
+    if (word.startsWith("wonderful")) return "wonderful";
+    if (word.startsWith("wondere")) return "wondere";
+    if (word.startsWith("worldl")) return "worldl";
+    if (word.startsWith("zealand")) return "*zealand";
+    if (word.startsWith("zeal")) return "zeal";
   }
 
   str = prelude(str);
