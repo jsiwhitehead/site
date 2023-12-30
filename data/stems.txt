@@ -3718,7 +3718,7 @@ RXTL: irshadul
 
 RXTLFM: irshadul‑avam
 
-S: ahsa, ahsai, asiyih, azali, azalis, esau, hasa, hosea, isa, isaiah, osed, sao, sayyah, seyyed, sighih, siyah, soe, usa, zia
+S: ahsa, ahsai, asiyih, azali, azalis, esau, hasa, hosea, isa, isaiah, osed, sao, sayyah, seyyed, sighih, siyah, soe, usa, wise, zia
 
 S0MS|STMS: isthmus
 
@@ -5738,8 +5738,6 @@ allwis: all‑wise
 
 alm: alms
 
-almight: almighty
-
 almond: almonds
 
 almost: almost
@@ -6259,6 +6257,8 @@ artific: artifice, artificer, artificial, artificially
 artill: artillery
 
 artisan: artisan, artisans
+
+artt: art
 
 ascend: ascend, ascendancy, ascendant, ascended, ascendeth, ascending, ascends, ascension, ascent
 
@@ -8112,7 +8112,7 @@ citydwel: city‑dwellers
 
 cityst: city‑state
 
-civil: civilise, civilised, civiliser, civilising, civility
+civil: civil, civilise, civilised, civiliser, civilising, civility
 
 civilian: civilians
 
@@ -11768,6 +11768,8 @@ faith: faith, faithful, faithfully, faithfulness, faiths
 
 faithless: faithless, faithlessly, faithlessness
 
+faithrel: faith
+
 falcon: falcon, falcons
 
 fall: fall, fallen, falleth, falling, falls, fell
@@ -15400,6 +15402,8 @@ item: item, items
 
 itin: itinerant
 
+ivb: ivb
+
 ivor: ivory
 
 jackal: jackals
@@ -15508,7 +15512,7 @@ jurist: jurist, jurists
 
 jus: just
 
-just: justice, justly, justness
+just: just, justice, justly, justness
 
 justiceseek: justice‑seeking
 
@@ -15544,13 +15548,15 @@ kilometr: kilometres
 
 kin: kin, kindred, kindreds, kinfolk, kinsfolk, kinship, kinships, kinsman, kinsmen, kinswoman
 
-kind: kind, kinder, kindliest, kindliness, kindly, kindness, kindnesses, kinds
+kind: kind, kinder, kindliest, kindliness, kindly, kindness, kindnesses
 
 kindergarten: kindergartens
 
 kindl: kindle, kindled, kindles, kindleth, kindling
 
 kindlydispos: kindly‑disposed
+
+kinds: kind, kinds
 
 king: king, kingly, kings, kingship
 
@@ -16084,7 +16090,7 @@ loit: loiterers
 
 lone: lone, loneliness, lonely, lonesome
 
-long: long, longed, longer, longest, longeth, longing, longingly, longings, longs, long‑
+long: long, longed, longest, longeth, longing, longingly, longings, longs, long‑
 
 longabus: long‑abused
 
@@ -16117,6 +16123,8 @@ longdream: long‑dreamed
 longedfor: longed‑for
 
 longendur: long‑enduring
+
+longer: long, longer
 
 longerterm: longer‑term
 
@@ -16804,7 +16812,9 @@ midwif: midwife
 
 midwint: midwinter
 
-might: might, mightest, mightier, mightiest, mightily, mighty
+migh: might
+
+might: almighty, might, mightest, mightier, mightiest, mightily, mighty
 
 migrat: migrate, migrated, migration, migrations
 
@@ -18132,11 +18142,15 @@ orchard: orchard, orchards
 
 orchestr: orchestrated
 
-ord: order, ordered, ordereth, ordering, orderliness, orderly, orders
+ord: order, ordered, ordereth, ordering, orderliness, orderly
 
 ordain: ordain, ordained, ordainer, ordainest, ordaineth, ordaining, ordains
 
 ordeal: ordeal, ordeals
+
+order: order
+
+orders: order, ordered, ordering, orders
 
 ordin: ordinance, ordinances, ordination
 
@@ -20844,6 +20858,8 @@ restiv: restive
 
 restless: restless, restlessly, restlessness
 
+restlie: rest
+
 restor: restoration, restorative, restore, restored, restorer, restoreth, restoring
 
 restrain: restrain, restrained, restrainer, restraineth, restraining, restrains, restraint, restraints
@@ -20851,6 +20867,8 @@ restrain: restrain, restrained, restrainer, restraineth, restraining, restrains,
 restrict: restrict, restricted, restricting, restriction, restrictions, restrictive, restricts
 
 restructur: restructured, restructuring
+
+restt: rest
 
 restud: restudy
 
@@ -22208,7 +22226,7 @@ sine: sine
 
 sinew: sinew, sinews
 
-sing: sang, sing, singer, singers, singeth, singing, sings, sung
+sing: sang, sing, singer, singers, singeth, singing, sings, song, songs, songster, songsters, sung
 
 singl: single, singled, singleness, singles, singleth, singling, singly, singular, singularly
 
@@ -22551,8 +22569,6 @@ somewh: somewhere
 somewhat: somewhat
 
 son: son, sons
-
-song: song, songs, songster, songsters
 
 songbird: songbird, songbirds
 
@@ -24228,7 +24244,7 @@ till: till, tillage, tilled, tillers, tilling
 
 timbrel: timbrel
 
-time: time, timed, timeliness, timely, times, time‑, timing
+time: time, timed, times, time‑, timing
 
 timehonour: time‑honoured
 
@@ -24237,6 +24253,8 @@ timeless: timeless
 timelimit: time‑limit
 
 timelin: timeline
+
+timely: timeliness, timely
 
 timespan: time‑span
 
@@ -26036,7 +26054,9 @@ utmost: utmost
 
 utopia: utopia, utopian
 
-utt: utter, utterance, utterances, uttered, utterest, uttereth, uttering, utterly, utters
+utt: utter, utterance, utterances, uttered, utterest, uttereth, uttering, utters
+
+utterly: utter, utterly
 
 uttermost: uttermost
 
@@ -26864,11 +26884,11 @@ wildlif: wildlife
 
 wile: wiles
 
-will: willfulness, wills
+will: will, willfulness, willpower, wills, will‑power
 
 willing: willingness
 
-willpow: willpower, will‑power
+willl: will
 
 wilt: wilt
 
@@ -26913,6 +26933,8 @@ wire: wire, wired, wires
 wireless: wireless
 
 wise: wisdom, wisdoms, wise, wisely, wiser, wisest
+
+wisee: wise
 
 wish: wish, wished, wisher, wishers, wishes, wishest, wisheth, wishing
 

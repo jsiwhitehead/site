@@ -1,6 +1,7 @@
 import { doubleMetaphone } from "double-metaphone";
 
 import getTokens from "../data/tokens";
+import stem from "../data/tokens/stem";
 import { getParagraphText } from "../data/utils";
 
 import initialDocs from "../data/initial.json";
@@ -34,15 +35,28 @@ const source = Object.keys(app).reduce((res, k) => {
 const highlightDoc = (doc, tokens) => {
   const texts = doc.paragraphs.map((para) => getParagraphText(para));
   const highlighted = texts.map((text) => {
-    const split = text.split(/([ —]+)/g).flatMap((t) => {
-      const highlight = tokens.includes(getTokens(t)[0]);
-      if (t.includes("‑") && !highlight) {
-        return t.split(/(‑)/g).map((x) => ({
-          text: x,
-          highlight: tokens.includes(getTokens(x)[0]),
-        }));
-      }
-      return [{ text: t, highlight }];
+    const phrases = text.split(/([.,;:!?](?=$|[^a-z]* [^a-z]*[a-z])|—)/gi);
+    const split = phrases.flatMap((phrase, i) => {
+      if (i % 2 === 1) return [{ text: phrase, highlight: false }];
+      const allParts = phrase.split(/([ ‑])/g);
+      const words = allParts.filter((_, j) => j % 2 === 0);
+      const joins = allParts.filter((_, j) => j % 2 === 1);
+      const cleaned = words.map((w) =>
+        w
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .normalize("NFC")
+          .replace(/[^ a-z0-9‑’']/gi, "")
+      );
+      const highlight = cleaned.map((c, j) =>
+        tokens.includes(
+          stem(c, cleaned.slice(0, j).reverse(), cleaned.slice(j + 1))
+        )
+      );
+      return words.flatMap((w, j) => [
+        { text: w, highlight: highlight[j] },
+        { text: joins[j] || "", highlight: false },
+      ]);
     });
     const res = [{ text: "" }];
     for (const s of split) {
@@ -66,7 +80,10 @@ const compiled = maraca(
     passages: (search, filter) => {
       clearTimeout(searchTimer);
 
-      const baseTokens = getTokens(search);
+      const baseTokens = search
+        .split(/ +/g)
+        .filter((x) => x)
+        .map((x) => getTokens(x)[0]);
 
       if (baseTokens.length === 0) {
         searchAtom.set(initialDocs.map((d) => highlightDoc(d, [])));

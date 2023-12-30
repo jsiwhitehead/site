@@ -1,3 +1,5 @@
+import separate from "./separate.js";
+
 // ## Regex Definitions
 
 // Regex definition of `double`.
@@ -195,7 +197,6 @@ exceptions1.imprecise = "imprecis";
 exceptions1.intimated = "intimation";
 exceptions1.intimates = "intimation";
 exceptions1.judicial = "judiciar";
-exceptions1.just = "jus";
 exceptions1.landed = "landed";
 exceptions1.landing = "landed";
 exceptions1.literate = "literar";
@@ -349,6 +350,12 @@ exceptions1.wast = "wast";
 exceptions1.woking = "*woking";
 exceptions1.wretches = "wretches";
 exceptions1.writings = "writings";
+exceptions1.timely = "timely";
+exceptions1.timeliness = "timely";
+exceptions1.utterly = "utterly";
+exceptions1.kinds = "kinds";
+exceptions1.longer = "longer";
+exceptions1.orders = "orders";
 // Tweaks!
 var tweaks = Object.create(null);
 tweaks.aggressor = "aggress";
@@ -399,6 +406,7 @@ tweaks.agreeabl = "agre";
 tweaks.agreement = "agre";
 tweaks.alliant = "al";
 tweaks.altruist = "altruism";
+tweaks.almight = "might";
 tweaks.ambassadress = "ambassador";
 tweaks.american = "america";
 tweaks.amiabl = "amic";
@@ -1512,7 +1520,8 @@ tweaks.solitud = "solitar";
 tweaks.soloist = "solo";
 tweaks.solubl = "solv";
 tweaks.solut = "solv";
-tweaks.songst = "song";
+tweaks.song = "sing";
+tweaks.songst = "sing";
 tweaks.sought = "seek";
 tweaks.southern = "south";
 tweaks.southernmost = "south";
@@ -1763,6 +1772,7 @@ tweaks.whol = "whole";
 tweaks.wholehearted = "wholeheart";
 tweaks.wid = "wide";
 tweaks.width = "wide";
+tweaks.willpow = "will";
 tweaks.wintertim = "wint";
 tweaks.wintr = "wint";
 tweaks.wis = "wise";
@@ -3401,11 +3411,18 @@ var step5 = function (s) {
  * stem( 'consisting' );
  * // -> consist
  */
-var stem = function (word) {
+var stem = function (w, prev, next) {
+  const word = w
+    .toLowerCase()
+    .replace(/[’']s\b/g, "")
+    .replace(/[’']/g, "");
   var str = word.toLowerCase().replace(/‑/g, "");
   if (str.length < 3) return str;
   if (exceptions1[str]) return exceptions1[str];
   if (!word.includes("‑")) {
+    const checkSeparate = separate(w, prev, next);
+    if (checkSeparate) return checkSeparate;
+
     if (word.startsWith("polite")) return "polite";
     if (word.startsWith("arrogat")) return "arrogat";
     if (word.startsWith("authoris")) return "authoris";
@@ -3617,7 +3634,7 @@ var stem = function (word) {
                   "de",
                   "at",
                 ].includes(p)) ||
-              stem(p)[0] === "*"
+              stem(p, [], [])[0] === "*"
           )
       : isException(word, str)
   ) {
