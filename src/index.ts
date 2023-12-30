@@ -1,11 +1,11 @@
 import { doubleMetaphone } from "double-metaphone";
 
 import getTokens from "../data/tokens";
-import stem from "../data/tokens/stem";
+import stem from "../data/stem";
 import { getParagraphText } from "../data/utils";
 
-import initialDocs from "../data/initial.json";
-import pairs from "../data/pairs.json";
+import initialDocs from "../data/json/initial.json";
+import pairs from "../data/json/pairs.json";
 
 import maraca, { atom, effect } from "./maraca";
 import render from "./render";
@@ -13,8 +13,8 @@ import { getSearchDocs } from "./documents";
 
 import "./style.css";
 
-const $data = import("../data/data.json");
-const $searchIndex = import("../data/search.json");
+const $data = import("../data/json/data.json");
+const $searchIndex = import("../data/json/search.json");
 
 const set = (obj, path, value) =>
   path.reduce(

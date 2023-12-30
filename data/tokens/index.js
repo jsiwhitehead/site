@@ -1,6 +1,4 @@
-import { doubleMetaphone } from "double-metaphone";
-
-import stem from "./stem.js";
+import stem from "../stem/index.js";
 import stopwords from "./stopwords.js";
 
 export default (text, onStem) => {
@@ -33,11 +31,6 @@ export default (text, onStem) => {
         .replace(/[’']/g, "");
       if (w.length <= 2 || stopwords.includes(w)) return [];
       const res = stem(word, words.slice(0, i).reverse(), words.slice(i + 1));
-      if (res[0] === "*") {
-        const m = [...new Set(doubleMetaphone(res))].join("|");
-        if (onStem) onStem(w, m);
-        return m;
-      }
       if (onStem) onStem(w, res);
       return res;
     });

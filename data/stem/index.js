@@ -1,3 +1,5 @@
+import { doubleMetaphone } from "double-metaphone";
+
 import separate from "./separate.js";
 
 // ## Regex Definitions
@@ -3411,12 +3413,12 @@ var step5 = function (s) {
  * stem( 'consisting' );
  * // -> consist
  */
-var stem = function (w, prev, next) {
+const stem = function (w, prev, next) {
   const word = w
     .toLowerCase()
     .replace(/[’']s\b/g, "")
     .replace(/[’']/g, "");
-  var str = word.toLowerCase().replace(/‑/g, "");
+  var str = word.replace(/‑/g, "");
   if (str.length < 3) return str;
   if (exceptions1[str]) return exceptions1[str];
   if (!word.includes("‑")) {
@@ -3644,5 +3646,7 @@ var stem = function (w, prev, next) {
   return str;
 }; // stem()
 
-// Export stem function.
-export default stem;
+export default (word, prev, next) => {
+  const s = stem(word, prev, next);
+  return s[0] === "*" ? [...new Set(doubleMetaphone(s))].join("|") : s;
+};

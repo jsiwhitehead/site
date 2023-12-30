@@ -3,7 +3,7 @@ import { promises as fs } from "fs";
 import getTokens from "./tokens/index.js";
 import { compileDoc, getDocByKey } from "./utils.js";
 
-import data from "./data.json" assert { type: "json" };
+import data from "./json/data.json" assert { type: "json" };
 
 const french = [
   /“C’est un des.*contempler,”/,
@@ -206,7 +206,7 @@ const stemKeys = Object.keys(fullStems);
 
 await Promise.all([
   fs.writeFile(
-    "./data/stems.txt",
+    "./data/stem/stems.txt",
     stemKeys
       .filter((k) => !k.includes("‑"))
       // .filter((k) => stemKeys.some((k2) => k2 === `${k}i`))
@@ -221,7 +221,7 @@ await Promise.all([
       .join("\n\n")
   ),
   fs.writeFile(
-    `./data/pairs.json`,
+    `./data/json/pairs.json`,
     JSON.stringify(
       Object.keys(topPairs)
         .sort()
@@ -240,7 +240,7 @@ await Promise.all([
     "utf-8"
   ),
   fs.writeFile(
-    `./data/data.json`,
+    `./data/json/data.json`,
     JSON.stringify(data)
       .normalize("NFD")
       .replace(/\u0323/g, "")
@@ -248,15 +248,23 @@ await Promise.all([
     "utf-8"
   ),
   fs.writeFile(
-    `./data/search.json`,
+    `./data/json/search.json`,
     JSON.stringify(searchIndexObject),
     "utf-8"
   ),
-  fs.writeFile(`./data/counts.json`, JSON.stringify(counts), "utf-8"),
-  fs.writeFile(`./data/factors.json`, JSON.stringify(itemFactors), "utf-8"),
-  fs.writeFile(`./data/lengths.json`, JSON.stringify(itemLengths), "utf-8"),
+  fs.writeFile(`./data/json/counts.json`, JSON.stringify(counts), "utf-8"),
   fs.writeFile(
-    `./data/initial.json`,
+    `./data/json/factors.json`,
+    JSON.stringify(itemFactors),
+    "utf-8"
+  ),
+  fs.writeFile(
+    `./data/json/lengths.json`,
+    JSON.stringify(itemLengths),
+    "utf-8"
+  ),
+  fs.writeFile(
+    `./data/json/initial.json`,
     JSON.stringify(
       citationsMap
         .map((c) => ({

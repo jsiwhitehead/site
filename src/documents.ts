@@ -1,8 +1,8 @@
 import { getDocByKey } from "../data/utils";
 
-import itemFactors from "../data/factors.json";
-import itemLengths from "../data/lengths.json";
-import tokenCounts from "../data/counts.json";
+import itemFactors from "../data/json/factors.json";
+import itemLengths from "../data/json/lengths.json";
+import tokenCounts from "../data/json/counts.json";
 
 const sum = (x) => x.reduce((res, a) => res + a, 0);
 
