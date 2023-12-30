@@ -3339,9 +3339,9 @@
       "score": 0.1708444241375271
     },
     {
-      "key": "wherea",
-      "word": "whereas",
-      "score": 0.16937687147353955
+      "key": "majest",
+      "word": "majesty",
+      "score": 0.1706640371965723
     }
   ],
   "admix": [
@@ -20415,9 +20415,9 @@
       "score": 0.1859627182121231
     },
     {
-      "key": "majest",
-      "word": "majesty",
-      "score": 0.1807753815155468
+      "key": "worth",
+      "word": "worth",
+      "score": 0.17852873707098071
     }
   ],
   "beset": [
@@ -36641,7 +36641,7 @@
     {
       "key": "majest",
       "word": "majesty",
-      "score": 0.17948472107862315
+      "score": 0.17783842673645195
     }
   ],
   "compass": [
@@ -42808,9 +42808,9 @@
       "score": 0.2220699630592816
     },
     {
-      "key": "majest",
-      "word": "majesty",
-      "score": 0.2172576308346215
+      "key": "minist",
+      "word": "minister",
+      "score": 0.2143924568648303
     }
   ],
   "courteous": [
@@ -57591,7 +57591,7 @@
     {
       "key": "majest",
       "word": "majesty",
-      "score": 0.23080027108556853
+      "score": 0.23743596805491474
     },
     {
       "key": "earth",
@@ -57793,9 +57793,9 @@
       "score": 0.19384467383902396
     },
     {
-      "key": "face",
-      "word": "face",
-      "score": 0.18819969800246025
+      "key": "majest",
+      "word": "majesty",
+      "score": 0.19202384316064214
     }
   ],
   "doorstep": [
@@ -65286,14 +65286,14 @@
       "score": 0.10878565864408424
     },
     {
+      "key": "majest",
+      "word": "majesty",
+      "score": 0.0854357657716761
+    },
+    {
       "key": "tide",
       "word": "tide",
       "score": 0.08471737420873576
-    },
-    {
-      "key": "allknow",
-      "word": "all‑knower",
-      "score": 0.08247860988423225
     }
   ],
   "enthus": [
@@ -66069,9 +66069,9 @@
       "score": 0.2
     },
     {
-      "key": "ago",
-      "word": "ago",
-      "score": 0.19513111567509991
+      "key": "majesty",
+      "word": "majesty",
+      "score": 0.19802950859533486
     }
   ],
   "epithet": [
@@ -87370,7 +87370,7 @@
     {
       "key": "majest",
       "word": "majesty",
-      "score": 0.2511236011669613
+      "score": 0.254867151585419
     },
     {
       "key": "tongu",
@@ -94710,14 +94710,14 @@
       "score": 0.1543033499620919
     },
     {
-      "key": "palac",
-      "word": "palace",
+      "key": "majesty",
+      "word": "majesty",
       "score": 0.14744195615489714
     },
     {
-      "key": "innoc",
-      "word": "innocent",
-      "score": 0.1336306209562122
+      "key": "palac",
+      "word": "palace",
+      "score": 0.14744195615489714
     }
   ],
   "horseman": [
@@ -119303,9 +119303,9 @@
       "score": 0.15911145683514602
     },
     {
-      "key": "dawningplac",
-      "word": "dawning‑place",
-      "score": 0.10976425998969035
+      "key": "majesty",
+      "word": "majesty",
+      "score": 0.14285714285714285
     }
   ],
   "maintain": [
@@ -119366,27 +119366,54 @@
     {
       "key": "sovereign",
       "word": "sovereign",
-      "score": 0.28057691326144274
+      "score": 0.27293240797457363
     },
     {
       "key": "grandeur",
       "word": "grandeur",
-      "score": 0.2511236011669613
+      "score": 0.254867151585419
     },
     {
-      "key": "king",
-      "word": "king",
-      "score": 0.2417576418769937
+      "key": "transcend",
+      "word": "transcend",
+      "score": 0.24500110772027842
     },
     {
-      "key": "glor",
-      "word": "glory",
-      "score": 0.23904572186687872
+      "key": "dominion",
+      "word": "dominion",
+      "score": 0.23743596805491474
     },
     {
       "key": "thine",
       "word": "thine",
-      "score": 0.23643312187173018
+      "score": 0.23258023830812022
+    }
+  ],
+  "majesty": [
+    {
+      "key": "royal",
+      "word": "royal",
+      "score": 0.2192645048267573
+    },
+    {
+      "key": "queen",
+      "word": "queen",
+      "score": 0.21459876881973802
+    },
+    {
+      "key": "imp",
+      "word": "imperial",
+      "score": 0.20851441405707477
+    },
+    {
+      "key": "befal",
+      "word": "befall",
+      "score": 0.2032189339191721
+    },
+    {
+      "key": "epistl",
+      "word": "epistle",
+      "score": 0.19802950859533486
     }
   ],
   "major": [
@@ -155657,14 +155684,14 @@
       "score": 0.21879748724684184
     },
     {
+      "key": "majesty",
+      "word": "majesty",
+      "score": 0.21459876881973802
+    },
+    {
       "key": "tribut",
       "word": "tribute",
       "score": 0.20965696734438366
-    },
-    {
-      "key": "emperor",
-      "word": "emperor",
-      "score": 0.20851441405707477
     }
   ],
   "quell": [
@@ -167515,9 +167542,9 @@
       "score": 0.10075854437197566
     },
     {
-      "key": "guard",
-      "word": "guard",
-      "score": 0.08362420100070908
+      "key": "majest",
+      "word": "majesty",
+      "score": 0.08606629658238704
     }
   ],
   "rise": [
@@ -187473,14 +187500,14 @@
       "score": 0.09264821092241589
     },
     {
+      "key": "majest",
+      "word": "majesty",
+      "score": 0.07044699536763468
+    },
+    {
       "key": "low",
       "word": "low",
       "score": 0.06975801064151557
-    },
-    {
-      "key": "proceed",
-      "word": "proceed",
-      "score": 0.06772854614785964
     }
   ],
   "stop": [
@@ -193768,14 +193795,14 @@
       "score": 0.23286578812506328
     },
     {
-      "key": "majest",
-      "word": "majesty",
-      "score": 0.22377638958152543
-    },
-    {
       "key": "shelt",
       "word": "shelter",
       "score": 0.22041550751119351
+    },
+    {
+      "key": "majest",
+      "word": "majesty",
+      "score": 0.22009749333964362
     },
     {
       "key": "denizen",
@@ -201337,14 +201364,14 @@
       "score": 0.24674440339920176
     },
     {
+      "key": "majest",
+      "word": "majesty",
+      "score": 0.24500110772027842
+    },
+    {
       "key": "creation",
       "word": "creation",
       "score": 0.24317834786501105
-    },
-    {
-      "key": "majest",
-      "word": "majesty",
-      "score": 0.23570226039551584
     },
     {
       "key": "thine",
@@ -205665,9 +205692,9 @@
       "score": 0.09205746178983233
     },
     {
-      "key": "star",
-      "word": "star",
-      "score": 0.06992836012750656
+      "key": "majest",
+      "word": "majesty",
+      "score": 0.07044699536763468
     }
   ],
   "unapproach": [
@@ -217532,6 +217559,11 @@
       "score": 0.19364916731037085
     },
     {
+      "key": "majesty",
+      "word": "majesty",
+      "score": 0.17770466332772772
+    },
+    {
       "key": "deem",
       "word": "deem",
       "score": 0.15617376188860607
@@ -217545,11 +217577,6 @@
       "key": "sultan",
       "word": "sultan",
       "score": 0.13957263155977062
-    },
-    {
-      "key": "requ",
-      "word": "request",
-      "score": 0.11598670095405886
     }
   ],
   "verbal": [
@@ -226323,6 +226350,11 @@
   ],
   "worldadorn": [
     {
+      "key": "majesty",
+      "word": "majesty",
+      "score": 0.14907119849998599
+    },
+    {
       "key": "obey",
       "word": "obey",
       "score": 0.10206207261596575
@@ -226341,11 +226373,6 @@
       "key": "produc",
       "word": "produce",
       "score": 0.06942101345006234
-    },
-    {
-      "key": "restt",
-      "word": "rest",
-      "score": 0.06796276660305849
     }
   ],
   "worldafflict": [

@@ -16370,6 +16370,8 @@ mainten: maintenance
 
 majest: majestic, majestically, majesties, majesty
 
+majesty: majesty
+
 major: major
 
 majorit: majorities, majority

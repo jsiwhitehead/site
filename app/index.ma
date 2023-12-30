@@ -30,7 +30,7 @@
         ~
         [
           pad: [5, 10]
-          placeholder: 'Search here...'
+          placeholder: 'Enter keywords...'
           input: search
         ]
         [

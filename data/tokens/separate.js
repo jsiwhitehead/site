@@ -1036,6 +1036,15 @@ export default (wordCap, prevCap, nextCap) => {
     }
     return "ord";
   }
+  if (word === "majesty") {
+    const prev = prevCap.map((x) => x.toLowerCase());
+    const next = nextCap.map((x) => x.toLowerCase());
+    if (!prev[0] && !next[0]) return "majest";
+    if (wordCap === "Majesty") {
+      return "majesty";
+    }
+    return "majest";
+  }
 };
 
 // system
