@@ -1047,6 +1047,7 @@ export default (wordCap, prevCap, nextCap) => {
   }
 };
 
+// treat/treatment
 // system
 // mind
 // matter

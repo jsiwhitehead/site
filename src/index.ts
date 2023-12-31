@@ -52,7 +52,19 @@ const highlightDoc = (doc, tokens) => {
       return cleaned.flatMap((group, j) => {
         const prev = cleaned.slice(0, j).reverse().flat();
         const next = cleaned.slice(j + 1).flat();
-        if (tokens.includes(stem(group.join(""), prev, next))) {
+        if (
+          group.length > 1 &&
+          (tokens.includes(stem(group.join(""), prev, next)) ||
+            group.every((c, k) =>
+              tokens.includes(
+                stem(
+                  c,
+                  [...group.slice(0, k).reverse(), ...prev],
+                  [...group.slice(k + 1), ...next]
+                )
+              )
+            ))
+        ) {
           return [
             ...(j > 0 ? [{ text: " ", highlight: false }] : []),
             { text: words[j].join("‑"), highlight: true },

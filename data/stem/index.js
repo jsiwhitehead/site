@@ -20,8 +20,9 @@ var rgxSFXatORblORis = /(at|bl|is)$/;
 var rgxSFXyOR3 = /(.+[^aeiouy])([y3])$/;
 // Definition for Step II suffixes; note we have spot the longest suffix.
 var rgxSFXstep2 =
-  /(isation|ational|fulness|ousness|iveness|liness|tional|biliti|lessli|entli|ation|alism|aliti|ousli|iviti|fulli|enci|anci|ence?|ance?|abli|iser|ator|alli|elli|bli|aci|eci|ogi|li)$/;
+  /(lessness|isation|ational|fulness|ousness|iveness|liness|tional|biliti|lessli|entli|ation|alism|aliti|ousli|iviti|fulli|enci|anci|ence?|ance?|abli|iser|ator|alli|elli|less|bli|aci|eci|ogi|li)$/;
 var rgxSFXstep2WithReplacements = [
+  { rgx: /lessness$/, replacement: "" },
   // Length 7.
   { rgx: /ational$/, replacement: "ate" },
   { rgx: /isation$/, replacement: "ise" },
@@ -31,7 +32,7 @@ var rgxSFXstep2WithReplacements = [
   // Length 6.
   { rgx: /tional$/, replacement: "tion" },
   { rgx: /biliti$/, replacement: "ble" },
-  { rgx: /lessli$/, replacement: "less" },
+  { rgx: /lessli$/, replacement: "" },
   { rgx: /liness$/, replacement: "" },
   // Length 5.
   { rgx: /iviti$/, replacement: "ive" },
@@ -50,6 +51,7 @@ var rgxSFXstep2WithReplacements = [
   { rgx: /ence?$/, replacement: "ent" },
   { rgx: /ance?$/, replacement: "ant" },
   { rgx: /abli$/, replacement: "able" },
+  { rgx: /less$/, replacement: "" },
   // Length 3.
   { rgx: /bli$/, replacement: "ble" },
   { rgx: /aci$/, replacement: "at" },
@@ -358,6 +360,7 @@ exceptions1.utterly = "utterly";
 exceptions1.kinds = "kinds";
 exceptions1.longer = "longer";
 exceptions1.orders = "orders";
+exceptions1.unless = "unless";
 // Tweaks!
 var tweaks = Object.create(null);
 tweaks.aggressor = "aggress";
@@ -661,6 +664,7 @@ tweaks.deceiv = "deceit";
 tweaks.decomposit = "decompos";
 tweaks.dedicator = "dedic";
 tweaks.defector = "defect";
+tweaks.defenc = "defend";
 tweaks.deferent = "def";
 tweaks.defiant = "defi";
 tweaks.definit = "defin";
@@ -1201,6 +1205,7 @@ tweaks.obstinat = "obstin";
 tweaks.occident = "occid";
 tweaks.occurr = "occur";
 tweaks.odium = "odious";
+tweaks.offenc = "offend";
 tweaks.offens = "offend";
 tweaks.offent = "offend";
 tweaks.officialdom = "offic";
@@ -1681,6 +1686,7 @@ tweaks.transcript = "transcrib";
 tweaks.transgressor = "transgress";
 tweaks.transmigrationist = "transmigr";
 tweaks.transmitt = "transmit";
+tweaks.treatment = "treat";
 tweaks.trellis = "trel";
 tweaks.triangular = "triangl";
 tweaks.tribal = "tribe";
@@ -3535,6 +3541,7 @@ const stem = function (w, prev, next) {
     if (word.startsWith("responsib")) return "responsib";
     if (word.startsWith("revelat")) return "revelat";
     if (word.startsWith("revolution")) return "revolution";
+    if (word.startsWith("ruthless")) return "ruthless";
     if (word.startsWith("sensibilit")) return "sensibilit";
     if (word.startsWith("several")) return "several";
     if (word.startsWith("severit")) return "severe";
