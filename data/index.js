@@ -88,8 +88,12 @@ const wordCounts = {};
 const updateIndex = (docIndex, paraIndex, parts) => {
   const key = `${docIndex}_${paraIndex}`;
   const scores = {};
+  const levels = {};
   const allTokens = [];
   const tokens = [];
+  const maxCitation = Math.round(
+    Math.max(...parts.map((part) => part.citations || 0)) * (2 / 3)
+  );
   for (const part of parts) {
     const partTokens = getTokens(part.text, (word, stem) => {
       if (!fullStems[stem]) fullStems[stem] = {};
@@ -98,6 +102,7 @@ const updateIndex = (docIndex, paraIndex, parts) => {
     }).map((token) => ({
       token,
       citations: (part.citations || 0) + 2,
+      level: Math.min(part.citations || 0, maxCitation),
     }));
     allTokens.push(...partTokens);
     if (!part.doc) tokens.push(...partTokens);
@@ -107,6 +112,7 @@ const updateIndex = (docIndex, paraIndex, parts) => {
     const t = {
       token: [t1.token, t2.token].sort().join("_"),
       citations: t1.citations + t2.citations,
+      level: 0,
     };
     if (/[0A-Z]/.test(t.token)) return [];
     return [t];
@@ -116,6 +122,8 @@ const updateIndex = (docIndex, paraIndex, parts) => {
     counts[t.token]++;
     if (!scores[t.token]) scores[t.token] = 0;
     scores[t.token] += t.citations;
+    if (!levels[t.token]) levels[t.token] = t.level;
+    levels[t.token] = Math.min(t.level, levels[t.token]);
   }
   const distinct = [...new Set(tokens.map((t) => t.token))].sort();
   for (let i = 0; i < distinct.length; i++) {
@@ -129,12 +137,17 @@ const updateIndex = (docIndex, paraIndex, parts) => {
     }
   }
   for (const t of Object.keys(scores)) {
-    searchIndex.set(t, [
-      ...(searchIndex.get(t) || []),
-      scores[t] === 2 ? `${key}` : `${key}:${scores[t]}`,
-    ]);
+    let v = `${key}`;
+    if (scores[t] !== 2) v += `:${scores[t]}`;
+    if (levels[t]) v += `|${levels[t]}`;
+    searchIndex.set(t, [...(searchIndex.get(t) || []), v]);
   }
-  itemLengths[docIndex][paraIndex] = allTokens.length;
+  itemLengths[docIndex][paraIndex] = {};
+  for (let lev = 0; lev <= maxCitation; lev++) {
+    itemLengths[docIndex][paraIndex][lev] = allTokens.filter(
+      (t) => t.level >= lev
+    ).length;
+  }
 };
 
 const citationsMap = [];
@@ -162,9 +175,9 @@ data.forEach(({ id }, index) => {
       }
       citationsMap.push({ doc: index, para: i, citations: para.citations });
     } else {
-      itemLengths[index][i] = getParts(para).flatMap((part) =>
-        getTokens(part.text)
-      ).length;
+      itemLengths[index][i] = {
+        0: getParts(para).flatMap((part) => getTokens(part.text)).length,
+      };
     }
   });
 });
@@ -285,7 +298,7 @@ await Promise.all([
           ...c,
           score:
             ((c.citations || 0) * (itemFactors[c.doc] || 1)) /
-            Math.pow(Math.max(itemLengths[c.doc][c.para], 80), 0.75),
+            Math.pow(Math.max(itemLengths[c.doc][c.para][0], 80), 0.75),
         }))
         .sort((a, b) => b.score - a.score || a.doc - b.doc || a.para - b.para)
         .slice(0, 50)

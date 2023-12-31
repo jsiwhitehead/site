@@ -95,13 +95,36 @@ export const distinctCitations = (data, citations) => [
       data[c.doc].id !== "compilations-bahai-org-001"
         ? "compilations"
         : data[c.doc].id.startsWith("ruhi")
-        ? "ruhi"
-        : data[c.doc].id
+          ? "ruhi"
+          : data[c.doc].id
     )
   ),
 ];
 
-export const compileParagraph = (data, para, withFirst) => {
+const getLevelParts = (parts, level) => {
+  if (level === 0) return parts;
+  const groups = [];
+  for (const p of parts) {
+    const include = p.citations >= level;
+    if (groups.length === 0 || groups[groups.length - 1].include !== include) {
+      groups.push({ include, parts: [] });
+    }
+    groups[groups.length - 1].parts.push(p);
+  }
+  const res = groups.flatMap((g) => {
+    if (g.include || !g.parts.some((p) => /\w/.test(p.text))) return g.parts;
+    return [{ text: " . . . " }];
+  });
+  if (res[0].text === " . . . ") {
+    res[0].text = ". . . ";
+  }
+  if (res[res.length - 1].text === " . . . ") {
+    res[res.length - 1].text = " . . .";
+  }
+  return res;
+};
+
+export const compileParagraph = (data, para, withFirst, level = 0) => {
   if (para.section) return para;
   const baseParts = getParaParts(data, para);
   const text = baseParts.map((p) => p.text).join("");
@@ -151,7 +174,7 @@ export const compileParagraph = (data, para, withFirst) => {
   }
   return {
     ...para,
-    parts,
+    parts: getLevelParts(parts, level),
     citations: undefined,
     ...(paraCitations > 0 ? { citations: paraCitations } : {}),
   };
@@ -187,13 +210,19 @@ export const compileDoc = (data, index, withFirst) => {
   };
 };
 
-export const getDocByKey = (data, docIndex, paraStart, paraEnd = paraStart) => {
+export const getDocByKey = (
+  data,
+  docIndex,
+  paraStart,
+  paraEnd = paraStart,
+  level
+) => {
   const doc = data[docIndex];
   const paras = doc.paragraphs.filter((_, i) => paraStart <= i && i <= paraEnd);
   return {
     ...doc,
     path: !doc.title ? [...doc.path, `#${doc.item}`] : doc.path,
-    paragraphs: paras.map((para) => compileParagraph(data, para, true)),
+    paragraphs: paras.map((para) => compileParagraph(data, para, true, level)),
     citedBy: unique(
       paras.flatMap((para) => (para.citations || []).map((c) => c.doc))
     )
