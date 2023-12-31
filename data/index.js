@@ -1,6 +1,6 @@
 import { promises as fs } from "fs";
 
-import getTokens from "./tokens/index.js";
+import getTokens from "./tokens.js";
 import { compileDoc, getDocByKey } from "./utils.js";
 
 import data from "./json/data.json" assert { type: "json" };
@@ -37,22 +37,30 @@ const getParts = (para, removeFrench) => {
 };
 
 const fullStems = {};
-const specialStems = {
-  advant: "advance",
-  activ: "activity",
-  popul: "population",
-  train: "training",
-  sever: "severe",
-  temp: "tempest",
-  institut: "institution",
-  intens: "intensity",
-};
+// const specialStems = {
+//   advant: "advance",
+//   activ: "activity",
+//   popul: "population",
+//   train: "training",
+//   sever: "severe",
+//   temp: "tempest",
+//   institut: "institution",
+//   intens: "intensity",
+// };
 const getStemWord = (stem) => {
-  return (
-    specialStems[stem] ||
-    [...fullStems[stem]].sort((a, b) => a.length - b.length)[0]
-  );
+  const opts = Object.keys(fullStems[stem]);
+  const counts = opts.map((o) => fullStems[stem][o]);
+  const max = Math.max(...counts);
+  return opts[counts.findIndex((c) => c === max)];
 };
+
+// stemKeys.reduce((res, stem) => {
+//   const opts = Object.keys(fullStems[stem]);
+//   const counts = opts.map((o) => fullStems[stem][o]);
+//   const max = Math.max(...counts);
+//   res[stem] = opts[counts.findIndex((c) => c === max)];
+//   return res;
+// }, {})
 
 const itemFactors = {};
 const itemLengths = {};
@@ -84,8 +92,8 @@ const updateIndex = (docIndex, paraIndex, parts) => {
   const tokens = [];
   for (const part of parts) {
     const partTokens = getTokens(part.text, (word, stem) => {
-      if (!fullStems[stem]) fullStems[stem] = new Set();
-      fullStems[stem].add(word);
+      if (!fullStems[stem]) fullStems[stem] = {};
+      fullStems[stem][word] = (fullStems[stem][word] || 0) + 1;
       wordCounts[word] = (wordCounts[word] || 0) + 1;
     }).map((token) => ({
       token,
@@ -178,65 +186,71 @@ for (const k of Object.keys(counts)) {
 //     .join("\n")
 // );
 
-const topPairs = {};
+const allPairs = {};
 for (const [key, count] of tokenPairs.entries()) {
   if (count > 1) {
     const [k1, k2] = key.split("_");
-    if (!topPairs[k1]) topPairs[k1] = [];
-    topPairs[k1].push({
+    if (!allPairs[k1]) allPairs[k1] = [];
+    allPairs[k1].push({
       key: k2,
-      word: getStemWord(k2),
       score: count / (tokenTotals[k1] + tokenTotals[k2]),
     });
-    if (!topPairs[k2]) topPairs[k2] = [];
-    topPairs[k2].push({
+    if (!allPairs[k2]) allPairs[k2] = [];
+    allPairs[k2].push({
       key: k1,
-      word: getStemWord(k1),
       score: count / (tokenTotals[k1] + tokenTotals[k2]),
     });
   }
 }
+const stemWords = {};
+const topPairs = Object.keys(allPairs)
+  .sort()
+  .reduce((res, k) => {
+    const items = allPairs[k]
+      .sort((a, b) => b.score - a.score)
+      // .filter((a, i) => i < 5 || a.score > 0.1);
+      .slice(0, 5)
+      .map((x) => ({ ...x, score: Math.sqrt(x.score) }));
+    if (items.length === 0) return res;
+    for (const item of items) {
+      if (!stemWords[item.key]) stemWords[item.key] = getStemWord(item.key);
+    }
+    return { ...res, [k]: items };
+  }, {});
 
 const searchIndexObject = {};
 for (const [k, v] of searchIndex.entries()) {
   searchIndexObject[k] = v;
 }
 
-const stemKeys = Object.keys(fullStems);
+const stemKeys = Object.keys(fullStems).sort();
 
 await Promise.all([
   fs.writeFile(
     "./data/stem/stems.txt",
     stemKeys
       .filter((k) => !k.includes("‑"))
-      // .filter((k) => stemKeys.some((k2) => k2 === `${k}i`))
-      .sort()
-      .map((stem) => `${stem}: ${[...fullStems[stem]].sort().join(", ")}`)
-      // .map((stem) =>
-      //   [stem, `${stem}i`]
-      //     .filter((s) => fullStems[s])
-      //     .map((s) => `${s}: ${[...fullStems[s]].sort().join(", ")}`)
-      //     .join("\n")
-      // )
+      .map(
+        (stem) => `${stem}: ${Object.keys(fullStems[stem]).sort().join(", ")}`
+      )
       .join("\n\n")
   ),
   fs.writeFile(
-    `./data/json/pairs.json`,
+    "./data/json/stemWords.json",
     JSON.stringify(
-      Object.keys(topPairs)
+      Object.keys(stemWords)
         .sort()
         .reduce((res, k) => {
-          const items = topPairs[k]
-            .sort((a, b) => b.score - a.score)
-            // .filter((a, i) => i < 5 || a.score > 0.1);
-            .slice(0, 5)
-            .map((x) => ({ ...x, score: Math.sqrt(x.score) }));
-          if (items.length === 0) return res;
-          return { ...res, [k]: items };
+          res[k] = stemWords[k];
+          return res;
         }, {}),
       null,
       2
-    ),
+    )
+  ),
+  fs.writeFile(
+    `./data/json/pairs.json`,
+    JSON.stringify(topPairs, null, 2),
     "utf-8"
   ),
   fs.writeFile(

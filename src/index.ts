@@ -6,6 +6,7 @@ import { getParagraphText } from "../data/utils";
 
 import initialDocs from "../data/json/initial.json";
 import pairs from "../data/json/pairs.json";
+import stemWords from "../data/json/stemWords.json";
 
 import maraca, { atom, effect } from "./maraca";
 import render from "./render";
@@ -38,25 +39,42 @@ const highlightDoc = (doc, tokens) => {
     const phrases = text.split(/([.,;:!?](?=$|[^a-z]* [^a-z]*[a-z])|—)/gi);
     const split = phrases.flatMap((phrase, i) => {
       if (i % 2 === 1) return [{ text: phrase, highlight: false }];
-      const allParts = phrase.split(/([ ‑])/g);
-      const words = allParts.filter((_, j) => j % 2 === 0);
-      const joins = allParts.filter((_, j) => j % 2 === 1);
-      const cleaned = words.map((w) =>
-        w
-          .normalize("NFD")
-          .replace(/[\u0300-\u036f]/g, "")
-          .normalize("NFC")
-          .replace(/[^ a-z0-9‑’']/gi, "")
-      );
-      const highlight = cleaned.map((c, j) =>
-        tokens.includes(
-          stem(c, cleaned.slice(0, j).reverse(), cleaned.slice(j + 1))
+      const words = phrase.split(" ").map((w) => w.split("‑"));
+      const cleaned = words.map((group) =>
+        group.map((w) =>
+          w
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .normalize("NFC")
+            .replace(/[^ a-z0-9‑’']/gi, "")
         )
       );
-      return words.flatMap((w, j) => [
-        { text: w, highlight: highlight[j] },
-        { text: joins[j] || "", highlight: false },
-      ]);
+      return cleaned.flatMap((group, j) => {
+        const prev = cleaned.slice(0, j).reverse().flat();
+        const next = cleaned.slice(j + 1).flat();
+        if (tokens.includes(stem(group.join(""), prev, next))) {
+          return [
+            ...(j > 0 ? [{ text: " ", highlight: false }] : []),
+            { text: words[j].join("‑"), highlight: true },
+          ];
+        }
+        return [
+          ...(j > 0 ? [{ text: " ", highlight: false }] : []),
+          ...group.flatMap((c, k) => [
+            ...(k > 0 ? [{ text: "‑", highlight: false }] : []),
+            {
+              text: words[j][k],
+              highlight: tokens.includes(
+                stem(
+                  c,
+                  [...group.slice(0, k).reverse(), ...prev],
+                  [...group.slice(k + 1), ...next]
+                )
+              ),
+            },
+          ]),
+        ];
+      });
     });
     const res = [{ text: "" }];
     for (const s of split) {
@@ -113,8 +131,9 @@ const compiled = maraca(
       for (const t of tokens) {
         for (const p of pairs[t] || []) {
           if (!tokens.includes(p.key)) {
-            allPairs[p.word] = (allPairs[p.word] || 0) + p.score;
-            pairCounts[p.word] = (pairCounts[p.word] || 0) + 1;
+            const word = stemWords[p.key];
+            allPairs[word] = (allPairs[word] || 0) + p.score;
+            pairCounts[word] = (pairCounts[word] || 0) + 1;
           }
         }
       }

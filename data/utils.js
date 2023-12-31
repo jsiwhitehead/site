@@ -189,22 +189,6 @@ export const compileDoc = (data, index, withFirst) => {
 
 export const getDocByKey = (data, docIndex, paraStart, paraEnd = paraStart) => {
   const doc = data[docIndex];
-  // if (!para) {
-  //   return {
-  //     ...doc,
-  //     path: !doc.title ? [...doc.path, `#${doc.item}`] : doc.path,
-  //     paragraphs: doc.paragraphs.map((para) =>
-  //       compileParagraph(data, para, true)
-  //     ),
-  //     citedBy: unique(
-  //       doc.paragraphs.flatMap((para) =>
-  //         (para.citations || []).map((c) => c.doc)
-  //       )
-  //     )
-  //       .sort((a, b) => a - b)
-  //       .map((index) => getPath(data[index], [])),
-  //   };
-  // }
   const paras = doc.paragraphs.filter((_, i) => paraStart <= i && i <= paraEnd);
   return {
     ...doc,
@@ -215,9 +199,5 @@ export const getDocByKey = (data, docIndex, paraStart, paraEnd = paraStart) => {
     )
       .sort((a, b) => a - b)
       .map((index) => getPath(data[index], [])),
-    // [compileParagraph(data, doc.paragraphs[para], true)],
-    // citedBy: unique((doc.paragraphs[para].citations || []).map((c) => c.doc))
-    //   .sort((a, b) => a - b)
-    //   .map((index) => getPath(data[index], [])),
   };
 };
