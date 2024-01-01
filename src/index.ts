@@ -14,8 +14,57 @@ import { getSearchDocs } from "./documents";
 
 import "./style.css";
 
-const $data = import("../data/json/data.json");
-const $searchIndex = import("../data/json/search.json");
+const textDecoder = new TextDecoder();
+
+ReadableStream.prototype[Symbol.asyncIterator] = async function* () {
+  const reader = this.getReader();
+  try {
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) return;
+      yield value;
+    }
+  } finally {
+    reader.releaseLock();
+  }
+};
+
+async function readLines(url, process) {
+  const response = await fetch(url);
+  let buffer = "";
+  for await (const chunk of response.body as any) {
+    buffer += textDecoder.decode(chunk);
+    let pos;
+    while ((pos = buffer.indexOf("\n")) !== -1) {
+      process(buffer.slice(0, pos));
+      buffer = buffer.slice(pos + 1);
+    }
+  }
+  process(buffer);
+  process();
+}
+
+const $data = new Promise<any>((res) => {
+  const data = [] as any;
+  readLines("/data.txt", (line) => {
+    if (line) {
+      data.push(JSON.parse(line));
+    } else {
+      res(data);
+    }
+  });
+});
+const $searchIndex = new Promise<any>((res) => {
+  const searchIndex = {} as any;
+  readLines("/search.txt", (line) => {
+    if (line) {
+      const [key, data] = line.split("=");
+      searchIndex[key] = data.split(",");
+    } else {
+      res(searchIndex);
+    }
+  });
+});
 
 const set = (obj, path, value) =>
   path.reduce(
@@ -115,7 +164,7 @@ const compiled = maraca(
         .filter((x) => x)
         .map((x) => getTokens(x)[0]);
 
-      if (baseTokens.length === 0) {
+      if (baseTokens.length === 0 && filter === "All Writings and Prayers") {
         searchAtom.set(initialDocs.map((d) => highlightDoc(d, [])));
       } else {
         searchTimer = setTimeout(() => {
@@ -123,12 +172,7 @@ const compiled = maraca(
             const tokens = baseTokens.map((t) =>
               searchIndex[t] ? t : [...new Set(doubleMetaphone(t))].join("|")
             );
-            const docs = getSearchDocs(
-              data.default,
-              searchIndex.default,
-              tokens,
-              filter
-            );
+            const docs = getSearchDocs(data, searchIndex, tokens, filter);
             searchAtom.set(docs.map((d) => highlightDoc(d, tokens)));
           });
         }, 250);

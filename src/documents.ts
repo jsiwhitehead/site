@@ -3,6 +3,8 @@ import { getDocByKey } from "../data/utils";
 import itemFactors from "../data/json/factors.json";
 import itemLengths from "../data/json/lengths.json";
 import tokenCounts from "../data/json/counts.json";
+import citationsList from "../data/json/citations.json";
+import specialPrayers from "../data/json/specialPrayers.json";
 
 const sum = (x) => x.reduce((res, a) => res + a, 0);
 
@@ -11,6 +13,8 @@ const countFunc = (x) => {
   return y / (1 + y);
 };
 // const countFunc = (x) => Math.pow(x, 0.2);
+
+const lenFunc = (x) => 1 / (1 + Math.exp(x / 60 - 5));
 
 const groupIndices = (indices) => {
   const res = [] as any;
@@ -27,6 +31,56 @@ const groupIndices = (indices) => {
 };
 
 export const getSearchDocs = (data, searchIndex, tokens, filter) => {
+  if (tokens.length === 0) {
+    if (filter === "All Prayers") {
+      const res = citationsList
+        .filter(
+          (d) =>
+            data[d.doc].type === "Prayer" && !specialPrayers.includes(d.doc)
+        )
+        .map((c) => ({
+          ...c,
+          score:
+            (c.citations || 0) *
+            (itemFactors[c.doc] || 1) *
+            lenFunc(itemLengths[c.doc].reduce((res, x) => res + x[0], 0)),
+        }))
+        .sort(
+          (a, b) =>
+            b.score - a.score ||
+            console.log(b.score, a.score) ||
+            a.doc - b.doc ||
+            a.para - b.para
+        );
+      const res2 = [] as any;
+      for (const r of res) {
+        if (!res2.find((r2) => r2.doc === r.doc)) res2.push(r);
+      }
+      return res2.slice(0, 50).map((d) => getDocByKey(data, d.doc));
+    }
+    const res = (
+      filter === "All Writings and Prayers"
+        ? citationsList
+        : filter === "All Prayers"
+          ? citationsList.filter((d) => data[d.doc].type === "Prayer")
+          : citationsList.filter((d) => data[d.doc].author === filter)
+    )
+      .map((c) => ({
+        ...c,
+        score:
+          (c.citations || 0) *
+          (itemFactors[c.doc] || 1) *
+          lenFunc(itemLengths[c.doc][c.para][c.level]),
+      }))
+      .sort(
+        (a, b) =>
+          b.score - a.score ||
+          console.log(b.score, a.score) ||
+          a.doc - b.doc ||
+          a.para - b.para
+      );
+    return res.slice(0, 50).map((d) => getDocByKey(data, d.doc));
+  }
   const doubles = tokens
     .slice(0, -1)
     .map((t1, i) => [t1, tokens[i + 1]].sort().join("_"));
@@ -48,82 +102,84 @@ export const getSearchDocs = (data, searchIndex, tokens, filter) => {
   const res = [] as any;
   for (const docStr of Object.keys(matches)) {
     const doc = parseInt(docStr, 10);
-    const docParas = Object.keys(matches[doc]).map((p) => parseInt(p, 10));
-    const indices =
-      filter === "All Prayers"
-        ? Array.from({ length: itemLengths[doc].length }).map((_, i) => i)
-        : Array.from({ length: itemLengths[doc].length })
-            .map((_, i) => i)
-            .filter((i) => docParas.some((p) => Math.abs(p - i) <= 3));
-    const groups = groupIndices(indices);
-    while (groups.length > 0) {
-      const group = groups.shift();
-      if (group.some((i) => docParas.includes(i))) {
-        const options = [] as any[];
-        for (let i = group[0]; i <= group[group.length - 1]; i++) {
-          for (let j = i; j <= group[group.length - 1]; j++) {
-            if (
-              filter !== "All Prayers" ||
-              (i === 0 && j === group[group.length - 1])
-            ) {
-              const paras = docParas.filter((p) => i <= p && p <= j);
+    if (!(filter === "All Prayers" && specialPrayers.includes(doc))) {
+      const docParas = Object.keys(matches[doc]).map((p) => parseInt(p, 10));
+      const indices =
+        filter === "All Prayers"
+          ? Array.from({ length: itemLengths[doc].length }).map((_, i) => i)
+          : Array.from({ length: itemLengths[doc].length })
+              .map((_, i) => i)
+              .filter((i) => docParas.some((p) => Math.abs(p - i) <= 3));
+      const groups = groupIndices(indices);
+      while (groups.length > 0) {
+        const group = groups.shift();
+        if (group.some((i) => docParas.includes(i))) {
+          const options = [] as any[];
+          for (let i = group[0]; i <= group[group.length - 1]; i++) {
+            for (let j = i; j <= group[group.length - 1]; j++) {
               if (
-                filter === "All Prayers" ||
-                (paras.length > 0 &&
-                  paras.some((p) => p === i) &&
-                  paras.some((p) => p === j))
+                filter !== "All Prayers" ||
+                (i === 0 && j === group[group.length - 1])
               ) {
-                const level =
-                  paras.length > 1
-                    ? 0
-                    : Math.min(
-                        ...allTokens
-                          .filter(
-                            (t) => !t.includes("_") && matches[doc][paras[0]][t]
-                          )
-                          .map((t) => matches[doc][paras[0]][t].level)
-                      );
-                const len = sum(
-                  group
-                    .filter((k) => i <= k && k <= j)
-                    .map((k) => itemLengths[doc][k][level])
-                );
-                const lenFactor = 1 / (1 + Math.exp(len / 60 - 5));
-                // Math.pow(len / 40 + 1, 0.3) / (1 + Math.exp(len / 40 - 5));
-                const scores = allTokens.map(
-                  (t) =>
-                    countFunc(
-                      sum(paras.map((p) => matches[doc][p][t]?.score || 0)) /
-                        (tokenCounts[t] || 1)
-                    )
-                  // Math.pow(
-                  //   sum(paras.map((p) => p.scores[t] || 0)) /
-                  //     (tokenCounts[t] || 1),
-                  //   COUNTPOWER
-                  // )
-                );
-                options.push({
-                  doc,
-                  start: i,
-                  end: j,
-                  // scores,
-                  // base: allTokens.map(
-                  //   (t) =>
-                  //     sum(paras.map((p) => p.scores[t] || 0)) /
-                  //     (tokenCounts[t] || 1)
-                  // ),
-                  level,
-                  score: sum(scores) * lenFactor,
-                });
+                const paras = docParas.filter((p) => i <= p && p <= j);
+                if (
+                  filter === "All Prayers" ||
+                  (paras.length > 0 &&
+                    paras.some((p) => p === i) &&
+                    paras.some((p) => p === j))
+                ) {
+                  const level =
+                    paras.length > 1
+                      ? 0
+                      : Math.min(
+                          ...allTokens
+                            .filter(
+                              (t) =>
+                                !t.includes("_") && matches[doc][paras[0]][t]
+                            )
+                            .map((t) => matches[doc][paras[0]][t].level)
+                        );
+                  const len = sum(
+                    group
+                      .filter((k) => i <= k && k <= j)
+                      .map((k) => itemLengths[doc][k][level])
+                  );
+                  // Math.pow(len / 40 + 1, 0.3) / (1 + Math.exp(len / 40 - 5));
+                  const scores = allTokens.map(
+                    (t) =>
+                      countFunc(
+                        sum(paras.map((p) => matches[doc][p][t]?.score || 0)) /
+                          (tokenCounts[t] || 1)
+                      )
+                    // Math.pow(
+                    //   sum(paras.map((p) => p.scores[t] || 0)) /
+                    //     (tokenCounts[t] || 1),
+                    //   COUNTPOWER
+                    // )
+                  );
+                  options.push({
+                    doc,
+                    start: i,
+                    end: j,
+                    // scores,
+                    // base: allTokens.map(
+                    //   (t) =>
+                    //     sum(paras.map((p) => p.scores[t] || 0)) /
+                    //     (tokenCounts[t] || 1)
+                    // ),
+                    level,
+                    score: sum(scores) * lenFunc(len),
+                  });
+                }
               }
             }
           }
+          const best = options.sort((a, b) => b.score - a.score)[0];
+          res.push(best);
+          groups.push(
+            ...groupIndices(group.filter((k) => k < best.start || best.end < k))
+          );
         }
-        const best = options.sort((a, b) => b.score - a.score)[0];
-        res.push(best);
-        groups.push(
-          ...groupIndices(group.filter((k) => k < best.start || best.end < k))
-        );
       }
     }
   }

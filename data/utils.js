@@ -218,7 +218,10 @@ export const getDocByKey = (
   level
 ) => {
   const doc = data[docIndex];
-  const paras = doc.paragraphs.filter((_, i) => paraStart <= i && i <= paraEnd);
+  const paras =
+    paraStart === undefined
+      ? doc.paragraphs
+      : doc.paragraphs.filter((_, i) => paraStart <= i && i <= paraEnd);
   return {
     ...doc,
     path: !doc.title ? [...doc.path, `#${doc.item}`] : doc.path,

@@ -3,7 +3,7 @@ import { promises as fs } from "fs";
 import getTokens from "./tokens.js";
 import { compileDoc, getDocByKey } from "./utils.js";
 
-import data from "./json/data.json" assert { type: "json" };
+import data from "./data.json" assert { type: "json" };
 
 const french = [
   /“C’est un des.*contempler,”/,
@@ -85,78 +85,85 @@ const getDateFactor = (years) => {
 const searchIndex = new Map();
 const counts = {};
 const wordCounts = {};
-const updateIndex = (docIndex, paraIndex, parts, paraCitations) => {
-  const key = `${docIndex}_${paraIndex}`;
-  const scores = {};
-  const levels = {};
-  const allTokens = [];
-  const tokens = [];
-  const maxCitation = Math.round(
-    Math.max(...parts.map((part) => part.allCitations || 0)) * (2 / 3)
-  );
-  citationsMap.push({
-    doc: docIndex,
-    para: paraIndex,
-    citations: paraCitations,
-    level: maxCitation,
-  });
-  for (const part of parts) {
-    const partTokens = getTokens(part.text, (word, stem) => {
-      if (!fullStems[stem]) fullStems[stem] = {};
-      fullStems[stem][word] = (fullStems[stem][word] || 0) + 1;
-      wordCounts[word] = (wordCounts[word] || 0) + 1;
-    }).map((token) => ({
-      token,
-      citations: (part.citations || 0) + 2,
-      level: Math.min(part.allCitations || 0, maxCitation),
-    }));
-    allTokens.push(...partTokens);
-    if (!part.doc) tokens.push(...partTokens);
-  }
-  const doubleTokens = tokens.slice(0, -1).flatMap((t1, i) => {
-    const t2 = tokens[i + 1];
-    const t = {
-      token: [t1.token, t2.token].sort().join("_"),
-      citations: t1.citations + t2.citations,
-      level: 0,
-    };
-    if (/[0A-Z]/.test(t.token)) return [];
-    return [t];
-  });
-  for (const t of [...tokens, ...doubleTokens]) {
-    if (!counts[t.token]) counts[t.token] = 0;
-    counts[t.token]++;
-    if (!scores[t.token]) scores[t.token] = 0;
-    scores[t.token] += t.citations;
-    if (!levels[t.token]) levels[t.token] = t.level;
-    levels[t.token] = Math.min(t.level, levels[t.token]);
-  }
-  const distinct = [...new Set(tokens.map((t) => t.token))].sort();
-  for (let i = 0; i < distinct.length; i++) {
-    if (!tokenTotals[distinct[i]]) tokenTotals[distinct[i]] = 0;
-    tokenTotals[distinct[i]]++;
-    for (let j = i + 1; j < distinct.length; j++) {
-      const pairKey = `${distinct[i]}_${distinct[j]}`;
-      if (!/[0A-Z]/.test(pairKey)) {
-        tokenPairs.set(pairKey, (tokenPairs.get(pairKey) || 0) + 1);
+const citationsMap = [];
+const specialPrayers = {};
+const updateIndex = (docIndex, paraIndex, parts, paraCitations, isPrayer) => {
+  if (parts.length > 0) {
+    const key = `${docIndex}_${paraIndex}`;
+    const scores = {};
+    const levels = {};
+    const allTokens = [];
+    const tokens = [];
+    const maxCitation = Math.round(
+      Math.max(...parts.map((part) => part.allCitations || 0)) * (2 / 3)
+    );
+    citationsMap.push({
+      doc: docIndex,
+      para: paraIndex,
+      citations: paraCitations,
+      level: maxCitation,
+    });
+    for (const part of parts) {
+      const partTokens = getTokens(part.text, (word, stem) => {
+        if (!fullStems[stem]) fullStems[stem] = {};
+        fullStems[stem][word] = (fullStems[stem][word] || 0) + 1;
+        wordCounts[word] = (wordCounts[word] || 0) + 1;
+      }).map((token) => ({
+        token,
+        citations: (part.citations || 0) + 2,
+        level: Math.min(part.allCitations || 0, maxCitation),
+      }));
+      allTokens.push(...partTokens);
+      if (!part.doc) tokens.push(...partTokens);
+    }
+    if (isPrayer && allTokens.some((t) => /[0A-Z]/.test(t.token))) {
+      specialPrayers[docIndex] = true;
+    }
+    const doubleTokens = tokens.slice(0, -1).flatMap((t1, i) => {
+      const t2 = tokens[i + 1];
+      const t = {
+        token: [t1.token, t2.token].sort().join("_"),
+        citations: t1.citations + t2.citations,
+        level: 0,
+      };
+      if (/[0A-Z]/.test(t.token)) return [];
+      return [t];
+    });
+    for (const t of [...tokens, ...doubleTokens]) {
+      if (!counts[t.token]) counts[t.token] = 0;
+      counts[t.token]++;
+      if (!scores[t.token]) scores[t.token] = 0;
+      scores[t.token] += t.citations;
+      if (!levels[t.token]) levels[t.token] = t.level;
+      levels[t.token] = Math.min(t.level, levels[t.token]);
+    }
+    const distinct = [...new Set(tokens.map((t) => t.token))].sort();
+    for (let i = 0; i < distinct.length; i++) {
+      if (!tokenTotals[distinct[i]]) tokenTotals[distinct[i]] = 0;
+      tokenTotals[distinct[i]]++;
+      for (let j = i + 1; j < distinct.length; j++) {
+        const pairKey = `${distinct[i]}_${distinct[j]}`;
+        if (!/[0A-Z]/.test(pairKey)) {
+          tokenPairs.set(pairKey, (tokenPairs.get(pairKey) || 0) + 1);
+        }
       }
     }
-  }
-  for (const t of Object.keys(scores)) {
-    let v = `${key}`;
-    if (scores[t] !== 2) v += `:${scores[t]}`;
-    if (levels[t]) v += `|${levels[t]}`;
-    searchIndex.set(t, [...(searchIndex.get(t) || []), v]);
-  }
-  itemLengths[docIndex][paraIndex] = {};
-  for (let lev = 0; lev <= maxCitation; lev++) {
-    itemLengths[docIndex][paraIndex][lev] = allTokens.filter(
-      (t) => t.level >= lev
-    ).length;
+    for (const t of Object.keys(scores)) {
+      let v = `${key}`;
+      if (scores[t] !== 2) v += `:${scores[t]}`;
+      if (levels[t]) v += `|${levels[t]}`;
+      searchIndex.set(t, [...(searchIndex.get(t) || []), v]);
+    }
+    itemLengths[docIndex][paraIndex] = {};
+    for (let lev = 0; lev <= maxCitation; lev++) {
+      itemLengths[docIndex][paraIndex][lev] = allTokens.filter(
+        (t) => t.level >= lev
+      ).length;
+    }
+  } else {
+    itemLengths[docIndex][paraIndex] = { 0: 0 };
   }
 };
-
-const citationsMap = [];
 
 data.forEach(({ id }, index) => {
   console.log(id);
@@ -172,7 +179,8 @@ data.forEach(({ id }, index) => {
           id.startsWith("shoghi-effendi-god-passes-by-002") ||
             id.startsWith("shoghi-effendi-bahai-administration")
         ),
-        para.citations
+        para.citations,
+        doc.type === "Prayer"
       );
       if (doc.epoch && doc.author !== "Shoghi Effendi") {
         itemFactors[index] = getDateFactor(doc.years);
@@ -237,12 +245,14 @@ const topPairs = Object.keys(allPairs)
     return { ...res, [k]: items };
   }, {});
 
-const searchIndexObject = {};
+let searchIndexData = "";
 for (const [k, v] of searchIndex.entries()) {
-  searchIndexObject[k] = v;
+  searchIndexData += `${k}=${v.join(",")}\n`;
 }
 
 const stemKeys = Object.keys(fullStems).sort();
+
+const lenFunc = (x) => 1 / (1 + Math.exp(x / 60 - 5));
 
 await Promise.all([
   fs.writeFile(
@@ -273,18 +283,16 @@ await Promise.all([
     "utf-8"
   ),
   fs.writeFile(
-    `./data/json/data.json`,
-    JSON.stringify(data)
+    `./public/data.txt`,
+    data
+      .map((d) => JSON.stringify(d))
+      .join("\n")
       .normalize("NFD")
       .replace(/\u0323/g, "")
       .normalize("NFC"),
     "utf-8"
   ),
-  fs.writeFile(
-    `./data/json/search.json`,
-    JSON.stringify(searchIndexObject),
-    "utf-8"
-  ),
+  fs.writeFile(`./public/search.txt`, searchIndexData.trim(), "utf-8"),
   fs.writeFile(`./data/json/counts.json`, JSON.stringify(counts), "utf-8"),
   fs.writeFile(
     `./data/json/factors.json`,
@@ -297,14 +305,29 @@ await Promise.all([
     "utf-8"
   ),
   fs.writeFile(
+    `./data/json/citations.json`,
+    JSON.stringify(citationsMap),
+    "utf-8"
+  ),
+  fs.writeFile(
+    `./data/json/specialPrayers.json`,
+    JSON.stringify(
+      Object.keys(specialPrayers)
+        .map((p) => parseInt(p, 10))
+        .sort((a, b) => a - b)
+    ),
+    "utf-8"
+  ),
+  fs.writeFile(
     `./data/json/initial.json`,
     JSON.stringify(
       citationsMap
         .map((c) => ({
           ...c,
           score:
-            ((c.citations || 0) * (itemFactors[c.doc] || 1)) /
-            Math.pow(Math.max(itemLengths[c.doc][c.para][0], 80), 0.75),
+            (c.citations || 0) *
+            (itemFactors[c.doc] || 1) *
+            lenFunc(itemLengths[c.doc][c.para][c.level]),
         }))
         .sort((a, b) => b.score - a.score || a.doc - b.doc || a.para - b.para)
         .slice(0, 50)
