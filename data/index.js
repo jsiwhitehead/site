@@ -85,15 +85,21 @@ const getDateFactor = (years) => {
 const searchIndex = new Map();
 const counts = {};
 const wordCounts = {};
-const updateIndex = (docIndex, paraIndex, parts) => {
+const updateIndex = (docIndex, paraIndex, parts, paraCitations) => {
   const key = `${docIndex}_${paraIndex}`;
   const scores = {};
   const levels = {};
   const allTokens = [];
   const tokens = [];
   const maxCitation = Math.round(
-    Math.max(...parts.map((part) => part.citations || 0)) * (2 / 3)
+    Math.max(...parts.map((part) => part.allCitations || 0)) * (2 / 3)
   );
+  citationsMap.push({
+    doc: docIndex,
+    para: paraIndex,
+    citations: paraCitations,
+    level: maxCitation,
+  });
   for (const part of parts) {
     const partTokens = getTokens(part.text, (word, stem) => {
       if (!fullStems[stem]) fullStems[stem] = {};
@@ -102,7 +108,7 @@ const updateIndex = (docIndex, paraIndex, parts) => {
     }).map((token) => ({
       token,
       citations: (part.citations || 0) + 2,
-      level: Math.min(part.citations || 0, maxCitation),
+      level: Math.min(part.allCitations || 0, maxCitation),
     }));
     allTokens.push(...partTokens);
     if (!part.doc) tokens.push(...partTokens);
@@ -165,7 +171,8 @@ data.forEach(({ id }, index) => {
           para,
           id.startsWith("shoghi-effendi-god-passes-by-002") ||
             id.startsWith("shoghi-effendi-bahai-administration")
-        )
+        ),
+        para.citations
       );
       if (doc.epoch && doc.author !== "Shoghi Effendi") {
         itemFactors[index] = getDateFactor(doc.years);
@@ -173,7 +180,6 @@ data.forEach(({ id }, index) => {
           itemFactors[index] *= 0.7;
         }
       }
-      citationsMap.push({ doc: index, para: i, citations: para.citations });
     } else {
       itemLengths[index][i] = {
         0: getParts(para).flatMap((part) => getTokens(part.text)).length,
@@ -302,8 +308,19 @@ await Promise.all([
         }))
         .sort((a, b) => b.score - a.score || a.doc - b.doc || a.para - b.para)
         .slice(0, 50)
-        .map((d) => getDocByKey(data, d.doc, d.para))
+        .map((d) => getDocByKey(data, d.doc, d.para, d.para, d.level))
     ),
     "utf-8"
   ),
 ]);
+
+// citations vs allCitations??? one for ranking, one for sub-paragraph picking
+
+// itemLengths[d.doc][d.para]
+
+// const filtered =
+// filter === "All Writings and Prayers"
+//   ? res
+//   : filter === "All Prayers"
+//     ? res.filter((d) => data[d.doc].type === "Prayer")
+//     : res.filter((d) => data[d.doc].author === filter);

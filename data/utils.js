@@ -105,7 +105,7 @@ const getLevelParts = (parts, level) => {
   if (level === 0) return parts;
   const groups = [];
   for (const p of parts) {
-    const include = p.citations >= level;
+    const include = p.allCitations >= level;
     if (groups.length === 0 || groups[groups.length - 1].include !== include) {
       groups.push({ include, parts: [] });
     }
