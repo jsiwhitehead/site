@@ -37,30 +37,12 @@ const getParts = (para, removeFrench) => {
 };
 
 const fullStems = {};
-// const specialStems = {
-//   advant: "advance",
-//   activ: "activity",
-//   popul: "population",
-//   train: "training",
-//   sever: "severe",
-//   temp: "tempest",
-//   institut: "institution",
-//   intens: "intensity",
-// };
 const getStemWord = (stem) => {
   const opts = Object.keys(fullStems[stem]);
   const counts = opts.map((o) => fullStems[stem][o]);
   const max = Math.max(...counts);
   return opts[counts.findIndex((c) => c === max)];
 };
-
-// stemKeys.reduce((res, stem) => {
-//   const opts = Object.keys(fullStems[stem]);
-//   const counts = opts.map((o) => fullStems[stem][o]);
-//   const max = Math.max(...counts);
-//   res[stem] = opts[counts.findIndex((c) => c === max)];
-//   return res;
-// }, {})
 
 const itemFactors = {};
 const itemLengths = {};
@@ -85,7 +67,7 @@ const getDateFactor = (years) => {
 const searchIndex = new Map();
 const counts = {};
 const wordCounts = {};
-const citationsMap = [];
+const scoredParas = [];
 const specialPrayers = {};
 const updateIndex = (docIndex, paraIndex, parts, paraCitations, isPrayer) => {
   if (parts.length > 0) {
@@ -95,12 +77,12 @@ const updateIndex = (docIndex, paraIndex, parts, paraCitations, isPrayer) => {
     const allTokens = [];
     const tokens = [];
     const maxCitation = Math.round(
-      Math.max(...parts.map((part) => part.allCitations || 0)) * (2 / 3)
+      Math.max(...parts.map((part) => part.allCitations || 0)) * (1 / 2)
     );
-    citationsMap.push({
+    scoredParas.push({
       doc: docIndex,
       para: paraIndex,
-      citations: paraCitations,
+      score: paraCitations,
       level: maxCitation,
     });
     for (const part of parts) {
@@ -305,8 +287,8 @@ await Promise.all([
     "utf-8"
   ),
   fs.writeFile(
-    `./data/json/citations.json`,
-    JSON.stringify(citationsMap),
+    `./data/json/scoredParas.json`,
+    JSON.stringify(scoredParas),
     "utf-8"
   ),
   fs.writeFile(
@@ -321,29 +303,18 @@ await Promise.all([
   fs.writeFile(
     `./data/json/initial.json`,
     JSON.stringify(
-      citationsMap
-        .map((c) => ({
-          ...c,
+      scoredParas
+        .map((p) => ({
+          ...p,
           score:
-            (c.citations || 0) *
-            (itemFactors[c.doc] || 1) *
-            lenFunc(itemLengths[c.doc][c.para][c.level]),
+            (p.score || 0) *
+            (itemFactors[p.doc] || 1) *
+            lenFunc(itemLengths[p.doc][p.para][p.level]),
         }))
         .sort((a, b) => b.score - a.score || a.doc - b.doc || a.para - b.para)
         .slice(0, 50)
-        .map((d) => getDocByKey(data, d.doc, d.para, d.para, d.level))
+        .map((p) => getDocByKey(data, p.doc, p.para, p.para, p.level))
     ),
     "utf-8"
   ),
 ]);
-
-// citations vs allCitations??? one for ranking, one for sub-paragraph picking
-
-// itemLengths[d.doc][d.para]
-
-// const filtered =
-// filter === "All Writings and Prayers"
-//   ? res
-//   : filter === "All Prayers"
-//     ? res.filter((d) => data[d.doc].type === "Prayer")
-//     : res.filter((d) => data[d.doc].author === filter);

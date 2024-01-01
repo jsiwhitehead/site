@@ -3,7 +3,7 @@ import { getDocByKey } from "../data/utils";
 import itemFactors from "../data/json/factors.json";
 import itemLengths from "../data/json/lengths.json";
 import tokenCounts from "../data/json/counts.json";
-import citationsList from "../data/json/citations.json";
+import scoredParas from "../data/json/scoredParas.json";
 import specialPrayers from "../data/json/specialPrayers.json";
 
 const sum = (x) => x.reduce((res, a) => res + a, 0);
@@ -33,17 +33,17 @@ const groupIndices = (indices) => {
 export const getSearchDocs = (data, searchIndex, tokens, filter) => {
   if (tokens.length === 0) {
     if (filter === "All Prayers") {
-      const res = citationsList
+      const res = scoredParas
         .filter(
           (d) =>
             data[d.doc].type === "Prayer" && !specialPrayers.includes(d.doc)
         )
-        .map((c) => ({
-          ...c,
+        .map((p) => ({
+          ...p,
           score:
-            (c.citations || 0) *
-            (itemFactors[c.doc] || 1) *
-            lenFunc(itemLengths[c.doc].reduce((res, x) => res + x[0], 0)),
+            (p.score || 0) *
+            (itemFactors[p.doc] || 1) *
+            lenFunc(itemLengths[p.doc].reduce((res, x) => res + x[0], 0)),
         }))
         .sort(
           (a, b) =>
@@ -56,30 +56,26 @@ export const getSearchDocs = (data, searchIndex, tokens, filter) => {
       for (const r of res) {
         if (!res2.find((r2) => r2.doc === r.doc)) res2.push(r);
       }
-      return res2.slice(0, 50).map((d) => getDocByKey(data, d.doc));
+      return res2.slice(0, 50).map((p) => getDocByKey(data, p.doc));
     }
     const res = (
       filter === "All Writings and Prayers"
-        ? citationsList
+        ? scoredParas
         : filter === "All Prayers"
-          ? citationsList.filter((d) => data[d.doc].type === "Prayer")
-          : citationsList.filter((d) => data[d.doc].author === filter)
+          ? scoredParas.filter((p) => data[p.doc].type === "Prayer")
+          : scoredParas.filter((p) => data[p.doc].author === filter)
     )
-      .map((c) => ({
-        ...c,
+      .map((p) => ({
+        ...p,
         score:
-          (c.citations || 0) *
-          (itemFactors[c.doc] || 1) *
-          lenFunc(itemLengths[c.doc][c.para][c.level]),
+          (p.score || 0) *
+          (itemFactors[p.doc] || 1) *
+          lenFunc(itemLengths[p.doc][p.para][p.level]),
       }))
-      .sort(
-        (a, b) =>
-          b.score - a.score ||
-          console.log(b.score, a.score) ||
-          a.doc - b.doc ||
-          a.para - b.para
-      );
-    return res.slice(0, 50).map((d) => getDocByKey(data, d.doc));
+      .sort((a, b) => b.score - a.score || a.doc - b.doc || a.para - b.para);
+    return res
+      .slice(0, 50)
+      .map((p) => getDocByKey(data, p.doc, p.para, p.para, p.level));
   }
   const doubles = tokens
     .slice(0, -1)
@@ -104,13 +100,14 @@ export const getSearchDocs = (data, searchIndex, tokens, filter) => {
     const doc = parseInt(docStr, 10);
     if (!(filter === "All Prayers" && specialPrayers.includes(doc))) {
       const docParas = Object.keys(matches[doc]).map((p) => parseInt(p, 10));
-      const indices =
+      const groups =
         filter === "All Prayers"
-          ? Array.from({ length: itemLengths[doc].length }).map((_, i) => i)
-          : Array.from({ length: itemLengths[doc].length })
-              .map((_, i) => i)
-              .filter((i) => docParas.some((p) => Math.abs(p - i) <= 3));
-      const groups = groupIndices(indices);
+          ? [Array.from({ length: itemLengths[doc].length }).map((_, i) => i)]
+          : groupIndices(
+              Array.from({ length: itemLengths[doc].length })
+                .map((_, i) => i)
+                .filter((i) => docParas.some((p) => Math.abs(p - i) <= 3))
+            );
       while (groups.length > 0) {
         const group = groups.shift();
         if (group.some((i) => docParas.includes(i))) {
@@ -129,7 +126,7 @@ export const getSearchDocs = (data, searchIndex, tokens, filter) => {
                     paras.some((p) => p === j))
                 ) {
                   const level =
-                    paras.length > 1
+                    i !== j
                       ? 0
                       : Math.min(
                           ...allTokens
