@@ -1,4 +1,4 @@
-import { getDocByKey } from "../data/utils";
+import { getDocByKey, loadDoc } from "../data/utils";
 
 import itemFactors from "../data/json/factors.json";
 import itemLengths from "../data/json/lengths.json";
@@ -36,7 +36,8 @@ export const getSearchDocs = (data, searchIndex, tokens, filter) => {
       const res = scoredParas
         .filter(
           (d) =>
-            data[d.doc].type === "Prayer" && !specialPrayers.includes(d.doc)
+            loadDoc(data, d.doc).type === "Prayer" &&
+            !specialPrayers.includes(d.doc)
         )
         .map((p) => ({
           ...p,
@@ -62,8 +63,8 @@ export const getSearchDocs = (data, searchIndex, tokens, filter) => {
       filter === "All Writings and Prayers"
         ? scoredParas
         : filter === "All Prayers"
-          ? scoredParas.filter((p) => data[p.doc].type === "Prayer")
-          : scoredParas.filter((p) => data[p.doc].author === filter)
+          ? scoredParas.filter((p) => loadDoc(data, p.doc).type === "Prayer")
+          : scoredParas.filter((p) => loadDoc(data, p.doc).author === filter)
     )
       .map((p) => ({
         ...p,
@@ -83,7 +84,7 @@ export const getSearchDocs = (data, searchIndex, tokens, filter) => {
   const allTokens = [...tokens, ...doubles];
   const matches = {};
   for (const token of allTokens) {
-    for (const s of searchIndex[token] || []) {
+    for (const s of searchIndex.get(token) || []) {
       const [rest, level = 0] = s.split("|");
       const [key, score = 2] = rest.split(":");
       const [doc, para] = key.split("_");
@@ -184,8 +185,8 @@ export const getSearchDocs = (data, searchIndex, tokens, filter) => {
     filter === "All Writings and Prayers"
       ? res
       : filter === "All Prayers"
-        ? res.filter((d) => data[d.doc].type === "Prayer")
-        : res.filter((d) => data[d.doc].author === filter);
+        ? res.filter((d) => loadDoc(data, d.doc).type === "Prayer")
+        : res.filter((d) => loadDoc(data, d.doc).author === filter);
   const res2 = filtered
     .map((d) => ({
       ...d,

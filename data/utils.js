@@ -1,5 +1,10 @@
 const unique = (x) => [...new Set(x)];
 
+export const loadDoc = (data, id) => {
+  if (typeof data[id] === "string") data[id] = JSON.parse(data[id]);
+  return data[id];
+};
+
 const splitParts = (parts, splits) => {
   const sortedSplits = [...new Set(splits)].sort((a, b) => a - b);
   const res = [];
@@ -66,7 +71,7 @@ const getParaParts = (data, para) => {
   return para.parts.flatMap((p) => {
     if (typeof p === "string") return [{ text: p }];
     return sliceParts(
-      getParaParts(data, data[p.doc].paragraphs[p.paragraph]),
+      getParaParts(data, loadDoc(data, p.doc).paragraphs[p.paragraph]),
       p.start,
       p.end
     ).map((part) =>
@@ -90,14 +95,27 @@ const getFirstChar = (index, text) => {
 
 export const distinctCitations = (data, citations) => [
   ...new Set(
-    citations.map((c) =>
-      data[c.doc].id.startsWith("compilations") &&
-      data[c.doc].id !== "compilations-bahai-org-001"
-        ? "compilations"
-        : data[c.doc].id.startsWith("ruhi")
-          ? "ruhi"
-          : data[c.doc].id
-    )
+    citations.map((c) => {
+      if (
+        loadDoc(data, c.doc).id.startsWith("compilations") &&
+        loadDoc(data, c.doc).id !== "compilations-bahai-org-001"
+      ) {
+        return "compilations";
+      }
+      if (loadDoc(data, c.doc).id.startsWith("ruhi")) {
+        return "ruhi";
+      }
+      if (loadDoc(data, c.doc).epoch) {
+        const author = [
+          "Shoghi Effendi",
+          "The Universal House of Justice",
+        ].includes(loadDoc(data, c.doc).author)
+          ? loadDoc(data, c.doc).author
+          : "Other";
+        return author + "|" + loadDoc(data, c.doc).epoch;
+      }
+      return loadDoc(data, c.doc).id;
+    })
   ),
 ];
 
@@ -196,11 +214,11 @@ const getLength = (text) => {
 };
 
 export const compileDoc = (data, index, withFirst) => {
-  const paragraphs = data[index].paragraphs.map((para) =>
+  const paragraphs = loadDoc(data, index).paragraphs.map((para) =>
     compileParagraph(data, para, withFirst)
   );
   return {
-    ...data[index],
+    ...loadDoc(data, index),
     paragraphs,
     length: getLength(
       paragraphs.map((para) => getParagraphText(para)).join(" ")
@@ -217,7 +235,7 @@ export const getDocByKey = (
   paraEnd = paraStart,
   level
 ) => {
-  const doc = data[docIndex];
+  const doc = loadDoc(data, docIndex);
   const paras =
     paraStart === undefined
       ? doc.paragraphs
@@ -230,6 +248,6 @@ export const getDocByKey = (
       paras.flatMap((para) => (para.citations || []).map((c) => c.doc))
     )
       .sort((a, b) => a - b)
-      .map((index) => getPath(data[index], [])),
+      .map((index) => getPath(loadDoc(data, index), [])),
   };
 };

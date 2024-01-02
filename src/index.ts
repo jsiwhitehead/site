@@ -48,18 +48,18 @@ const $data = new Promise<any>((res) => {
   const data = [] as any;
   readLines("/data.txt", (line) => {
     if (line) {
-      data.push(JSON.parse(line));
+      data.push(line);
     } else {
       res(data);
     }
   });
 });
 const $searchIndex = new Promise<any>((res) => {
-  const searchIndex = {} as any;
+  const searchIndex = new Map();
   readLines("/search.txt", (line) => {
     if (line) {
       const [key, data] = line.split("=");
-      searchIndex[key] = data.split(",");
+      searchIndex.set(key, data.split(","));
     } else {
       res(searchIndex);
     }
@@ -162,7 +162,8 @@ const compiled = maraca(
       const baseTokens = search
         .split(/ +/g)
         .filter((x) => x)
-        .map((x) => getTokens(x)[0]);
+        .map((x) => getTokens(x)[0])
+        .filter((x) => x);
 
       if (baseTokens.length === 0 && filter === "All Writings and Prayers") {
         searchAtom.set(initialDocs.map((d) => highlightDoc(d, [])));
@@ -170,7 +171,9 @@ const compiled = maraca(
         searchTimer = setTimeout(() => {
           Promise.all([$data, $searchIndex]).then(([data, searchIndex]) => {
             const tokens = baseTokens.map((t) =>
-              searchIndex[t] ? t : [...new Set(doubleMetaphone(t))].join("|")
+              searchIndex.has(t)
+                ? t
+                : [...new Set(doubleMetaphone(t))].join("|")
             );
             const docs = getSearchDocs(data, searchIndex, tokens, filter);
             searchAtom.set(docs.map((d) => highlightDoc(d, tokens)));
