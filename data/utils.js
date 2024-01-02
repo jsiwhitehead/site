@@ -142,7 +142,8 @@ const getLevelParts = (parts, level) => {
   return res;
 };
 
-export const compileParagraph = (data, para, withFirst, level = 0) => {
+export const compileParagraph = (data, para, withFirst, level) => {
+  if (level === undefined) return { parts: [{ text: ". . ." }] };
   if (para.section) return para;
   const baseParts = getParaParts(data, para);
   const text = baseParts.map((p) => p.text).join("");
@@ -215,7 +216,7 @@ const getLength = (text) => {
 
 export const compileDoc = (data, index, withFirst) => {
   const paragraphs = loadDoc(data, index).paragraphs.map((para) =>
-    compileParagraph(data, para, withFirst)
+    compileParagraph(data, para, withFirst, 0)
   );
   return {
     ...loadDoc(data, index),
@@ -233,7 +234,7 @@ export const getDocByKey = (
   docIndex,
   paraStart,
   paraEnd = paraStart,
-  level
+  levels
 ) => {
   const doc = loadDoc(data, docIndex);
   const paras =
@@ -243,7 +244,9 @@ export const getDocByKey = (
   return {
     ...doc,
     path: !doc.title ? [...doc.path, `#${doc.item}`] : doc.path,
-    paragraphs: paras.map((para) => compileParagraph(data, para, true, level)),
+    paragraphs: paras.map((para, i) =>
+      compileParagraph(data, para, true, levels ? levels[paraStart + i] : 0)
+    ),
     citedBy: unique(
       paras.flatMap((para) => (para.citations || []).map((c) => c.doc))
     )

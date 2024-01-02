@@ -112,11 +112,11 @@ const updateIndex = (docIndex, paraIndex, parts, paraCitations, isPrayer) => {
       return [t];
     });
     for (const t of [...tokens, ...doubleTokens]) {
-      if (!counts[t.token]) counts[t.token] = 0;
+      if (counts[t.token] === undefined) counts[t.token] = 0;
       counts[t.token]++;
-      if (!scores[t.token]) scores[t.token] = 0;
+      if (scores[t.token] === undefined) scores[t.token] = 0;
       scores[t.token] += t.citations;
-      if (!levels[t.token]) levels[t.token] = t.level;
+      if (levels[t.token] === undefined) levels[t.token] = t.level;
       levels[t.token] = Math.min(t.level, levels[t.token]);
     }
     const distinct = [...new Set(tokens.map((t) => t.token))].sort();
@@ -313,7 +313,9 @@ await Promise.all([
         }))
         .sort((a, b) => b.score - a.score || a.doc - b.doc || a.para - b.para)
         .slice(0, 50)
-        .map((p) => getDocByKey(data, p.doc, p.para, p.para, p.level))
+        .map((p) =>
+          getDocByKey(data, p.doc, p.para, p.para, { [p.para]: p.level })
+        )
     ),
     "utf-8"
   ),

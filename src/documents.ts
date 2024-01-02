@@ -76,7 +76,9 @@ export const getSearchDocs = (data, searchIndex, tokens, filter) => {
       .sort((a, b) => b.score - a.score || a.doc - b.doc || a.para - b.para);
     return res
       .slice(0, 50)
-      .map((p) => getDocByKey(data, p.doc, p.para, p.para, p.level));
+      .map((p) =>
+        getDocByKey(data, p.doc, p.para, p.para, { [p.para]: p.level })
+      );
   }
   const doubles = tokens
     .slice(0, -1)
@@ -107,7 +109,7 @@ export const getSearchDocs = (data, searchIndex, tokens, filter) => {
           : groupIndices(
               Array.from({ length: itemLengths[doc].length })
                 .map((_, i) => i)
-                .filter((i) => docParas.some((p) => Math.abs(p - i) <= 3))
+                .filter((i) => docParas.some((p) => Math.abs(p - i) <= 1))
             );
       while (groups.length > 0) {
         const group = groups.shift();
@@ -126,21 +128,18 @@ export const getSearchDocs = (data, searchIndex, tokens, filter) => {
                     paras.some((p) => p === i) &&
                     paras.some((p) => p === j))
                 ) {
-                  const level =
-                    i !== j
-                      ? 0
-                      : Math.min(
-                          ...allTokens
-                            .filter(
-                              (t) =>
-                                !t.includes("_") && matches[doc][paras[0]][t]
-                            )
-                            .map((t) => matches[doc][paras[0]][t].level)
-                        );
+                  const levels = group
+                    .filter((k) => i <= k && k <= j)
+                    .reduce((res, k) => {
+                      if (!matches[doc][k]) return res;
+                      const opts = allTokens
+                        .filter((t) => !t.includes("_") && matches[doc][k][t])
+                        .map((t) => matches[doc][k][t].level);
+                      if (opts.length > 0) res[k] = Math.min(...opts);
+                      return res;
+                    }, {});
                   const len = sum(
-                    group
-                      .filter((k) => i <= k && k <= j)
-                      .map((k) => itemLengths[doc][k][level])
+                    paras.map((p) => itemLengths[doc][p][levels[p]])
                   );
                   // Math.pow(len / 40 + 1, 0.3) / (1 + Math.exp(len / 40 - 5));
                   const scores = allTokens.map(
@@ -165,7 +164,7 @@ export const getSearchDocs = (data, searchIndex, tokens, filter) => {
                     //     sum(paras.map((p) => p.scores[t] || 0)) /
                     //     (tokenCounts[t] || 1)
                     // ),
-                    level,
+                    levels,
                     score: sum(scores) * lenFunc(len),
                   });
                 }
@@ -194,5 +193,5 @@ export const getSearchDocs = (data, searchIndex, tokens, filter) => {
     }))
     .sort((a, b) => b.score - a.score || a.doc - b.doc || a.start - b.start)
     .slice(0, 50);
-  return res2.map((d) => getDocByKey(data, d.doc, d.start, d.end, d.level));
+  return res2.map((d) => getDocByKey(data, d.doc, d.start, d.end, d.levels));
 };
