@@ -106,7 +106,7 @@ const attempt = () => {
           ),
       ];
       if (loaded === 30) done = true;
-      postMessage(res);
+      postMessage(loaded === 30 ? res : [...res, false]);
     }
   }
 };

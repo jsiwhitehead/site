@@ -82,7 +82,11 @@
         gap: 40
         ~
         for passage in current {
-          [
+          if !passage [
+            align: 'center'
+            ~
+            'Loading . . .'
+          ] else [
             gap: 25
             position: 'center'
             ~
@@ -146,11 +150,6 @@
             pad: [top: 2]
           ]
         }
-        if length(current) < 30 [
-          align: 'center'
-          ~
-          'Loading . . .'
-        ]
       ]
     ]
   ]
