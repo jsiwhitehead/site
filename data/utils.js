@@ -98,25 +98,26 @@ const getFirstChar = (index, text) => {
 export const distinctCitations = (data, citations) => [
   ...new Set(
     citations.map((c) => {
+      const doc = loadDoc(data, c.doc);
       if (
-        loadDoc(data, c.doc).id.startsWith("compilations") &&
-        loadDoc(data, c.doc).id !== "compilations-bahai-org-001"
+        doc.id.startsWith("compilations") &&
+        doc.id !== "compilations-bahai-org-001"
       ) {
         return "compilations";
       }
-      if (loadDoc(data, c.doc).id.startsWith("ruhi")) {
+      if (doc.id.startsWith("ruhi")) {
         return "ruhi";
       }
-      if (loadDoc(data, c.doc).epoch) {
+      if (doc.epoch) {
         const author = [
           "Shoghi Effendi",
           "The Universal House of Justice",
-        ].includes(loadDoc(data, c.doc).author)
-          ? loadDoc(data, c.doc).author
+        ].includes(doc.author)
+          ? doc.author
           : "Other";
-        return author + "|" + loadDoc(data, c.doc).epoch;
+        return author + "|" + doc.epoch;
       }
-      return loadDoc(data, c.doc).id;
+      return doc.id;
     })
   ),
 ];
@@ -207,6 +208,16 @@ export const getParagraphText = (para) => {
   if (para.section) return para.title || "* * *";
   if (!para.lines) return para.parts.map((p) => p.text).join("");
   return para.lines.map((parts) => parts.map((p) => p.text).join("")).join(" ");
+};
+
+export const getParagraphLines = (para) => {
+  if (para.section) {
+    return [{ section: !!para.title, text: para.title || "* * *" }];
+  }
+  if (!para.lines) return [{ text: para.parts.map((p) => p.text).join("") }];
+  return para.lines.map((parts) => ({
+    text: parts.map((p) => p.text).join(""),
+  }));
 };
 
 const getLength = (text) => {

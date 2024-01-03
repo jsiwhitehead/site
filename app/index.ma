@@ -133,14 +133,19 @@
               maxWidth: config.textWidth
               ~
               for para in passage.paragraphs [
-                flow: 'inline'
+                gap: config.baseSize / 2
                 ~
-                for part in para [
-                  fill: if part.highlight '#fff79e'
-                  pad: [2.5, 3.5]
-                  style: [margin: '0 -3.5px']
+                for line in para [
+                  flow: 'inline'
                   ~
-                  part.text
+                  for part in line [
+                    bold: if part.section yes
+                    fill: if part.highlight '#fff79e'
+                    pad: [2.5, 3.5]
+                    style: [margin: '0 -3.5px']
+                    ~
+                    part.text
+                  ]
                 ]
               ]
             ]
