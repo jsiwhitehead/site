@@ -2,6 +2,7 @@
   search:: ''
   filter:: 'All Writings and Prayers'
   current: passages(search, filter)
+  similarWords: similar(search, filter)
   ~
   [
     font: 'Atkinson Hyperlegible, sans-serif'
@@ -17,44 +18,64 @@
     ~
     [
       gap: 40
-      pad: [40, 15]
+      pad: [20, 15, 40]
       maxWidth: config.textWidth + (2 * config.sideWidth)
       ~
       [
-        bold: yes
-        size: 24
-        ~
-        'Bahá’í Library'
-      ]
-      [
-        gap: 15
+        gap: 25
         ~
         [
-          pad: [5, 10]
-          placeholder: 'Enter keywords...'
-          input: search
-        ]
-        [
-          italic: yes
-          size: 14
+          bold: yes
+          size: 20
           ~
-          'Related: '
-          for s, i in similar(search, filter) {
-            if i = 1 (s) else ', {s}'
-          }
+          'Bahá’í Explore'
         ]
         [
-          pad: [5, 10]
-          options: [
-            'All Writings and Prayers',
-            'All Prayers',
-            'Bahá’u’lláh',
-            'The Báb',
-            '‘Abdu’l‑Bahá',
-            'Shoghi Effendi',
-            'The Universal House of Justice'
+          flow: 'row'
+          position: 'center'
+          gap: 10
+          bold: yes
+          ~
+          'Filter:'
+          [
+            pad: [5, 10]
+            border: '2px solid #aaa'
+            round: 3
+            options: [
+              'All Writings and Prayers',
+              'All Prayers',
+              'Bahá’u’lláh',
+              'The Báb',
+              '‘Abdu’l‑Bahá',
+              'Shoghi Effendi',
+              'The Universal House of Justice'
+            ]
+            input: filter
           ]
-          input: filter
+        ]
+        [
+          gap: 10
+          ~
+          [
+            pad: [5, 18]
+            round: 100
+            border: '2px solid #aaa'
+            placeholder: 'Enter keywords to search...'
+            input: search
+          ]
+          [
+            size: 14
+            pad: [0, 20]
+            ~
+            [
+              bold: yes
+              ~
+              if (length(similarWords) > 0) 'Often appear with: ' else ' '
+            ]
+            for s, i in similarWords {
+              if i = 1 (s) else ', {s}'
+            }
+          ]
         ]
       ]
       [

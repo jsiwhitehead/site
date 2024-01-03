@@ -78,6 +78,7 @@ export default (values, context) => {
   }
   if (values.indent) result.textIndent = `${values.indent}px`;
   if (values.color) result.color = values.color;
+  if (values.border) result.border = values.border;
 
   if (values.pad) {
     result.padding =
