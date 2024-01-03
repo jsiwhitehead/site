@@ -46,8 +46,37 @@ const getStemWord = (stem) => {
 
 const itemFactors = {};
 const itemLengths = {};
-const tokenPairs = new Map();
-const tokenTotals = {};
+const tokenPairs = {
+  "All Writings and Prayers": new Map(),
+  "All Prayers": new Map(),
+  "Bahá’u’lláh": new Map(),
+  "The Báb": new Map(),
+  "‘Abdu’l‑Bahá": new Map(),
+  "Shoghi Effendi": new Map(),
+  "The Universal House of Justice": new Map(),
+};
+const tokenTotals = {
+  "All Writings and Prayers": {},
+  "All Prayers": {},
+  "Bahá’u’lláh": {},
+  "The Báb": {},
+  "‘Abdu’l‑Bahá": {},
+  "Shoghi Effendi": {},
+  "The Universal House of Justice": {},
+};
+
+const updateTokens = (distinct, key) => {
+  for (let i = 0; i < distinct.length; i++) {
+    if (!tokenTotals[key][distinct[i]]) tokenTotals[key][distinct[i]] = 0;
+    tokenTotals[key][distinct[i]]++;
+    for (let j = i + 1; j < distinct.length; j++) {
+      const pairKey = `${distinct[i]}_${distinct[j]}`;
+      if (!/[0A-Z]/.test(pairKey)) {
+        tokenPairs[key].set(pairKey, (tokenPairs[key].get(pairKey) || 0) + 1);
+      }
+    }
+  }
+};
 
 const getDateValue = (years) => {
   if (years[0] !== years[1] || !`${years[0]}`.includes(".")) {
@@ -69,7 +98,14 @@ const counts = {};
 const wordCounts = {};
 const scoredParas = [];
 const specialPrayers = {};
-const updateIndex = (docIndex, paraIndex, parts, paraCitations, isPrayer) => {
+const updateIndex = (
+  docIndex,
+  paraIndex,
+  parts,
+  paraCitations,
+  author,
+  isPrayer
+) => {
   if (parts.length > 0) {
     const key = `${docIndex}_${paraIndex}`;
     const scores = {};
@@ -121,17 +157,12 @@ const updateIndex = (docIndex, paraIndex, parts, paraCitations, isPrayer) => {
       if (levels[t.token] === undefined) levels[t.token] = t.level;
       levels[t.token] = Math.min(t.level, levels[t.token]);
     }
+
     const distinct = [...new Set(tokens.map((t) => t.token))].sort();
-    for (let i = 0; i < distinct.length; i++) {
-      if (!tokenTotals[distinct[i]]) tokenTotals[distinct[i]] = 0;
-      tokenTotals[distinct[i]]++;
-      for (let j = i + 1; j < distinct.length; j++) {
-        const pairKey = `${distinct[i]}_${distinct[j]}`;
-        if (!/[0A-Z]/.test(pairKey)) {
-          tokenPairs.set(pairKey, (tokenPairs.get(pairKey) || 0) + 1);
-        }
-      }
-    }
+    updateTokens(distinct, "All Writings and Prayers");
+    if (tokenTotals[author]) updateTokens(distinct, author);
+    if (isPrayer) updateTokens(distinct, "All Prayers");
+
     for (const t of Object.keys(scores)) {
       let v = `${key}`;
       if (scores[t] !== 2) v += `:${scores[t]}`;
@@ -172,6 +203,7 @@ data.forEach(({ id }, index) => {
             id.startsWith("shoghi-effendi-bahai-administration")
         ),
         para.citations,
+        doc.author,
         doc.type === "Prayer"
       );
       if (doc.epoch && doc.author !== "Shoghi Effendi") {
@@ -220,38 +252,6 @@ for (const { index } of docScores.sort(
 //     .join("\n")
 // );
 
-const allPairs = {};
-for (const [key, count] of tokenPairs.entries()) {
-  if (count > 1) {
-    const [k1, k2] = key.split("_");
-    if (!allPairs[k1]) allPairs[k1] = [];
-    allPairs[k1].push({
-      key: k2,
-      score: count / (tokenTotals[k1] + tokenTotals[k2]),
-    });
-    if (!allPairs[k2]) allPairs[k2] = [];
-    allPairs[k2].push({
-      key: k1,
-      score: count / (tokenTotals[k1] + tokenTotals[k2]),
-    });
-  }
-}
-const stemWords = {};
-const topPairs = Object.keys(allPairs)
-  .sort()
-  .reduce((res, k) => {
-    const items = allPairs[k]
-      .sort((a, b) => b.score - a.score)
-      // .filter((a, i) => i < 5 || a.score > 0.1);
-      .slice(0, 5)
-      .map((x) => ({ ...x, score: Math.sqrt(x.score) }));
-    if (items.length === 0) return res;
-    for (const item of items) {
-      if (!stemWords[item.key]) stemWords[item.key] = getStemWord(item.key);
-    }
-    return { ...res, [k]: items };
-  }, {});
-
 const sortedTokens = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
 
 const searchIndexData = sortedTokens
@@ -263,14 +263,58 @@ const searchIndexData = sortedTokens
   })
   .join("\n");
 
-const pairData = sortedTokens
-  .filter((t) => topPairs[t])
-  .map(
-    (t) =>
-      `${t}=${topPairs[t]
-        .map(({ key, score }) => `${key}:${Math.round(score * 1000)}`)
-        .join(",")}`
-  )
+const stemWords = {};
+const getPairs = (filter) => {
+  const allPairs = {};
+  for (const [key, count] of tokenPairs[filter].entries()) {
+    if (count > 1) {
+      const [k1, k2] = key.split("_");
+      if (!allPairs[k1]) allPairs[k1] = [];
+      allPairs[k1].push({
+        key: k2,
+        score: count / (tokenTotals[filter][k1] + tokenTotals[filter][k2]),
+      });
+      if (!allPairs[k2]) allPairs[k2] = [];
+      allPairs[k2].push({
+        key: k1,
+        score: count / (tokenTotals[filter][k1] + tokenTotals[filter][k2]),
+      });
+    }
+  }
+  const topPairs = Object.keys(allPairs)
+    .sort()
+    .reduce((res, k) => {
+      const items = allPairs[k]
+        .sort((a, b) => b.score - a.score)
+        // .filter((a, i) => i < 5 || a.score > 0.1);
+        .slice(0, 5)
+        .map((x) => ({ ...x, score: Math.sqrt(x.score) }));
+      if (items.length === 0) return res;
+      for (const item of items) {
+        if (!stemWords[item.key]) stemWords[item.key] = getStemWord(item.key);
+      }
+      return { ...res, [k]: items };
+    }, {});
+  return sortedTokens
+    .filter((t) => topPairs[t])
+    .map(
+      (t) =>
+        `${t}=${topPairs[t]
+          .map(({ key, score }) => `${key}:${Math.round(score * 1000)}`)
+          .join(",")}`
+    )
+    .join("\n");
+};
+const pairData = [
+  "All Writings and Prayers",
+  "All Prayers",
+  "Bahá’u’lláh",
+  "The Báb",
+  "‘Abdu’l‑Bahá",
+  "Shoghi Effendi",
+  "The Universal House of Justice",
+]
+  .map((k) => `${k}\n${getPairs(k)}`)
   .join("\n");
 
 const stemKeys = Object.keys(fullStems).sort();

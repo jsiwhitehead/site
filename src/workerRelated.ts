@@ -30,16 +30,22 @@ async function readLines(url, process) {
   if (!done) attempt();
 }
 
-const pairs = new Map();
+const pairs = {};
+let pairKey;
 readLines("/pairs.txt", (line) => {
-  const [key, data] = line.split("=");
-  pairs.set(
-    key,
-    data.split(",").map((x) => {
-      const [key, score] = x.split(":");
-      return { key, score: parseInt(score, 10) };
-    })
-  );
+  if (!line.includes("=")) {
+    pairKey = line;
+    pairs[pairKey] = new Map();
+  } else {
+    const [key, data] = line.split("=");
+    pairs[pairKey].set(
+      key,
+      data.split(",").map((x) => {
+        const [key, score] = x.split(":");
+        return { key, score: parseInt(score, 10) };
+      })
+    );
+  }
 });
 
 const stemWords = new Map();
@@ -49,16 +55,18 @@ readLines("/stemWords.txt", (line) => {
 });
 
 let tokens;
+let filter;
 let done = true;
 const attempt = () => {
   if (
     loadedUrls["/stemWords.txt"] &&
-    (loadedUrls["/pairs.txt"] || tokens.every((t) => pairs.has(t)))
+    (loadedUrls["/pairs.txt"] ||
+      (pairs[filter] && tokens.every((t) => pairs[filter].has(t))))
   ) {
     const allPairs = {};
     const pairCounts = {};
     for (const t of tokens) {
-      for (const p of pairs.get(t) || []) {
+      for (const p of pairs[filter].get(t) || []) {
         if (!tokens.includes(p.key)) {
           const word = stemWords.get(p.key);
           allPairs[word] = (allPairs[word] || 0) + p.score;
@@ -79,6 +87,7 @@ const attempt = () => {
 
 onmessage = (e) => {
   tokens = e.data.tokens;
+  filter = e.data.filter;
   done = false;
   attempt();
 };

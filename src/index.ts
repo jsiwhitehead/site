@@ -61,8 +61,8 @@ const compiled = maraca(
 
       return searchAtom;
     },
-    similar: (search) => {
-      workerRelated.postMessage({ tokens: getTokens(search) });
+    similar: (search, filter) => {
+      workerRelated.postMessage({ tokens: getTokens(search), filter });
       workerRelated.onmessage = (e) => relatedAtom.set(e.data);
       return relatedAtom;
     },

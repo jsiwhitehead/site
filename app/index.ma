@@ -39,7 +39,7 @@
           size: 14
           ~
           'Related: '
-          for s, i in similar(search) {
+          for s, i in similar(search, filter) {
             if i = 1 (s) else ', {s}'
           }
         ]
