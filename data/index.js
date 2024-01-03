@@ -79,12 +79,14 @@ const updateIndex = (docIndex, paraIndex, parts, paraCitations, isPrayer) => {
     const maxCitation = Math.round(
       Math.max(...parts.map((part) => part.allCitations || 0)) * (1 / 2)
     );
-    scoredParas.push({
-      doc: docIndex,
-      para: paraIndex,
-      score: paraCitations,
-      level: maxCitation,
-    });
+    if (paraCitations) {
+      scoredParas.push({
+        doc: docIndex,
+        para: paraIndex,
+        score: paraCitations,
+        level: maxCitation,
+      });
+    }
     for (const part of parts) {
       const partTokens = getTokens(part.text, (word, stem) => {
         if (!fullStems[stem]) fullStems[stem] = {};
@@ -147,12 +149,20 @@ const updateIndex = (docIndex, paraIndex, parts, paraCitations, isPrayer) => {
   }
 };
 
+const docRefs = [];
+const docScores = [];
+
 data.forEach(({ id }, index) => {
   console.log(id);
-  const doc = compileDoc(data, index, false);
+  docRefs[index] = {};
+  const doc = compileDoc(data, index, false, (refDoc) => {
+    docRefs[index][refDoc] = true;
+  });
+  let maxCitations = 0;
   itemLengths[index] = [];
   doc.paragraphs.forEach((para, i) => {
     if (!para.quote) {
+      maxCitations = Math.max(maxCitations, para.citations || 0);
       updateIndex(
         index,
         i,
@@ -176,13 +186,28 @@ data.forEach(({ id }, index) => {
       };
     }
   });
+  docScores.push({ index, score: maxCitations });
 });
-for (const k of Object.keys(counts)) {
-  if (counts[k] === 1) delete counts[k];
-  if (k.includes("_") && counts[k] > 50) {
-    // console.log(k, counts[k]);
-    searchIndex.delete(k);
-    delete counts[k];
+// for (const k of Object.keys(counts)) {
+//   // if (counts[k] === 1) delete counts[k];
+//   if (k.includes("_") && counts[k] > 50) {
+//     // console.log(k, counts[k]);
+//     searchIndex.delete(k);
+//     // delete counts[k];
+//   }
+// }
+
+const ordered = [];
+const covered = {};
+for (const { index } of docScores.sort(
+  (a, b) => b.score - a.score || a.index - b.index
+)) {
+  for (const d of [
+    ...Object.keys(docRefs[index]).map((r) => parseInt(r, 10)),
+    index,
+  ]) {
+    if (!covered[d]) ordered.push(d);
+    covered[d] = true;
   }
 }
 
@@ -227,10 +252,26 @@ const topPairs = Object.keys(allPairs)
     return { ...res, [k]: items };
   }, {});
 
-let searchIndexData = "";
-for (const [k, v] of searchIndex.entries()) {
-  searchIndexData += `${k}=${v.join(",")}\n`;
-}
+const sortedTokens = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
+
+const searchIndexData = sortedTokens
+  .map((k) => {
+    let res = "";
+    res += `${k}=${searchIndex.get(k).join(",")}`;
+    if (counts[k] > 1) res += `=${counts[k]}`;
+    return res;
+  })
+  .join("\n");
+
+const pairData = sortedTokens
+  .filter((t) => topPairs[t])
+  .map(
+    (t) =>
+      `${t}=${topPairs[t]
+        .map(({ key, score }) => `${key}:${Math.round(score * 1000)}`)
+        .join(",")}`
+  )
+  .join("\n");
 
 const stemKeys = Object.keys(fullStems).sort();
 
@@ -247,27 +288,17 @@ await Promise.all([
       .join("\n\n")
   ),
   fs.writeFile(
-    "./data/json/stemWords.json",
-    JSON.stringify(
-      Object.keys(stemWords)
-        .sort()
-        .reduce((res, k) => {
-          res[k] = stemWords[k];
-          return res;
-        }, {}),
-      null,
-      2
-    )
+    "./public/stemWords.txt",
+    Object.keys(stemWords)
+      .sort()
+      .map((k) => `${k}=${stemWords[k]}`)
+      .join("\n")
   ),
-  fs.writeFile(
-    `./data/json/pairs.json`,
-    JSON.stringify(topPairs, null, 2),
-    "utf-8"
-  ),
+  fs.writeFile(`./public/pairs.txt`, pairData, "utf-8"),
   fs.writeFile(
     `./public/data.txt`,
-    data
-      .map((d) => JSON.stringify(d))
+    ordered
+      .map((d) => `${d}:${JSON.stringify(data[d])}`)
       .join("\n")
       .normalize("NFD")
       .replace(/\u0323/g, "")
@@ -275,7 +306,6 @@ await Promise.all([
     "utf-8"
   ),
   fs.writeFile(`./public/search.txt`, searchIndexData.trim(), "utf-8"),
-  fs.writeFile(`./data/json/counts.json`, JSON.stringify(counts), "utf-8"),
   fs.writeFile(
     `./data/json/factors.json`,
     JSON.stringify(itemFactors),
@@ -287,8 +317,15 @@ await Promise.all([
     "utf-8"
   ),
   fs.writeFile(
-    `./data/json/scoredParas.json`,
-    JSON.stringify(scoredParas),
+    `./public/cited.txt`,
+    scoredParas
+      .reduce((res, { doc, para, score, level }) => {
+        if (!res[doc]) res[doc] = {};
+        res[doc][para] = [score, level];
+        return res;
+      }, [])
+      .map((d) => JSON.stringify(d))
+      .join("\n"),
     "utf-8"
   ),
   fs.writeFile(
@@ -298,6 +335,19 @@ await Promise.all([
         .map((p) => parseInt(p, 10))
         .sort((a, b) => a - b)
     ),
+    "utf-8"
+  ),
+  fs.writeFile(
+    `./data/json/info.json`,
+    JSON.stringify(data.map((d) => ({ type: d.type, author: d.author }))),
+    "utf-8"
+  ),
+  fs.writeFile(
+    `./public/stems.txt`,
+    Object.keys(fullStems)
+      .filter((s) => !s.includes("_") && !/[0A-Z]/.test(s))
+      .sort()
+      .join("\n"),
     "utf-8"
   ),
   fs.writeFile(

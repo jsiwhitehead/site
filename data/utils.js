@@ -1,6 +1,6 @@
 const unique = (x) => [...new Set(x)];
 
-export const loadDoc = (data, id) => {
+const loadDoc = (data, id) => {
   if (typeof data[id] === "string") data[id] = JSON.parse(data[id]);
   return data[id];
 };
@@ -66,12 +66,12 @@ export const getPath = (doc, paras) => {
   );
 };
 
-const getParaParts = (data, para) => {
+const getParaParts = (data, para, onRef) => {
   if (para.section) throw new Error();
   return para.parts.flatMap((p) => {
     if (typeof p === "string") return [{ text: p }];
-    return sliceParts(
-      getParaParts(data, loadDoc(data, p.doc).paragraphs[p.paragraph]),
+    const res = sliceParts(
+      getParaParts(data, loadDoc(data, p.doc).paragraphs[p.paragraph], onRef),
       p.start,
       p.end
     ).map((part) =>
@@ -83,6 +83,8 @@ const getParaParts = (data, para) => {
             ...part,
           }
     );
+    if (onRef) onRef(p.doc);
+    return res;
   });
 };
 
@@ -142,10 +144,10 @@ const getLevelParts = (parts, level) => {
   return res;
 };
 
-export const compileParagraph = (data, para, withFirst, level) => {
-  if (level === undefined) return { parts: [{ text: ". . ." }] };
+export const compileParagraph = (data, para, withFirst, level, onRef) => {
   if (para.section) return para;
-  const baseParts = getParaParts(data, para);
+  if (level === undefined) return { parts: [{ text: ". . ." }] };
+  const baseParts = getParaParts(data, para, onRef);
   const text = baseParts.map((p) => p.text).join("");
   const first = withFirst && getFirstChar(!para.lines && para.index, text);
   const split = splitParts(baseParts, [
@@ -167,7 +169,9 @@ export const compileParagraph = (data, para, withFirst, level) => {
       ...(first !== undefined && end <= first ? { first: true } : {}),
       ...(partCitations.length > 0
         ? {
-            citations: distinctCitations(data, partCitations).length,
+            citations: onRef // Need all data loaded for distinct, only server
+              ? distinctCitations(data, partCitations).length
+              : partCitations.length,
             allCitations: partCitations.length,
           }
         : {}),
@@ -214,9 +218,9 @@ const getLength = (text) => {
   return 4;
 };
 
-export const compileDoc = (data, index, withFirst) => {
+export const compileDoc = (data, index, withFirst, onRef) => {
   const paragraphs = loadDoc(data, index).paragraphs.map((para) =>
-    compileParagraph(data, para, withFirst, 0)
+    compileParagraph(data, para, withFirst, 0, onRef)
   );
   return {
     ...loadDoc(data, index),
@@ -247,10 +251,10 @@ export const getDocByKey = (
     paragraphs: paras.map((para, i) =>
       compileParagraph(data, para, true, levels ? levels[paraStart + i] : 0)
     ),
-    citedBy: unique(
-      paras.flatMap((para) => (para.citations || []).map((c) => c.doc))
-    )
-      .sort((a, b) => a - b)
-      .map((index) => getPath(loadDoc(data, index), [])),
+    // citedBy: unique(
+    //   paras.flatMap((para) => (para.citations || []).map((c) => c.doc))
+    // )
+    //   .sort((a, b) => a - b)
+    //   .map((index) => getPath(loadDoc(data, index), [])),
   };
 };

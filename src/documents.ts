@@ -1,10 +1,7 @@
-import { getDocByKey, loadDoc } from "../data/utils";
-
 import itemFactors from "../data/json/factors.json";
 import itemLengths from "../data/json/lengths.json";
-import tokenCounts from "../data/json/counts.json";
-import scoredParas from "../data/json/scoredParas.json";
 import specialPrayers from "../data/json/specialPrayers.json";
+import dataInfo from "../data/json/info.json";
 
 const sum = (x) => x.reduce((res, a) => res + a, 0);
 
@@ -30,14 +27,13 @@ const groupIndices = (indices) => {
   return res;
 };
 
-export const getSearchDocs = (data, searchIndex, tokens, filter) => {
+export const getSearchDocs = (searchIndex, cited, tokens, filter, limit) => {
   if (tokens.length === 0) {
     if (filter === "All Prayers") {
-      const res = scoredParas
+      const res = cited
         .filter(
           (d) =>
-            loadDoc(data, d.doc).type === "Prayer" &&
-            !specialPrayers.includes(d.doc)
+            dataInfo[d.doc].type === "Prayer" && !specialPrayers.includes(d.doc)
         )
         .map((p) => ({
           ...p,
@@ -46,25 +42,19 @@ export const getSearchDocs = (data, searchIndex, tokens, filter) => {
             (itemFactors[p.doc] || 1) *
             lenFunc(itemLengths[p.doc].reduce((res, x) => res + x[0], 0)),
         }))
-        .sort(
-          (a, b) =>
-            b.score - a.score ||
-            console.log(b.score, a.score) ||
-            a.doc - b.doc ||
-            a.para - b.para
-        );
+        .sort((a, b) => b.score - a.score || a.doc - b.doc || a.para - b.para);
       const res2 = [] as any;
       for (const r of res) {
         if (!res2.find((r2) => r2.doc === r.doc)) res2.push(r);
       }
-      return res2.slice(0, 50).map((p) => getDocByKey(data, p.doc));
+      return res2.slice(0, limit).map((p) => ({ doc: p.doc }));
     }
-    const res = (
+    return (
       filter === "All Writings and Prayers"
-        ? scoredParas
+        ? cited
         : filter === "All Prayers"
-          ? scoredParas.filter((p) => loadDoc(data, p.doc).type === "Prayer")
-          : scoredParas.filter((p) => loadDoc(data, p.doc).author === filter)
+          ? cited.filter((p) => dataInfo[p.doc].type === "Prayer")
+          : cited.filter((p) => dataInfo[p.doc].author === filter)
     )
       .map((p) => ({
         ...p,
@@ -73,12 +63,13 @@ export const getSearchDocs = (data, searchIndex, tokens, filter) => {
           (itemFactors[p.doc] || 1) *
           lenFunc(itemLengths[p.doc][p.para][p.level]),
       }))
-      .sort((a, b) => b.score - a.score || a.doc - b.doc || a.para - b.para);
-    return res
-      .slice(0, 50)
-      .map((p) =>
-        getDocByKey(data, p.doc, p.para, p.para, { [p.para]: p.level })
-      );
+      .sort((a, b) => b.score - a.score || a.doc - b.doc || a.para - b.para)
+      .slice(0, limit)
+      .map((p) => ({
+        doc: p.doc,
+        start: p.para,
+        levels: { [p.para]: p.level },
+      }));
   }
   const doubles = tokens
     .slice(0, -1)
@@ -86,7 +77,7 @@ export const getSearchDocs = (data, searchIndex, tokens, filter) => {
   const allTokens = [...tokens, ...doubles];
   const matches = {};
   for (const token of allTokens) {
-    for (const s of searchIndex.get(token) || []) {
+    for (const s of searchIndex.get(token)?.data || []) {
       const [rest, level = 0] = s.split("|");
       const [key, score = 2] = rest.split(":");
       const [doc, para] = key.split("_");
@@ -118,7 +109,7 @@ export const getSearchDocs = (data, searchIndex, tokens, filter) => {
           for (let i = group[0]; i <= group[group.length - 1]; i++) {
             for (let j = i; j <= group[group.length - 1]; j++) {
               if (
-                filter !== "All Prayers" ||
+                (filter !== "All Prayers" && j - i < 10) ||
                 (i === 0 && j === group[group.length - 1])
               ) {
                 const paras = docParas.filter((p) => i <= p && p <= j);
@@ -131,6 +122,10 @@ export const getSearchDocs = (data, searchIndex, tokens, filter) => {
                   const levels = group
                     .filter((k) => i <= k && k <= j)
                     .reduce((res, k) => {
+                      if (filter === "All Prayers") {
+                        res[k] = 0;
+                        return res;
+                      }
                       if (!matches[doc][k]) return res;
                       const opts = allTokens
                         .filter((t) => !t.includes("_") && matches[doc][k][t])
@@ -146,11 +141,11 @@ export const getSearchDocs = (data, searchIndex, tokens, filter) => {
                     (t) =>
                       countFunc(
                         sum(paras.map((p) => matches[doc][p][t]?.score || 0)) /
-                          (tokenCounts[t] || 1)
+                          (searchIndex.get(t).count || 1)
                       )
                     // Math.pow(
                     //   sum(paras.map((p) => p.scores[t] || 0)) /
-                    //     (tokenCounts[t] || 1),
+                    //     (counts[t] || 1),
                     //   COUNTPOWER
                     // )
                   );
@@ -162,7 +157,7 @@ export const getSearchDocs = (data, searchIndex, tokens, filter) => {
                     // base: allTokens.map(
                     //   (t) =>
                     //     sum(paras.map((p) => p.scores[t] || 0)) /
-                    //     (tokenCounts[t] || 1)
+                    //     (counts[t] || 1)
                     // ),
                     levels,
                     score: sum(scores) * lenFunc(len),
@@ -184,14 +179,13 @@ export const getSearchDocs = (data, searchIndex, tokens, filter) => {
     filter === "All Writings and Prayers"
       ? res
       : filter === "All Prayers"
-        ? res.filter((d) => loadDoc(data, d.doc).type === "Prayer")
-        : res.filter((d) => loadDoc(data, d.doc).author === filter);
-  const res2 = filtered
+        ? res.filter((d) => dataInfo[d.doc].type === "Prayer")
+        : res.filter((d) => dataInfo[d.doc].author === filter);
+  return filtered
     .map((d) => ({
       ...d,
       score: d.score * (itemFactors[d.doc] || 1),
     }))
     .sort((a, b) => b.score - a.score || a.doc - b.doc || a.start - b.start)
-    .slice(0, 50);
-  return res2.map((d) => getDocByKey(data, d.doc, d.start, d.end, d.levels));
+    .slice(0, limit);
 };

@@ -1,4 +1,4 @@
-import * as ohm from "ohm-js";
+import { grammar as ohmGrammar } from "ohm-js";
 
 const grammar = String.raw`Maraca {
 
@@ -120,7 +120,7 @@ const grammar = String.raw`Maraca {
     = ~"\n" "\x00".."\x20"
 }`;
 
-const g = ohm.grammar(grammar);
+const g = ohmGrammar(grammar);
 const s = g.createSemantics();
 
 const binary = (a, _1, b, _2, c) => ({

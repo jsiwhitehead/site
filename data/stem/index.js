@@ -120,6 +120,8 @@ exceptions1.celebratory = "celebr";
 exceptions1.developmental = "develop";
 exceptions1.eaten = "eat";
 exceptions1.ebb = "eb";
+exceptions1.erred = "error";
+exceptions1.erring = "error";
 exceptions1.fill = "fil";
 exceptions1.fills = "fil";
 exceptions1.layer = "layer";
@@ -361,6 +363,7 @@ exceptions1.kinds = "kinds";
 exceptions1.longer = "longer";
 exceptions1.orders = "orders";
 exceptions1.unless = "unless";
+exceptions1.very = "very";
 // Tweaks!
 var tweaks = Object.create(null);
 tweaks.aggressor = "aggress";
@@ -765,6 +768,7 @@ tweaks.equat = "equal";
 tweaks.equilibrium = "equilibr";
 tweaks.equinoct = "equinox";
 tweaks.eros = "erod";
+tweaks.err = "error";
 tweaks.erron = "error";
 tweaks.euphoria = "euphor";
 tweaks.european = "europ";
@@ -3284,13 +3288,13 @@ var step1b = function (s) {
     return rgxSFXatORblORis.test(sd)
       ? sd + "e"
       : // or
-      rgxDouble.test(sd)
-      ? sd.replace(/.$/, "")
-      : // or
-      isShort(sd) && rgn.r1 === ""
-      ? sd + "e"
-      : // or
-        sd;
+        rgxDouble.test(sd)
+        ? sd.replace(/.$/, "")
+        : // or
+          isShort(sd) && rgn.r1 === ""
+          ? sd + "e"
+          : // or
+            sd;
   }
   return s;
 }; // step1b()
@@ -3371,8 +3375,8 @@ var step4 = function (s) {
     return rgxSFXstep4.test(s)
       ? s.replace(rgxSFXstep4, "")
       : rgxSFXstep4ion.test(s)
-      ? s.replace(rgxSFXstep4ion, "$1$2")
-      : s;
+        ? s.replace(rgxSFXstep4ion, "$1$2")
+        : s;
   }
   return s;
 }; // step4()

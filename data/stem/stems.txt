@@ -1,4 +1,4 @@
-: erred, erring, hawaii, heri, ioas, iowa
+: hawaii, heri, ioas, iowa
 
 0K|TK: ithaca, thacher
 
@@ -11156,13 +11156,11 @@ ern: ernest
 
 erod: erode, eroded, eroding, erosion
 
-err: err
-
 errand: errand, errands
 
 errant: errant
 
-error: erroneous, error, errors
+error: err, erred, erring, erroneous, error, errors
 
 erstwhil: erstwhile
 
@@ -25856,7 +25854,7 @@ uttermost: uttermost
 
 uxor: uxorious
 
-v: verily, very
+v: verily
 
 vacat: vacancies, vacancy, vacant, vacate, vacated
 
@@ -25989,6 +25987,8 @@ version: version, versions
 vertebr: vertebral, vertebrate
 
 verv: verve
+
+very: very
 
 vessel: vessel, vessels
 

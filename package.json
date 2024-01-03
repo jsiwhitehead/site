@@ -4,7 +4,8 @@
   "scripts": {
     "data": "node data/index.js",
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@preact/signals-core": "1.2.3",

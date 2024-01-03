@@ -1,6 +1,7 @@
 {
   search:: ''
   filter:: 'All Writings and Prayers'
+  current: passages(search, filter)
   ~
   [
     font: 'Atkinson Hyperlegible, sans-serif'
@@ -59,7 +60,7 @@
       [
         gap: 40
         ~
-        for passage in passages(search, filter) {
+        for passage in current {
           [
             gap: 25
             position: 'center'
@@ -124,6 +125,11 @@
             pad: [top: 2]
           ]
         }
+        if length(current) < 30 [
+          align: 'center'
+          ~
+          'Loading . . .'
+        ]
       ]
     ]
   ]
