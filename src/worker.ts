@@ -80,7 +80,8 @@ const attempt = () => {
   if (
     loadedUrls["/stems.txt"] &&
     loadedUrls["/cited.txt"] &&
-    (loadedUrls["/search.txt"] || tokens.every((t) => searchIndex.has(t)))
+    (loadedUrls["/search.txt"] ||
+      (tokens.length === 1 && tokens.every((t) => searchIndex.has(t))))
   ) {
     const mappedTokens = tokens.map((t) =>
       /[0A-Z]/.test(t) || allStems.has(t)

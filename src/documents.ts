@@ -74,7 +74,7 @@ export const getSearchDocs = (searchIndex, cited, tokens, filter, limit) => {
   const doubles = tokens
     .slice(0, -1)
     .map((t1, i) => [t1, tokens[i + 1]].sort().join("_"));
-  const allTokens = [...tokens, ...doubles];
+  const allTokens = [...tokens, ...doubles].filter((t) => searchIndex.has(t));
   const matches = {};
   for (const token of allTokens) {
     for (const s of searchIndex.get(token)?.data || []) {
