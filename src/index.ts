@@ -1,6 +1,6 @@
 import getTokens from "../data/tokens";
 
-import initialDocs from "../data/json/initial.json";
+// import initialDocs from "../data/json/initial.json";
 
 import maraca, { atom, effect } from "./maraca";
 import render from "./render";
@@ -50,14 +50,14 @@ const compiled = maraca(
         .map((x) => getTokens(x)[0])
         .filter((x) => x);
 
-      if (tokens.length === 0 && filter === "All Writings and Prayers") {
-        searchAtom.set(initialDocs.map((d) => highlightDoc(d, [])));
-      } else {
-        searchTimer = setTimeout(() => {
-          worker.postMessage({ tokens, filter });
-          worker.onmessage = (e) => searchAtom.set(e.data);
-        }, 250);
-      }
+      // if (tokens.length === 0 && filter === "All Writings and Prayers") {
+      //   searchAtom.set(initialDocs.map((d) => highlightDoc(d, [])));
+      // } else {
+      searchTimer = setTimeout(() => {
+        worker.postMessage({ tokens, filter });
+        worker.onmessage = (e) => searchAtom.set(e.data);
+      }, 250);
+      // }
 
       return searchAtom;
     },
