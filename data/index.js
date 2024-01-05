@@ -95,7 +95,6 @@ const getDateFactor = (years) => {
 
 const searchIndex = new Map();
 const counts = {};
-const wordCounts = {};
 const scoredParas = [];
 const specialPrayers = {};
 const updateIndex = (
@@ -127,7 +126,6 @@ const updateIndex = (
       const partTokens = getTokens(part.text, (word, stem) => {
         if (!fullStems[stem]) fullStems[stem] = {};
         fullStems[stem][word] = (fullStems[stem][word] || 0) + 1;
-        wordCounts[word] = (wordCounts[word] || 0) + 1;
       }).map((token) => ({
         token,
         citations: (part.citations || 0) + 2,
@@ -242,15 +240,6 @@ for (const { index } of docScores.sort(
     covered[d] = true;
   }
 }
-
-// console.log(
-//   Object.keys(wordCounts)
-//     .map((k) => ({ stem: k, count: wordCounts[k] }))
-//     .sort((a, b) => b.count - a.count)
-//     .slice(0, 500)
-//     .map((x) => x.stem)
-//     .join("\n")
-// );
 
 const sortedTokens = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
 

@@ -1,6 +1,6 @@
 import itemFactors from "../data/json/factors.json";
 import itemLengths from "../data/json/lengths.json";
-import specialPrayers from "../data/json/specialPrayers.json";
+// import specialPrayers from "../data/json/specialPrayers.json";
 import dataInfo from "../data/json/info.json";
 
 const sum = (x) => x.reduce((res, a) => res + a, 0);
@@ -32,11 +32,11 @@ const groupIndices = (indices) => {
   return res;
 };
 
-const randomSelection = (weights, limit) => {
+const randomSelection = (items, getWeight, limit) => {
   const cumulative = [] as any;
   let total = 0;
-  for (const w of weights) {
-    total += w;
+  for (const item of items) {
+    total += getWeight(item);
     cumulative.push(total);
   }
   const res = new Set<any>();
@@ -44,8 +44,13 @@ const randomSelection = (weights, limit) => {
     const r = Math.random() * total;
     res.add(cumulative.findIndex((c) => c >= r));
   }
-  return [...res];
+  return [...res].map((i) => items[i]);
 };
+
+const prayersList = dataInfo
+  .map((d, i) => ({ ...d, index: i }))
+  .filter((d) => d.type === "Prayer" && !([] as any).includes(d.index))
+  .map((d) => d.index);
 
 export const getSearchDocs = (searchIndex, cited, tokens, filter, limit) => {
   if (tokens.length === 0) {
@@ -53,53 +58,51 @@ export const getSearchDocs = (searchIndex, cited, tokens, filter, limit) => {
       const res = cited
         .filter(
           (d) =>
-            dataInfo[d.doc].type === "Prayer" && !specialPrayers.includes(d.doc)
+            dataInfo[d.doc].type === "Prayer" && !([] as any).includes(d.doc)
         )
         .map((p) => ({
           ...p,
+          score: p.score || 0,
+        }));
+      const docs = prayersList
+        .map((doc) => {
+          const items = res.filter((p) => p.doc === doc);
+          if (items.length === 0) return { doc, score: 0.2 };
+          const score =
+            sum(items.map((p) => p.score)) / itemLengths[doc].length;
+          return { doc, score: score + 0.2 };
+        })
+        .map((d) => ({
+          ...d,
           score:
-            (p.score || 0) *
-            (itemFactors[p.doc] || 1) *
-            lenFunc(itemLengths[p.doc].reduce((res, x) => res + x[0], 0)),
-        }))
-        .sort((a, b) => b.score - a.score || a.doc - b.doc || a.para - b.para);
-      const res2 = [] as any;
-      for (const r of res) {
-        if (!res2.find((r2) => r2.doc === r.doc)) res2.push(r);
-      }
-      return res2.slice(0, limit).map((p) => ({ doc: p.doc }));
+            d.score *
+            (itemFactors[d.doc] || 1) *
+            lenFunc(itemLengths[d.doc].reduce((res, x) => res + x[0], 0)),
+        }));
+      return randomSelection(docs, (d) => d.score, limit).map((d) => ({
+        doc: d.doc,
+      }));
     }
-    const res = (
-      filter === "All Writings and Prayers"
+    return randomSelection(
+      (filter === "All Writings and Prayers"
         ? cited
         : filter === "All Prayers"
           ? cited.filter((p) => dataInfo[p.doc].type === "Prayer")
           : cited.filter((p) => dataInfo[p.doc].author === filter)
-    ).map((p) => ({
-      ...p,
-      score:
-        (p.score || 0) *
-        (itemFactors[p.doc] || 1) *
-        lenFunc(itemLengths[p.doc][p.para][p.level]),
-    }));
-    const selected = randomSelection(
-      res.map((r) => r.score),
+      ).map((p) => ({
+        ...p,
+        score:
+          (p.score || 0) *
+          (itemFactors[p.doc] || 1) *
+          lenFunc(itemLengths[p.doc][p.para][p.level]),
+      })),
+      (x) => x.score,
       limit
-    );
-    return selected
-      .map((i) => res[i])
-      .map((p) => ({
-        doc: p.doc,
-        start: p.para,
-        levels: { [p.para]: p.level },
-      }));
-    // .sort((a, b) => b.score - a.score || a.doc - b.doc || a.para - b.para)
-    // .slice(0, limit)
-    // .map((p) => ({
-    //   doc: p.doc,
-    //   start: p.para,
-    //   levels: { [p.para]: p.level },
-    // }));
+    ).map((p) => ({
+      doc: p.doc,
+      start: p.para,
+      levels: { [p.para]: p.level },
+    }));
   }
   // if (tokens.length === 0) {
   //   const filtered =
@@ -202,7 +205,7 @@ export const getSearchDocs = (searchIndex, cited, tokens, filter, limit) => {
       return true;
     }
     if (filter === "All Prayers") {
-      return dataInfo[doc].type === "Prayer" && !specialPrayers.includes(doc);
+      return dataInfo[doc].type === "Prayer" && !([] as any).includes(doc);
     }
     return dataInfo[doc].author === filter;
   })) {

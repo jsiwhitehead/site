@@ -102,7 +102,8 @@ const attempt = () => {
           .map((d) =>
             highlightDoc(
               getDocByKey(data, d.doc, d.start, d.end, d.levels),
-              mappedTokens
+              mappedTokens,
+              filter === "All Prayers"
             )
           ),
       ];

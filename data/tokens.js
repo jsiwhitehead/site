@@ -151,9 +151,9 @@ export default (text, onStem) => {
         .toLowerCase()
         .replace(/[’']s\b/g, "")
         .replace(/[’']/g, "");
-      if (w.length <= 2 || stopwords.includes(w)) return [];
       const res = stem(word, words.slice(0, i).reverse(), words.slice(i + 1));
       if (onStem) onStem(w, res);
+      if (w.length <= 2 || stopwords.includes(w)) return [];
       return res;
     });
   });

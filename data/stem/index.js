@@ -364,6 +364,44 @@ exceptions1.longer = "longer";
 exceptions1.orders = "orders";
 exceptions1.unless = "unless";
 exceptions1.very = "very";
+exceptions1.her = "her";
+exceptions1.hers = "hers";
+exceptions1.than = "than";
+exceptions1.any = "any";
+exceptions1.and = "and";
+exceptions1.upon = "upon";
+exceptions1.had = "had";
+exceptions1.does = "does";
+exceptions1.off = "ooff";
+exceptions1.out = "oout";
+exceptions1.she = "sshe";
+exceptions1.these = "these";
+exceptions1.un = "un";
+exceptions1.until = "uuntil";
+exceptions1.with = "wwith";
+
+// // thy th
+// // these thes
+// // upon PN
+// // cause caus
+// // had T
+// // every ev
+// // should shoul
+// // ours our
+// // ourselves ourselv
+// // yours your
+// // yourselves yourselv
+// // her
+// // hers
+// // theirs their
+// // themselves themselv
+// // having have
+// // does doe
+// // because becaus
+// // why wh
+// // any N
+// // than 0N|TN
+
 // Tweaks!
 var tweaks = Object.create(null);
 tweaks.aggressor = "aggress";
@@ -1821,6 +1859,7 @@ tweaks.wrongdo = "wrong";
 tweaks.wrote = "write";
 tweaks.youngst = "young";
 tweaks.zonal = "zone";
+tweaks.un = "unerr";
 
 const ierReg = /ier$/;
 const eriReg = /eri$/;
@@ -3658,6 +3697,11 @@ const stem = function (w, prev, next) {
 }; // stem()
 
 export default (word, prev, next) => {
+  const w = word
+    .toLowerCase()
+    .replace(/[’']s\b/g, "")
+    .replace(/[’']/g, "");
+  if (w.length <= 2) return "x" + w;
   const s = stem(word, prev, next);
   return s[0] === "*" ? [...new Set(doubleMetaphone(s))].join("|") : s;
 };

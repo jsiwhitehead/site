@@ -214,7 +214,9 @@ export const getParagraphLines = (para) => {
   if (para.section) {
     return [{ section: !!para.title, text: para.title || "* * *" }];
   }
-  if (!para.lines) return [{ text: para.parts.map((p) => p.text).join("") }];
+  if (!para.lines) {
+    return [{ type: para.type, text: para.parts.map((p) => p.text).join("") }];
+  }
   return para.lines.map((parts) => ({
     text: parts.map((p) => p.text).join(""),
   }));

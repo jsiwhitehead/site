@@ -1158,8 +1158,6 @@ KRTM: khartum, khurtumi
 
 KRTN: gardner
 
-KRTPN: agreed‑upon
-
 KRTSTN: kurdistan
 
 KRTX: kurdish
@@ -5128,6 +5126,8 @@ abort: abortion, abortive
 
 abound: abound, abounded, aboundeth, abounding, abounds
 
+about: about
+
 abov: above
 
 abovecit: above‑cited
@@ -5468,6 +5468,8 @@ afterschool: after‑school
 
 afterward: afterward, afterwards
 
+again: again
+
 against: against
 
 agat: agate
@@ -5511,6 +5513,8 @@ ago: ago
 agon: agonies, agonise, agonised, agonising, agony
 
 agre: agree, agreeable, agreeably, agreed, agreeing, agreement, agreements, agrees
+
+agreedupon: agreed‑upon
 
 agricultur: agricultural, agriculture
 
@@ -5571,6 +5575,8 @@ align: align, aligned, aligning, alignment
 alik: alike
 
 aliv: alive
+
+all: all
 
 allabid: all‑abiding
 
@@ -5870,6 +5876,8 @@ ancient: ancient, ancients
 
 ancillar: ancillary
 
+and: and
+
 andes: andes
 
 anecdot: anecdote, anecdotes
@@ -5991,6 +5999,8 @@ anvil: anvil
 anxiet: anxieties, anxiety
 
 anxious: anxious, anxiously
+
+any: any
 
 anybod: anybody
 
@@ -6175,6 +6185,8 @@ ardent: ardency, ardent, ardently
 ardour: ardour, ardours
 
 arduous: arduous, arduously, arduousness
+
+are: are
 
 area: area, areas
 
@@ -6738,6 +6750,8 @@ beav: beaver
 
 becam: became
 
+becaus: because
+
 beckon: beck, beckon, beckoning, beckons
 
 becloud: becloud, beclouded, becloudeth, beclouding, becloudings
@@ -6763,6 +6777,8 @@ bedsid: bedside, bed‑side
 beef: beef
 
 beehiv: beehive
+
+been: been
 
 beer: beer
 
@@ -7492,6 +7508,8 @@ busi: busied, busily, business, businesses, busy, busying
 
 businessman: businessman, businessmen
 
+but: but
+
 butch: butcher, butchering, butchers, butchery
 
 butl: butler
@@ -7579,6 +7597,8 @@ campaign: campaign, campaigners, campaigning, campaigns
 camphor: camphor, camphorated
 
 campus: campus, campuses
+
+can: can
 
 canal: canal, canalise, canalised, canalises, canalising
 
@@ -7780,7 +7800,7 @@ caught: caught
 
 cauldron: cauldron
 
-caus: causal, causation, causative, caused, causer, causes, causest, causeth, causing
+caus: causal, causation, causative, cause, caused, causer, causes, causest, causeth, causing
 
 caustic: caustic
 
@@ -8944,6 +8964,8 @@ couch: couch, couched, couches
 
 cough: cough
 
+could: could
+
 couldst: couldst
 
 council: council, councils
@@ -9848,6 +9870,8 @@ dictat: dictate, dictated, dictates, dictating, dictation, dictator, dictatorial
 
 dictionar: dictionaries, dictionary
 
+did: did
+
 didact: didactic
 
 didst: didst
@@ -10278,6 +10302,8 @@ dodg: dodge
 
 doe: doe
 
+does: does
+
 dog: dog, dogged, dogs
 
 dogma: dogma, dogmas, dogmatic, dogmatically, dogmatism
@@ -10344,7 +10370,7 @@ dove: dove, doves
 
 dow: dowered
 
-down: downed
+down: down, downed
 
 downcast: downcast, down‑cast
 
@@ -10539,6 +10565,8 @@ dynast: dynasties, dynasty
 dysent: dysentery
 
 dysfunct: dysfunctional
+
+each: each
 
 eag: eager, eagerly, eagerness
 
@@ -11231,6 +11259,8 @@ euphem: euphemisms
 euphor: euphoria, euphoric
 
 europ: europe, european, europeans
+
+ev: every
 
 evacu: evacuate, evacuation
 
@@ -12390,6 +12420,8 @@ footstep: footsteps
 
 footstool: footstool, foot‑stool
 
+for: for
+
 forasmuch: forasmuch
 
 forbear: forbear, forbearance, forbearing, forborne
@@ -12697,6 +12729,8 @@ frivol: frivolities, frivolity, frivolous
 fro: fro
 
 frog: frogs
+
+from: from
 
 front: front, fronting, fronts
 
@@ -13360,6 +13394,8 @@ habitform: habit‑forming
 
 hack: hacked, hacking
 
+had: had
+
 hadst: hadst
 
 haft: haft
@@ -13516,6 +13552,8 @@ harsh: harsh, harsher, harshest, harshly, harshness
 
 harv: harvest, harvested, harvester, harvesting, harvests
 
+has: has
+
 hast: hast, haste, hasted, hasten, hastened, hasteneth, hastening, hastens, hastily, hasting, hasty
 
 hat: hat, hatless, hats
@@ -13530,6 +13568,8 @@ hatefil: hate‑filled
 
 hatemong: hate‑mongering, hate‑mongers
 
+hath: hath
+
 hatsoev: hatsoever
 
 haught: haughtiest, haughtily, haughtiness, haughty
@@ -13538,7 +13578,7 @@ haul: haul, hauled, hauling
 
 haunt: haunted, haunting, haunts
 
-have: haves
+have: have, haves, having
 
 haven: haven, havens
 
@@ -13696,6 +13736,8 @@ henceforward: henceforward
 
 henchmen: henchmen
 
+her: her
+
 herald: herald, heralded, heraldeth, heralding, heralds
 
 herb: herb, herbs
@@ -13707,6 +13749,8 @@ herbivor: herbivorous
 herculean: herculean
 
 herd: herd, herded, herds
+
+here: here
 
 hereabout: hereabouts
 
@@ -13739,6 +13783,10 @@ hermitlik: hermit‑like
 hero: hero, heroes, heroic, heroically, heroine, heroines, heroism
 
 heroi: heroin
+
+hers: hers
+
+herself: herself
 
 hesit: hesitancy, hesitant, hesitate, hesitated, hesitateth, hesitating, hesitation, hesitations
 
@@ -13822,7 +13870,9 @@ hilt: hilt
 
 hiltdeep: hilt‑deep
 
-him: him‑
+him: him, him‑
+
+himself: himself
 
 hind: hinder, hindered, hindereth, hindering, hinders, hindrance, hindrances
 
@@ -13837,6 +13887,8 @@ hint: hint, hinted, hinting, hints
 hinterland: hinterland
 
 hire: hire, hired
+
+his: his
 
 histor: historian, historians, historical, historically, historicist, histories, historiography, history
 
@@ -13977,6 +14029,8 @@ housetop: housetops
 housew: housewives
 
 hov: hovering
+
+how: how
 
 howbeit: howbeit
 
@@ -15146,6 +15200,8 @@ intimation: intimated, intimates, intimation, intimations
 
 intimid: intimidate, intimidated, intimidating, intimidation
 
+into: into
+
 intol: intolerable, intolerance, intolerant
 
 inton: intonations, intone, intoned, intoners, intoneth, intoning
@@ -15304,9 +15360,13 @@ isol: isolate, isolated, isolates, isolating, isolation, isolationist
 
 issu: issuance, issue, issued, issues, issueth, issuing
 
+it: its
+
 item: item, items
 
 itin: itinerant
+
+itself: itself
 
 ivb: ivb
 
@@ -16474,7 +16534,7 @@ maxim: maxim
 
 maximum: maximise, maximum
 
-may: mayest
+may: may, mayest
 
 mayb: maybe
 
@@ -17004,7 +17064,7 @@ mosqu: mosque, mosques
 
 mosquito: mosquito
 
-most: mostly
+most: most, mostly
 
 mostglor: most‑glorious
 
@@ -17144,6 +17204,8 @@ muskscent: musk‑scent, musk‑scented
 
 muslim: muslim, muslims
 
+must: must
+
 mustard: mustard
 
 mustardse: mustard‑seed
@@ -17167,6 +17229,8 @@ muze: muze
 myriad: myriad, myriads
 
 myrtl: myrtles
+
+myself: myself
 
 myst: mysteries, mysterious, mysteriously, mystery
 
@@ -17624,7 +17688,7 @@ nose: nose, noses
 
 nostril: nostril, nostrils
 
-not: nots
+not: not, nots
 
 notabl: notabilities, notable, notables, notably
 
@@ -17890,7 +17954,7 @@ onceinalifetim: once‑in‑a‑lifetime
 
 oncom: oncoming
 
-one: oneness, ones
+one: one, oneness, ones
 
 onecolour: one‑coloured
 
@@ -17945,6 +18009,10 @@ onto: onto
 onward: onward, onwards
 
 onwardmarch: onward‑marching
+
+ooff: off
+
+oout: out
 
 op: operate, operated, operates, operateth, operating, operation, operational, operations, operative, operator
 
@@ -18068,7 +18136,11 @@ ought: ought
 
 ounc: ounce, ounces
 
+our: our, ours
+
 ourself: ourself
+
+ourselv: ourselves
 
 oust: oust, ousting
 
@@ -18306,7 +18378,7 @@ owe: owe, owed, owes, oweth, owing
 
 owl: owl, owls
 
-own: owned, owner, owners, ownership, owneth, owning, owns
+own: own, owned, owner, owners, ownership, owneth, owning, owns
 
 oxen: oxen
 
@@ -21936,7 +22008,7 @@ shortterm: short‑term
 
 shorttim: short‑time
 
-shoul: shouldst
+shoul: should, shouldst
 
 should: shoulder, shouldered, shouldering, shoulders
 
@@ -22696,6 +22768,8 @@ squirrel: squirrel
 
 srp: srp
 
+sshe: she
+
 stab: stab, stabbed
 
 stabil: stabilise, stabilised, stabilises, stabilising, stability
@@ -23199,6 +23273,8 @@ succour: succour, succoured, succourer, succourers, succoureth, succouring
 succul: succulent
 
 succumb: succumb, succumbed, succumbing, succumbs
+
+such: such
 
 suchandsuch: such‑and‑such
 
@@ -23790,17 +23866,35 @@ textual: textual
 
 textur: texture
 
+th: thy
+
+than: than
+
 thank: thank, thanked, thankful, thankfully, thankfulness, thanking, thankless, thanks, thanksgiving, thanksgivings
 
 thankoff: thank‑offering
 
+that: that
+
 thaw: thawed
+
+the: the
 
 theatr: theatre, theatres, theatrical
 
 theatrego: theatre‑going
 
+thee: thee
+
+their: their, theirs
+
+them: them
+
 theme: thematic, theme, themes
+
+themselv: themselves
+
+then: then
 
 thenc: thence
 
@@ -23823,6 +23917,8 @@ theosoph: theosophical, theosophists, theosophy
 therap: therapy
 
 therapeut: therapeutics
+
+there: there
 
 thereabout: thereabouts
 
@@ -23856,7 +23952,11 @@ thermodynam: thermodynamics
 
 thes: theses, thesis
 
+these: these
+
 thew: thew
+
+they: they
 
 thick: thick, thicker, thickest, thickly
 
@@ -23924,6 +24024,8 @@ thirtyyear: thirty‑year
 
 thirtyyearold: thirty‑year‑old
 
+this: this
+
 thistl: thistles
 
 thisworld: this‑worldly
@@ -23937,6 +24039,10 @@ thorn: thorn, thorns, thorny
 thorough: thorough, thoroughly, thoroughness
 
 thoroughfar: thoroughfare
+
+those: those
+
+thou: thou
 
 thoud: thoud
 
@@ -24007,6 +24113,8 @@ throe: throes
 throne: throne, throned, thrones
 
 throng: throng, thronged, thronging, throngs
+
+through: through
 
 throughout: throughout
 
@@ -24127,6 +24235,8 @@ tonguet: tongue‑tied
 tonight: tonight
 
 tonn: tonnes
+
+too: too
 
 tool: tool, tools
 
@@ -24674,8 +24784,6 @@ ultramontan: ultramontane
 
 umbrella: umbrella
 
-un: unerring, unerringly
-
 unab: unabated, unabating
 
 unabash: unabashed, unabashedly
@@ -25081,6 +25189,8 @@ unequ: unequal, unequalled, unequally
 unequip: unequipped
 
 unequivoc: unequivocal, unequivocally
+
+unerr: unerring, unerringly
 
 unescort: unescorted
 
@@ -25672,6 +25782,8 @@ untim: untimely
 
 untir: untiring, untiringly
 
+unto: unto
+
 untold: untold
 
 untouch: untouched
@@ -25780,6 +25892,8 @@ upland: uplands
 
 uplift: uplift, uplifted, uplifter, uplifting, upliftment, uplifts
 
+upon: upon
+
 upp: upper, uppermost
 
 uprais: upraise, upraised, upraiser, upraising
@@ -25851,6 +25965,8 @@ utt: utter, utterance, utterances, uttered, utterest, uttereth, uttering, utters
 utterly: utter, utterly
 
 uttermost: uttermost
+
+uuntil: until
 
 uxor: uxorious
 
@@ -26258,6 +26374,8 @@ warwear: war‑weary
 
 warworn: warworn
 
+was: was
+
 wash: wash, washed, washeth, washing, washings
 
 wast: wast, waste, wasted, wasteness, wastes, wasteth, wasting
@@ -26498,6 +26616,8 @@ wend: wended
 
 went: went
 
+were: were
+
 wert: wert
 
 west: west, western, westerner, westerners, westernmost, wests, westward, westwards
@@ -26506,7 +26626,11 @@ westernis: westernisation, westernised
 
 wet: wet, wetness
 
+wh: why
+
 whale: whales
+
+what: what
 
 whatev: whatever
 
@@ -26516,13 +26640,15 @@ wheat: wheat
 
 wheel: wheel, wheels
 
+when: when
+
 whenc: whence
 
 whenev: whenever
 
 whensoev: whensoever
 
-where: whereer
+where: where, whereer
 
 wherea: whereas
 
@@ -26562,9 +26688,13 @@ wheth: whether
 
 whey: whey
 
+which: which
+
 whichev: whichever
 
 whichsoev: whichsoever
+
+while: while
 
 whilst: whilst
 
@@ -26600,6 +26730,8 @@ whithersoev: whithersoever
 
 whittl: whittle, whittling
 
+who: who
+
 whoev: whoever
 
 whole: whole, wholeness, wholly
@@ -26609,6 +26741,8 @@ wholeheart: wholehearted, wholeheartedly, wholeheartedness, whole‑hearted, who
 wholesal: wholesale
 
 wholesom: wholesome, wholesomeness
+
+whom: whom
 
 whomev: whomever
 
@@ -26888,6 +27022,8 @@ worth: worth, worthier, worthiest, worthily, worthiness, worthless, worthy
 
 worthwhil: worthwhile
 
+would: would
+
 wouldb: would‑be
 
 wouldbevictim: would‑be‑victim
@@ -26942,6 +27078,202 @@ wroth: wroth
 
 wrought: wrought
 
+wwith: with
+
+x: 
+
+xa: a
+
+xad: ad
+
+xah: ah
+
+xal: al
+
+xam: am
+
+xan: an
+
+xar: ar
+
+xas: as
+
+xat: at
+
+xau: au
+
+xaz: az
+
+xb: b
+
+xba: ba
+
+xbc: bc
+
+xbe: be
+
+xby: by
+
+xco: co
+
+xd: d
+
+xdc: dc
+
+xdd: dd
+
+xde: de
+
+xdo: do
+
+xdr: dr
+
+xdu: du
+
+xe: e
+
+xed: ed
+
+xeg: eg
+
+xel: el
+
+xes: es
+
+xet: et
+
+xex: ex
+
+xf: f
+
+xg: g
+
+xgo: go
+
+xh: h
+
+xha: ha
+
+xhe: he
+
+xhu: hu
+
+xi: i
+
+xie: ie
+
+xif: if
+
+xin: in
+
+xis: is
+
+xit: it
+
+xj: j
+
+xje: je
+
+xjr: jr
+
+xk: k
+
+xku: ku
+
+xla: la
+
+xle: le
+
+xlo: lo
+
+xm: m
+
+xme: me
+
+xmr: mr
+
+xms: ms
+
+xmt: mt
+
+xmy: my
+
+xn: n
+
+xnh: nh
+
+xnj: nj
+
+xno: no
+
+xo: o
+
+xof: of
+
+xoh: oh
+
+xon: on
+
+xor: or
+
+xox: ox
+
+xp: p
+
+xpm: pm
+
+xpo: po
+
+xpp: pp
+
+xps: ps
+
+xr: r
+
+xra: ra
+
+xs: s
+
+xsa: sa
+
+xso: so
+
+xss: ss
+
+xst: st
+
+xt: t
+
+xta: ta
+
+xte: te
+
+xto: to
+
+xtv: tv
+
+xu: u
+
+xuk: uk
+
+xun: un
+
+xup: up
+
+xur: ur
+
+xus: us
+
+xw: w
+
+xwe: we
+
+xya: ya
+
+xye: ye
+
+xza: za
+
 yard: yard, yards
 
 yardstick: yardstick
@@ -26972,9 +27304,17 @@ yoke: yoke
 
 yore: yore
 
+you: you
+
 youd: youd
 
 young: young, younger, youngest, youngsters
+
+your: your, yours
+
+yourself: yourself
+
+yourselv: yourselves
 
 youth: youth, youthful, youthfulness, youths
 
