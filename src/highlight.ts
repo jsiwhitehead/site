@@ -1,56 +1,49 @@
 import stem from "../data/stem";
 import { getParagraphLines } from "../data/utils";
 
-const prayerTokens = [
-  "marr",
-  "dead",
-  "democrat",
-  "govern",
-  "edific",
-  "womb",
-  "child",
-  "mother",
-  "fath",
-  "parent",
-  "fam",
-  "return",
-  "wake",
-  "morn",
-  "evening",
-  "midnight",
-  "youth",
-  "stalk",
-  "baby",
-  "infant",
-  "seed",
-  "twig",
-  "sapl",
-  "plant",
-  "maid",
-  "maiden",
-  "handmaid",
-  "littl",
-  "daught",
-  "her",
-  "hers",
-  "herself",
-  "meet",
-  "assembl",
-  "gath",
-  "these",
-  "mischief",
-  "enem",
-  "advers",
-  "wicked",
-  "repud",
-  "infidel",
-];
+const prayerPhrases = [
+  "AyyamiHa",
+  "NawRuz",
+  "Washington",
+  "America",
+  "The Prayer for the Dead",
+  "The Purest Branch",
+  "democracy",
+  "government",
+  "edifice",
+  "Mashriqu’lAdhkar",
+  "in my womb",
+  "leave me not childless",
+  "for me and for her mother",
+  "as well as for her",
+  "pangs of labour",
+  "the Fast",
+].map((p) => p.split(" "));
 
 export default (doc, tokens, prayers) => {
-  const checkToken = (t) => {
-    if (tokens.includes(t)) return true;
-    if (prayers && prayerTokens.includes(t)) return true;
-    if (prayers && /[0A-Z]/.test(t)) return true;
+  const check = (t, prev, next) => {
+    const s = stem(t, prev, next);
+    if (tokens.includes(s)) return true;
+    if (!prayers) return false;
+    const whole = [...prev.reverse(), t, ...next];
+    if (
+      prayerPhrases.some((p) => {
+        if (!p.includes(t)) return false;
+        const index = prev.length;
+        for (let i = -p.length + 1; i <= 0; i++) {
+          if (
+            whole.slice(index + i, index + i + p.length).join(" ") ===
+            p.join(" ")
+          ) {
+            return true;
+          }
+        }
+      })
+    ) {
+      return true;
+    }
+    // if (prayers && prayerTokens.includes(s)) return true;
+    // if (prayers && /[0A-Z]/.test(t)) return true;
     return false;
   };
 
@@ -75,14 +68,12 @@ export default (doc, tokens, prayers) => {
           const next = cleaned.slice(j + 1).flat();
           if (
             group.length > 1 &&
-            (checkToken(stem(group.join(""), prev, next)) ||
+            (check(group.join(""), prev, next) ||
               group.every((c, k) =>
-                checkToken(
-                  stem(
-                    c,
-                    [...group.slice(0, k).reverse(), ...prev],
-                    [...group.slice(k + 1), ...next]
-                  )
+                check(
+                  c,
+                  [...group.slice(0, k).reverse(), ...prev],
+                  [...group.slice(k + 1), ...next]
                 )
               ))
           ) {
@@ -97,12 +88,10 @@ export default (doc, tokens, prayers) => {
               ...(k > 0 ? [{ text: "‑", highlight: false, ...info }] : []),
               {
                 text: words[j][k],
-                highlight: checkToken(
-                  stem(
-                    c,
-                    [...group.slice(0, k).reverse(), ...prev],
-                    [...group.slice(k + 1), ...next]
-                  )
+                highlight: check(
+                  c,
+                  [...group.slice(0, k).reverse(), ...prev],
+                  [...group.slice(k + 1), ...next]
                 ),
                 ...info,
               },
