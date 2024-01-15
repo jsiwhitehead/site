@@ -64,6 +64,7 @@ const tokenTotals = {
   "Shoghi Effendi": {},
   "The Universal House of Justice": {},
 };
+let totalParaCount = 0;
 
 const updateTokens = (distinct, key) => {
   for (let i = 0; i < distinct.length; i++) {
@@ -106,6 +107,7 @@ const updateIndex = (
   isPrayer
 ) => {
   if (parts.length > 0) {
+    totalParaCount++;
     const key = `${docIndex}_${paraIndex}`;
     const scores = {};
     const levels = {};
@@ -258,15 +260,24 @@ const getPairs = (filter) => {
   for (const [key, count] of tokenPairs[filter].entries()) {
     if (count > 1) {
       const [k1, k2] = key.split("_");
+      const observed = count / totalParaCount;
+      const expected =
+        (tokenTotals[filter][k1] / totalParaCount) *
+        (tokenTotals[filter][k2] / totalParaCount);
+      // const score = count / (tokenTotals[filter][k1] + tokenTotals[filter][k2]);
+      const score = Math.log2(Math.pow(observed, 3) / expected);
+      // const score = (observed - expected) / Math.sqrt(observed);
       if (!allPairs[k1]) allPairs[k1] = [];
       allPairs[k1].push({
         key: k2,
-        score: count / (tokenTotals[filter][k1] + tokenTotals[filter][k2]),
+        score,
+        // score: count / (tokenTotals[filter][k1] + tokenTotals[filter][k2]),
       });
       if (!allPairs[k2]) allPairs[k2] = [];
       allPairs[k2].push({
         key: k1,
-        score: count / (tokenTotals[filter][k1] + tokenTotals[filter][k2]),
+        score,
+        // score: count / (tokenTotals[filter][k1] + tokenTotals[filter][k2]),
       });
     }
   }
@@ -276,8 +287,8 @@ const getPairs = (filter) => {
       const items = allPairs[k]
         .sort((a, b) => b.score - a.score)
         // .filter((a, i) => i < 5 || a.score > 0.1);
-        .slice(0, 5)
-        .map((x) => ({ ...x, score: Math.sqrt(x.score) }));
+        .slice(0, 5);
+      // .map((x) => ({ ...x, score: Math.sqrt(x.score) }));
       if (items.length === 0) return res;
       for (const item of items) {
         if (!stemWords[item.key]) stemWords[item.key] = getStemWord(item.key);
@@ -289,7 +300,9 @@ const getPairs = (filter) => {
     .map(
       (t) =>
         `${t}=${topPairs[t]
-          .map(({ key, score }) => `${key}:${Math.round(score * 1000)}`)
+          // .map(({ key, score }) => `${key}:${Math.round(score * 1000)}`)
+          .map(({ key, score }) => `${key}:${Math.round((score + 30) * 20)}`)
+          // .map(({ key, score }) => `${key}:${score}`)
           .join(",")}`
     )
     .join("\n");
