@@ -1126,7 +1126,7 @@ KRPN: caribbean, qurban, qurban‑ali
 
 KRPRT|JRPRT: gerbert
 
-KRPT: corbet, kharput, kiribati
+KRPT: corbet, kharput
 
 KRPTKN: kropotkin, krupatkin
 
@@ -1242,7 +1242,7 @@ KSTFRK: qasidiy‑i‑varqaiyyih
 
 KSTT: qasidiy‑i‑taiyyih
 
-KT: aqdas, cody, cote, hokkaido, iaqdas, kad, khata, khayyat, khuda, khudas, kitts, kuwait, kuweit, qadi, qadih, qadis, quds, quetta, quito
+KT: aqdas, cody, hokkaido, iaqdas, kad, khata, khayyat, khuda, khudas, kitts, kuwait, kuweit, qadi, qadih, qadis, quds, quetta, quito
 
 KTF: khedive
 
@@ -1366,7 +1366,7 @@ KXXHT: akhush‑shahid
 
 K|KS: kaiser
 
-L: ala, alai, ali, aliy, allah, ayala, elias, ella, ellis, eloy, hilli, hillih, holley, iel, ilahi, iyalih, lae, lao, laos, lawh, lee, leo, louis, lua, oelia, olyai, oule, wales
+L: ala, alai, ali, aliy, allah, ayala, elias, ella, ellis, eloy, hilli, hillih, holley, iel, ilahi, iyalih, lae, laos, lawh, lee, leo, louis, lua, oelia, olyai, oule, wales
 
 L0NN|LTNN: lithuanian
 
@@ -1381,8 +1381,6 @@ LF: alif, liva
 LFNT: levant
 
 LFR: alfred
-
-LFRMPTN: wolverhampton
 
 LFRN: livorno
 
@@ -1481,8 +1479,6 @@ LLNT: lalliance, leland, lowland
 LLSFRX: aliy‑i‑las‑furush
 
 LM: alam, allamiy, alma, hilmi, ilm, lam, lamiyyih, lima, lome, ulama, ulamas, william, williams, wilma
-
-LMFRR: holmfriur
 
 LMFRTR: holmfridur
 
@@ -1910,7 +1906,7 @@ MKTSN: muqaddasins
 
 MKTX: mogadishu
 
-ML: amelia, amul, emil, emilia, himalaya, himalayas, imola, mal, malaya, malih, mulla, mullah, mullahs, mullas, ummal, yawm‑al
+ML: amul, emil, emilia, himalaya, himalayas, imola, mal, malaya, malih, mulla, mullah, mullahs, mullas, ummal, yawm‑al
 
 MLF: mawlavi, mawlavis
 
@@ -2116,7 +2112,7 @@ MPTKL: empedocles
 
 MPXR: hampshire
 
-MR: amharic, amir, amirs, amr, amur, maori, maoris, maria, marie, marwah, mary, mihr, mihr‑ali, mir, miri, moore, moors, murray, umar, weimar
+MR: amharic, amir, amirs, amr, amur, maori, maoris, maria, marie, marwah, mary, mihr, mihr‑ali, mir, miri, moore, moorings, moors, murray, umar, weimar
 
 MR0|MRT: martha
 
@@ -2142,7 +2138,7 @@ MRKS: marquesas, marx
 
 MRKSSM: marxism
 
-MRKSST: marxists
+MRKSST: marxist, marxists
 
 MRL: amrullah
 
@@ -2434,7 +2430,7 @@ N0RLNT|NTRLNT: netherlanders, netherlands
 
 N0T|NTT: hanthawaddy
 
-NF: hanifih, nove
+NF: hanifih
 
 NFL: nawfal
 
@@ -3220,7 +3216,7 @@ PRS: bryce, bureaus, parsee, parsees, parsi, parsis, prussia
 
 PRSL: brasilia, brazil, brussels
 
-PRSLN: barcelona, brazilian, brazilians
+PRSLN: brazilian, brazilians
 
 PRSN: apperson, brazen, brazenly, parsons, pearson, prussian
 
@@ -3247,6 +3243,8 @@ PRTKS: portuguese
 PRTLNT: portland
 
 PRTN: bretton, britain, britannic, puritanism
+
+PRTNK: britannica
 
 PRTNKM: brittingham
 
@@ -3920,8 +3918,6 @@ SMF: samavih
 
 SMJ|SM: samaj, somaj
 
-SMK|TSMK: zamky
-
 SML: ismail, ismailiyyih, ismul, ismullah, samuel, somalia
 
 SMLHL: ismullahil, ismullahul
@@ -4414,8 +4410,6 @@ TFL: otavalo, tuvalu
 
 TFN: divan, divans
 
-TFR: divoire
-
 TFRX: tafrish, tafrishi
 
 TFSN: davison
@@ -4736,6 +4730,8 @@ TRS|TRTS: terrazzo
 
 TRT: eduard, edward, edwards, hadrat
 
+TRTFX|TRTFK: eduardovich
+
 TRX: daryush
 
 TRXS: turshiz, turshizi
@@ -5001,8 +4997,6 @@ XRM: shahram
 XRN: eshraghian, sharon, sherwin, shirin
 
 XRPL: sharples
-
-XRPRK: sherbrooke
 
 XRS: shiraz, shirazi, shiraziy
 
@@ -5390,7 +5384,7 @@ aeon: aeons
 
 aeroplan: aeroplane, aeroplanes
 
-aesthet: aesthetically
+aesthet: aesthetically, aesthetics
 
 afar: afar
 
@@ -6290,8 +6284,6 @@ ashor: ashore
 
 asia: asia, asian, asians, asiatic, asiatics
 
-asianaustralasian: asian‑australasian
-
 asid: aside
 
 ask: ask, asked, asketh, asking, asks
@@ -6907,6 +6899,8 @@ bequeath: bequeath, bequeathed, bequeathing
 bereav: bereaved, bereavement, bereavements
 
 bereft: bereft
+
+bertel: bertels
 
 beseech: beseech, beseeched, beseecheth, beseeching
 
@@ -9770,7 +9764,7 @@ destroy: destroy, destroyed, destroyer, destroyers, destroyeth, destroying, dest
 
 desultor: desultory
 
-det: deter, determent, deterred, deterreth
+det: deter, determent, deterred, deterreth, deterring
 
 detach: detach, detached, detacheth, detaching, detachment
 
@@ -9786,7 +9780,7 @@ detent: detention, detentions
 
 deterior: deteriorate, deteriorated, deteriorates, deteriorating, deterioration
 
-determin: determination, determinations, determine, determined, determinedly, determines, determinest, determineth, determining, deterministic
+determin: determination, determinations, determine, determined, determinedly, determines, determinest, determineth, determining, determinism, deterministic
 
 detest: detestable, detestation, detested
 
@@ -10992,6 +10986,8 @@ engin: engine, engineer, engineered, engineering, engineers, engines
 
 english: english, englishing, english‑
 
+englishlanguag: english‑language
+
 englishspeak: english‑speaking
 
 engrav: engrave, engraved, engraven
@@ -11417,6 +11413,8 @@ everyon: everyone
 everyth: everything
 
 everywh: everywhere
+
+evgeni: evgenii
 
 evict: evicted, eviction
 
@@ -11972,13 +11970,9 @@ fellowcountrymen: fellow‑countrymen
 
 fellowcreatur: fellow‑creatures
 
-fellowdefend: fellow‑defenders
-
 fellowdiscipl: fellow‑disciple, fellow‑disciples
 
 fellowexil: fellow‑exiles
-
-fellowheir: fellow‑heirs
 
 fellowlabour: fellow‑labourers
 
@@ -11994,15 +11988,11 @@ fellowminist: fellow‑ministers
 
 fellowmort: fellow‑mortals
 
-fellowmourn: fellow‑mourners
-
 fellowpilgrim: fellow‑pilgrim
 
 fellowprinc: fellow‑princes
 
 fellowprison: fellow‑prisoner, fellow‑prisoners
-
-fellowpromot: fellow‑promoters
 
 fellowpupil: fellow‑pupils
 
@@ -12258,7 +12248,7 @@ flamboy: flamboyant
 
 flame: flame, flamed, flamelike, flames, flaming
 
-flank: flank, flanked, flanking, flanks
+flank: flank, flanked, flanks
 
 flare: flared
 
@@ -12716,6 +12706,8 @@ friday: friday
 
 friend: friend, friendless, friendliness, friendly, friends, friendship, friendships
 
+friends: friend, friends
+
 fright: fright, frighten, frightened, frightening, frightful
 
 frigid: frigid
@@ -13076,8 +13068,6 @@ gloss: glosses
 
 glow: glow, glowed, gloweth, glowing, glows
 
-gmt: gmt
-
 gnash: gnashing
 
 gnat: gnat, gnats
@@ -13273,6 +13263,8 @@ gravit: gravitate, gravitated, gravitating, gravitation, gravitational, gravity
 graze: graze, grazed, grazing
 
 great: great, greater, greatest, greatly, greatness
+
+greatgrandson: great‑grandson
 
 greatheart: great‑hearted
 
@@ -17954,7 +17946,7 @@ onceinalifetim: once‑in‑a‑lifetime
 
 oncom: oncoming
 
-one: one, oneness, ones
+one: one, oneness
 
 onecolour: one‑coloured
 
@@ -17967,6 +17959,8 @@ onefifth: one‑fifth
 onehalf: one‑half
 
 onepart: one‑party
+
+ones: ones
 
 oneself: oneself
 
@@ -20160,7 +20154,7 @@ rearrang: rearrangement
 
 reason: reason, reasonable, reasonableness, reasonably, reasoned, reasoning, reasons
 
-reassert: reassert, reasserted
+reassert: reassert, reasserted, reasserts
 
 reassess: reassess, reassessed, reassessment
 
@@ -21049,8 +21043,6 @@ rope: rope, ropes
 rose: rose, roseate, rosebeds, rosebuds, roses, rosy
 
 rosegarden: rosegarden, rose‑garden, rose‑gardens
-
-rosehil: rose‑hill
 
 roselik: rose‑like
 
@@ -22164,7 +22156,7 @@ site: site, sited, sites, siting
 
 situat: situate, situated
 
-situation: situation, situations
+situation: situation, situational, situations
 
 six: six
 

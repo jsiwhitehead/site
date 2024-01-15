@@ -610,7 +610,6 @@ asham
 ashin
 ashor
 asia
-asianaustralasian
 asid
 ask
 asleep
@@ -919,6 +918,7 @@ bequ
 bequeath
 bereav
 bereft
+bertel
 beseech
 beseem
 beset
@@ -2961,6 +2961,7 @@ engag
 engend
 engin
 english
+englishlanguag
 englishspeak
 engrav
 engross
@@ -3174,6 +3175,7 @@ everyday
 everyon
 everyth
 everywh
+evgeni
 evict
 evid
 evil
@@ -3451,10 +3453,8 @@ fellowcompatriot
 fellowconspir
 fellowcountrymen
 fellowcreatur
-fellowdefend
 fellowdiscipl
 fellowexil
-fellowheir
 fellowlabour
 fellowman
 fellowmartyr
@@ -3462,11 +3462,9 @@ fellowmemb
 fellowmen
 fellowminist
 fellowmort
-fellowmourn
 fellowpilgrim
 fellowprinc
 fellowprison
-fellowpromot
 fellowpupil
 fellowrul
 fellowseced
@@ -3823,6 +3821,7 @@ fretwork
 friction
 friday
 friend
+friends
 fright
 frigid
 fring
@@ -4003,7 +4002,6 @@ gloom
 glor
 gloss
 glow
-gmt
 gnash
 gnat
 gnaw
@@ -4102,6 +4100,7 @@ graveyard
 gravit
 graze
 great
+greatgrandson
 greatheart
 greatmind
 greed
@@ -6449,6 +6448,7 @@ oneey
 onefifth
 onehalf
 onepart
+ones
 oneself
 onesixth
 onetenth
@@ -7990,7 +7990,6 @@ rootprincipl
 rope
 rose
 rosegarden
-rosehil
 roselik
 rosesweet
 rosewat

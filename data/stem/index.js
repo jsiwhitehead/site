@@ -379,29 +379,7 @@ exceptions1.these = "these";
 exceptions1.un = "un";
 exceptions1.until = "uuntil";
 exceptions1.with = "wwith";
-
-// // thy th
-// // these thes
-// // upon PN
-// // cause caus
-// // had T
-// // every ev
-// // should shoul
-// // ours our
-// // ourselves ourselv
-// // yours your
-// // yourselves yourselv
-// // her
-// // hers
-// // theirs their
-// // themselves themselv
-// // having have
-// // does doe
-// // because becaus
-// // why wh
-// // any N
-// // than 0N|TN
-
+exceptions1.ones = "ones";
 // Tweaks!
 var tweaks = Object.create(null);
 tweaks.aggressor = "aggress";

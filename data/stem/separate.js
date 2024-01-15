@@ -1045,6 +1045,206 @@ export default (wordCap, prevCap, nextCap) => {
     }
     return "majest";
   }
+  if (word === "friend") {
+    const prev = prevCap.map((x) => x.toLowerCase());
+    if (prev[0] === "this") {
+      return "friends";
+    }
+    if (
+      prev[0] === "o" ||
+      prev[1] === "o" ||
+      prev[2] === "o" ||
+      prev[3] === "o"
+    ) {
+      return "friends";
+    }
+    return "friend";
+  }
+  if (wordCap === "Friends" && !nextCap[0]) {
+    return "friends";
+  }
+  if (word === "friends") {
+    const prev = prevCap.map((x) => x.toLowerCase());
+    const next = nextCap.map((x) => x.toLowerCase());
+    if (prev[0] === "the" || prev[1] === "the") {
+      return "friends";
+    }
+    if (
+      prev[0] === "o" ||
+      prev[1] === "o" ||
+      prev[2] === "o" ||
+      prev[3] === "o"
+    ) {
+      return "friends";
+    }
+    if (prev[0]?.startsWith("dear") || prev[1]?.startsWith("dear")) {
+      return "friends";
+    }
+    if (wordCap === "FRIENDS" && !["AND", "RELATIVES"].includes(prevCap[0])) {
+      return "friends";
+    }
+    if (
+      [
+        "african",
+        "american",
+        "australian",
+        "baha’i",
+        "german",
+        "iranian",
+        "italian",
+        "persian",
+        "swiss",
+        "western",
+        "york",
+        "inform",
+        "individual",
+        "these",
+        "such",
+        "all",
+        "any",
+        "active",
+        "assembled",
+        "beleaguered",
+        "beloved",
+        "capable",
+        "captive",
+        "cherished",
+        "dedicated",
+        "devoted",
+        "distinguished",
+        "eager",
+        "eminent",
+        "enamoured",
+        "energetic",
+        "enrolled",
+        "experienced",
+        "honoured",
+        "illumined",
+        "local",
+        "mature",
+        "motivated",
+        "native",
+        "noble",
+        "persecuted",
+        "sacrificing",
+        "steadfast",
+        "suffering",
+        "tested",
+        "tried",
+        "valued",
+        "veteran",
+        "visiting",
+      ].includes(prev[0])
+    ) {
+      return "friends";
+    }
+    if (
+      [
+        "number",
+        "nucleus",
+        "team",
+        "group",
+        "cadre",
+        "contingent",
+        "stream",
+        "circle",
+        "cohort",
+        "society",
+        "network",
+        "batch",
+        "gathering",
+        "list",
+      ].some((x) => prev[1]?.startsWith(x))
+    ) {
+      return "friends";
+    }
+    if (
+      [
+        "labouring",
+        "living",
+        "reaching",
+        "serving",
+        "residing",
+        "teaching",
+        "who",
+        "contributing",
+        "involved",
+        "interested",
+        "become",
+        "capable",
+        "dedicate",
+        "designated",
+        "engaged",
+        "intensely",
+        "trained",
+        "wonder",
+      ].includes(next[0])
+    ) {
+      return "friends";
+    }
+    if (prev[0] === "more" && prev[1] !== "have") {
+      return "friends";
+    }
+    if (prev[0] === "its" && next[1] !== "have") {
+      return "friends";
+    }
+    if (prev[0] === "those" && next[0] !== "whose") {
+      return "friends";
+    }
+    if (prev[0] === "many" && prev[1] && !["his"].includes(prev[1])) {
+      return "friends";
+    }
+    if (
+      prev[0] === "and" &&
+      [
+        "teachers",
+        "pilgrims",
+        "servants",
+        "followers",
+        "assemblies",
+        "believers",
+        "institutions",
+      ].includes(prev[1])
+    ) {
+      return "friends";
+    }
+    if (
+      next[0] === "and" &&
+      [
+        "believers",
+        "fellow‑believers",
+        "fellow‑disciples",
+        "tested",
+        "trusted",
+      ].includes(next[1])
+    ) {
+      return "friends";
+    }
+    if (next[0] === "and" && next[1] === "the" && next[2] === "institutions") {
+      return "friends";
+    }
+    if (next[0] === "of" && next[1] === "the" && next[2] === "faith") {
+      return "friends";
+    }
+    if (next[0] === "from" && next[2] !== "the") {
+      return "friends";
+    }
+    const phrase = [
+      ...prev.slice(0, 2).reverse(),
+      word,
+      ...next.slice(0, 2),
+    ].join(" ");
+    if (
+      [
+        "both your friends and baha’i",
+        "free other friends for teaching",
+      ].includes(phrase)
+    ) {
+      return "friends";
+    }
+    // addWordMap("other:", wordCap, prevCap, nextCap);
+    return "friend";
+  }
 };
 
 // treat/treatment
