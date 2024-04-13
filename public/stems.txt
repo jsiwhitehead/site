@@ -193,6 +193,7 @@ africa
 afro
 afroamerican
 aft
+aftereffect
 afterglow
 afterlif
 aftermath
@@ -3295,6 +3296,7 @@ extracurricular
 extradit
 extramarit
 extran
+extraordinaiy
 extraordinar
 extrapol
 extraterrestr
@@ -4189,6 +4191,7 @@ hall
 hallmark
 hallow
 hallucinogen
+hallway
 halo
 halt
 halter
@@ -7108,6 +7111,7 @@ prais
 praiseworth
 prank
 prattl
+prav
 pray
 prayeransw
 prayerbook
@@ -7498,6 +7502,7 @@ rapt
 rare
 raref
 rash
+rat
 rate
 rath
 ratif
@@ -10254,6 +10259,7 @@ unrear
 unreason
 unrecogn
 unrecord
+unrefin
 unregard
 unregen
 unregul

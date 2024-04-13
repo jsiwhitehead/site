@@ -550,6 +550,8 @@ JNPMNP: jinab‑i‑munib
 
 JNPMNR: jinab‑i‑munir
 
+JNPMNXT: jinab‑i‑manshadi
+
 JNPMRS: jinab‑i‑mirza
 
 JNPMXKN: jinab‑i‑mishkin
@@ -3464,7 +3466,7 @@ RFTLF0K|RFTLFTK: urvatul‑vuthqa
 
 RH: ruha, ruhiyyih
 
-RHL: ruhul, ruhullah
+RHL: ruhul, ruhullah, ruhuullah
 
 RHLMN: ruhul‑amin
 
@@ -5450,6 +5452,8 @@ afroamerican: afro‑americans
 
 aft: after
 
+aftereffect: after‑effect
+
 afterglow: afterglow
 
 afterlif: afterlife
@@ -6902,7 +6906,7 @@ bereft: bereft
 
 bertel: bertels
 
-beseech: beseech, beseeched, beseecheth, beseeching
+beseech: beseech, beseeched, beseechest, beseecheth, beseeching
 
 beseem: beseem, beseemed, beseemeth, beseeming, beseems
 
@@ -7648,7 +7652,7 @@ cap: cap
 
 capabl: capabilities, capability, capable, capably
 
-capac: capacities, capacity
+capac: capacious, capacities, capacity
 
 capacitybuild: capacity‑building
 
@@ -8764,7 +8768,7 @@ contact: contact, contacted, contacting, contacts
 
 contag: contagion, contagious, contagiousness
 
-contain: contain, contained, containeth, containing, contains
+contain: contain, contained, container, containeth, containing, contains
 
 contamin: contaminated, contaminating, contamination
 
@@ -9074,7 +9078,7 @@ crate: crate
 
 crave: crave, craved, craves, craveth, craving, cravings
 
-crawl: crawl, crawled
+crawl: crawl, crawled, crawling
 
 crayon: crayons
 
@@ -11654,6 +11658,8 @@ extramarit: extramarital
 
 extran: extraneous
 
+extraordinaiy: extraordinaiy
+
 extraordinar: extraordinarily, extraordinary
 
 extrapol: extrapolating
@@ -13442,6 +13448,8 @@ hallow: hallow, hallowed, hallowing
 
 hallucinogen: hallucinogenic, hallucinogens
 
+hallway: hallway
+
 halo: halo, haloed, haloes
 
 halt: halt, halted, halting, halts
@@ -15144,7 +15152,7 @@ interperson: interpersonal
 
 interplay: interplay
 
-interpol: interpolate, interpolated, interpolating, interpolation
+interpol: interpolate, interpolated, interpolating, interpolation, interpolations
 
 interpos: interpose, interposed, interposeth, interposition, interpositions
 
@@ -16562,7 +16570,7 @@ mediaev: mediaeval
 
 mediat: mediate, mediated, mediates, mediating, mediation, mediator, mediators
 
-medic: medical, medication
+medic: medical, medically, medication
 
 medica: medicament
 
@@ -19280,6 +19288,8 @@ prank: pranks
 
 prattl: prattler
 
+prav: praver
+
 pray: pray, prayed, prayer, prayerful, prayerfully, prayerfulness, prayers, prayeth, praying, prays
 
 prayeransw: prayer‑answering
@@ -20060,6 +20070,8 @@ raref: rarefied
 
 rash: rash, rashly
 
+rat: rats
+
 rate: rate, rated, rates
 
 rath: rather
@@ -20210,7 +20222,7 @@ recipi: recipient, recipients
 
 reciproc: reciprocal, reciprocate, reciprocated, reciprocation, reciprocity
 
-recit: recital, recitation, recite, recited, reciteth, reciting
+recit: recital, recitation, recite, recited, recitest, reciteth, reciting
 
 reck: reckless, recklessly, recklessness
 
@@ -23496,7 +23508,7 @@ sweat: sweat, sweated
 
 sweep: sweep, sweepeth, sweeping, sweepings, swept
 
-sweet: sweet, sweeten, sweetened, sweetening, sweeter, sweetest, sweetly, sweetness
+sweet: sweet, sweeten, sweetened, sweetening, sweeter, sweetest, sweetly, sweetness, sweets
 
 sweetmeat: sweetmeat, sweetmeats
 
@@ -25571,6 +25583,8 @@ unreason: unreasonable, unreasonably, unreasoning
 unrecogn: unrecognised
 
 unrecord: unrecorded
+
+unrefin: unrefined
 
 unregard: unregardful
 

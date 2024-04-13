@@ -23,7 +23,11 @@ const set = (obj, path, value) =>
     obj
   );
 // @ts-ignore
-const app = import.meta.glob("../app/**", { eager: true, as: "raw" });
+const app = import.meta.glob("../app/**", {
+  eager: true,
+  query: "raw",
+  import: "default",
+});
 const source = Object.keys(app).reduce((res, k) => {
   const p = k
     .slice(3, -3)

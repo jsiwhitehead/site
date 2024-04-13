@@ -103,6 +103,7 @@ const prayerPhrases = [
   "guard Thy handmaidens",
   "wed him to her",
   "guard this handmaiden",
+  "refresh me amongst the handmaids",
   "assembled in this spiritual meeting",
   "gathered in this meeting",
   "gathered here together",

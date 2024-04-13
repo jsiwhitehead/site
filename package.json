@@ -8,13 +8,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@preact/signals-core": "1.2.3",
+    "@preact/signals-core": "^1.6.0",
     "double-metaphone": "^2.0.1",
     "history": "^5.3.0",
     "ohm-js": "^17.1.0"
   },
   "devDependencies": {
-    "prettier": "^3.1.1",
-    "vite": "^5.0.10"
+    "prettier": "^3.2.5",
+    "vite": "^5.2.8"
   }
 }
