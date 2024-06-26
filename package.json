@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "site",
   "type": "module",
   "scripts": {
     "data": "node data/index.js",

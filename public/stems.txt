@@ -469,6 +469,7 @@ anxious
 any
 anybod
 anyhow
+anymor
 anyon
 anyth
 anywh
@@ -1043,10 +1044,12 @@ blot
 blow
 bludgeon
 blue
+blueness
 blund
 blunt
 blur
 blush
+blust
 board
 boast
 boat
@@ -3659,6 +3662,7 @@ fold
 folder
 foliag
 folk
+folktal
 follow
 followup
 foment
@@ -3919,6 +3923,7 @@ garrison
 gas
 gaslight
 gasolin
+gasp
 gastric
 gate
 gatehood
@@ -5079,6 +5084,7 @@ intric
 intrigu
 intrins
 introduc
+introspect
 intrus
 intuit
 inund
@@ -8877,6 +8883,7 @@ stamp
 stamped
 stanc
 stand
+standalon
 standard
 standardbear
 standardset
@@ -8985,6 +8992,7 @@ storm
 stormcentr
 stormcloud
 stormtoss
+storytel
 storywrit
 stout
 stoutheart

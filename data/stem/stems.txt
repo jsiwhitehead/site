@@ -2214,7 +2214,7 @@ MRXT: murshid
 
 MRX|MRK: murchih
 
-MS: hamzih, imsiest, masih, mauser, mce, musa, musay, wemyss
+MS: hamzih, masih, mauser, mce, musa, musay, wemyss
 
 MSFR: musafir, muzaffariyyih
 
@@ -6004,6 +6004,8 @@ anybod: anybody
 
 anyhow: anyhow
 
+anymor: anymore
+
 anyon: anyone
 
 anyth: anything
@@ -6576,7 +6578,7 @@ bail: bail
 
 bailiff: bailiffs
 
-bak: baked, baker, bakers
+bak: baked, baker, bakers, baking
 
 balant: balance, balanced, balances, balancing
 
@@ -7152,6 +7154,8 @@ bludgeon: bludgeoned
 
 blue: blue
 
+blueness: blueness
+
 blund: blunders
 
 blunt: blunt, blunted
@@ -7159,6 +7163,8 @@ blunt: blunt, blunted
 blur: blur, blurred
 
 blush: blush, blushing
+
+blust: blustering
 
 board: board, boards
 
@@ -12384,6 +12390,8 @@ foliag: foliage
 
 folk: folk
 
+folktal: folktale
+
 follow: follow, followed, follower, followers, followest, followeth, following, followings, follows
 
 followup: followup, follow‑up
@@ -12903,6 +12911,8 @@ gas: gas, gaseous, gases
 gaslight: gaslight
 
 gasolin: gasoline
+
+gasp: gasped
 
 gastric: gastric
 
@@ -13692,7 +13702,7 @@ hedg: hedged
 
 hedonist: hedonistic
 
-heed: heed, heeded, heedeth, heedful, heedfully, heedless, heedlessness, heeds
+heed: heed, heeded, heedeth, heedful, heedfully, heedfulness, heedless, heedlessness, heeds
 
 heel: heel, heels
 
@@ -15223,6 +15233,8 @@ intrigu: intrigue, intrigued, intriguer, intrigues, intriguing
 intrins: intrinsic, intrinsically
 
 introduc: introduce, introduced, introduces, introducing, introduction, introductory
+
+introspect: introspection
 
 intrus: intrudes, intrusion, intrusive
 
@@ -17088,7 +17100,7 @@ mothlik: moth‑like
 
 motion: motion, motionless, motions
 
-motiv: motivate, motivated, motivates, motivating, motivation, motivational, motivations, motive, motives
+motiv: motivate, motivated, motivates, motivating, motivation, motivational, motivations, motivators, motive, motives
 
 motiveforc: motive‑force
 
@@ -17350,7 +17362,7 @@ nervous: nerves, nervous
 
 nest: nest, nests
 
-nestl: nestle, nestling
+nestl: nestle, nestled, nestling
 
 net: net
 
@@ -22540,7 +22552,7 @@ soulburn: soul‑burning
 
 soulcharacterist: soul‑characteristic
 
-soulconsum: soulconsuming
+soulconsum: soul‑consuming
 
 soulcrush: soul‑crushing
 
@@ -22820,6 +22832,8 @@ stanc: stance, stances
 
 stand: stand, standest, standeth, standing, stands, stood
 
+standalon: standalone
+
 standard: standard, standardised, standards
 
 standardbear: standard‑bearer, standard‑bearers
@@ -22992,7 +23006,7 @@ stockintrad: stock‑in‑trade
 
 stoic: stoic, stoically
 
-stoke: stoke, stoked
+stoke: stoke, stoked, stokes
 
 stolen: stolen
 
@@ -23035,6 +23049,8 @@ stormcentr: storm‑centre, storm‑centres
 stormcloud: storm‑cloud, storm‑clouds
 
 stormtoss: storm‑tossed
+
+storytel: storytelling
 
 storywrit: story‑writing
 
@@ -23158,7 +23174,7 @@ stumbl: stumble, stumbled, stumbling
 
 stumblingblock: stumbling‑block
 
-stump: stumps
+stump: stump, stumps
 
 stun: stunned, stunning
 
@@ -23618,7 +23634,7 @@ take: take, taken, takes, takest, taketh, taking, took
 
 takeov: takeover
 
-tal: tally
+tal: tallest, tally
 
 tale: tale, tales
 
