@@ -3899,6 +3899,7 @@ gait
 gal
 galax
 gale
+galil
 gall
 gallant
 gallon
@@ -5326,6 +5327,7 @@ lax
 lay
 layer
 layman
+layout
 laz
 leach
 lead
@@ -5434,6 +5436,7 @@ limbo
 limbrend
 lime
 limelight
+limeston
 limit
 limp
 limpid

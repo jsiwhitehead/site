@@ -4676,6 +4676,8 @@ TRKMNSTN: turkmenistan
 
 TRKSTN: turkestan, turkistan
 
+TRKT: terracotta
+
 TRKTLN: turco‑italian
 
 TRKTR: trocadero
@@ -12864,6 +12866,8 @@ galax: galaxy
 
 gale: gale, gales
 
+galil: galil
+
 gall: galleries, gallery
 
 gallant: gallant, gallantry
@@ -15718,6 +15722,8 @@ layer: layer, layered, layers
 
 layman: layman, laymen
 
+layout: layout
+
 laz: lazy
 
 leach: leach
@@ -15933,6 +15939,8 @@ limbrend: limb‑rending
 lime: lime
 
 limelight: limelight
+
+limeston: limestone
 
 limit: limit, limitation, limitations, limited, limiting, limitless, limits
 
@@ -20624,7 +20632,7 @@ renunc: renunciation
 
 reoccur: reoccurring
 
-reopen: reopened, reopening
+reopen: reopen, reopened, reopening
 
 reord: reorder, reordering
 
