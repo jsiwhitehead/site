@@ -4263,6 +4263,7 @@ haught
 haul
 haunt
 have
+havemor
 haven
 havenot
 havent
@@ -5641,6 +5642,7 @@ majorit
 make
 makeup
 malad
+maladjust
 maladministr
 malais
 malaria
@@ -6132,6 +6134,7 @@ neck
 necklac
 nectar
 need
+needand
 needl
 nefar
 negat
@@ -6350,6 +6353,7 @@ nowaday
 nowh
 nowis
 noxious
+nsa
 nuanc
 nuclear
 nucleus
@@ -6371,6 +6375,7 @@ oat
 oath
 obdur
 obed
+obedienceonc
 obelisk
 obey
 obfusc
@@ -7311,6 +7316,7 @@ prong
 pronoun
 pronounc
 proof
+proofsyou
 prop
 propag
 propaganda
@@ -7993,6 +7999,7 @@ rock
 rockfound
 rocksolid
 rod
+rodwel
 rol
 role
 romant
@@ -9329,6 +9336,8 @@ teacher
 teachertostud
 teachinglearn
 teachings
+teachingsa
+teachingsthes
 teacup
 team
 tear
@@ -9609,6 +9618,7 @@ toppl
 torch
 torchbear
 torchhold
+torchlight
 tore
 torment
 torpedo
@@ -10266,6 +10276,7 @@ unre
 unreach
 unread
 unreal
+unrealis
 unrear
 unreason
 unrecogn
@@ -10593,6 +10604,7 @@ visit
 vista
 visual
 vital
+vitalitythes
 vitiat
 vitriol
 vitup
@@ -10906,6 +10918,7 @@ winsom
 wint
 wipe
 wire
+wirepul
 wise
 wisee
 wish
@@ -11142,6 +11155,7 @@ yourself
 yourselv
 youth
 youthyearofservic
+youwhat
 zeal
 zephyr
 zero

@@ -3646,7 +3646,7 @@ RSTRKX: russo‑turkish
 
 RS|RSF: warsaw
 
-RT: ard, harati, harwood, herod, howard, radiyih, rawdih, rawdiy, rhode, rida, ridai, riday, roddy, urdu
+RT: ard, harati, harwood, herod, highroad, howard, radiyih, rawdih, rawdiy, rhode, rida, ridai, riday, roddy, urdu
 
 RTFN: ridvan, ridvani
 
@@ -4618,6 +4618,8 @@ TNXNT: townshend
 
 TP: adib, dhabih, dhabihi, dhib, duab, hadba, taipei, tobey
 
+TPFLT: deepfelt
+
 TPHMKTM: dhabihi‑muqaddam
 
 TPK: atabik, tobago
@@ -5244,7 +5246,7 @@ acquaint: acquaint, acquaintance, acquaintances, acquaintanceship, acquainted, a
 
 acquiesc: acquiesce, acquiesced, acquiescence, acquiescent, acquiescing
 
-acquir: acquire, acquired, acquirement, acquires, acquireth, acquiring, acquisition, acquisitions, acquisitive
+acquir: acquire, acquired, acquirement, acquirements, acquires, acquireth, acquiring, acquisition, acquisitions, acquisitive
 
 acquit: acquit, acquitted, acquitting
 
@@ -12092,7 +12094,7 @@ fie: fie
 
 field: field, fields
 
-fiend: fiend, fiendish
+fiend: fiend, fiendish, fiends
 
 fierc: fierce, fiercely, fierceness, fiercer, fiercest
 
@@ -13593,6 +13595,8 @@ haul: haul, hauled, hauling
 haunt: haunted, haunting, haunts
 
 have: have, haves, having
+
+havemor: have‑more
 
 haven: haven, havens
 
@@ -15516,7 +15520,7 @@ kernel: kernel
 
 key: key, keys
 
-keynot: keynote
+keynot: keynote, key‑note
 
 kick: kicked
 
@@ -15758,7 +15762,7 @@ leavetak: leave‑taking
 
 lech: lechery
 
-lectur: lecture, lecturers, lectures, lecturing
+lectur: lecture, lecturer, lecturers, lectures, lecturing
 
 lecturehal: lecture‑halls
 
@@ -15924,7 +15928,7 @@ likelihood: likelihood
 
 likemind: like‑minded
 
-liken: likened, likeness, likenesses, likeneth, likening, likens
+liken: liken, likened, likeness, likenesses, likeneth, likening, likens
 
 likew: likewise
 
@@ -16349,6 +16353,8 @@ make: made, make, maker, makers, makes, makest, maketh, making
 makeup: makeup, make‑up
 
 malad: maladies, malady
+
+maladjust: maladjustment
 
 maladministr: maladministration
 
@@ -17256,7 +17262,7 @@ myst: mysteries, mysterious, mysteriously, mystery
 
 mystic: mystic, mystical, mysticism, mystics
 
-myth: myth, mythology
+myth: myth, mythology, myths
 
 nail: nail, nailed, nails
 
@@ -17332,6 +17338,8 @@ nectar: nectar
 
 need: need, needed, needeth, needful, needfulness, needing, needless, needlessly, needs, needst, needy
 
+needand: need‑and
+
 needl: needle, needles
 
 nefar: nefarious
@@ -17404,7 +17412,7 @@ new: new, newer, newest, newly, newness
 
 newborn: newborn, new‑born
 
-newcom: newcomer, newcomers
+newcom: newcomer, newcomers, new‑comers
 
 newfangl: newfangled
 
@@ -17768,6 +17776,8 @@ nowis: nowise
 
 noxious: noxious
 
+nsa: nsa
+
 nuanc: nuanced
 
 nuclear: nuclear
@@ -17809,6 +17819,8 @@ oath: oath, oaths
 obdur: obduracy, obdurate
 
 obed: obedience, obedient, obediently
+
+obedienceonc: obedience‑once
 
 obelisk: obelisk
 
@@ -19186,7 +19198,7 @@ pomp: pomp, pompous, pomps
 
 pond: pond
 
-ponder: ponder, pondered, pondereth, pondering, ponders
+ponder: ponder, pondered, ponderest, pondereth, pondering, ponders
 
 pontif: pontificate
 
@@ -19584,7 +19596,7 @@ procedur: procedural, procedure, procedures
 
 proceed: proceed, proceeded, proceedeth, proceeding, proceedings, proceeds
 
-process: process, processes, processing, procession
+process: process, processed, processes, processing, procession
 
 proclaim: proclaim, proclaimed, proclaimer, proclaimers, proclaimeth, proclaiming, proclaims, proclamation, proclamations
 
@@ -19689,6 +19701,8 @@ pronoun: pronoun, pronouns
 pronounc: pronounce, pronounced, pronouncement, pronouncements, pronounces, pronouncing
 
 proof: proof, proofs, provable, prove, proved, proven, proves, proveth, proving
+
+proofsyou: proofs‑you
 
 prop: prop, propped
 
@@ -19964,7 +19978,7 @@ question: question, questioned, questioner, questioners, questioning, questionin
 
 questionnair: questionnaire
 
-quibbl: quibbling
+quibbl: quibble, quibbling
 
 quick: quick, quicken, quickened, quickener, quickeners, quickeneth, quickening, quickens, quicker, quickly, quickness
 
@@ -21053,6 +21067,8 @@ rockfound: rock‑foundation
 rocksolid: rock‑solid
 
 rod: rod, rods
+
+rodwel: rodwell
 
 rol: roll, rolled, rolleth, rolling, rolls
 
@@ -23402,7 +23418,7 @@ superflu: superfluities, superfluity, superfluous
 
 superhuman: superhuman, super‑human
 
-superimpos: superimposed
+superimpos: superimposed, super‑impose
 
 superintellig: superintelligence
 
@@ -23725,6 +23741,10 @@ teachertostud: teacher‑to‑student
 teachinglearn: teaching‑learning
 
 teachings: teachings
+
+teachingsa: teachings‑a
+
+teachingsthes: teachings‑these
 
 teacup: tea‑cup
 
@@ -24285,6 +24305,8 @@ torch: torch, torches
 torchbear: torchbearer, torchbearers, torch‑bearer, torch‑bearers
 
 torchhold: torchholder
+
+torchlight: torchlight
 
 tore: tore
 
@@ -25600,6 +25622,8 @@ unread: unread, unreadable
 
 unreal: unreal, unrealised, unrealistic, unrealities, unreality
 
+unrealis: unrealisable
+
 unrear: unreared
 
 unreason: unreasonable, unreasonably, unreasoning
@@ -26254,6 +26278,8 @@ visual: visual, visualise, visualised, visualises, visualising
 
 vital: vital, vitalisation, vitalise, vitalised, vitalising, vitality, vitally, vitals
 
+vitalitythes: vitality‑these
+
 vitiat: vitiate, vitiated, vitiating
 
 vitriol: vitriol
@@ -26880,6 +26906,8 @@ wipe: wipe, wiped, wiping
 
 wire: wire, wired, wireless, wires
 
+wirepul: wire‑pulling
+
 wise: wisdom, wisdoms, wise, wisely, wiser, wisest
 
 wisee: wise
@@ -27349,6 +27377,8 @@ yourselv: yourselves
 youth: youth, youthful, youthfulness, youths
 
 youthyearofservic: youth‑year‑of‑service
+
+youwhat: you‑what
 
 zeal: zeal, zealotry, zealous, zealously
 
