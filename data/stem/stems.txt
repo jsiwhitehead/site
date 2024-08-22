@@ -220,7 +220,7 @@ FRMS: formosa
 
 FRN: verona
 
-FRNK: farangi, farhangi, france, francis, franco, francs
+FRNK: farangi, farhang, farhangi, france, francis, franco, francs
 
 FRNKFRT: frankfurt, frankfurter
 
@@ -2114,7 +2114,7 @@ MPTKL: empedocles
 
 MPXR: hampshire
 
-MR: amharic, amir, amirs, amr, amur, maori, maoris, maria, marie, marwah, mary, mihr, mihr‑ali, mir, miri, moore, moorings, moors, murray, umar, weimar
+MR: amharic, amir, amiri, amirs, amr, amur, maori, maoris, maria, marie, marwah, mary, mihr, mihr‑ali, mir, miri, moore, moorings, moors, murray, umar, weimar
 
 MR0|MRT: martha
 
@@ -6090,7 +6090,7 @@ applicable: applicability, applicable
 
 appoint: appoint, appointed, appointee, appointees, appointing, appointive, appointment, appointments, appoints
 
-apport: apportion, apportioned, apportionment
+apport: apportion, apportioned, apportionment, apportions
 
 apposit: apposite
 
@@ -6380,6 +6380,8 @@ atheism: atheism, atheist, atheistic, atheists
 
 athirst: athirst
 
+athlet: athletes
+
 athwart: athwart
 
 atlant: atlantic
@@ -6622,7 +6624,7 @@ banquethal: banquet‑hall
 
 baptis: baptise, baptised, baptises, baptising, baptism, baptismal, baptist
 
-bar: bar, barred, barring
+bar: bar, barred, barring, bars
 
 barb: barbed
 
@@ -7117,6 +7119,8 @@ bloc: bloc, blocs
 block: block, blocked, blocking, blocks
 
 blockad: blockade
+
+blog: blogs
 
 blood: bled, bleed, bleeding, blood, blooded, bloodiest, bloody
 
@@ -8254,6 +8258,8 @@ closelyknit: closely‑knit
 
 closet: closeted, closeting
 
+closur: closure
+
 clot: clotted
 
 cloth: cloth, clothe, clothed, clothes, clotheth, clothing, cloths
@@ -8778,7 +8784,7 @@ contact: contact, contacted, contacting, contacts
 
 contag: contagion, contagious, contagiousness
 
-contain: contain, contained, container, containeth, containing, contains
+contain: contain, contained, container, containeth, containing, containment, contains
 
 contamin: contaminated, contaminating, contamination
 
@@ -8823,6 +8829,8 @@ contrar: contraries, contrariety, contrary
 contrast: contrast, contrasted, contrasting, contrasts
 
 contraven: contravene, contravened, contravenes, contravening
+
+contravent: contravention
 
 contribut: contribute, contributed, contributes, contributeth, contributing, contribution, contributions, contributor, contributors, contributory
 
@@ -9678,7 +9686,7 @@ depend: depend, dependability, dependable, dependants, depended, dependence, dep
 
 depict: depict, depicted, depicting, depiction, depicts
 
-deplet: depleted, depletion
+deplet: deplete, depleted, depletion
 
 deplor: deplorable, deplorably, deplore, deplored, deplores, deploring
 
@@ -10622,6 +10630,8 @@ eat: eat, eaten, eater, eaters, eateth, eating, eats
 
 eb: ebb, ebbed, ebbing
 
+ebb: ebbs
+
 ebul: ebullient
 
 ebullit: ebullition, ebullitions
@@ -10662,7 +10672,7 @@ edit: edited, editing, edition, editions, editor, editorial, editors
 
 educ: educate, educated, educates, educateth, educating, education, educational, educationalists, educative, educator, educators
 
-effac: efface, effaced, effacement, effaces, effacing
+effac: efface, effaced, effacement, effacements, effaces, effacing
 
 effect: effect, effected, effecteth, effecting, effects, effectual, effectually, effectuate, effectuates
 
@@ -10850,7 +10860,7 @@ emblemat: emblematic
 
 embod: embodied, embodies, embodieth, embodiment, embodiments, embody, embodying
 
-embolden: embolden, emboldened, emboldeneth, emboldening
+embolden: embolden, emboldened, emboldeneth, emboldening, emboldens
 
 embosom: embosom, embosomed
 
@@ -12432,7 +12442,7 @@ for: for
 
 forasmuch: forasmuch
 
-forbear: forbear, forbearance, forbearing, forborne
+forbear: forbear, forbearance, forbearing, forbears, forborne
 
 forbid: forbad, forbade, forbid, forbidden, forbiddest, forbiddeth, forbidding, forbids
 
@@ -13568,9 +13578,9 @@ harsh: harsh, harsher, harshest, harshly, harshness
 
 harv: harvest, harvested, harvester, harvesting, harvests
 
-has: has
+has: has, hast
 
-hast: hast, haste, hasted, hasten, hastened, hasteneth, hastening, hastens, hastily, hasting, hasty
+hast: haste, hasted, hasten, hastened, hasteneth, hastening, hastens, hastily, hasting, hasty
 
 hat: hat, hatless, hats
 
@@ -14112,7 +14122,7 @@ hunger: hunger, hungered, hungering, hungers, hungrily, hungry
 
 hunt: hunt, hunted, hunter, hunteth, hunting, huntsman
 
-hurdl: hurdles
+hurdl: hurdle, hurdles
 
 hurl: hurl, hurled, hurleth, hurling
 
@@ -15702,7 +15712,7 @@ laughingstock: laughingstock
 
 launch: launch, launched, launches, launching
 
-laureat: laureate
+laureat: laureate, laureates
 
 laurel: laurel, laurels
 
@@ -16440,7 +16450,7 @@ mantl: mantle
 
 manual: manual
 
-manufactur: manufacture, manufactured, manufacturing
+manufactur: manufacture, manufactured, manufacturers, manufacturing
 
 manumiss: manumission
 
@@ -16541,6 +16551,8 @@ materialist: materialism, materialist, materialistic, materialists
 matern: maternal
 
 mathemat: mathematical, mathematically, mathematician, mathematicians, mathematics
+
+mathnav: mathnavi
 
 matrix: matrix
 
@@ -18003,6 +18015,8 @@ onepart: one‑party
 ones: ones
 
 oneself: oneself
+
+onesid: one‑sided
 
 onesixth: one‑sixth
 
@@ -21612,7 +21626,7 @@ selfdisciplin: self‑discipline
 
 selfdiscov: self‑discovery
 
-selfeffac: self‑effaced, self‑effacement, self‑effacing
+selfeffac: self‑effaced, self‑effacement, self‑effacements, self‑effacing
 
 selfengag: self‑engaged
 
@@ -21704,7 +21718,7 @@ selfright: self‑righteousness
 
 selfsacrif: self‑sacrificing, self‑sacrificingly
 
-selfsacrific: self‑sacrifice, self‑sacrificial
+selfsacrific: self‑sacrifice, self‑sacrifices, self‑sacrificial
 
 selfsam: selfsame, self‑same
 
@@ -22672,7 +22686,7 @@ speak: spake, speak, speaker, speakers, speakest, speaketh, speaking, speaks, sp
 
 spear: spear, spears
 
-spearhead: spearhead, spearheaded
+spearhead: spearhead, spearheaded, spearheading
 
 spearpoint: spear‑point
 
@@ -24784,6 +24798,8 @@ twofifth: two‑fifths
 
 twofold: twofold, two‑fold
 
+twohundredth: two‑hundredth
+
 twohundredyear: two‑hundred‑year
 
 twoprong: two‑pronged
@@ -25914,7 +25930,7 @@ unwind: unwinding
 
 unwis: unwisdom, unwise
 
-unwit: unwitting, unwittingly
+unwit: unwitnessed, unwitting, unwittingly
 
 unwork: unworkable
 
@@ -25932,7 +25948,7 @@ upbuild: upbuild, upbuilding
 
 upcom: upcoming
 
-updat: update, updated
+updat: update, updated, updates
 
 upgrad: upgrade, upgrading
 
@@ -26106,7 +26122,7 @@ vendor: vendor
 
 vene: veneer
 
-veng: vengeance, vengeful
+veng: vengeance, vengeful, vengefulness
 
 venom: venom, venomous
 
@@ -26216,7 +26232,7 @@ victoryinduc: victory‑inducing
 
 vie: vie, vied
 
-view: view, viewed, viewer, viewing, viewpoint, viewpoints, views
+view: view, viewed, viewer, viewers, viewing, viewpoint, viewpoints, views
 
 vigil: vigil, vigilance, vigilant, vigilantly, vigils
 
@@ -26848,7 +26864,7 @@ wield: wield, wielded, wielder, wielders, wieldeth, wielding, wields
 
 wife: wife, wives
 
-wil: wilful, wilfully, willed, willest, willeth, willing, willingly
+wil: wilful, wilfully, wilfulness, willed, willest, willeth, willing, willingly
 
 wild: wild, wilder, wilderness, wildernesses, wildest, wilds
 

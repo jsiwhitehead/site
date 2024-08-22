@@ -231,6 +231,7 @@ exceptions1.taxes = "taxat";
 exceptions1.tears = "tearful";
 exceptions1.unit = "units";
 exceptions1.wondering = "wondere";
+exceptions1.hast = "has";
 // Invariants!
 exceptions1.institute = "institute";
 exceptions1.sky = "sky";
