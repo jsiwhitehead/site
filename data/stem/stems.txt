@@ -3838,7 +3838,7 @@ SK|TSK: hezekiah, zakiyyih
 
 SK|XK: czech, czechs
 
-SL: azal, azaliyyih, oslo, salih, salle, seoul, sewell, ziaoullah, ziaullah, zillu, zulu
+SL: azal, azaliyyih, oslo, salih, salle, seoul, sewell, sulh, ziaoullah, ziaullah, zillu, zulu
 
 SLF: slav, slavs
 
@@ -6703,6 +6703,8 @@ bate: bates
 bath: bath, bathe, bathed, bather, bathhouse, bathhouses, bathing, baths
 
 batlik: bat‑like
+
+batour: batouri
 
 batt: batteries
 
@@ -11698,6 +11700,8 @@ exult: exult, exultant, exultation, exulted, exultest, exulteth, exulting
 
 eye: eye, eyed, eyes
 
+eyebrow: eyebrow
+
 eyelash: eyelashes
 
 eyelid: eyelid
@@ -13441,6 +13445,8 @@ halcyon: halcyon
 hale: hale
 
 half: half, halves
+
+halfanim: half‑animal
 
 halfbroth: half‑brother, half‑brothers
 
@@ -15941,6 +15947,8 @@ likemind: like‑minded
 liken: liken, likened, likeness, likenesses, likeneth, likening, likens
 
 likew: likewise
+
+lilongw: lilongwe
 
 lilt: lilting
 
@@ -18796,6 +18804,8 @@ perch: perches
 
 perchant: perchance
 
+percip: percipient
+
 perdit: perdition
 
 peremptor: peremptorily, peremptory
@@ -20343,6 +20353,8 @@ rectif: rectification, rectified, rectify, rectifying
 rectitud: rectitude
 
 rector: rector
+
+recumb: recumbent
 
 recup: recuperate, recuperation, recuperative
 
@@ -22516,7 +22528,7 @@ songbird: songbird, songbirds
 
 soninlaw: son‑in‑law
 
-sonship: sonship, son‑ship
+sonship: sonship
 
 sonsinlaw: sons‑in‑law
 
@@ -26552,7 +26564,7 @@ wellappoint: well‑appointed
 
 wellassur: well‑assured
 
-wellb: wellbeing, well‑being
+wellb: well‑being
 
 wellbal: well‑balanced
 

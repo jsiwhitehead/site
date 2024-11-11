@@ -817,6 +817,7 @@ batch
 bate
 bath
 batlik
+batour
 batt
 battalion
 batter
@@ -3314,6 +3315,7 @@ extric
 exub
 exult
 eye
+eyebrow
 eyelash
 eyelid
 eyesight
@@ -4186,6 +4188,7 @@ hairsplit
 halcyon
 hale
 half
+halfanim
 halfbroth
 halfcentur
 halfcloth
@@ -5436,6 +5439,7 @@ likelihood
 likemind
 liken
 likew
+lilongw
 lilt
 limb
 limbo
@@ -6863,6 +6867,7 @@ percent
 percept
 perch
 perchant
+percip
 perdit
 peremptor
 perenn
@@ -7637,6 +7642,7 @@ rectangular
 rectif
 rectitud
 rector
+recumb
 recup
 recur
 red
