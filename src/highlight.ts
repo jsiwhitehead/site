@@ -88,6 +88,7 @@ const prayerPhrases = [
   "O thou little handmaid",
   "such as have abandoned the physical garment",
   "A noble soul hath ascended",
+  "Glorify the abode of this newly arrived guest",
   "Thy handmaiden who hath ascended",
   "the surviving kindred of this noble soul",
   "guided that bird of faithfulness to the nest of the Abha Kingdom",
@@ -116,6 +117,10 @@ const prayerPhrases = [
   "this gathering",
   "this gathering",
   "This gathering",
+  "first of the days of Riḍván",
+  "ninth day of Riḍván",
+  "the festival Thou hast named Riḍván",
+  "Thy Riḍván Festival",
 ].map((p) => p.split(" "));
 
 // I am, O my Lord, Thy handmaiden
